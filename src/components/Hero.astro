@@ -23,7 +23,7 @@ const { date, location, links } = Astro.props
   <div class="overlay overlay-background overlay-background-video">
     <div class="styled-video playpause overlay">
       <video
-        class="overlay"
+        class="overlay video-landscape"
         preload="auto"
         autoplay
         loop
@@ -34,6 +34,17 @@ const { date, location, links } = Astro.props
       >
         <source src="/videos/paris-hero-compressed.webm" type="video/webm" />
         <source src="/videos/paris-hero-compressed.mp4" type="video/mp4" />
+      </video>
+      <video
+        class="overlay video-portrait"
+        preload="auto"
+        autoplay
+        loop
+        muted
+        webkit-playsinline
+        playsinline
+      >
+        <source src="/videos/paris-hero-vertical-compressed.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="overlay overlay-gradient-v2"></div>
@@ -47,13 +58,13 @@ const { date, location, links } = Astro.props
           <defs>
             <linearGradient id="gosimGradient" x1="17" y1="0" x2="65" y2="0" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#FFFFFF">
-                <animate attributeName="stop-color" values="#FFFFFF; #16A085" dur="2s" fill="freeze" begin="0.5s" />
+                <animate attributeName="stop-color" values="#FFFFFF; #16A085; #16A085; #FFFFFF" keyTimes="0; 0.2; 0.8; 1" dur="6s" repeatCount="indefinite" begin="0.5s" />
               </stop>
               <stop offset="50%" stop-color="#FFFFFF">
-                <animate attributeName="stop-color" values="#FFFFFF; #F4D03F" dur="2s" fill="freeze" begin="0.5s" />
+                <animate attributeName="stop-color" values="#FFFFFF; #F4D03F; #F4D03F; #FFFFFF" keyTimes="0; 0.2; 0.8; 1" dur="6s" repeatCount="indefinite" begin="0.5s" />
               </stop>
               <stop offset="100%" stop-color="#FFFFFF">
-                <animate attributeName="stop-color" values="#FFFFFF; #3498DB" dur="2s" fill="freeze" begin="0.5s" />
+                <animate attributeName="stop-color" values="#FFFFFF; #3498DB; #3498DB; #FFFFFF" keyTimes="0; 0.2; 0.8; 1" dur="6s" repeatCount="indefinite" begin="0.5s" />
               </stop>
             </linearGradient>
           </defs>
@@ -91,5 +102,26 @@ const { date, location, links } = Astro.props
 <style>
   .overlay-background-video {
     opacity: 0.9;
+  }
+
+  .video-portrait {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .video-landscape {
+      display: none;
+    }
+    .video-portrait {
+      display: block;
+    }
+    .section-home-header .logo-gosim-scroll {
+      width: 100vw;
+      max-width: none;
+    }
+    .section-home-header .logo-gosim-scroll svg {
+      width: 100%;
+      height: auto;
+    }
   }
 </style>
