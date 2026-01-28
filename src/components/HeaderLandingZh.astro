@@ -8,77 +8,17 @@ const hasNotificationBar = false; // Set this to false when NotificationBar is r
 
 const links = [
   {
-    text: "讲师",
-    link: "/zh/speakers",
+    text: "项目",
+    link: "/zh/#projects",
   },
   {
-    text: "主题",
-    link: "/zh/#tracks",
+    text: "赞助",
+    link: "/zh/#sponsorship",
   },
   {
-    text: "议程安排",
-    link: "/zh/schedule",
+    text: "会议地点",
+    link: "/zh/#venue",
   },
-  {
-    text: "赞助商",
-    link: "/zh/sponsors",
-  },
-    {
-    text: "讲师 PPT",
-    link: "/speaker-slides",
-  },
-  {
-    text: "同期活动",
-    subLinks: [
-      {
-        text: "RustGlobal & RustChinaConf",
-        link: "https://rustcc.cn/2025conf/",
-        openInNewTab: false,
-      },
-      {
-        text: "AI Vision Forum 人工智能愿景论坛",
-        link: "https://forum.gosim.org",
-        openInNewTab: false,
-      },
-      {
-        text: "Open for SDG 开放共创 · 可持续发展大会",
-        link: "https://opensdg.gosim.org/cn/",
-        openInNewTab: false,
-      },
-      {
-        text: "超级智能体 Campathon",
-        link: "https://mofa.ai/super-agent-hackathon/",
-        openInNewTab: false,
-      },
-      {
-        text: "Code Alert 黑客松大赛",
-        link: "https://hackathon.mofa.ai",
-        openInNewTab: false,
-      },
-      {
-        text: "Spotlight",
-        link: "/zh/#spotlight",
-        openInNewTab: false,
-      },
-    ],
-  },
-    {
-    text: "会议地点 & PPT 模版",
-    subLinks: [
-      {
-        text: "会议地点",
-        link: "/zh/venue",
-      },
-      {
-        text: "PPT 模版",
-        link: "/template",
-      },
-    ],
-  },
-  // {
-  //   text: "常见问题",
-  //   link: "/zh/faq/",
-  // },
 ];
 
 const slug = Astro.url.pathname;
@@ -96,13 +36,13 @@ const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`;
     )
   }
 
-  <div class="floating-ticket-button">
+  <!-- <div class="floating-ticket-button">
     <Button
       text="活动已结束，感谢参与"
       link=""
       class="btn primary btn-floating btn-hover"
     />
-  </div>
+  </div> -->
 
   <div class="mobile-nav">
     <div class="overlay overlay-dark" data-navigation-toggle="close"></div>
@@ -170,7 +110,7 @@ const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`;
       </nav>
       <div class="box-row box-row-btn">
         <Button
-          text="活动已结束，感谢参与"
+          text="即将开放"
           link=""
           class="btn primary xl btn-hover"
         />
@@ -297,7 +237,7 @@ const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`;
           </div>
         </div>
         <Button
-          text="活动已结束，感谢参与"
+          text="即将开放"
           link=""
           class="btn outline btn-hover"
         />

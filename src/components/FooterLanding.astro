@@ -5,39 +5,20 @@ import Logo from "./Logo.astro"
 
 const firstColumnLinks = [
   {
-    text: "Speakers",
-    link: "/speakers",
+    text: "Projects",
+    link: "/#projects",
   },
   {
-    text: "Tracks",
-    link: "/#tracks",
-  },
-  {
-    text: "Spotlight",
-    link: "/#spotlight",
-  },
-  {
-    text: "Co-located Events",
-    link: "/#co-located-events",
+    text: "Sponsorship",
+    link: "/#sponsorship",
   },
   {
     text: "Venue",
-    link: "/venue",
+    link: "/#venue",
   },
-
 ]
 
-const secondColumnLinks = [
-  {
-    text: "Schedule",
-    link: "/schedule/",
-  },
-  // {
-  //   text: "Volunteer",
-  //   link: "https://docs.google.com/forms/d/e/1FAIpQLSc62kJczw7lr-l0JAAbkabeIrrPPAD7OWyzwDopTD0L4HC6EQ/viewform",
-  //   openInNewTab: true,
-  // },
-]
+const secondColumnLinks = []
 
 const slug = Astro.url.pathname
 ---

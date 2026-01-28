@@ -38,7 +38,7 @@ const slug = Astro.url.pathname
         <Picture
           src={image}
           formats={["webp", "jpg"]}
-          alt="Hangzhou"
+          alt="Paris"
           class="overlay"
         />
 
@@ -53,7 +53,7 @@ const slug = Astro.url.pathname
           poster="/videos/hsz04-min.jpg"
           onloadstart="this.playbackRate=0.25"
         >
-          <source src="/videos/hangzhou-hero-video.webm" type="video/webm" />
+          <source src="/videos/paris-hero-video.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="overlay overlay-gradient-v2"></div>
@@ -77,19 +77,19 @@ const slug = Astro.url.pathname
           <p>{text}</p>
         </div>
 
-        // temporary override
+        {/* // temporary override
         {
           ctaButton?.text && (
             <div class="col-row col-row-btn">
               <Button
                 link={ctaButton.link}
-                text="Thank You"
+                text="Coming Soon"
                 openInNewTab={ctaButton?.openInNewTab}
                 class="btn primary xl btn-hover"
               />
             </div>
           )
-        }
+        } */}
       </div>
     </div>
   </div>

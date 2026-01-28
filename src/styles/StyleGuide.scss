@@ -16,7 +16,7 @@ html.lenis {height: auto;}
 
    --color-light-rgb: 255, 255, 255;
    --color-light: rgba(var(--color-light-rgb), 1);
-   --color-light-tint: #EFEFDD;
+   --color-light-tint: #E8EEF4;
 
    --color-white-rgb: 255, 255, 255;
    --color-white: rgba(var(--color-white-rgb), 1);
@@ -24,10 +24,8 @@ html.lenis {height: auto;}
    --color-black-rgb: 0, 0, 0;
    --color-black: rgba(var(--color-black-rgb), 1);
 
-   --color-primary-rgb: 244,
-      203,
-      105;
-   --color-primary: #E9CB2D;
+   --color-primary-rgb: 45, 78, 156;
+   --color-primary: #2D4E9C;
 
    --color-secondary-rgb: 147, 136, 254;
    --color-secondary: rgba(var(--color-secondary-rgb), 1);
@@ -35,10 +33,10 @@ html.lenis {height: auto;}
    --color-glow-rgb: 153, 121, 255;
    --color-glow: rgba(var(--color-glow-rgb), 1);
 
-   --color-beige-rgb: 254, 249, 240;
+   --color-beige-rgb: 240, 245, 250;
    --color-beige: rgba(var(--color-beige-rgb), 1);
 
-   --color-gray: #C7BFB2;
+   --color-gray: #B2BFC7;
    --color-lightgray: var(--color-light-tint);
 
    --color-border: rgba(var(--color-dark-rgb), 0.35);

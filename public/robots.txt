@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://hangzhou2025.gosim.org/sitemap-index.xml
+Sitemap: https://paris2026.gosim.org/sitemap-index.xml

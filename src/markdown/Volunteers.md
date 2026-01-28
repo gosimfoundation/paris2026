@@ -2,7 +2,7 @@ _Last updated_: May 2, 2025
 
 ## Our Amazing Volunteers
 
-We extend our heartfelt gratitude to all the local Hangzhou volunteers who are helping to make this event possible. Your dedication and hard work are deeply appreciated!
+We extend our heartfelt gratitude to all the local Paris volunteers who are helping to make this event possible. Your dedication and hard work are deeply appreciated!
 
 <div class="volunteer-grid">
 

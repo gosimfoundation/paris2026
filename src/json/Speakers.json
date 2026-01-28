@@ -1516,7 +1516,7 @@
     {
       "id": "qian-zheng",
       "name": "Qian Zheng",
-      "bio": "Qian Zheng is a 'Hundred Talents Program' researcher and doctoral supervisor at the College of Computer Science and Technology and the National Key Laboratory of Brain-Machine Intelligence at Zhejiang University. He was selected for the National Overseas High-level Young Talents Program in 2021 and is a Vice Chair of the VALSE EACC. His research primarily focuses on brain-inspired vision. He has published over 70 papers in venues such as T-PAMI, CVPR, ICCV, NeurIPS, and ICML. He received the 2024 ACM Hangzhou Chapter 'Rising Star Award,' leads a project funded by the National Natural Science Foundation of China, and is a principal investigator on key projects of the National Natural Science Foundation and major national science and technology projects. He serves on the editorial boards of the international journals T-CDS and Neurocomputing and is a reviewer for several CCF-A conferences and journals. For more information, please refer to: https://q-zh.github.io/",
+      "bio": "Qian Zheng is a 'Hundred Talents Program' researcher and doctoral supervisor at the College of Computer Science and Technology and the National Key Laboratory of Brain-Machine Intelligence at Zhejiang University. He was selected for the National Overseas High-level Young Talents Program in 2021 and is a Vice Chair of the VALSE EACC. His research primarily focuses on brain-inspired vision. He has published over 70 papers in venues such as T-PAMI, CVPR, ICCV, NeurIPS, and ICML. He received the 2024 ACM Paris Chapter 'Rising Star Award,' leads a project funded by the National Natural Science Foundation of China, and is a principal investigator on key projects of the National Natural Science Foundation and major national science and technology projects. He serves on the editorial boards of the international journals T-CDS and Neurocomputing and is a reviewer for several CCF-A conferences and journals. For more information, please refer to: https://q-zh.github.io/",
       "role": "Assistant Professor",
       "org": "Zhejiang University",
       "roleOrg": "Assistant Professor, Zhejiang University",
@@ -3413,10 +3413,10 @@
     {
       "id": "speaker-han-hong-ying",
       "name": "Hongying Han",
-      "bio": "Currently a technical researcher at Hangzhou Half Universe Technology Co., Ltd., focusing on AI technology R&D and enterprise-level application implementation. Formerly an R&D engineer and architect at NetEase/Alibaba.",
-      "role": "Technical Researcher at Hangzhou Half Universe",
-      "org": "Hangzhou Half Universe Technology Co., Ltd.",
-      "roleOrg": "Technical Researcher at Hangzhou Half Universe, Hangzhou Half Universe Technology Co., Ltd.",
+      "bio": "Currently a technical researcher at Paris Half Universe Technology Co., Ltd., focusing on AI technology R&D and enterprise-level application implementation. Formerly an R&D engineer and architect at NetEase/Alibaba.",
+      "role": "Technical Researcher at Paris Half Universe",
+      "org": "Paris Half Universe Technology Co., Ltd.",
+      "roleOrg": "Technical Researcher at Paris Half Universe, Paris Half Universe Technology Co., Ltd.",
       "image": "/images/speakers/speaker-han-hong-ying.jpg",
       "tags": [
         "apps-agents"
@@ -3898,7 +3898,7 @@
     {
       "id": "huixin-xue",
       "name": "Huixin Xue",
-      "bio": "Huixin Xue is a Chinese composer, music producer and Music AI researcher. She is a Ph.D. candidate in Music AI at Shanghai Conservatory of Music under the supervision of Professor Liu Hao, a visiting scholar at the Hamburg University of Music and Theatre, and a member of SHCM's Key Laboratory of Artificial Intelligence Music Therapy. She graduated from the Music Engineering Department of Shanghai Conservatory of Music both for her bachelor's and master's degrees both as the top of her major. Xue’s pieces won numerous awards, including The top Prize of the 2024 OPUS ARTIS Paris International Composition Competition, the Honorable Mention of the 2024 Sound Chain International Electronic Music Composition Competition (the only Chinese winner among the 6 winners worldwide), the second place of the 2024 Hangzhou International Electronic Music Composition Competition. As a Music AI researcher, she strives to explore the possibility of AI technology enabling music creation, including AI music generation model training and evaluation and AI timbre synthesis.",
+      "bio": "Huixin Xue is a Chinese composer, music producer and Music AI researcher. She is a Ph.D. candidate in Music AI at Shanghai Conservatory of Music under the supervision of Professor Liu Hao, a visiting scholar at the Hamburg University of Music and Theatre, and a member of SHCM's Key Laboratory of Artificial Intelligence Music Therapy. She graduated from the Music Engineering Department of Shanghai Conservatory of Music both for her bachelor's and master's degrees both as the top of her major. Xue’s pieces won numerous awards, including The top Prize of the 2024 OPUS ARTIS Paris International Composition Competition, the Honorable Mention of the 2024 Sound Chain International Electronic Music Composition Competition (the only Chinese winner among the 6 winners worldwide), the second place of the 2024 Paris International Electronic Music Composition Competition. As a Music AI researcher, she strives to explore the possibility of AI technology enabling music creation, including AI music generation model training and evaluation and AI timbre synthesis.",
       "role": "Ph.D. Candidate at Shanghai Conservatory of Music",
       "org": "Shanghai Conservatory of Music",
       "roleOrg": "Ph.D. Candidate at Shanghai Conservatory of Music",
@@ -4913,7 +4913,7 @@
       "bio": "",
       "role": "",
       "org": "",
-      "roleOrg": "CEO of Hangzhou Yusuan Technology / Author of Zino Application Development Framework",
+      "roleOrg": "CEO of Paris Yusuan Technology / Author of Zino Application Development Framework",
       "image": "/images/speakers/rustchinaconf/潘瓒.png",
       "tags": [
         "rustchinaconf"

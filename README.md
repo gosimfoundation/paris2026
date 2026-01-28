@@ -1,4 +1,4 @@
-# GOSIM Hangzhou 2025
+# GOSIM Paris 2026
 
 ## How to add Schedule
 1. Add data to JSON file at `src/json/ScheduleBilingual.json`
@@ -11,14 +11,14 @@
 3. Add sponsor images as PNG / JPG / SVG files to `public/images/sponsors/`
 
 Current build only has one category for sponsors. To add additional categories:
-1. Update JSON file with additional category values to the "categories" (required) and "partners" sections of JSON file. We have created a JSON file "sponsors-original-for-reference" which shows how to set it up. 
+1. Update JSON file with additional category values to the "categories" (required) and "partners" sections of JSON file. We have created a JSON file "sponsors-original-for-reference" which shows how to set it up.
 
 ## How to add Speakers
 1. Add data to JSON file at `src/json/Speakers.json`
 2. Add speaker file name, such as `speaker-name.png`
 3. Add speaker images as PNG / JPG files to `public/images/speakers/`
 
-NOTE: The speaker page gets generated from the Speakers.json file, so if you add speakers to Schedules.json file without adding them to the Speakers.json file, the link to the speak will give a 404. 
+NOTE: The speaker page gets generated from the Speakers.json file, so if you add speakers to Schedules.json file without adding them to the Speakers.json file, the link to the speak will give a 404.
 
 ## How to add FAQ
 1. Add data to JSON file at `src/json/FAQ.json`

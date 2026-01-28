@@ -28,24 +28,25 @@ import GosimShanghai from "images/homepage/gosim-shanghai.png"
 import GosimDelft from "images/homepage/gosim-delft.png"
 import GosimBeijing from "images/homepage/gosim-beijing.png"
 import GosimParis from "images/homepage/gosim-paris-min.png"
+import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 ---
 
 <Layout
-  title="GOSIM Hangzhou 2025"
-  description="GOSIM Hangzhou. Coming soon."
+  title="GOSIM Paris 2026"
+  description="GOSIM Paris - May 5-6, 2026"
   navDarkMode={true}
   navBackground="header-home"
   pageTransitionName="Home"
 >
   <Hero
-    date="September 13-14, 2025"
-    location="Hangzhou, China"
+    date="May 5-6, 2026"
+    location="Paris"
     links={[
-      {
-        text: "Event ended, thanks for attending",
-        link: "",
-        openInNewTab: false,
-      },
+      // {
+      //   text: "Coming Soon",
+      //   link: "",
+      //   openInNewTab: false,
+      // },
     ]}
   />
   <!-- <CardsSponsors
@@ -65,13 +66,13 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
       },
     ]} -->
 
-  <FeaturedSpeakers
+  <!-- <FeaturedSpeakers
     title="Featured Speakers"
     ctaButton={{
       text: "See all speakers",
       link: "/speakers/",
     }}
-  />
+  /> -->
 
   <div
     class="section-wrap"
@@ -82,13 +83,12 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
     <div class="intro-statistics-container" style="">
       <Intro>
         <h3 class="h3 light split-words animate-read">
-          Join us at GOSIM Hangzhou 2025, China's premier open-source
-          conference, where innovation, collaboration, and technological
-          breakthroughs converge.
+          Join us at GOSIM Paris 2026, the premier open-source conference, where
+          innovation, collaboration, and technological breakthroughs converge.
         </h3>
       </Intro>
 
-      <Statistics
+      <!-- <Statistics
         stats={[
           {
             title: "1500",
@@ -111,11 +111,11 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
             image: Placeholder3,
           },
         ]}
-      />
+      /> -->
     </div>
   </div>
 
-  <Tracks
+  <!-- <Tracks
     id="tracks"
     title="Cutting-Edge Tracks, Workshops & Co-Located Events"
     tracksTitle="5 Tracks"
@@ -170,7 +170,7 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
       },
       {
         title: "Flutter Meetup",
-        text: "Learn about Flutter and Nest: a toolkit for extending Flutter’s engine and framework without fracturing the ecosystem.",
+        text: "Learn about Flutter and Nest: a toolkit for extending Flutter's engine and framework without fracturing the ecosystem.",
       },
       {
         title: "Chitu First Meetup",
@@ -219,24 +219,16 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
       text: "See full schedule",
       link: "/schedule",
     }}
-  />
-
-  <VenueInfo
-    subtitle="Venue"
-    title={"Hangzhou Platinum Hanjue Hotel\n杭州白金汉爵酒店"}
-    location="Hangzhou, China - Where Innovation Meets History"
-    text="Experience GOSIM Hangzhou 2025 in a city renowned for its historical legacy and vibrant technological future. Hangzhou, a historical gem and modern tech hub, offers the perfect backdrop for inspiration, networking, and breakthrough innovations."
-    image="/images/homepage/hangzhoubg.png"
-  />
+  /> -->
 
   <Marquee />
 
-  <TextAndImageReverse
+  <!-- <TextAndImageReverse
     id="proposals"
     title="Call for Proposals - 8/18 Due"
-    text="We’re looking for bold ideas and fresh voices to shape the future. If you have insights on cutting-edge technology, emerging trends, or transformative practices, we want to hear from you. Submit a proposal to speak and join a lineup of innovators, thought leaders, and changemakers pushing the boundaries of what’s next."
+    text="We're looking for bold ideas and fresh voices to shape the future. If you have insights on cutting-edge technology, emerging trends, or transformative practices, we want to hear from you. Submit a proposal to speak and join a lineup of innovators, thought leaders, and changemakers pushing the boundaries of what's next."
     image={Proposals}
-    imageAlt="GOSIM Hangzhou"
+    imageAlt="GOSIM Paris"
     dataBgSection="light"
     dataThemeSection="light"
     ctaButton={{
@@ -257,19 +249,19 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
       },
       {
         date: "September 13, 2025",
-        title: "GOSIM Hangzhou kicks off!",
+        title: "GOSIM Paris kicks off!",
       },
       {
         date: "September 14, 2025",
-        title: "GOSIM Hangzhou concludes",
+        title: "GOSIM Paris concludes",
       },
     ]}
-  />
+  /> -->
 
-  <Cards
+  <!-- <Cards
     id="co-located-events"
     title="Co-located Events"
-    description="GOSIM Hangzhou 2025 is enriched by a set of co-located events that bring fresh perspectives and hands-on innovation. From RustGlobal & RustChinaConf to forums on AI, sustainability, and next-generation agents, these gatherings create space for deep learning, collaboration, and breakthrough ideas. Together, they extend the impact of the summit and connect global communities driving the future of technology."
+    description="GOSIM Paris 2026 is enriched by a set of co-located events that bring fresh perspectives and hands-on innovation. From RustGlobal & RustChinaConf to forums on AI, sustainability, and next-generation agents, these gatherings create space for deep learning, collaboration, and breakthrough ideas. Together, they extend the impact of the summit and connect global communities driving the future of technology."
     cards={[
       {
         title: "RustGlobal & RustChinaConf",
@@ -312,11 +304,14 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
         openInNewTab: false,
       },
     ]}
-  />
+  /> -->
+
+  <div class="section-divider"></div>
 
   <TextAndSponsors
+    id="sponsorship"
     title="Sponsorship Opportunities"
-    text="Reach thousands of people in your target audience by becoming a supporting organization at GOSIM Hangzhou 2025."
+    text="Reach thousands of people in your target audience by becoming a supporting organization at GOSIM Paris 2026."
     text2="*Previous GOSIM conference sponsors shown for illustration purposes only."
     ctaButton={{
       text: "Contact Us",
@@ -350,7 +345,20 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
     ]}
   />
 
-  <TextAndImage
+  <VenueInfo
+    subtitle="The Venue"
+    title="Station F"
+    location="5 Parv. Alan Turing, 75013 Paris, France"
+    text="Station F in Paris is the world's largest startup campus, housing over 1,000 startups and numerous tech programs. Renowned for fostering AI innovation, Station F hosts specialized accelerators and dedicated spaces that bring together cutting-edge AI startups, researchers, and corporate partners, fueling collaboration, groundbreaking projects, and rapid growth in artificial intelligence."
+    image="/images/homepage/station-f.jpg"
+    ctaButton={{
+      text: "Learn More",
+      link: "https://stationf.co/",
+      openInNewTab: true,
+    }}
+  />
+
+  <!-- <TextAndImage
     id="spotlight"
     title="GOSIM AI for Human Spotlight"
     text="Towards a Symbiotic Future of Ethical and Creative AI: What if AI wasn't just built to serve, but to co-create with us? AI for Human Spotlight is an international showcase for projects that explore how generative AI can foster empathy, shared creativity, and ethical coexistence."
@@ -363,11 +371,20 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
       link: "https://spotlight.gosim.org/",
       openInNewTab: true,
     }}
-  />
+  /> -->
 
   <PreviousEvents
+    id="projects"
     title="Previous Events"
     events={[
+      {
+        title: "GOSIM Hangzhou",
+        date: "September 13-14, 2025",
+        description:
+          "GOSIM Hangzhou brought together over 1500 attendees to explore AI, open source, and emerging technologies in the beautiful city of Hangzhou.",
+        image: GosimHangzhou,
+        link: "https://hangzhou2025.gosim.org/",
+      },
       {
         title: "GOSIM AI Paris",
         date: "May 6-7, 2025",
@@ -377,7 +394,7 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
         link: "https://paris2025.gosim.org/",
       },
       {
-        title: "GOSIM China (Beijing)",
+        title: "GOSIM Beijing",
         date: "October 17-18, 2024",
         description:
           "Attracted more than 1700 attendees, GOSIM Beijing is by far the largest GOSIM event ever in the historical capital of China.",
@@ -411,14 +428,14 @@ import GosimParis from "images/homepage/gosim-paris-min.png"
     ]}
   />
   <GetTickets
-    title="Grab your GOSIM Hangzhou ticket"
-    location="Hangzhou, China"
-    date="September 13-14, 2025"
-    text="Secure your spot today at GOSIM Hangzhou 2025. Collaborate with innovators, engage with industry pioneers, and be part of shaping the future of open-source technology."
-    ctaButton={{
-      text: "Event ended, thanks for attending",
+    title="Grab your GOSIM Paris ticket"
+    location="Paris"
+    date="May 5-6, 2026"
+    text="Secure your spot today at GOSIM Paris 2026. Collaborate with innovators, engage with industry pioneers, and be part of shaping the future of open-source technology."
+    {/* ctaButton={{
+      text: "Coming Soon",
       link: "",
       openInNewTab: false,
-    }}
+    }} */}
   />
 </Layout>

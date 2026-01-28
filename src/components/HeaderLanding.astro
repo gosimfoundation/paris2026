@@ -8,89 +8,17 @@ const hasNotificationBar = false // Set this to false when NotificationBar is re
 
 const links = [
   {
-    text: "Speakers",
-    link: "/speakers",
+    text: "Projects",
+    link: "/#projects",
   },
   {
-    text: "Tracks",
-    link: "/#tracks",
+    text: "Sponsorship",
+    link: "/#sponsorship",
   },
   {
-    text: "Schedule",
-    link: "/schedule",
+    text: "Venue",
+    link: "/#venue",
   },
-  {
-    text: "Sponsors",
-    link: "/sponsors",
-  },
-    {
-    text: "Speaker Slides",
-    link: "/speaker-slides",
-  },
-  {
-    text: "Co-located Events",
-    subLinks: [
-      {
-        text: "RustGlobal & RustChinaConf",
-        link: "https://rustcc.cn/2025conf/",
-        openInNewTab: false,
-      },
-      {
-        text: "AI Vision Forum",
-        link: "https://forum.gosim.org/en/",
-        openInNewTab: false,
-      },
-      {
-        text: "Open for SDG Conference",
-        link: "https://opensdg.gosim.org/en/",
-        openInNewTab: false,
-      },
-      {
-        text: "Super Agent Campathon",
-        link: "https://mofa.ai/super-agent-hackathon/",
-        openInNewTab: false,
-      },
-      {
-        text: "Code Alert Hackathon",
-        link: "https://hackathon.mofa.ai",
-        openInNewTab: false,
-      },
-      {
-        text: "Spotlight",
-        link: "/#spotlight",
-        openInNewTab: false,
-      },
-    ],
-  },
-  {
-    text: "Resources",
-    subLinks: [
-      {
-        text: "Venue",
-        link: "/venue",
-      },
-      {
-        text: "China Essentials",
-        link: "/china-essentials",
-      },
-      {
-        text: "General Travel Info",
-        link: "/general-travel",
-      },
-      {
-        text: "Chinese Visa",
-        link: "/chinese-visa",
-      },
-      {
-        text: "PPT Template",
-        link: "/template",
-      },
-    ],
-  },
-  // {
-  //   text: "FAQ",
-  //   link: "/faq/",
-  // },
 ]
 
 const slug = Astro.url.pathname
@@ -108,13 +36,13 @@ const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`
     )
   }
 
-  <div class="floating-ticket-button">
+  <!-- <div class="floating-ticket-button">
     <Button
-      text="Thank You"
+      text="Coming Soon"
       link=""
       class="btn primary btn-floating btn-hover"
     />
-  </div>
+  </div> -->
 
   <div class="mobile-nav">
     <div class="overlay overlay-dark" data-navigation-toggle="close"></div>
@@ -182,7 +110,7 @@ const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`
       </nav>
       <div class="box-row box-row-btn">
         <Button
-          text="Thank You"
+          text="Coming Soon"
           link=""
           class="btn primary xl btn-hover"
         />
@@ -309,7 +237,7 @@ const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`
           </div>
         </div>
         <Button
-          text="Thank You"
+          text="Coming Soon"
           link=""
           class="btn outline btn-hover"
         />

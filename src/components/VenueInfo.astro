@@ -29,7 +29,7 @@ const { subtitle, title, location, image, text, ctaButton } = Astro.props;
       <div class="col">
         <figure>
           <div class="overlay playpause">
-            <img src="/images/homepage/杭州白金汉爵酒店.jpg" alt="Venue" class="overlay" loading="lazy" />
+            <img src={image} alt={title} class="overlay" loading="lazy" />
           </div>
 
           {
@@ -71,10 +71,10 @@ const { subtitle, title, location, image, text, ctaButton } = Astro.props;
       <div class="col col-text styled-content">
 
         <div class="col-row map-container">
-          <OpenStreetMap 
-            latitude={30.172599} 
-            longitude={120.102973} 
-            zoom={11} 
+          <OpenStreetMap
+            latitude={48.8339}
+            longitude={2.3711}
+            zoom={15}
             markerTitle={title}
             height="350px"
           />
