@@ -46,13 +46,18 @@ const { date, location, links } = Astro.props
         <svg width="340" height="120" viewBox="0 0 85 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="gosimGradient" x1="17" y1="0" x2="65" y2="0" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" style="stop-color:#16A085" />
-              <stop offset="50%" style="stop-color:#F4D03F" />
-              <stop offset="100%" style="stop-color:#3498DB" />
-
+              <stop offset="0%" stop-color="#FFFFFF">
+                <animate attributeName="stop-color" values="#FFFFFF; #16A085" dur="2s" fill="freeze" begin="0.5s" />
+              </stop>
+              <stop offset="50%" stop-color="#FFFFFF">
+                <animate attributeName="stop-color" values="#FFFFFF; #F4D03F" dur="2s" fill="freeze" begin="0.5s" />
+              </stop>
+              <stop offset="100%" stop-color="#FFFFFF">
+                <animate attributeName="stop-color" values="#FFFFFF; #3498DB" dur="2s" fill="freeze" begin="0.5s" />
+              </stop>
             </linearGradient>
           </defs>
-          <!-- GOSIM (yellow to green gradient) -->
+          <!-- GOSIM with animated gradient (white → green/yellow/blue) -->
           <path d="M55.9551 13.0001H53.7383V2.94971H55.3159L59.1103 8.41691L62.8775 2.94971H64.4823V13.0001H62.2383V7.68251L59.5047 11.5857H58.6887L55.9551 7.68251V13.0001Z" fill="url(#gosimGradient)"/>
           <path d="M49.3555 13.0001V2.94971H51.6131V13.0001H49.3555Z" fill="url(#gosimGradient)"/>
           <path d="M44.0085 13.177C42.4173 13.177 40.9893 12.5378 40.0645 11.3546L41.2885 9.74982C42.0365 10.6338 42.9477 11.0826 44.0221 11.0826C44.7837 11.0826 45.3413 10.729 45.3413 10.1714C45.3413 9.80422 45.0557 9.49142 44.4709 9.23302L43.5732 8.90662C43.002 8.68902 42.5668 8.49862 42.2812 8.34902C41.2068 7.76422 40.6629 6.90742 40.6629 5.80582C40.6629 4.93542 40.9893 4.21462 41.6557 3.64342C42.3221 3.07222 43.1925 2.78662 44.2397 2.78662C45.5725 2.78662 46.7149 3.23542 47.6533 4.11942L46.5381 5.79222C45.9533 5.23462 45.0149 4.89462 44.2669 4.89462C43.5053 4.89462 43.0701 5.23462 43.0701 5.72422C43.0701 6.06422 43.3421 6.36342 43.8861 6.60822L44.8653 7.00262C45.3821 7.20662 45.7629 7.35622 46.0213 7.47862C47.2317 8.02262 47.8301 8.87942 47.8301 10.0354C47.8301 10.9466 47.4765 11.7082 46.7693 12.293C46.0757 12.8778 45.1509 13.177 44.0085 13.177Z" fill="url(#gosimGradient)"/>
