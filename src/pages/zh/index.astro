@@ -1,0 +1,419 @@
+---
+// Components
+import Layout from "layouts/LayoutLandingZh.astro";
+import Hero from "components/Hero.astro";
+import Intro from "components/Intro.astro";
+import Statistics from "components/Statistics.astro";
+import Tracks from "components/Tracks.astro";
+import TextAndImage from "components/TextAndImage.astro";
+import PreviousEvents from "components/PreviousEvents.astro";
+import GetTickets from "components/GetTickets.astro";
+import VenueInfo from "components/VenueInfo.astro";
+import TextAndSponsors from "components/TextAndSponsors.astro";
+import TextAndImageReverse from "components/TextAndImageReverse.astro";
+import FeaturedSpeakers from "components/FeaturedSpeakersZh.astro";
+import Timeline from "components/Timeline.astro";
+import Marquee from "components/MarqueeZh.astro";
+import Cards from "components/Cards.astro";
+import CardsSponsors from "components/CardsSponsors.astro";
+
+// Images
+import Placeholder1 from "images/homepage/stats1.png";
+import Placeholder2 from "images/homepage/stats2.jpg";
+import Placeholder3 from "images/homepage/stats3.png";
+import SpotlightBlue from "images/homepage/spotlight-hg.svg";
+import Proposals from "images/homepage/hangzhou-proposals-min.jpg";
+
+import GosimShanghai from "images/homepage/gosim-shanghai.png";
+import GosimDelft from "images/homepage/gosim-delft.png";
+import GosimBeijing from "images/homepage/gosim-beijing.png";
+import GosimParis from "images/homepage/gosim-paris-min.png";
+---
+
+<Layout
+  title="GOSIM Hangzhou 2025"
+  description="GOSIM Hangzhou 2025。即将到来。"
+  navDarkMode={true}
+  navBackground="header-home"
+  pageTransitionName="Home"
+>
+  <Hero
+    date="2025年9月13-14日"
+    location="浙江 杭州"
+    links={[
+      {
+        text: "活动已结束，感谢参与",
+        link: "",
+        openInNewTab: false,
+      },
+    ]}
+  />
+
+  <!-- <CardsSponsors
+    title="由以下机构赞助"
+    sponsors={[
+      {
+        name: "1ms.ai",
+        image: "/images/sponsors/1msai.png",
+      },
+      {
+        name: "Huawei",
+        image: "/images/sponsors/huawei.png",
+      },
+      {
+        name: "CSDN",
+        image: "/images/sponsors/csdn.png",
+      },
+    ]}
+  /> -->
+  <FeaturedSpeakers
+    title="特邀演讲嘉宾"
+    ctaButton={{
+      text: "更多演讲嘉宾",
+      link: "/zh/speakers/",
+    }}
+  />
+
+  <div
+    class="section-wrap"
+    id="intro"
+    data-theme-section="light"
+    data-bg-section="lightgray"
+  >
+    <div class="intro-statistics-container" style="">
+      <Intro>
+        <h3 class="h3 light split-words animate-read">
+          加入我们的GOSIM Hangzhou
+          2025，中国首屈一指的开源会议，这里是创新、协作和技术突破的汇聚之地。
+        </h3>
+      </Intro>
+
+      <Statistics
+        stats={[
+          {
+            title: "1500",
+            subtitle: "与会者",
+            image: Placeholder1,
+            imageAlt: "",
+            hasPlus: true,
+          },
+          {
+            title: "100",
+            subtitle: "演讲嘉宾",
+            imageAlt: "",
+            image: Placeholder2,
+            hasPlus: true,
+          },
+          {
+            title: "2",
+            subtitle: "精彩日程",
+            imageAlt: "",
+            image: Placeholder3,
+          },
+        ]}
+      />
+    </div>
+  </div>
+
+  <Tracks
+    id="tracks"
+    title="前沿主题、工作坊、同期活动"
+    tracksTitle="五大 主题"
+    workshopsTitle="十四场 工作坊"
+    coLocatedEventsTitle="三场 同期活动"
+    tracks={[
+      {
+        title: "AI 模型 × 基础设施",
+        text: "基础模型、边缘推理、生成式AI、AI训练工具等。",
+      },
+      {
+        title: "具身智能",
+        text: "在现实世界中应用AI，从人形机器人到自主系统。",
+      },
+      {
+        title: "智能体互联网",
+        text: "去中心化应用、身份识别、增强隐私技术和协作平台。",
+      },
+      {
+        title: "应用 × 智能体",
+        text: "跨平台和AI辅助应用开发、Rust GUI应用、WebAssembly和超级应用生态系统。",
+      },
+      {
+        title: "下一代 AI",
+        text: "AI赋能用例、AI设备、人机交互界面、AI平台和AI治理。",
+      },
+    ]}
+    workshops={[
+      {
+        title: "仓颉 工作坊",
+        text: "亲手实践仓颉语言模型，从训练技巧到实际应用部署。",
+      },
+      {
+        title: "Dora 工作坊",
+        text: "使用开源Dora框架为自主系统开发和部署机器人应用程序。",
+      },
+      {
+        title: "SGLang 工作坊",
+        text: "使用SGLang掌握高效且可控的大语言模型推理与交互。",
+      },
+      {
+        title: "边缘 AI 工作坊",
+        text: "学习如何在资源受限的边缘设备上优化和部署强大的AI模型，以实现实时推理。",
+      },
+      {
+        title: "未来网络 工作坊",
+        text: "探索下一代网络，重点关注去中心化身份、智能体AI和隐私优先技术。",
+      },
+      {
+        title: "CANN 工作坊",
+        text: "深入了解华为的神经网络计算架构（CANN），构建高性能 AI 解决方案。",
+      },
+      {
+        title: "Flutter 全球开发者研讨会",
+        text: "使用单一代码库，为移动、Web 和桌面构建美观、本地编译的应用程序。",
+      },
+      {
+        title: "开源赤兔项目首次 Meetup",
+        text: "参加赤兔项目的首次社区聚会，共同探讨其未来和发展。",
+      },
+      {
+        title: "AI 教育工作坊",
+        text: "探索人工智能如何变革教育，从个性化学习到管理工具。",
+      },
+      {
+        title: "RN 技术沙龙",
+        text: "利用您的 React 技能，使用 React Native 构建原生的 iOS 和 Android 应用程序。",
+      },
+      {
+        title: "Makepad 工作坊",
+        text: "学习使用 Makepad 在 Rust 中为 Web 和桌面应用程序构建快速、原生体验的 UI。",
+      },
+      {
+        title: "嵌入式 Rust 与 AI 工作坊",
+        text: "利用 Rust 的强大功能和安全性，探索嵌入式系统与人工智能的交集。",
+      },
+      {
+        title: "Solana for Rustaceans 工作坊",
+        text: "使用 Rust 在 Solana 区块链上构建高性能的去中心化应用程序。",
+      },
+      {
+        title: "开源出海工作坊",
+        text: "探索开源项目的全球化策略，了解如何有效地将您的项目推广到国际市场。",
+      },
+    ]}
+    coLocatedEvents={[
+      {
+        title: "Open for SDG 开放共创 · 可持续发展大会",
+        text: "一场汇聚全球开源、人工智能及政策领域专家的盛会，旨在通过开放协作与AI技术，共同为联合国可持续发展目标（SDG）的实现加速。",
+      },
+      {
+        title: "AI Vision Forum 人工智能愿景论坛",
+        text: "一场汇聚全球思想家与实践者的高端闭门论坛，旨在探索人工智能如何与人类价值共生，确保AI发展始终以人为本。",
+      },
+      {
+        title: "RustGlobal & RustChinaConf",
+        text: "RustGlobal是Rust基金会主办的首次致力于在全球领导力环境中应用Rust的盛会。",
+      },
+    ]}
+    ctaButton={{
+      text: "查看全部议程",
+      link: "/zh/schedule",
+    }}
+  />
+
+  <VenueInfo
+    subtitle="会议地点"
+    title={"杭州白金汉爵酒店"}
+    location="浙江 杭州 - 创新与历史交汇之地"
+    text="在杭州体验GOSIM 2025，这座城市以其历史遗产和充满活力的科技未来而闻名。杭州，一颗历史瑰宝和现代科技中心，为灵感、交流和突破性创新提供了完美的背景。"
+    image="/images/homepage/hangzhoubg.png"
+  />
+
+  <Marquee />
+
+  <TextAndImageReverse
+    id="proposals"
+    title="提案征集 Call For Proposals - 8月18日 截止"
+    text="我们正在寻找大胆的想法和新鲜的声音来塑造未来。如果您对前沿技术、新兴趋势或变革性实践有见解，我们希望听到您的声音。提交演讲提案，加入由推动边界的创新者、思想领袖和变革者组成的阵容。"
+    image={Proposals}
+    imageAlt="GOSIM Hangzhou 2025"
+    dataBgSection="light"
+    dataThemeSection="light"
+    ctaButton={{
+      text: "立即申请",
+      link: "https://cfp.gosim.org/",
+      openInNewTab: true,
+    }}
+  />
+  <Timeline
+    events={[
+      {
+        date: "2025年5月18日",
+        title: "提案申请开放",
+      },
+      {
+        date: "2025年8月18日",
+        title: "提案申请截止",
+      },
+      {
+        date: "2025年9月13日",
+        title: "GOSIM Hangzhou开幕！",
+      },
+      {
+        date: "2025年9月14日",
+        title: "GOSIM Hangzhou闭幕",
+      },
+    ]}
+  />
+
+  <Cards
+    id="co-located-events"
+    title="同期活动"
+    description="GOSIM Hangzhou 2025 期间将举办以下同期活动。"
+    cards={[
+      {
+        title: "RustGlobal & RustChinaConf",
+        description:
+          "RustGlobal是Rust基金会主办的首次致力于在全球领导力环境中应用Rust的盛会。",
+        image: [
+          "/images/homepage/rust-global-logo.svg",
+          "/images/homepage/RustChinaConf-hangzhou-black.svg",
+        ],
+        link: "https://rustcc.cn/2025conf/",
+        openInNewTab: false,
+      },
+      {
+        title: "AI Vision Forum 人工智能愿景论坛",
+        description:
+          "一场汇聚全球思想家与实践者的高端闭门论坛，旨在探索人工智能如何与人类价值共生，确保AI发展始终以人为本。",
+        image: "/images/homepage/co-located-ai-vision.png",
+        link: "https://forum.gosim.org/en/",
+        openInNewTab: false,
+      },
+      {
+        title: "Open for SDG 开放共创 · 可持续发展大会",
+        description:
+          "一场汇聚全球开源、人工智能及政策领域专家的盛会，旨在通过开放协作与AI技术，共同为联合国可持续发展目标（SDG）的实现加速。",
+        image: "/images/homepage/co-located-open-sdg.jpg",
+        link: "https://opensdg.gosim.org/en/",
+        openInNewTab: false,
+      },
+      {
+        title: "超级智能体 Campathon",
+        description:
+          "一场融合了技术训练营与编程马拉松的开发者大赛，参赛者将学习并亲手构建一个富有个性与情感的“超级智能体”。",
+        image: "/images/homepage/co-located-super-agent.png",
+        link: "https://mofa.ai/super-agent-hackathon/",
+        openInNewTab: false,
+      },
+      {
+        title: "Code Alert黑客松大赛",
+        description:
+          "一场基于经典游戏“红色警戒”的AI黑客松。参赛者将使用自然语言指挥AI智能体，通过在线挑战和现场决赛进行对战。",
+        image: "/images/homepage/co-located-code-alert.png",
+        link: "https://hackathon.mofa.ai",
+        openInNewTab: false,
+      },
+    ]}
+  />
+
+  <TextAndSponsors
+    title="赞助机会"
+    text="通过成为GOSIM Hangzhou 2025的合作伙伴，接触到数千名目标受众。"
+    text2="*仅展示往届GOSIM会议赞助商，仅供参考。"
+    ctaButton={{
+      text: "联系我们",
+      link: "mailto:sponsor@gosim.org",
+    }}
+    logos={[
+      {
+        image: "openwallet.png",
+        imageAlt: "OpenWallet logo",
+      },
+      {
+        image: "ajtis.jpg",
+        imageAlt: "AJTIS logo",
+      },
+      {
+        image: "aifc.png",
+        imageAlt: "AIFC logo",
+      },
+      {
+        image: "lf-gen-ai.png",
+        imageAlt: "Linux Foudnation logo",
+      },
+      {
+        image: "eclipse-foundation.png",
+        imageAlt: "Eclipse Foundation logo",
+      },
+      {
+        image: "osi.png",
+        imageAlt: "Open Source Initiative logo",
+      },
+    ]}
+  />
+
+  <TextAndImage
+    id="spotlight"
+    title="GOSIM AI for Human Spotlight"
+    text="迈向道德与创意AI的共生未来：如果AI不仅仅是为了服务，而是与我们共同创造呢？AI for Human Spotlight是一个国际展示平台，展示探索生成式AI如何培养同理心、共享创造力和道德共存的项目。"
+    image={SpotlightBlue}
+    imageAlt="Gosim Spotlight badge"
+    dataBgSection="light"
+    dataThemeSection="light"
+    ctaButton={{
+      text: "立即申请或提名 - 8月18日 截止",
+      link: "https://spotlight.gosim.org",
+      openInNewTab: true,
+    }}
+  />
+
+  <PreviousEvents
+    title="往届活动"
+    events={[
+      {
+        title: "GOSIM AI Paris（法国巴黎）",
+        date: "2025年5月6-7日",
+        description:
+          "超过1000名与会者和行业精英在光之城参加了为期两天的GOSIM AI Paris活动，深入探讨了AI的多方面发展。",
+        image: GosimParis,
+        link: "https://paris2025.gosim.org/",
+      },
+      {
+        title: "GOSIM China（中国北京）",
+        date: "2024年10月17-18日",
+        description:
+          "吸引了超过1700名与会者，GOSIM China是迄今为止在中国历史悠久的首都举办的规模最大的GOSIM活动。",
+        image: GosimBeijing,
+        link: "https://china2024.gosim.org/",
+      },
+      {
+        title: "GOSIM Europe（荷兰代尔夫特）",
+        date: "2024年6月6-7日",
+        description:
+          "GOSIM Europe是一个为期两天、设有3个主题的活动，吸引了来自荷兰及世界各地的1200名与会者。",
+        image: GosimDelft,
+        link: "https://europe2024.gosim.org/",
+      },
+      {
+        title: "GOSIM Conference（中国上海）",
+        date: "2023年9月23-24日",
+        description:
+          "一切的起点，GOSIM Conference和Workshop专注于倡导和增强开源贡献。",
+        image: GosimShanghai,
+        link: "https://conference2023.gosim.org/",
+      },
+    ]}
+  />
+  <GetTickets
+    title="加入开源革命！"
+    location="浙江 杭州"
+    date="2025年9月13-14日"
+    text="立即确保您在GOSIM Hangzhou 2025的席位。与创新者合作，与行业先驱交流，成为塑造开源技术未来的一部分。"
+    ctaButton={{
+      text: "立即购票",
+      link: "",
+      openInNewTab: false,
+    }}
+  />
+</Layout>

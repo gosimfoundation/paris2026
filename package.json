@@ -1,0 +1,33 @@
+{
+  "name": "hangzhou-2025",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "validate-schedule": "node scripts/validate-schedule.js",
+    "validate-schedule:bilingual": "node scripts/validate-schedule.js src/json/ScheduleBilingual.json",
+    "test-error-handling": "node scripts/test-error-handling.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "prebuild": "npm run validate-schedule:bilingual && npm run test"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.12.1",
+    "marked": "^16.2.1",
+    "sass": "^1.85.1",
+    "wordcloud": "^1.2.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.8.0",
+    "@vitest/ui": "^3.2.4",
+    "happy-dom": "^20.0.10",
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.4"
+  }
+}

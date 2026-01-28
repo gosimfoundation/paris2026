@@ -1,0 +1,355 @@
+{
+  "categories": [
+    { "name": "All" },
+    { "name": "主办/承办" },
+    { "name": "首席赞助" },
+    { "name": "钻石赞助" },
+    { "name": "金牌赞助" },
+    { "name": "银牌赞助" },
+    { "name": "支持伙伴" },
+    { "name": "讲师附属组织（部分）" }
+  ],
+  "partners": [
+    {
+      "category": "主办/承办",
+      "image": "gosim.png"
+    },
+    {
+      "category": "主办/承办",
+      "image": "csdn.png"
+    },
+    {
+      "category": "首席赞助",
+      "image": "huawei.png"
+    },
+    {
+      "category": "首席赞助",
+      "image": "华为开源.png"
+    },
+    {
+      "category": "钻石赞助",
+      "image": "蚂蚁开源.png"
+    },
+    {
+      "category": "钻石赞助",
+      "image": "清程极智.png"
+    },
+
+
+
+    {
+      "category": "金牌赞助",
+      "image": "GitCode.png"
+    },
+
+    {
+      "category": "金牌赞助",
+      "image": "intel.png"
+    },
+    {
+      "category": "金牌赞助",
+      "image": "GMK.png"
+    },
+    {
+      "category": "金牌赞助",
+      "image": "鸿蒙生态服务.png"
+    },
+    {
+      "category": "金牌赞助",
+      "image": "benq.png"
+    },
+    {
+      "category": "金牌赞助",
+      "image": "傲意科技.png"
+    },
+
+    {
+      "category": "金牌赞助",
+      "image": "康迪.png"
+    },
+    {
+      "category": "金牌赞助",
+      "image": "荣天.png"
+    },
+    {
+      "category": "银牌赞助",
+      "image": "模优优.png"
+    },
+    {
+      "category": "银牌赞助",
+      "image": "khronos.png"
+    },
+    {
+      "category": "银牌赞助",
+      "image": "清华大学出版社.png"
+    },
+    {
+      "category": "银牌赞助",
+      "image": "异步社区.png"
+    },
+
+
+
+
+
+    {
+      "category": "支持伙伴",
+      "image": "lf-research-color.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "lf-gen-ai.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "eclipse-foundation.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "rust-foundation.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "un-odet.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "baai.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "second-state.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "aifc.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "ajtis.jpg"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "木兰开源社区.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "wasmedge.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "奇点智能研究院.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "sgl.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "copu.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "开源社.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "睿类问特.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "rust-china-conf.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "rust-cc.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "rust-global.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "broadview.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "非凸科技.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "greptimedb.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "linera.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "openbuild.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "solana.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "tintin.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "tuling.jpg"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "ruby.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "xion.png"
+    },
+    {
+      "category": "支持伙伴",
+      "image": "pytorch.png"
+    },
+            {
+      "category": "支持伙伴",
+      "image": "ai-shifu.png"
+    },
+    
+
+
+
+
+
+
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "nvidia.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "google-cloud.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "bytedance.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "huawei.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "aliyun.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "intel.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "蚂蚁集团.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "redhat.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "huggingface.png"
+    },    {
+      "category": "讲师附属组织（部分）",
+      "image": "unitree.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "linux-foundation.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "pytorch.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "opencv.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "eclipse-foundation.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "un-odet.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "qwen.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "tsinghua-university.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "peking-university.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "baai.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "meituan.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "shanghai-jiaotong-university.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "university-of-oxford.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "neo4j.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "futurewei.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "360.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "zhipuai.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "cesi.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "中国电信.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "dora.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "vllm.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "jina-ai.png"
+    },
+    {
+      "category": "讲师附属组织（部分）",
+      "image": "bielik-ai.png"
+    }
+  ]
+}
+

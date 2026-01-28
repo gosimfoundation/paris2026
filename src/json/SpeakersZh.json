@@ -1,0 +1,5577 @@
+{
+  "categories": [
+    {
+      "name": "All",
+      "id": "all"
+    },
+    {
+      "name": "全体大会与分会场",
+      "group": true
+    },
+    {
+      "name": "GOSIM 全体大会",
+      "id": "plenary"
+    },
+    {
+      "name": "AI 模型 × 基础设施",
+      "id": "ai-models-infra"
+    },
+    {
+      "name": "具身智能",
+      "id": "embodied-ai"
+    },
+    {
+      "name": "智能体互联网",
+      "id": "agentic-web"
+    },
+    {
+      "name": "应用 × 智能体",
+      "id": "apps-agents"
+    },
+    {
+      "name": "下一代 AI",
+      "id": "ai-next"
+    },
+    {
+      "name": "工作坊",
+      "group": true
+    },
+    {
+      "name": "SGLang 工作坊",
+      "id": "ws-sglang"
+    },
+    {
+      "name": "仓颉工作坊",
+      "id": "ws-cangjie"
+    },
+    {
+      "name": "Dora 工作坊",
+      "id": "ws-dora"
+    },
+    {
+      "name": "未来Web 技术论坛",
+      "id": "ws-future-web"
+    },
+    {
+      "name": "端侧 AI 推理工作坊",
+      "id": "ws-edge-ai"
+    },
+    {
+      "name": "CANN 工作坊",
+      "id": "ws-cann"
+    },
+    {
+      "name": "Flutter 全球开发者研讨会",
+      "id": "ws-flutter"
+    },
+    {
+      "name": "开源赤兔项目首次 Meetup",
+      "id": "ws-chitu"
+    },
+    {
+      "name": "AI 教育工作坊",
+      "id": "ws-ai-education"
+    },
+    {
+      "name": "RN 技术沙龙",
+      "id": "ws-rn"
+    },
+    {
+      "name": "Makepad 工作坊",
+      "id": "ws-makepad"
+    },
+    {
+      "name": "嵌入式 Rust 与 AI 工作坊",
+      "id": "ws-embedded-rust"
+    },
+    {
+      "name": "Solana for Rustaceans 工作坊",
+      "id": "ws-solana"
+    },
+    {
+      "name": "开源出海工作坊",
+      "id": "ws-globalization"
+    },
+    {
+      "name": "同期活动",
+      "group": true
+    },
+    {
+      "name": "Open for SDG 开放共创 · 可持续发展大会",
+      "id": "open-for-sdg"
+    },
+    {
+      "name": "AI Vision Forum 人工智能愿景论坛",
+      "id": "forum-aivision"
+    },
+    {
+      "name": "RustChinaConf & Rust Global China",
+      "id": "rustchinaconf"
+    }
+  ],
+  "speakers": [
+    {
+      "id": "mehdi-snene",
+      "name": "Mehdi Snene",
+      "bio": "Mehdi Snene博士是联合国秘书长数字与新兴技术特使的高级顾问，也是联合国数字与新兴技术办公室的成员，负责领导人工智能能力建设、数字公共基础设施和新兴技术的全球倡议。他曾指导过欧洲洛桑联邦理工学院（EPFL）耗资10亿欧元的“人类大脑计划”，推动神经形态计算和大脑模拟的发展。他还曾担任HealthAI的首席人工智能官，负责监督人工智能在医疗保健领域的战略发展和部署。他曾是日内瓦大学的副教授，创立并领导了一个专注于人工智能、神经科学和高性能计算的研究实验室。",
+      "role": "首席人工智能官，联合国秘书长数字与新兴技术特使高级顾问",
+      "org": "联合国数字与新兴技术办公室",
+      "roleOrg": "首席人工智能官，联合国数字基础设施与新兴技术",
+      "image": "/images/speakers/mehdi-snene.png",
+      "tags": [
+        "plenary",
+        "open-for-sdg",
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "mohamed-farahat",
+      "name": "Mohamed Farahat",
+      "bio": "Mohamed Farahat是一名埃及的法律从业者、培训师、政治和法律研究员。Farahat在埃及难民权利基金会（EFRR）担任项目总监，并在英国约克大学担任法律研究员。他曾是非洲和中东难民援助组织的诉诸司法团队负责人，也曾在国际法学家委员会（ICJ）担任法律研究员。作为顾问，他曾为HUMENA人权与公民参与组织担任法律分析师，为国际移民组织（IOM-埃及）担任法律顾问，参与有关移民道德招聘、人口贩运、走私、劳动和移民政策制度的项目，为联合国儿童基金会（UNICEF）担任儿童司法顾问，并在开罗美国大学（AUC）移民与难民研究中心担任法律专家。他曾是国际信息通信技术政策促进东非和南部非洲组织（CIPESA）的研究员，后担任数字权利顾问。Farahat先生曾作为研究员和分析师，参与撰写了关于非洲互联网法律监督和数字权利状况的报告（发展研究所-IDS），并与非洲数字权利中心（ADRH）合作领导了关于非洲数据保护的项目，还与Paradigm Initiative合作撰写了关于非洲数字权利的报告。他是埃及国际关怀组织（CARE-International）的法律顾问，负责（基于性别的暴力）问题。Farahat先生是“变革创新”中东和北非（MENA）中心的董事会成员，北非互联网治理论坛（NAIGF）的管理咨询组成员（MAG），非洲数字权利网络（ADRN）成员，以及中东和北非无国籍网络的指导委员会成员和北非协调员。作为一名法律和政治研究员，Farahat发表了20篇关于国际难民法、无国籍问题、政治、民主、议会研究、数字权利和互联网治理的文章。Farahat先生在人权领域拥有丰富的经验，包括诉诸司法、难民权利、移民和工人权利、无国籍和国籍权、移民拘留、驱逐出境、儿童刑事司法、立法改革、司法独立、言论自由、（基于性别的暴力）、数字权利、互联网监控、网络中断、互联网接入和包容性、假新闻、数据保护和隐私权。在学术方面，Farahat先生拥有开罗大学的法学学位以及国际法、人权与公民社会、国际谈判、非洲研究-政治方向、议会研究等多个研究生文凭。",
+      "role": "",
+      "org": "",
+      "roleOrg": "前联合国秘书长高级别咨询机构成员",
+      "image": "/images/speakers/mohamed-farahat.jpg",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "nooman-fehri",
+      "name": "Nooman Fehri",
+      "bio": "突尼斯前数字与技术部长。",
+      "role": "前部长",
+      "org": "突尼斯政府",
+      "roleOrg": "突尼斯前数字与技术部长",
+      "image": "/images/speakers/nooman-fehri.jpg",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "https://acetforafrica.org/our-people/noomane-fehri/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "bill-ren",
+      "name": "任旭东",
+      "bio": "华为首席开源联络官、CNCF基金会董事",
+      "role": "首席开源联络官",
+      "org": "华为",
+      "roleOrg": "华为首席开源联络官、CNCF基金会董事",
+      "image": "/images/speakers/bill-ren.jpg",
+      "tags": [
+        "forum-aivision",
+        "plenary"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "tao-jiang",
+      "name": "蒋涛",
+      "bio": "蒋涛 - 创始人&董事长（圆桌讨论成员）, CSDN",
+      "role": "创始人&董事长（圆桌讨论成员）",
+      "org": "CSDN",
+      "roleOrg": "创始人&董事长（圆桌讨论成员）, CSDN",
+      "image": "/images/speakers/tao-jiang.jpg",
+      "tags": [
+        "forum-aivision",
+        "plenary"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "michael-yuan",
+      "name": "Michael Yuan",
+      "bio": "Michael Yuan - SecondState 创始人",
+      "role": "SecondState 创始人",
+      "org": "",
+      "roleOrg": "SecondState 创始人",
+      "image": "/images/speakers/michael-yuan.jpeg",
+      "tags": [
+        "plenary",
+        "rustchinaconf",
+        "ws-globalization",
+        "ws-embedded-rust"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-shi-zhong-zhi",
+      "name": "史忠植",
+      "bio": "人工智能和智能科学专家。中国科学院计算技术研究所研究员、博士生导师。国际信息研究学会（IAIS）院士，中国人工智能学会（CAAI）会士，中国计算机学会（CCF）会士。长期从事智能科学、人工智能等领域的研究。曾负责完成多项国家973、863和国家自然科学基金重点项目。曾获国家及部委级科技奖6项。2013年获CAAI颁发的吴文俊人工智能科学技术成就奖。出版著作20余部，发表学术论文500余篇。曾任CCF秘书长、CAAI副理事长、IFIP人工智能、机器学习与数据挖掘工作组主席。",
+      "role": "院士",
+      "org": "国际信息研究学会",
+      "roleOrg": "院士，国际信息研究学会",
+      "image": "/images/speakers/speaker-shi-zhong-zhi.png",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "minghui-zhou",
+      "name": "周明辉",
+      "bio": "北京大学终身正教授、副院长。曾任联合国人工智能高级别咨询机构（HLAB on AI）成员，联合国教科文组织法律专家。",
+      "role": "教授兼副院长",
+      "org": "北京大学",
+      "roleOrg": "北京大学终身正教授、副院长",
+      "image": "/images/speakers/minghui-zhou.jpg",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "tiejun-huang",
+      "name": "黄铁军",
+      "bio": "北京大学教授，北京智源人工智能研究院（BAAI）理事长。",
+      "role": "教授兼理事长",
+      "org": "北京大学 / 北京智源人工智能研究院",
+      "roleOrg": "北京大学教授，北京智源人工智能研究院理事长",
+      "image": "/images/speakers/tiejun-huang.jpg",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "su-tong-hua",
+      "name": "苏统华",
+      "bio": "苏统华 - 哈尔滨工业大学软件学院副院长",
+      "role": "哈尔滨工业大学软件学院副院长",
+      "org": "",
+      "roleOrg": "哈尔滨工业大学软件学院副院长",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-cann"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-zhang-yun-fei",
+      "name": "张云飞",
+      "bio": "中国电信智慧城市研究院副院长，中国电信首席专家，教授级高工，国家人才计划特聘专家，交通运输部中青年领军人才，国际道路交通技术领军人才，5G产业联盟副理事长，中国通信标准化协会物联网委员会副主席。曾任腾讯未来网络实验室主任，腾讯智慧交通首席科学家，提出泛V2X技术体系与实践，在业界产生广泛影响。创立并担任IETF P2P流媒体协议（PPSP）工作组主席，在IETF、ITU-T等组织发布国际标准10余项。获得中国优秀工程师青年奖、国家专利银奖、国家标准奖、上海市技术发明一等奖、上海市科技进步一等奖、深圳市科技进步一等奖、金桥奖个人奖、中国车联网杰出人物奖、IEEE ITSC智慧交通和车路协同双料冠军等省部级以上奖项20余项。",
+      "role": "中国电信智慧城市研究院副院长，中国电信首席专家",
+      "org": "中国电信数字智能科技公司",
+      "roleOrg": "中国电信智慧城市研究院副院长，中国电信首席专家, 中国电信数字智能科技公司",
+      "image": "/images/speakers/speaker-zhang-yun-fei.jpeg",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "hu-he",
+      "name": "何虎",
+      "bio": "何虎 - 清华大学集成电路学院副教授",
+      "role": "清华大学集成电路学院副教授",
+      "org": "",
+      "roleOrg": "清华大学集成电路学院副教授",
+      "image": "/images/speakers/hu-he.jpg",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-di-ji-dong",
+      "name": "翟季冬",
+      "bio": "翟季冬，清华大学计算机系长聘教授、博士生导师。国家杰出青年科学基金获得者，清华大学计算机系高性能计算研究所所长。主要研究方向为并行计算、程序语言与编译器、性能评测。担任清华大学学生超算团队教练，指导团队获得15次世界冠军。",
+      "role": "清华大学计算机系长聘教授；高性能计算研究所所长",
+      "org": "清华大学",
+      "roleOrg": "清华大学计算机系长聘教授；高性能计算研究所所长, 清华大学",
+      "image": "/images/speakers/speaker-di-ji-dong.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "kai-du",
+      "name": "杜凯",
+      "bio": "Eclipse基金会董事会成员，清华大学心理与认知科学系教授。",
+      "role": "教授",
+      "org": "清华大学",
+      "roleOrg": "清华大学教授",
+      "image": "/images/speakers/kai-du.jpg",
+      "tags": [
+        "ai-next",
+        "forum-aivision",
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xu-han",
+      "name": "韩旭",
+      "bio": "韩旭 - 清华大学教授",
+      "role": "清华大学教授",
+      "org": "",
+      "roleOrg": "清华大学教授",
+      "image": "/images/speakers/xu-han.jpg",
+      "tags": [
+        "ws-cann"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhigang-sun",
+      "name": "孙志岗",
+      "bio": "孙志岗 - AI师傅创始人&CEO，原哈工大计算机副教授",
+      "role": "AI师傅创始人&CEO，原哈工大计算机副教授",
+      "org": "",
+      "roleOrg": "AI师傅创始人&CEO，原哈工大计算机副教授",
+      "image": "/images/speakers/zhigang-sun.jpg",
+      "tags": [
+        "agentic-web",
+        "forum-aivision",
+        "ws-ai-education"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "matt-white",
+      "name": "Matt White",
+      "bio": "Pytorch基金会执行董事。",
+      "role": "执行董事",
+      "org": "Pytorch基金会",
+      "roleOrg": "Pytorch基金会执行董事",
+      "image": "/images/speakers/matt-white.png",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "bryan-che",
+      "name": "Bryan Che",
+      "bio": "Eclipse基金会和LF CNCF董事会成员",
+      "role": "董事会成员",
+      "org": "Eclipse基金会和LF CNCF",
+      "roleOrg": "Eclipse基金会和LF CNCF董事会成员",
+      "image": "/images/speakers/bryan-che.jpg",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "carlos-correia",
+      "name": "Carlos Correia",
+      "bio": "Carlos Correia - 高级IT官员，数字基础（圆桌讨论成员）, 联合国国际计算中心 (UNICC)",
+      "role": "高级IT官员，数字基础（圆桌讨论成员）",
+      "org": "联合国国际计算中心 (UNICC)",
+      "roleOrg": "高级IT官员，数字基础（圆桌讨论成员）, 联合国国际计算中心 (UNICC)",
+      "image": "/images/speakers/carlos-correia.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "cailean-osborne",
+      "name": "Dr. Cailean Osborne",
+      "bio": "Dr. Cailean Osborne - 高级研究员（圆桌讨论成员）, Linux Foundation Research",
+      "role": "高级研究员（圆桌讨论成员）",
+      "org": "Linux Foundation Research",
+      "roleOrg": "高级研究员（圆桌讨论成员）, Linux Foundation Research",
+      "image": "/images/speakers/cailean-osborne.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "florent-zara",
+      "name": "Florent Zara",
+      "bio": "Florent Zara - 开源AI倡导者（主持人）, Eclipse Foundation",
+      "role": "开源AI倡导者（主持人）",
+      "org": "Eclipse Foundation",
+      "roleOrg": "开源AI倡导者（主持人）, Eclipse Foundation",
+      "image": "/images/speakers/florent-zara.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "nicolas-flores-herr",
+      "name": "Nicolas Flores Herr",
+      "bio": "弗劳恩霍夫智能分析和信息系统研究所（IAIS）基础模型与生成式人工智能系统团队负责人。",
+      "role": "团队负责人",
+      "org": "弗劳恩霍夫智能分析和信息系统研究所",
+      "roleOrg": "IAIS 基础模型与生成式人工智能系统团队负责人",
+      "image": "/images/speakers/nicolas-flores-herr.jpg",
+      "tags": [
+        "ai-next",
+        "forum-aivision",
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "ming-fu",
+      "name": "付明",
+      "bio": "付明 - 华为菲尔兹实验室主任",
+      "role": "华为菲尔兹实验室主任",
+      "org": "",
+      "roleOrg": "华为菲尔兹实验室主任",
+      "image": "/images/speakers/ming-fu.jpg",
+      "tags": [
+        "ws-future-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "vincent-caldeira",
+      "name": "Vincent Caldeira",
+      "bio": "Vincent Caldeira，红帽亚太区首席技术官，负责技术战略和新兴技术工程。2023年被《技术杂志》评为亚太区十大CTO之一，他在IT领域拥有超过20年的经验，尤其擅长金融领域的技术转型。作为开源、云计算和数字化转型领域的权威，Vincent经常就数据分析、AI/ML（包括AI安全）、数字主权和IT可持续性等话题发表演讲。他是Linux基金会OS-Climate的技术顾问，GSF绿色AI委员会成员，金融科技开源基金会（FINOS）技术监督委员会成员，LF AI & Data GenAI Commons成员，并领导多项CNCF AI计划。",
+      "role": "首席技术官",
+      "org": "红帽亚太区",
+      "roleOrg": "首席技术官, 红帽亚太区",
+      "image": "/images/speakers/vincent-caldeira.jpeg",
+      "tags": [
+        "ai-models-infra",
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xiaolei-wang",
+      "name": "王晓雷",
+      "bio": "王晓雷 - 华为昇腾处理器产品总监",
+      "role": "华为昇腾处理器产品总监",
+      "org": "",
+      "roleOrg": "华为昇腾处理器产品总监",
+      "image": "/images/speakers/xiaolei-wang.jpg",
+      "tags": [
+        "ws-cann"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-wang-xue-zhi",
+      "name": "王学智",
+      "bio": "王学智，华为仓颉编程语言生态与产业发展总监",
+      "role": "华为仓颉编程语言生态与产业发展总监",
+      "org": "华为",
+      "roleOrg": "华为仓颉编程语言生态与产业发展总监, 华为",
+      "image": "/images/speakers/speaker-wang-xue-zhi.jpg",
+      "tags": [
+        "ws-cangjie"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yuqing-yan",
+      "name": "严玉庆",
+      "bio": "严玉庆 - 腾讯教育顾问，广东省人力资源研究会基础教育与教师发展专业委员会副会长，广东教师继续再教育专委会常务理事",
+      "role": "腾讯教育顾问，广东省人力资源研究会基础教育与教师发展专业委员会副会长，广东教师继续再教育专委会常务理事",
+      "org": "",
+      "roleOrg": "腾讯教育顾问，广东省人力资源研究会基础教育与教师发展专业委员会副会长，广东教师继续再教育专委会常务理事",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "forum-aivision",
+        "ws-ai-education"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jingbin-zhang",
+      "name": "张静斌",
+      "bio": "华为高级首席架构师兼技术经理",
+      "role": "华为高级首席架构师兼技术经理",
+      "org": "",
+      "roleOrg": "华为高级首席架构师兼技术经理",
+      "image": "/images/speakers/jingbin-zhang.jpg",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jinwei-gu",
+      "name": "顾金伟",
+      "bio": "顾金伟博士目前是英伟达的首席研究科学家和香港中文大学的兼职副教授，致力于生成式AI、世界模型以及计算机视觉、计算机图形学和机器学习等领域的研究。他于2010年获得哥伦比亚大学计算机科学博士学位，并分别于2002年和2005年获得清华大学的学士和硕士学位。在英伟达，顾金伟博士是Cosmos模型开发的技​​术负责人之一，这是一个多模态世界基础模型家族，专注于在机器人、自动驾驶和生成式AI中实现真实世界的应用。在加入英伟达之前，他曾在SenseBrain担任研发执行总监，专注于利用新型图像传感器和成像系统进行移动计算摄影。他在顶级会议和期刊上发表了大量论文，并担任IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 和 IEEE Transactions on Computational Imaging (TCI) (2018-2023) 的副主编，以及CVPR、NeurIPS、ICCV、ICCP和ECCV的领域主席，并组织了多个研讨会（MIPI、RichMediaGAI）。他自2018年起为IEEE高级会员。他的研究工作已成功应用于NVIDIA-Cosmos、NVIDIA-CoPilot SDK、NVIDIA-DriveIX SDK以及超分辨率、超级夜景、人像修复、RGBW解决方案等众多产品，并广泛应用于许多旗舰手机中。",
+      "role": "首席研究科学家和技术负责人",
+      "org": "英伟达",
+      "roleOrg": "首席研究科学家和技术负责人, 英伟达",
+      "image": "/images/speakers/jinwei-gu.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": "www.gujinwei.org"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "junrong-lin",
+      "name": "林骏荣",
+      "bio": "SGLang 提交者。",
+      "role": "技术人员",
+      "org": "阿里巴巴集团通义千问团队",
+      "roleOrg": "技术人员, 阿里巴巴集团通义千问团队",
+      "image": "/images/speakers/junrong-lin.jpg",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/ocss884",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "markus-tavenrath",
+      "name": "Markus Tavenrath",
+      "bio": "Markus Tavenrath在亚琛工业大学学习计算机科学，主攻计算机图形学。这一学术背景为他在科技行业的职业生涯奠定了坚实的基础。\r\n\r\n2008年，Markus加入英伟达，开始从事GPU上的实时光线追踪工作。多年来，他为光线追踪、场景图、OpenGL、WebGL、Vulkan和AI的性能优化做出了贡献。他的工作在推动这些技术的发展中发挥了作用。\r\n\r\nMarkus还是Vulkan-Hpp项目的联合创始人，该项目对Vulkan社区非常有益。他的努力帮助改进了Vulkan的使用和实现。\r\n\r\n最近，Markus当选为Khronos的ML委员会主席。在这个职位上，他帮助协调和支持Khronos集团内的AI和机器学习计划。他当选此职位反映了他的专业知识和领导能力。\r\n\r\nMarkus Tavenrath是一位敬业的专业人士，他的贡献对英伟达及其他领域的技术格局产生了积极影响。",
+      "role": "首席工程师，开发者技术",
+      "org": "英伟达",
+      "roleOrg": "首席工程师，开发者技术, 英伟达",
+      "image": "/images/speakers/markus-tavenrath.jpg",
+      "tags": [
+        "ai-models-infra",
+        "ws-edge-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/markus-tavenrath/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "shangming-cai-",
+      "name": "蔡尚铭",
+      "bio": "蔡尚铭于2022年在中国清华大学计算机科学与技术系获得计算机科学博士学位。他目前是阿里云计算的工程师和研究员，并且是 SGLang、Mooncake、vLLM 等开源 LLM 项目的积极贡献者。他的主要研究兴趣包括分布式机器学习训练、大语言模型、高效服务系统和大数据分析。",
+      "role": "高级工程师",
+      "org": "阿里云",
+      "roleOrg": "高级工程师, 阿里云",
+      "image": "/images/speakers/shangming-cai-.jpg",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/ShangmingCai",
+        "linkedin": "",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "shuangrui-chen",
+      "name": "陈双瑞",
+      "bio": "👨‍💻 华为高级工程师 | 🤖 AI智能体专家\r\n🎓 伦敦大学学院（UCL）机器学习理学硕士\r\n🧠 专注于多智能体系统、模型编排和自主任务执行\r\n🚀 Nexent项目负责人，这是一个实现零代码多模态服务的开源智能体平台\r\n🌍 热衷于连接数据、模型和工具，构建真正可用的智能系统",
+      "role": "高级工程师",
+      "org": "华为技术有限公司",
+      "roleOrg": "高级工程师, 华为技术有限公司",
+      "image": "/images/speakers/shuangrui-chen.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "https://github.com/Phinease",
+        "linkedin": "https://www.linkedin.com/in/shuangrui-chen",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "tongyu-guo",
+      "name": "郭彤宇",
+      "bio": "郭彤宇 - 阿里云高级工程师 RBG 项目 Committer",
+      "role": "阿里云高级工程师 RBG 项目 Committer",
+      "org": "",
+      "roleOrg": "阿里云高级工程师 RBG 项目 Committer",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-chitu"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yue-bao",
+      "name": "鲍玥",
+      "bio": "鲍玥是华为云的一名软件工程师。她现在100%投入开源工作，专注于KubeEdge的轻量级边缘和边缘api-server。她现在是KubeEdge的维护者。在此之前，鲍玥曾在华为云智能边缘服务（Intelligent EdgeFabric Service）工作，并参与了多个边缘工程项目。鲍玥毕业于浙江大学竺可桢学院，主修信息科学与电子工程。",
+      "role": "高级工程师",
+      "org": "华为",
+      "roleOrg": "华为高级工程师",
+      "image": "/images/speakers/yue-bao.jpg",
+      "tags": [
+        "ws-edge-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/Shelley-BaoYue",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "chao-wang",
+      "name": "王超",
+      "bio": "https://github.com/sleepcoo",
+      "role": "SGlang 提交者",
+      "org": "美团",
+      "roleOrg": "SGlang 提交者, 美团",
+      "image": "/images/speakers/chao-wang.jpg",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "chunhui-mo",
+      "name": "Chunhui Mo",
+      "bio": "W3C机器学习社区组成员，对Web AI领域的提案有贡献。目前在华为工作，专注于Web前端开发框架，并领导OpenTiny NEXT——一个智能前端解决方案的产品研发。",
+      "role": "Web前端框架技术专家",
+      "org": "华为技术有限公司",
+      "roleOrg": "Web前端框架技术专家, 华为技术有限公司",
+      "image": "/images/speakers/chunhui-mo.jpg",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "dmitrii-desiatkin",
+      "name": "Dmitrii Desiatkin",
+      "bio": "一个热爱音乐、游戏、微控制器和编程的家伙。",
+      "role": "系统工程师",
+      "org": "华为",
+      "roleOrg": "华为系统工程师",
+      "image": "/images/speakers/dmitrii-desiatkin.jpg",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://linkedin.com/in/dmitrii-desiatkin-687268199",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-wang-dong",
+      "name": "王冬",
+      "bio": "王冬，博士，GPU计算专家。他目前专注于大语言模型训练和推理过程中的通信优化。",
+      "role": "GPU计算专家",
+      "org": "英伟达",
+      "roleOrg": "英伟达GPU计算专家",
+      "image": "/images/speakers/speaker-wang-dong.png",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "gege-wang",
+      "name": "王格格",
+      "bio": "王格格 - 华为技术有限公司Dora开源贡献者",
+      "role": "华为技术有限公司Dora开源贡献者",
+      "org": "",
+      "roleOrg": "华为技术有限公司Dora开源贡献者",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "guangzhen-li",
+      "name": "Guangzhen Li",
+      "bio": "Web核心专家，华为",
+      "role": "Web核心专家, 华为",
+      "org": "华为",
+      "roleOrg": "Web核心专家, 华为, 华为",
+      "image": "/images/speakers/guangzhen-li.png",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xibin-wu",
+      "name": "巫锡斌",
+      "bio": "巫锡斌，硕士毕业于北京科技大学，字节跳动技术专家，主要研究方向是大规模分布式系统、机器学习系统。现就职于Seed Infra团队，专注于强化学习算法和系统，verl开源社区maintainer。",
+      "role": "Seed verl核心开发者",
+      "org": "字节跳动",
+      "roleOrg": "字节跳动Seed verl核心开发者",
+      "image": "/images/speakers/xibin-wu.png",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jennie-shi",
+      "name": "史洁",
+      "bio": "谷歌云AI专家，致力于用前沿AI技术解决企业真实世界挑战。拥有十余年欧美科技圈经验，曾任AWS EMEA地区AI及大数据顾问，协助多家财富500强公司进行数字化转型，见证了从传统AI到生成式AI的技术变革。拥有哈佛商学院访问学者（MBA）和柏林洪堡大学商务信息系统硕士的双重学术背景，她以国际化视野帮助中国企业驾驭谷歌最新的AI技术。她将创新的应用理念变为现实，引导企业在全球化征程中“激增”前行。",
+      "role": "AI专家",
+      "org": "谷歌云",
+      "roleOrg": "AI专家, 谷歌云",
+      "image": "/images/speakers/jennie-shi.jpeg",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jingshi-shangguan",
+      "name": "上官景仕",
+      "bio": "上官景仕 - 华为软件工程师",
+      "role": "华为软件工程师",
+      "org": "",
+      "roleOrg": "华为软件工程师",
+      "image": "/images/speakers/jingshi-shangguan.jpg",
+      "tags": [
+        "ws-future-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhang-renwei",
+      "name": "Renwei Zhang",
+      "bio": "MindSpore AKG社区的维护者。",
+      "role": "AI编译器专家",
+      "org": "华为",
+      "roleOrg": "AI编译器专家, 华为",
+      "image": "/images/speakers/zhang-renwei.jpg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "-",
+        "twitter": "-",
+        "github": "-",
+        "linkedin": "-",
+        "website": "-"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-wang-tian-ce",
+      "name": "王天策",
+      "bio": "华为中央软件院技术专家",
+      "role": "博士",
+      "org": "华为",
+      "roleOrg": "博士, 华为",
+      "image": "/images/speakers/speaker-wang-tian-ce.jpg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/wangtiance",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wilson-wang",
+      "name": "Wilson Wang",
+      "bio": "字节跳动全球边缘团队的软件工程师，专注于虚拟机和WebAssembly。我对操作系统、分布式系统、云原生技术、边缘计算和无服务器架构有浓厚兴趣。",
+      "role": "软件工程师",
+      "org": "字节跳动",
+      "roleOrg": "软件工程师, 字节跳动",
+      "image": "/images/speakers/wilson-wang.jpeg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "https://github.com/wilsonwang371",
+        "linkedin": "https://www.linkedin.com/in/wilson-wang/",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xiaowei-shen",
+      "name": "申小伟",
+      "bio": "申小伟 - 沐曦推理引擎负责人",
+      "role": "沐曦推理引擎负责人",
+      "org": "",
+      "roleOrg": "沐曦推理引擎负责人",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-chitu"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xiaolei-zhang",
+      "name": "Xiaolei Zhang",
+      "bio": "在AI模型与基础设施领域拥有超过10年的深入经验，我积累了从AI-on-chip算法硬件适配、参与高性能AI芯片研发，到构建高效可扩展AI基础设施的全链路实践专长。目前，我专注于火山引擎的AI性能优化工作，致力于通过模型、算法、芯片和基础设施之间的协同作用来突破瓶颈，并持续赋能高效的AI服务。",
+      "role": "AI性能优化专家",
+      "org": "字节跳动",
+      "roleOrg": "字节跳动AI性能优化专家",
+      "image": "/images/speakers/xiaolei-zhang.jpeg",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xiaoming-bao",
+      "name": "包小明",
+      "bio": "分布式计算，AI推理",
+      "role": "架构师",
+      "org": "华为",
+      "roleOrg": "华为架构师",
+      "image": "/images/speakers/xiaoming-bao.png",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-wang-xin-meng",
+      "name": "王新盟",
+      "bio": "王新盟拥有十余年互联网研发及管理经验，现任字节跳动Coze Compass技术负责人。他从零到一主导了字节跳动AI应用开发及调优平台的研发与落地，支持了字节内部Flow、抖音、懂车帝、电商等多个业务AI应用的孵化。",
+      "role": "Coze Compass技术负责人",
+      "org": "字节跳动",
+      "roleOrg": "Coze Compass技术负责人, 字节跳动",
+      "image": "/images/speakers/speaker-wang-xin-meng.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yi-zhang",
+      "name": "张懿",
+      "bio": "张懿，阿里云的研发工程师，SGLang Team的成员之一，目前主要关注构建高性能的LLM/VLM推理引擎。",
+      "role": "研发工程师",
+      "org": "阿里云计算有限公司",
+      "roleOrg": "研发工程师, 阿里云计算有限公司",
+      "image": "/images/speakers/yi-zhang.png",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "https://github.com/yizhang2077",
+        "linkedin": "https://www.linkedin.com/in/yizhang2077",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-ding-yi-bin",
+      "name": "丁益斌",
+      "bio": "浙江大学计算数学博士，就职于华为2012实验室中央研究院理论研究部。主要关注并行计算、图计算、LLM推理和RAG。",
+      "role": "博士",
+      "org": "华为",
+      "roleOrg": "博士, 华为",
+      "image": "/images/speakers/speaker-ding-yi-bin.jpg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yizhong-cao-",
+      "name": "曹逸中",
+      "bio": "通义千问 - 推理团队",
+      "role": "工程师",
+      "org": "阿里巴巴",
+      "roleOrg": "工程师, 阿里巴巴",
+      "image": "/images/speakers/yizhong-cao-.jpg",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhizhen-ye",
+      "name": "Zhizhen Ye",
+      "bio": "叶志臻（Euclid）于2024年12月加入华为，并于2025年2月开始他在Servo浏览器引擎的探索之旅。在过去的半年里，他已成为多个部分的核心贡献者，尤其是在Embedder和WebDriver方面。他最近被提名为Servo项目的维护者。",
+      "role": "软件工程师",
+      "org": "华为",
+      "roleOrg": "华为软件工程师",
+      "image": "/images/speakers/zhizhen-ye.jpeg",
+      "tags": [
+        "ws-future-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/yezhizhen",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "chen-zicong",
+      "name": "陈子聪",
+      "bio": "陈子聪 - 华为云研发工程师, Volcano Reviewer, lws Contributor",
+      "role": "华为云研发工程师",
+      "org": "Volcano Reviewer, lws Contributor",
+      "roleOrg": "华为云研发工程师, Volcano Reviewer, lws Contributor",
+      "image": "/images/speakers/chen-zicong.jpg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "hugejile",
+      "name": "呼歌吉乐",
+      "bio": "咨询运营经理, 华为",
+      "role": "咨询运营经理",
+      "org": "华为",
+      "roleOrg": "咨询运营经理, 华为",
+      "image": "/images/speakers/hugejile.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xueqin-dong",
+      "name": "董学勤",
+      "bio": "董学勤 - 康迪科技董事长",
+      "role": "康迪科技董事长",
+      "org": "",
+      "roleOrg": "康迪科技董事长",
+      "image": "/images/speakers/speaker-dong-xue-qin.jpeg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-chen-yu-long",
+      "name": "陈玉龙",
+      "bio": "CSDN开新院副院长",
+      "role": "CSDN开新院副院长",
+      "org": "开心武汉市科技有限公司",
+      "roleOrg": "CSDN开新院副院长, 开心武汉市科技有限公司",
+      "image": "/images/speakers/speaker-chen-yu-long.png",
+      "tags": [
+        "ws-cangjie"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "cen-ming",
+      "name": "岑明",
+      "bio": "岑明于2006年获得中国科学院研究生院光学工程博士学位。\r\n他目前是重庆邮电大学的教授。在他的职业生涯中，他曾担任软件系统分析师和汽车电子与嵌入式系统研究中心副主任。他的研究兴趣包括信息融合、多目标跟踪、自动驾驶和智能机器人。",
+      "role": "教授",
+      "org": "重庆邮电大学",
+      "roleOrg": "教授, 重庆邮电大学",
+      "image": "/images/speakers/cen-ming.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jing-zhang",
+      "name": "张晶",
+      "bio": "张晶 - 北京航空航天大学软件工程学院副教授",
+      "role": "北京航空航天大学软件工程学院副教授",
+      "org": "",
+      "roleOrg": "北京航空航天大学软件工程学院副教授",
+      "image": "/images/speakers/jing-zhang.png",
+      "tags": [
+        "ws-future-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "joaquin-salvachua",
+      "name": "Joaquin Salvachua",
+      "bio": "马德里理工大学教授，专注于机器学习运维（ML-OPS）和大数据架构。",
+      "role": "教授",
+      "org": "马德里理工大学",
+      "roleOrg": "马德里理工大学教授",
+      "image": "/images/speakers/joaquin-salvachua.jpg",
+      "tags": [
+        "agentic-web",
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jos-andrs-muoz-arcentales",
+      "name": "José Andrés Muñoz Arcentales",
+      "bio": "马德里理工大学副教授",
+      "role": "副教授",
+      "org": "马德里理工大学",
+      "roleOrg": "副教授, 马德里理工大学",
+      "image": "/images/speakers/jos-andrs-muoz-arcentales.jpg",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "www.linkedin.com/in/anmunozx",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "kuang-kun",
+      "name": "况琨",
+      "bio": "况琨 - 副教授，博士生导师，人工智能系副主任，浙江大学计算机学院",
+      "role": "副教授，博士生导师，人工智能系副主任，浙江大学计算机学院",
+      "org": "",
+      "roleOrg": "副教授，博士生导师，人工智能系副主任，浙江大学计算机学院",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "qin-wang",
+      "name": "王钦",
+      "bio": "王钦 - 教授（圆桌讨论成员）, 中国社会科学院 (CASS)",
+      "role": "教授（圆桌讨论成员）",
+      "org": "中国社会科学院 (CASS)",
+      "roleOrg": "教授（圆桌讨论成员）, 中国社会科学院 (CASS)",
+      "image": "/images/speakers/qin-wang.jpg",
+      "tags": [
+        "forum-aivision",
+        "ws-globalization"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "qian-zheng",
+      "name": "郑乾",
+      "bio": "郑乾，浙江大学计算机科学与技术学院、脑机智能全国重点实验室“百人计划”研究员、博士生导师。2021年入选国家海外高层次青年人才计划，担任VALSE EACC副主席。他的研究主要集中在脑启发视觉。他在T-PAMI、CVPR、ICCV、NeurIPS和ICML等会议上发表了70多篇论文。他获得了2024年ACM杭州分会“新星奖”，主持一项国家自然科学基金项目，并且是国家自然科学基金重点项目和国家重大科技项目的主要研究人员。他担任国际期刊T-CDS和Neurocomputing的编委，并是多个CCF-A类会议和期刊的审稿人。更多信息请参考：https://q-zh.github.io/",
+      "role": "助理教授",
+      "org": "浙江大学",
+      "roleOrg": "助理教授, 浙江大学",
+      "image": "/images/speakers/qian-zheng.jpg",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-zhang-quan-shi",
+      "name": "张拳石",
+      "bio": "张拳石，上海交通大学计算机科学与工程系长聘副教授、博士生导师。入选国家海外高层次人才引进计划，获ACM中国新星奖。2014年于东京大学获得博士学位，2014-2018年在美国加州大学洛杉矶分校（UCLA）从事博士后研究。张拳石在神经网络可解释性领域取得多项具有国际影响力的创新成果。担任TMLR的Action Editor，NeurIPS 2024（CCF-A类会议）的Area Chair，并在IJCAI 2020和IJCAI 2021上做可解释性Tutorial。曾担任AAAI 2019、CVPR 2019、ICML 2021可解释性论坛的Session Chair。",
+      "role": "长聘副教授",
+      "org": "上海交通大学",
+      "roleOrg": "长聘副教授, 上海交通大学",
+      "image": "/images/speakers/speaker-zhang-quan-shi.jpg",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-bai-ting",
+      "name": "白婷",
+      "bio": "白婷，北京邮电大学计算机学院副教授。研究方向为个性化推荐、大模型及其应用。以第一/通讯作者发表高水平学术论文40余篇，其中包含4篇最佳论文/候选奖。研究成果应用于腾讯、小米等头部互联网公司。2020年获“中国中文信息学会优秀博士学位论文奖”，2023年获“中国电子学会科技进步一等奖”，2023年入选百度首届“全球AI华人女性青年学者”，2024年入选中国科协青年人才托举工程。",
+      "role": "副教授",
+      "org": "北京邮电大学",
+      "roleOrg": "副教授, 北京邮电大学",
+      "image": "/images/speakers/speaker-bai-ting.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+        {
+      "id": "serge-stinckwich",
+      "name": "Serge Stinckwich",
+      "bio": "●联合国大学澳门研究所研究负责人",
+      "role": "研究负责人",
+      "org": "联合国大学澳门研究所",
+      "roleOrg": "联合国大学澳门研究所研究负责人",
+      "image": "/images/speakers/serge-stinckwich.png",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yanzhi-wang",
+      "name": "王言治",
+      "bio": "王言治 - 美国东北大学教授",
+      "role": "美国东北大学教授",
+      "org": "",
+      "roleOrg": "美国东北大学教授",
+      "image": "/images/speakers/yanzhi-wang.jpeg",
+      "tags": [
+        "apps-agents",
+        "ws-ai-education",
+        "ws-edge-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yin-peng",
+      "name": "殷鹏",
+      "bio": "殷鹏 - 香港中文大学数据科学学院助理教授",
+      "role": "香港中文大学数据科学学院助理教授",
+      "org": "",
+      "roleOrg": "香港中文大学数据科学学院助理教授",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-zhang-yin",
+      "name": "张引",
+      "bio": "张引是传统大学计算机科学（CS）和软件工程（SE）课程改革的积极促进者，致力于利用仓颉编程语言、现代应用开发框架、MVVM + IService架构模式、微服务参考架构和人工智能服务等丰富技术资源，将各种CS/SE课程相互关联，设计高度集成的CS/SE教育课程。他为技术社区贡献了“仓颉社区软件工程”等一系列免费的在线课程，展现出将尖端技术整合到传统大学的CS/SE课程中的潜力和优势。他还在东北大学软件学院组织了学生开源社区“仓颉兴趣组”，为仓颉社区贡献了一系列开源项目，并将这些开源项目引入到课程中，促进课程内容与开源社区的紧密融合。在未来的工作中，他会将持续集成、容器化、大语言模型等丰富的华为技术引入到课程中，帮助学生更好地理解现代开发技术。",
+      "role": "副教授",
+      "org": "东北大学",
+      "roleOrg": "副教授, 东北大学",
+      "image": "/images/speakers/speaker-zhang-yin.png",
+      "tags": [
+        "ws-cangjie"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yong-qin",
+      "name": "秦勇",
+      "bio": "秦勇 - 南开大学教授",
+      "role": "南开大学教授",
+      "org": "",
+      "roleOrg": "南开大学教授",
+      "image": "/images/speakers/yong-qin.png",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhan-yiwen",
+      "name": "展翼文",
+      "bio": "展翼文 - 副教授，北京师范大学",
+      "role": "副教授，北京师范大学",
+      "org": "",
+      "roleOrg": "副教授，北京师范大学",
+      "image": "/images/speakers/zhan-yiwen.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhenghao-chen",
+      "name": "陈郑豪",
+      "bio": "陈郑豪博士是纽卡斯尔大学的教员。他分别于2017年和2022年在悉尼大学获得工学学士（一等荣誉）和博士学位。他曾是TikTok的研究工程师、悉尼大学的博士后研究员，以及微软研究院和迪士尼研究院的访问研究科学家。他因其学术成就获得了谷歌澳大利亚奖、澳大利亚RTP国际奖学金、ACM SIGMM杰出论文奖和微软研究院StrarTrack奖学金。\r\n\r\n陈郑豪博士的一般研究兴趣包括计算机视觉、自然语言处理和机器学习。他尤其以其在生成式AI方面的专业知识而闻名，并将其研究应用于学术和工业领域。陈郑豪博士在CVPR、ICCV、ECCV、MM、AAAI、ICLR等旗舰AI会议和期刊以及T-PAMI、T-IP、T-MI等期刊上发表了大量论文，并拥有多项专利。此外，他还是CVPR、ECCV、ICCV、SIGGRAPH、AAAI、IJCAI、MICCAI、MM、KDD等会议的程序委员会（PC）成员，并组织了MM和ICCV的研讨会。他还担任IJCV、T-IP、T-MI、T-CSVT、PR等期刊的审稿人，以及MDPI-Algorithms和Frontier-in-AI的客座编辑。",
+      "role": "助理教授",
+      "org": "纽卡斯尔大学",
+      "roleOrg": "助理教授, 纽卡斯尔大学",
+      "image": "/images/speakers/zhenghao-chen.png",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/DrZhenghaoChen",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/zhenghao-chen-38554a96/",
+        "website": "https://www.newcastle.edu.au/profile/zhenghao-chen"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhao-simiao",
+      "name": "赵思邈",
+      "bio": "赵思邈 - CEO，爪子制药 | 牛津大学AI医药方向博士研究生",
+      "role": "CEO，爪子制药 | 牛津大学AI医药方向博士研究生",
+      "org": "",
+      "roleOrg": "CEO，爪子制药 | 牛津大学AI医药方向博士研究生",
+      "image": "/images/speakers/zhao-simiao.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "anni-lai",
+      "name": "Anni Lai",
+      "bio": "生成式AI Commons联合主席，LF AI & Data董事会成员。",
+      "role": "主持人 / 联合主席 / 董事会成员",
+      "org": "Generative AI Commons / LF AI & Data",
+      "roleOrg": "Generative AI Commons联合主席，LF AI & Data董事会成员",
+      "image": "/images/speakers/anni-lai.png",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "baorui-lv",
+      "name": "吕宝瑞",
+      "bio": "吕宝瑞 - 中国科学技术大学学生",
+      "role": "中国科学技术大学学生",
+      "org": "",
+      "roleOrg": "中国科学技术大学学生",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-zhang-hao-yang",
+      "name": "张昊阳",
+      "bio": "张昊阳，东北大学人工智能（未来实验班）专业本科生，东北大学花粉俱乐部部长，HarmonyOS开发者。曾获开放原子开源大赛OpenHarmony应用创新赛二等奖，带领MindSpire团队参加2024HarmonyOS创新赛和2024极客马拉松，用时两个月上架一款应用至HarmonyOS NEXT应用商店，并贡献一个CodeLabs，获得跑跑码特活动三等奖。",
+      "role": "学生仓颉布道师",
+      "org": "东北大学",
+      "roleOrg": "学生仓颉布道师, 东北大学",
+      "image": "/images/speakers/speaker-zhang-hao-yang.png",
+      "tags": [
+        "ws-cangjie"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jixun-yao",
+      "name": "姚继珣",
+      "bio": "姚继珣，西北工业大学计算机科学博士研究生，师从谢磊教授。他的研究方向为语音生成与隐私，专注于富有表现力的零样本语音合成和音乐生成。他的学术成果在ICLR、AAAI、ACL和ICASSP等主要会议上获得认可，并在VoicePrivacy 2022和2024挑战赛中名列前茅。他的工作旨在将学术创新与多语言和情感丰富的语音应用的现实世界影响联系起来。",
+      "role": "西北工业大学博士研究生",
+      "org": "西北工业大学",
+      "roleOrg": "西北工业大学博士研究生, 上海音乐学院/西北工业大学",
+      "image": "/images/speakers/jixun-yao.png",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/ASLP-lab/SongEval",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "martin-alvarez-espinar",
+      "name": "Martin Alvarez Espinar",
+      "bio": "Martin Alvarez Espinar - Chair, High-Performance Web Engines CG, W3C",
+      "role": "Chair",
+      "org": "High-Performance Web Engines CG, W3C",
+      "roleOrg": "Chair, High-Performance Web Engines CG, W3C",
+      "image": "/images/speakers/martin-alvarez-espinar.png",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "runqing-zhang",
+      "name": "张闰清",
+      "bio": "张闰清 - 清华大学计算机系 博士",
+      "role": "清华大学计算机系 博士",
+      "org": "",
+      "roleOrg": "清华大学计算机系 博士",
+      "image": "/images/speakers/runqing-zhang.jpg",
+      "tags": [
+        "ws-chitu"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "ruping-cen",
+      "name": "岑汝平",
+      "bio": "岑汝平 - 重庆邮电大学博士",
+      "role": "重庆邮电大学博士",
+      "org": "",
+      "roleOrg": "重庆邮电大学博士",
+      "image": "/images/speakers/ruping-cen.jpg",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "salim-nahle",
+      "name": "Salim Nahle",
+      "bio": "Salim Nahle博士是Efrei Paris的“数据与人工智能”项目经理和高管教育学术经理。他拥有黎巴嫩大学的电信和计算机科学工程学位（2005年），巴黎第六大学（UPMC）的计算机科学硕士学位（2006年），以及索邦大学的计算机科学博士学位（2009年）。他的博士研究专注于使用Wi-Fi和WiMAX技术的无线网状网络，解决了调度、路由和生活质量问题。从2011年到2014年，他在GE Healthcare担任软件工程师，参与“CT Revolution”项目。2014年至2019年，他担任ECE网络安全和大数据部门负责人，创建了“大数据与分析”和“防御性网络安全”专业。如今，他作为项目经理在Efrei领导人工智能、数据和云领域的学术创新。他还为合作公司开发和部署继续教育和高管教育项目。",
+      "role": "“数据与人工智能”项目经理兼高管教育学术经理",
+      "org": "Efrei Paris",
+      "roleOrg": "Efrei Paris“数据与人工智能”项目经理兼高管教育学术经理",
+      "image": "/images/speakers/salim-nahle.png",
+      "tags": [
+        "ai-next",
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "https://www.linkedin.com/in/salim-nahle-03672571/",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "shiwei-liu",
+      "name": "刘世伟",
+      "bio": "刘世伟是牛津大学的英国皇家学会牛顿国际研究员。他曾是德克萨斯大学奥斯汀分校的博士后研究员。他于2022年以优异成绩获得埃因霍温理工大学的博士学位。他的研究目标是利用、理解和扩展神经网络中低维度的作用，以实现可扩展和高效的人工智能。刘世伟博士曾获得KAUST和节俭与学习会议（CPAL）颁发的两项新星奖。他的博士论文获得了2023年欧洲信息学最佳博士论文奖。",
+      "role": "牛顿国际研究员",
+      "org": "牛津大学",
+      "roleOrg": "牛顿国际研究员, 牛津大学",
+      "image": "/images/speakers/shiwei-liu.jpg",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "https://shiweiliuiiiiiii.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wei-wang",
+      "name": "王伟",
+      "bio": "王伟，奇点智能研究院开源技术委员会主任，工信部电子标准化院开源治理标准工作组组长，联合国咨商开源创新专委会秘书长，华东师范大学教授，CCF杰出会员。他牵头研制了我国首个开源治理系列标准，研究方向为开源治理与评估。他在ICSE、WWW、ACL等顶会顶刊发表论文百余篇，入选国家级创新人才计划，获国家级教学成果二等奖、上海市开源创新卓越成就奖特等奖。",
+      "role": "奇点智能研究院开源技术委员会主任",
+      "org": "华东师范大学",
+      "roleOrg": "奇点智能研究院开源技术委员会主任, 华东师范大学",
+      "image": "/images/speakers/wei-wang.jpg",
+      "tags": [
+        "ai-next",
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "weiyu-xie",
+      "name": "谢威宇",
+      "bio": "谢威宇是清华大学计算机科学与技术系高性能计算研究所的五年级博士生。他的研究兴趣包括计算机系统、大语言模型（LLM）推理、图计算和数据库。",
+      "role": "博士研究生",
+      "org": "清华大学",
+      "roleOrg": "清华大学博士研究生",
+      "image": "/images/speakers/weiyu-xie.jpg",
+      "tags": [
+        "ws-edge-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/ErvinXie",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xinwei-hu",
+      "name": "胡欣蔚",
+      "bio": "openEuler社区技术委员会主席。",
+      "role": "主席",
+      "org": "openEuler社区技术委员会",
+      "roleOrg": "openEuler社区技术委员会主席",
+      "image": "/images/speakers/xinwei-hu.jpeg",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yichuan-yue",
+      "name": "岳一川",
+      "bio": "岳一川 - 首都师范大学博士，艺术家",
+      "role": "首都师范大学博士，艺术家",
+      "org": "",
+      "roleOrg": "首都师范大学博士，艺术家",
+      "image": "/images/speakers/yicuan-yue.jpg",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yijun-chen",
+      "name": "陈毅俊",
+      "bio": "陈毅俊 - 南方科技大学学生",
+      "role": "南方科技大学学生",
+      "org": "",
+      "roleOrg": "南方科技大学学生",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yiming-zhang",
+      "name": "张一鸣",
+      "bio": "张一鸣 - 南开大学学生",
+      "role": "南开大学学生",
+      "org": "",
+      "roleOrg": "南开大学学生",
+      "image": "/images/speakers/zhangyiming.png",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhongjin-lu",
+      "name": "卢钟瑾",
+      "bio": "卢钟瑾 - 东南大学学生",
+      "role": "东南大学学生",
+      "org": "",
+      "roleOrg": "东南大学学生",
+      "image": "/images/speakers/zhongjin.jpg",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "alexandra-boucherifi",
+      "name": "Alexandra Boucherifi-Kornmann",
+      "bio": "Alexandra Boucherifi-Kornmann - 艺术家，欧洲人工智能与增生主义双年展创始人",
+      "role": "艺术家，欧洲人工智能与增生主义双年展创始人",
+      "org": "",
+      "roleOrg": "艺术家，欧洲人工智能与增生主义双年展创始人",
+      "image": "/images/speakers/alexandra-boucherifi.jpg",
+      "tags": [
+        "ai-next",
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "bangxu-yu",
+      "name": "于邦旭",
+      "bio": "于邦旭 - CSDN 高级副总裁 & GitCode CEO",
+      "role": "CSDN 高级副总裁 & GitCode CEO",
+      "org": "",
+      "roleOrg": "CSDN 高级副总裁 & GitCode CEO",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "bella-ren",
+      "name": "Bella Ren",
+      "bio": "Bella Ren - 联合创始人, AskSia",
+      "role": "联合创始人",
+      "org": "AskSia",
+      "roleOrg": "联合创始人, AskSia",
+      "image": "/images/speakers/bella-ren.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "christian-maitre",
+      "name": "Christian Maitre",
+      "bio": "Christian Maitre - CEO兼创始人（圆桌讨论成员）, Caspera.lab",
+      "role": "CEO兼创始人（圆桌讨论成员）",
+      "org": "Caspera.lab",
+      "roleOrg": "CEO兼创始人（圆桌讨论成员）, Caspera.lab",
+      "image": "/images/speakers/christian-maitre.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "drummond-reed",
+      "name": "Drummond Reed",
+      "bio": "Drummond在互联网身份、安全、隐私和信任基础设施领域工作超过二十五年。他目前是First Person Project的创始人和主要组织者。从2021年到2025年，在Gen（前身为Avast）收购Evernym后，他担任Gen的信任服务总监，此前他是Evernym的首席信任官。他是《Self-Sovereign Identity》（Manning Publications，2021）一书的合著者，也是W3C去中心化标识符（DID）1.0规范的联合编辑。他目前担任Ayra协会的治理负责人。他是OpenWallet基金会和Trust Over IP（ToIP）的创始董事会成员，并担任技术堆栈工作组和概念与术语工作组的联合主席。2002年，他获得了Digital ID World颁发的数字身份先锋奖，2013年被评为OASIS杰出贡献者。",
+      "role": "创始人",
+      "org": "First Person Project",
+      "roleOrg": "创始人, First Person Project",
+      "image": "/images/speakers/drummond-reed.jpg",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "http://twitter.com/drummondreed",
+        "github": "https://github.com/talltree",
+        "linkedin": "http://www.linkedin.com/in/drummondreed",
+        "website": "http://equalsdrummond.name/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "emily-chen",
+      "name": "陈阳",
+      "bio": "陈阳 - 开源社 (KAIYUANSHE) 联合创始人, 圆桌讨论主持人",
+      "role": "开源社 (KAIYUANSHE) 联合创始人",
+      "org": "圆桌讨论主持人",
+      "roleOrg": "开源社 (KAIYUANSHE) 联合创始人, 圆桌讨论主持人",
+      "image": "/images/speakers/emily-chen.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "gregory-terzian",
+      "name": "Gregory Terzian",
+      "bio": "Servo浏览器引擎维护者",
+      "role": "创始人",
+      "org": "开源（上海）技术咨询有限公司",
+      "roleOrg": "开源（上海）技术咨询有限公司创始人",
+      "image": "/images/speakers/gregory-terzian.jpg",
+      "tags": [
+        "ws-future-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/gterzian",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "haiyang-xin",
+      "name": "辛海洋",
+      "bio": "辛海洋 - 可可乐博CEO",
+      "role": "可可乐博CEO",
+      "org": "",
+      "roleOrg": "可可乐博CEO",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-ai-education"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jesse-ezell",
+      "name": "Jesse Ezell",
+      "bio": "Jesse Ezell - TIMU首席技术官",
+      "role": "TIMU首席技术官",
+      "org": "",
+      "roleOrg": "TIMU首席技术官",
+      "image": "/images/speakers/jesse-ezell.png",
+      "tags": [
+        "agentic-web",
+        "ws-flutter"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "ji-li",
+      "name": "李冀",
+      "bio": "李冀 - 上海仪电智算科技MaaS平台负责人",
+      "role": "上海仪电智算科技MaaS平台负责人",
+      "org": "",
+      "roleOrg": "上海仪电智算科技MaaS平台负责人",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-chitu"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jian-shi",
+      "name": "史鉴",
+      "bio": "史鉴是Kornia AI的联合创始人，也是PyTorch中领先的计算机视觉框架Kornia库的核心维护者。通过Kornia AI，他致力于通过开放协作来推进和普及空间人工智能。他是KAUST的博士候选人，专注于生成模型和立体视觉。史鉴曾在ICCV、ECCV和TPAMI等主要会议上发表论文。他曾在NEC实验室、香港中文大学和GE Power有过研究经验，其工作涵盖医学成像、激光雷达理解和生成式3D视觉。",
+      "role": "联合创始人",
+      "org": "Kornia AI",
+      "roleOrg": "联合创始人, Kornia AI",
+      "image": "/images/speakers/jian-shi.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "https://github.com/shijianjian",
+        "linkedin": "https://www.linkedin.com/in/jian-shi-1ba543110/",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "karol-stryja",
+      "name": "Karol Stryja",
+      "bio": "Karol Stryja被誉为“波兰播客教父”，他始终走在技术浪潮的前沿。他在全球推广语音界面和智能音箱的贡献为他赢得了voicebot.ai颁发的“语音领袖”奖。如今，他是一位有影响力的AI生态系统架构师，并经常在会议上就人工智能的未来发表演讲。通过他收视率最高的播客“AI的99张面孔”，他通过采访顶尖专家来揭开AI的神秘面纱，并将复杂的技术转化为联想、三星、Meta、IBM等品牌的具体战略和行动。更多信息：www.99twarzyAI.pl",
+      "role": "创始人",
+      "org": "99 Faces of AI Podcast / Bielik.AI",
+      "roleOrg": "创始人, 99 Faces of AI Podcast / Bielik.AI",
+      "image": "/images/speakers/karol-stryja.png",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": "www.99twarzyAI.pl"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "katarzyna-z-staroslawska",
+      "name": "Katarzyna Z. Staroslawska",
+      "bio": "我专注于高级数据分析以及以人工智能为中心的技术解决方案的开发，尤其擅长医疗保健和生命科学领域。通过我的公司，我协助各组织设计和实施数据驱动系统，以优化流程、增强产品开发并改进战略决策。",
+      "role": "SpeakLeash基金会/Bielik.ai副总裁，欧盟委员会互操作性专家组成员",
+      "org": "",
+      "roleOrg": "SpeakLeash基金会/Bielik.ai副总裁，欧盟委员会互操作性专家组成员",
+      "image": "/images/speakers/katarzyna-z-staroslawska.jpeg",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/kstaroslawska/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "liu-qunkai",
+      "name": "刘群凯",
+      "bio": "刘群凯 - CEO & Founder，ABCD Tech | 法国风投Breega的中国代表",
+      "role": "CEO & Founder，ABCD Tech | 法国风投Breega的中国代表",
+      "org": "",
+      "roleOrg": "CEO & Founder，ABCD Tech | 法国风投Breega的中国代表",
+      "image": "/images/speakers/liu-qunkai.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "liyun-yang",
+      "name": "杨丽蕴",
+      "bio": "高级工程师，中国电子技术标准化研究院云计算研究室主任，中国开源云联盟常务副秘书长，工信部海峡两岸云计算分论坛大陆召集人，全国信标委云计算标准工作组秘书处负责人。",
+      "role": "高级工程师",
+      "org": "中国电子技术标准化研究院",
+      "roleOrg": "高级工程师，中国电子技术标准化研究院云计算研究室主任",
+      "image": "/images/speakers/liyun-yang.jpg",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "markus-sabadello",
+      "name": "Markus Sabadello",
+      "bio": "Markus Sabadello多年来一直是数字身份领域的先驱和领导者，并为该领域出现的尖端技术做出了贡献。他是W3C去中心化标识符标准的联合编辑，也是去中心化身份基金会指导委员会的成员。Markus曾在数十个会议上发表演讲，并发表了关于数字身份的政治和技术的论文。他是Danube Tech的创始人，这是一家从事去中心化身份基础设施的咨询和开发公司。",
+      "role": "首席执行官",
+      "org": "Danube Tech",
+      "roleOrg": "首席执行官, Danube Tech",
+      "image": "/images/speakers/markus-sabadello.jpg",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/danubetech/",
+        "linkedin": "",
+        "website": "https://danubetech.com/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-liu-nan-bing",
+      "name": "刘南兵",
+      "bio": "饺子互动科技联合创始人，5ire.app作者，中文写作社区essay.ink发起人。",
+      "role": "CTO",
+      "org": "四川饺子互动科技有限公司",
+      "roleOrg": "CTO, 四川饺子互动科技有限公司",
+      "image": "/images/speakers/speaker-liu-nan-bing.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "https://twitter.com/1ronben",
+        "github": "https://github.com/nanbingxyz",
+        "linkedin": "https://linkedin.com/in/nanbing",
+        "website": "https://ironben.essay.ink"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "philippe-le-hegaret",
+      "name": "Philippe Le Hegaret",
+      "bio": "Philippe Le Hegaret - W3C副总裁，战略负责人",
+      "role": "W3C副总裁，战略负责人",
+      "org": "",
+      "roleOrg": "W3C副总裁，战略负责人",
+      "image": "/images/speakers/philippe-le-hegaret.png",
+      "tags": [
+        "agentic-web",
+        "ws-future-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "richard-bian",
+      "name": "边思康",
+      "bio": "边思康（英文名：Richard Bian）从蚂蚁集团开源倡议的第一天起便担任领导，将这项倡议从单人努力发展成为一个跨职能的开源项目办公室（OSPO）团队，涵盖治理、战略、开发者体验、产品开发、增长和国际化等多个方面。他最新的工作重点是生成式AI战略和创新产品。\n作为一名前Square、前微软工程师，边思康在四个不同的国家（新加坡、加拿大、美国和中国）学习和工作均超过五年，拥有丰富的跨文化协作经验。",
+      "role": "战略与新产品总监 (OSS)",
+      "org": "蚂蚁集团",
+      "roleOrg": "战略与新产品总监 (OSS)，蚂蚁集团",
+      "image": "/images/speakers/richard-bian.jpg",
+      "tags": [
+        "forum-aivision",
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "rik-arends",
+      "name": "Rik Arends",
+      "bio": "Rik Arends - Makepad联合创始人",
+      "role": "Makepad联合创始人",
+      "org": "",
+      "roleOrg": "Makepad联合创始人",
+      "image": "/images/speakers/rik-arends.png",
+      "tags": [
+        "rustchinaconf",
+        "ws-makepad"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "robin-shang",
+      "name": "Robin Shang",
+      "bio": "Robin Shang - CTO, iTunel Technology Ltd (Hong Kong)",
+      "role": "CTO",
+      "org": "iTunel Technology Ltd (Hong Kong)",
+      "roleOrg": "CTO, iTunel Technology Ltd (Hong Kong)",
+      "image": "/images/speakers/robin-shang.jpg",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "sameer-chauhan",
+      "name": "Sameer Chauhan",
+      "bio": "Sameer Chauhan - 主任（圆桌讨论成员）, 联合国国际计算中心 (UNICC)",
+      "role": "主任（圆桌讨论成员）",
+      "org": "联合国国际计算中心 (UNICC)",
+      "roleOrg": "主任（圆桌讨论成员）, 联合国国际计算中心 (UNICC)",
+      "image": "/images/speakers/sameer-chauhan.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "satya-mallick",
+      "name": "Satya Mallick",
+      "bio": "Dr. Satya Mallick is the CEO of OpenCV.org - the non-profit that maintains the largest computer vision library in the world. He is an entrepreneur in Artificial Intelligence, Computer Vision, and Machine Learning. Before starting his AI consulting company, Big Vision LLC, he co-founded Sight Commerce Inc (formerly Taaz Inc.), where he built AI products that reached over 100M users. His work has been covered in publications like TechCrunch, Huffington Post, NYTimes, and WSJ. Dr. Mallick is also the creator of some of the most popular online computer vision and AI courses. In 2017, IBM's AI Blog named Dr. Mallick as one of the top 20 people in AI to follow on Twitter. ",
+      "role": "CEO",
+      "org": "OpenCV.org",
+      "roleOrg": "CEO, OpenCV.org",
+      "image": "/images/speakers/satya-mallick.jpg",
+      "tags": [
+        "embodied-ai",
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/LearnOpenCV",
+        "github": "https://github.com/spmallick/learnopencv",
+        "linkedin": "https://www.linkedin.com/in/satyamallick/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "sebastian-michailidis",
+      "name": "Sebastian Michailidis",
+      "bio": "Sebastian Michailidis - Makepad联合创始人",
+      "role": "Makepad联合创始人",
+      "org": "",
+      "roleOrg": "Makepad联合创始人",
+      "image": "/images/speakers/sebastian-michailidis.jpg",
+      "tags": ["ws-makepad"],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "mashengyue",
+      "name": "马生悦",
+      "bio": "马生悦目前担任宇树科技的技术总监，专注于机器人控制系统、感知和智能移动。他毕业于中山大学人工智能专业，在算法开发、系统集成和实际部署方面拥有丰富的经验。凭借对ROS、Mujoco、Isaac Gym和Linux系统内部的深刻理解，他领导了多个涉及Unitree GO2和H1等足式机器人的导航、自主控制和强化学习项目。马生悦发布了开源项目，并热衷于将尖端AI与机器人硬件相结合，以推动自主移动的边界。",
+      "role": "机器人工程师 / 技术总监",
+      "org": "宇树科技",
+      "roleOrg": "机器人工程师 / 技术总监, 宇树科技",
+      "image": "/images/speakers/mashengyue.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://github.com/Msy-yy",
+        "github": "",
+        "linkedin": "www.linkedin.com/in/shengyue-ma-a8a199324/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "shizhi-tang",
+      "name": "唐适之",
+      "bio": "唐适之 - 清程极智联合创始人",
+      "role": "清程极智联合创始人",
+      "org": "",
+      "roleOrg": "清程极智联合创始人",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-chitu"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "sebastien-crozet",
+      "name": "Sébastien Crozet",
+      "bio": "Sébastien Crozet has been in love with the Rust programming language since its earliest days. He is the creator and maintainer of popular open-source libraries, including nalgebra and Rapier, for the Rust ecosystem that specialize in linear algebra, geometry, and physics. He is the founder of Dimforge where he focuses on contributing to the future of cross-platform scientific computing and AI.",
+      "role": "Dimforge 创始人",
+      "org": "Dimforge",
+      "roleOrg": "Dimforge 创始人",
+      "image": "/images/speakers/sebastien-crozet.png",
+      "tags": [
+        "rustchinaconf",
+        "ws-edge-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "https://github.com/dimforge",
+        "linkedin": "undefined",
+        "website": "https://dimforge.com"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "vivian-cai",
+      "name": "Vivian Cai",
+      "bio": "Vivian Cai - 联合创始人兼首席执行官, Sustentra | 2025耶鲁企业家精神奖学金封面人物",
+      "role": "联合创始人兼首席执行官",
+      "org": "Sustentra | 2025耶鲁企业家精神奖学金封面人物",
+      "roleOrg": "联合创始人兼首席执行官, Sustentra | 2025耶鲁企业家精神奖学金封面人物",
+      "image": "/images/speakers/vivian-cai.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wang-juchen",
+      "name": "王钜辰",
+      "bio": "王钜辰 - 创始人，央与国际钢琴学院",
+      "role": "创始人，央与国际钢琴学院",
+      "org": "",
+      "roleOrg": "创始人，央与国际钢琴学院",
+      "image": "/images/speakers/wang-juchen.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "weijie-sun",
+      "name": "孙伟杰",
+      "bio": "深势科技（DP Technology）创始人兼首席执行官，该公司专注于‘AI for Science’（人工智能驱动科学研究）。",
+      "role": "创始人兼首席执行官",
+      "org": "深势科技",
+      "roleOrg": "深势科技创始人兼首席执行官",
+      "image": "/images/speakers/weijie-sun.jpg",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wenjing-chu",
+      "name": "Wenjing Chu",
+      "bio": "Wenjing是Futurewei的AI智能体与智能体互联网信任技术战略高级总监。他是开源社区的长期领导者，目前在OpenWallet基金会和Linux基金会去中心化信任的技术咨询委员会任职，并且是OpenWallet管理委员会的创始成员。他主持Trust over IP（ToIP）中的AI与人类信任（AIM）工作组，该工作组正在开发TMCP/TA2A（在TSP上运行MCP和A2A）规范。他是Trust Spanning Protocol（TSP）规范的合著者，也是Linux基金会First Person Identity项目的核心贡献者。",
+      "role": "技术战略高级总监",
+      "org": "Futurewei Technologies, Inc.",
+      "roleOrg": "技术战略高级总监, Futurewei Technologies, Inc.",
+      "image": "/images/speakers/wenjing-chu.png",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/wenjingchu/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xavier-tao",
+      "name": "陶海轩",
+      "bio": "1ms.ai的创始人，这是一家旨在构建AI领域“登月计划”级开源项目的初创公司。\r\n\r\n其中一个项目是dora-rs，这是一个开创性的中间件，能够以顶尖的性能在AI模型、传感器和执行器之间共享数据。\r\n\r\n这使得构建跨越文本、音频、视觉和动作等多种模态的非常复杂的应用成为可能。这也使我们能够创造出非常复杂的机器人演示！",
+      "role": "创始人",
+      "org": "1ms.ai",
+      "roleOrg": "创始人, 1ms.ai",
+      "image": "/images/speakers/xavier-tao.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "https://x.com/HaixuanT",
+        "github": "https://github.com/haixuanTao",
+        "linkedin": "https://www.linkedin.com/in/haixuan-xavier-tao-7460b1102/",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xiang-ying",
+      "name": "应翔",
+      "bio": "Mindverse联合创始人",
+      "role": "Mindverse联合创始人",
+      "org": "",
+      "roleOrg": "Mindverse联合创始人",
+      "image": "/images/speakers/xiang-ying.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xiaohu-zhu",
+      "name": "朱小虎",
+      "bio": "安全通用人工智能研究员",
+      "role": "创始人",
+      "org": "安全通用人工智能中心",
+      "roleOrg": "安全通用人工智能中心创始人",
+      "image": "/images/speakers/xiaohu-zhu.png",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "@neil_csagi",
+        "github": "http://github.com/tigerneil/",
+        "linkedin": "https://www.linkedin.com/in/xiaohu-zhu-97686637/",
+        "website": "https://xiaohuzhu.xyz"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yin-danqing",
+      "name": "尹丹青",
+      "bio": "尹丹青 - 联合创始人，Saint Novel Biotech",
+      "role": "联合创始人，Saint Novel Biotech",
+      "org": "",
+      "roleOrg": "联合创始人，Saint Novel Biotech",
+      "image": "/images/speakers/yin-danqing.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yin-zhenxi",
+      "name": "尹振玺",
+      "bio": "尹振玺，长亭科技AI代码产品技术总监、安全研究员，毕业于美国宾夕法尼亚州立大学（Penn State），拥有丰富的实战攻防经验。他曾协助多家企业构建稳健的安全措施。",
+      "role": "AI代码产品技术总监",
+      "org": "长亭科技",
+      "roleOrg": "AI代码产品技术总监, 长亭科技",
+      "image": "/images/speakers/yin-zhenxi.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhao-weiqi",
+      "name": "赵维奇",
+      "bio": "赵维奇 - Rokid全球产品、工程和生态系统高级总监",
+      "role": "Rokid全球产品、工程和生态系统高级总监",
+      "org": "",
+      "roleOrg": "Rokid全球产品、工程和生态系统高级总监",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "handong-zhang",
+      "name": "张汉东",
+      "bio": "独立咨询师",
+      "role": "独立咨询师",
+      "org": "",
+      "roleOrg": "独立咨询师",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-makepad"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "siheng-chen",
+      "name": "陈思衡",
+      "bio": "独立咨询师",
+      "role": "独立咨询师",
+      "org": "",
+      "roleOrg": "独立咨询师",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-embedded-rust"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xitong-li",
+      "name": "李喜彤",
+      "bio": "法国巴黎高等商学院 (HEC) 信息系统和运营管理教授。",
+      "role": "信息系统和运营管理教授",
+      "org": "法国巴黎高等商学院",
+      "roleOrg": "法国巴黎高等商学院 (HEC) 信息系统和运营管理教授",
+      "image": "/images/speakers/xitong-li.jpeg",
+      "tag": "ai-next",
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zheng-haoyun",
+      "name": "郑浩云",
+      "bio": "郑浩云 - 联合创始人，海豚智能",
+      "role": "联合创始人，海豚智能",
+      "org": "",
+      "roleOrg": "联合创始人，海豚智能",
+      "image": "/images/speakers/zheng-haoyun.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhiyu-li",
+      "name": "李志宇",
+      "bio": "李志宇，博士，记忆张量（上海）科技有限公司联合创始人兼 CTO，上海算法创新研究院大模型中心研究员、技术负责人，上海交通大学AI学院企业青年科学家。长期从事预训练和大模型方向的研发技术攻关，主要研究方向包括大模型记忆增强与高效评估。曾在阿里巴巴、小红书等头部科技企业带队承担多个核心算法项目，技术成果服务于双十一、社交营销广告等超大规模业务场景，累计带来数十亿营收。近期联合多个学术/产业机构提出业内首个大模型记忆操作系统（ MemOS ），为大模型的记忆增强落地提供了可行的探索路径。相关技术成果已在中国银行、招商证券、中国电信、新华社等多家国央企落地应用。当前已在 Patterns（Cell Press）、ICLR、ACL、TKDE等国际会议期刊发表论文40余篇、引用近千次、授权专利 10 余项，现任中国中文信息学会信息检索专委会委员、大模型与生成专委会委员，相关研究工作入选《麻省理工科技评论》封面报道。",
+      "role": "CTO",
+      "org": "记忆张量（上海）科技有限公司",
+      "roleOrg": "记忆张量（上海）科技有限公司联合创始人兼 CTO",
+      "image": "/images/speakers/zhiyu-li.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhou-hui",
+      "name": "周辉",
+      "bio": "周辉 - 副主任, 中国社会科学院法学研究所",
+      "role": "副主任",
+      "org": "中国社会科学院法学研究所",
+      "roleOrg": "副主任, 中国社会科学院法学研究所",
+      "image": "/images/speakers/zhou-hui.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "alexy-khrabrov-",
+      "name": "Alexy Khrabrov",
+      "bio": "是图数据库领域的定义者Neo4j公司的AI社区架构师。Alexy是NumFOCUS开源科学的创始主席，也是AI联盟的联合创始人。Alexy曾是Linux基金会AI与数据（LFAI）创成式AI Commons的创始主席，现在代表Neo4j在LFAI任职。Alexy是湾区AI和AI Agent SF聚会的创始人及组织者，也是自2013年以来举办的独立开源AI会议Scale/Data/AI By the Bay的组织者。",
+      "role": "AI社区架构师",
+      "org": "Neo4j",
+      "roleOrg": "AI社区架构师, Neo4j",
+      "image": "/images/speakers/alexy-khrabrov-.jpeg",
+      "tags": [
+        "apps-agents",
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "@chiefscientist",
+        "github": "https://github.com/alexy",
+        "linkedin": "https://linkedin.com/in/chiefscientist",
+        "website": "https://chiefscientist.org"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "aurlienmorgan-claudon",
+      "name": "Aurélien-Morgan CLAUDON",
+      "bio": "法国机器学习工程师，在自动化和数据驱动交付方面拥有超过20年的实践经验。曾任凯捷咨询顾问，拥有大型企业、初创公司和自由职业经验。他是ESSEC行政工商管理硕士毕业生，自2017年以来一直活跃于机器学习领域，过去5年多来一直专注于MLOps。他的工作将工程实用主义与深刻的产品思维融为一体。\r\n他是`retrain-pipelines`（Apache 2.0）的创建者，这是一个从第一性原理设计的开源框架，旨在解决MLOps领域长期缺乏以用户为中心的问题。他的使命是：为机器学习工程师提供实用、可扩展的工具，以支持持续学习的工作流程。",
+      "role": "高级MLOps主管",
+      "org": "无隶属",
+      "roleOrg": "高级MLOps主管, 无隶属",
+      "image": "/images/speakers/aurlienmorgan-claudon.png",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "https://x.com/AurelienMorgan_",
+        "github": "https://github.com/aurelienmorgan/retrain-pipelines",
+        "linkedin": "https://www.linkedin.com/in/aurelienmorganclaudon/",
+        "website": "https://huggingface.co/blog/Aurelien-Morgan/the-almighty-function-caller"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-zhao-dong",
+      "name": "赵东",
+      "bio": "360 纳米AI搜索鸿蒙端技术组长\r\n",
+      "role": "360 纳米AI搜索鸿蒙端技术组长",
+      "org": "360",
+      "roleOrg": "360 纳米AI搜索鸿蒙端技术组长, 360",
+      "image": "/images/speakers/speaker-zhao-dong.jpg",
+      "tags": [
+        "ws-cangjie"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "edgar-riba",
+      "name": "Edgar Riba",
+      "bio": "Edgar Riba博士在巴塞罗那自治大学（UAB）获得计算机科学博士学位，其论文桥接了经典计算机视觉和深度学习在低级任务中的应用。他还拥有巴塞罗那加泰罗尼亚理工大学（UPC）的自动控制与机器人学硕士学位。\r\n\r\n他最近加入Bonsai Robotics担任高级研究工程师，领导专为教育和研究机器人设计的智能体AI和视觉-语言-动作模型及工具的研发工作。在此之前，Edgar曾在Farm-ng、LightningAI和Arraiy等初创公司构建自主系统流程，从导航堆栈和机器人驱动程序到边缘机器学习部署基础设施。他的学术和研究背景包括在IRI-CSIC/UPC担任研究科学家超过一年，以及在Arraiy工作两年多，专注于高级视觉和空间AI。\r\n\r\nEdgar是Kornia的创始人和项目负责人，这是一个用于PyTorch的可微计算机视觉库，在GitHub上拥有超过10,000颗星标，每月下载量超过200万次。他还担任其非营利组织的主席，并是Kornia谷歌编程之夏项目的管理员，指导学生并协调重大的开源贡献。\r\n\r\n作为一名专注的社区建设者，Edgar还曾在OpenCV基金会指导委员会任职，指导谷歌编程之夏的参与者，并组织研讨会、黑客马拉松和会议演讲。他发表了八篇同行评审的论文，包括Kornia的基础论文，专业地将经典计算机视觉、深度学习和现实世界机器人技术相结合，提供强大、可扩展的自主解决方案。",
+      "role": "高级研究工程师",
+      "org": "Bonsai Robotics",
+      "roleOrg": "高级研究工程师, Bonsai Robotics",
+      "image": "/images/speakers/edgar-riba.jpeg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "https://x.com/edgarriba",
+        "github": "https://github.com/edgarriba",
+        "linkedin": "https://www.linkedin.com/in/edgarriba/",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "guang-liu",
+      "name": "刘广",
+      "bio": "刘广是北京智源人工智能研究院（BAAI）数据研究团队的技术负责人，他领导着OpenSeek计划。作为Aquila大语言模型（LLM）系列和Infinity-Instruct数据集家族的主要架构师，他目前的研究重点是DataAgent，利用创新的合成数据生成技术来优化下一代AI系统的训练效率。",
+      "role": "数据研究团队技术负责人",
+      "org": "北京智源人工智能研究院",
+      "roleOrg": "数据研究团队技术负责人, 北京智源人工智能研究院",
+      "image": "/images/speakers/guang-liu.jpeg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "https://x.com/ZacLiu123",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jesse-mccrosky",
+      "name": "Jesse McCrosky",
+      "bio": "Jesse McCrosky - 首席架构师 – 生成式AI（圆桌讨论成员）, Egen",
+      "role": "首席架构师 – 生成式AI（圆桌讨论成员）",
+      "org": "Egen",
+      "roleOrg": "首席架构师 – 生成式AI（圆桌讨论成员）, Egen",
+      "image": "/images/speakers/jesse-mccrosky.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wang-jianfeng",
+      "name": "王剑锋",
+      "bio": "王剑锋 - 杭州颉创科技有限公司架构工程师",
+      "role": "杭州颉创科技有限公司架构工程师",
+      "org": "",
+      "roleOrg": "杭州颉创科技有限公司架构工程师",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-cangjie"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jingdong-chen",
+      "name": "陈景东",
+      "bio": "陈景东 - 蚂蚁集团资深算法专家",
+      "role": "蚂蚁集团资深算法专家",
+      "org": "",
+      "roleOrg": "蚂蚁集团资深算法专家",
+      "image": "/images/speakers/jingdong-chen.jpg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-wu-jing-run",
+      "name": "吴京润",
+      "bio": "北京初联科技有限公司 服务器应用架构师",
+      "role": "服务器应用架构师",
+      "org": "北京初联科技有限公司",
+      "roleOrg": "服务器应用架构师, 北京初联科技有限公司",
+      "image": "/images/speakers/speaker-wu-jing-run.png",
+      "tags": [
+        "ws-cangjie"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "johann-diedrick",
+      "name": "Johann Diedrick",
+      "bio": "我是一位艺术家和工程师，通过装置（🏗）、表演（👯）、软件（📱）、雕塑（🔊）和工作坊（🛠）等形式，来打造“聆听室”——一个能让人在脱离常规（off-the-grid）的状态下，邂逅全新声音可能性的空间。",
+      "role": "工程师 & 数据科学家",
+      "org": "Mozilla 数据协作组",
+      "roleOrg": "Mozilla 数据协作组的工程师 & 数据科学家",
+      "image": "/images/speakers/johann-diedrick.jpg",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "sizhe-cheng",
+      "name": "Sizhe Cheng",
+      "bio": "Sizhe Cheng - Elevatia Studio首席程序员",
+      "role": "Elevatia Studio首席程序员",
+      "org": "",
+      "roleOrg": "Elevatia Studio首席程序员",
+      "image": "/images/speakers/sizhe-cheng.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yuegang-liu",
+      "name": "刘月刚",
+      "bio": "刘月刚 - 中山大学深圳附属学校副校长",
+      "role": "中山大学深圳附属学校副校长",
+      "org": "",
+      "roleOrg": "中山大学深圳附属学校副校长",
+      "image": "/images/speakers/yuegang-liu.jpg",
+      "tags": [
+        "forum-aivision",
+        "ws-ai-education"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yuyuan-yuan",
+      "name": "Yuyuan Yuan",
+      "bio": "一名在ZettaScale Technology工作的Rust开发者。开发Zenoh，这是一个旨在为自主系统、无人机和机器人等应用提供高效、可扩展的分布式系统的开源协议。永远在探索新技术！",
+      "role": "高级软件工程师",
+      "org": "ZettaScale Technology",
+      "roleOrg": "高级软件工程师, ZettaScale Technology",
+      "image": "/images/speakers/yuyuan-yuan.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/az6980522",
+        "github": "https://github.com/YuanYuYuan/",
+        "linkedin": "www.linkedin.com/in/yuyuan-yuan-9a5607155",
+        "website": "https://github.com/eclipse-zenoh/zenoh"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "adina-yakefu",
+      "name": "Adina Yakefu",
+      "bio": "在Hugging Face工作 | 倡导多样性与开源AI。",
+      "role": "EA / AI研究员",
+      "org": "Hugging Face",
+      "roleOrg": "Hugging Face EA / AI研究员",
+      "image": "/images/speakers/adina-yakefu.png",
+      "tags": [
+        "ws-globalization"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/AdinaYakup",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "alex-zhu",
+      "name": "朱兴民",
+      "bio": "朱兴民 - 蚂蚁集团前端工程师，Ant Design 开源贡献者",
+      "role": "蚂蚁集团前端工程师，Ant Design 开源贡献者",
+      "org": "",
+      "roleOrg": "蚂蚁集团前端工程师，Ant Design 开源贡献者",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wang-jialiang",
+      "name": "王佳梁",
+      "bio": "王佳梁 - 上海交大工研院执行院长",
+      "role": "上海交大工研院执行院长",
+      "org": "",
+      "roleOrg": "上海交大工研院执行院长",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "maohua-zhou",
+      "name": "周茂华",
+      "bio": "深圳市第二高级中学 数智化研究中心 AI教育研究员",
+      "role": "AI教育研究员",
+      "org": "深圳市第二高级中学 数智化研究中心",
+      "roleOrg": "深圳市第二高级中学 数智化研究中心 AI教育研究员",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "forum-aivision",
+        "ws-ai-education"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "dandjinou-charbel",
+      "name": "DANDJINOU Charbel",
+      "bio": "Charbel Dandjinou是EXXACT Robotics的AI研究与MLOps工程师，负责领导公司内的生成式AI和RAG项目。他还创立了Iroko AI，以推动为新兴地区提供节俭、包容、开源的AI。他的工作涵盖企业AI部署、计算机视觉、机器人技术和多语言模型。",
+      "role": "AI研究与MLOps工程师",
+      "org": "Exel Industries | EXXACT Robotics",
+      "roleOrg": "AI研究与MLOps工程师, Exel Industries | EXXACT Robotics",
+      "image": "/images/speakers/dandjinou-charbel.jpeg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": " /in/charbel-d-9569ba199",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "evan-fannin",
+      "name": "Evan Fannin",
+      "bio": "Evan Fannin - Cline创始工程师",
+      "role": "Cline创始工程师",
+      "org": "",
+      "roleOrg": "Cline创始工程师",
+      "image": "/images/speakers/evan-fannin.png",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "florian-hnicke",
+      "name": "Florian Hönicke",
+      "bio": "Florian在人工智能领域拥有超过10年的经验，曾在Axel-Springer、德勤和SoundCloud工作。他目前是Jina AI的创始工程师，负责快速构建AI解决方案原型。他的专业领域是智能体搜索和合成数据生成。Florian还担任AI政策顾问，向欧洲议会议员提供解释和见解，以增进他们对人工智能的理解。",
+      "role": "创始工程师",
+      "org": "Jina AI",
+      "roleOrg": "创始工程师, Jina AI",
+      "image": "/images/speakers/florian-hnicke.png",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "https://x.com/florianhoenicke",
+        "github": "https://github.com/florian-hoenicke",
+        "linkedin": "https://www.linkedin.com/in/florian-h%C3%B6nicke-b902b6aa/",
+        "website": "https://jina.ai/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-han-hong-ying",
+      "name": "韩虹莹",
+      "bio": "目前在杭州半宇宙科技有限公司担任技术研究员，专注于AI技术研发和企业级应用落地。曾任网易/阿里巴巴的研发工程师和架构师。",
+      "role": "杭州半宇宙技术研究员",
+      "org": "杭州半宇宙科技有限公司",
+      "roleOrg": "杭州半宇宙技术研究员, 杭州半宇宙科技有限公司",
+      "image": "/images/speakers/speaker-han-hong-ying.jpg",
+      "tags": [
+        "apps-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jingya-huang",
+      "name": "黄靖雅",
+      "bio": "我是Hugging Face的机器学习工程师，也是Hugging Face Transformers扩展库Optimum的核心开发者。在Hugging Face，我专注于加速模型训练和高效部署，以及将Hugging Face开源生态系统与新兴的AI硬件加速器集成。",
+      "role": "机器学习工程师",
+      "org": "Hugging Face",
+      "roleOrg": "机器学习工程师, Hugging Face",
+      "image": "/images/speakers/jingya-huang.jpg",
+      "tags": [
+        "ai-models-infra",
+        "ws-edge-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "https://x.com/Jhuaplin",
+        "github": "https://github.com/JingyaHuang",
+        "linkedin": "https://www.linkedin.com/in/jingya-huang-96158b15b/",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "manuel-rego",
+      "name": "Manuel Rego",
+      "bio": "Manuel Rego是一名在Igalia从事Web平台开发的自由软件开发者。在过去的几年里，他一直致力于在Chromium/Blink和WebKit中实现不同的Web平台功能，并分别是这两个项目的owner和reviewer。Manuel自2017年起成为CSS工作组的成员，2020年至2024年担任Blink API owner，并自2023年起担任Servo技术指导委员会主席。",
+      "role": "软件工程师",
+      "org": "Igalia",
+      "roleOrg": "软件工程师, Igalia",
+      "image": "/images/speakers/manuel-rego.jpg",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "https://mastodon.social/@regocas",
+        "twitter": "",
+        "github": "https://github.com/mrego/",
+        "linkedin": "https://www.linkedin.com/in/manuelrego/",
+        "website": "https://blogs.igalia.com/mrego/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "martin-robinson",
+      "name": "Martin Robinson",
+      "bio": "Martin是Igalia的一名软件工程师。他从事Web浏览器开发已有十多年。最近，他一直活跃在Servo项目中，帮助实现现代CSS布局和渲染。",
+      "role": "软件工程师",
+      "org": "Igalia",
+      "roleOrg": "Igalia软件工程师",
+      "image": "/images/speakers/martin-robinson.jpg",
+      "tags": [
+        "ws-future-web"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "mrobinson",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "martino-russi",
+      "name": "Martino Russi",
+      "bio": "我是一名机器人工程师和AI研究员，致力于具身智能和开源硬件的交叉领域。我热衷于让尖端机器人技术变得易于获取，结合机械设计、嵌入式系统和机器学习，以推动人机交互的边界。",
+      "role": "具身AI工程师",
+      "org": "Hugging Face",
+      "roleOrg": "具身AI工程师, Hugging Face",
+      "image": "/images/speakers/martino-russi.png",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/NepYope",
+        "github": "https://github.com/nepyope",
+        "linkedin": "https://www.linkedin.com/in/martino-russi-a822081bb/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "michael-tyler-slaton",
+      "name": "Michael Tyler Slaton",
+      "bio": "我是Michael Tyler Slaton，一名专注于人与AI智能体之间不断演变的边界的开源工程师。我目前是CopilotKit的创始团队成员，该公司是AG-UI背后的公司，我们致力于标准化用户在各种应用中与AI智能体的交互方式。此前，我曾在红帽和甲骨文等公司以及多家初创公司工作，这让我对企业级挑战和新兴技术所需的快速迭代都有了深入的了解。通过构建AG-UI的过程，我亲身经历了创建真正直观的智能体-用户界面的实际挑战。",
+      "role": "创始工程师",
+      "org": "CopilotKit",
+      "roleOrg": "创始工程师, CopilotKit",
+      "image": "/images/speakers/michael-tyler-slaton.png",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/tylerslaton",
+        "linkedin": "https://www.linkedin.com/in/michael-t-slaton/",
+        "website": "https://www.tylerslaton.dev/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "michal-pierzchala",
+      "name": "Michal Pierzchala",
+      "bio": "Michal Pierzchala - Callstack首席工程师",
+      "role": "Callstack首席工程师",
+      "org": "",
+      "roleOrg": "Callstack首席工程师",
+      "image": "/images/speakers/michal-pierzchala.jpg",
+      "tags": [
+        "ws-rn"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "ruoyu-ying",
+      "name": "Ruoyu Ying",
+      "bio": "Ruoyu Ying是英特尔STG部门的云软件工程师。她曾在不同社区从事ONAP、网络、服务网格、机密计算等工作。目前，她主要关注云原生基础设施上的创成式AI赋能。她还参与了边缘计算白皮书和书籍的撰写，并随后在OpenInfra和KubeCon峰会上成功发表了多次演讲。",
+      "role": "云软件工程师",
+      "org": "英特尔",
+      "roleOrg": "云软件工程师, 英特尔",
+      "image": "/images/speakers/ruoyu-ying.jpg",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "tao-li",
+      "name": "李涛",
+      "bio": "我是深开鸿的一名软件工程师。目前，我担任 OpenHarmony 开源机器人系统项目的主要开发者。",
+      "role": "软件工程师",
+      "org": "深圳开鸿数字产业发展有限公司",
+      "roleOrg": "软件工程师, 深圳开鸿数字产业发展有限公司",
+      "image": "/images/speakers/tao-li.jpg",
+      "tags": [
+        "embodied-ai",
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-pan-wan-kun",
+      "name": "潘万坤",
+      "bio": "助理研究员",
+      "role": "助理研究员",
+      "org": "爱奇艺",
+      "roleOrg": "助理研究员, 爱奇艺",
+      "image": "/images/speakers/speaker-pan-wan-kun.jpg",
+      "tags": [
+        "ws-cangjie"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xiang-yang",
+      "name": "杨翔",
+      "bio": "杨翔是北京智源人工智能研究院（BAAI）的算法工程师，他专注于开发具身智能的统一框架、构建具身智能模型以及实现先进的数据增强技术。他还对神经科学、认知智能和物理学保持着浓厚的兴趣。",
+      "role": "算法工程师",
+      "org": "BAAI",
+      "roleOrg": "BAAI算法工程师",
+      "image": "/images/speakers/xiang-yang.jpg",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "http://github.com/Ryu-Yang",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xuan-son-nguyen",
+      "name": "Xuan Son Nguyen",
+      "bio": "我是Hugging Face的软件工程师，llama.cpp的核心维护者。",
+      "role": "软件工程师",
+      "org": "Hugging Face",
+      "roleOrg": "软件工程师, Hugging Face",
+      "image": "/images/speakers/xuan-son-nguyen.jpg",
+      "tags": [
+        "ai-models-infra",
+        "ws-edge-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "@ngxson",
+        "github": "https://github.com/ngxson",
+        "linkedin": "https://linkedin.com/in/ngxson",
+        "website": "https://ngxson.com"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xuan-xia",
+      "name": "夏轩",
+      "bio": "夏轩，上海交通大学博士，现任深圳市人工智能与机器人研究院副研究员。他是国家自然科学基金项目负责人，2024年吴文俊人工智能科学技术进步奖获得者，深圳市高层次人才，深圳市龙岗区高层次人才。他的研究主要集中在具身智能、多模态学习、计算机视觉、缺陷检测和生成模型。他曾主持国家自然科学基金、广东省自然科学基金和中国博士后科学基金资助的项目。他还作为核心成员参与了多项国家、省、市级基金项目以及多个与企业的联合项目。他出版了一本专著和二十多篇论文，并申请了十多项发明专利。",
+      "role": "副研究员",
+      "org": "深圳市人工智能与机器人研究院",
+      "roleOrg": "副研究员, 深圳市人工智能与机器人研究院",
+      "image": "/images/speakers/xuan-xia.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yang-li",
+      "name": "李扬",
+      "bio": "李扬 - Dora-rs开源机器人中间件社区技术专家",
+      "role": "Dora",
+      "org": "rs开源机器人中间件社区技术专家",
+      "roleOrg": "Dora-rs开源机器人中间件社区技术专家",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yikai-zhu",
+      "name": "朱熠恺",
+      "bio": "现任 SGLang 提交者。",
+      "role": "软件工程师",
+      "org": "无",
+      "roleOrg": "软件工程师, 无",
+      "image": "/images/speakers/yikai-zhu.jpg",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "https://github.com/zyksir",
+        "linkedin": "https://www.linkedin.com/in/zyksir/",
+        "website": "https://zyksir.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yonghua-lin",
+      "name": "林咏华",
+      "bio": "林咏华现任北京智源人工智能研究院副院长兼总工程师, 主管大模型基础技术、人工智能系统研究、产业生态合作等重要方向。IEEE女工程师亚太区领导组成员。曾任IBM中国研究院院长，同时也是IBM全球杰出工程师，在IBM内部引领全球人工智能系统的创新。从事近20年的系统架构、云计算、AI系统, 计算机视觉等领域的研究，并多次获得ACM/IEEE最佳论文奖。获评2019年福布斯中国50位科技领导女性。",
+      "role": "副院长兼总工程师",
+      "org": "北京智源人工智能研究院",
+      "roleOrg": "北京智源人工智能研究院副院长兼总工程师",
+      "image": "/images/speakers/yonghua-lin.jpg",
+      "tags": [
+        "forum-aivision",
+        "open-for-sdg",
+        "plenary"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yongsen-mao",
+      "name": "毛永森",
+      "bio": "我是毛永森，来自Manycore Tech Inc.的研究工程师。我在西蒙弗雷泽大学（SFU）完成了我的研究型硕士学位，专攻3D计算机视觉和图形学领域。我很幸运能由Manolis Savva教授指导，并由Angel Xuan Chang在GrUVi实验室指导。在此之前，我从浙江大学（ZJU）和SFU获得了工学学士学位。\r\n我的研究兴趣在于连接合成和现实世界的3D场景数据，以支持计算机视觉和机器人技术中的下游应用。",
+      "role": "研究工程师",
+      "org": "Manycore Tech Inc.",
+      "roleOrg": "研究工程师, Manycore Tech Inc.",
+      "image": "/images/speakers/yongsen-mao.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/SamMaoYS",
+        "linkedin": "",
+        "website": "https://sammaoys.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "hu-youhao",
+      "name": "Hu YouHao",
+      "bio": "",
+      "role": "学生",
+      "org": "Dora-rs",
+      "roleOrg": "Dora-rs学生",
+      "image": "/images/speakers/hu-youhao.jpg",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "abdallah-essa",
+      "name": "Abdallah ESSA",
+      "bio": "Abdallah ESSA - Afnor集团AI与NLP负责人",
+      "role": "Afnor集团AI与NLP负责人",
+      "org": "",
+      "roleOrg": "Afnor集团AI与NLP负责人",
+      "image": "/images/speakers/abdallah-essa.jpg",
+      "tags": [
+        "apps-agents",
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "bob-ding",
+      "name": "丁心民",
+      "bio": "丁心民 - Dora-rs 社区生态系统负责人",
+      "role": "Dora",
+      "org": "rs 社区生态系统负责人",
+      "roleOrg": "Dora-rs 社区生态系统负责人",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-dora"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-zhu-de-jiang",
+      "name": "朱德江",
+      "bio": "朱德江，蚂蚁集团网络团队技术专家。在网络领域有十多年的经验，同时在语言编译器方面也有研究经验。他是Envoy Golang的维护者，也是Mooncake的成员。",
+      "role": "Mooncake核心成员 / Envoy Golang维护者",
+      "org": "蚂蚁集团",
+      "roleOrg": "Mooncake核心成员 / Envoy Golang维护者, 蚂蚁集团",
+      "image": "/images/speakers/speaker-zhu-de-jiang.jpg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/doujiang24",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "emily-bennett",
+      "name": "Emily Bennett",
+      "bio": "Emily Bennett - 数字公共解决方案负责人（圆桌讨论成员）, 联合国国际计算中心 (UNICC)",
+      "role": "数字公共解决方案负责人（圆桌讨论成员）",
+      "org": "联合国国际计算中心 (UNICC)",
+      "roleOrg": "数字公共解决方案负责人（圆桌讨论成员）, 联合国国际计算中心 (UNICC)",
+      "image": "/images/speakers/emily-bennett.jpg",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-chang-gao-wei",
+      "name": "常高伟",
+      "bio": "ANP开源技术社区发起人，W3C AI Agent Protocol CG联席主席。AgentNetworkProtocol（ANP）是全球首个开源的智能体通信协议，ANP的目标是成为智能体互联网时代的HTTP，ANP的愿景是定义智能体的连接方式，为亿万智能体构建一个开放、安全、高效的协作网络。",
+      "role": "发起人",
+      "org": "ANP开源技术社区",
+      "roleOrg": "发起人, ANP开源技术社区",
+      "image": "/images/speakers/speaker-chang-gao-wei.jpg",
+      "tags": [
+        "agentic-web"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "huixin-xue",
+      "name": "薛蕙心",
+      "bio": "薛蕙心，中国作曲家、音乐制作人、音乐AI研究者。上海音乐学院音乐AI博士研究生，师从刘灏教授，汉堡音乐与戏剧大学访问学者，上海音乐学院人工智能音乐治疗重点实验室成员。她本科和硕士均毕业于上海音乐学院音乐工程系，专业第一。薛蕙心的作品荣获多项大奖，包括2024年OPUS ARTIS巴黎国际作曲比赛最高奖、2024年Sound Chain国际电子音乐作曲比赛荣誉奖（全球6位获奖者中唯一的中国获奖者）、2024年杭州国际电子音乐作曲比赛第二名。作为音乐AI研究者，她致力于探索AI技术赋能音乐创作的可能性，包括AI音乐生成模型训练与评估以及AI音色合成。",
+      "role": "上海音乐学院博士研究生",
+      "org": "上海音乐学院",
+      "roleOrg": "上海音乐学院博士研究生",
+      "image": "/images/speakers/huixin-xue.png",
+      "tags": [
+        "ai-next"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/ASLP-lab/SongEval",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jian-li",
+      "name": "李健",
+      "bio": "李健 - 清程极智技术专家",
+      "role": "清程极智技术专家",
+      "org": "",
+      "roleOrg": "清程极智技术专家",
+      "image": "/images/speakers/jian-li.jpg",
+      "tags": [
+        "ws-chitu"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jinxiang-wang",
+      "name": "汪锦想",
+      "bio": "汪锦想 - 科大讯飞技术专家",
+      "role": "科大讯飞技术专家",
+      "org": "",
+      "roleOrg": "科大讯飞技术专家",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-cann"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "kaichao-you",
+      "name": "游凯超",
+      "bio": "游凯超在清华大学获得博士学位，自2024年访问加州大学伯克利分校以来，一直致力于vLLM项目。他担任vLLM项目的核心维护者，负责vLLM的分布式推理架构、vLLM的torch.compile集成、开源协作等多个方面的工作。",
+      "role": "核心维护者",
+      "org": "vLLM",
+      "roleOrg": "核心维护者, vLLM",
+      "image": "/images/speakers/kaichao-you.jpg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "https://x.com/KaichaoYou",
+        "github": "https://github.com/youkaichao",
+        "linkedin": "https://www.linkedin.com/in/youkaichao/",
+        "website": "https://youkaichao.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "krzysztof-ociepa",
+      "name": "Krzysztof Ociepa",
+      "bio": "Azurro S.C.的联合创始人兼首席架构师，负责设计和构建机器学习和大数据解决方案。他开展专注于基于LLM创建解决方案的研发项目，并基于其专有的ALLaMo框架开发和训练语言模型。他是波兰大型语言模型Bielik的联合创建者。",
+      "role": "核心团队成员",
+      "org": "Bielik.AI",
+      "roleOrg": "核心团队成员, Bielik.AI",
+      "image": "/images/speakers/krzysztof-ociepa.jpeg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/krzysztof-ociepa/",
+        "website": "https://azurro.pl/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "li-jianzhong",
+      "name": "李建忠",
+      "bio": "李建忠 - SVP, CSDN",
+      "role": "SVP，CSDN",
+      "org": "",
+      "roleOrg": "SVP, CSDN",
+      "image": "/images/speakers/jianzhong-li.jpg",
+      "tags": [
+        "forum-aivision",
+        "plenary"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "mats-lundgren",
+      "name": "Mats Lundgren",
+      "bio": "Mats Lundgren - Futurewei Technologies",
+      "role": "Futurewei Technologies",
+      "org": "",
+      "roleOrg": "Futurewei Technologies",
+      "image": "/images/speakers/mats-lundgren.png",
+      "tags": [
+        "ws-edge-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "matt-carroll",
+      "name": "Matt Carroll",
+      "bio": "Matt Carroll - 前 Flutter 团队成员、Flutter Bounty Hunters 负责人",
+      "role": "前 Flutter 团队成员、Flutter Bounty Hunters 负责人",
+      "org": "",
+      "roleOrg": "前 Flutter 团队成员、Flutter Bounty Hunters 负责人",
+      "image": "/images/speakers/matt-carroll.png",
+      "tags": ["ws-flutter"],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "oskar-kwasniewski",
+      "name": "Oskar Kwasniewski",
+      "bio": "Oskar Kwasniewski - React Native 核心贡献者、React Native for visionOS 创始人",
+      "role": "React Native 核心贡献者、React Native for visionOS 创始人",
+      "org": "",
+      "roleOrg": "React Native 核心贡献者、React Native for visionOS 创始人",
+      "image": "/images/speakers/oskar.jpeg",
+      "tags": ["ws-rn"],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "paul-yang",
+      "name": "Paul Yang",
+      "bio": "Paul Yang - Runhouse机器学习基础设施工程师",
+      "role": "Runhouse机器学习基础设施工程师",
+      "org": "",
+      "roleOrg": "Runhouse机器学习基础设施工程师",
+      "image": "/images/speakers/paul-yang.jpeg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-wang-peng-wei",
+      "name": "王鹏伟",
+      "bio": "北京智源人工智能研究院具身智能大模型负责人，当前负责具身大脑大模型RoboBrain和大小脑框架RoboOS。研究兴趣包括具身智能、多模态大模型、深度学习、自然语言处理和机器学习。曾就职于阿里巴巴达摩院和快手科技大模型中台部门，主要负责大规模语音语义一体化多模态交互系统和多模态预训练项目，在多模态大模型、文本大模型和机器智能方面拥有丰富的工业界和学术界经验。",
+      "role": "具身智能大模型负责人",
+      "org": "北京智源人工智能研究院",
+      "roleOrg": "具身智能大模型负责人, 北京智源人工智能研究院",
+      "image": "/images/speakers/speaker-wang-peng-wei.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "piao-yishi",
+      "name": "朴弋石",
+      "bio": "朴弋石 - 数据负责人（圆桌讨论成员）, DeepSeek",
+      "role": "数据负责人（圆桌讨论成员）",
+      "org": "DeepSeek",
+      "roleOrg": "数据负责人（圆桌讨论成员）, DeepSeek",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "richard-reiner",
+      "name": "Richard REINER",
+      "bio": "我是一名连续创业者和公司建设者，曾有多次将公司出售给财富1000强企业的经历，也是一位全球领先的网络安全专家，曾在多家全球领先公司担任C级和副总裁职位。我活跃于网络安全、人工智能和物联网交叉领域的多家高增长公司，担任高管、投资者、导师和董事会成员，在这些领域我曾创建并成功退出了多家公司，并拥有多项专利。\r\n\r\n我是CC Stratus Capital的创始合伙人，这是一家专注于网络安全和人工智能的创新投资公司。\r\n\r\n我曾是领先的区块链大数据平台dfuse / StreamingFast的执行主席（后被The Graph收购），以及物联网终端安全公司Cybeats的主席（后被Relay Medical收购）。我曾担任英特尔安全集团安全身份部门的首席技术官，以及McAfee的安全身份副总裁。在PasswordBox被英特尔收购之前，我曾担任这家领先的数字身份公司的总裁。我曾是全球云计算领导者Enomaly的主席兼首席执行官，直到2011年Enomaly被收购；我也是领先的网络安全公司Assurent的创始人、首席执行官和首席技术官，直到2006年该公司被收购。\r\n\r\n我曾在多家领先的网络安全、云、人工智能和物联网公司的董事会和顾问委员会任职，如Autohost、Korbit AI、Shearwater Aerospace、Immunio、Elliptic Technologies、Virima、CloudeAssurance、Veracode、NetClarity、Virima和Fonolo。\r\n\r\n我经常被《纽约时报》、CBS、NBC、《今日美国》、TechCrunch等媒体引用，并拥有网络安全、大数据和人工智能领域的博士学位和多项专利。",
+      "role": "董事会成员和顾问",
+      "org": "Procero AI",
+      "roleOrg": "董事会成员和顾问, Procero AI",
+      "image": "/images/speakers/richard-reiner.jpg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/richardreiner/",
+        "website": "https://www.richardreiner.com/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "walid-mathlouthi",
+      "name": "Walid Mathlouthi",
+      "bio": "国际电信联盟（ITU）基础设施部门负责人。",
+      "role": "基础设施部门负责人",
+      "org": "国际电信联盟",
+      "roleOrg": "国际电信联盟，基础设施部门负责人",
+      "image": "/images/speakers/walid-mathlouthi.jpg",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "https://www.linkedin.com/in/walidmathlouthi/",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-he-wan-qing",
+      "name": "何万青",
+      "bio": "何万青博士，北京青城极智科技有限公司副总裁，曾任英特尔首席工程师、阿里云高性能计算负责人。何博士是高性能计算和AI领域的知名资深专家，拥有20年并行计算、云计算和AI经验。在英特尔期间，他专注于并行优化、异构计算和并行文件系统，并负责天河二号超级计算机核心异构多核MIC的集成开发。在阿里云期间，他从零开始开发了弹性高性能计算（EHPC）和SCC超算集群产品，并在疫情期间领导阿里云支持全球COVID-19技术响应。在燧原科技和青城极智，他负责国产AI算力的应用优化和开箱即用技术生态的建设。何博士是CCF资深志愿者和荣誉委员，十余年来曾担任CCF YOCSEF总部副主席、高性能计算技术委员会和青年计算机科技论坛执行委员等多个职务。他是CCF的杰出演讲者，并参与了近年来CNCC、YEF和CED的组织委员会。从2025年起，他将主持CCF脱口秀。他热衷于科普，过去三年与家人共同出版了6本科普书籍。他运营着微信公众号“四维碎片”。",
+      "role": "副总裁, 首席信息官",
+      "org": "北京青城极智科技有限公司",
+      "roleOrg": "副总裁, 首席信息官, 北京青城极智科技有限公司",
+      "image": "/images/speakers/speaker-he-wan-qing.jpeg",
+      "tags": [
+        "ai-models-infra",
+        "ws-chitu"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/wanqing-warren-he-017bb347/",
+        "website": "微信公众号: 【四维碎片】"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-wei-wei",
+      "name": "唯伟",
+      "bio": "毕业于中央美术学院，从事美育科普工作。",
+      "role": "Bilibili知名艺术内容创作者",
+      "org": "有点意思O",
+      "roleOrg": "Bilibili知名艺术内容创作者, 有点意思O",
+      "image": "/images/speakers/speaker-wei-wei.jpg",
+      "tags": [
+        "ai-next",
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wu-shaoqing",
+      "name": "吴少卿",
+      "bio": "吴少卿 - AI治理负责人（圆桌讨论成员）, DeepSeek",
+      "role": "AI治理负责人（圆桌讨论成员）",
+      "org": "DeepSeek",
+      "roleOrg": "AI治理负责人（圆桌讨论成员）, DeepSeek",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "forum-aivision"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yanbo-yang",
+      "name": "杨彦波",
+      "bio": "杨彦波 - SGLang Committer",
+      "role": "SGLang Committer",
+      "org": "",
+      "roleOrg": "SGLang Committer",
+      "image": "/images/speakers/yanboyang.png",
+      "tags": [
+        "ws-sglang"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yao-chen",
+      "name": "陈瑶",
+      "bio": "陈瑶 - 傲意科技 COO",
+      "role": "傲意科技 COO",
+      "org": "",
+      "roleOrg": "傲意科技 COO",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "open-for-sdg"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yu-huang",
+      "name": "黄浴",
+      "bio": "黄浴 - Roboraction.AI CEO (主持人)",
+      "role": "Roboraction.AI CEO (主持人)",
+      "org": "",
+      "roleOrg": "Roboraction.AI CEO (主持人)",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhang-yubo",
+      "name": "张雨博",
+      "bio": "张雨博 - openUBMC社区技术委员会委员",
+      "role": "openUBMC社区技术委员会委员",
+      "org": "",
+      "roleOrg": "openUBMC社区技术委员会委员",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "speaker-yin-yun-peng",
+      "name": "尹云鹏",
+      "bio": "openloong控制框架的开发者。",
+      "role": "运动控制算法与框架负责人",
+      "org": "人形机器人（上海）有限公司",
+      "roleOrg": "运动控制算法与框架负责人, 人形机器人（上海）有限公司",
+      "image": "/images/speakers/speaker-yin-yun-peng.jpg",
+      "tags": [
+        "embodied-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yuxuan-zhang",
+      "name": "张昱轩",
+      "bio": "智谱AI技术布道师",
+      "role": "技术布道师",
+      "org": "智谱AI",
+      "roleOrg": "技术布道师, 智谱AI",
+      "image": "/images/speakers/yuxuan-zhang.jpg",
+      "tags": [
+        "ai-models-infra"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/zRzRzRzRzRzRzR",
+        "linkedin": "https://www.linkedin.com/in/yuxuan-zhang-86a124282/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhibin-jia",
+      "name": "贾志宾",
+      "bio": "贾志宾 - 昇腾生态技术专家",
+      "role": "昇腾生态技术专家",
+      "org": "",
+      "roleOrg": "昇腾生态技术专家",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-chitu"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhixing-li",
+      "name": "李智星",
+      "bio": "李智星 - 智谱副总裁",
+      "role": "智谱副总裁",
+      "org": "",
+      "roleOrg": "智谱副总裁",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-chitu"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhuo-wu",
+      "name": "Zhuo Wu",
+      "bio": "Zhuo Wu - 英特尔AI软件布道师",
+      "role": "英特尔AI软件布道师",
+      "org": "",
+      "roleOrg": "英特尔AI软件布道师",
+      "image": "/images/speakers/zhuo-wu.jpeg",
+      "tags": [
+        "apps-agents",
+        "ws-edge-ai"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "mike-tang",
+      "name": "Mike Tang / 夏歌",
+      "bio": "Mike Tang / 夏歌 - RustChinaConf 组委会",
+      "role": "RustChinaConf 组委会",
+      "org": "",
+      "roleOrg": "RustChinaConf 组委会",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "mike-ma-solana",
+      "name": "Mike Ma",
+      "bio": "",
+      "role": "",
+      "org": "",
+      "roleOrg": "",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-solana"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "rebecca-rumbul",
+      "name": "Rebecca",
+      "bio": "Rebecca - Rust 基金会执行董事",
+      "role": "Rust 基金会执行董事",
+      "org": "",
+      "roleOrg": "Rust 基金会执行董事",
+      "image": "/images/speakers/rustchinaconf/rebecca.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "meng-ke",
+      "name": "柯猛",
+      "bio": "柯猛 - 开放原子开源旋武社区工作委员会主席",
+      "role": "开放原子开源旋武社区工作委员会主席",
+      "org": "",
+      "roleOrg": "开放原子开源旋武社区工作委员会主席",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yizhou-lu",
+      "name": "陆一洲",
+      "bio": "陆一洲 - 非凸科技策略负责人",
+      "role": "非凸科技策略负责人",
+      "org": "",
+      "roleOrg": "非凸科技策略负责人",
+      "image": "/images/speakers/rustchinaconf/陆一洲.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jack-huey",
+      "name": "Jack Huey",
+      "bio": "Jack Huey - Rust类型团队联合负责人，编译器团队成员，语言团队顾问，Rust愿景文档工作联合负责人",
+      "role": "Rust类型团队联合负责人，编译器团队成员，语言团队顾问，Rust愿景文档工作联合负责人",
+      "org": "",
+      "roleOrg": "Rust类型团队联合负责人，编译器团队成员，语言团队顾问，Rust愿景文档工作联合负责人",
+      "image": "/images/speakers/rustchinaconf/jack.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "josh-triplett",
+      "name": "Josh Triplett",
+      "bio": "Josh Triplett - Rust 项目语言、库、Cargo 和规范团队成员",
+      "role": "Rust 项目语言、库、Cargo 和规范团队成员",
+      "org": "",
+      "roleOrg": "Rust 项目语言、库、Cargo 和规范团队成员",
+      "image": "/images/speakers/rustchinaconf/josh-091-full-square.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "miguel-ojeda",
+      "name": "Miguel Ojeda",
+      "bio": "Miguel Ojeda - Rust for Linux 核心开发者",
+      "role": "Rust for Linux 核心开发者",
+      "org": "",
+      "roleOrg": "Rust for Linux 核心开发者",
+      "image": "/images/speakers/rustchinaconf/miguelOjeda.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yongyi-yu",
+      "name": "于涌溢 & 李宇",
+      "bio": "于涌溢 & 李宇 - 字节跳动研发工程师",
+      "role": "字节跳动研发工程师",
+      "org": "",
+      "roleOrg": "字节跳动研发工程师",
+      "image": "/images/speakers/rustchinaconf/于涌溢.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "rolland-dudemaine",
+      "name": "Rolland Dudemaine",
+      "bio": "Rolland Dudemaine - TrustInSoft 解决方案工程总监",
+      "role": "TrustInSoft 解决方案工程总监",
+      "org": "",
+      "roleOrg": "TrustInSoft 解决方案工程总监",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yu-chen",
+      "name": "陈渝",
+      "bio": "陈渝 - 清华大学计算机科学与技术系的副教授和博士生导师兼该软件研究所的副所长",
+      "role": "清华大学计算机科学与技术系的副教授和博士生导师兼该软件研究所的副所长",
+      "org": "",
+      "roleOrg": "清华大学计算机科学与技术系的副教授和博士生导师兼该软件研究所的副所长",
+      "image": "/images/speakers/rustchinaconf/陈渝.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "james-munns",
+      "name": "James Munns",
+      "bio": "James Munns - 嵌入式 Rust 工作组的创始成员之一，也是 postcard 系列 crate 的作者",
+      "role": "嵌入式 Rust 工作组的创始成员之一，也是 postcard 系列 crate 的作者",
+      "org": "",
+      "roleOrg": "嵌入式 Rust 工作组的创始成员之一，也是 postcard 系列 crate 的作者",
+      "image": "/images/speakers/rustchinaconf/james-2025.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "adam-harvey",
+      "name": "Adam Harvey",
+      "bio": "Adam Harvey - Rust 基金会专注于安全的软件开发人员",
+      "role": "Rust 基金会专注于安全的软件开发人员",
+      "org": "",
+      "roleOrg": "Rust 基金会专注于安全的软件开发人员",
+      "image": "/images/speakers/rustchinaconf/Adam.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zili-chen",
+      "name": "陈梓立",
+      "bio": "陈梓立 - ScopeDB 联合创始人",
+      "role": "ScopeDB 联合创始人",
+      "org": "",
+      "roleOrg": "ScopeDB 联合创始人",
+      "image": "/images/speakers/rustchinaconf/陈梓立.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jindi-shen",
+      "name": "沈金堤",
+      "bio": "沈金堤 - RustPBX 发起人，滴滴云产品技术总监",
+      "role": "RustPBX 发起人，滴滴云产品技术总监",
+      "org": "",
+      "roleOrg": "RustPBX 发起人，滴滴云产品技术总监",
+      "image": "/images/speakers/rustchinaconf/沈金堤.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "dean-little",
+      "name": "Dean Little",
+      "bio": "Dean Little - Blueshift CEO",
+      "role": "Blueshift CEO",
+      "org": "",
+      "roleOrg": "Blueshift CEO",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "haobo-gu",
+      "name": "顾浩波",
+      "bio": "顾浩波 - RMK 作者",
+      "role": "RMK 作者",
+      "org": "",
+      "roleOrg": "RMK 作者",
+      "image": "/images/speakers/rustchinaconf/顾浩波.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhenchi-zhong",
+      "name": "钟镇炽",
+      "bio": "钟镇炽 - GreptimeDB 核心开发者",
+      "role": "GreptimeDB 核心开发者",
+      "org": "",
+      "roleOrg": "GreptimeDB 核心开发者",
+      "image": "/images/speakers/rustchinaconf/钟镇炽.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "hongbo-zhang",
+      "name": "张宏波",
+      "bio": "张宏波 - IDEA 研究院首席科学家，Moonbit 平台负责人",
+      "role": "IDEA 研究院首席科学家，Moonbit 平台负责人",
+      "org": "",
+      "roleOrg": "IDEA 研究院首席科学家，Moonbit 平台负责人",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yubing-zhao",
+      "name": "赵雨冰",
+      "bio": "赵雨冰 - Linera 应用程序开发者",
+      "role": "Linera 应用程序开发者",
+      "org": "",
+      "roleOrg": "Linera 应用程序开发者",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xiaoyu-chen",
+      "name": "陈小玉",
+      "bio": "陈小玉 - Databend Labs 技术副总裁",
+      "role": "Databend Labs 技术副总裁",
+      "org": "",
+      "roleOrg": "Databend Labs 技术副总裁",
+      "image": "/images/speakers/rustchinaconf/陈小玉.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xuecheng-yang",
+      "name": "杨学成",
+      "bio": "杨学成 - Rust Web 框架 Salvo 作者，Palpo 核心开发者",
+      "role": "Rust Web 框架 Salvo 作者，Palpo 核心开发者",
+      "org": "",
+      "roleOrg": "Rust Web 框架 Salvo 作者，Palpo 核心开发者",
+      "image": "/images/speakers/rustchinaconf/杨学成.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zan-pan",
+      "name": "潘赞",
+      "bio": "潘赞 - 杭州又算科技CEO/Zino应用开发框架作者",
+      "role": "杭州又算科技CEO/Zino应用开发框架作者",
+      "org": "",
+      "roleOrg": "杭州又算科技CEO/Zino应用开发框架作者",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "esteban-kuber",
+      "name": "Esteban Küber",
+      "bio": "Esteban Küber - Rust 编译器团队成员",
+      "role": "Rust 编译器团队成员",
+      "org": "",
+      "roleOrg": "Rust 编译器团队成员",
+      "image": "/images/speakers/rustchinaconf/esteban.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jonathan-kelly",
+      "name": "Jonathan Kelley",
+      "bio": "Jonathan Kelley - Dioxus Labs 创始人/CEO",
+      "role": "Dioxus Labs 创始人/CEO",
+      "org": "",
+      "roleOrg": "Dioxus Labs 创始人/CEO",
+      "image": "/images/speakers/rustchinaconf/jonathan.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "isacc-zhang",
+      "name": "张恰克",
+      "bio": "张恰克 - 英飞凌MCU现场应用工程师",
+      "role": "英飞凌MCU现场应用工程师",
+      "org": "",
+      "roleOrg": "英飞凌MCU现场应用工程师",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "orhun-parmaksiz",
+      "name": "Orhun Parmaksız",
+      "bio": "Orhun Parmaksız - Ratatui 的主要维护者",
+      "role": "Ratatui 的主要维护者",
+      "org": "",
+      "roleOrg": "Ratatui 的主要维护者",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "alejandra-gonzalez",
+      "name": "Alejandra González",
+      "bio": "Alejandra González - clippy 团队成员",
+      "role": "clippy 团队成员",
+      "org": "",
+      "roleOrg": "clippy 团队成员",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yuan-li",
+      "name": "李媛",
+      "bio": "李媛 - 华为工程师，Rust 编译器团队维护者",
+      "role": "华为工程师，Rust 编译器团队维护者",
+      "org": "",
+      "roleOrg": "华为工程师，Rust 编译器团队维护者",
+      "image": "/images/speakers/rustchinaconf/李原.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jiayan-wu",
+      "name": "吴家焱",
+      "bio": "吴家焱 - 南京大学PASCAL实验室研究生，rust-analyzer维护者，Rust Foundation Fellowship",
+      "role": "南京大学PASCAL实验室研究生，rust-analyzer维护者，Rust Foundation Fellowship",
+      "org": "",
+      "roleOrg": "南京大学PASCAL实验室研究生，rust-analyzer维护者，Rust Foundation Fellowship",
+      "image": "/images/speakers/rustchinaconf/吴家焱 .jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "bohao-tang",
+      "name": "唐博昊",
+      "bio": "唐博昊 - Lead DevRel APAC @Xion",
+      "role": "Lead DevRel APAC @Xion",
+      "org": "",
+      "roleOrg": "Lead DevRel APAC @Xion",
+      "image": "/images/speakers/rustchinaconf/唐博皞.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "kevin-boos",
+      "name": "Kevin Boos",
+      "bio": "Kevin Boos - Futurewei 首席架构师 / Theseus OS 创造者 / Robius 项目技术负责人",
+      "role": "Futurewei 首席架构师 / Theseus OS 创造者 / Robius 项目技术负责人",
+      "org": "",
+      "roleOrg": "Futurewei 首席架构师 / Theseus OS 创造者 / Robius 项目技术负责人",
+      "image": "/images/speakers/rustchinaconf/kevinboos.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "guillaume-gomez",
+      "name": "Guillaume Gomez",
+      "bio": "Guillaume Gomez - Rustdoc 团队负责人，编译器团队、开发工具团队成员",
+      "role": "Rustdoc 团队负责人，编译器团队、开发工具团队成员",
+      "org": "",
+      "roleOrg": "Rustdoc 团队负责人，编译器团队、开发工具团队成员",
+      "image": "/images/speakers/rustchinaconf/guillaume.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "david-lattimore",
+      "name": "David Lattimore",
+      "bio": "David Lattimore - Wild Linker 作者",
+      "role": "Wild Linker 作者",
+      "org": "",
+      "roleOrg": "Wild Linker 作者",
+      "image": "/images/speakers/rustchinaconf/david.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "qiqi-zhang",
+      "name": "张琦琦",
+      "bio": "张琦琦 - Kong 软件工程师，Tokio 维护者",
+      "role": "Kong 软件工程师，Tokio 维护者",
+      "org": "",
+      "roleOrg": "Kong 软件工程师，Tokio 维护者",
+      "image": "/images/speakers/rustchinaconf/张奇祺.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xudong-huang",
+      "name": "黄旭东",
+      "bio": "黄旭东 - May-rs 作者 / GPU芯片行业公司高级软件经理",
+      "role": "May-rs 作者 / GPU芯片行业公司高级软件经理",
+      "org": "",
+      "roleOrg": "May-rs 作者 / GPU芯片行业公司高级软件经理",
+      "image": "/images/speakers/rustchinaconf/黄旭东.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jiping-zhou",
+      "name": "周纪平",
+      "bio": "周纪平 - os-checker 作者，开源贡献者",
+      "role": "os-checker 作者，开源贡献者",
+      "org": "",
+      "roleOrg": "os-checker 作者，开源贡献者",
+      "image": "/images/speakers/rustchinaconf/周积萍.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "hongliang-tian",
+      "name": "田洪亮",
+      "bio": "蚂蚁集团资深技术专家，Asterinas OS 项目发起人",
+      "role": "资深技术专家，Asterinas OS 项目发起人",
+      "org": "蚂蚁集团",
+      "roleOrg": "蚂蚁集团资深技术专家，Asterinas OS 项目发起人",
+      "image": "/images/speakers/rustchinaconf/田洪亮.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "bart-massey",
+      "name": "Bart Massey",
+      "bio": "Bart Massey - 波特兰州立大学计算机科学副教授/ Rust-Edu 创始人和负责人",
+      "role": "波特兰州立大学计算机科学副教授/ Rust-Edu 创始人和负责人",
+      "org": "",
+      "roleOrg": "波特兰州立大学计算机科学副教授/ Rust-Edu 创始人和负责人",
+      "image": "/images/speakers/rustchinaconf/bart.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "li-zhang",
+      "name": "张利",
+      "bio": "张利 - 快手数据平台大数据引擎架构师",
+      "role": "快手数据平台大数据引擎架构师",
+      "org": "",
+      "roleOrg": "快手数据平台大数据引擎架构师",
+      "image": "/images/speakers/yi-zhang.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "han-jiang",
+      "name": "蒋涵",
+      "bio": "蒋涵 - vivo 系统架构专家，10余年操作系统内核和语言运行时设计开发经验",
+      "role": "vivo 系统架构专家，10余年操作系统内核和语言运行时设计开发经验",
+      "org": "",
+      "roleOrg": "vivo 系统架构专家，10余年操作系统内核和语言运行时设计开发经验",
+      "image": "/images/speakers/rustchinaconf/蒋晗.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "hui-ding",
+      "name": "丁辉",
+      "bio": "丁辉 - 中兴通讯高级技术教练",
+      "role": "中兴通讯高级技术教练",
+      "org": "",
+      "roleOrg": "中兴通讯高级技术教练",
+      "image": "/images/speakers/rustchinaconf/丁辉.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "manuel-drehwald",
+      "name": "Manuel Drehwald",
+      "bio": "Manuel Drehwald - Rust 编译器团队成员",
+      "role": "Rust 编译器团队成员",
+      "org": "",
+      "roleOrg": "Rust 编译器团队成员",
+      "image": "/images/speakers/rustchinaconf/Manuel.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhifeng-sun",
+      "name": "孙志峰",
+      "bio": "孙志峰 - 中兴通讯架构师 / Rust 布道师",
+      "role": "中兴通讯架构师 / Rust 布道师",
+      "org": "",
+      "roleOrg": "中兴通讯架构师 / Rust 布道师",
+      "image": "/images/speakers/zhigang-sun.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xuewo-ding",
+      "name": "丁皓",
+      "bio": "丁皓 - ASF Member, Apache OpenDAL PMC Chair, Senior Engineer at LanceDB",
+      "role": "ASF Member, Apache OpenDAL PMC Chair, Senior Engineer at LanceDB",
+      "org": "",
+      "roleOrg": "ASF Member, Apache OpenDAL PMC Chair, Senior Engineer at LanceDB",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yifei-sheng",
+      "name": "盛一飞",
+      "bio": "盛一飞 - GenUI，SurrealismUI Slint框架，以及VoceSpace音视频软件的作者",
+      "role": "GenUI，SurrealismUI Slint框架，以及VoceSpace音视频软件的作者",
+      "org": "",
+      "roleOrg": "GenUI，SurrealismUI Slint框架，以及VoceSpace音视频软件的作者",
+      "image": "/images/speakers/rustchinaconf/盛逸飞.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "lio-qing",
+      "name": "廖青",
+      "bio": "廖青 - 香港大学学生研究助理",
+      "role": "香港大学学生研究助理",
+      "org": "",
+      "roleOrg": "香港大学学生研究助理",
+      "image": "/images/speakers/rustchinaconf/LioQing.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "archer-aimo",
+      "name": "Archer",
+      "bio": "Archer - AiMo Network Co-Founder && CTO",
+      "role": "AiMo Network Co-Founder && CTO",
+      "org": "",
+      "roleOrg": "AiMo Network Co-Founder && CTO",
+      "image": "/images/speakers/rustchinaconf/Archer.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yuxiao-wang",
+      "name": "王宇霄",
+      "bio": "王宇霄 - CertiK 安全研究员",
+      "role": "CertiK 安全研究员",
+      "org": "",
+      "roleOrg": "CertiK 安全研究员",
+      "image": "/images/speakers/rustchinaconf/王雨潇.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "mingxuan-liu",
+      "name": "刘铭轩",
+      "bio": "刘铭轩 - 西北工业大学博士生，主要研究操作系统，分布式系统和云计算Serverless",
+      "role": "西北工业大学博士生，主要研究操作系统，分布式系统和云计算Serverless",
+      "org": "",
+      "roleOrg": "西北工业大学博士生，主要研究操作系统，分布式系统和云计算Serverless",
+      "image": "/images/speakers/rustchinaconf/刘明轩.jpg",
+      "tags": [
+        "rustchinaconf"
+      ],
+      "socialLinks": {
+        "mastodon": "undefined",
+        "twitter": "undefined",
+        "github": "undefined",
+        "linkedin": "undefined",
+        "website": "undefined"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "guofeng-zhang",
+      "name": "张国锋",
+      "bio": "",
+      "role": "常务副理事长",
+      "org": "上海开源信息技术协会",
+      "roleOrg": "上海开源信息技术协会常务副理事长",
+      "image": "/images/speakers/guofeng-zhang.jpg",
+      "tags": [
+        "ws-globalization"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "william-guo",
+      "name": "郭炜",
+      "bio": "",
+      "role": "CEO",
+      "org": "白鲸开源",
+      "roleOrg": "白鲸开源 CEO, Apache 基金会成员",
+      "image": "/images/speakers/william-guo.jpg",
+      "tags": [
+        "ws-globalization"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "richard-lin",
+      "name": "林旅强",
+      "bio": "",
+      "role": "联合创始人",
+      "org": "开源社",
+      "roleOrg": "开源社联合创始人，RTE开发者社区主理人",
+      "image": "/images/speakers/richard-lin.jpg",
+      "tags": [
+        "ws-globalization"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "weidong-shao",
+      "name": "Weidong Shao",
+      "bio": "",
+      "role": "经理",
+      "org": "SciMigo",
+      "roleOrg": "SciMigo经理",
+      "image": "/images/speakers/0-placeholder-person.png",
+      "tags": [
+        "ws-ai-education"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yonghui-wu",
+      "name": "吴永辉",
+      "bio": "吴永辉，博士，复旦大学副教授，Stony Brook University访问学者。2001到2011担任复旦大学程序设计竞赛队教练，每年晋级ACM-ICPC世界总决赛，并获得3枚总决赛奖牌。2012年至今，编写并出版\"大学程序设计课程与竞赛训练教材\"系列，包括简体、繁体中文版和英文版。2013年至今，在两岸四地、北美、拉美、南亚、东南亚、中东等地讲学，并主持超过400家大学参加的ICPC训练联盟。",
+      "role": "副教授",
+      "org": "复旦大学",
+      "roleOrg": "复旦大学副教授",
+      "image": "/images/speakers/yonghui-wu.jpg",
+      "tags": [
+        "ws-ai-education"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    }
+  ]
+}

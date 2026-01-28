@@ -1,0 +1,27 @@
+---
+import Layout from "layouts/LayoutLandingZh.astro";
+import HeroText from "components/HeroText.astro";
+---
+<Layout title="PPT 模版下载 Template Download" navBackground="light" pageTransitionName="PPT">
+    <HeroText title="PPT 模版下载 Template Download" lightgray />
+    <div style="padding: 4em; text-align: center;">
+        <a 
+            href="/GOSIM HANGZHOU 2025 模版 Template.pptx" 
+            download 
+            style="
+                display: inline-block;
+                padding: 1rem 2rem;
+                background-color: #007bff;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            "
+            onmouseover="this.style.backgroundColor='#0056b3'"
+            onmouseout="this.style.backgroundColor='#007bff'"
+        >
+            PPT 模版下载 Template Download
+        </a>
+    </div>
+</Layout>

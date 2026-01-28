@@ -1,0 +1,222 @@
+---
+// Packages
+import { Picture } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+// Components
+import Layout from "layouts/LayoutLanding.astro";
+import schedule from "json/ScheduleBilingual.json";
+import scheduleForum from "json/Schedule-forum.json";
+import speakers from "json/Speakers.json";
+import SocialShare from "components/SocialShare.astro";
+
+// Types
+type Event = {
+  title: string;
+  content: string;
+  date: string;
+  timeSlot: string;
+  speakers?: { name: string; image?: string; roleOrg: string }[];
+  room?: string;
+};
+
+// Generate static paths for events
+export async function getStaticPaths() {
+  const events: {
+    params: { event: string };
+    props: { event: Event; category: string };
+  }[] = [];
+
+  const createSlug = (title: string) => {
+    return title
+      .toLowerCase()
+      .replace(/[^\w\s\u4e00-\u9fff-]/g, "")  // Keep ASCII word chars, spaces, Chinese chars, and hyphens
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-")
+      .replace(/^-+|-+$/g, "")  // Remove leading/trailing hyphens
+      .trim();
+  };
+
+  // Collect all sessions from all categories in main schedule (bilingual structure)
+  Object.entries(schedule.sessions).forEach(([category, categoryEvents]) => {
+    categoryEvents.forEach((event: any) => {
+      const eventTitle = typeof event.title === 'string' ? event.title : event.title?.en || '';
+      const transformedEvent = {
+        title: eventTitle,
+        content: typeof event.content === 'string' ? event.content : event.content?.en || '',
+        date: typeof event.date === 'string' ? event.date : event.date?.en || '',
+        timeSlot: event.timeSlot,
+        speakers: event.speakers?.map((s: any) => ({
+          name: typeof s.name === 'string' ? s.name : s.name?.en || '',
+          image: s.image,
+          roleOrg: typeof s.roleOrg === 'string' ? s.roleOrg : s.roleOrg?.en || ''
+        })) || [],
+        room: typeof event.room === 'string' ? event.room : event.room?.en || ''
+      };
+      events.push({
+        params: {
+          event: createSlug(eventTitle),
+        },
+        props: { event: transformedEvent, category },
+      });
+    });
+  });
+
+  // Add forum events
+  scheduleForum.forEach((event: Event) => {
+    events.push({
+      params: {
+        event: createSlug(event.title),
+      },
+      props: { event, category: "Forum" },
+    });
+  });
+
+  return events;
+}
+
+// Get the event from the route parameter
+const { event: eventDetails, category } = Astro.props as {
+  event: Event;
+  category: string;
+};
+
+// For images in public directory, we can reference them directly
+
+// Find the first matching category for the event
+const eventCategory = category || "Uncategorized";
+---
+
+<Layout
+  title={`${eventDetails.title} – GOSIM Hangzhou 2025`}
+  description={eventDetails.content
+    .replace(/\n/g, " ")
+    .replace(/<[^>]*>/g, "")
+    .substring(0, 160)}
+  navBackground="light"
+  pageTransitionName={eventDetails.title}
+>
+  <section
+    class="section speaker-detail-header"
+    data-theme-section="light"
+    data-bg-section="light"
+  >
+    <div class="gradient-circle-wrap">
+      <div class="gradient-circle"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-speaker">
+          <div class="row-speaker">
+            <div class="speaker-row-meta">
+              <div class="card-tags group-tags event-tag">
+                <div class="single-tag">
+                  <p>{eventCategory}</p>
+                </div>
+              </div>
+              <h1 class="h2">{eventDetails.title}</h1>
+              <div class="flex-event">
+                <p class="timedate">{eventDetails.date}</p>
+                <p>•</p>
+                <p>{eventDetails.timeSlot}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-row box-row-text styled-content">
+            <p class="location-text">
+              <strong>Location:</strong>
+              {
+                eventDetails.room ||
+                  (() => {
+                    // Find category by matching the category ID with the event's category
+                    const cat = schedule.categories.find((cat) => cat.id === category);
+                    if (cat && cat.room) {
+                      return typeof cat.room === 'string' ? cat.room : cat.room?.en || '';
+                    }
+                    return "TBA";
+                  })()
+              }
+            </p>
+          </div>
+
+          <div class="box-row box-row-text styled-content">
+            <Fragment set:html={eventDetails.content.replace(/\n/g, "<br>")} />
+          </div>
+
+          {
+            eventDetails.speakers && eventDetails.speakers.length > 0 && (
+              <>
+                <h2 class="h4 event-speaker-title">Speakers</h2>
+                <div class="card-row card-row-speakers event-detail_speakers">
+                  {eventDetails.speakers.map((speaker) => {
+                    // Find full speaker details from unified speakers.json
+                    let fullSpeakerDetails = speakers.speakers.find(
+                      (s) => s.name === speaker.name
+                    );
+                    
+                    // Check if this speaker is a workshop speaker based on their tag
+                    const workshopCategories = ["ws-future-web", "ws-cann", "ws-flutter", "ws-cangjie", "ws-edge-ai", "ws-chitu", "ws-ai-education", "ws-rn", "ws-dora", "ws-rust", "ws-sglang", "open-for-sdg", "forum-aivision"];
+                    let isWorkshopSpeaker = fullSpeakerDetails ? workshopCategories.includes(fullSpeakerDetails.tag) : false;
+
+                    // Determine the correct URL path
+                    const speakerPath = isWorkshopSpeaker
+                      ? "/workshops/"
+                      : "/speakers/";
+                    const speakerId =
+                      fullSpeakerDetails?.id ||
+                      speaker.name.toLowerCase().replace(/\s+/g, "-");
+
+                    return (
+                      <div class="card-col">
+                        <a href={`${speakerPath}${speakerId}/`}>
+                          <div class="single-speakers-card">
+                            <div class="card-row card-row-image">
+                              <div class="card-image">
+                                {(fullSpeakerDetails?.image || speaker?.image) && (
+                                  <img
+                                    src={fullSpeakerDetails?.image || speaker.image}
+                                    alt={speaker.name}
+                                    class="overlay"
+                                  />
+                                )}
+                              </div>
+                            </div>
+                            <div class="card-row card-row-info">
+                              <h3 class="h5">{speaker.name}</h3>
+                              <p>
+                                {fullSpeakerDetails?.roleOrg || speaker.roleOrg}
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    );
+                  })}
+                </div>
+              </>
+            )
+          }
+          <SocialShare
+            title={`${eventDetails.title} - GOSIM Hangzhou 2025`}
+            description={eventDetails.content
+              .replace(/\n/g, " ")
+              .replace(/<[^>]*>/g, "")
+              .substring(0, 160)}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .location-text {
+    font-size: 0.85em;
+    padding-bottom: 2rem;
+  }
+  .gradient-circle-wrap {
+    display: flex;
+    justify-content: center;
+  }
+</style>

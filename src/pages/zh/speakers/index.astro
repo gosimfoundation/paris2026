@@ -1,0 +1,30 @@
+---
+// Components
+import Layout from "layouts/LayoutLandingZh.astro";
+import GetTickets from "components/GetTickets.astro";
+import HeroText from "components/HeroText.astro";
+import AllSpeakers from "components/SpeakersZh.astro";
+---
+
+<Layout
+  title="讲师 – GOSIM Hangzhou 2025"
+  description="GOSIM Hangzhou 2025 是一个开源人工智能项目、开发者、研究人员和行业赞助商的聚会，旨在分享知识、相互学习和合作。"
+  navBackground="light"
+  pageTransitionName="Speakers"
+>
+  <HeroText title="全体 Keynote & 主题讲师" text="" lightgray />
+
+  <AllSpeakers />
+
+  <GetTickets
+    title="获取您的 GOSIM Hangzhou 2025 门票"
+    location="浙江 杭州"
+    date="2025年9月13-14日"
+    text="立即预定您在 GOSIM Hangzhou 2025 的席位。与创新者合作，与行业先驱交流，并成为塑造开源技术未来的一部分。"
+    ctaButton={{
+      text: "活动已结束，感谢参与",
+      link: "",
+      openInNewTab: false,
+    }}
+  />
+</Layout>

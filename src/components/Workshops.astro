@@ -1,0 +1,128 @@
+---
+import { Picture } from "astro:assets"
+import type { ImageMetadata } from "astro"
+
+// Import the unified speakers data
+import speakersData from "json/Speakers.json"
+
+// Filter speakers to only include workshop speakers where draft is false and id is not "tbd"
+const workshopCategories = ["ws-future-web", "ws-cann", "ws-flutter", "ws-cangjie", "ws-edge-ai", "ws-chitu", "ws-ai-education", "ws-rn", "ws-dora", "ws-rust", "ws-sglang", "open-for-sdg", "forum-aivision"];
+const filteredSpeakers = speakersData.speakers.filter(
+  (speaker) => speaker.draft !== true && speaker.id !== "tbd" && workshopCategories.includes(speaker.tag)
+)
+
+// For images in public directory, we can reference them directly
+---
+
+<div class="filter-container filter-alpha-animate">
+  <div class="overlay overlay-dark" data-filter-toggle="close">
+    <div class="close" data-filter-toggle="close">
+      <div class="close-fill"></div>
+      <div class="bar bar-top"></div>
+      <div class="bar bar-bottom"></div>
+    </div>
+  </div>
+  <div class="filter-box">
+    <p>Filter:</p>
+    <div class="filter-group" data-filter-group>
+      {
+        speakersData.categories.filter(cat => workshopCategories.includes(cat.id)).map((category) => (
+          <div
+            class="single-filter"
+            data-filter-status={category.id === "all" ? "active" : "not-active"}
+            data-filter-category={category.id}
+          >
+            <span>{category.name}</span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<section
+  class="section section-speakers-grid"
+  id="grid"
+  data-filter-section
+  data-theme-section="light"
+  data-bg-section="lightblue"
+  data-scroll-section
+>
+  <div class="container">
+    <div class="row row-filter">
+      <div class="col">
+        <div class="filter-group" data-filter-group>
+          {
+            speakersData.categories.filter(cat => workshopCategories.includes(cat.id)).map((category) => (
+              <div
+                class="single-filter"
+                data-filter-status={
+                  category.id === "all" ? "active" : "not-active"
+                }
+                data-filter-category={category.id}
+              >
+                <span>{category.name}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="row grid visible" data-filter-grid data-modal-grid>
+      {
+        filteredSpeakers.map((speaker, index) => (
+          <div
+            class="col"
+            data-filter-status="active"
+            data-filter-index={index}
+            data-filter-index-even={index % 2 === 0}
+            data-filter-category={speaker.tag}
+          >
+            <a
+              href={`/workshops/${speaker.id}/`}
+              class="single-speakers-card"
+              data-modal-card-status="not-active"
+              data-modal-card-id={speaker.id}
+            >
+              <div class="card-row card-row-image">
+                <div class="card-image">
+                  {speaker?.image && (
+                    <img
+                      src={speaker.image}
+                      alt={speaker.name}
+                      class="overlay speaker-img"
+                      style="object-position: center 15% !important;"
+                    />
+                  )}
+                </div>
+              </div>
+              <div class="card-row card-row-info">
+                <h2 class="h5">{speaker.name}</h2>
+                <p>{speaker.roleOrg}</p>
+              </div>
+            </a>
+          </div>
+        ))
+      }
+      <p style="text-align: center; width: 100%; margin: 1rem 0;">
+        Speakers are subject to change
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .card-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    width: 100%;
+  }
+
+  .speaker-img {
+    object-fit: cover !important;
+    height: 100%;
+    width: 100%;
+  }
+</style>

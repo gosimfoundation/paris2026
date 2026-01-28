@@ -1,0 +1,32 @@
+---
+import VenueInfo from "../components/VenueDetails.astro";
+import Layout from "layouts/LayoutLanding.astro";
+import HeroText from "components/HeroText.astro";
+import GetTickets from "components/GetTickets.astro";
+import LocationConnectivity from "components/LocationConnectivity.astro";
+---
+
+<Layout
+  title="Venue – GOSIM Hangzhou 2025"
+  description="Information about the venue for GOSIM Hangzhou 2025"
+  navBackground="lightgray"
+>
+  <HeroText title="Venue" />
+
+  <section class="section" data-theme-section="light" data-bg-section="light">
+    <VenueInfo />
+  </section>
+    <LocationConnectivity />
+
+  <GetTickets
+    title="Grab your GOSIM Hangzhou ticket"
+    location="Hangzhou, China"
+    date="September 13-14, 2025"
+    text="Secure your spot today at GOSIM Hangzhou 2025. Collaborate with innovators, engage with industry pioneers, and be part of shaping the future of open-source technology."
+    ctaButton={{
+      text: "Event ended, thanks for attending",
+      link: "",
+      openInNewTab: false,
+    }}
+  />
+</Layout>

@@ -1,0 +1,351 @@
+{
+  "categories": [
+    { "name": "All" },
+    { "name": "Host" },
+    { "name": "Premier" },
+    { "name": "Diamond" },
+    { "name": "Gold" },
+    { "name": "Silver" },
+    { "name": "Supporting Organization" },
+    { "name": "Speaker Affiliated (Partial)" }
+  ],
+  "partners": [
+    {
+      "category": "Host",
+      "image": "gosim.png"
+    },
+    {
+      "category": "Host",
+      "image": "csdn.png"
+    },
+    {
+      "category": "Premier",
+      "image": "huawei.png"
+    },
+    {
+      "category": "Premier",
+      "image": "华为开源.png"
+    },
+    {
+      "category": "Diamond",
+      "image": "蚂蚁开源.png"
+    },
+    {
+      "category": "Diamond",
+      "image": "清程极智.png"
+    },
+
+
+
+    {
+      "category": "Gold",
+      "image": "GitCode.png"
+    },
+
+    {
+      "category": "Gold",
+      "image": "intel.png"
+    },
+    {
+      "category": "Gold",
+      "image": "GMK.png"
+    },
+    {
+      "category": "Gold",
+      "image": "鸿蒙生态服务.png"
+    },
+    {
+      "category": "Gold",
+      "image": "benq.png"
+    },
+    {
+      "category": "Gold",
+      "image": "傲意科技.png"
+    },
+
+    {
+      "category": "Gold",
+      "image": "康迪.png"
+    },
+    {
+      "category": "Gold",
+      "image": "荣天.png"
+    },
+    {
+      "category": "Silver",
+      "image": "模优优.png"
+    },
+    {
+      "category": "Silver",
+      "image": "khronos.png"
+    },
+    {
+      "category": "Silver",
+      "image": "清华大学出版社.png"
+    },
+    {
+      "category": "Silver",
+      "image": "异步社区.png"
+    },
+
+
+
+
+
+    {
+      "category": "Supporting Organization",
+      "image": "lf-research-color.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "lf-gen-ai.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "eclipse-foundation.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "rust-foundation.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "un-odet.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "baai.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "second-state.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "aifc.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "ajtis.jpg"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "木兰开源社区.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "wasmedge.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "奇点智能研究院.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "sgl.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "copu.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "开源社.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "睿类问特.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "rust-china-conf.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "rust-cc.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "rust-global.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "broadview.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "非凸科技.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "greptimedb.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "linera.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "openbuild.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "solana.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "tintin.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "tuling.jpg"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "ruby.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "xion.png"
+    },
+    {
+      "category": "Supporting Organization",
+      "image": "pytorch.png"
+    },
+        {
+      "category": "Supporting Organization",
+      "image": "ai-shifu.png"
+    },
+
+
+
+
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "nvidia.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "google-cloud.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "bytedance.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "huawei.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "aliyun.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "intel.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "蚂蚁集团.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "redhat.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "huggingface.png"
+    },    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "unitree.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "linux-foundation.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "pytorch.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "opencv.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "eclipse-foundation.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "un-odet.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "qwen.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "tsinghua-university.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "peking-university.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "baai.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "meituan.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "shanghai-jiaotong-university.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "university-of-oxford.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "neo4j.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "futurewei.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "360.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "zhipuai.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "cesi.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "中国电信.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "dora.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "vllm.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "jina-ai.png"
+    },
+    {
+      "category": "Speaker Affiliated (Partial)",
+      "image": "bielik-ai.png"
+    }
+  ]
+}

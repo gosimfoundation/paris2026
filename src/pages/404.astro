@@ -1,0 +1,60 @@
+---
+// Components
+import Layout from "layouts/LayoutLanding.astro";
+import Button from "components/Button.astro";
+---
+
+<Layout
+  title="404 – Page not found"
+  description="Page not found"
+  navBackground="light"
+  pageTransitionName="GOSIM"
+>
+  <main>
+    <section
+      class="section section-home-intro"
+      data-theme-section="light"
+      data-bg-section="light"
+    >
+      <div class="container">
+        <div class="row">
+          <div
+            class="col"
+            style="text-align: center; display: flex; flex-direction: column; gap: 2rem;"
+          >
+            <h1>Page not found</h1>
+
+            <p>The page you were looking for could not be found.</p>
+
+            <p>But if you are looking for PPT template:</p>
+
+            <a
+              href="/GOSIM HANGZHOU 2025 模版 Template.pptx"
+              download
+              style="
+                display: inline-block;
+                padding: 1rem 2rem;
+                background-color: #007bff;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            "
+              onmouseover="this.style.backgroundColor='#0056b3'"
+              onmouseout="this.style.backgroundColor='#007bff'"
+            >
+              PPT 模版下载 Template Download
+            </a>
+
+            <Button
+              text="Back to homepage"
+              link="/"
+              class="btn light xl btn-hover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

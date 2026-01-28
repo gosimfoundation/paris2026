@@ -1,0 +1,1000 @@
+---
+// Packages
+import { Picture } from "astro:assets"
+import type { ImageMetadata } from "astro"
+
+// Components
+import SocialShare from "./SocialShare.astro"
+import BilingualText from "./BilingualText.astro"
+
+// Utilities
+import {
+  type BilingualScheduleData,
+  type BilingualSession,
+  type BilingualSpeaker,
+  type BilingualCategory,
+  detectLanguageFromRoute,
+  getBilingualText,
+  getBilingualDisplayText,
+  processBilingualSchedule,
+  getCategoryName,
+  getCategoryRoom,
+  generateLanguageUrl,
+  safeProcessBilingualSchedule,
+  safeGetBilingualText,
+  validateBilingualScheduleData,
+  logValidationResults
+} from "../utils/bilingual.ts"
+
+interface Props {
+  currentDay?: string
+  activeCategory?: string
+}
+
+// Import the unified bilingual schedule data
+import scheduleData from "json/ScheduleBilingual.json"
+
+// Import all images
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "images/speakers/*.{jpeg,jpg,png,gif}"
+)
+
+// Detect current language from route
+const currentLang = detectLanguageFromRoute(Astro.url.pathname)
+
+// Error handling for schedule data processing
+const errorMessages: string[] = []
+const handleError = (error: string, context?: string) => {
+  const fullMessage = context ? `[${context}] ${error}` : error
+  errorMessages.push(fullMessage)
+  console.warn(`BilingualSchedule: ${fullMessage}`)
+}
+
+// Validate schedule data first
+const validation = validateBilingualScheduleData(scheduleData as BilingualScheduleData)
+if (!validation.isValid || validation.warnings.length > 0) {
+  logValidationResults(validation, 'BilingualSchedule')
+}
+
+// Process the schedule data with error handling
+const processedScheduleData = safeProcessBilingualSchedule(
+  scheduleData as BilingualScheduleData, 
+  currentLang,
+  handleError
+)
+
+// Group categories by their group property
+const groupedCategories = {
+  tracks: processedScheduleData.categories.filter(cat => cat.group === 'tracks'),
+  workshops: processedScheduleData.categories.filter(cat => cat.group === 'workshops'),
+  colocated: processedScheduleData.categories.filter(cat => cat.group === 'colocated')
+}
+
+// Use the provided props or default values based on language
+const defaultDay = currentLang === 'zh' ? "9月13日" : "September 13"
+const { currentDay = defaultDay, activeCategory = "All" } = Astro.props
+
+// Helper function to get category name from tag ID with bilingual support
+const getCategoryNameFromTag = (tagId: string): string => {
+  return getCategoryName(processedScheduleData.categories, tagId, currentLang)
+}
+
+// Improved function to sort sessions by date first, then by time
+const sortSessionsByDateAndTime = (sessions: BilingualSession[]) => {
+  return sessions.sort((a, b) => {
+    // First, sort by date - get the appropriate language version
+    const dateA = getBilingualText(a.date, currentLang)
+    const dateB = getBilingualText(b.date, currentLang)
+    const dateComparison = dateA.localeCompare(dateB)
+    if (dateComparison !== 0) {
+      return dateComparison
+    }
+
+    // If dates are the same, sort by time
+    // Handle TBD times - put them at the end
+    const tbdTime = currentLang === 'zh' ? "待定时间" : "TBD time"
+    if (a.timeSlot === tbdTime && b.timeSlot === tbdTime) return 0
+    if (a.timeSlot === tbdTime) return 1
+    if (b.timeSlot === tbdTime) return -1
+
+    // Extract start times from timeSlot
+    const [aStartTime] = a.timeSlot.split("-")
+    const [bStartTime] = b.timeSlot.split("-")
+
+    // Check if times contain colons (valid time format)
+    if (!aStartTime.includes(":") || !bStartTime.includes(":")) {
+      return a.timeSlot.localeCompare(b.timeSlot)
+    }
+
+    // Split hours and minutes
+    const [aHour, aMinute] = aStartTime.split(":").map(Number)
+    const [bHour, bMinute] = bStartTime.split(":").map(Number)
+
+    // Compare times
+    return aHour * 60 + aMinute - (bHour * 60 + bMinute)
+  })
+}
+
+// Prepare all sessions for the current day with error handling
+const allSessions: BilingualSession[] = processedScheduleData?.sessions ? Object.entries(processedScheduleData.sessions)
+  .flatMap(([categoryName, categorySessions]) => {
+    try {
+      return (categorySessions || [])
+        .filter((session: BilingualSession) => {
+          try {
+            const sessionDate = safeGetBilingualText(session.date, currentLang, '', handleError)
+            return sessionDate === currentDay
+          } catch (error) {
+            handleError(`Error filtering session by date: ${error}`, `session.${categoryName}`)
+            return false
+          }
+        })
+        .map((session) => {
+          try {
+            return {
+              ...session,
+              speakers: session.speakers || [], // Ensure speakers is always an array
+              category: getCategoryName(processedScheduleData.categories, categoryName, currentLang),
+              isSpecialEvent:
+                safeGetBilingualText(session.title, 'en', '', handleError).startsWith("Keynote") ||
+                safeGetBilingualText(session.title, 'en', '', handleError).includes("Morning Coffee") ||
+                safeGetBilingualText(session.title, 'en', '', handleError).includes("Afternoon Coffee") ||
+                safeGetBilingualText(session.title, 'en', '', handleError).includes("Spotlight Demos") ||
+                safeGetBilingualText(session.title, 'en', '', handleError).includes("Spotlight Talks")
+            }
+          } catch (error) {
+            handleError(`Error processing session: ${error}`, `session.${categoryName}`)
+            return session
+          }
+        })
+    } catch (error) {
+      handleError(`Error processing category sessions: ${error}`, `category.${categoryName}`)
+      return []
+    }
+  }) : []
+
+// Remove duplicates from all sessions while preserving the first occurrence
+const uniqueAllSessions = Array.from(
+  new Map(allSessions.map((session) => [getBilingualText(session.title, currentLang), session])).values()
+)
+
+const sortedAllSessions = sortSessionsByDateAndTime(uniqueAllSessions)
+
+// Helper function to generate event URL
+const getEventUrl = (title: BilingualText | string): string => {
+  // Get the current URL origin (domain)
+  const origin = Astro.url.origin;
+  // Use English title for URL generation (consistent across both languages)
+  const titleText = getBilingualText(title, 'en')
+  // Create language-appropriate path
+  const basePath = currentLang === 'zh' ? '/zh/schedule' : '/schedule';
+  // Create the full URL with domain
+  return `${origin}${basePath}/${titleText.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, "-").replace(/-+/g, '-').trim()}/`;
+}
+
+// Helper function to classify session type for styling
+const getSessionCategoryClass = (session: BilingualSession): string => {
+  const titleEn = safeGetBilingualText(session.title, 'en', '', handleError).toLowerCase()
+  const titleZh = safeGetBilingualText(session.title, 'zh', '', handleError)
+  
+  // Only apply styling to actual special events, be very specific
+  
+  // Keynote sessions (must start with "Keynote" or be explicitly marked)
+  if (titleEn.startsWith('keynote') || titleZh.startsWith('主旨')) {
+    return 'keynote-session'
+  }
+  
+  // Plenary sessions - only for GOSIM Plenary category sessions
+  if (session.category === getBilingualText({en: "GOSIM Plenary Sessions", zh: "GOSIM 全体大会"}, currentLang)) {
+    return 'plenary-session'
+  }
+  
+  // Lunch breaks - very specific matching
+  if (titleEn === 'lunch break' || titleEn === 'lunch' || titleZh === '午餐' || titleZh === '午餐时间') {
+    return 'lunch-break'
+  }
+  
+  // Coffee breaks - very specific matching
+  if (titleEn.includes('morning coffee') || titleEn.includes('afternoon coffee') || 
+      titleEn === 'coffee break' || titleZh.includes('茶歇') || titleZh.includes('咖啡')) {
+    return 'coffee-break'
+  }
+  
+  return ''
+}
+
+// Helper function to get localized text with error handling
+const getLocalizedText = (key: string): string => {
+  const texts: Record<string, string> = {
+    'All': currentLang === 'zh' ? 'All Events 全部议程' : 'All Events',
+    'All Tracks': currentLang === 'zh' ? 'All Tracks' : 'All Tracks',
+    'Filter:': currentLang === 'zh' ? 'Filter:' : 'Filter:',
+    'No sessions available for this day': currentLang === 'zh' ? '此日暂无议程' : 'No sessions available for this day',
+    'No sessions available for category': currentLang === 'zh' ? '此日没有此议程：' : 'No sessions available for category',
+    'Schedules are subject to change': currentLang === 'zh' ? '议程为参考，实际可能变化' : 'Schedules are subject to change',
+    'TBA': currentLang === 'zh' ? 'TBA' : 'TBA',
+    'Plenary & Tracks': currentLang === 'zh' ? '全体大会 & 主题' : 'Plenary & Tracks',
+    'Workshops': currentLang === 'zh' ? '工作坊' : 'Workshops',
+    'Colocated Events': currentLang === 'zh' ? '同期活动' : 'Co-located Events'
+  }
+  
+  if (!(key in texts)) {
+    handleError(`Missing localized text for key: ${key}`, 'getLocalizedText')
+    return key
+  }
+  
+  return texts[key]
+}
+---
+
+<div class="filter-container filter-alpha-animate" role="region" aria-label="Schedule filters">
+  <div class="overlay overlay-dark" data-filter-toggle="close">
+    <div class="close" data-filter-toggle="close" role="button" aria-label="Close filters" tabindex="0">
+      <div class="close-fill"></div>
+      <div class="bar bar-top"></div>
+      <div class="bar bar-bottom"></div>
+    </div>
+  </div>
+  <div class="filter-box">
+    <p>{getLocalizedText('Filter:')}</p>
+    <div class="filter-group" data-filter-group role="group" aria-label="Date and category filters">
+      <div class="date-outerwrap">
+        <div class="date-wrapper">
+          {
+            processedScheduleData.days.map((day) => {
+              const dayDate = getBilingualText(day.date, currentLang)
+              const dayTitle = getBilingualText(day.title, currentLang)
+              const dayUrl = generateLanguageUrl(day.url, currentLang)
+              
+              return (
+                <a
+                  data-barba-update
+                  href={dayUrl}
+                  class={`single-filter ${currentDay === dayDate ? "dateselected" : ""}`}
+                  role="button"
+                  aria-pressed={currentDay === dayDate ? "true" : "false"}
+                  aria-label={`Filter by ${dayTitle}`}
+                >
+                  <span>{dayTitle}</span>
+                </a>
+              )
+            })
+          }
+        </div>
+      </div>
+      <!-- All Events Button -->
+      <div class="all-events-section">
+        <div
+          class="single-filter all-button full-width"
+          data-filter-status={activeCategory === "All" ? "active" : "not-active"}
+          data-filter-category="all"
+          data-multiple-select="false"
+          role="button"
+          aria-pressed={activeCategory === "All" ? "true" : "false"}
+          aria-label="Show all categories"
+          tabindex="0"
+        >
+          <span>{getLocalizedText('All')}</span>
+        </div>
+      </div>
+      
+      <!-- Plenary & Tracks Group -->
+      <div class="filter-group-section">
+        <div class="filter-group-header">
+          <h4 class="filter-group-title">{getLocalizedText('Plenary & Tracks')}</h4>
+        </div>
+        <div class="filter-group-tags">
+          {
+            groupedCategories.tracks.map((category) => {
+              const categoryName = getBilingualText(category.name, currentLang)
+              return (
+                <div
+                  class="single-filter"
+                  data-filter-status="not-active"
+                  data-filter-category={categoryName.toLowerCase().replace(/ /g, '-')}
+                  data-multiple-select="false"
+                  role="button"
+                  aria-pressed="false"
+                  aria-label={`Filter by ${categoryName}`}
+                  tabindex="0"
+                >
+                  <span>{categoryName}</span>
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
+      
+      <!-- Workshops Group -->
+      <div class="filter-group-section">
+        <div class="filter-group-header">
+          <h4 class="filter-group-title">{getLocalizedText('Workshops')}</h4>
+        </div>
+        <div class="filter-group-tags">
+          {
+            groupedCategories.workshops.map((category) => {
+              const categoryName = getBilingualText(category.name, currentLang)
+              return (
+                <div
+                  class="single-filter"
+                  data-filter-status="not-active"
+                  data-filter-category={categoryName.toLowerCase().replace(/ /g, '-')}
+                  data-multiple-select="false"
+                  role="button"
+                  aria-pressed="false"
+                  aria-label={`Filter by ${categoryName}`}
+                  tabindex="0"
+                >
+                  <span>{categoryName}</span>
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
+      
+      <!-- Colocated Events Group -->
+      <div class="filter-group-section">
+        <div class="filter-group-header">
+          <h4 class="filter-group-title">{getLocalizedText('Colocated Events')}</h4>
+        </div>
+        <div class="filter-group-tags">
+          {
+            groupedCategories.colocated.map((category) => {
+              const categoryName = getBilingualText(category.name, currentLang)
+              return (
+                <div
+                  class="single-filter"
+                  data-filter-status="not-active"
+                  data-filter-category={categoryName.toLowerCase().replace(/ /g, '-')}
+                  data-multiple-select="false"
+                  role="button"
+                  aria-pressed="false"
+                  aria-label={`Filter by ${categoryName}`}
+                  tabindex="0"
+                >
+                  <span>{categoryName}</span>
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section
+  class="section section-agenda-grid"
+  id="grid"
+  data-filter-section
+  data-theme-section="light"
+  data-bg-section="light"
+  data-scroll-section
+>
+  <div class="container">
+    {errorMessages.length > 0 && (
+      <div class="error-messages" style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 1rem; margin-bottom: 1rem; border-radius: 4px;">
+        <h4 style="color: #856404; margin: 0 0 0.5rem 0;">⚠️ Schedule Data Issues</h4>
+        <ul style="color: #856404; margin: 0; padding-left: 1.5rem;">
+          {errorMessages.map(message => (
+            <li>{message}</li>
+          ))}
+        </ul>
+        <p style="color: #856404; margin: 0.5rem 0 0 0; font-size: 0.9em;">
+          The schedule may display with missing or fallback content. Please contact support if issues persist.
+        </p>
+      </div>
+    )}
+    <div class="row row-filter">
+      <div class="col date-fw">
+        <div class="filter-group" data-filter-group>
+          <div class="date-outerwrap">
+            <div class="date-wrapper">
+              {
+                processedScheduleData.days.map((day) => {
+                  const dayDate = getBilingualText(day.date, currentLang)
+                  const dayTitle = getBilingualText(day.title, currentLang)
+                  const dayUrl = generateLanguageUrl(day.url, currentLang)
+                  
+                  return (
+                    <a
+                      data-barba-update
+                      href={dayUrl}
+                      class={`single-filter ${currentDay === dayDate ? "dateselected" : ""}`}
+                    >
+                      <span>{dayTitle}</span>
+                    </a>
+                  )
+                })
+              }
+            </div>
+          </div>
+          <div class="date-divider"></div>
+          <!-- All Events Button -->
+          <div class="all-events-section">
+            <div
+              class="single-filter all-button full-width"
+              data-filter-status={activeCategory === "All"
+                ? "active"
+                : "not-active"}
+              data-filter-category="all"
+              data-multiple-select="false"
+            >
+              <span>{getLocalizedText('All')}</span>
+            </div>
+          </div>
+          
+          <!-- Plenary & Tracks Group -->
+          <div class="filter-group-section">
+            <div class="filter-group-header">
+              <h4 class="filter-group-title">{getLocalizedText('Plenary & Tracks')}</h4>
+            </div>
+            <div class="filter-group-tags">
+              {
+                groupedCategories.tracks.map((category) => {
+                  const categoryName = getBilingualText(category.name, currentLang)
+                  return (
+                    <div
+                      class="single-filter"
+                      data-filter-status="not-active"
+                      data-filter-category={categoryName.toLowerCase().replace(/ /g, '-')}
+                      data-multiple-select="false"
+                    >
+                      <span>{categoryName}</span>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+          
+          <!-- Workshops Group -->
+          <div class="filter-group-section">
+            <div class="filter-group-header">
+              <h4 class="filter-group-title">{getLocalizedText('Workshops')}</h4>
+            </div>
+            <div class="filter-group-tags">
+              {
+                groupedCategories.workshops.map((category) => {
+                  const categoryName = getBilingualText(category.name, currentLang)
+                  return (
+                    <div
+                      class="single-filter"
+                      data-filter-status="not-active"
+                      data-filter-category={categoryName.toLowerCase().replace(/ /g, '-')}
+                      data-multiple-select="false"
+                    >
+                      <span>{categoryName}</span>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+          
+          <!-- Colocated Events Group -->
+          <div class="filter-group-section">
+            <div class="filter-group-header">
+              <h4 class="filter-group-title">{getLocalizedText('Colocated Events')}</h4>
+            </div>
+            <div class="filter-group-tags">
+              {
+                groupedCategories.colocated.map((category) => {
+                  const categoryName = getBilingualText(category.name, currentLang)
+                  return (
+                    <div
+                      class="single-filter"
+                      data-filter-status="not-active"
+                      data-filter-category={categoryName.toLowerCase().replace(/ /g, '-')}
+                      data-multiple-select="false"
+                    >
+                      <span>{categoryName}</span>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-list accordion visible" data-filter-grid role="region" aria-label="Schedule sessions">
+      <div
+        class="list-group"
+        data-filter-status={activeCategory === "All" ? "active" : "not-active"}
+        data-filter-category="all"
+      >
+        {
+          sortedAllSessions.length > 0 ? (
+            <ul class="row row-list">
+              {sortedAllSessions.map((session: BilingualSession) => {
+                const sessionTitle = getBilingualDisplayText(session.title)
+                const sessionContent = getBilingualDisplayText(session.content)
+                const sessionDate = getBilingualText(session.date, currentLang)
+                
+                return (
+                  <li
+                    class={`single-agenda-card single-accordion-item card-hover ${session.isSpecialEvent ? 'special-event' : ''} ${getSessionCategoryClass(session)}`}
+                    data-accordion-status="not-active"
+                    data-filter-status="active"
+                    data-filter-category="all"
+                  >
+                    <div
+                      class="top"
+                      data-accordion-toggle={
+                        session.speakers.length > 0 || session.content
+                          ? true
+                          : null
+                      }
+                      role="button"
+                      aria-expanded="false"
+                      aria-label={`Expand details for ${getBilingualText(session.title, currentLang)}`}
+                      tabindex="0"
+                    >
+                      <div class="left">
+                        <div class="timeslot">
+                          <p class="timedate">{sessionDate}</p>
+                          <p>{session.timeSlot}</p>
+                        </div>
+                        <h2 class="h5">
+                          <BilingualText text={sessionTitle} element="span" />
+                        </h2>
+                      </div>
+                      <div class="tracks">
+                        <div class="single-filter">
+                          <span>
+                            {session.isSpecialEvent ? getLocalizedText('All Tracks') : session.category}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    {(session.speakers.length > 0 || session.content) && (
+                      <div class="bottom">
+                        <div class="bottom-wrap">
+                          <div class="bottom-content">
+                            {session.category && (
+                              <div class="card-row styled-content">
+                                <div class="location-row">
+                                  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 18.6668C8.12016 18.6653 8.23643 18.624 8.33067 18.5494C8.65067 18.2934 16 12.3307 16 8.00005C16 5.8783 15.1571 3.84346 13.6569 2.34316C12.1566 0.84286 10.1217 0 8 0C5.87827 0 3.84344 0.84286 2.34315 2.34316C0.842855 3.84346 0 5.8783 0 8.00005C0 12.3307 7.34933 18.2934 7.66933 18.5494C7.76357 18.624 7.87984 18.6653 8 18.6668ZM8 4.80003C8.52742 4.80003 9.04299 4.95643 9.48152 5.24945C9.92005 5.54246 10.2618 5.95894 10.4637 6.44622C10.6655 6.93349 10.7183 7.46967 10.6154 7.98696C10.5125 8.50424 10.2586 8.9794 9.88562 9.35234C9.51268 9.72528 9.03752 9.97926 8.52024 10.0822C8.00296 10.185 7.46678 10.1322 6.97951 9.9304C6.49224 9.72857 6.07576 9.38677 5.78275 8.94824C5.48973 8.50971 5.33333 7.99413 5.33333 7.46671C5.33333 6.75946 5.61429 6.08118 6.11438 5.58108C6.61448 5.08098 7.29276 4.80003 8 4.80003Z" fill="#1D1D1D"/>
+                                  </svg>
+                                  <p>
+                                    {session.room ? 
+                                      getBilingualText(session.room, currentLang) : 
+                                      getCategoryRoom(processedScheduleData.categories, Object.keys(processedScheduleData.sessions).find(key => 
+                                        processedScheduleData.sessions[key].some(s => getBilingualText(s.title, currentLang) === getBilingualText(session.title, currentLang))
+                                      ) || '', currentLang) || 
+                                      getLocalizedText('TBA')
+                                    }
+                                  </p>
+                                </div>
+                              </div>
+                            )}
+                            {session.content && (
+                              <div class="card-row styled-content">
+                                <BilingualText text={sessionContent} element="div" />
+                              </div>
+                            )}
+
+                            <!-- Wrap speakers and social share in a single container -->
+                            <div class="speakers-and-share-container">
+                              {session.speakers.length > 0 && (
+                                <div class="card-row card-row-speakers">
+                                  {session.speakers.map((speaker: BilingualSpeaker) => {
+                                    const speakerName = getBilingualDisplayText(speaker.name)
+                                    const speakerRole = getBilingualDisplayText(speaker.roleOrg)
+                                    
+                                    return (
+                                      <div class="card-col">
+                                        <a
+                                          class="single-speakers-card"
+                                          href={`/speakers/${speaker.id}/`}
+                                        >
+                                          <div class="card-row card-row-image">
+                                            <div class="card-image">
+                                              {speaker?.image &&
+                                                images[
+                                                  `/public/images/speakers/${speaker.image}`
+                                                ] && (
+                                                  <Picture
+                                                    src={images[
+                                                      `/public/images/speakers/${speaker.image}`
+                                                    ]()}
+                                                    formats={["webp", "jpg"]}
+                                                    alt={getBilingualText(speaker.name, currentLang)}
+                                                    class="overlay"
+                                                    widths={[
+                                                      275, 400, 500, 600, 750, 900,
+                                                    ]}
+                                                    sizes="(max-width: 700px) 58vw, 450px"
+                                                  />
+                                                )}
+                                            </div>
+                                            <div class="card-tags group-tags">
+                                              {speaker.tags?.map((tag) => (
+                                                <div class="single-tag">
+                                                  <p>{getCategoryNameFromTag(tag)}</p>
+                                                </div>
+                                              ))}
+                                            </div>
+                                          </div>
+                                          <div class="card-row card-row-info">
+                                            <h3 class="h5">
+                                              <BilingualText text={speakerName} element="span" />
+                                            </h3>
+                                            <p>
+                                              <BilingualText text={speakerRole} element="span" />
+                                            </p>
+                                          </div>
+                                        </a>
+                                      </div>
+                                    )
+                                  })}
+                                </div>
+                              )}
+
+                              <!-- Social share component with reduced spacing -->
+                              <SocialShare
+                                title={`${getBilingualText(session.title, currentLang)} - GOSIM AI Paris 2025`}
+                                url={getEventUrl(session.title)}
+                                description={session.content ? getBilingualText(session.content, currentLang).replace(/<[^>]*>/g, "").substring(0, 160) : ""}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </li>
+                )
+              })}
+            </ul>
+          ) : (
+            <p>{getLocalizedText('No sessions available for this day')}</p>
+          )
+        }
+      </div>
+      {
+        processedScheduleData.categories.map((category) => {
+          const categoryName = getBilingualText(category.name, currentLang)
+          const categorySessions = allSessions.filter(
+            (session) => session.category === categoryName
+          )
+          const sortedCategorySessions = sortSessionsByDateAndTime(categorySessions)
+
+          return (
+            <div
+              class="list-group"
+              data-filter-status={
+                categoryName === activeCategory ? "active" : "not-active"
+              }
+              data-filter-category={categoryName.toLowerCase().replace(/ /g, '-')}
+            >
+              {sortedCategorySessions.length > 0 ? (
+                <ul class="row row-list">
+                  {sortedCategorySessions.map((session: BilingualSession) => {
+                    const sessionTitle = getBilingualDisplayText(session.title)
+                    const sessionContent = getBilingualDisplayText(session.content)
+                    const sessionDate = getBilingualText(session.date, currentLang)
+                    
+                    return (
+                      <li
+                        class={`single-agenda-card single-accordion-item card-hover ${session.isSpecialEvent ? 'special-event' : ''} ${getSessionCategoryClass(session)}`}
+                        data-accordion-status="not-active"
+                        data-filter-status="active"
+                        data-filter-category={categoryName.toLowerCase().replace(/ /g, '-')}
+                      >
+                        <div
+                          class="top"
+                          data-accordion-toggle={
+                            session.speakers.length > 0 || session.content
+                              ? true
+                              : null
+                          }
+                        >
+                          <div class="left">
+                            <div class="timeslot">
+                              <p class="timedate">{sessionDate}</p>
+                              <p>{session.timeSlot}</p>
+                            </div>
+                            <h2 class="h5">
+                              <BilingualText text={sessionTitle} element="span" />
+                            </h2>
+                          </div>
+                          <div class="tracks">
+                            <div class="single-filter">
+                              <span>
+                                {session.isSpecialEvent
+                                  ? getLocalizedText('All Tracks')
+                                  : session.category}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        {(session.speakers.length > 0 || session.content) && (
+                          <div class="bottom">
+                            <div class="bottom-wrap">
+                              <div class="bottom-content">
+                                {session.category && (
+                                  <div class="card-row styled-content">
+                                    <div class="location-row">
+                                      <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 18.6668C8.12016 18.6653 8.23643 18.624 8.33067 18.5494C8.65067 18.2934 16 12.3307 16 8.00005C16 5.8783 15.1571 3.84346 13.6569 2.34316C12.1566 0.84286 10.1217 0 8 0C5.87827 0 3.84344 0.84286 2.34315 2.34316C0.842855 3.84346 0 5.8783 0 8.00005C0 12.3307 7.34933 18.2934 7.66933 18.5494C7.76357 18.624 7.87984 18.6653 8 18.6668ZM8 4.80003C8.52742 4.80003 9.04299 4.95643 9.48152 5.24945C9.92005 5.54246 10.2618 5.95894 10.4637 6.44622C10.6655 6.93349 10.7183 7.46967 10.6154 7.98696C10.5125 8.50424 10.2586 8.9794 9.88562 9.35234C9.51268 9.72528 9.03752 9.97926 8.52024 10.0822C8.00296 10.185 7.46678 10.1322 6.97951 9.9304C6.49224 9.72857 6.07576 9.38677 5.78275 8.94824C5.48973 8.50971 5.33333 7.99413 5.33333 7.46671C5.33333 6.75946 5.61429 6.08118 6.11438 5.58108C6.61448 5.08098 7.29276 4.80003 8 4.80003Z" fill="#1D1D1D"/>
+                                      </svg>
+                                      <p>
+                                        {session.room ? 
+                                          getBilingualText(session.room, currentLang) : 
+                                          getCategoryRoom(processedScheduleData.categories, Object.keys(processedScheduleData.sessions).find(key => 
+                                            processedScheduleData.sessions[key].some(s => getBilingualText(s.title, currentLang) === getBilingualText(session.title, currentLang))
+                                          ) || '', currentLang) || 
+                                          getLocalizedText('TBA')
+                                        }
+                                      </p>
+                                    </div>
+                                  </div>
+                                )}
+                                {session.content && (
+                                  <div class="card-row styled-content">
+                                    <BilingualText text={sessionContent} element="div" />
+                                  </div>
+                                )}
+
+                                <!-- Wrap speakers and social share in a single container -->
+                                <div class="speakers-and-share-container">
+                                  {session.speakers.length > 0 && (
+                                    <div class="card-row card-row-speakers">
+                                      {session.speakers.map((speaker: BilingualSpeaker) => {
+                                        const speakerName = getBilingualDisplayText(speaker.name)
+                                        const speakerRole = getBilingualDisplayText(speaker.roleOrg)
+                                        
+                                        return (
+                                          <div class="card-col">
+                                            <a
+                                              class="single-speakers-card"
+                                              href={`/speakers/${speaker.id}/`}
+                                            >
+                                              <div class="card-row card-row-image">
+                                                <div class="card-image">
+                                                  {speaker?.image &&
+                                                    images[
+                                                      `/public/images/speakers/${speaker.image}`
+                                                    ] && (
+                                                      <Picture
+                                                        src={images[
+                                                          `/public/images/speakers/${speaker.image}`
+                                                        ]()}
+                                                        formats={["webp", "jpg"]}
+                                                        alt={getBilingualText(speaker.name, currentLang)}
+                                                        class="overlay"
+                                                        widths={[
+                                                          275, 400, 500, 600, 750,
+                                                          900,
+                                                        ]}
+                                                        sizes="(max-width: 700px) 58vw, 450px"
+                                                      />
+                                                    )}
+                                                </div>
+                                                <div class="card-tags group-tags">
+                                                  {speaker.tags?.map((tag) => (
+                                                    <div class="single-tag">
+                                                      <p>
+                                                        {getCategoryNameFromTag(tag)}
+                                                      </p>
+                                                    </div>
+                                                  ))}
+                                                </div>
+                                              </div>
+                                              <div class="card-row card-row-info">
+                                                <h3 class="h5">
+                                                  <BilingualText text={speakerName} element="span" />
+                                                </h3>
+                                                <p>
+                                                  <BilingualText text={speakerRole} element="span" />
+                                                </p>
+                                              </div>
+                                            </a>
+                                          </div>
+                                        )
+                                      })}
+                                    </div>
+                                  )}
+
+                                  <!-- Social share component with reduced spacing -->
+                                  <SocialShare
+                                    title={`${getBilingualText(session.title, currentLang)} - GOSIM AI Paris 2025`}
+                                    url={getEventUrl(session.title)}
+                                    description={session.content ? getBilingualText(session.content, currentLang).replace(/<[^>]*>/g, "").substring(0, 160) : ""}
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                      </li>
+                    )
+                  })}
+                </ul>
+              ) : (
+                <p>{getLocalizedText('No sessions available for category')} {categoryName}</p>
+              )}
+            </div>
+          )
+        })
+      }
+      <p style="text-align: center; margin: 1rem 0;">
+        {getLocalizedText('Schedules are subject to change')}
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .speakers-and-share-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .timeslot {
+    min-width: 8em !important;
+  }
+    @media screen and (max-width: 640px) {
+    .timeslot {
+      width: 100% !important;
+    }
+  }
+  .tracks {
+    flex-shrink: 0;
+  }
+  
+  /* All Events Button styling */
+  .all-events-section {
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .all-button.full-width {
+    width: 100%;
+    display: block;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    background-color: #fff;
+    color: #212529;
+  }
+  
+  .all-button.full-width[data-filter-status="active"] {
+    background-color: #e9cb2c !important;
+    border: 1px solid #e9cb2c !important;
+    color: #212529 !important;
+  }
+  
+  .all-button.full-width[data-filter-status="not-active"]:hover {
+    background-color: rgba(var(--color-dark-rgb), 0.1);
+  }
+  
+  /* Filter group styling */
+  .filter-group-section {
+    margin: 1rem 0;
+  }
+  
+  .filter-group-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-group-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .filter-group-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  
+  /* Special session styling */
+  .single-agenda-card.plenary-session {
+    border-left: 4px solid #dc3545;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+  }
+  
+  .single-agenda-card.lunch-break {
+    border-left: 4px solid #fd7e14;
+    background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+  }
+  
+  .single-agenda-card.coffee-break {
+    border-left: 4px solid #6f42c1;
+    background: linear-gradient(135deg, #f8f6ff 0%, #ffffff 100%);
+  }
+  
+  .single-agenda-card.keynote-session {
+    border-left: 4px solid #198754;
+    background: linear-gradient(135deg, #f0fff4 0%, #ffffff 100%);
+  }
+  
+  @media screen and (max-width: 500px) {
+    .accordion .single-agenda-card .top {
+      flex-direction: column;
+    }
+    .top > .tracks {
+      width: auto;
+      padding-top: 24px;
+    }
+    .date-outerwrap > .date-wrapper {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .date-wrapper > .single-filter {
+    border-radius: 0px;
+  }
+  }
+</style>
+
+<script>
+  // Single selection filtering
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterElements = document.querySelectorAll('[data-filter-category]') as NodeListOf<HTMLElement>;
+    const sessionElements = document.querySelectorAll('.single-agenda-card') as NodeListOf<HTMLElement>;
+    let activeFilter = 'all'; // Start with 'all' active
+    
+    filterElements.forEach(filter => {
+      filter.addEventListener('click', function(this: HTMLElement) {
+        const category = this.getAttribute('data-filter-category') || '';
+        
+        // Set the new active filter
+        activeFilter = category;
+        
+        updateFilterStates();
+        if (activeFilter === 'all') {
+          showAllSessions();
+        } else {
+          filterSessions();
+        }
+      });
+    });
+    
+    function updateFilterStates() {
+      filterElements.forEach(filter => {
+        const category = filter.getAttribute('data-filter-category') || '';
+        const isActive = category === activeFilter;
+        
+        filter.setAttribute('data-filter-status', isActive ? 'active' : 'not-active');
+        filter.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+    }
+    
+    function showAllSessions() {
+      sessionElements.forEach(session => {
+        session.style.display = 'block';
+        session.setAttribute('data-filter-status', 'active');
+      });
+    }
+    
+    function filterSessions() {
+      sessionElements.forEach(session => {
+        const sessionCategory = session.getAttribute('data-filter-category') || '';
+        const shouldShow = sessionCategory === activeFilter;
+        
+        session.style.display = shouldShow ? 'block' : 'none';
+        session.setAttribute('data-filter-status', shouldShow ? 'active' : 'not-active');
+      });
+    }
+    
+    // Initialize filter states
+    updateFilterStates();
+  });
+</script>

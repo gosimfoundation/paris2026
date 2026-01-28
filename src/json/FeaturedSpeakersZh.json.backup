@@ -1,0 +1,295 @@
+{
+  "categories": [
+    {
+      "name": "All",
+      "id": "all"
+    },
+    {
+      "name": "AI Models × Infra",
+      "id": "ai-models-infra"
+    },
+    {
+      "name": "Embodied AI",
+      "id": "embodied-ai"
+    },
+    {
+      "name": "Agentic Web",
+      "id": "agentic-web"
+    },
+    {
+      "name": "Apps × Agents",
+      "id": "apps-agents"
+    },
+    {
+      "name": "AI Next",
+      "id": "ai-next"
+    },
+    {
+      "name": "Cangjie Workshop",
+      "id": "ws-cangjie"
+    },
+    {
+      "name": "Dora Workshop",
+      "id": "ws-dora"
+    },
+    {
+      "name": "SGLang Workshop",
+      "id": "ws-sglang"
+    },
+    {
+      "name": "Edge AI Workshop",
+      "id": "ws-edge-ai"
+    },
+    {
+      "name": "Future Web Workshop",
+      "id": "ws-future-web"
+    },
+    {
+      "name": "Open for SDG Conference",
+      "id": "open-for-sdg"
+    },
+    {
+      "name": "AI Vision Forum",
+      "id": "forum-aivision"
+    }
+  ],
+  "speakers": [
+    {
+      "id": "mehdi-snene",
+      "name": "Mehdi Snene",
+      "bio": "Mehdi Snene博士是联合国秘书长数字与新兴技术特使的高级顾问，也是联合国数字与新兴技术办公室的成员，负责领导人工智能能力建设、数字公共基础设施和新兴技术的全球倡议。他曾指导过欧洲洛桑联邦理工学院（EPFL）耗资10亿欧元的“人类大脑计划”，推动神经形态计算和大脑模拟的发展。他还曾担任HealthAI的首席人工智能官，负责监督人工智能在医疗保健领域的战略发展和部署。他曾是日内eva大学的副教授，创立并领导了一个专注于人工智能、神经科学和高性能计算的研究实验室。",
+      "role": "首席人工智能官，联合国秘书长数字与新兴技术特使高级顾问",
+      "org": "联合国数字与新兴技术办公室",
+      "roleOrg": "首席人工智能官，联合国数字基础设施与新兴技术",
+      "image": "mehdi-snene.png",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "nooman-fehri",
+      "name": "Nooman Fehri",
+      "bio": "突尼斯前数字与技术部长。",
+      "role": "前部长",
+      "org": "突尼斯政府",
+      "roleOrg": "突尼斯前数字与技术部长",
+      "image": "nooman-fehri.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "walid-mathlouthi",
+      "name": "Walid Mathlouthi",
+      "bio": "国际电信联盟（ITU）基础设施部门负责人。",
+      "role": "基础设施部门负责人",
+      "org": "国际电信联盟",
+      "roleOrg": "国际电信联盟，基础设施部门负责人",
+      "image": "walid-mathlouthi.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "mohamed-farahat",
+      "name": "Mohamed Farahat",
+      "bio": "Mohamed Farahat是一名埃及的法律从业者、培训师、政治和法律研究员。Farahat在埃及难民权利基金会（EFRR）担任项目总监，并在英国约克大学担任法律研究员。他曾是非洲和中东难民援助组织的诉诸司法团队负责人，也曾在国际法学家委员会（ICJ）担任法律研究员。作为顾问，他曾为HUMENA人权与公民参与组织担任法律分析师，为国际移民组织（IOM-埃及）担任法律顾问，参与有关移民道德招聘、人口贩运、走私、劳动和移民政策制度的项目，为联合国儿童基金会（UNICEF）担任儿童司法顾问，并在开罗美国大学（AUC）移民与难民研究中心担任法律专家。他曾是国际信息通信技术政策促进东非和南部非洲组织（CIPESA）的研究员，后担任数字权利顾问。Farahat先生曾作为研究员和分析师，参与撰写了关于非洲互联网法律监督和数字权利状况的报告（发展研究所-IDS），并与非洲数字权利中心（ADRH）合作领导了关于非洲数据保护的项目，还与Paradigm Initiative合作撰写了关于非洲数字权利的报告。他是埃及国际关怀组织（CARE-International）的法律顾问，负责（基于性别的暴力）问题。Farahat先生是“变革创新”中东和北非（MENA）中心的董事会成员，北非互联网治理论坛（NAIGF）的管理咨询组成员（MAG），非洲数字权利网络（ADRN）成员，以及中东和北非无国籍网络的指导委员会成员和北非协调员。作为一名法律和政治研究员，Farahat发表了20篇关于国际难民法、无国籍问题、政治、民主、议会研究、数字权利和互联网治理的文章。Farahat先生在人权领域拥有丰富的经验，包括诉诸司法、难民权利、移民和工人权利、无国籍和国籍权、移民拘留、驱逐出境、儿童刑事司法、立法改革、司法独立、言论自由、（基于性别的暴力）、数字权利、互联网监控、网络中断、互联网接入和包容性、假新闻、数据保护和隐私权。在学术方面，Farahat先生拥有开罗大学的法学学位以及国际法、人权与公民社会、国际谈判、非洲研究-政治方向、议会研究等多个研究生文凭。",
+      "role": "",
+      "org": "",
+      "roleOrg": "前联合国秘书长高级别咨询机构成员",
+      "image": "mohamed-farahat.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "matt-white",
+      "name": "Matt White",
+      "bio": "Pytorch基金会执行董事。",
+      "role": "执行董事",
+      "org": "Pytorch基金会",
+      "roleOrg": "Pytorch基金会执行董事",
+      "image": "matt-white.png",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "tiejun-huang",
+      "name": "黄铁军",
+      "bio": "北京大学教授，北京智源人工智能研究院（BAAI）理事长。",
+      "role": "教授兼理事长",
+      "org": "北京大学 / 北京智源人工智能研究院",
+      "roleOrg": "北京大学教授，北京智源人工智能研究院理事长",
+      "image": "tiejun-huang.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "satya-mallick",
+      "name": "Satya Mallick",
+      "bio": "Satya Mallick博士是OpenCV.org的首席执行官，该非营利组织维护着全球最大的计算机视觉库。他是一位在人工智能、计算机视觉和机器学习领域的企业家。在创办他的AI咨询公司Big Vision LLC之前，他联合创办了Sight Commerce Inc（前身为Taaz Inc.），在那里他构建的AI产品用户超过1亿。他的工作被TechCrunch、赫芬顿邮报、纽约时报和华尔街日报等出版物报道。Mallick博士也是一些最受欢迎的在线计算机视觉和AI课程的创建者。2017年，IBM的AI博客将Mallick博士评为Twitter上最值得关注的20位AI人物之一。",
+      "role": "首席执行官",
+      "org": "OpenCV.org",
+      "roleOrg": "首席执行官, OpenCV.org",
+      "image": "satya-mallick.jpg",
+      "tag": "embodied-ai"
+    },
+    {
+      "id": "bryan-che",
+      "name": "Bryan Che",
+      "bio": "Eclipse基金会和LF CNCF董事会成员",
+      "role": "董事会成员",
+      "org": "Eclipse基金会和LF CNCF",
+      "roleOrg": "Eclipse基金会和LF CNCF董事会成员",
+      "image": "bryan-che.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "vincent-caldeira",
+      "name": "Vincent Caldeira",
+      "bio": "Vincent Caldeira，红帽亚太区首席技术官，负责技术战略和新兴技术工程。2023年被《技术杂志》评为亚太区十大CTO之一，他在IT领域拥有超过20年的经验，尤其擅长金融领域的技术转型。作为开源、云计算和数字化转型领域的权威，Vincent经常就数据分析、AI/ML（包括AI安全）、数字主权和IT可持续性等话题发表演讲。他是Linux基金会OS-Climate的技术顾问，GSF绿色AI委员会成员，金融科技开源基金会（FINOS）技术监督委员会成员，LF AI & Data GenAI Commons成员，并领导多项CNCF AI计划。",
+      "role": "首席技术官",
+      "org": "红帽亚太区",
+      "roleOrg": "首席技术官, 红帽亚太区",
+      "image": "vincent-caldeira.jpeg",
+      "tag": "ai-models-infra"
+    },
+    {
+      "id": "yonghua-lin",
+      "name": "林咏华",
+      "bio": "林咏华现任北京智源人工智能研究院副院长兼总工程师, 主管大模型基础技术、人工智能系统研究、产业生态合作等重要方向。IEEE女工程师亚太区领导组成员。曾任IBM中国研究院院长，同时也是IBM全球杰出工程师，在IBM内部引领全球人工智能系统的创新。从事近20年的系统架构、云计算、AI系统, 计算机视觉等领域的研究，并多次获得ACM/IEEE最佳论文奖。获评2019年福布斯中国50位科技领导女性。",
+      "role": "副院长兼总工程师",
+      "org": "北京智源人工智能研究院",
+      "roleOrg": "北京智源人工智能研究院副院长兼总工程师",
+      "image": "yonghua-lin.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "markus-tavenrath",
+      "name": "Markus Tavenrath",
+      "bio": "Markus Tavenrath在亚琛工业大学学习计算机科学，主攻计算机图形学。这一学术背景为他在科技行业的职业生涯奠定了坚实的基础。\r\n\r\n2008年，Markus加入英伟达，开始从事GPU上的实时光线追踪工作。多年来，他为光线追踪、场景图、OpenGL、WebGL、Vulkan和AI的性能优化做出了贡献。他的工作在推动这些技术的发展中发挥了作用。\r\n\r\nMarkus还是Vulkan-Hpp项目的联合创始人，该项目对Vulkan社区非常有益。他的努力帮助改进了Vulkan的使用和实现。\r\n\r\n最近，Markus当选为Khronos的ML委员会主席。在这个职位上，他帮助协调和支持Khronos集团内的AI和机器学习计划。他当选此职位反映了他的专业知识和领导能力。\r\n\r\nMarkus Tavenrath是一位敬业的专业人士，他的贡献对英伟达及其他领域的技术格局产生了积极影响。",
+      "role": "首席工程师，开发者技术",
+      "org": "英伟达",
+      "roleOrg": "首席工程师，开发者技术, 英伟达",
+      "image": "markus-tavenrath.jpg",
+      "tag": "ai-models-infra",
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/markus-tavenrath/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "minghui-zhou",
+      "name": "周明辉",
+      "bio": "北京大学终身正教授、副院长。曾任联合国人工智能高级别咨询机构（HLAB on AI）成员，联合国教科文组织法律专家。",
+      "role": "教授兼副院长",
+      "org": "北京大学",
+      "roleOrg": "北京大学终身正教授、副院长",
+      "image": "minghui-zhou.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "drummond-reed",
+      "name": "Drummond Reed",
+      "bio": "Drummond在互联网身份、安全、隐私和信任基础设施领域工作超过二十五年。他目前是First Person Project的创始人和主要组织者。从2021年到2025年，在Gen（前身为Avast）收购Evernym后，他担任Gen的信任服务总监，此前他是Evernym的首席信任官。他是《Self-Sovereign Identity》（Manning Publications，2021）一书的合著者，也是W3C去中心化标识符（DID）1.0规范的联合编辑。他目前担任Ayra协会的治理负责人。他是OpenWallet基金会和Trust Over IP（ToIP）的创始董事会成员，并担任技术堆栈工作组和概念与术语工作组的联合主席。2002年，他获得了Digital ID World颁发的数字身份先锋奖，2013年被评为OASIS杰出贡献者。",
+      "role": "创始人",
+      "org": "First Person Project",
+      "roleOrg": "创始人, First Person Project",
+      "image": "drummond-reed.jpg",
+      "tag": "agentic-web",
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "http://twitter.com/drummondreed",
+        "github": "https://github.com/talltree",
+        "linkedin": "http://www.linkedin.com/in/drummondreed",
+        "website": "http://equalsdrummond.name/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "kai-du",
+      "name": "杜凯",
+      "bio": "Eclipse基金会董事会成员，清华大学心理与认知科学系教授。",
+      "role": "教授",
+      "org": "清华大学",
+      "roleOrg": "清华大学教授",
+      "image": "kai-du.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "xinwei-hu",
+      "name": "胡欣蔚",
+      "bio": "openEuler社区技术委员会主席。",
+      "role": "主席",
+      "org": "openEuler社区技术委员会",
+      "roleOrg": "openEuler社区技术委员会主席",
+      "image": "xinwei-hu.jpeg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "liyun-yang",
+      "name": "杨丽蕴",
+      "bio": "高级工程师，中国电子技术标准化研究院云计算研究室主任，中国开源云联盟常务副秘书长，工信部海峡两岸云计算分论坛大陆召集人，全国信标委云计算标准工作组秘书处负责人。",
+      "role": "高级工程师",
+      "org": "中国电子技术标准化研究院",
+      "roleOrg": "高级工程师，中国电子技术标准化研究院云计算研究室主任",
+      "image": "liyun-yang.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "joaquin-salvachua",
+      "name": "Joaquin Salvachua",
+      "bio": "马德里理工大学教授，专注于机器学习运维（ML-OPS）和大数据架构。",
+      "role": "教授",
+      "org": "马德里理工大学",
+      "roleOrg": "马德里理工大学教授",
+      "image": "joaquin-salvachua.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "alexy-khrabrov-",
+      "name": "Alexy Khrabrov ",
+      "bio": "Alexy Khrabrov是图数据库领域的定义者Neo4j公司的AI社区架构师。Alexy是NumFOCUS开源科学的创始主席，也是AI联盟的联合创始人。Alexy曾是Linux基金会AI与数据（LFAI）创成式AI Commons的创始主席，现在代表Neo4j在LFAI任职。Alexy是湾区AI和AI Agent SF聚会的创始人及组织者，也是自2013年以来举办的独立开源AI会议Scale/Data/AI By the Bay的组织者。",
+      "role": "AI社区架构师",
+      "org": "Neo4j",
+      "roleOrg": "AI社区架构师, Neo4j",
+      "image": "alexy-khrabrov-.jpeg",
+      "tag": "apps-agents"
+    },
+    {
+      "id": "nicolas-flores-herr",
+      "name": "Nicolas Flores Herr",
+      "bio": "基础模型与创成式AI系统行政领导\r\n\r\n我是弗劳恩霍夫智能分析和信息系统研究所（IAIS）德累斯顿分部的负责人，自2022年以来，我领导一个跨学科团队，致力于大型语言模型（LLM）和生成式AI的开发与应用。我们的专业知识涵盖了从数据集创建、预训练和持续预训练到微调和指令调整的整个生命周期。我们在OpenGPT-X、TrustLLM、OpenEuroLLM和Eurolingua等欧洲旗舰项目中开展这项工作。\r\n\r\n在我的领导岗位上，我将科学卓越与战略影响力相结合。我的团队为各行各业的行业合作伙伴开发定制的GenAI解决方案，包括可扩展的企业聊天机器人和用于语义搜索和知识访问的专业工具。",
+      "role": "基础模型与创成式AI系统团队负责人",
+      "org": "弗劳恩霍夫智能分析和信息系统研究所",
+      "roleOrg": "基础模型与创成式AI系统团队负责人, 弗劳恩霍夫智能分析和信息系统研究所",
+      "image": "nicolas-flores-herr.jpg",
+      "tag": "ai-models-infra"
+    },
+    {
+      "id": "johann-diedrick",
+      "name": "Johann Diedrick",
+      "bio": "我是一位艺术家和工程师，通过装置（🏗）、表演（👯）、软件（📱）、雕塑（🔊）和工作坊（🛠）等形式，来打造“聆听室”——一个能让人在脱离常规（off-the-grid）的状态下，邂逅全新声音可能性的空间。",
+      "role": "工程师 & 数据科学家",
+      "org": "Mozilla 数据协作组",
+      "roleOrg": "Mozilla 数据协作组的工程师 & 数据科学家",
+      "image": "johann-diedrick.jpg",
+      "tag": "open-for-sdg"
+    },
+    {
+      "id": "dandjinou-charbel",
+      "name": "DANDJINOU Charbel",
+      "bio": "Charbel Dandjinou是EXXACT Robotics的AI研究与MLOps工程师，负责领导公司内的生成式AI和RAG项目。他还创立了Iroko AI，以推动为新兴地区提供节俭、包容、开源的AI。他的工作涵盖企业AI部署、计算机视觉、机器人技术和多语言模型。",
+      "role": "AI研究与MLOps工程师",
+      "org": "Exel Industries | EXXACT Robotics",
+      "roleOrg": "AI研究与MLOps工程师, Exel Industries | EXXACT Robotics",
+      "image": "dandjinou-charbel.jpeg",
+      "tag": "apps-agents",
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": " /in/charbel-d-9569ba199",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    }
+  ]
+}

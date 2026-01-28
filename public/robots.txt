@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://hangzhou2025.gosim.org/sitemap-index.xml

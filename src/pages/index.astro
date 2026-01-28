@@ -1,0 +1,424 @@
+---
+// Components
+import Layout from "layouts/LayoutLanding.astro"
+import Hero from "components/Hero.astro"
+import Intro from "components/Intro.astro"
+import Statistics from "components/Statistics.astro"
+import Tracks from "components/Tracks.astro"
+import TextAndImage from "components/TextAndImage.astro"
+import PreviousEvents from "components/PreviousEvents.astro"
+import GetTickets from "components/GetTickets.astro"
+import VenueInfo from "components/VenueInfo.astro"
+import TextAndSponsors from "components/TextAndSponsors.astro"
+import TextAndImageReverse from "components/TextAndImageReverse.astro"
+import FeaturedSpeakers from "components/FeaturedSpeakers.astro"
+import Timeline from "components/Timeline.astro"
+import Marquee from "components/Marquee.astro"
+import Cards from "components/Cards.astro"
+import CardsSponsors from "components/CardsSponsors.astro"
+
+// Images
+import Placeholder1 from "images/homepage/stats1.png"
+import Placeholder2 from "images/homepage/stats2.jpg"
+import Placeholder3 from "images/homepage/stats3.png"
+import SpotlightBlue from "images/homepage/spotlight-hg.svg"
+import Proposals from "images/homepage/hangzhou-proposals-min.jpg"
+
+import GosimShanghai from "images/homepage/gosim-shanghai.png"
+import GosimDelft from "images/homepage/gosim-delft.png"
+import GosimBeijing from "images/homepage/gosim-beijing.png"
+import GosimParis from "images/homepage/gosim-paris-min.png"
+---
+
+<Layout
+  title="GOSIM Hangzhou 2025"
+  description="GOSIM Hangzhou. Coming soon."
+  navDarkMode={true}
+  navBackground="header-home"
+  pageTransitionName="Home"
+>
+  <Hero
+    date="September 13-14, 2025"
+    location="Hangzhou, China"
+    links={[
+      {
+        text: "Event ended, thanks for attending",
+        link: "",
+        openInNewTab: false,
+      },
+    ]}
+  />
+  <!-- <CardsSponsors
+    title="Proudly Sponsored By"
+    sponsors={[
+      {
+        name: "1ms.ai",
+        image: "/images/sponsors/1msai.png",
+      },
+      {
+        name: "Huawei",
+        image: "/images/sponsors/huawei.png",
+      },
+      {
+        name: "CSDN",
+        image: "/images/sponsors/csdn.png",
+      },
+    ]} -->
+
+  <FeaturedSpeakers
+    title="Featured Speakers"
+    ctaButton={{
+      text: "See all speakers",
+      link: "/speakers/",
+    }}
+  />
+
+  <div
+    class="section-wrap"
+    id="intro"
+    data-theme-section="light"
+    data-bg-section="lightgray"
+  >
+    <div class="intro-statistics-container" style="">
+      <Intro>
+        <h3 class="h3 light split-words animate-read">
+          Join us at GOSIM Hangzhou 2025, China's premier open-source
+          conference, where innovation, collaboration, and technological
+          breakthroughs converge.
+        </h3>
+      </Intro>
+
+      <Statistics
+        stats={[
+          {
+            title: "1500",
+            subtitle: "Attendees",
+            image: Placeholder1,
+            imageAlt: "",
+            hasPlus: true,
+          },
+          {
+            title: "100",
+            subtitle: "Speakers",
+            imageAlt: "",
+            image: Placeholder2,
+            hasPlus: true,
+          },
+          {
+            title: "2",
+            subtitle: "Exhilarating days",
+            imageAlt: "",
+            image: Placeholder3,
+          },
+        ]}
+      />
+    </div>
+  </div>
+
+  <Tracks
+    id="tracks"
+    title="Cutting-Edge Tracks, Workshops & Co-Located Events"
+    tracksTitle="5 Tracks"
+    workshopsTitle="14 Workshops"
+    coLocatedEventsTitle="3 Co-Located Events"
+    tracks={[
+      {
+        title: "AI Models × Infra",
+        text: "Foundation models, edge inference, generative AI, tools for AI training and beyond.",
+      },
+      {
+        title: "Embodied AI",
+        text: "Apply AI in the real world, from humanoid robotics to autonomous systems.",
+      },
+      {
+        title: "Agentic Web",
+        text: "Decentralized applications, identity, privacy-enhanced technologies, and collaborative platforms.",
+      },
+      {
+        title: "Apps × Agents",
+        text: "Cross-platform and AI-assisted app dev, Rust GUI apps, WebAssembly, and super-app ecosystems.",
+      },
+      {
+        title: "AI Next",
+        text: "AI Enabled Use Cases, AI Devices, Human AI Interfaces, AI Platforms, and AI Governnances",
+      },
+    ]}
+    workshops={[
+      {
+        title: "Cangjie Workshop",
+        text: "Hands-on with the Cangjie language model, from training techniques to real-world application deployment.",
+      },
+      {
+        title: "Dora Workshop",
+        text: "Develop and deploy robotics applications with the open-source Dora framework for autonomous systems.",
+      },
+      {
+        title: "SGLang Workshop",
+        text: "Master efficient and controllable large language model inference and interaction using SGLang.",
+      },
+      {
+        title: "Edge AI Workshop",
+        text: "Learn to optimize and deploy powerful AI models on resource-constrained edge devices for real-time inference.",
+      },
+      {
+        title: "Future Web Workshop",
+        text: "Explore the next generation of the web, focusing on decentralized identity, agentic AI, and privacy-first technologies.",
+      },
+      {
+        title: "CANN Workshop",
+        text: "Deep dive into Huawei's Compute Architecture for Neural Networks for high-performance AI solutions.",
+      },
+      {
+        title: "Flutter Meetup",
+        text: "Learn about Flutter and Nest: a toolkit for extending Flutter’s engine and framework without fracturing the ecosystem.",
+      },
+      {
+        title: "Chitu First Meetup",
+        text: "Join the first community meetup for the Chitu project to discuss its future and development.",
+      },
+      {
+        title: "AI for Education Workshop",
+        text: "Discover how AI is transforming education, from personalized learning to administrative tools.",
+      },
+      {
+        title: "RN Workshop",
+        text: "Leverage your React skills to build native iOS and Android applications with React Native.",
+      },
+      {
+        title: "Makepad Workshop",
+        text: "Learn how to build fast, cross-platform UIs step-by-step in Rust using Makepad and add AI capabilities with MolyKit.",
+      },
+      {
+        title: "Embedded Rust x AI Workshop",
+        text: "Explore the intersection of embedded systems and AI using the power and safety of Rust.",
+      },
+      {
+        title: "Solana for Rustaceans Workshop",
+        text: "Build high-performance, decentralized applications on the Solana blockchain using Rust.",
+      },
+      {
+        title: "Open Source Globalization Workshop",
+        text: "Explore strategies for globalizing open source projects and effectively reaching international markets.",
+      },
+    ]}
+    coLocatedEvents={[
+      {
+        title: "Open for SDG Conference",
+        text: "Join leaders and innovators using open source technology to address the UN's Sustainable Development Goals.",
+      },
+      {
+        title: "AI Vision Forum",
+        text: "A premier forum for discussing the future of artificial intelligence, its ethical implications, and societal impact.",
+      },
+      {
+        title: "RustChinaConf & Rust Global China",
+        text: "The largest Rust developer conference in China, bringing together the global community to share insights.",
+      },
+    ]}
+    ctaButton={{
+      text: "See full schedule",
+      link: "/schedule",
+    }}
+  />
+
+  <VenueInfo
+    subtitle="Venue"
+    title={"Hangzhou Platinum Hanjue Hotel\n杭州白金汉爵酒店"}
+    location="Hangzhou, China - Where Innovation Meets History"
+    text="Experience GOSIM Hangzhou 2025 in a city renowned for its historical legacy and vibrant technological future. Hangzhou, a historical gem and modern tech hub, offers the perfect backdrop for inspiration, networking, and breakthrough innovations."
+    image="/images/homepage/hangzhoubg.png"
+  />
+
+  <Marquee />
+
+  <TextAndImageReverse
+    id="proposals"
+    title="Call for Proposals - 8/18 Due"
+    text="We’re looking for bold ideas and fresh voices to shape the future. If you have insights on cutting-edge technology, emerging trends, or transformative practices, we want to hear from you. Submit a proposal to speak and join a lineup of innovators, thought leaders, and changemakers pushing the boundaries of what’s next."
+    image={Proposals}
+    imageAlt="GOSIM Hangzhou"
+    dataBgSection="light"
+    dataThemeSection="light"
+    ctaButton={{
+      text: "Apply now",
+      link: "https://cfp.gosim.org/",
+      openInNewTab: true,
+    }}
+  />
+  <Timeline
+    events={[
+      {
+        date: "May 18, 2025",
+        title: "Proposal applications open",
+      },
+      {
+        date: "August 18, 2025",
+        title: "Proposal applications close",
+      },
+      {
+        date: "September 13, 2025",
+        title: "GOSIM Hangzhou kicks off!",
+      },
+      {
+        date: "September 14, 2025",
+        title: "GOSIM Hangzhou concludes",
+      },
+    ]}
+  />
+
+  <Cards
+    id="co-located-events"
+    title="Co-located Events"
+    description="GOSIM Hangzhou 2025 is enriched by a set of co-located events that bring fresh perspectives and hands-on innovation. From RustGlobal & RustChinaConf to forums on AI, sustainability, and next-generation agents, these gatherings create space for deep learning, collaboration, and breakthrough ideas. Together, they extend the impact of the summit and connect global communities driving the future of technology."
+    cards={[
+      {
+        title: "RustGlobal & RustChinaConf",
+        description:
+          "RustGlobal is the first Rust Foundation–hosted gathering, dedicated to showcasing the use of Rust in global leadership, innovation, and technology settings worldwide.",
+        image: "/images/homepage/rust-colocated.png",
+        link: "https://rustcc.cn/2025conf/",
+        openInNewTab: false,
+      },
+      {
+        title: "AI Vision Forum",
+        description:
+          "An exclusive forum for global thinkers and practitioners to explore a symbiotic future for AI and humanity, ensuring technological progress is guided by core human values.",
+        image: "/images/homepage/ai-vision-foum-min.png",
+        link: "https://forum.gosim.org/en/",
+        openInNewTab: false,
+      },
+      {
+        title: "Open for SDG Conference",
+        description:
+          "A global conference uniting experts in open source, AI, and policy to accelerate the UN Sustainable Development Goals (SDGs) through open collaboration and technology.",
+        image: "/images/homepage/open-sdg-conference-min.png",
+        link: "https://opensdg.gosim.org/en/",
+        openInNewTab: false,
+      },
+      {
+        title: "Super Agent Campathon",
+        description:
+          "A developer 'Campathon' that combines a training camp with a hackathon, challenging participants to build personalized and emotionally intelligent 'Super Agents' for next-generation interaction.",
+        image: "/images/homepage/agent-hackathon-min.png",
+        link: "https://mofa.ai/super-agent-hackathon/",
+        openInNewTab: false,
+      },
+      {
+        title: "Code Alert Hackathon",
+        description:
+          'An AI hackathon inspired by the classic strategy game "Red Alert." Competitors will harness natural language to command AI agents through a series of online challenges, culminating in intense live final battles.',
+        image: "/images/homepage/code-hackathon-min.png",
+        link: "https://hackathon.mofa.ai",
+        openInNewTab: false,
+      },
+    ]}
+  />
+
+  <TextAndSponsors
+    title="Sponsorship Opportunities"
+    text="Reach thousands of people in your target audience by becoming a supporting organization at GOSIM Hangzhou 2025."
+    text2="*Previous GOSIM conference sponsors shown for illustration purposes only."
+    ctaButton={{
+      text: "Contact Us",
+      link: "mailto:sponsor@gosim.org",
+    }}
+    logos={[
+      {
+        image: "openwallet.png",
+        imageAlt: "OpenWallet logo",
+      },
+      {
+        image: "ajtis.jpg",
+        imageAlt: "AJTIS logo",
+      },
+      {
+        image: "aifc.png",
+        imageAlt: "AIFC logo",
+      },
+      {
+        image: "lf-gen-ai.png",
+        imageAlt: "Linux Foudnation logo",
+      },
+      {
+        image: "eclipse-foundation.png",
+        imageAlt: "Eclipse Foundation logo",
+      },
+      {
+        image: "osi.png",
+        imageAlt: "Open Source Initiative logo",
+      },
+    ]}
+  />
+
+  <TextAndImage
+    id="spotlight"
+    title="GOSIM AI for Human Spotlight"
+    text="Towards a Symbiotic Future of Ethical and Creative AI: What if AI wasn't just built to serve, but to co-create with us? AI for Human Spotlight is an international showcase for projects that explore how generative AI can foster empathy, shared creativity, and ethical coexistence."
+    image={SpotlightBlue}
+    imageAlt="Gosim Spotlight badge"
+    dataBgSection="light"
+    dataThemeSection="light"
+    ctaButton={{
+      text: "Apply or Nominate Now",
+      link: "https://spotlight.gosim.org/",
+      openInNewTab: true,
+    }}
+  />
+
+  <PreviousEvents
+    title="Previous Events"
+    events={[
+      {
+        title: "GOSIM AI Paris",
+        date: "May 6-7, 2025",
+        description:
+          "Over 1000 attendees and luminaries delved into the multifaceted development of AI for our 2-day GOSIM Paris event in the city of lights.",
+        image: GosimParis,
+        link: "https://paris2025.gosim.org/",
+      },
+      {
+        title: "GOSIM China (Beijing)",
+        date: "October 17-18, 2024",
+        description:
+          "Attracted more than 1700 attendees, GOSIM Beijing is by far the largest GOSIM event ever in the historical capital of China.",
+        image: GosimBeijing,
+        link: "https://china2024.gosim.org/",
+      },
+      {
+        title: "GOSIM Europe (Delft)",
+        date: "June 6-7, 2024",
+        description:
+          "GOSIM Delft was a two-day event with 3 tracks that brought together 1200 attendees from not only the Netherlands, but all around the world.",
+        image: GosimDelft,
+        link: "https://europe2024.gosim.org/",
+      },
+      {
+        title: "GOSIM Conference (Shanghai)",
+        date: "September 26, 2023",
+        description:
+          "Where everything started, GOSIM conference and workshop focused on championing and enhancing open-source contributions.",
+        image: GosimShanghai,
+        link: "https://conference2023.gosim.org/",
+      },
+      {
+        title: "GOSIM Workshop (Shanghai)",
+        date: "September 23-24, 2023",
+        description:
+          "Where everything started, GOSIM workshop focused on hands-on learning and development of open-source projects.",
+        image: GosimShanghai,
+        link: "https://workshop2023.gosim.org/",
+      },
+    ]}
+  />
+  <GetTickets
+    title="Grab your GOSIM Hangzhou ticket"
+    location="Hangzhou, China"
+    date="September 13-14, 2025"
+    text="Secure your spot today at GOSIM Hangzhou 2025. Collaborate with innovators, engage with industry pioneers, and be part of shaping the future of open-source technology."
+    ctaButton={{
+      text: "Event ended, thanks for attending",
+      link: "",
+      openInNewTab: false,
+    }}
+  />
+</Layout>
