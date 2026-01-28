@@ -6,7 +6,7 @@ import { Picture } from "astro:assets"
 import Button from "components/Button.astro"
 
 // Images
-import image from "videos/hz-hero-bk.png"
+import image from "videos/paris-hero-bk.jpg"
 
 interface Props {
   title: string
@@ -50,7 +50,7 @@ const slug = Astro.url.pathname
           muted
           webkit-playsinline
           playsinline
-          poster="/videos/hsz04-min.jpg"
+          poster="/videos/paris-hero-bk.jpg"
           onloadstart="this.playbackRate=0.25"
         >
           <source src="/videos/paris-hero-compressed.mp4" type="video/mp4" />
@@ -77,7 +77,8 @@ const slug = Astro.url.pathname
           <p>{text}</p>
         </div>
 
-        {/* // temporary override
+        {
+          /* // temporary override
         {
           ctaButton?.text && (
             <div class="col-row col-row-btn">
@@ -89,7 +90,8 @@ const slug = Astro.url.pathname
               />
             </div>
           )
-        } */}
+        } */
+        }
       </div>
     </div>
   </div>
