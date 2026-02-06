@@ -5,6 +5,7 @@ import Hero from "components/Hero.astro"
 import Intro from "components/Intro.astro"
 import Statistics from "components/Statistics.astro"
 import Tracks from "components/Tracks.astro"
+import ConferenceTracks from "components/ConferenceTracks.astro"
 import TextAndImage from "components/TextAndImage.astro"
 import PreviousEvents from "components/PreviousEvents.astro"
 import GetTickets from "components/GetTickets.astro"
@@ -222,6 +223,73 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   /> -->
 
   <Marquee />
+
+  <ConferenceTracks
+    title="Exciting Tracks and Workshops"
+    day1Title="Day 1 — May 5"
+    day1Subtitle="Workshops, Training & Hackathon"
+    day2Title="Day 2 — May 6"
+    day2Subtitle="Conference & Hackathon Finals"
+    day1Tracks={[
+      {
+        title: "Agentic AI Summit",
+        text: "Exploring AI agent standards like MCP and A2A, sovereign AI initiatives, and the evolution of AI-powered software with tools like Codex.",
+      },
+      {
+        title: "Open Source Robotics",
+        text: "Hands-on workshops with the Dora framework for building autonomous robotics systems and real-world AI applications.",
+      },
+      {
+        title: "AI Generative App",
+        text: "Building next-generation AI-powered applications with Makepad Splash, A2App, and A2UI for creative and generative workflows.",
+      },
+      {
+        title: "Agentic AI on Edge",
+        text: "Deploying AI at the edge with KTransformer, OmniX+MoFA, and cutting-edge AI infrastructure from BAAI and TileLang.",
+      },
+      {
+        title: "AI Hardware",
+        text: "Exploring the latest AI hardware innovations, connecting the Paris and Shenzhen GOSIM communities around silicon and accelerator ecosystems.",
+      },
+    ]}
+    day2Tracks={[
+      {
+        title: "Agentic AI Summit",
+        text: "Open-source agentic systems driving business and creator innovation, featuring startups, individual creators, VCs, and enterprise leaders.",
+      },
+      {
+        title: "Open Source Robotics",
+        text: "Conference talks and demonstrations showcasing the latest advances in open-source robotics platforms and applications.",
+      },
+      {
+        title: "Agentic AI Protocols",
+        text: "Deep dive into MCP, ACP, A2UI, A2App, and open-source coding agents like Claude Code and OpenClaw shaping the agentic AI ecosystem.",
+      },
+      {
+        title: "Open Source Model",
+        text: "Exploring open foundation models spanning LLM, audio, image, and video — pushing the boundaries of open-source AI capabilities.",
+      },
+    ]}
+    highlightsTitle="Workshops & Hackathons"
+    highlights={[
+      {
+        title: "GOSIM Spotlight Demo",
+        text: "Live showcase of the most promising open-source projects selected by GOSIM, with real-time demos and audience interaction.",
+      },
+      {
+        title: "DORA Robot Hackathon",
+        text: "Build and program autonomous robots using the open-source Dora framework in a hands-on, team-based competition.",
+      },
+      {
+        title: "BAAI FlagTree Hackathon",
+        text: "Tackle real-world AI challenges with BAAI's FlagTree ecosystem, from model training to inference optimization.",
+      },
+      {
+        title: "Unaite Vibe Coding Hackathon",
+        text: "Collaborative coding sessions blending creativity and AI-assisted development to prototype innovative applications.",
+      },
+    ]}
+  />
 
   <!-- <TextAndImageReverse
     id="proposals"
