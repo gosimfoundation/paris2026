@@ -1,18 +1,19 @@
 ---
 // Components
-import Layout from "layouts/LayoutLanding.astro";
-import Tickets from "components/Tickets.astro";
-import PreviousEvents from "components/PreviousEvents.astro";
-import EventHeader from "components/EventHeader.astro";
+import Layout from "layouts/LayoutLanding.astro"
+import Tickets from "components/Tickets.astro"
+import PreviousEvents from "components/PreviousEvents.astro"
+import EventHeader from "components/EventHeader.astro"
 // Images
-import GosimShanghai from "images/homepage/gosim-shanghai.png";
-import GosimDelft from "images/homepage/gosim-delft.png";
-import GosimBeijing from "images/homepage/gosim-beijing.png";
-import GosimParis from "images/homepage/gosim-paris-min.png";
+import GosimShanghai from "images/homepage/gosim-shanghai.png"
+import GosimDelft from "images/homepage/gosim-delft.png"
+import GosimBeijing from "images/homepage/gosim-beijing.png"
+import GosimParis from "images/homepage/gosim-paris-min.png"
+import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 ---
 
 <Layout
-  title="GOSIM Paris 2025"
+  title="GOSIM Paris 2026"
   description="GOSIM Paris. Coming soon."
   navDarkMode={true}
   navBackground="header-home"
@@ -21,12 +22,20 @@ import GosimParis from "images/homepage/gosim-paris-min.png";
   <EventHeader
     category="Paris"
     ,
-    tagline="2025-09-13 09:00 ~ 09-14 18:00"
+    tagline="2026-05-04 09:00 ~ 2026-05-06 18:00"
   />
   <Tickets />
   <PreviousEvents
     title="Previous Events"
     events={[
+      {
+        title: "GOSIM Hangzhou",
+        date: "Sept 13-14, 2025",
+        description:
+          "Over 2000 attendees and developers participated in the development of AI for our 2-day GOSIM Hangzhou event in the AI hub of China.",
+        image: GosimHangzhou,
+        link: "https://hangzhou2025.gosim.org/",
+      },
       {
         title: "GOSIM Paris",
         date: "May 6-7, 2025",
