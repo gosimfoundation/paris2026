@@ -3,6 +3,7 @@
 import { Picture } from 'astro:assets';
 
 interface Props {
+	id?: string,
 	title: string,
     events?: Array<{
         title: string,
@@ -13,10 +14,11 @@ interface Props {
     }>,
 }
 
-const { title, events } = Astro.props;
+const { id, title, events } = Astro.props;
 ---
 
 <section
+    id={id}
     class="section section-resources-featured"
     data-theme-section="light"
     data-bg-section="lightgray"

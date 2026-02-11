@@ -7,6 +7,7 @@ import type { ImageMetadata } from "astro";
 import Button from "components/Button.astro";
 
 interface Props {
+  id?: string;
   title: string;
   text: string;
   text2: string;
@@ -26,10 +27,11 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "images/sponsors/*.{jpeg,jpg,png,gif}"
 );
 
-const { title, text, text2, logos, ctaButton } = Astro.props;
+const { id, title, text, text2, logos, ctaButton } = Astro.props;
 ---
 
 <section
+  id={id}
   class="section section-home-sponsors"
   data-theme-section="light"
   data-bg-section="lightgray"
