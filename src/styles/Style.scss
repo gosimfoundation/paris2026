@@ -793,10 +793,41 @@ footer {
 }
 */
 
-.btn-home-wrap {
-   display: row;
+.section-home-header .btn-home-wrap {
+   position: fixed;
+   left: 0;
+   right: 0;
+   bottom: calc(-40vh + 3.5rem);
+   display: flex;
+   justify-content: center;
    align-items: center;
    gap: 2rem;
+   z-index: 1;
+}
+
+.section-home-header .btn-home-wrap .btn .btn-fill {
+   background: linear-gradient(90deg, #16A085, #F4D03F, #3498DB);
+   background-size: 200% 100%;
+   animation: hero-btn-gradient 6s ease-in-out infinite;
+}
+
+@keyframes hero-btn-gradient {
+   0% { background-position: 0% 50%; }
+   50% { background-position: 100% 50%; }
+   100% { background-position: 0% 50%; }
+}
+
+.section-home-header .btn-home-wrap .btn .btn-content span {
+   color: var(--color-white);
+}
+
+/* CFP section button: primary blue bg with white text */
+.spotlight-section .btn.primary .btn-content.duplicate .btn-fill {
+   background-color: var(--color-primary);
+}
+
+.spotlight-section .btn.primary .btn-content.duplicate span {
+   color: var(--color-white);
 }
 
 @media screen and (max-width: 860px) {
