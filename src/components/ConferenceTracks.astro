@@ -2,6 +2,7 @@
 interface Track {
   title: string;
   text: string;
+  link?: string;
 }
 
 interface Props {
@@ -65,22 +66,30 @@ const trackColors = [
           {day1Subtitle && <p class="day-subtitle">{day1Subtitle}</p>}
         </div>
         <div class="tracks-list">
-          {day1Tracks.map((track, i) => (
-            <div
-              class="track-card animate-slide-up"
-              style={`--accent-from: ${trackColors[i % trackColors.length].from}; --accent-to: ${trackColors[i % trackColors.length].to}; --stagger: ${i};`}
-            >
-              <div class="track-card-accent accent-left"></div>
-              <div class="track-card-content">
-                <div class="track-card-top">
-                  <span class="track-number">{String(i + 1).padStart(2, '0')}</span>
-                  <h5>{track.title}</h5>
+          {day1Tracks.map((track, i) => {
+            const cardAttrs = {
+              class: `track-card animate-slide-up${track.link ? ' track-card-link' : ''}`,
+              style: `--accent-from: ${trackColors[i % trackColors.length].from}; --accent-to: ${trackColors[i % trackColors.length].to}; --stagger: ${i};`,
+            };
+            const inner = (
+              <>
+                <div class="track-card-accent accent-left"></div>
+                <div class="track-card-content">
+                  <div class="track-card-top">
+                    <span class="track-number">{String(i + 1).padStart(2, '0')}</span>
+                    <h5>{track.title}{track.link && <span class="track-link-arrow">&rarr;</span>}</h5>
+                  </div>
+                  <p>{track.text}</p>
                 </div>
-                <p>{track.text}</p>
-              </div>
-              <div class="track-card-accent accent-right"></div>
-            </div>
-          ))}
+                <div class="track-card-accent accent-right"></div>
+              </>
+            );
+            return track.link ? (
+              <a href={track.link} {...cardAttrs}>{inner}</a>
+            ) : (
+              <div {...cardAttrs}>{inner}</div>
+            );
+          })}
         </div>
       </div>
 
@@ -97,22 +106,30 @@ const trackColors = [
           {day2Subtitle && <p class="day-subtitle">{day2Subtitle}</p>}
         </div>
         <div class="tracks-list">
-          {day2Tracks.map((track, i) => (
-            <div
-              class="track-card animate-slide-up"
-              style={`--accent-from: ${trackColors[i % trackColors.length].from}; --accent-to: ${trackColors[i % trackColors.length].to}; --stagger: ${i};`}
-            >
-              <div class="track-card-accent accent-left"></div>
-              <div class="track-card-content">
-                <div class="track-card-top">
-                  <span class="track-number">{String(i + 1).padStart(2, '0')}</span>
-                  <h5>{track.title}</h5>
+          {day2Tracks.map((track, i) => {
+            const cardAttrs = {
+              class: `track-card animate-slide-up${track.link ? ' track-card-link' : ''}`,
+              style: `--accent-from: ${trackColors[i % trackColors.length].from}; --accent-to: ${trackColors[i % trackColors.length].to}; --stagger: ${i};`,
+            };
+            const inner = (
+              <>
+                <div class="track-card-accent accent-left"></div>
+                <div class="track-card-content">
+                  <div class="track-card-top">
+                    <span class="track-number">{String(i + 1).padStart(2, '0')}</span>
+                    <h5>{track.title}{track.link && <span class="track-link-arrow">&rarr;</span>}</h5>
+                  </div>
+                  <p>{track.text}</p>
                 </div>
-                <p>{track.text}</p>
-              </div>
-              <div class="track-card-accent accent-right"></div>
-            </div>
-          ))}
+                <div class="track-card-accent accent-right"></div>
+              </>
+            );
+            return track.link ? (
+              <a href={track.link} {...cardAttrs}>{inner}</a>
+            ) : (
+              <div {...cardAttrs}>{inner}</div>
+            );
+          })}
         </div>
       </div>
     </div>
@@ -444,6 +461,24 @@ const trackColors = [
 
   .track-card:hover p {
     color: rgba(28, 29, 36, 0.75);
+  }
+
+  a.track-card {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .track-link-arrow {
+    margin-left: 0.4em;
+    opacity: 0.4;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+  }
+
+  .track-card:hover .track-link-arrow {
+    opacity: 1;
+    transform: translateX(2px);
   }
 
   /* ---- Highlights (workshops & hackathons) — shield badges ---- */

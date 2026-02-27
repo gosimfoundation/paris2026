@@ -1,0 +1,471 @@
+---
+import Layout from "layouts/LayoutLanding.astro";
+---
+
+<Layout
+  title="Open Source Robotics Stage - GOSIM Paris 2026"
+  description="An interactive open stage where attendees can see, touch, and interact with real open-source robots at GOSIM Paris 2026."
+  navDarkMode={true}
+  navBackground="header-home"
+>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-background">
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge">GOSIM Paris 2026</span>
+          <span class="badge">Interactive &amp; Hands-On</span>
+          <span class="badge">Open Source</span>
+        </div>
+        <h1 class="hero-title">Open Source Robotics Stage</h1>
+        <p class="hero-subtitle">See it. Touch it. Build it. The future of robotics is open.</p>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+      <div class="container">
+        <h2>Experience Open Source Robotics Up Close</h2>
+        <p class="intro-text">
+          The Open Source Robotics Stage is an open arena where attendees can see, touch, and interact with real open-source robots. From walking legs to dexterous hands, robotic arms, and autonomous navigators — experience the cutting edge of open-source robotics firsthand.
+        </p>
+        <p class="intro-text">
+          Many of the robots on display will be interactive, giving you the chance to try them yourself. Alongside the hands-on demos, technical talks will dive deeper into the projects, their architectures, and the open-source communities behind them.
+        </p>
+      </div>
+    </section>
+
+    <!-- Workshop Category Rows -->
+    <section class="categories-section">
+      <div class="container">
+        <h2>Workshop Categories</h2>
+        <div class="categories-list">
+
+          <div class="category-row" style="--accent: #6366f1; --accent-light: #818cf8;">
+            <div class="category-scene" data-scene="legs">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🦿</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">01</span>
+              <h3>Open Source Legs</h3>
+              <p>Humanoid locomotion, walking robots, and legged platforms. Watch open-source bipeds and quadrupeds take their steps — and learn how you can build your own.</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #3b82f6; --accent-light: #60a5fa;">
+            <div class="category-scene" data-scene="hands">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🤲</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">02</span>
+              <h3>Open Source Hands &amp; Grippers</h3>
+              <p>Dexterous manipulation, robotic hands, and adaptive grippers. See how open hardware and software combine to give robots a sense of touch and fine motor control.</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #10b981; --accent-light: #34d399;">
+            <div class="category-scene" data-scene="arms">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🦾</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">03</span>
+              <h3>Open Source Arms</h3>
+              <p>Robotic arms for teleoperation, manipulation, and automation. From tabletop manipulators to full-size industrial arms — all open source, all hackable.</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #f59e0b; --accent-light: #fbbf24;">
+            <div class="category-scene" data-scene="navigation">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🧭</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">04</span>
+              <h3>Open Source Navigation</h3>
+              <p>Autonomous mobile robots, rovers, and self-driving platforms. Explore how open-source stacks power robots that see, map, and navigate the world around them.</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #ec4899; --accent-light: #f472b6;">
+            <div class="category-scene" data-scene="haptics">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🖐️</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">05</span>
+              <h3>Open Source Haptics</h3>
+              <p>Touch feedback, tactile sensing, and haptic interfaces. Feel what robots feel — experience the next generation of open-source sensory technology.</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #8b5cf6; --accent-light: #a78bfa;">
+            <div class="category-scene" data-scene="simulation">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🖥️</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">06</span>
+              <h3>Simulation</h3>
+              <p>Physics simulation environments for robotics development and testing. See how open-source simulators accelerate robotics research before hardware ever hits the bench.</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #06b6d4; --accent-light: #22d3ee;">
+            <div class="category-scene" data-scene="companion">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🤖</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">07</span>
+              <h3>Companion Robots</h3>
+              <p>Social robots, interactive companions, and consumer robotics. Meet friendly open-source robots designed to live alongside people in everyday life.</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #ef4444; --accent-light: #f87171;">
+            <div class="category-scene" data-scene="humanoids">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🧑</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">08</span>
+              <h3>Open Source Humanoids</h3>
+              <p>Full-body humanoid robots that bring legs, arms, hands, and brains together into one system. From open hardware platforms to imitation learning frameworks — build the complete humanoid stack.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section with Video -->
+    <section class="cta-video-section">
+      <div class="cta-video-background">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          webkit-playsinline
+          poster="/videos/paris-hero-bk.jpg"
+          onloadstart="this.playbackRate=0.25"
+        >
+          <source src="/videos/paris-hero-compressed.mp4" type="video/mp4" />
+        </video>
+        <div class="cta-video-overlay"></div>
+      </div>
+      <div class="cta-video-content">
+        <h2>Interested in Presenting?</h2>
+        <p>
+          We're looking for open-source robotics projects to showcase on stage — whether it's a live demo, a technical talk, or an interactive workshop. If you're building something exciting in open-source robotics, we'd love to hear from you.
+        </p>
+        <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="cta-button">
+          Submit a Proposal
+        </a>
+      </div>
+    </section>
+
+</Layout>
+
+<style>
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 60vh;
+    min-height: 500px;
+    overflow: hidden;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #0e7aff 100%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: clamp(20px, 6vw, 64px);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: clamp(28px, 4.2vw, 60px);
+    line-height: 1.08;
+    margin: 0.2em 0;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .hero-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: clamp(16px, 1.4vw, 20px);
+    margin: 0;
+  }
+
+  /* Common */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(20px, 5vw, 60px);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0f172a;
+    text-align: left;
+  }
+
+  /* Introduction Section */
+  .intro-section {
+    padding: 40px 0;
+    background: #fff;
+  }
+
+  .intro-text {
+    color: #516072;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    max-width: 800px;
+  }
+
+  /* Categories Section */
+  .categories-section {
+    padding: 60px 0;
+    background: #0f172a;
+  }
+
+  .categories-section h2 {
+    color: #fff;
+  }
+
+  .categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .category-row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    background: rgba(15, 23, 42, 0.95);
+    transition: background 0.4s ease;
+    cursor: default;
+  }
+
+  .category-row:hover {
+    background: rgba(30, 41, 59, 0.95);
+  }
+
+  /* Scene area — future Three.js container */
+  .category-scene {
+    position: relative;
+    min-height: 180px;
+    overflow: hidden;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 15%, transparent), color-mix(in srgb, var(--accent-light) 8%, transparent));
+  }
+
+  .scene-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scene-icon {
+    font-size: 4rem;
+    filter: grayscale(0.3);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s ease;
+  }
+
+  .category-row:hover .scene-icon {
+    transform: scale(1.15);
+    filter: grayscale(0);
+  }
+
+  /* Info area */
+  .category-info {
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .category-number {
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.1em;
+    color: var(--accent-light);
+    opacity: 0.7;
+  }
+
+  .category-info h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    letter-spacing: -0.01em;
+    transition: color 0.3s ease;
+  }
+
+  .category-row:hover .category-info h3 {
+    color: var(--accent-light);
+  }
+
+  .category-info p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 0;
+    max-width: 540px;
+    transition: color 0.3s ease;
+  }
+
+  .category-row:hover .category-info p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* CTA Video Section */
+  .cta-video-section {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .cta-video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cta-video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cta-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(14, 23, 42, 0.9) 0%, rgba(30, 58, 95, 0.75) 50%, rgba(14, 122, 255, 0.6) 100%);
+  }
+
+  .cta-video-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 700px;
+    padding: clamp(40px, 8vw, 80px) clamp(20px, 5vw, 60px);
+  }
+
+  .cta-video-content h2 {
+    color: #fff;
+    text-align: center;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+  }
+
+  .cta-video-content p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: #0e7aff;
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .cta-button:hover {
+    background: #0b63d1;
+    transform: translateY(-2px);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-section {
+      min-height: 400px;
+    }
+
+    .category-row {
+      grid-template-columns: 1fr;
+    }
+
+    .category-scene {
+      min-height: 120px;
+    }
+
+    .category-info {
+      border-left: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 1.5rem;
+    }
+  }
+</style>
