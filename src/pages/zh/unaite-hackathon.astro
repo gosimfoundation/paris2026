@@ -1,0 +1,454 @@
+---
+import Layout from "layouts/LayoutLandingZh.astro";
+---
+
+<Layout
+  title="Unaite 黑客松 - GOSIM Paris 2026"
+  description="与 LeRobot 团队合作的实战机器人黑客松。使用真实机器人，完全开源。"
+  navDarkMode={true}
+  navBackground="header-home"
+>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-background">
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge">GOSIM Paris 2026</span>
+          <span class="badge">黑客松</span>
+          <span class="badge">开源机器人</span>
+        </div>
+        <h1 class="hero-title">Unaite 黑客松</h1>
+        <p class="hero-subtitle">使用真实机器人。由 LeRobot 驱动。完全开源。</p>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+      <div class="container">
+        <h2>实战机器人黑客松</h2>
+        <p class="intro-text">
+          Unaite 黑客松是一场与 LeRobot 团队合作举办的实战机器人黑客松，以 LeRobot 的 OpenArm 机械臂为核心。LeRobot 即将发布全新版本，全面支持 OpenArm，包含数据集和开箱即用的叠衣模型。
+        </p>
+        <p class="intro-text">
+          整套系统完全开源，具有潜在的工业应用价值。无论你是资深机器人工程师还是充满好奇的创客，这都是你用真实机器人打造创新作品的绝佳机会。
+        </p>
+      </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="categories-section">
+      <div class="container">
+        <h2>黑客松详情</h2>
+        <div class="categories-list">
+
+          <div class="category-row" style="--accent: #6366f1; --accent-light: #818cf8;">
+            <div class="category-scene" data-scene="venue">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🏛️</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">01</span>
+              <h3>场地</h3>
+              <p>Station F 开放平台（中心岛区域），配备桌椅和电源插座。活动期间每天早 8 点至晚 8 点开放。</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #10b981; --accent-light: #34d399;">
+            <div class="category-scene" data-scene="hardware">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🦾</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">02</span>
+              <h3>硬件设备</h3>
+              <p>10 台 OpenArm（每台含 2 条机械臂），配备远程操控臂。全新 LeRobot 版本包含数据集和叠衣模型。活动前将提供仿真环境供提前开发。</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #3b82f6; --accent-light: #60a5fa;">
+            <div class="category-scene" data-scene="remote">
+              <div class="scene-placeholder">
+                <span class="scene-icon">🌐</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">03</span>
+              <h3>远程访问</h3>
+              <p>可从家中或学校远程访问 OpenArm。通过仿真验证获取提前使用硬件的机会——活动前一周和一个周末开放。</p>
+            </div>
+          </div>
+
+          <div class="category-row" style="--accent: #f59e0b; --accent-light: #fbbf24;">
+            <div class="category-scene" data-scene="teams">
+              <div class="scene-placeholder">
+                <span class="scene-icon">👥</span>
+              </div>
+            </div>
+            <div class="category-info">
+              <span class="category-number">04</span>
+              <h3>团队组成</h3>
+              <p>每队 3–5 人，总计约 50 名参赛者。每支队伍在黑客松期间使用一台 OpenArm 进行开发。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership-section">
+      <div class="container">
+        <h2>合作与赞助</h2>
+        <p class="intro-text">
+          合作伙伴将获得：活动网站上的名称展示、现场标识、屏幕展示、易拉宝以及社交活动参与权。黑客松展示人形尺寸的机器人，具有工业级应用场景（包括叠衣模型），整套技术栈完全开源。
+        </p>
+        <p class="intro-text">
+          有兴趣支持下一代开源机器人技术？欢迎联系我们成为赞助商。
+        </p>
+      </div>
+    </section>
+
+    <!-- Call to Action Section with Video -->
+    <section class="cta-video-section">
+      <div class="cta-video-background">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          webkit-playsinline
+          poster="/videos/paris-hero-bk.jpg"
+          onloadstart="this.playbackRate=0.25"
+        >
+          <source src="/videos/paris-hero-compressed.mp4" type="video/mp4" />
+        </video>
+        <div class="cta-video-overlay"></div>
+      </div>
+      <div class="cta-video-content">
+        <h2>加入黑客松</h2>
+        <p>
+          与真实机器人一起开发，与 LeRobot 团队协作，突破开源机器人技术的边界。无论你是现场参与还是远程加入——我们都欢迎你的到来。
+        </p>
+        <div class="cta-buttons">
+          <a href="mailto:contact@gosim.org" class="cta-button">成为赞助商</a>
+          <a href="https://gosim.org/" target="_blank" rel="noopener noreferrer" class="cta-button cta-button-outline">立即报名</a>
+        </div>
+      </div>
+    </section>
+
+</Layout>
+
+<style>
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 60vh;
+    min-height: 500px;
+    overflow: hidden;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #0e7aff 100%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: clamp(20px, 6vw, 64px);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: clamp(28px, 4.2vw, 60px);
+    line-height: 1.08;
+    margin: 0.2em 0;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .hero-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: clamp(16px, 1.4vw, 20px);
+    margin: 0;
+  }
+
+  /* Common */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(20px, 5vw, 60px);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0f172a;
+    text-align: left;
+  }
+
+  /* Introduction Section */
+  .intro-section {
+    padding: 40px 0;
+    background: #fff;
+  }
+
+  .intro-text {
+    color: #516072;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    max-width: 800px;
+  }
+
+  /* Categories Section */
+  .categories-section {
+    padding: 60px 0;
+    background: #0f172a;
+  }
+
+  .categories-section h2 {
+    color: #fff;
+  }
+
+  .categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .category-row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    background: rgba(15, 23, 42, 0.95);
+    transition: background 0.4s ease;
+    cursor: default;
+  }
+
+  .category-row:hover {
+    background: rgba(30, 41, 59, 0.95);
+  }
+
+  .category-scene {
+    position: relative;
+    min-height: 180px;
+    overflow: hidden;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 15%, transparent), color-mix(in srgb, var(--accent-light) 8%, transparent));
+  }
+
+  .scene-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scene-icon {
+    font-size: 4rem;
+    filter: grayscale(0.3);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s ease;
+  }
+
+  .category-row:hover .scene-icon {
+    transform: scale(1.15);
+    filter: grayscale(0);
+  }
+
+  .category-info {
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .category-number {
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.1em;
+    color: var(--accent-light);
+    opacity: 0.7;
+  }
+
+  .category-info h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    letter-spacing: -0.01em;
+    transition: color 0.3s ease;
+  }
+
+  .category-row:hover .category-info h3 {
+    color: var(--accent-light);
+  }
+
+  .category-info p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 0;
+    max-width: 540px;
+    transition: color 0.3s ease;
+  }
+
+  .category-row:hover .category-info p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Partnership Section */
+  .partnership-section {
+    padding: 40px 0;
+    background: #fff;
+  }
+
+  /* CTA Video Section */
+  .cta-video-section {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .cta-video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cta-video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cta-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(14, 23, 42, 0.9) 0%, rgba(30, 58, 95, 0.75) 50%, rgba(14, 122, 255, 0.6) 100%);
+  }
+
+  .cta-video-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 700px;
+    padding: clamp(40px, 8vw, 80px) clamp(20px, 5vw, 60px);
+  }
+
+  .cta-video-content h2 {
+    color: #fff;
+    text-align: center;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+  }
+
+  .cta-video-content p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: #0e7aff;
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .cta-button:hover {
+    background: #0b63d1;
+    transform: translateY(-2px);
+  }
+
+  .cta-button-outline {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .cta-button-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-section {
+      min-height: 400px;
+    }
+
+    .category-row {
+      grid-template-columns: 1fr;
+    }
+
+    .category-scene {
+      min-height: 120px;
+    }
+
+    .category-info {
+      border-left: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 1.5rem;
+    }
+  }
+</style>
