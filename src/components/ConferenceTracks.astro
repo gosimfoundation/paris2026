@@ -31,13 +31,27 @@ const {
   highlights,
 } = Astro.props;
 
-const trackColors = [
-  { from: "#6366f1", to: "#8b5cf6" },
-  { from: "#3b82f6", to: "#06b6d4" },
-  { from: "#10b981", to: "#34d399" },
-  { from: "#f59e0b", to: "#f97316" },
-  { from: "#ec4899", to: "#a855f7" },
+// 7 maximally distinct hues: red, green, blue, yellow, magenta, cyan, orange
+const colorPalette = [
+  { from: "#dc2626", to: "#ef4444" },   // Red — Agentic AI Summit
+  { from: "#16a34a", to: "#4ade80" },   // Green — Open Source Robotics
+  { from: "#2563eb", to: "#60a5fa" },   // Blue — AI Generative App
+  { from: "#ca8a04", to: "#eab308" },   // Yellow — Agentic AI on Edge
+  { from: "#db2777", to: "#f472b6" },   // Magenta — AI Hardware
+  { from: "#0891b2", to: "#22d3ee" },   // Cyan — Agentic AI Protocols
+  { from: "#ea580c", to: "#fb923c" },   // Orange — Open Source Models
 ];
+
+// Build a color map keyed by track title so the same track gets the same color
+// across both days, and different tracks get different colors
+const trackColorMap = new Map<string, { from: string; to: string }>();
+let colorIndex = 0;
+for (const track of [...day1Tracks, ...day2Tracks]) {
+  if (!trackColorMap.has(track.title)) {
+    trackColorMap.set(track.title, colorPalette[colorIndex % colorPalette.length]);
+    colorIndex++;
+  }
+}
 ---
 
 <section
@@ -67,9 +81,10 @@ const trackColors = [
         </div>
         <div class="tracks-list">
           {day1Tracks.map((track, i) => {
+            const color = trackColorMap.get(track.title) || colorPalette[0];
             const cardAttrs = {
               class: `track-card animate-slide-up${track.link ? ' track-card-link' : ''}`,
-              style: `--accent-from: ${trackColors[i % trackColors.length].from}; --accent-to: ${trackColors[i % trackColors.length].to}; --stagger: ${i};`,
+              style: `--accent-from: ${color.from}; --accent-to: ${color.to}; --stagger: ${i};`,
             };
             const inner = (
               <>
@@ -107,9 +122,10 @@ const trackColors = [
         </div>
         <div class="tracks-list">
           {day2Tracks.map((track, i) => {
+            const color = trackColorMap.get(track.title) || colorPalette[0];
             const cardAttrs = {
               class: `track-card animate-slide-up${track.link ? ' track-card-link' : ''}`,
-              style: `--accent-from: ${trackColors[i % trackColors.length].from}; --accent-to: ${trackColors[i % trackColors.length].to}; --stagger: ${i};`,
+              style: `--accent-from: ${color.from}; --accent-to: ${color.to}; --stagger: ${i};`,
             };
             const inner = (
               <>
@@ -141,7 +157,7 @@ const trackColors = [
           {highlights.map((item, i) => (
             <div
               class="shield-wrapper animate-slide-up"
-              style={`--stagger: ${i}; --card-from: ${trackColors[i % trackColors.length].from}; --card-to: ${trackColors[i % trackColors.length].to};`}
+              style={`--stagger: ${i}; --card-from: ${colorPalette[i % colorPalette.length].from}; --card-to: ${colorPalette[i % colorPalette.length].to};`}
             >
               <div class="shield-outer">
                 <div class="shield-inner">
