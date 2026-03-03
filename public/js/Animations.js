@@ -777,20 +777,23 @@ function initHeroZoomTunnel() {
    // As percentage: 40.2% x, 26.7% y
    gosimSvg.style.transformOrigin = '40.2% 26.7%';
 
+   // Store default state so we can force-reset cleanly
+   var defaultState = { scale: 1 };
+   var defaultFade = { opacity: 1, y: 0 };
+
    var tl = gsap.timeline({
       scrollTrigger: {
          trigger: hero,
          start: "top top",
-         end: "+=80%",
+         end: "+=150%",
          scrub: true,
          pin: true,
          onLeaveBack: function () {
-            gsap.set(gosimSvg, { scale: 1 });
-            gsap.set(fadeElements, { opacity: 1, y: 0 });
-         },
-         onEnterBack: function (self) {
-            // When re-entering from below on fast scroll, ensure timeline syncs
-            self.animation.progress(self.progress);
+            // Kill any in-flight tweens then hard-reset to initial state
+            gsap.killTweensOf(gosimSvg);
+            gsap.killTweensOf(fadeElements);
+            gsap.set(gosimSvg, defaultState);
+            gsap.set(fadeElements, defaultFade);
          },
       }
    });
@@ -804,7 +807,6 @@ function initHeroZoomTunnel() {
    }, 0);
 
    // GOSIM SVG zooms in — fly through the O counter
-   // O counter is ~24px wide at display size, need ~60x to fill viewport
    tl.to(gosimSvg, {
       scale: 60,
       duration: 1,
