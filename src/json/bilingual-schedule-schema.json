@@ -37,7 +37,7 @@
   "definitions": {
     "BilingualText": {
       "type": "object",
-      "description": "Text object with English and Chinese versions",
+      "description": "Text object with English, Chinese, and optionally French versions",
       "properties": {
         "en": {
           "type": "string",
@@ -48,6 +48,10 @@
           "type": "string",
           "description": "Chinese text",
           "minLength": 1
+        },
+        "fr": {
+          "type": "string",
+          "description": "French text"
         }
       },
       "anyOf": [

@@ -112,6 +112,12 @@ const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`;
                 onclick="localStorage.setItem('language_preference', 'zh')"
                 >中文</a
               >
+              <a
+                class="language-item"
+                href={slug.replace("/zh", "/fr") || "/fr/"}
+                onclick="localStorage.setItem('language_preference', 'fr'); sessionStorage.setItem('language_just_switched', 'true');"
+                >Français</a
+              >
             </div>
           </li>
         </ul>
@@ -241,6 +247,11 @@ const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`;
               class="active"
               onclick="localStorage.setItem('language_preference', 'zh')"
               >中文</a
+            >
+            <a
+              href={slug.replace("/zh", "/fr") || "/fr/"}
+              onclick="localStorage.setItem('language_preference', 'fr'); sessionStorage.setItem('language_just_switched', 'true');"
+              >Français</a
             >
           </div>
         </div>

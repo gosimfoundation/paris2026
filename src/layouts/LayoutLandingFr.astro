@@ -1,7 +1,7 @@
 ---
 // Components
-import Header from "components/HeaderLanding.astro";
-import Footer from "components/Footer.astro";
+import Header from "components/HeaderLandingFr.astro";
+import Footer from "components/FooterLandingFr.astro";
 import Seo from "components/Seo.astro";
 
 // Styles
@@ -33,7 +33,7 @@ const {
 ---
 
 <!doctype html>
-<html lang="en" class="lenis lenis-smooth">
+<html lang="fr" class="lenis lenis-smooth">
   <head>
     <Seo
       title={title}
@@ -46,7 +46,7 @@ const {
         (function() {
           var lang = navigator.language || navigator.userLanguage;
           var isChinese = lang.toLowerCase().startsWith('zh');
-          var isAlreadyOnChinesePage = window.location.pathname.startsWith('/zh');
+          var isAlreadyOnFrenchPage = window.location.pathname.startsWith('/fr');
           var languagePreference = localStorage.getItem('language_preference');
           var hasJustSwitched = sessionStorage.getItem('language_just_switched');
 
@@ -57,34 +57,28 @@ const {
           }
 
           // Only redirect based on stored preference if it exists and differs from current page
-          if (languagePreference === 'zh' && !isAlreadyOnChinesePage) {
+          if (languagePreference === 'en' && isAlreadyOnFrenchPage) {
             sessionStorage.setItem('language_just_switched', 'true');
-            var newPath = '/zh' + window.location.pathname;
-            if (window.location.pathname === '/') {
+            var newPath = window.location.pathname.replace('/fr', '');
+            if (newPath === '') {
+              newPath = '/';
+            }
+            window.location.href = newPath;
+            return;
+          }
+
+          if (languagePreference === 'zh' && isAlreadyOnFrenchPage) {
+            sessionStorage.setItem('language_just_switched', 'true');
+            var newPath = window.location.pathname.replace('/fr', '/zh');
+            if (newPath === '') {
               newPath = '/zh/';
             }
             window.location.href = newPath;
             return;
           }
 
-          if (languagePreference === 'fr' && !window.location.pathname.startsWith('/fr')) {
-            sessionStorage.setItem('language_just_switched', 'true');
-            var newPath = '/fr' + window.location.pathname;
-            if (window.location.pathname === '/') {
-              newPath = '/fr/';
-            }
-            window.location.href = newPath;
-            return;
-          }
-
-          // Only redirect based on browser language if no preference is set
-          if (!languagePreference && isChinese && !isAlreadyOnChinesePage) {
-            var newPath = '/zh' + window.location.pathname;
-            if (window.location.pathname === '/') {
-              newPath = '/zh/';
-            }
-            window.location.href = newPath;
-          }
+          // No automatic redirection to French on French layout
+          // Users should only be here if they explicitly chose French
         })();
       </script>
   </head>

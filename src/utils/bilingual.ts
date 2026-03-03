@@ -3,6 +3,7 @@
 export interface BilingualText {
   en: string
   zh: string
+  fr?: string
 }
 
 export interface BilingualDay {
@@ -47,8 +48,10 @@ export interface BilingualScheduleData {
  * @param pathname - Current URL pathname
  * @returns 'zh' for Chinese pages, 'en' for English pages
  */
-export function detectLanguageFromRoute(pathname: string): 'zh' | 'en' {
-  return pathname.startsWith('/zh/') ? 'zh' : 'en'
+export function detectLanguageFromRoute(pathname: string): 'zh' | 'en' | 'fr' {
+  if (pathname.startsWith('/zh/')) return 'zh'
+  if (pathname.startsWith('/fr/')) return 'fr'
+  return 'en'
 }
 
 /**
@@ -60,7 +63,7 @@ export function detectLanguageFromRoute(pathname: string): 'zh' | 'en' {
  */
 export function getBilingualText(
   textObj: BilingualText | string | null | undefined,
-  currentLang: 'zh' | 'en' = 'en',
+  currentLang: 'zh' | 'en' | 'fr' = 'en',
   fallback: string = ''
 ): string {
   // If text is a simple string, return it as-is
@@ -73,21 +76,21 @@ export function getBilingualText(
     return fallback
   }
 
-  // If text is an object with en/zh properties
+  // If text is an object with en/zh/fr properties
   if (typeof textObj === 'object' && ('en' in textObj || 'zh' in textObj)) {
     const zhText = textObj.zh || ''
     const enText = textObj.en || ''
-    
-    // If both languages are available, prefer based on current language
-    if (zhText && enText) {
-      return currentLang === 'zh' ? zhText : enText
+    const frText = (textObj as BilingualText).fr || ''
+
+    if (currentLang === 'fr') {
+      return frText || enText || zhText || fallback
     }
-    
-    // If only one language is available, use it
-    if (zhText) return zhText
-    if (enText) return enText
+    if (currentLang === 'zh') {
+      return zhText || enText || fallback
+    }
+    return enText || zhText || fallback
   }
-  
+
   // Fallback if no valid text is found
   return fallback
 }
@@ -100,7 +103,7 @@ export function getBilingualText(
  */
 export function processBilingualSchedule(
   scheduleData: BilingualScheduleData,
-  currentLang: 'zh' | 'en' = 'en'
+  currentLang: 'zh' | 'en' | 'fr' = 'en'
 ): BilingualScheduleData {
   // Process days with language-appropriate URLs
   const processedDays = scheduleData.days.map(day => ({
@@ -225,16 +228,18 @@ export function createBilingualText(en: string, zh: string): BilingualText {
  */
 export function generateLanguageUrl(
   baseUrl: BilingualText | string,
-  currentLang: 'zh' | 'en' = 'en'
+  currentLang: 'zh' | 'en' | 'fr' = 'en'
 ): string {
   if (typeof baseUrl === 'string') {
     return baseUrl
   }
-  
+
   if (typeof baseUrl === 'object' && baseUrl) {
-    return currentLang === 'zh' ? (baseUrl.zh || baseUrl.en || '') : (baseUrl.en || baseUrl.zh || '')
+    if (currentLang === 'fr') return (baseUrl as BilingualText).fr || baseUrl.en || baseUrl.zh || ''
+    if (currentLang === 'zh') return baseUrl.zh || baseUrl.en || ''
+    return baseUrl.en || baseUrl.zh || ''
   }
-  
+
   return ''
 }
 
@@ -248,7 +253,7 @@ export function generateLanguageUrl(
 export function filterSessionsByCategory(
   sessions: Record<string, BilingualSession[]>,
   categoryId: string,
-  currentLang: 'zh' | 'en' = 'en'
+  currentLang: 'zh' | 'en' | 'fr' = 'en'
 ): BilingualSession[] {
   return sessions[categoryId] || []
 }
@@ -263,7 +268,7 @@ export function filterSessionsByCategory(
 export function getCategoryName(
   categories: BilingualCategory[],
   categoryId: string,
-  currentLang: 'zh' | 'en' = 'en'
+  currentLang: 'zh' | 'en' | 'fr' = 'en'
 ): string {
   const category = categories.find(cat => cat.id === categoryId)
   if (!category) return ''
@@ -281,7 +286,7 @@ export function getCategoryName(
 export function getCategoryRoom(
   categories: BilingualCategory[],
   categoryId: string,
-  currentLang: 'zh' | 'en' = 'en'
+  currentLang: 'zh' | 'en' | 'fr' = 'en'
 ): string {
   const category = categories.find(cat => cat.id === categoryId)
   if (!category) return ''
@@ -311,7 +316,7 @@ export function sortSessionsByTime(sessions: BilingualSession[]): BilingualSessi
  */
 export function groupSessionsByDate(
   sessions: BilingualSession[],
-  currentLang: 'zh' | 'en' = 'en'
+  currentLang: 'zh' | 'en' | 'fr' = 'en'
 ): Record<string, BilingualSession[]> {
   const grouped: Record<string, BilingualSession[]> = {}
   
@@ -743,7 +748,7 @@ export function validateBilingualScheduleData(
  */
 export function safeGetBilingualText(
   textObj: BilingualText | string | null | undefined,
-  currentLang: 'zh' | 'en' = 'en',
+  currentLang: 'zh' | 'en' | 'fr' = 'en',
   fallback: string = '[Missing Translation]',
   onError?: (error: string, context?: string) => void
 ): string {
@@ -763,30 +768,38 @@ export function safeGetBilingualText(
     if (typeof textObj === 'object' && ('en' in textObj || 'zh' in textObj)) {
       const zhText = textObj.zh?.trim() || ''
       const enText = textObj.en?.trim() || ''
-      
+      const frText = (textObj as BilingualText).fr?.trim() || ''
+
       // Prefer current language if available
+      if (currentLang === 'fr' && frText) {
+        return frText
+      }
       if (currentLang === 'zh' && zhText) {
         return zhText
       }
       if (currentLang === 'en' && enText) {
         return enText
       }
-      
-      // Fallback to any available language
-      if (zhText) {
-        onError?.(`Missing ${currentLang} translation, using Chinese`, 'language_fallback')
-        return zhText
+
+      // Fallback to any available language (prefer en for fr)
+      if (currentLang === 'fr' && enText) {
+        onError?.(`Missing fr translation, using English`, 'language_fallback')
+        return enText
       }
       if (enText) {
         onError?.(`Missing ${currentLang} translation, using English`, 'language_fallback')
         return enText
       }
-      
+      if (zhText) {
+        onError?.(`Missing ${currentLang} translation, using Chinese`, 'language_fallback')
+        return zhText
+      }
+
       // No valid text found
       onError?.('No valid text found in bilingual object')
       return fallback
     }
-    
+
     // Invalid object structure
     onError?.('Invalid bilingual text object structure')
     return fallback
@@ -805,7 +818,7 @@ export function safeGetBilingualText(
  */
 export function safeProcessBilingualSchedule(
   scheduleData: BilingualScheduleData,
-  currentLang: 'zh' | 'en' = 'en',
+  currentLang: 'zh' | 'en' | 'fr' = 'en',
   onError?: (error: string, context?: string) => void
 ): BilingualScheduleData {
   try {
