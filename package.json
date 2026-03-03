@@ -21,6 +21,8 @@
     "astro": "^5.12.1",
     "marked": "^16.2.1",
     "sass": "^1.85.1",
+    "three": "^0.183.2",
+    "urdf-loader": "^0.12.6",
     "wordcloud": "^1.2.3"
   },
   "devDependencies": {

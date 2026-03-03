@@ -1,0 +1,123 @@
+---
+---
+
+<canvas id="openarm-canvas"></canvas>
+
+<script>
+  import * as THREE from "three";
+  import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+  import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js";
+  import URDFLoader from "urdf-loader";
+
+  function initOpenArm() {
+    const canvas = document.getElementById("openarm-canvas") as HTMLCanvasElement;
+    if (!canvas) return;
+
+    let renderer: THREE.WebGLRenderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+    } catch {
+      canvas.style.display = "none";
+      return;
+    }
+
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+    const scene = new THREE.Scene();
+
+    // Lighting (matching reference openarm-scene.js)
+    scene.add(new THREE.AmbientLight(0xffffff, 0.4));
+    const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    dirLight.position.set(5, 10, 7);
+    scene.add(dirLight);
+    const dirLight2 = new THREE.DirectionalLight(0x4488ff, 0.3);
+    dirLight2.position.set(-5, 3, -5);
+    scene.add(dirLight2);
+
+    const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+    camera.position.set(1.0, 0.8, 1.2);
+    camera.lookAt(0, 0.4, 0);
+
+    // OrbitControls
+    const controls = new OrbitControls(camera, canvas);
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = 1.0;
+    controls.enableZoom = false;
+    controls.enablePan = false;
+    controls.target.set(0, 0.4, 0);
+    controls.update();
+
+    // Load URDF model
+    const urdfLoader = new URDFLoader();
+    urdfLoader.loadMeshCb = (path: string, manager: THREE.LoadingManager, done: Function) => {
+      if (path.endsWith(".stl")) {
+        new STLLoader(manager).load(
+          path,
+          (geom: THREE.BufferGeometry) => {
+            done(new THREE.Mesh(geom, new THREE.MeshPhongMaterial()));
+          },
+          undefined,
+          (err: unknown) => done(null, err)
+        );
+      } else {
+        done(null, new Error(`Unknown mesh format: ${path}`));
+      }
+    };
+
+    urdfLoader.load("/models/openarm/openarm_v10.urdf", (result: THREE.Object3D) => {
+      result.rotation.x = -Math.PI / 2;
+      scene.add(result);
+    });
+
+    // Sizing
+    function resize() {
+      const parent = canvas.parentElement;
+      if (!parent) return;
+      const w = parent.clientWidth;
+      const h = parent.clientHeight;
+      renderer.setSize(w, h);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    }
+    resize();
+
+    const ro = new ResizeObserver(resize);
+    if (canvas.parentElement) ro.observe(canvas.parentElement);
+
+    // IntersectionObserver to pause when off-screen
+    let visible = true;
+    const io = new IntersectionObserver(
+      ([entry]) => { visible = entry.isIntersecting; },
+      { threshold: 0 }
+    );
+    io.observe(canvas);
+
+    // Render loop
+    function animate() {
+      requestAnimationFrame(animate);
+      if (!visible) return;
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  }
+
+  // Run after DOM is ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initOpenArm);
+  } else {
+    initOpenArm();
+  }
+</script>
+
+<style>
+  #openarm-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+  }
+</style>

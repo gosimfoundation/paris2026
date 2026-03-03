@@ -1,5 +1,6 @@
 ---
 import Layout from "layouts/LayoutLandingZh.astro";
+import OpenArmViewer from "components/OpenArmViewer.astro";
 ---
 
 <Layout
@@ -12,6 +13,7 @@ import Layout from "layouts/LayoutLandingZh.astro";
     <section class="hero-section">
       <div class="hero-background">
         <div class="hero-gradient"></div>
+        <OpenArmViewer />
       </div>
       <div class="hero-content">
         <div class="hero-badges">
@@ -21,19 +23,15 @@ import Layout from "layouts/LayoutLandingZh.astro";
         </div>
         <h1 class="hero-title">Unaite 黑客松</h1>
         <p class="hero-subtitle">使用真实机器人。由 LeRobot 驱动。完全开源。</p>
-      </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section class="intro-section">
-      <div class="container">
-        <h2>实战机器人黑客松</h2>
-        <p class="intro-text">
-          Unaite 黑客松是一场与 LeRobot 团队合作举办的实战机器人黑客松，以 LeRobot 的 OpenArm 机械臂为核心。LeRobot 即将发布全新版本，全面支持 OpenArm，包含数据集和开箱即用的叠衣模型。
-        </p>
-        <p class="intro-text">
-          整套系统完全开源，具有潜在的工业应用价值。无论你是资深机器人工程师还是充满好奇的创客，这都是你用真实机器人打造创新作品的绝佳机会。
-        </p>
+        <div class="hero-intro">
+          <h2>实战机器人黑客松</h2>
+          <p>
+            Unaite 黑客松是一场与 LeRobot 团队合作举办的实战机器人黑客松，以 LeRobot 的 OpenArm 机械臂为核心。LeRobot 即将发布全新版本，全面支持 OpenArm，包含数据集和开箱即用的叠衣模型。
+          </p>
+          <p>
+            整套系统完全开源，具有潜在的工业应用价值。无论你是资深机器人工程师还是充满好奇的创客，这都是你用真实机器人打造创新作品的绝佳机会。
+          </p>
+        </div>
       </div>
     </section>
 
@@ -146,7 +144,6 @@ import Layout from "layouts/LayoutLandingZh.astro";
   /* Hero Section */
   .hero-section {
     position: relative;
-    height: 60vh;
     min-height: 500px;
     overflow: hidden;
   }
@@ -168,11 +165,11 @@ import Layout from "layouts/LayoutLandingZh.astro";
   .hero-content {
     position: relative;
     z-index: 2;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: clamp(20px, 6vw, 64px);
+    padding-top: clamp(80px, 12vw, 140px);
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -208,6 +205,25 @@ import Layout from "layouts/LayoutLandingZh.astro";
     margin: 0;
   }
 
+  .hero-intro {
+    margin-top: 2rem;
+    max-width: 800px;
+  }
+
+  .hero-intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: left;
+  }
+
+  .hero-intro p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
   /* Common */
   .container {
     max-width: 1200px;
@@ -220,20 +236,6 @@ import Layout from "layouts/LayoutLandingZh.astro";
     margin-bottom: 2rem;
     color: #0f172a;
     text-align: left;
-  }
-
-  /* Introduction Section */
-  .intro-section {
-    padding: 40px 0;
-    background: #fff;
-  }
-
-  .intro-text {
-    color: #516072;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
-    max-width: 800px;
   }
 
   /* Categories Section */
@@ -433,10 +435,6 @@ import Layout from "layouts/LayoutLandingZh.astro";
 
   /* Responsive */
   @media (max-width: 768px) {
-    .hero-section {
-      min-height: 400px;
-    }
-
     .category-row {
       grid-template-columns: 1fr;
     }

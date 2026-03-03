@@ -1,5 +1,6 @@
 ---
 import Layout from "layouts/LayoutLandingZh.astro";
+import OpenArmViewer from "components/OpenArmViewer.astro";
 ---
 
 <Layout
@@ -12,6 +13,7 @@ import Layout from "layouts/LayoutLandingZh.astro";
     <section class="hero-section">
       <div class="hero-background">
         <div class="hero-gradient"></div>
+        <OpenArmViewer />
       </div>
       <div class="hero-content">
         <div class="hero-badges">
@@ -21,19 +23,15 @@ import Layout from "layouts/LayoutLandingZh.astro";
         </div>
         <h1 class="hero-title">开源机器人舞台</h1>
         <p class="hero-subtitle">看得见，摸得着，自己造。机器人的未来是开源的。</p>
-      </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section class="intro-section">
-      <div class="container">
-        <h2>近距离体验开源机器人</h2>
-        <p class="intro-text">
-          开源机器人舞台是一个开放的互动区域，参会者可以亲眼看到、亲手触摸并与真正的开源机器人互动。从行走的双足机器人到灵巧的机械手、机械臂和自主导航平台——在这里，你将零距离体验开源机器人技术的最前沿。
-        </p>
-        <p class="intro-text">
-          许多展示的机器人都可以亲手操作，让你有机会亲身体验。除了互动演示之外，还有深入的技术演讲，介绍项目的架构设计和背后的开源社区。
-        </p>
+        <div class="hero-intro">
+          <h2>近距离体验开源机器人</h2>
+          <p>
+            开源机器人舞台是一个开放的互动区域，参会者可以亲眼看到、亲手触摸并与真正的开源机器人互动。从行走的双足机器人到灵巧的机械手、机械臂和自主导航平台——在这里，你将零距离体验开源机器人技术的最前沿。
+          </p>
+          <p>
+            许多展示的机器人都可以亲手操作，让你有机会亲身体验。除了互动演示之外，还有深入的技术演讲，介绍项目的架构设计和背后的开源社区。
+          </p>
+        </div>
       </div>
     </section>
 
@@ -184,7 +182,6 @@ import Layout from "layouts/LayoutLandingZh.astro";
   /* Hero Section */
   .hero-section {
     position: relative;
-    height: 60vh;
     min-height: 500px;
     overflow: hidden;
   }
@@ -206,11 +203,11 @@ import Layout from "layouts/LayoutLandingZh.astro";
   .hero-content {
     position: relative;
     z-index: 2;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: clamp(20px, 6vw, 64px);
+    padding-top: clamp(80px, 12vw, 140px);
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -246,6 +243,25 @@ import Layout from "layouts/LayoutLandingZh.astro";
     margin: 0;
   }
 
+  .hero-intro {
+    margin-top: 2rem;
+    max-width: 800px;
+  }
+
+  .hero-intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: left;
+  }
+
+  .hero-intro p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
   /* Common */
   .container {
     max-width: 1200px;
@@ -258,20 +274,6 @@ import Layout from "layouts/LayoutLandingZh.astro";
     margin-bottom: 2rem;
     color: #0f172a;
     text-align: left;
-  }
-
-  /* Introduction Section */
-  .intro-section {
-    padding: 40px 0;
-    background: #fff;
-  }
-
-  .intro-text {
-    color: #516072;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
-    max-width: 800px;
   }
 
   /* Categories Section */
@@ -450,10 +452,6 @@ import Layout from "layouts/LayoutLandingZh.astro";
 
   /* Responsive */
   @media (max-width: 768px) {
-    .hero-section {
-      min-height: 400px;
-    }
-
     .category-row {
       grid-template-columns: 1fr;
     }

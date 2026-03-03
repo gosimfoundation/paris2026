@@ -1,5 +1,6 @@
 ---
 import Layout from "layouts/LayoutLanding.astro";
+import OpenArmViewer from "components/OpenArmViewer.astro";
 ---
 
 <Layout
@@ -12,6 +13,7 @@ import Layout from "layouts/LayoutLanding.astro";
     <section class="hero-section">
       <div class="hero-background">
         <div class="hero-gradient"></div>
+        <OpenArmViewer />
       </div>
       <div class="hero-content">
         <div class="hero-badges">
@@ -21,19 +23,15 @@ import Layout from "layouts/LayoutLanding.astro";
         </div>
         <h1 class="hero-title">Open Source Robotics Stage</h1>
         <p class="hero-subtitle">See it. Touch it. Build it. The future of robotics is open.</p>
-      </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section class="intro-section">
-      <div class="container">
-        <h2>Experience Open Source Robotics Up Close</h2>
-        <p class="intro-text">
-          The Open Source Robotics Stage is an open arena where attendees can see, touch, and interact with real open-source robots. From walking legs to dexterous hands, robotic arms, and autonomous navigators — experience the cutting edge of open-source robotics firsthand.
-        </p>
-        <p class="intro-text">
-          Many of the robots on display will be interactive, giving you the chance to try them yourself. Alongside the hands-on demos, technical talks will dive deeper into the projects, their architectures, and the open-source communities behind them.
-        </p>
+        <div class="hero-intro">
+          <h2>Experience Open Source Robotics Up Close</h2>
+          <p>
+            The Open Source Robotics Stage is an open arena where attendees can see, touch, and interact with real open-source robots. From walking legs to dexterous hands, robotic arms, and autonomous navigators — experience the cutting edge of open-source robotics firsthand.
+          </p>
+          <p>
+            Many of the robots on display will be interactive, giving you the chance to try them yourself. Alongside the hands-on demos, technical talks will dive deeper into the projects, their architectures, and the open-source communities behind them.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -184,7 +182,6 @@ import Layout from "layouts/LayoutLanding.astro";
   /* Hero Section */
   .hero-section {
     position: relative;
-    height: 60vh;
     min-height: 500px;
     overflow: hidden;
   }
@@ -206,11 +203,11 @@ import Layout from "layouts/LayoutLanding.astro";
   .hero-content {
     position: relative;
     z-index: 2;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: clamp(20px, 6vw, 64px);
+    padding-top: clamp(80px, 12vw, 140px);
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -246,6 +243,25 @@ import Layout from "layouts/LayoutLanding.astro";
     margin: 0;
   }
 
+  .hero-intro {
+    margin-top: 2rem;
+    max-width: 800px;
+  }
+
+  .hero-intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: left;
+  }
+
+  .hero-intro p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
   /* Common */
   .container {
     max-width: 1200px;
@@ -258,20 +274,6 @@ import Layout from "layouts/LayoutLanding.astro";
     margin-bottom: 2rem;
     color: #0f172a;
     text-align: left;
-  }
-
-  /* Introduction Section */
-  .intro-section {
-    padding: 40px 0;
-    background: #fff;
-  }
-
-  .intro-text {
-    color: #516072;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
-    max-width: 800px;
   }
 
   /* Categories Section */
@@ -450,10 +452,6 @@ import Layout from "layouts/LayoutLanding.astro";
 
   /* Responsive */
   @media (max-width: 768px) {
-    .hero-section {
-      min-height: 400px;
-    }
-
     .category-row {
       grid-template-columns: 1fr;
     }
