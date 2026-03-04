@@ -1,4 +1,4 @@
-GOSIM Paris 2026 is one of the largest open-source conferences in Europe, bringing together thousands of developers, researchers, and industry leaders at Station F in Paris on May 5–6, 2026. We're looking for passionate volunteers to help make it happen.
+GOSIM Paris 2026 brings together hundreds of open-source developers, researchers, and industry leaders at Station F in Paris on May 5–6, 2026. We're looking for passionate volunteers to help make it happen.
 
 ## Why Volunteer?
 

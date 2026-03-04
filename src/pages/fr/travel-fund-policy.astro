@@ -21,9 +21,39 @@ import Content from "markdown/TravelFundPolicyFr.md"
     <div class="container">
       <div class="row">
         <div class="col-markdown">
+          <h1>Politique de fonds de voyage — GOSIM Paris 2026</h1>
+          <div class="template-cta-wrap">
+            <a class="template-cta" href="/GOSIM-Travel-Fund-Reimbursement-Template.docx" download>Télécharger le modèle de remboursement (.docx)</a>
+          </div>
           <Content />
         </div>
       </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  .template-cta-wrap {
+    margin: 0.5rem 0 2rem;
+  }
+  .template-cta {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333 !important;
+    background: transparent;
+    border: 2px solid #333;
+    border-radius: 50px;
+    text-decoration: none !important;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  }
+  .template-cta:hover {
+    background: #333;
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.3);
+  }
+</style>

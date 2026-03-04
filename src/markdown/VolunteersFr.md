@@ -1,4 +1,4 @@
-GOSIM Paris 2026 est l'une des plus grandes conférences open source en Europe, rassemblant des milliers de développeurs, chercheurs et leaders de l'industrie à Station F à Paris les 5–6 mai 2026. Nous recherchons des bénévoles passionnés pour contribuer à la réussite de cet événement.
+GOSIM Paris 2026 rassemble des centaines de développeurs open source, chercheurs et leaders de l'industrie à Station F à Paris les 5–6 mai 2026. Nous recherchons des bénévoles passionnés pour contribuer à la réussite de cet événement.
 
 ## Pourquoi devenir bénévole ?
 
