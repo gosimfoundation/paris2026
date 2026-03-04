@@ -6,32 +6,34 @@ import NotificationBar from "components/NotificationBar.astro";
 
 const hasNotificationBar = false; // Set this to false when NotificationBar is removed or page will crash
 
+const slug = Astro.url.pathname;
+const isZhPath = slug.startsWith("/zh/");
+const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/";
+const anchorBase = isHomepage ? "" : "/zh/";
+const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`;
+
 const links = [
   {
     text: "议题",
-    link: "#tracks",
+    link: `${anchorBase}#tracks`,
   },
   {
     text: "往期项目",
-    link: "#projects",
+    link: `${anchorBase}#projects`,
   },
   {
     text: "提案征集",
-    link: "#proposals",
+    link: `${anchorBase}#proposals`,
   },
   {
     text: "赞助",
-    link: "#sponsorship",
+    link: `${anchorBase}#sponsorship`,
   },
   {
     text: "会议地点",
-    link: "#venue",
+    link: `${anchorBase}#venue`,
   },
 ];
-
-const slug = Astro.url.pathname;
-const isZhPath = slug.startsWith("/zh/");
-const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`;
 ---
 
 <header>

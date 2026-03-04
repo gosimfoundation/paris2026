@@ -6,30 +6,32 @@ import NotificationBar from "components/NotificationBar.astro";
 
 const hasNotificationBar = false; // Set this to false when NotificationBar is removed or page will crash
 
+const slug = Astro.url.pathname;
+const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/";
+const anchorBase = isHomepage ? "" : "/fr/";
+
 const links = [
   {
     text: "Thématiques",
-    link: "#tracks",
+    link: `${anchorBase}#tracks`,
   },
   {
     text: "Projets phares",
-    link: "#projects",
+    link: `${anchorBase}#projects`,
   },
   {
     text: "Propositions",
-    link: "#proposals",
+    link: `${anchorBase}#proposals`,
   },
   {
     text: "Parrainage",
-    link: "#sponsorship",
+    link: `${anchorBase}#sponsorship`,
   },
   {
     text: "Lieu",
-    link: "#venue",
+    link: `${anchorBase}#venue`,
   },
 ];
-
-const slug = Astro.url.pathname;
 ---
 
 <header>

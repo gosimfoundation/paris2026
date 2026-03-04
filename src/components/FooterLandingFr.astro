@@ -3,32 +3,34 @@
 import Button from "components/Button.astro";
 import Logo from "./Logo.astro";
 
+const slug = Astro.url.pathname;
+const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/";
+const anchorBase = isHomepage ? "" : "/fr/";
+
 const firstColumnLinks = [
   {
     text: "Thématiques",
-    link: "#tracks",
+    link: `${anchorBase}#tracks`,
   },
   {
     text: "Projets phares",
-    link: "#projects",
+    link: `${anchorBase}#projects`,
   },
   {
     text: "Propositions",
-    link: "#proposals",
+    link: `${anchorBase}#proposals`,
   },
   {
     text: "Parrainage",
-    link: "#sponsorship",
+    link: `${anchorBase}#sponsorship`,
   },
   {
     text: "Lieu",
-    link: "#venue",
+    link: `${anchorBase}#venue`,
   },
 ];
 
 const secondColumnLinks = [];
-
-const slug = Astro.url.pathname;
 ---
 
 <footer class="section footer" data-theme-section="dark" data-bg-section="dark">

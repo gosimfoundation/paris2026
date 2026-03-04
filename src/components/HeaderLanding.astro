@@ -6,32 +6,38 @@ import NotificationBar from "components/NotificationBar.astro"
 
 const hasNotificationBar = false // Set this to false when NotificationBar is removed or page will crash
 
-const links = [
+const rawLinks = [
   {
     text: "Tracks",
-    link: "#tracks",
+    anchor: "#tracks",
   },
   {
     text: "Past Projects",
-    link: "#projects",
+    anchor: "#projects",
   },
   {
     text: "Proposals",
-    link: "#proposals",
+    anchor: "#proposals",
   },
   {
     text: "Sponsorship",
-    link: "#sponsorship",
+    anchor: "#sponsorship",
   },
   {
     text: "Venue",
-    link: "#venue",
+    anchor: "#venue",
   },
 ]
 
 const slug = Astro.url.pathname
 const isZhPath = slug.startsWith("/zh/")
+const isFrPath = slug.startsWith("/fr/")
 const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`
+
+// If not on the homepage, prefix anchor links with the homepage path
+const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/"
+const anchorBase = isHomepage ? "" : isZhPath ? "/zh/" : isFrPath ? "/fr/" : "/"
+const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
 ---
 
 <header>
