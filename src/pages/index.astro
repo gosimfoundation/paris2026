@@ -17,6 +17,7 @@ import Timeline from "components/Timeline.astro"
 import Marquee from "components/Marquee.astro"
 import Cards from "components/Cards.astro"
 import CardsSponsors from "components/CardsSponsors.astro"
+import Testimonials from "components/Testimonials.astro"
 
 // Images
 import Placeholder1 from "images/homepage/stats1.png"
@@ -489,6 +490,41 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
       },
     ]}
   />
+  <Testimonials
+    title="What Attendees Said About GOSIM Paris 2025"
+    subtitle="Hear from our community"
+    testimonials={[
+      {
+        quote: "GOSIM AI Paris 2025 genuinely surprised me in the best possible way. All the talks I attended were insightful, and the energy in the room was inspiring. The atmosphere was incredible — robots everywhere, humanoids, small mobile platforms, and teams working on robot arms as part of the on-site hackathon.",
+        author: "Charbel D.",
+        link: "https://www.linkedin.com/posts/charbel-d-9569ba199_gosimparis2025-gosim-ai-activity-7325758963134717952-QUQ0",
+      },
+      {
+        quote: "An incredible experience at GOSIM Foundation AI Paris 2025, bringing together 80+ AI leaders from world-renowned organizations including NVIDIA, Hugging Face, and PyTorch — exploring the latest in LLMs, Agentic AI, Embodied AI, and groundbreaking open-source frameworks.",
+        author: "Amira Boudaoud",
+        role: "AI Student",
+        link: "https://www.linkedin.com/posts/amira-boudaoud_gosimparis2025-gosim-ai-ugcPost-7325474394246471681-zPvT",
+      },
+      {
+        quote: "From LlamaFactory's brilliant LLM fine-tuning to MiniMax's Lightning Attention, open-source duck robots, and automated Rust proofs — every corner had something exciting. The future? Agentic, reasoning-capable, and open source.",
+        author: "Azzedine Idir Aitsaid",
+        link: "https://www.linkedin.com/posts/azzedine-idir-aitsaid-7bab84229_gosim-experience-2025-ugcPost-7325823558645964802-mBZe",
+      },
+      {
+        quote: "GOSIM AI Paris 2025 convened 80+ experts from major institutions including NVIDIA, Meta, Alibaba, Hugging Face, and Beijing Academy of AI — featuring keynotes, technical deep-dives on model innovation, and an embodied AI hackathon by Hugging Face and Seeed Studio.",
+        author: "Xiangyu AN, Ph.D",
+        role: "AJTIS Chief Partner Representative",
+        link: "https://www.linkedin.com/posts/xiangyu-an_gosimparis2025-gosim-ai-activity-7327311785059901440-jmNC",
+      },
+      {
+        quote: "The open-source AI boom was front and center in Paris. Over 80 leading experts gathered, discussing rapid advancements in open-source AI models, compute infrastructure, and the rise of Embodied AI. Open-source AI is catching up fast, even surpassing closed-source models in some areas!",
+        author: "AIFC",
+        role: "Association d'Intelligence Artificielle France-Chine",
+        link: "https://www.linkedin.com/posts/aifc-association-d-intelligence-artificielle-france-chine_ai-opensourceai-embodiedai-activity-7325801432459169792-mHLX",
+      },
+    ]}
+  />
+
   <GetTickets
     title="Grab your GOSIM Paris ticket"
     location="Paris"

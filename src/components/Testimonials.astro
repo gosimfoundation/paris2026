@@ -1,0 +1,173 @@
+---
+interface Testimonial {
+  quote: string;
+  author: string;
+  role?: string;
+  link?: string;
+}
+
+interface Props {
+  title: string;
+  subtitle?: string;
+  testimonials: Testimonial[];
+}
+
+const { title, subtitle, testimonials } = Astro.props;
+---
+
+<section class="section section-testimonials" data-theme-section="dark" data-scroll-section>
+  <div class="container">
+    <div class="section-header">
+      <h2>{title}</h2>
+      {subtitle && <p class="section-subtitle">{subtitle}</p>}
+    </div>
+    <div class="testimonials-grid">
+      {testimonials.map((t) => (
+        <div class="testimonial-card">
+          <blockquote>
+            <p>{t.quote}</p>
+          </blockquote>
+          <div class="testimonial-author">
+            <span class="author-name">{t.author}</span>
+            {t.role && <span class="author-role">{t.role}</span>}
+          </div>
+          {t.link && (
+            <a href={t.link} target="_blank" rel="noopener noreferrer" class="testimonial-source">
+              View on LinkedIn &rarr;
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-testimonials {
+    padding: var(--section-padding, 80px) 0;
+    background: #0f172a;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-testimonials::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 60%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(14, 122, 255, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 60px);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-header h2 {
+    color: #fff;
+    margin: 0 0 0.5rem;
+  }
+
+  .section-subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.05rem;
+    margin: 0;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    border-color: rgba(14, 122, 255, 0.3);
+    transform: translateY(-3px);
+  }
+
+  blockquote {
+    margin: 0 0 1.25rem;
+    flex: 1;
+  }
+
+  blockquote p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin: 0;
+    font-style: italic;
+  }
+
+  blockquote::before {
+    content: "\201C";
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: rgba(14, 122, 255, 0.4);
+    margin-bottom: 0.5rem;
+    font-family: Georgia, serif;
+  }
+
+  .testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .author-name {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .author-role {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+  }
+
+  .testimonial-source {
+    margin-top: 0.75rem;
+    color: rgba(14, 122, 255, 0.7);
+    font-size: 0.78rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .testimonial-source:hover {
+    color: #0e7aff;
+  }
+
+  @media (max-width: 900px) {
+    .testimonials-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
