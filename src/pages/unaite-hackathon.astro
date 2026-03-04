@@ -4,7 +4,7 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
 ---
 
 <Layout
-  title="Unaite Hackathon - GOSIM Paris 2026"
+  title="Robotics Hackathon - GOSIM Paris 2026"
   description="A hands-on robotics hackathon with LeRobot's OpenArm. Build with real robots. Fully open source."
   navDarkMode={true}
   navBackground="header-home"
@@ -12,88 +12,90 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-background">
-        <div class="hero-gradient"></div>
-        <OpenArmViewer />
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          webkit-playsinline
+        >
+          <source src="https://openarm.dev/videos/kv.mp4#t=5" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
-        <div class="hero-badges">
-          <span class="badge">GOSIM Paris 2026</span>
-          <span class="badge">Hackathon</span>
-          <span class="badge">Open Source Robotics</span>
-        </div>
-        <h1 class="hero-title">Unaite Hackathon</h1>
-        <p class="hero-subtitle">Build with real robots. Powered by LeRobot. Fully open source.</p>
+        <h1 class="hero-title">Robotics Hackathon</h1>
+        <p class="hero-details">May 5-6, 2026 &middot; OpenPlatform, Station F, Paris</p>
+        <p class="hero-subtitle">Build with real robots. Fully open source.</p>
         <div class="hero-intro">
           <h2>A Hands-On Robotics Hackathon</h2>
           <p>
-            The Unaite Hackathon is a hands-on robotics hackathon featuring LeRobot's OpenArm — built in partnership with the LeRobot team. LeRobot is releasing a new version with full OpenArm support, including a dataset and a cloth-folding model ready to use out of the box.
+            The Robotics Hackathon is a hands-on hackathon featuring OpenArm — a fully open-source humanoid robot arm. The entire setup is open source, with potential industrial use cases. Whether you're a seasoned robotics engineer or a curious hacker, this is your chance to build something real with real robots.
           </p>
-          <p>
-            The entire setup is fully open source, with potential industrial use cases. Whether you're a seasoned robotics engineer or a curious hacker, this is your chance to build something real with real robots.
-          </p>
+        </div>
+
+        <div class="hero-people">
+          <div class="hero-people-group">
+            <h3>Organizer</h3>
+            <div class="hero-people-row">
+              <a href="https://unaite.fr" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/unaite-logo.jpg" alt="Unaite" class="person-photo" />
+                <span class="person-name">Unaite</span>
+                <span class="person-role">AI Student Federation</span>
+              </a>
+              <a href="https://github.com/haixuanTao" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/haixuan-tao.jpg" alt="Haixuan Xavier Tao" class="person-photo" />
+                <span class="person-name">Haixuan Xavier Tao</span>
+                <span class="person-role">Founder @ 1ms.ai</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Details Section -->
-    <section class="categories-section">
+    <!-- Call for Participation Section -->
+    <section class="cfp-section">
       <div class="container">
-        <h2>Hackathon Details</h2>
-        <div class="categories-list">
+        <h2>Call for Participation</h2>
+        <p class="cfp-intro">We're looking for talented roboticists looking to apply state-of-the-art models on physical hardware — in the hope of increasing community interest in solving the open challenges associated with robotic grasping and manipulation.</p>
+        <p class="cfp-intro">Tasks we're looking to solve include:</p>
+        <ul class="cfp-tasks">
+          <li>Assembling and disassembling boards</li>
+          <li>Hand-in-hand grasping</li>
+          <li>Picking and placing various objects</li>
+          <li>Pouring liquids into a cup</li>
+          <li>Bin picking</li>
+          <li>Rearranging and setting formal tables</li>
+          <li>Folding and unfolding cloths</li>
+          <li>Receiving objects handed over by a person</li>
+        </ul>
+        <p class="cfp-details">Teams of 3–5 people, approximately 50 participants total. Each team gets 1 physical OpenArm to build with during the hackathon. Remote physical access is also available — control the robot from your home or school once your code is validated in simulation.</p>
+        <a href="mailto:tao.xavier@1ms.ai?subject=Joining GOSIM Robotics Hackathon" class="cta-button">Join the Hackathon</a>
+      </div>
+    </section>
 
-          <div class="category-row" style="--accent: #6366f1; --accent-light: #818cf8;">
-            <div class="category-scene" data-scene="venue">
-              <div class="scene-placeholder">
-                <span class="scene-icon">🏛️</span>
-              </div>
-            </div>
-            <div class="category-info">
-              <span class="category-number">01</span>
-              <h3>Venue</h3>
-              <p>Station F Open Platform (center island) with tables, chairs, and plugs. The space is accessible from 8am to 8pm throughout the event.</p>
-            </div>
-          </div>
-
-          <div class="category-row" style="--accent: #10b981; --accent-light: #34d399;">
-            <div class="category-scene" data-scene="hardware">
-              <div class="scene-placeholder">
-                <span class="scene-icon">🦾</span>
-              </div>
-            </div>
-            <div class="category-info">
-              <span class="category-number">02</span>
-              <h3>Hardware</h3>
-              <p>10 OpenArms (2 arms each) with a teleoperation arm. The new LeRobot release includes a dataset and cloth-folding model. A simulated environment will be available before the event for early development.</p>
-            </div>
-          </div>
-
-          <div class="category-row" style="--accent: #3b82f6; --accent-light: #60a5fa;">
-            <div class="category-scene" data-scene="remote">
-              <div class="scene-placeholder">
-                <span class="scene-icon">🌐</span>
-              </div>
-            </div>
-            <div class="category-info">
-              <span class="category-number">03</span>
-              <h3>Remote Access</h3>
-              <p>Access OpenArms remotely from home or school. Validate your work in simulation for early hardware access — available one week and one weekend before the event.</p>
-            </div>
-          </div>
-
-          <div class="category-row" style="--accent: #f59e0b; --accent-light: #fbbf24;">
-            <div class="category-scene" data-scene="teams">
-              <div class="scene-placeholder">
-                <span class="scene-icon">👥</span>
-              </div>
-            </div>
-            <div class="category-info">
-              <span class="category-number">04</span>
-              <h3>Teams</h3>
-              <p>Teams of 3–5 people, approximately 50 participants total. Each team gets one OpenArm to build with during the hackathon.</p>
-            </div>
-          </div>
-
+    <!-- Hardware Section -->
+    <section class="hardware-section">
+      <div class="hardware-background">
+        <div class="hardware-gradient"></div>
+        <div class="hardware-viewer">
+          <OpenArmViewer />
         </div>
+      </div>
+      <div class="hardware-content">
+        <h2>Work with OpenArm</h2>
+        <ul class="hardware-specs-list">
+          <li><strong>7 DoF</strong> humanoid robot arm with 633mm reach</li>
+          <li><strong>6kg peak payload</strong>, 5.5kg arm weight</li>
+          <li><strong>Teleoperation kit</strong> — 2 arms + teleop arm per team</li>
+          <li><strong>1kHz CAN-FD</strong> control for precise, responsive motion</li>
+          <li><strong>Backdrivable &amp; compliant</strong> for safe human-robot interaction</li>
+          <li><strong>Fully open source</strong> — CAD, URDF, firmware, control software</li>
+          <li><strong>Compatible</strong> with LeRobot, dora-rs, ROS2, MuJoCo, and Isaac Lab</li>
+          <li><strong>Simulation</strong> environment available before the event</li>
+        </ul>
+        <a href="https://openarm.dev" target="_blank" rel="noopener noreferrer" class="cta-button">Learn More about OpenArm</a>
       </div>
     </section>
 
@@ -110,33 +112,20 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
       </div>
     </section>
 
-    <!-- Call to Action Section with Video -->
-    <section class="cta-video-section">
-      <div class="cta-video-background">
-        <video
-          autoplay
-          loop
-          muted
-          playsinline
-          webkit-playsinline
-          poster="/videos/paris-hero-bk.jpg"
-          onloadstart="this.playbackRate=0.25"
-        >
-          <source src="/videos/paris-hero-compressed.mp4" type="video/mp4" />
-        </video>
-        <div class="cta-video-overlay"></div>
+    <!-- Venue Section -->
+    <section class="venue-section">
+      <div class="venue-background">
+        <img src="/images/openplatform-stationf.jpeg" alt="Station F - OpenPlatform" />
+        <div class="venue-overlay"></div>
       </div>
-      <div class="cta-video-content">
-        <h2>Join the Hackathon</h2>
-        <p>
-          Build with real robots, collaborate with the LeRobot team, and push the boundaries of open-source robotics. Whether you want to hack on-site or participate remotely — we'd love to have you.
-        </p>
-        <div class="cta-buttons">
-          <a href="mailto:contact@gosim.org" class="cta-button">Become a Sponsor</a>
-          <a href="https://gosim.org/" target="_blank" rel="noopener noreferrer" class="cta-button cta-button-outline">Register</a>
-        </div>
+      <div class="venue-content">
+        <h2>Venue</h2>
+        <h3>Station F — OpenPlatform, Paris</h3>
+        <p>Hosted at Station F, the world's largest startup campus, on the OpenPlatform — an open co-working space with tables, chairs, and plugs, accessible from 8am to 8pm throughout the event.</p>
+        <a href="https://gosim.org/" target="_blank" rel="noopener noreferrer" class="cta-button">Register</a>
       </div>
     </section>
+
 
 </Layout>
 
@@ -156,10 +145,19 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     height: 100%;
   }
 
-  .hero-gradient {
+  .hero-background video {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #0e7aff 100%);
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(14, 23, 42, 0.7) 0%, rgba(30, 58, 95, 0.5) 50%, rgba(14, 122, 255, 0.3) 100%);
   }
 
   .hero-content {
@@ -199,10 +197,18 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     color: #fff;
   }
 
+  .hero-details {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: clamp(16px, 1.4vw, 20px);
+    margin: 0.5rem 0 0 0;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
   .hero-subtitle {
     color: rgba(255, 255, 255, 0.8);
     font-size: clamp(16px, 1.4vw, 20px);
-    margin: 0;
+    margin: 0.5rem 0 0 0;
   }
 
   .hero-intro {
@@ -224,6 +230,67 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     margin-bottom: 1rem;
   }
 
+  /* Hero People */
+  .hero-people {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-people-group h3 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .hero-people-row {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .person-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .person-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: border-color 0.2s ease;
+  }
+
+  .person-card:hover .person-photo {
+    border-color: #0e7aff;
+  }
+
+  .person-name {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .person-role {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
   /* Common */
   .container {
     max-width: 1200px;
@@ -238,105 +305,57 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     text-align: left;
   }
 
-  /* Categories Section */
-  .categories-section {
+  /* Call for Participation Section */
+  .cfp-section {
     padding: 60px 0;
-    background: #0f172a;
+    background: #f8fafc;
   }
 
-  .categories-section h2 {
-    color: #fff;
+  .cfp-section h2 {
+    color: #0f172a;
   }
 
-  .categories-list {
+  .cfp-intro {
+    font-size: 1.15rem;
+    color: #334155;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .cfp-tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
     display: flex;
     flex-direction: column;
-    gap: 1px;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 20px;
-    overflow: hidden;
+    gap: 10px;
+    padding-left: 0.75rem;
   }
 
-  .category-row {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    background: rgba(15, 23, 42, 0.95);
-    transition: background 0.4s ease;
-    cursor: default;
-  }
-
-  .category-row:hover {
-    background: rgba(30, 41, 59, 0.95);
-  }
-
-  .category-scene {
+  .cfp-tasks li {
     position: relative;
-    min-height: 180px;
-    overflow: hidden;
-    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 15%, transparent), color-mix(in srgb, var(--accent-light) 8%, transparent));
+    padding-left: 1.25rem;
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
   }
 
-  .scene-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .cfp-tasks li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0e7aff;
   }
 
-  .scene-icon {
-    font-size: 4rem;
-    filter: grayscale(0.3);
-    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s ease;
-  }
-
-  .category-row:hover .scene-icon {
-    transform: scale(1.15);
-    filter: grayscale(0);
-  }
-
-  .category-info {
-    padding: 2rem 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.06);
-  }
-
-  .category-number {
-    font-size: 0.75rem;
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-    letter-spacing: 0.1em;
-    color: var(--accent-light);
-    opacity: 0.7;
-  }
-
-  .category-info h3 {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: #fff;
-    margin: 0;
-    letter-spacing: -0.01em;
-    transition: color 0.3s ease;
-  }
-
-  .category-row:hover .category-info h3 {
-    color: var(--accent-light);
-  }
-
-  .category-info p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.92rem;
-    line-height: 1.65;
-    margin: 0;
-    max-width: 540px;
-    transition: color 0.3s ease;
-  }
-
-  .category-row:hover .category-info p {
-    color: rgba(255, 255, 255, 0.7);
+  .cfp-details {
+    font-size: 1rem;
+    color: #334155;
+    margin-bottom: 2rem;
+    line-height: 1.7;
   }
 
   /* Partnership Section */
@@ -345,17 +364,18 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     background: #fff;
   }
 
-  /* CTA Video Section */
-  .cta-video-section {
+  /* Venue Section */
+  .venue-section {
     position: relative;
     min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background: #0e1729;
   }
 
-  .cta-video-background {
+  .venue-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -363,22 +383,24 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     height: 100%;
   }
 
-  .cta-video-background video {
+  .venue-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    filter: blur(4px);
   }
 
-  .cta-video-overlay {
+  .venue-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(14, 23, 42, 0.9) 0%, rgba(30, 58, 95, 0.75) 50%, rgba(14, 122, 255, 0.6) 100%);
+    background: rgba(14, 40, 80, 0.6);
   }
 
-  .cta-video-content {
+  .venue-content {
     position: relative;
     z-index: 2;
     text-align: center;
@@ -386,24 +408,107 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     padding: clamp(40px, 8vw, 80px) clamp(20px, 5vw, 60px);
   }
 
-  .cta-video-content h2 {
+  .venue-content h2 {
     color: #fff;
     text-align: center;
     font-size: clamp(1.75rem, 3vw, 2.5rem);
   }
 
-  .cta-video-content p {
+  .venue-content h3 {
+    color: #60a5fa;
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .venue-content p {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 2rem;
   }
 
-  .cta-buttons {
+  /* Hardware Section */
+  .hardware-section {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+  }
+
+  .hardware-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hardware-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #0e7aff 100%);
+  }
+
+  .hardware-viewer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  .hardware-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(40px, 6vw, 80px) clamp(20px, 6vw, 64px);
+  }
+
+  .hardware-content h2 {
+    color: #fff;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .hardware-specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
     display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 550px;
+  }
+
+  .hardware-specs-list li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-left: 1.25rem;
+    position: relative;
+  }
+
+  .hardware-specs-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0e7aff;
+  }
+
+  .hardware-specs-list strong {
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .hardware-viewer {
+      width: 100%;
+      opacity: 0.3;
+    }
   }
 
   .cta-button {

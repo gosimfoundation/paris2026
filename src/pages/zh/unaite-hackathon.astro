@@ -4,7 +4,7 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
 ---
 
 <Layout
-  title="Unaite 黑客松 - GOSIM Paris 2026"
+  title="Robotics Hackathon - GOSIM Paris 2026"
   description="与 LeRobot 团队合作的实战机器人黑客松。使用真实机器人，完全开源。"
   navDarkMode={true}
   navBackground="header-home"
@@ -12,88 +12,90 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-background">
-        <div class="hero-gradient"></div>
-        <OpenArmViewer />
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          webkit-playsinline
+        >
+          <source src="https://openarm.dev/videos/kv.mp4#t=5" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
-        <div class="hero-badges">
-          <span class="badge">GOSIM Paris 2026</span>
-          <span class="badge">黑客松</span>
-          <span class="badge">开源机器人</span>
-        </div>
-        <h1 class="hero-title">Unaite 黑客松</h1>
-        <p class="hero-subtitle">使用真实机器人。由 LeRobot 驱动。完全开源。</p>
+        <h1 class="hero-title">机器人黑客松</h1>
+        <p class="hero-details">2026年5月5-6日 &middot; OpenPlatform, Station F，巴黎</p>
+        <p class="hero-subtitle">使用真实机器人。完全开源。</p>
         <div class="hero-intro">
           <h2>实战机器人黑客松</h2>
           <p>
-            Unaite 黑客松是一场与 LeRobot 团队合作举办的实战机器人黑客松，以 LeRobot 的 OpenArm 机械臂为核心。LeRobot 即将发布全新版本，全面支持 OpenArm，包含数据集和开箱即用的叠衣模型。
+            机器人黑客松是一场以 OpenArm（全开源人形机械臂）为核心的实战黑客松。整套系统完全开源，具有潜在的工业应用价值。无论你是资深机器人工程师还是充满好奇的创客，这都是你用真实机器人打造创新作品的绝佳机会。
           </p>
-          <p>
-            整套系统完全开源，具有潜在的工业应用价值。无论你是资深机器人工程师还是充满好奇的创客，这都是你用真实机器人打造创新作品的绝佳机会。
-          </p>
+        </div>
+
+        <div class="hero-people">
+          <div class="hero-people-group">
+            <h3>Organizer</h3>
+            <div class="hero-people-row">
+              <a href="https://unaite.fr" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/unaite-logo.jpg" alt="Unaite" class="person-photo" />
+                <span class="person-name">Unaite</span>
+                <span class="person-role">AI Student Federation</span>
+              </a>
+              <a href="https://github.com/haixuanTao" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/haixuan-tao.jpg" alt="Haixuan Xavier Tao" class="person-photo" />
+                <span class="person-name">Haixuan Xavier Tao</span>
+                <span class="person-role">Founder @ 1ms.ai</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Details Section -->
-    <section class="categories-section">
+    <!-- Call for Participation Section -->
+    <section class="cfp-section">
       <div class="container">
-        <h2>黑客松详情</h2>
-        <div class="categories-list">
+        <h2>参赛征集</h2>
+        <p class="cfp-intro">我们正在寻找有才华的机器人工程师，将最前沿的模型应用于实体硬件——以期提升社区对解决机器人抓取和操作相关开放挑战的关注。</p>
+        <p class="cfp-intro">我们希望解决的任务包括：</p>
+        <ul class="cfp-tasks">
+          <li>拼装和拆卸板件</li>
+          <li>手对手抓取</li>
+          <li>抓取和放置各种物体</li>
+          <li>将液体倒入杯中</li>
+          <li>料箱拣选</li>
+          <li>整理和摆放正式餐桌</li>
+          <li>折叠和展开布料</li>
+          <li>接收人递过来的物品</li>
+        </ul>
+        <p class="cfp-details">每队 3–5 人，总计约 50 名参赛者。每支队伍配备 1 台实体 OpenArm 进行开发。同时提供远程物理访问——代码在仿真环境验证通过后，即可从家中或学校远程控制机器人。</p>
+        <a href="mailto:tao.xavier@1ms.ai?subject=Joining GOSIM Robotics Hackathon" class="cta-button">加入黑客松</a>
+      </div>
+    </section>
 
-          <div class="category-row" style="--accent: #6366f1; --accent-light: #818cf8;">
-            <div class="category-scene" data-scene="venue">
-              <div class="scene-placeholder">
-                <span class="scene-icon">🏛️</span>
-              </div>
-            </div>
-            <div class="category-info">
-              <span class="category-number">01</span>
-              <h3>场地</h3>
-              <p>Station F 开放平台（中心岛区域），配备桌椅和电源插座。活动期间每天早 8 点至晚 8 点开放。</p>
-            </div>
-          </div>
-
-          <div class="category-row" style="--accent: #10b981; --accent-light: #34d399;">
-            <div class="category-scene" data-scene="hardware">
-              <div class="scene-placeholder">
-                <span class="scene-icon">🦾</span>
-              </div>
-            </div>
-            <div class="category-info">
-              <span class="category-number">02</span>
-              <h3>硬件设备</h3>
-              <p>10 台 OpenArm（每台含 2 条机械臂），配备远程操控臂。全新 LeRobot 版本包含数据集和叠衣模型。活动前将提供仿真环境供提前开发。</p>
-            </div>
-          </div>
-
-          <div class="category-row" style="--accent: #3b82f6; --accent-light: #60a5fa;">
-            <div class="category-scene" data-scene="remote">
-              <div class="scene-placeholder">
-                <span class="scene-icon">🌐</span>
-              </div>
-            </div>
-            <div class="category-info">
-              <span class="category-number">03</span>
-              <h3>远程访问</h3>
-              <p>可从家中或学校远程访问 OpenArm。通过仿真验证获取提前使用硬件的机会——活动前一周和一个周末开放。</p>
-            </div>
-          </div>
-
-          <div class="category-row" style="--accent: #f59e0b; --accent-light: #fbbf24;">
-            <div class="category-scene" data-scene="teams">
-              <div class="scene-placeholder">
-                <span class="scene-icon">👥</span>
-              </div>
-            </div>
-            <div class="category-info">
-              <span class="category-number">04</span>
-              <h3>团队组成</h3>
-              <p>每队 3–5 人，总计约 50 名参赛者。每支队伍在黑客松期间使用一台 OpenArm 进行开发。</p>
-            </div>
-          </div>
-
+    <!-- Hardware Section -->
+    <section class="hardware-section">
+      <div class="hardware-background">
+        <div class="hardware-gradient"></div>
+        <div class="hardware-viewer">
+          <OpenArmViewer />
         </div>
+      </div>
+      <div class="hardware-content">
+        <h2>使用 OpenArm</h2>
+        <ul class="hardware-specs-list">
+          <li><strong>7 自由度</strong>人形机械臂，633mm 臂展</li>
+          <li><strong>6kg 峰值负载</strong>，5.5kg 单臂重量</li>
+          <li><strong>远程操控套件</strong>——每队 2 条机械臂 + 操控臂</li>
+          <li><strong>1kHz CAN-FD</strong> 控制，精准响应</li>
+          <li><strong>可反驱 &amp; 高柔顺性</strong>，确保安全的人机交互</li>
+          <li><strong>完全开源</strong>——CAD、URDF、固件、控制软件</li>
+          <li><strong>兼容</strong> LeRobot、dora-rs、ROS2、MuJoCo 和 Isaac Lab</li>
+          <li><strong>仿真环境</strong>活动前开放，团队可提前开发</li>
+        </ul>
+        <a href="https://openarm.dev" target="_blank" rel="noopener noreferrer" class="cta-button">了解更多关于 OpenArm</a>
       </div>
     </section>
 
@@ -110,33 +112,20 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
       </div>
     </section>
 
-    <!-- Call to Action Section with Video -->
-    <section class="cta-video-section">
-      <div class="cta-video-background">
-        <video
-          autoplay
-          loop
-          muted
-          playsinline
-          webkit-playsinline
-          poster="/videos/paris-hero-bk.jpg"
-          onloadstart="this.playbackRate=0.25"
-        >
-          <source src="/videos/paris-hero-compressed.mp4" type="video/mp4" />
-        </video>
-        <div class="cta-video-overlay"></div>
+    <!-- Venue Section -->
+    <section class="venue-section">
+      <div class="venue-background">
+        <img src="/images/openplatform-stationf.jpeg" alt="Station F - OpenPlatform" />
+        <div class="venue-overlay"></div>
       </div>
-      <div class="cta-video-content">
-        <h2>加入黑客松</h2>
-        <p>
-          与真实机器人一起开发，与 LeRobot 团队协作，突破开源机器人技术的边界。无论你是现场参与还是远程加入——我们都欢迎你的到来。
-        </p>
-        <div class="cta-buttons">
-          <a href="mailto:contact@gosim.org" class="cta-button">成为赞助商</a>
-          <a href="https://gosim.org/" target="_blank" rel="noopener noreferrer" class="cta-button cta-button-outline">立即报名</a>
-        </div>
+      <div class="venue-content">
+        <h2>场地</h2>
+        <h3>Station F — OpenPlatform，巴黎</h3>
+        <p>活动在全球最大的创业园区 Station F 的 OpenPlatform 举办——配备桌椅和电源插座的开放式协作空间，活动期间每天早8点至晚8点开放。</p>
+        <a href="https://gosim.org/" target="_blank" rel="noopener noreferrer" class="cta-button">立即报名</a>
       </div>
     </section>
+
 
 </Layout>
 
@@ -156,10 +145,19 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     height: 100%;
   }
 
-  .hero-gradient {
+  .hero-background video {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #0e7aff 100%);
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(14, 23, 42, 0.7) 0%, rgba(30, 58, 95, 0.5) 50%, rgba(14, 122, 255, 0.3) 100%);
   }
 
   .hero-content {
@@ -199,10 +197,18 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     color: #fff;
   }
 
+  .hero-details {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: clamp(16px, 1.4vw, 20px);
+    margin: 0.5rem 0 0 0;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
   .hero-subtitle {
     color: rgba(255, 255, 255, 0.8);
     font-size: clamp(16px, 1.4vw, 20px);
-    margin: 0;
+    margin: 0.5rem 0 0 0;
   }
 
   .hero-intro {
@@ -224,6 +230,67 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     margin-bottom: 1rem;
   }
 
+  /* Hero People */
+  .hero-people {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-people-group h3 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .hero-people-row {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .person-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .person-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: border-color 0.2s ease;
+  }
+
+  .person-card:hover .person-photo {
+    border-color: #0e7aff;
+  }
+
+  .person-name {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .person-role {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
   /* Common */
   .container {
     max-width: 1200px;
@@ -238,105 +305,57 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     text-align: left;
   }
 
-  /* Categories Section */
-  .categories-section {
+  /* Call for Participation Section */
+  .cfp-section {
     padding: 60px 0;
-    background: #0f172a;
+    background: #f8fafc;
   }
 
-  .categories-section h2 {
-    color: #fff;
+  .cfp-section h2 {
+    color: #0f172a;
   }
 
-  .categories-list {
+  .cfp-intro {
+    font-size: 1.15rem;
+    color: #334155;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .cfp-tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
     display: flex;
     flex-direction: column;
-    gap: 1px;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 20px;
-    overflow: hidden;
+    gap: 10px;
+    padding-left: 0.75rem;
   }
 
-  .category-row {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    background: rgba(15, 23, 42, 0.95);
-    transition: background 0.4s ease;
-    cursor: default;
-  }
-
-  .category-row:hover {
-    background: rgba(30, 41, 59, 0.95);
-  }
-
-  .category-scene {
+  .cfp-tasks li {
     position: relative;
-    min-height: 180px;
-    overflow: hidden;
-    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 15%, transparent), color-mix(in srgb, var(--accent-light) 8%, transparent));
+    padding-left: 1.25rem;
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
   }
 
-  .scene-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .cfp-tasks li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0e7aff;
   }
 
-  .scene-icon {
-    font-size: 4rem;
-    filter: grayscale(0.3);
-    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s ease;
-  }
-
-  .category-row:hover .scene-icon {
-    transform: scale(1.15);
-    filter: grayscale(0);
-  }
-
-  .category-info {
-    padding: 2rem 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.06);
-  }
-
-  .category-number {
-    font-size: 0.75rem;
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-    letter-spacing: 0.1em;
-    color: var(--accent-light);
-    opacity: 0.7;
-  }
-
-  .category-info h3 {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: #fff;
-    margin: 0;
-    letter-spacing: -0.01em;
-    transition: color 0.3s ease;
-  }
-
-  .category-row:hover .category-info h3 {
-    color: var(--accent-light);
-  }
-
-  .category-info p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.92rem;
-    line-height: 1.65;
-    margin: 0;
-    max-width: 540px;
-    transition: color 0.3s ease;
-  }
-
-  .category-row:hover .category-info p {
-    color: rgba(255, 255, 255, 0.7);
+  .cfp-details {
+    font-size: 1rem;
+    color: #334155;
+    margin-bottom: 2rem;
+    line-height: 1.7;
   }
 
   /* Partnership Section */
@@ -345,17 +364,18 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     background: #fff;
   }
 
-  /* CTA Video Section */
-  .cta-video-section {
+  /* Venue Section */
+  .venue-section {
     position: relative;
     min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background: #0e1729;
   }
 
-  .cta-video-background {
+  .venue-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -363,22 +383,24 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     height: 100%;
   }
 
-  .cta-video-background video {
+  .venue-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    filter: blur(4px);
   }
 
-  .cta-video-overlay {
+  .venue-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(14, 23, 42, 0.9) 0%, rgba(30, 58, 95, 0.75) 50%, rgba(14, 122, 255, 0.6) 100%);
+    background: rgba(14, 40, 80, 0.6);
   }
 
-  .cta-video-content {
+  .venue-content {
     position: relative;
     z-index: 2;
     text-align: center;
@@ -386,24 +408,107 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     padding: clamp(40px, 8vw, 80px) clamp(20px, 5vw, 60px);
   }
 
-  .cta-video-content h2 {
+  .venue-content h2 {
     color: #fff;
     text-align: center;
     font-size: clamp(1.75rem, 3vw, 2.5rem);
   }
 
-  .cta-video-content p {
+  .venue-content h3 {
+    color: #60a5fa;
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .venue-content p {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 2rem;
   }
 
-  .cta-buttons {
+  /* Hardware Section */
+  .hardware-section {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+  }
+
+  .hardware-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hardware-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #0e7aff 100%);
+  }
+
+  .hardware-viewer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  .hardware-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(40px, 6vw, 80px) clamp(20px, 6vw, 64px);
+  }
+
+  .hardware-content h2 {
+    color: #fff;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .hardware-specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
     display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 550px;
+  }
+
+  .hardware-specs-list li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-left: 1.25rem;
+    position: relative;
+  }
+
+  .hardware-specs-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0e7aff;
+  }
+
+  .hardware-specs-list strong {
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .hardware-viewer {
+      width: 100%;
+      opacity: 0.3;
+    }
   }
 
   .cta-button {
