@@ -53,7 +53,7 @@ Nous n'utilisons pas de portail de dépenses externe. Pour demander votre rembou
 
 ## Modèle de fiche récapitulative de remboursement
 
-Veuillez copier, remplir et inclure ce formulaire dans votre e-mail, accompagné de tous les reçus scannés en pièces jointes. Vous pouvez également [télécharger le modèle (.docx)](/GOSIM-Travel-Fund-Reimbursement-Template.docx).
+Veuillez [télécharger le modèle de remboursement (.docx)](/GOSIM-Travel-Fund-Reimbursement-Template.docx), le remplir et l'inclure dans votre e-mail accompagné de tous les reçus scannés en pièces jointes.
 
 ### 1. Informations du participant
 

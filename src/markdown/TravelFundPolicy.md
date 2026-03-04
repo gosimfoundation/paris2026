@@ -53,7 +53,7 @@ We do not use an external expense portal. To claim your reimbursement, please fo
 
 ## Reimbursement Summary Sheet Template
 
-Please copy, fill out, and include this form in your email, along with all scanned receipts attached. You can also [download the template (.docx)](/GOSIM-Travel-Fund-Reimbursement-Template.docx).
+Please [download the reimbursement template (.docx)](/GOSIM-Travel-Fund-Reimbursement-Template.docx), fill it out, and include it in your email along with all scanned receipts attached.
 
 ### 1. Attendee Information
 

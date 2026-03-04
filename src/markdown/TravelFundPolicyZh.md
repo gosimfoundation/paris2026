@@ -53,7 +53,7 @@
 
 ## 报销汇总表模板
 
-请复制、填写以下表格并附在邮件中，同时附上所有扫描收据。您也可以[下载模板（.docx）](/GOSIM-Travel-Fund-Reimbursement-Template.docx)。
+请[下载报销模板（.docx）](/GOSIM-Travel-Fund-Reimbursement-Template.docx)，填写完成后连同所有扫描收据一起通过邮件提交。
 
 ### 1. 参会者信息
 
