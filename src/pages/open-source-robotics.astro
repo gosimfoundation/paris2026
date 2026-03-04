@@ -29,6 +29,39 @@ import BipedalViewer from "components/BipedalViewer.astro";
         </div>
         <h1 class="hero-title">Open Source Robotics Workshop</h1>
         <p class="hero-details">May 5-6, 2026 &middot; Station F, Paris</p>
+
+        <div class="hero-people">
+          <div class="hero-people-group">
+            <h3>Speakers</h3>
+            <div class="hero-people-row">
+              <a href="https://github.com/CarolinePascal" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/caroline-pascal.jpg" alt="Caroline Pascal" class="person-photo" />
+                <span class="person-name">Caroline Pascal</span>
+                <span class="person-role">LeRobot Maintainer</span>
+              </a>
+              <a href="https://github.com/Virgileboat" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/virgile-batto.jpg" alt="Virgile Batto" class="person-photo" />
+                <span class="person-name">Virgile Batto</span>
+                <span class="person-role">HF Legged Robot</span>
+              </a>
+              <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="person-card person-card-cta">
+                <span class="person-photo person-photo-cta">?</span>
+                <span class="person-name">You?</span>
+                <span class="person-role">Submit a Proposal</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-people-group">
+            <h3>Organizer</h3>
+            <div class="hero-people-row">
+              <a href="https://github.com/haixuanTao" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/haixuan-tao.jpg" alt="Haixuan Xavier Tao" class="person-photo" />
+                <span class="person-name">Haixuan Xavier Tao</span>
+                <span class="person-role">Founder @ 1ms.ai</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -36,7 +69,7 @@ import BipedalViewer from "components/BipedalViewer.astro";
     <section class="cfp-section">
       <div class="container">
         <h2>Call for Papers</h2>
-        <p class="cfp-intro">The workshop spans 2 days with approximately 20 talks (20 minutes each) and dedicated demo sessions. We invite submissions including but not limited to the following topics:</p>
+        <p class="cfp-intro">The workshop spans 2 days with approximately 20 talks (10-minute talks + 5-10 minute Q&A) and dedicated demo sessions. We invite submissions including but not limited to the following topics:</p>
         <div class="cfp-categories">
           <div class="cfp-category">
             <h3>Open Source Robotics Hardware</h3>
@@ -311,6 +344,87 @@ import BipedalViewer from "components/BipedalViewer.astro";
 
   .cfp-dates strong {
     color: #0f172a;
+  }
+
+  /* Hero People */
+  .hero-people {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-people-group h3 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .hero-people-row {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .person-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .person-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: border-color 0.2s ease;
+  }
+
+  .person-card:hover .person-photo {
+    border-color: #0e7aff;
+  }
+
+  .person-photo-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(14, 122, 255, 0.2);
+    border: 2px dashed rgba(14, 122, 255, 0.5);
+    color: #0e7aff;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .person-card-cta:hover .person-photo-cta {
+    background: rgba(14, 122, 255, 0.3);
+    border-color: #0e7aff;
+  }
+
+  .person-name {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .person-role {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .person-card-cta .person-role {
+    color: #0e7aff;
   }
 
   /* Venue Section */

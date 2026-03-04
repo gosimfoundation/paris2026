@@ -29,6 +29,39 @@ import BipedalViewer from "components/BipedalViewer.astro";
         </div>
         <h1 class="hero-title">开源机器人工作坊</h1>
         <p class="hero-details">2026年5月5-6日 &middot; Station F，巴黎</p>
+
+        <div class="hero-people">
+          <div class="hero-people-group">
+            <h3>演讲嘉宾</h3>
+            <div class="hero-people-row">
+              <a href="https://github.com/CarolinePascal" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/caroline-pascal.jpg" alt="Caroline Pascal" class="person-photo" />
+                <span class="person-name">Caroline Pascal</span>
+                <span class="person-role">LeRobot 维护者</span>
+              </a>
+              <a href="https://github.com/Virgileboat" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/virgile-batto.jpg" alt="Virgile Batto" class="person-photo" />
+                <span class="person-name">Virgile Batto</span>
+                <span class="person-role">HF 足式机器人</span>
+              </a>
+              <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="person-card person-card-cta">
+                <span class="person-photo person-photo-cta">?</span>
+                <span class="person-name">你？</span>
+                <span class="person-role">提交演讲提案</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-people-group">
+            <h3>组织者</h3>
+            <div class="hero-people-row">
+              <a href="https://github.com/haixuanTao" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/haixuan-tao.jpg" alt="Haixuan Xavier Tao" class="person-photo" />
+                <span class="person-name">Haixuan Xavier Tao</span>
+                <span class="person-role">1ms.ai 创始人</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -36,7 +69,7 @@ import BipedalViewer from "components/BipedalViewer.astro";
     <section class="cfp-section">
       <div class="container">
         <h2>征稿主题</h2>
-        <p class="cfp-intro">工作坊为期2天，共约20场演讲（每场20分钟），并设有专门的演示环节。我们欢迎以下主题的投稿（包括但不限于）：</p>
+        <p class="cfp-intro">工作坊为期2天，共约20场演讲（10分钟演讲 + 5-10分钟问答），并设有专门的演示环节。我们欢迎以下主题的投稿（包括但不限于）：</p>
         <div class="cfp-categories">
           <div class="cfp-category">
             <h3>开源机器人硬件</h3>
@@ -96,6 +129,34 @@ import BipedalViewer from "components/BipedalViewer.astro";
         <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="cta-button">
           提交演讲提案
         </a>
+      </div>
+    </section>
+
+    <!-- Speakers & Organizers Section -->
+    <section class="people-section">
+      <div class="container">
+        <h2>特邀嘉宾</h2>
+        <div class="people-grid">
+          <a href="https://github.com/CarolinePascal" target="_blank" rel="noopener noreferrer" class="person-card">
+            <img src="/images/speakers/caroline-pascal.jpg" alt="Caroline Pascal" class="person-photo" />
+            <h3>Caroline Pascal</h3>
+            <p>LeRobot 维护者</p>
+          </a>
+          <a href="https://github.com/Virgileboat" target="_blank" rel="noopener noreferrer" class="person-card">
+            <img src="/images/speakers/virgile-batto.jpg" alt="Virgile Batto" class="person-photo" />
+            <h3>Virgile Batto</h3>
+            <p>HF 足式机器人</p>
+          </a>
+        </div>
+
+        <h2>组织者</h2>
+        <div class="people-grid">
+          <a href="https://github.com/haixuanTao" target="_blank" rel="noopener noreferrer" class="person-card">
+            <img src="/images/speakers/haixuan-tao.jpg" alt="Haixuan Xavier Tao" class="person-photo" />
+            <h3>Haixuan Xavier Tao</h3>
+            <p>1ms.ai 创始人</p>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -311,6 +372,87 @@ import BipedalViewer from "components/BipedalViewer.astro";
 
   .cfp-dates strong {
     color: #0f172a;
+  }
+
+  /* Hero People */
+  .hero-people {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-people-group h3 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .hero-people-row {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .person-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .person-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: border-color 0.2s ease;
+  }
+
+  .person-card:hover .person-photo {
+    border-color: #0e7aff;
+  }
+
+  .person-photo-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(14, 122, 255, 0.2);
+    border: 2px dashed rgba(14, 122, 255, 0.5);
+    color: #0e7aff;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .person-card-cta:hover .person-photo-cta {
+    background: rgba(14, 122, 255, 0.3);
+    border-color: #0e7aff;
+  }
+
+  .person-name {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .person-role {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .person-card-cta .person-role {
+    color: #0e7aff;
   }
 
   /* Venue Section */
