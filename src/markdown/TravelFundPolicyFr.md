@@ -43,12 +43,14 @@ Nous n'utilisons pas de portail de dépenses externe. Pour demander votre rembou
 2. **Rassemblez les reçus** : Scannez ou photographiez tous les reçus. Ils doivent clairement montrer la date, l'article et le montant payé. Les captures d'écran de relevés de carte ne sont pas acceptées.
 3. **Soumettez par e-mail** : Envoyez votre fiche récapitulative et tous les reçus en pièces jointes à [travel@gosim.org](mailto:travel@gosim.org).
 
-**Format du titre de l'e-mail** : `GOSIM Paris 2026 Reimbursement: [Speaker/Spotlight] [Votre Nom] - [Montant total en EUR] - [Ville de départ] to Paris`
+**Format du titre de l'e-mail** : `GOSIM Paris 2026 Reimbursement: [Speaker/Spotlight] [Votre Nom] - [Montant total en EUR] - [Ville de départ]`
+
+Exemple : `GOSIM Paris 2026 Reimbursement: Speaker Jean Dupont - €850 - Lyon`
 
 ### Délais importants
 
 - Ne soumettez pas votre rapport avant la fin complète de l'événement.
-- Vous devez soumettre votre récapitulatif et vos reçus **dans les 45 jours** suivant la fin du voyage.
+- Vous devez soumettre votre récapitulatif et vos reçus **avant le 20 juin 2026** (45 jours après l'événement).
 - Les remboursements sont traités dans les 45 jours ouvrables après réception de votre soumission et vérification de votre présence sur place.
 
 ## Modèle de fiche récapitulative de remboursement

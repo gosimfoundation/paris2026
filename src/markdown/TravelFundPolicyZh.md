@@ -43,12 +43,14 @@
 2. **收集收据**：扫描或拍照所有实际收据。收据须清楚显示日期、项目和付款金额。不接受信用卡对账单截图。
 3. **通过邮件提交**：将汇总表和所有收据附件发送至 [travel@gosim.org](mailto:travel@gosim.org)。
 
-**邮件标题格式**：`GOSIM Paris 2026 Reimbursement: [Speaker/Spotlight] [您的姓名] - [总金额（欧元）] - [出发城市] to Paris`
+**邮件标题格式**：`GOSIM Paris 2026 Reimbursement: [Speaker/Spotlight] [您的姓名] - [总金额（欧元）] - [出发城市]`
+
+例如：`GOSIM Paris 2026 Reimbursement: Speaker Zhang Wei - €850 - Beijing`
 
 ### 重要截止日期
 
 - 活动完全结束前请勿提交报告。
-- 必须在旅行结束后 **45 天内** 提交汇总表和收据。
+- 必须在 **2026 年 6 月 20 日** 前提交汇总表和收据（活动结束后 45 天内）。
 - 报销将在收到提交材料并核实现场出席后 45 个工作日内处理。
 
 ## 报销汇总表模板

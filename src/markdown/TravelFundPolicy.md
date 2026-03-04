@@ -43,12 +43,14 @@ We do not use an external expense portal. To claim your reimbursement, please fo
 2. **Gather Receipts**: Scan or photograph all actual receipts. They must clearly show the date, item, and payment amount. Screenshots of credit card statements are not accepted.
 3. **Submit via Email**: Send your Summary Sheet and all attached receipts to [travel@gosim.org](mailto:travel@gosim.org).
 
-**Email title format**: `GOSIM Paris 2026 Reimbursement: [Speaker/Spotlight] [Your Name] - [Total Amount in EUR] - [Departure City] to Paris`
+**Email title format**: `GOSIM Paris 2026 Reimbursement: [Speaker/Spotlight] [Your Name] - [Total Amount in EUR] - [Departure City]`
+
+Example: `GOSIM Paris 2026 Reimbursement: Speaker Jane Smith - €850 - Berlin`
 
 ### Important Deadlines
 
 - Do not submit your report until the event is completely over.
-- You must submit your summary and receipts **within 45 days** of the completion of travel.
+- You must submit your summary and receipts **by June 20, 2026** (45 days after the event).
 - Reimbursements are processed within 45 business days after your submission is received and your onsite attendance is verified.
 
 ## Reimbursement Summary Sheet Template

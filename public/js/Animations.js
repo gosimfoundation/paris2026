@@ -129,7 +129,6 @@ function initScript() {
    initScrollToAnchor();
    initScrollTriggerDataBackground();
    initScrolltriggerAnimations();
-   initHeroZoomTunnel();
 }
 
 /**

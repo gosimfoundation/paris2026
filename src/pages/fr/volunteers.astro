@@ -1,0 +1,59 @@
+---
+// Components
+import Layout from "layouts/LayoutLandingFr.astro"
+import Content from "markdown/VolunteersFr.md"
+---
+
+<Layout
+  title="Bénévoles – GOSIM Paris 2026"
+  description="Rejoignez l'équipe de bénévoles de GOSIM Paris 2026 et vivez une expérience unique lors de l'une des plus grandes conférences open source en Europe."
+  navBackground="light"
+  pageTransitionName="Volunteers"
+>
+  <section
+    class="section speaker-detail-header"
+    data-theme-section="light"
+    data-bg-section="lightgray"
+  >
+    <div class="gradient-circle-wrap">
+      <div class="gradient-circle"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-markdown">
+          <h1>Devenez bénévole à GOSIM Paris 2026</h1>
+          <div class="volunteer-cta-wrap">
+            <a class="volunteer-cta" href="">Inscription bénévole bientôt disponible</a>
+          </div>
+          <Content />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .volunteer-cta-wrap {
+    margin: 0.5rem 0 2rem;
+  }
+  .volunteer-cta {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333 !important;
+    background: transparent;
+    border: 2px solid #333;
+    border-radius: 50px;
+    text-decoration: none !important;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  }
+  .volunteer-cta:hover {
+    background: #333;
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.3);
+  }
+</style>
