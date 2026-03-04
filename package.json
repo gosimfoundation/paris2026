@@ -14,6 +14,7 @@
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
+    "update-stars": "node scripts/update-marquee-stars.js",
     "prebuild": "npm run validate-schedule:bilingual && npm run test"
   },
   "dependencies": {
