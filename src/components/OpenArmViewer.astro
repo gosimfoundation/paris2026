@@ -72,18 +72,20 @@
 
     // Sizing
     function resize() {
-      const parent = canvas.parentElement;
+      const parent = canvas.closest('.viewer-left, .hero-background') || canvas.parentElement;
       if (!parent) return;
       const w = parent.clientWidth;
       const h = parent.clientHeight;
+      if (w === 0 || h === 0) return;
       renderer.setSize(w, h);
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
     }
     resize();
 
+    const container = canvas.closest('.viewer-left, .hero-background') || canvas.parentElement;
     const ro = new ResizeObserver(resize);
-    if (canvas.parentElement) ro.observe(canvas.parentElement);
+    if (container) ro.observe(container);
 
     // IntersectionObserver to pause when off-screen
     let visible = true;
