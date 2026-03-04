@@ -22,8 +22,9 @@ const {
   showBothLanguages = true
 } = Astro.props
 
-// Helper function to determine if we're on a Chinese page
+// Helper function to determine language from URL
 const isChinesePage = Astro.url.pathname.startsWith('/zh/')
+const isFrenchPage = Astro.url.pathname.startsWith('/fr/')
 
 // Helper function to get bilingual text content
 const getBilingualContent = (textData: BilingualTextData | string) => {
@@ -55,9 +56,10 @@ const getBilingualContent = (textData: BilingualTextData | string) => {
     
     // If both are available but we only want to show one based on current page
     if (zhText && enText) {
-      return { 
-        displayText: isChinesePage ? zhText : enText, 
-        hasTranslations: false 
+      const selectedText = isChinesePage ? zhText : (isFrenchPage ? (textData.fr || enText) : enText)
+      return {
+        displayText: selectedText,
+        hasTranslations: false
       }
     }
   }

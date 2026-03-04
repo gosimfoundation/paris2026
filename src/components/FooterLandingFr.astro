@@ -1,38 +1,36 @@
 ---
 // Components
-import Button from "components/Button.astro"
-import Logo from "./Logo.astro"
+import Button from "components/Button.astro";
+import Logo from "./Logo.astro";
 
-const slug = Astro.url.pathname
-const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/"
-const isFrPath = slug.startsWith("/fr/")
-const isZhPath = slug.startsWith("/zh/")
-const anchorBase = isHomepage ? "" : isZhPath ? "/zh/" : isFrPath ? "/fr/" : "/"
+const slug = Astro.url.pathname;
+const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/";
+const anchorBase = isHomepage ? "" : "/fr/";
 
 const firstColumnLinks = [
   {
-    text: "Tracks",
+    text: "Thématiques",
     link: `${anchorBase}#tracks`,
   },
   {
-    text: "Past Projects",
+    text: "Projets phares",
     link: `${anchorBase}#projects`,
   },
   {
-    text: "Proposals",
+    text: "Propositions",
     link: `${anchorBase}#proposals`,
   },
   {
-    text: "Sponsorship",
+    text: "Parrainage",
     link: `${anchorBase}#sponsorship`,
   },
   {
-    text: "Venue",
+    text: "Lieu",
     link: `${anchorBase}#venue`,
   },
-]
+];
 
-const secondColumnLinks = []
+const secondColumnLinks = [];
 ---
 
 <footer class="section footer" data-theme-section="dark" data-bg-section="dark">
@@ -40,13 +38,13 @@ const secondColumnLinks = []
     <div class="row row-base">
       <div class="col col-logo-gosim">
         <div class="logo">
-          <a href="/" aria-label="Go to homepage" class="logo-click">
+          <a href="/fr/" aria-label="Aller à l'accueil" class="logo-click">
             <Logo />
           </a>
         </div>
       </div>
 
-      <nav class="col col-sitemap" aria-label="Navigation Footer">
+      <nav class="col col-sitemap" aria-label="Navigation pied de page">
         <ul>
           {
             firstColumnLinks.map((loop: any) => (
@@ -113,24 +111,6 @@ const secondColumnLinks = []
           }
         </ul>
       </nav>
-
-      <!-- <div class="col col-newsletter">
-        <div class="col-row col-row-title">
-          <h2 class="h4">Stay up to date on all things GOSIM 2025</h2>
-        </div>
-        <div class="col-row col-row-input">
-          <Button
-            link="#"
-            text="Join our newsletter"
-            class="btn primary xl btn-hover"
-          />
-        </div>
-        <div class="col-row col-row-text styled-content">
-          <p>
-            Subscribe to the GOSIM Foundation mailing list to stay in the know.
-          </p>
-        </div>
-      </div> -->
     </div>
 
     <div class="row row-end">
@@ -153,7 +133,7 @@ const secondColumnLinks = []
           >
             <img
               src="/icons/icon-mastodon.svg"
-              alt="Follow us on Mastodon"
+              alt="Suivez-nous sur Mastodon"
               width="18"
               height="18"
               loading="lazy"
@@ -167,7 +147,7 @@ const secondColumnLinks = []
           >
             <img
               src="/icons/icon-x.svg"
-              alt="Follow us on X (twitter)"
+              alt="Suivez-nous sur X (twitter)"
               width="18"
               height="18"
               loading="lazy"
@@ -181,7 +161,7 @@ const secondColumnLinks = []
           >
             <img
               src="/icons/icon-linkedin.svg"
-              alt="Follow us on LinkedIn"
+              alt="Suivez-nous sur LinkedIn"
               width="18"
               height="18"
               loading="lazy"
@@ -195,7 +175,7 @@ const secondColumnLinks = []
           >
             <img
               src="/icons/icon-bluesky.svg"
-              alt="Follow us on BlueSky"
+              alt="Suivez-nous sur BlueSky"
               width="18"
               height="18"
               loading="lazy"
@@ -209,7 +189,7 @@ const secondColumnLinks = []
           >
             <img
               src="/icons/icon-youtube.svg"
-              alt="Follow us on Youtube"
+              alt="Suivez-nous sur Youtube"
               width="18"
               height="18"
               loading="lazy"
@@ -223,13 +203,13 @@ const secondColumnLinks = []
 
       <div class="col col-dev-credits">
         <div class="link link-hover">
-          <a class="link-click" href="/code-of-conduct/">
-            <span>Code of Conduct</span>
+          <a class="link-click" href="/fr/code-of-conduct/">
+            <span>Code de conduite</span>
           </a>
         </div>
         <div class="link link-hover">
-          <a class="link-click" href="/privacy/">
-            <span>Privacy</span>
+          <a class="link-click" href="/fr/privacy/">
+            <span>Confidentialité</span>
           </a>
         </div>
       </div>

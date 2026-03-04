@@ -1,0 +1,30 @@
+---
+// Components
+import Layout from "layouts/LayoutLandingFr.astro";
+import GetTickets from "components/GetTickets.astro";
+import HeroText from "components/HeroText.astro";
+import BilingualSchedule from "components/BilingualSchedule.astro";
+---
+
+<Layout
+  title="12 sept. – GOSIM Paris 2025"
+  description="GOSIM Paris 2025 est un rassemblement de projets IA open source, de développeurs, de chercheurs et de sponsors industriels pour partager les connaissances, apprendre les uns des autres et collaborer."
+  navBackground="light"
+  pageTransitionName="Sept 12"
+>
+  <HeroText title="Programme : 12 septembre" />
+
+  <BilingualSchedule currentDay="September 12" />
+
+  <GetTickets
+    title="Obtenez votre billet GOSIM Paris"
+    location="Paris"
+    date="13-14 septembre 2025"
+    text="Réservez votre place dès aujourd'hui à GOSIM Paris 2025. Collaborez avec des innovateurs, échangez avec des pionniers de l'industrie et participez à façonner l'avenir de la technologie open source."
+    ctaButton={{
+      text: "Événement terminé, merci d'avoir participé",
+      link: "",
+      openInNewTab: false,
+    }}
+  />
+</Layout>

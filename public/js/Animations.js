@@ -129,6 +129,7 @@ function initScript() {
    initScrollToAnchor();
    initScrollTriggerDataBackground();
    initScrolltriggerAnimations();
+   initHeroZoomTunnel();
 }
 
 /**
@@ -497,7 +498,7 @@ function initScrollToAnchor() {
    // Handle regular anchor links (href starting with #)
    $("a[href^='#']").click(function (e) {
       const href = $(this).attr('href');
-      
+
       // Skip if it's an empty anchor or just #
       if (href === '#' || href === '') {
          return;
@@ -757,4 +758,67 @@ function initScrolltriggerAnimations() {
          }
       }
    });
+}
+
+/**
+ * Hero — GOSIM logo zoom tunnel effect
+ * Pins the hero and scales up the GOSIM SVG so the viewport flies through the O
+ */
+function initHeroZoomTunnel() {
+   var hero = document.querySelector('.section-home-header');
+   if (!hero) return;
+
+   var gosimSvg = hero.querySelector('.logo-gosim-scroll svg');
+   if (!gosimSvg) return;
+
+   var fadeElements = hero.querySelectorAll('.event-facts, .btn-home-wrap');
+
+   // O center in SVG viewBox (0 0 85 30): x≈34.2 y≈8.0
+   // As percentage: 40.2% x, 26.7% y
+   gosimSvg.style.transformOrigin = '40.2% 26.7%';
+
+   // Store default state so we can force-reset cleanly
+   var defaultState = { scale: 1 };
+   var defaultFade = { opacity: 1, y: 0 };
+
+   var tl = gsap.timeline({
+      scrollTrigger: {
+         trigger: hero,
+         start: "top top",
+         end: "+=150%",
+         scrub: true,
+         pin: true,
+         onLeaveBack: function () {
+            // Kill any in-flight tweens then hard-reset to initial state
+            gsap.killTweensOf(gosimSvg);
+            gsap.killTweensOf(fadeElements);
+            gsap.set(gosimSvg, defaultState);
+            gsap.set(fadeElements, defaultFade);
+         },
+      }
+   });
+
+   // Date and buttons fade out first
+   tl.to(fadeElements, {
+      opacity: 0,
+      y: -30,
+      duration: 0.2,
+      ease: "power1.in",
+   }, 0);
+
+   // GOSIM SVG zooms in — fly through the O counter
+   tl.to(gosimSvg, {
+      scale: 60,
+      duration: 1,
+      ease: "power2.in",
+   }, 0.05);
+
+   // Video overlay fades to black as we enter the tunnel
+   var overlay = hero.querySelector('.overlay-gradient-v2');
+   if (overlay) {
+      tl.to(overlay, {
+         backgroundColor: 'rgba(0,0,0,0.8)',
+         duration: 0.4,
+      }, 0.6);
+   }
 }

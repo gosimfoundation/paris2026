@@ -1,43 +1,37 @@
 ---
 // Components
-import Button from "components/Button.astro"
-import Logo from "./Logo.astro"
-import NotificationBar from "components/NotificationBar.astro"
+import Button from "components/Button.astro";
+import Logo from "./Logo.astro";
+import NotificationBar from "components/NotificationBar.astro";
 
-const hasNotificationBar = false // Set this to false when NotificationBar is removed or page will crash
+const hasNotificationBar = false; // Set this to false when NotificationBar is removed or page will crash
 
-const rawLinks = [
-  {
-    text: "Tracks",
-    anchor: "#tracks",
-  },
-  {
-    text: "Past Projects",
-    anchor: "#projects",
-  },
-  {
-    text: "Proposals",
-    anchor: "#proposals",
-  },
-  {
-    text: "Sponsorship",
-    anchor: "#sponsorship",
-  },
-  {
-    text: "Venue",
-    anchor: "#venue",
-  },
-]
+const slug = Astro.url.pathname;
+const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/";
+const anchorBase = isHomepage ? "" : "/fr/";
 
-const slug = Astro.url.pathname
-const isZhPath = slug.startsWith("/zh/")
-const isFrPath = slug.startsWith("/fr/")
-const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`
-
-// If not on the homepage, prefix anchor links with the homepage path
-const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/"
-const anchorBase = isHomepage ? "" : isZhPath ? "/zh/" : isFrPath ? "/fr/" : "/"
-const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
+const links = [
+  {
+    text: "Thématiques",
+    link: `${anchorBase}#tracks`,
+  },
+  {
+    text: "Projets phares",
+    link: `${anchorBase}#projects`,
+  },
+  {
+    text: "Propositions",
+    link: `${anchorBase}#proposals`,
+  },
+  {
+    text: "Parrainage",
+    link: `${anchorBase}#sponsorship`,
+  },
+  {
+    text: "Lieu",
+    link: `${anchorBase}#venue`,
+  },
+];
 ---
 
 <header>
@@ -49,14 +43,6 @@ const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
       />
     )
   }
-
-  <!-- <div class="floating-ticket-button">
-    <Button
-      text="Coming Soon"
-      link=""
-      class="btn primary btn-floating btn-hover"
-    />
-  </div> -->
 
   <div class="mobile-nav">
     <div class="overlay overlay-dark" data-navigation-toggle="close"></div>
@@ -107,21 +93,21 @@ const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
           <li class="link link-hover mobile-language-item">
             <div class="language-mobile-menu">
               <a
-                class="language-item active"
-                href={slug}
-                onclick="localStorage.setItem('language_preference', 'en')"
+                class="language-item"
+                href={slug.replace("/fr", "") || "/"}
+                onclick="localStorage.setItem('language_preference', 'en'); sessionStorage.setItem('language_just_switched', 'true');"
                 >English</a
               >
               <a
                 class="language-item"
-                href={`/zh${slug}`}
+                href={slug.replace("/fr", "/zh") || "/zh/"}
                 onclick="localStorage.setItem('language_preference', 'zh'); sessionStorage.setItem('language_just_switched', 'true');"
                 >中文</a
               >
               <a
-                class="language-item"
-                href={`/fr${slug}`}
-                onclick="localStorage.setItem('language_preference', 'fr'); sessionStorage.setItem('language_just_switched', 'true');"
+                class="language-item active"
+                href={slug}
+                onclick="localStorage.setItem('language_preference', 'fr')"
                 >Français</a
               >
             </div>
@@ -129,14 +115,18 @@ const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
         </ul>
       </nav>
       <div class="box-row box-row-btn">
-        <Button text="May 5-6, 2026" link="" class="btn primary xl btn-hover" />
+        <Button
+          text="5-6 mai 2026"
+          link=""
+          class="btn primary xl btn-hover"
+        />
       </div>
     </div>
   </div>
 
   <button
     class="hamburger btn-floating"
-    aria-label="Open menu"
+    aria-label="Ouvrir le menu"
     data-navigation-toggle="toggle"
     data-has-notification={hasNotificationBar}
   >
@@ -152,7 +142,7 @@ const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
     <div class="btn-click filter-alpha-animate" data-filter-toggle="toggle">
       <div class="btn-content original">
         <div class="btn-fill"></div>
-        <span>Filter</span>
+        <span>Filtrer</span>
       </div>
       <div class="border-box"></div>
     </div>
@@ -168,13 +158,13 @@ const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
       <div class="border-bottom"></div>
 
       <div class="logo">
-        <a href="/" aria-label="Go to homepage" class="logo-click">
+        <a href="/fr/" aria-label="Aller à l'accueil" class="logo-click">
           <Logo />
           <Logo />
         </a>
       </div>
 
-      <nav aria-label="Navigation Desktop">
+      <nav aria-label="Navigation Bureau">
         <ul>
           {
             links.map((loop) => (
@@ -240,24 +230,28 @@ const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
           </button>
           <div class="language-dropdown-content">
             <a
-              href={slug}
-              class="active"
-              onclick="localStorage.setItem('language_preference', 'en')"
+              href={slug.replace("/fr", "") || "/"}
+              onclick="localStorage.setItem('language_preference', 'en'); sessionStorage.setItem('language_just_switched', 'true');"
               >English</a
             >
             <a
-              href={`/zh${slug}`}
+              href={slug.replace("/fr", "/zh") || "/zh/"}
               onclick="localStorage.setItem('language_preference', 'zh'); sessionStorage.setItem('language_just_switched', 'true');"
               >中文</a
             >
             <a
-              href={`/fr${slug}`}
-              onclick="localStorage.setItem('language_preference', 'fr'); sessionStorage.setItem('language_just_switched', 'true');"
+              href={slug}
+              class="active"
+              onclick="localStorage.setItem('language_preference', 'fr')"
               >Français</a
             >
           </div>
         </div>
-        <Button text="May 5-6, 2026" link="" class="btn outline btn-hover" />
+        <Button
+          text="5-6 mai 2026"
+          link=""
+          class="btn outline btn-hover"
+        />
       </div>
       <div class="hamburger outline" data-navigation-toggle="toggle">
         <div class="hamburger-fill"></div>
@@ -269,7 +263,7 @@ const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
         <div class="btn-click filter-alpha-animate" data-filter-toggle="toggle">
           <div class="btn-content original">
             <div class="btn-fill"></div>
-            <span>Filter</span>
+            <span>Filtrer</span>
           </div>
           <div class="border-box"></div>
         </div>
@@ -374,7 +368,6 @@ const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
 
   .language-mobile-menu {
     display: flex;
-    justify-content: center;
     gap: 15px;
     padding: 10px 0;
   }
@@ -389,7 +382,6 @@ const links = rawLinks.map(l => ({ ...l, link: `${anchorBase}${l.anchor}` }))
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.1);
   }
-
   @media screen and (max-width: 1070px) {
     .language-dropdown {
       position: absolute;

@@ -67,6 +67,16 @@ const {
             return;
           }
 
+          if (languagePreference === 'fr' && isAlreadyOnChinesePage) {
+            sessionStorage.setItem('language_just_switched', 'true');
+            var newPath = window.location.pathname.replace('/zh', '/fr');
+            if (newPath === '') {
+              newPath = '/fr/';
+            }
+            window.location.href = newPath;
+            return;
+          }
+
           // No automatic redirection to Chinese on Chinese layout
           // Users should only be here if they explicitly chose Chinese or were redirected from English layout
         })();

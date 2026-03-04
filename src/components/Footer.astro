@@ -3,32 +3,36 @@
 import Button from "components/Button.astro";
 import Logo from "./Logo.astro";
 
+const slug = Astro.url.pathname;
+const isZhPath = slug.startsWith("/zh/");
+const isFrPath = slug.startsWith("/fr/");
+const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/";
+const anchorBase = isHomepage ? "" : isZhPath ? "/zh/" : isFrPath ? "/fr/" : "/";
+
 const firstColumnLinks = [
   {
     text: "Tracks",
-    link: "#tracks",
+    link: `${anchorBase}#tracks`,
   },
   {
     text: "Past Projects",
-    link: "#projects",
+    link: `${anchorBase}#projects`,
   },
   {
     text: "Proposals",
-    link: "#proposals",
+    link: `${anchorBase}#proposals`,
   },
   {
     text: "Sponsorship",
-    link: "#sponsorship",
+    link: `${anchorBase}#sponsorship`,
   },
   {
     text: "Venue",
-    link: "#venue",
+    link: `${anchorBase}#venue`,
   },
 ];
 
 const secondColumnLinks = [];
-
-const slug = Astro.url.pathname;
 ---
 
 <footer class="section footer" data-theme-section="dark" data-bg-section="dark">

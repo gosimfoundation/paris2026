@@ -1,0 +1,34 @@
+---
+// Components
+import Layout from "layouts/LayoutLandingFr.astro";
+import GetTickets from "components/GetTickets.astro";
+import HeroText from "components/HeroText.astro";
+import AllSponsors from "components/SponsorsFr.astro";
+---
+
+<Layout
+  title="Sponsors – GOSIM Paris 2026"
+  description="GOSIM Paris 2026 est un rassemblement de projets IA open source, de développeurs, de chercheurs et de sponsors industriels pour partager les connaissances, apprendre les uns des autres et collaborer."
+  navBackground="light"
+  pageTransitionName="Sponsors"
+>
+  <HeroText
+    title="Sponsors"
+    text="Nous sommes ravis de vous offrir une expérience incroyable, rendue possible grâce au généreux soutien de nos sponsors et organisations partenaires. Nous nous sommes associés à de véritables innovateurs qui repoussent les limites de notre industrie."
+    lightgray
+  />
+
+  <AllSponsors />
+
+  <GetTickets
+    title="Obtenez votre billet GOSIM Paris"
+    location="Paris"
+    date="5-6 mai 2026"
+    text="Réservez votre place dès aujourd'hui à GOSIM Paris 2026. Collaborez avec des innovateurs, échangez avec des pionniers de l'industrie et participez à façonner l'avenir de la technologie open source."
+    ctaButton={{
+      text: "Bientôt disponible",
+      link: "",
+      openInNewTab: false,
+    }}
+  />
+</Layout>
