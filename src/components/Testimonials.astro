@@ -1,42 +1,38 @@
 ---
-interface Testimonial {
-  quote: string;
-  author: string;
-  role?: string;
-  link?: string;
-}
-
 interface Props {
-  title: string;
-  subtitle?: string;
-  testimonials: Testimonial[];
+  embedUrns: string[];
 }
 
-const { title, subtitle, testimonials } = Astro.props;
+const { embedUrns } = Astro.props;
 ---
 
-<section class="section section-testimonials" data-theme-section="dark" data-scroll-section>
-  <div class="container">
-    <div class="section-header">
-      <h2>{title}</h2>
-      {subtitle && <p class="section-subtitle">{subtitle}</p>}
-    </div>
-    <div class="testimonials-grid">
-      {testimonials.map((t) => (
-        <div class="testimonial-card">
-          <blockquote>
-            <p>{t.quote}</p>
-          </blockquote>
-          <div class="testimonial-author">
-            <span class="author-name">{t.author}</span>
-            {t.role && <span class="author-role">{t.role}</span>}
-          </div>
-          {t.link && (
-            <a href={t.link} target="_blank" rel="noopener noreferrer" class="testimonial-source">
-              View on LinkedIn &rarr;
-            </a>
-          )}
+<section class="section section-testimonials" data-theme-section="light" data-bg-section="lightgray" data-scroll-section>
+  <div class="container wide">
+    <div class="testimonials-carousel">
+      <button class="carousel-arrow carousel-prev" aria-label="Previous">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="testimonials-track-wrapper">
+        <div class="testimonials-track">
+          {embedUrns.map((urn, i) => (
+            <div class="embed-wrapper" data-index={i}>
+              <iframe
+                src={`https://www.linkedin.com/embed/feed/update/${urn}`}
+                frameborder="0"
+                allowfullscreen
+                title="LinkedIn embedded post"
+              ></iframe>
+            </div>
+          ))}
         </div>
+      </div>
+      <button class="carousel-arrow carousel-next" aria-label="Next">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="carousel-dots">
+      {embedUrns.map((_, i) => (
+        <button class={`carousel-dot ${i === 0 ? 'active' : ''}`} data-dot={i} aria-label={`Go to post ${i + 1}`} />
       ))}
     </div>
   </div>
@@ -44,130 +40,149 @@ const { title, subtitle, testimonials } = Astro.props;
 
 <style>
   .section-testimonials {
-    padding: var(--section-padding, 80px) 0;
-    background: #0f172a;
-    position: relative;
-    overflow: hidden;
+    padding-top: calc(var(--section-padding) * 0.3);
+    padding-bottom: calc(var(--section-padding) * 0.3);
   }
 
-  .section-testimonials::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 60%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(14, 122, 255, 0.06) 0%, transparent 70%);
+  .testimonials-carousel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .testimonials-track-wrapper {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .testimonials-track {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+
+  .embed-wrapper {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+
+  .embed-wrapper iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
     pointer-events: none;
   }
 
-  .container {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 clamp(20px, 5vw, 60px);
+  .embed-wrapper.active iframe {
+    pointer-events: auto;
   }
 
-  .section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .section-header h2 {
-    color: #fff;
-    margin: 0 0 0.5rem;
-  }
-
-  .section-subtitle {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 1.05rem;
-    margin: 0;
-  }
-
-  .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .testimonial-card {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 1.75rem;
+  .carousel-arrow {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
     display: flex;
-    flex-direction: column;
-    transition: border-color 0.3s ease, transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
   }
 
-  .testimonial-card:hover {
-    border-color: rgba(14, 122, 255, 0.3);
-    transform: translateY(-3px);
+  .carousel-arrow:hover {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
   }
 
-  blockquote {
-    margin: 0 0 1.25rem;
-    flex: 1;
+  .carousel-arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none;
   }
 
-  blockquote p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.92rem;
-    line-height: 1.7;
-    margin: 0;
-    font-style: italic;
+  .carousel-arrow svg {
+    color: #333;
   }
 
-  blockquote::before {
-    content: "\201C";
-    display: block;
-    font-size: 2.5rem;
-    line-height: 1;
-    color: rgba(14, 122, 255, 0.4);
-    margin-bottom: 0.5rem;
-    font-family: Georgia, serif;
-  }
-
-  .testimonial-author {
+  .carousel-dots {
     display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
+    gap: 8px;
+    justify-content: center;
+    padding-top: 1rem;
   }
 
-  .author-name {
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.9rem;
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s;
   }
 
-  .author-role {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 0.8rem;
+  .carousel-dot.active {
+    background: rgba(0, 0, 0, 0.5);
   }
 
-  .testimonial-source {
-    margin-top: 0.75rem;
-    color: rgba(14, 122, 255, 0.7);
-    font-size: 0.78rem;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
-  }
-
-  .testimonial-source:hover {
-    color: #0e7aff;
-  }
-
-  @media (max-width: 900px) {
-    .testimonials-grid {
-      grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 768px) {
+    .carousel-arrow {
+      width: 40px;
+      height: 40px;
     }
-  }
 
-  @media (max-width: 600px) {
-    .testimonials-grid {
-      grid-template-columns: 1fr;
+    .carousel-arrow svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .embed-wrapper iframe {
+      height: 100vh;
     }
   }
 </style>
+
+<script>
+  // Click-to-activate iframes
+  document.querySelectorAll('.section-testimonials .embed-wrapper').forEach((wrapper) => {
+    wrapper.addEventListener('click', () => {
+      document.querySelectorAll('.section-testimonials .embed-wrapper.active').forEach((w) => w.classList.remove('active'));
+      wrapper.classList.add('active');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!(e.target as HTMLElement).closest('.section-testimonials .embed-wrapper')) {
+      document.querySelectorAll('.section-testimonials .embed-wrapper.active').forEach((w) => w.classList.remove('active'));
+    }
+  });
+
+  // Carousel
+  const section = document.querySelector('.section-testimonials');
+  if (section) {
+    const track = section.querySelector('.testimonials-track') as HTMLElement;
+    const prevBtn = section.querySelector('.carousel-prev') as HTMLButtonElement;
+    const nextBtn = section.querySelector('.carousel-next') as HTMLButtonElement;
+    const dots = section.querySelectorAll('.carousel-dot');
+    const total = section.querySelectorAll('.embed-wrapper').length;
+    let current = 0;
+
+    function goTo(index: number) {
+      current = Math.max(0, Math.min(index, total - 1));
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === total - 1;
+    }
+
+    prevBtn.addEventListener('click', () => goTo(current - 1));
+    nextBtn.addEventListener('click', () => goTo(current + 1));
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+    goTo(0);
+  }
+</script>
