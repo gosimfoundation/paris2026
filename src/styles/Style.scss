@@ -821,6 +821,25 @@ footer {
    color: var(--color-white);
 }
 
+.section-home-header .btn-home-wrap .btn.hero-ticket .btn-fill {
+   background: #fff;
+   animation: none;
+}
+
+.section-home-header .btn-home-wrap .btn.hero-ticket .btn-content span {
+   color: #1a1a1a;
+}
+
+/* GetTickets CTA: white bg with dark text (matches menubar button) */
+.section-register-gosim .btn.ticket-cta .btn-fill {
+   background: #fff;
+   animation: none;
+}
+
+.section-register-gosim .btn.ticket-cta .btn-content span {
+   color: #1a1a1a;
+}
+
 /* CFP section button: primary blue bg with white text */
 .spotlight-section .btn.primary .btn-content.duplicate .btn-fill {
    background-color: var(--color-primary);

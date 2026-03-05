@@ -78,19 +78,16 @@ const slug = Astro.url.pathname
         </div>
 
         {
-          /* // temporary override
-        {
           ctaButton?.text && (
             <div class="col-row col-row-btn">
               <Button
                 link={ctaButton.link}
-                text="Coming Soon"
+                text={ctaButton.text}
                 openInNewTab={ctaButton?.openInNewTab}
-                class="btn primary xl btn-hover"
+                class="btn primary xl btn-hover ticket-cta"
               />
             </div>
           )
-        } */
         }
       </div>
     </div>

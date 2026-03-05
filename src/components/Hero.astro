@@ -9,6 +9,7 @@ interface Props {
     text: string
     link: string
     openInNewTab: boolean
+    class?: string
   }>
 }
 
@@ -88,7 +89,7 @@ const { date, location, links } = Astro.props
                   text={loop.text}
                   link={loop.link}
                   openInNewTab={loop?.openInNewTab}
-                  class="btn xl btn-hover fade-in-last"
+                  class={loop.class || "btn xl btn-hover fade-in-last"}
                 />
               ))
             }
