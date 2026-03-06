@@ -13,7 +13,7 @@
 
 ## Eligibility
 
-Travel funding is limited to **Confirmed Speakers** and **Spotlight Project Members** (max two reimbursement quotas per Spotlight project).
+Travel funding is limited to **Confirmed Speakers** and **Spotlight Project Members** (max one reimbursement quota per Spotlight project).
 
 Reimbursement caps are based on travel distance to Paris:
 

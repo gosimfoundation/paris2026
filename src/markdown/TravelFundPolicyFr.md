@@ -13,7 +13,7 @@
 
 ## Éligibilité
 
-Le financement de voyage est limité aux **conférenciers confirmés** et aux **membres de projets Spotlight** (max deux quotas par projet Spotlight).
+Le financement de voyage est limité aux **conférenciers confirmés** et aux **membres de projets Spotlight** (max un quota par projet Spotlight).
 
 Les plafonds de remboursement sont basés sur la distance de voyage jusqu'à Paris :
 
