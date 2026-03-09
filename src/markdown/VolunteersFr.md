@@ -1,4 +1,4 @@
-GOSIM Paris 2026 rassemble des centaines de développeurs open source, chercheurs et leaders de l'industrie à Station F à Paris les 5–6 mai 2026. Nous recherchons des bénévoles passionnés pour contribuer à la réussite de cet événement.
+GOSIM Paris 2026 rassemble des centaines de développeurs open source, chercheurs et leaders de l'industrie à STATION F à Paris les 5–6 mai 2026. Nous recherchons des bénévoles passionnés pour contribuer à la réussite de cet événement.
 
 ## Pourquoi devenir bénévole ?
 
@@ -16,7 +16,7 @@ Les bénévoles jouent un rôle clé dans l'événement, notamment :
 |---------|----------------|
 | **Accueil & Inscription** | Accueillir les participants, distribuer les badges et le matériel |
 | **Support des sessions** | Assister les conférenciers, gérer la logistique des salles, aider à l'installation audio/vidéo |
-| **Orientation** | Guider les participants dans Station F, répondre aux questions |
+| **Orientation** | Guider les participants dans STATION F, répondre aux questions |
 | **Coordination scénique** | Aider à maintenir le programme à l'heure sur les différentes scènes |
 | **Engagement communautaire** | Soutenir les activités de réseautage, ateliers et démonstrations |
 

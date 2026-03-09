@@ -28,6 +28,20 @@ const rawLinks = [
     anchor: "#venue",
   },
   {
+    text: "Co-located Events",
+    subLinks: [
+      {
+        text: "Spotlight: Frontier Creators",
+        link: "https://spotlight.gosim.org/paris2026/",
+        openInNewTab: true,
+      },
+      {
+        text: "Robotics Hackathon",
+        link: "/unaite-hackathon/",
+      },
+    ],
+  },
+  {
     text: "Volunteers",
     link: "/volunteers/",
   },
@@ -41,7 +55,7 @@ const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`
 // If not on the homepage, prefix anchor links with the homepage path
 const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/"
 const anchorBase = isHomepage ? "" : isZhPath ? "/zh/" : isFrPath ? "/fr/" : "/"
-const links = rawLinks.map(l => l.anchor ? { ...l, link: `${anchorBase}${l.anchor}` } : l)
+const links = rawLinks.map(l => l.anchor ? { ...l, link: `${anchorBase}${l.anchor}` } : l) as Array<{ text: string; link: string; anchor?: string; openInNewTab?: boolean; subLinks?: any[] }>
 ---
 
 <header>
@@ -101,7 +115,7 @@ const links = rawLinks.map(l => l.anchor ? { ...l, link: `${anchorBase}${l.ancho
                     </svg>
                   </button>
                 ) : (
-                  <a class="link-click" href={loop.link}>
+                  <a class="link-click" href={loop.link} target={loop.openInNewTab ? "_blank" : undefined} rel={loop.openInNewTab ? "noopener noreferrer" : undefined}>
                     <span>{loop.text}</span>
                   </a>
                 )}
@@ -211,7 +225,7 @@ const links = rawLinks.map(l => l.anchor ? { ...l, link: `${anchorBase}${l.ancho
                     </svg>
                   </button>
                 ) : (
-                  <a class="link-click" href={loop.link}>
+                  <a class="link-click" href={loop.link} target={loop.openInNewTab ? "_blank" : undefined} rel={loop.openInNewTab ? "noopener noreferrer" : undefined}>
                     <span>{loop.text}</span>
                   </a>
                 )}

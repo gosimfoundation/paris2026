@@ -1,4 +1,4 @@
-GOSIM Paris 2026 brings together hundreds of open-source developers, researchers, and industry leaders at Station F in Paris on May 5–6, 2026. We're looking for passionate volunteers to help make it happen.
+GOSIM Paris 2026 brings together hundreds of open-source developers, researchers, and industry leaders at STATION F in Paris on May 5–6, 2026. We're looking for passionate volunteers to help make it happen.
 
 ## Why Volunteer?
 
@@ -16,7 +16,7 @@ Volunteers play a key role across the event, including:
 |------|-----------------|
 | **Registration & Check-in** | Welcome attendees, distribute badges and materials |
 | **Session Support** | Assist speakers, manage room logistics, help with A/V setup |
-| **Wayfinding** | Guide attendees around Station F, answer questions |
+| **Wayfinding** | Guide attendees around STATION F, answer questions |
 | **Stage Coordination** | Help keep sessions on schedule across multiple tracks |
 | **Community Engagement** | Support networking activities, workshops, and demos |
 

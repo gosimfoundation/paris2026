@@ -31,7 +31,7 @@ Your specific cap will be communicated in your acceptance email.
 | **Accommodation** | May 4–6, 2026 (event dates + 1 night prior). Room rate and tax only. | Meals, mini-bar, phone charges, dry cleaning, bottled water |
 | **Ground Transport** | Not covered | All local transport in Paris |
 
-**Also not covered**: Visas · Meals · Daily commuting to Station F · Rental cars · Luxury rides · Conversion/bank fees · Personal travel days
+**Also not covered**: Visas · Meals · Daily commuting to STATION F · Rental cars · Luxury rides · Conversion/bank fees · Personal travel days
 
 ## General Rules
 

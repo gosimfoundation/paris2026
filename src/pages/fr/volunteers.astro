@@ -25,6 +25,7 @@ import Content from "markdown/VolunteersFr.md"
           <div class="volunteer-cta-wrap">
             <a class="volunteer-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSc62kJczw7lr-l0JAAbkabeIrrPPAD7OWyzwDopTD0L4HC6EQ/viewform" target="_blank">Inscription bénévole</a>
           </div>
+          <img src="/images/homepage/paris_2025_crowd2.png" alt="GOSIM Paris 2025" class="volunteer-photo" />
           <Content />
         </div>
       </div>
@@ -49,6 +50,22 @@ import Content from "markdown/VolunteersFr.md"
     cursor: pointer;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  }
+  .col-markdown {
+    display: block !important;
+  }
+  .volunteer-photo {
+    float: right;
+    width: 45%;
+    margin: 0 0 1.5rem 1.5rem;
+    border-radius: 12px;
+  }
+  @media (max-width: 600px) {
+    .volunteer-photo {
+      float: none;
+      width: 100%;
+      margin: 0 0 1.5rem 0;
+    }
   }
   .volunteer-cta:hover {
     background: #333;

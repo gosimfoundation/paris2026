@@ -31,7 +31,7 @@ Votre plafond spécifique sera communiqué dans votre e-mail d'acceptation.
 | **Hébergement** | 4–6 mai 2026 (dates de l'événement + 1 nuit avant). Tarif chambre et taxes uniquement. | Repas, minibar, frais téléphoniques, nettoyage à sec, eau en bouteille |
 | **Transport terrestre** | Non couvert | Tous les transports locaux à Paris |
 
-**Également non couvert** : Visas · Repas · Trajets quotidiens vers Station F · Location de voiture · Transport de luxe · Frais de conversion/bancaires · Frais personnels hors événement
+**Également non couvert** : Visas · Repas · Trajets quotidiens vers STATION F · Location de voiture · Transport de luxe · Frais de conversion/bancaires · Frais personnels hors événement
 
 ## Règles générales
 

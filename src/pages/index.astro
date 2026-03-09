@@ -280,8 +280,9 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
     highlightsTitle="Spotlight & Hackathon"
     highlights={[
       {
-        title: "GOSIM Spotlight Demo",
+        title: "GOSIM Spotlight 2026: Frontier Creators",
         text: "Say goodbye to pure slide decks and welcome the ultimate showdown in the era of \"AI Pragmatism\"! The GOSIM Spotlight Demo will handpick the world's most commercially promising open-source AI generative projects for hardcore, live on-stage demonstrations. Selected creators will not only receive full travel sponsorships to fly to Paris but will also pitch directly to global top-tier investors and tech visionaries, claiming their open-source spotlight moment.",
+        link: "https://spotlight.gosim.org/paris2026/",
       },
       {
         title: "Robotics Hackathon",
@@ -292,6 +293,48 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
 
   <Marquee />
+
+  <Timeline
+    todayLabel="Today"
+    events={[
+      {
+        date: "Feb 12",
+        title: "CFP submission opens",
+        isoDate: "2026-02-12",
+        type: "cfp",
+      },
+      {
+        date: "Mar 10",
+        title: "Spotlight: Frontier Creators applications open",
+        isoDate: "2026-03-10",
+        type: "spotlight",
+      },
+      {
+        date: "Mar 31",
+        title: "CFP submission closes",
+        isoDate: "2026-03-31",
+        type: "cfp",
+      },
+      {
+        date: "Apr 10",
+        title: "Spotlight: Frontier Creators applications close",
+        isoDate: "2026-04-10",
+        type: "spotlight",
+      },
+      {
+        date: "Apr 15",
+        title: "Spotlight: Frontier Creators candidates announced",
+        isoDate: "2026-04-15",
+        type: "spotlight",
+      },
+      {
+        date: "May 5-6",
+        title: "GOSIM Paris 2026",
+        isoDate: "2026-05-05",
+        type: "event",
+      },
+    ]}
+  />
 
   <TextAndImageReverse
     id="proposals"
@@ -307,25 +350,20 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
       openInNewTab: true,
     }}
   />
-  <Timeline
-    events={[
-      {
-        date: "February 2026",
-        title: "Call for Proposals opens",
-      },
-      {
-        date: "March 2026",
-        title: "Call for Proposals closes",
-      },
-      {
-        date: "May 5, 2026",
-        title: "GOSIM Paris kicks off!",
-      },
-      {
-        date: "May 6, 2026",
-        title: "GOSIM Paris concludes",
-      },
-    ]}
+
+  <TextAndImage
+    id="spotlight"
+    title="GOSIM Spotlight 2026: Frontier Creators"
+    text="This platform celebrates creators pushing boundaries at the intersection of AI and creativity. Whether you're building products, systems, code, research, prototypes, or artistic works — we welcome submissions from developers, artists, researchers, and entrepreneurs. An independent jury will select 15-20 projects to present live in Paris. Selected creators receive global visibility, travel support, mentorship, and connections with frontier creators worldwide."
+    image={SpotlightBlue}
+    imageAlt="Gosim Spotlight badge — previous design, new design coming soon"
+    dataBgSection="light"
+    dataThemeSection="light"
+    ctaButton={{
+      text: "Apply or Nominate Now",
+      link: "https://spotlight.gosim.org/paris2026/",
+      openInNewTab: true,
+    }}
   />
 
   <!-- <Cards
@@ -417,9 +455,9 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 
   <VenueInfo
     subtitle="The Venue"
-    title="Station F"
+    title="STATION F"
     location="5 Parv. Alan Turing, 75013 Paris, France"
-    text="Station F in Paris is the world's largest startup campus, housing over 1,000 startups and numerous tech programs. Renowned for fostering AI innovation, Station F hosts specialized accelerators and dedicated spaces that bring together cutting-edge AI startups, researchers, and corporate partners, fueling collaboration, groundbreaking projects, and rapid growth in artificial intelligence."
+    text="STATION F in Paris is the world's largest startup campus, housing over 1,000 startups and numerous tech programs. Renowned for fostering AI innovation, STATION F hosts specialized accelerators and dedicated spaces that bring together cutting-edge AI startups, researchers, and corporate partners, fueling collaboration, groundbreaking projects, and rapid growth in artificial intelligence."
     image="/images/homepage/station-f.jpg"
     ctaButton={{
       text: "Learn More",
@@ -427,21 +465,6 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
       openInNewTab: true,
     }}
   />
-
-  <!-- <TextAndImage
-    id="spotlight"
-    title="GOSIM AI for Human Spotlight"
-    text="Towards a Symbiotic Future of Ethical and Creative AI: What if AI wasn't just built to serve, but to co-create with us? AI for Human Spotlight is an international showcase for projects that explore how generative AI can foster empathy, shared creativity, and ethical coexistence."
-    image={SpotlightBlue}
-    imageAlt="Gosim Spotlight badge"
-    dataBgSection="light"
-    dataThemeSection="light"
-    ctaButton={{
-      text: "Apply or Nominate Now",
-      link: "https://spotlight.gosim.org/",
-      openInNewTab: true,
-    }}
-  /> -->
 
   <Testimonials
     embedUrns={[

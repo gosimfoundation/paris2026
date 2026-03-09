@@ -75,6 +75,9 @@ const {
                 alt={imageAlt}
                 class="hexbadge"
               />
+              {imageAlt.includes("previous design") && (
+                <p class="badge-caption">Previous design displayed, new design coming soon</p>
+              )}
             </div>
           </div>
         )
@@ -82,3 +85,12 @@ const {
     </div>
   </div>
 </section>
+<style>
+  .badge-caption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(28, 29, 36, 0.4);
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+</style>

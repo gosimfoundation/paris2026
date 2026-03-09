@@ -840,6 +840,24 @@ footer {
    color: #1a1a1a;
 }
 
+/* Spotlight sections: compact layout */
+.spotlight-section {
+   padding-top: calc(var(--section-padding) * 0.65);
+   padding-bottom: calc(var(--section-padding) * 0.65);
+}
+
+.section-register-gosim.spotlight-section .row {
+   min-height: auto;
+}
+
+.spotlight-section .col {
+   gap: calc(var(--row-gap) * 0.4);
+}
+
+.spotlight-section .row.grid {
+   gap: var(--col-gap);
+}
+
 /* CFP section button: primary blue bg with white text */
 .spotlight-section .btn.primary .btn-content.duplicate .btn-fill {
    background-color: var(--color-primary);
@@ -1054,7 +1072,7 @@ footer {
 /* ------------------------- Section - Home Sponsors -------------------------------------------------- */
 
 .section-home-sponsors {
-   padding-top: calc(var(--section-padding) * 2);
+   padding-top: calc(var(--section-padding) * 0.65);
 }
 
 .section-home-sponsors .row.grid {
@@ -1141,7 +1159,7 @@ footer {
 
 .section-big-image figure::before {
    content: "";
-   padding-top: 70vh;
+   padding-top: min(350px, 30vw);
    display: block;
 }
 

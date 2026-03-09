@@ -182,24 +182,21 @@ for (const track of [...day1Tracks, ...day2Tracks]) {
               { from: "#7a8a9e", to: "#b8c8d8" },  // Silver metallic
             ];
             const c = colors[i % colors.length];
-            const inner = (
-              <div class="highlight-outer">
-                <div class="highlight-inner">
-                  <div class="highlight-icon" set:html={icons[i % icons.length]} />
-                  <span class="highlight-title">{item.title}{item.link && <span class="highlight-link-arrow">&rarr;</span>}</span>
-                  <div class="highlight-desc-wrap">
-                    <p class="highlight-desc">{item.text}</p>
+            const cardClass = `highlight-card animate-slide-up`;
+            const cardStyle = `--stagger: ${i}; --hl-from: ${c.from}; --hl-to: ${c.to};`;
+            return (
+              <div class={cardClass} style={cardStyle}>
+                <div class="highlight-outer">
+                  <div class="highlight-inner">
+                    <div class="highlight-icon" set:html={icons[i % icons.length]} />
+                    <span class="highlight-title">{item.link ? <a href={item.link} class="highlight-title-link" target={item.link.startsWith("http") ? "_blank" : undefined} rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined} onclick="event.stopPropagation();">{item.title} <span class="highlight-link-arrow">&rarr;</span></a> : item.title}</span>
+                    <div class="highlight-desc-wrap">
+                      <p class="highlight-desc">{item.text}</p>
+                    </div>
+                    <span class="highlight-chevron"></span>
                   </div>
-                  <span class="highlight-chevron"></span>
                 </div>
               </div>
-            );
-            const cardClass = `highlight-card animate-slide-up${item.link ? ' highlight-card-link' : ''}`;
-            const cardStyle = `--stagger: ${i}; --hl-from: ${c.from}; --hl-to: ${c.to};`;
-            return item.link ? (
-              <a href={item.link} class={cardClass} style={cardStyle}>{inner}</a>
-            ) : (
-              <div class={cardClass} style={cardStyle}>{inner}</div>
             );
           })}
         </div>
@@ -257,7 +254,7 @@ for (const track of [...day1Tracks, ...day2Tracks]) {
 <style>
   .section-conference-tracks {
     padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) * 0.5);
     position: relative;
     overflow: hidden;
     background: var(--color-lightgray, #E8EEF4);
@@ -598,8 +595,8 @@ for (const track of [...day1Tracks, ...day2Tracks]) {
   /* ---- Highlights (Spotlight & Hackathon) ---- */
 
   .highlights-section {
-    margin-top: 3.5rem;
-    padding-top: 3rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
     border-top: 1px solid rgba(45, 78, 156, 0.12);
     text-align: center;
   }
@@ -734,20 +731,26 @@ for (const track of [...day1Tracks, ...day2Tracks]) {
     border-color: rgba(28, 29, 36, 0.5);
   }
 
-  .highlight-card-link {
-    cursor: pointer;
+  .highlight-title-link {
     text-decoration: none;
     color: inherit;
+    transition: color 0.2s ease;
+  }
+
+  .highlight-title-link:hover {
+    color: var(--hl-from);
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 
   .highlight-link-arrow {
-    margin-left: 0.4em;
+    margin-left: 0.3em;
     opacity: 0.4;
     transition: opacity 0.2s ease, transform 0.2s ease;
     display: inline-block;
   }
 
-  .highlight-card:hover .highlight-link-arrow {
+  .highlight-title-link:hover .highlight-link-arrow {
     opacity: 1;
     transform: translateX(2px);
   }

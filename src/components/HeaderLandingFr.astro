@@ -32,6 +32,20 @@ const links = [
     link: `${anchorBase}#venue`,
   },
   {
+    text: "Événements associés",
+    subLinks: [
+      {
+        text: "Spotlight: Frontier Creators",
+        link: "https://spotlight.gosim.org/paris2026/",
+        openInNewTab: true,
+      },
+      {
+        text: "Robotics Hackathon",
+        link: "/unaite-hackathon/",
+      },
+    ],
+  },
+  {
     text: "Bénévoles",
     link: "/fr/volunteers/",
   },
@@ -87,7 +101,7 @@ const links = [
                     </svg>
                   </button>
                 ) : (
-                  <a class="link-click" href={loop.link}>
+                  <a class="link-click" href={loop.link} target={loop.openInNewTab ? "_blank" : undefined} rel={loop.openInNewTab ? "noopener noreferrer" : undefined}>
                     <span>{loop.text}</span>
                   </a>
                 )}
@@ -202,7 +216,7 @@ const links = [
                     </svg>
                   </button>
                 ) : (
-                  <a class="link-click" href={loop.link}>
+                  <a class="link-click" href={loop.link} target={loop.openInNewTab ? "_blank" : undefined} rel={loop.openInNewTab ? "noopener noreferrer" : undefined}>
                     <span>{loop.text}</span>
                   </a>
                 )}

@@ -281,8 +281,9 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
     highlightsTitle="Spotlight & Hackathon"
     highlights={[
       {
-        title: "GOSIM Spotlight Demo",
+        title: "GOSIM Spotlight 2026: Frontier Creators",
         text: "告别纯粹的 PPT 演示，迎接\u201cAI 务实主义（ROI导向）\u201d时代的巅峰对决，GOSIM Spotlight Demo 将从全球精选最具商业潜力的开源 AI 生成式爆款项目进行硬核实机演示。脱颖而出的创作者不仅将获得全额旅行赞助空降巴黎，更将直面全球顶尖投资人与技术大牛，开启属于你的开源高光时刻。",
+        link: "https://spotlight.gosim.org/paris2026/",
       },
       {
         title: "机器人黑客松",
@@ -293,6 +294,48 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
 
   <Marquee />
+
+  <Timeline
+    todayLabel="今天"
+    events={[
+      {
+        date: "2月12日",
+        title: "演讲提案征集开放",
+        isoDate: "2026-02-12",
+        type: "cfp",
+      },
+      {
+        date: "3月10日",
+        title: "Spotlight: Frontier Creators 申请开放",
+        isoDate: "2026-03-10",
+        type: "spotlight",
+      },
+      {
+        date: "3月31日",
+        title: "演讲提案征集截止",
+        isoDate: "2026-03-31",
+        type: "cfp",
+      },
+      {
+        date: "4月10日",
+        title: "Spotlight: Frontier Creators 申请截止",
+        isoDate: "2026-04-10",
+        type: "spotlight",
+      },
+      {
+        date: "4月15日",
+        title: "Spotlight: Frontier Creators 候选人公布",
+        isoDate: "2026-04-15",
+        type: "spotlight",
+      },
+      {
+        date: "5月5-6日",
+        title: "GOSIM Paris 2026",
+        isoDate: "2026-05-05",
+        type: "event",
+      },
+    ]}
+  />
 
   <TextAndImageReverse
     id="proposals"
@@ -308,25 +351,20 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
       openInNewTab: true,
     }}
   />
-  <Timeline
-    events={[
-      {
-        date: "2026年2月",
-        title: "演讲提案征集开放",
-      },
-      {
-        date: "2026年3月",
-        title: "演讲提案征集截止",
-      },
-      {
-        date: "2026年5月5日",
-        title: "GOSIM Paris 开幕！",
-      },
-      {
-        date: "2026年5月6日",
-        title: "GOSIM Paris 闭幕",
-      },
-    ]}
+
+  <TextAndImage
+    id="spotlight"
+    title="GOSIM Spotlight 2026：前沿创造者"
+    text="这个平台致敬在AI与创意交汇处推动边界的创造者。无论你在构建产品、系统、代码、研究、原型还是艺术作品，我们欢迎来自开发者、艺术家、研究者和创业者的提交。独立评审团将从中选出15-20个项目在巴黎现场展示。入选创作者将获得全球曝光、差旅支持、导师指导，以及与全球前沿创造者的交流机会。"
+    image={SpotlightBlue}
+    imageAlt="Gosim Spotlight badge — previous design, new design coming soon"
+    dataBgSection="light"
+    dataThemeSection="light"
+    ctaButton={{
+      text: "立即申请或提名",
+      link: "https://spotlight.gosim.org/paris2026/",
+      openInNewTab: true,
+    }}
   />
 
   <!-- <Cards
@@ -421,9 +459,9 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 
   <VenueInfo
     subtitle="会议地点"
-    title="Station F"
+    title="STATION F"
     location="5 Parv. Alan Turing, 75013 巴黎, 法国"
-    text="巴黎Station F是世界上最大的创业园区，拥有1000多家初创企业和众多科技项目。Station F以培育人工智能创新而闻名，拥有专业加速器和专用空间，汇集了尖端人工智能初创企业、研究人员和企业合作伙伴，推动协作、开创性项目和人工智能的快速发展。"
+    text="巴黎STATION F是世界上最大的创业园区，拥有1000多家初创企业和众多科技项目。STATION F以培育人工智能创新而闻名，拥有专业加速器和专用空间，汇集了尖端人工智能初创企业、研究人员和企业合作伙伴，推动协作、开创性项目和人工智能的快速发展。"
     image="/images/homepage/station-f.jpg"
     ctaButton={{
       text: "了解更多",
@@ -431,21 +469,6 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
       openInNewTab: true,
     }}
   />
-
-  <!-- <TextAndImage
-    id="spotlight"
-    title="GOSIM AI for Human Spotlight"
-    text="迈向道德与创意AI的共生未来：如果AI不仅仅是为了服务，而是与我们共同创造呢？AI for Human Spotlight是一个国际展示平台，展示探索生成式AI如何培养同理心、共享创造力和道德共存的项目。"
-    image={SpotlightBlue}
-    imageAlt="Gosim Spotlight badge"
-    dataBgSection="light"
-    dataThemeSection="light"
-    ctaButton={{
-      text: "立即申请或提名 - 8月18日 截止",
-      link: "https://spotlight.gosim.org",
-      openInNewTab: true,
-    }}
-  /> -->
 
   <Testimonials
     embedUrns={[

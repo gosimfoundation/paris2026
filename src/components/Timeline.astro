@@ -3,29 +3,26 @@ export interface Props {
   events: Array<{
     date: string;
     title: string;
+    isoDate: string;
+    type?: "cfp" | "spotlight" | "event";
   }>;
+  todayLabel?: string;
 }
 
 const {
-  events = [
-    {
-      date: "26 April",
-      title: "Submit your entries",
-    },
-    {
-      date: "26 April - 4 May",
-      title: "Judging",
-    },
-    {
-      date: "10 May",
-      title: "Nominations announced",
-    },
-    {
-      date: "29 May",
-      title: "Winners announced on stage",
-    },
-  ],
+  events = [],
+  todayLabel = "Today",
 } = Astro.props;
+
+// Calculate proportional positions (0–100%)
+const timestamps = events.map((e) => new Date(e.isoDate).getTime());
+const minTime = Math.min(...timestamps);
+const maxTime = Math.max(...timestamps);
+const range = maxTime - minTime || 1;
+const positions = timestamps.map((t) => ((t - minTime) / range) * 100);
+
+// Pass range data to client script
+const isoDateList = events.map((e) => e.isoDate);
 ---
 
 <section
@@ -37,172 +34,211 @@ const {
 >
   <div class="container">
     <div class="row">
-      <div class="timeline-section">
-        <div class="timeline-container">
-          {
-            events.map((event, index) => (
-              <div
-                class={`timeline-item ${index % 2 === 0 ? "top" : "bottom"}`}
-              >
-                <div class="timeline-dot" />
-                <div class="timeline-date">
-                  <h4>{event.date}</h4>
-                  <p>{event.title}</p>
-                </div>
-              </div>
-            ))
-          }
-        </div>
+    <div class="tl-wrap">
+      <!-- line -->
+      <div class="tl-line"></div>
+
+      <!-- today (positioned by client JS) -->
+      <div class="tl-today" style="display:none"
+        data-min={isoDateList[0]}
+        data-max={isoDateList[isoDateList.length - 1]}
+      >
+        <span class="tl-today-text">{todayLabel}</span>
+        <div class="tl-today-needle"></div>
       </div>
+
+      <!-- events -->
+      {events.map((ev, i) => {
+        const side = i % 2 === 0 ? "above" : "below";
+        const t = ev.type || "event";
+        return (
+          <div class={`tl-ev tl-ev--${side} tl-ev--${t}`} style={`left:${positions[i]}%`}>
+            <div class="tl-dot"></div>
+            <div class="tl-info">
+              <h4>{ev.date}</h4>
+              <p>{ev.title}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
     </div>
   </div>
 </section>
+
 <style lang="scss">
   .section-timeline {
-    padding-top: 0px !important;
-  }
-  .timeline-title {
-    padding-bottom: 60px;
-  }
-  .timeline-section {
-    width: 100%;
-    padding: var(--section-padding) 0;
+    padding-top: calc(var(--section-padding) * 0.5) !important;
+    padding-bottom: 0 !important;
   }
 
-  .timeline-container {
+  /* wrapper — tall enough for labels above & below */
+  .tl-wrap {
     position: relative;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 12px;
-      right: 12px;
-      height: 5px;
-      background: var(--color-primary);
-      border-radius: 3px;
-      transform: translateY(-50%);
-    }
+    width: 100%;
+    height: 280px;       /* fixed height so abs children have space */
   }
 
-  .timeline-item {
-    flex: 1;
+  /* horizontal line at vertical center */
+  .tl-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #1a1a1a;
+    border-radius: 2px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  /* each event pin */
+  .tl-ev {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);  /* vertically center the dot on the line */
+    z-index: 2;
+  }
+
+  .tl-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -10px;   /* center dot on left edge */
+  }
+
+  .tl-ev--cfp .tl-dot      { background: var(--color-primary); }
+  .tl-ev--spotlight .tl-dot { background: var(--color-secondary); }
+  .tl-ev--event .tl-dot     { background: #1a1a1a; }
+
+  /* label block */
+  .tl-info {
+    position: absolute;
+    left: -10px;
+    white-space: nowrap;
+
+    h4 { margin: 0; padding-bottom: 4px; }
+    p  { margin: 0; }
+  }
+
+  .tl-ev--cfp .tl-info      { h4, p { color: var(--color-primary); } }
+  .tl-ev--spotlight .tl-info { h4, p { color: var(--color-secondary); } }
+  .tl-ev--event .tl-info     { h4, p { color: #1a1a1a; } }
+
+  /* above: label sits above dot */
+  .tl-ev--above .tl-info {
+    bottom: 28px;       /* 20px dot + 8px gap */
+  }
+  /* below: label sits below dot */
+  .tl-ev--below .tl-info {
+    top: 28px;
+  }
+
+  /* ---- today marker ---- */
+  .tl-today {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 3;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    position: relative;
-    max-width: 25%;
-
-    &:first-child {
-      .timeline-dot {
-        margin-left: 0;
-      }
-      .timeline-date {
-        left: 0;
-      }
-      &.top .timeline-date,
-      &.bottom .timeline-date {
-        left: 0;
-      }
-    }
-
-    &:last-child {
-      padding-right: 0;
-    }
-
-    &.top .timeline-date {
-      bottom: calc(100% + 2rem);
-      top: auto;
-      text-align: left;
-      left: -12px;
-    }
-
-    &.bottom .timeline-date {
-      top: calc(100% + 2rem);
-      bottom: auto;
-      text-align: left;
-      left: -12px;
-    }
+    align-items: center;
+    pointer-events: none;
+  }
+  .tl-today-needle {
+    width: 2px;
+    flex: 1;
+    background: #e74c3c;
+    border-radius: 1px;
+  }
+  .tl-today-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #e74c3c;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding-bottom: 4px;
   }
 
-  .timeline-dot {
-    width: 24px;
-    height: 24px;
-    background: var(--color-primary);
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-    margin-left: -12px;
+  .tl-today[style*="display:none"] {
+    display: none !important;
   }
 
-  .timeline-date {
-    position: absolute;
-    min-width: 200px;
-
-    h4 {
-      padding-bottom: 12px;
-    }
-  }
-
+  /* ---- mobile: vertical layout ---- */
   @media screen and (max-width: 768px) {
-    .timeline-container {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 4rem;
-      padding-left: 12px;
-
-      &::before {
-        left: 12px;
-        width: 2px;
-        height: 100%;
-        top: 0;
-        transform: none;
-      }
-    }
-    .timeline-title {
-      padding-bottom: 0px;
-    }
-    .timeline-item {
-      padding-left: 0;
-      padding-right: 0;
-      max-width: 100%;
-      width: 100%;
-      align-items: flex-start;
-
-      &.top .timeline-date,
-      &.bottom .timeline-date {
-        position: relative;
-        top: 0;
-        bottom: 0;
-        text-align: left;
-        left: 0;
-        padding-left: 36px;
-      }
-
-      &:first-child {
-        .timeline-date {
-          left: 0;
-        }
-      }
+    .tl-wrap {
+      height: auto;
+      padding-left: 2.5rem;
     }
 
-    .timeline-dot {
+    .tl-line {
+      top: 0;
+      left: 0;
+      right: auto;
+      width: 4px;
+      height: 100%;
+      transform: none;
+    }
+
+    .tl-ev {
+      position: relative;
+      top: auto;
+      left: auto !important;
+      transform: none;
+      padding: 1.5rem 0;
+    }
+
+    .tl-dot {
       position: absolute;
-      left: -11px;
-      margin-left: 0;
+      left: -2.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: -10px;
     }
 
-    .timeline-date {
-      margin: 0;
-      text-align: left;
-      min-width: 0;
-      width: 100%;
+    .tl-info {
+      position: relative !important;
+      left: 0 !important;
+      top: auto !important;
+      bottom: auto !important;
+      white-space: normal;
+    }
+
+    .tl-today {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      left: auto !important;
+      transform: none;
+      flex-direction: row;
+      padding: 1rem 0;
+      gap: 0.5rem;
+    }
+    .tl-today-needle {
+      width: 20px;
+      height: 2px;
+      flex: none;
     }
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const el = document.querySelector(".tl-today") as HTMLElement;
+    if (!el) return;
+
+    const minDate = new Date(el.dataset.min!).getTime();
+    const maxDate = new Date(el.dataset.max!).getTime();
+    const range = maxDate - minDate;
+    if (!range) return;
+
+    const now = Date.now();
+    const pct = ((now - minDate) / range) * 100;
+
+    if (pct >= 0 && pct <= 100) {
+      el.style.left = pct + "%";
+      el.style.display = "";
+    }
+  });
+</script>
