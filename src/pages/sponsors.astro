@@ -4,6 +4,7 @@ import Layout from "layouts/LayoutLanding.astro"
 import GetTickets from "components/GetTickets.astro"
 import HeroText from "components/HeroText.astro"
 import AllSponsors from "components/Sponsors.astro"
+import TextAndSponsors from "components/TextAndSponsors.astro"
 ---
 
 <Layout
@@ -19,6 +20,43 @@ import AllSponsors from "components/Sponsors.astro"
   />
 
   <AllSponsors />
+
+  <TextAndSponsors
+    id="sponsorship"
+    title="Sponsorship Opportunities"
+    text="Reach thousands of people in your target audience by becoming a supporting organization at GOSIM Paris 2026."
+    text2="*Previous GOSIM conference sponsors shown for illustration purposes only."
+    ctaButton={{
+      text: "Contact Us",
+      link: "mailto:sponsor@gosim.org",
+    }}
+    logos={[
+      {
+        image: "openwallet.png",
+        imageAlt: "OpenWallet logo",
+      },
+      {
+        image: "ajtis.jpg",
+        imageAlt: "AJTIS logo",
+      },
+      {
+        image: "aifc.png",
+        imageAlt: "AIFC logo",
+      },
+      {
+        image: "lf-gen-ai.png",
+        imageAlt: "Linux Foundation logo",
+      },
+      {
+        image: "eclipse-foundation.png",
+        imageAlt: "Eclipse Foundation logo",
+      },
+      {
+        image: "osi.png",
+        imageAlt: "Open Source Initiative logo",
+      },
+    ]}
+  />
 
   <GetTickets
     title="Grab your GOSIM Paris ticket"

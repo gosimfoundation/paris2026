@@ -21,7 +21,38 @@ const maxTime = Math.max(...timestamps);
 const range = maxTime - minTime || 1;
 const positions = timestamps.map((t) => ((t - minTime) / range) * 100);
 
-// Pass range data to client script
+// Calculate today's position
+const now = Date.now();
+const todayPct = ((now - minTime) / range) * 100;
+const showToday = todayPct >= 0 && todayPct <= 100;
+
+// Find where today falls among events (for mobile DOM order)
+const todayIso = new Date().toISOString().slice(0, 10);
+const todayInsertIndex = events.findIndex((e) => e.isoDate > todayIso);
+// -1 means today is after all events, so insert at end
+
+// Build ordered list of items (events + today marker) for rendering
+type TimelineItem =
+  | { kind: "event"; ev: (typeof events)[0]; index: number; side: string; type: string; position: number }
+  | { kind: "today" };
+
+const items: TimelineItem[] = [];
+let todayInserted = false;
+
+events.forEach((ev, i) => {
+  if (showToday && !todayInserted && todayInsertIndex === i) {
+    items.push({ kind: "today" });
+    todayInserted = true;
+  }
+  const side = i % 2 === 0 ? "above" : "below";
+  const t = ev.type || "event";
+  items.push({ kind: "event", ev, index: i, side, type: t, position: positions[i] });
+});
+
+if (showToday && !todayInserted) {
+  items.push({ kind: "today" });
+}
+
 const isoDateList = events.map((e) => e.isoDate);
 ---
 
@@ -38,25 +69,25 @@ const isoDateList = events.map((e) => e.isoDate);
       <!-- line -->
       <div class="tl-line"></div>
 
-      <!-- today (positioned by client JS) -->
-      <div class="tl-today" style="display:none"
-        data-min={isoDateList[0]}
-        data-max={isoDateList[isoDateList.length - 1]}
-      >
-        <span class="tl-today-text">{todayLabel}</span>
-        <div class="tl-today-needle"></div>
-      </div>
-
-      <!-- events -->
-      {events.map((ev, i) => {
-        const side = i % 2 === 0 ? "above" : "below";
-        const t = ev.type || "event";
+      {items.map((item) => {
+        if (item.kind === "today") {
+          return (
+            <div class="tl-today"
+              style={`left:${todayPct}%`}
+              data-min={isoDateList[0]}
+              data-max={isoDateList[isoDateList.length - 1]}
+            >
+              <span class="tl-today-text">{todayLabel}</span>
+              <div class="tl-today-needle"></div>
+            </div>
+          );
+        }
         return (
-          <div class={`tl-ev tl-ev--${side} tl-ev--${t}`} style={`left:${positions[i]}%`}>
+          <div class={`tl-ev tl-ev--${item.side} tl-ev--${item.type}`} style={`left:${item.position}%`}>
             <div class="tl-dot"></div>
             <div class="tl-info">
-              <h4>{ev.date}</h4>
-              <p>{ev.title}</p>
+              <h4>{item.ev.date}</h4>
+              <p>{item.ev.title}</p>
             </div>
           </div>
         );
@@ -107,8 +138,8 @@ const isoDateList = events.map((e) => e.isoDate);
     margin-left: -10px;   /* center dot on left edge */
   }
 
-  .tl-ev--cfp .tl-dot      { background: var(--color-primary); }
-  .tl-ev--spotlight .tl-dot { background: var(--color-secondary); }
+  .tl-ev--cfp .tl-dot      { background: #5e37d4; }
+  .tl-ev--spotlight .tl-dot { background: #078167; }
   .tl-ev--event .tl-dot     { background: #1a1a1a; }
 
   /* label block */
@@ -121,8 +152,8 @@ const isoDateList = events.map((e) => e.isoDate);
     p  { margin: 0; }
   }
 
-  .tl-ev--cfp .tl-info      { h4, p { color: var(--color-primary); } }
-  .tl-ev--spotlight .tl-info { h4, p { color: var(--color-secondary); } }
+  .tl-ev--cfp .tl-info      { h4, p { color: #5e37d4; } }
+  .tl-ev--spotlight .tl-info { h4, p { color: #078167; } }
   .tl-ev--event .tl-info     { h4, p { color: #1a1a1a; } }
 
   /* above: label sits above dot */
@@ -159,10 +190,6 @@ const isoDateList = events.map((e) => e.isoDate);
     text-transform: uppercase;
     letter-spacing: 0.04em;
     padding-bottom: 4px;
-  }
-
-  .tl-today[style*="display:none"] {
-    display: none !important;
   }
 
   /* ---- mobile: vertical layout ---- */
@@ -212,33 +239,16 @@ const isoDateList = events.map((e) => e.isoDate);
       left: auto !important;
       transform: none;
       flex-direction: row;
-      padding: 1rem 0;
-      gap: 0.5rem;
+      align-items: center;
+      padding: 0.75rem 0;
+      margin-left: -2.5rem;
+      padding-left: 2.5rem;
     }
     .tl-today-needle {
-      width: 20px;
-      height: 2px;
+      width: 24px;
+      height: 3px;
       flex: none;
+      border-radius: 2px;
     }
   }
 </style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const el = document.querySelector(".tl-today") as HTMLElement;
-    if (!el) return;
-
-    const minDate = new Date(el.dataset.min!).getTime();
-    const maxDate = new Date(el.dataset.max!).getTime();
-    const range = maxDate - minDate;
-    if (!range) return;
-
-    const now = Date.now();
-    const pct = ((now - minDate) / range) * 100;
-
-    if (pct >= 0 && pct <= 100) {
-      el.style.left = pct + "%";
-      el.style.display = "";
-    }
-  });
-</script>

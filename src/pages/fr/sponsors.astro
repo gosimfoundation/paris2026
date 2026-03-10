@@ -4,6 +4,7 @@ import Layout from "layouts/LayoutLandingFr.astro";
 import GetTickets from "components/GetTickets.astro";
 import HeroText from "components/HeroText.astro";
 import AllSponsors from "components/SponsorsFr.astro";
+import TextAndSponsors from "components/TextAndSponsors.astro";
 ---
 
 <Layout
@@ -19,6 +20,43 @@ import AllSponsors from "components/SponsorsFr.astro";
   />
 
   <AllSponsors />
+
+  <TextAndSponsors
+    id="sponsorship"
+    title="Opportunités de parrainage"
+    text="Touchez des milliers de personnes dans votre audience cible en devenant une organisation partenaire de GOSIM Paris 2026."
+    text2="*Les sponsors des précédentes conférences GOSIM sont présentés à titre indicatif uniquement."
+    ctaButton={{
+      text: "Contactez-nous",
+      link: "mailto:sponsor@gosim.org",
+    }}
+    logos={[
+      {
+        image: "openwallet.png",
+        imageAlt: "Logo OpenWallet",
+      },
+      {
+        image: "ajtis.jpg",
+        imageAlt: "Logo AJTIS",
+      },
+      {
+        image: "aifc.png",
+        imageAlt: "Logo AIFC",
+      },
+      {
+        image: "lf-gen-ai.png",
+        imageAlt: "Logo Linux Foundation",
+      },
+      {
+        image: "eclipse-foundation.png",
+        imageAlt: "Logo Eclipse Foundation",
+      },
+      {
+        image: "osi.png",
+        imageAlt: "Logo Open Source Initiative",
+      },
+    ]}
+  />
 
   <GetTickets
     title="Obtenez votre billet GOSIM Paris"

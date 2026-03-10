@@ -4,6 +4,7 @@ import Layout from "layouts/LayoutLandingZh.astro";
 import GetTickets from "components/GetTickets.astro";
 import HeroText from "components/HeroText.astro";
 import AllSponsors from "components/SponsorsZh.astro";
+import TextAndSponsors from "components/TextAndSponsors.astro";
 ---
 
 <Layout
@@ -19,6 +20,43 @@ import AllSponsors from "components/SponsorsZh.astro";
   />
 
   <AllSponsors />
+
+  <TextAndSponsors
+    id="sponsorship"
+    title="赞助机会"
+    text="通过成为GOSIM Paris 2026的合作伙伴，接触到数千名目标受众。"
+    text2="*仅展示往届GOSIM会议赞助商，仅供参考。"
+    ctaButton={{
+      text: "联系我们",
+      link: "mailto:sponsor@gosim.org",
+    }}
+    logos={[
+      {
+        image: "openwallet.png",
+        imageAlt: "OpenWallet logo",
+      },
+      {
+        image: "ajtis.jpg",
+        imageAlt: "AJTIS logo",
+      },
+      {
+        image: "aifc.png",
+        imageAlt: "AIFC logo",
+      },
+      {
+        image: "lf-gen-ai.png",
+        imageAlt: "Linux Foundation logo",
+      },
+      {
+        image: "eclipse-foundation.png",
+        imageAlt: "Eclipse Foundation logo",
+      },
+      {
+        image: "osi.png",
+        imageAlt: "Open Source Initiative logo",
+      },
+    ]}
+  />
 
   <GetTickets
     title="获取您的GOSIM Paris门票"

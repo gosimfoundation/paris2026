@@ -218,7 +218,7 @@
 /* ------------------------- Default Header -------------------------------------------------- */
 
 .default-header {
-   padding-top: calc(var(--section-padding) * 2.5);
+   padding-top: calc(var(--section-padding) * 1.5);
    padding-bottom: 0;
    z-index: 2;
 }
@@ -232,7 +232,7 @@
 .default-header .row {
    --columns: 2;
    position: relative;
-   padding-bottom: calc(var(--row-gap) * 2);
+   padding-bottom: var(--row-gap);
 }
 
 .default-header .col-text .col-row {
@@ -264,9 +264,9 @@
    }
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 600px) {
    .default-header {
-      padding-top: calc(var(--section-padding) * 2);
+      padding-top: calc(var(--section-padding) * 1.2);
    }
 }
 
@@ -925,12 +925,12 @@
 /* Active */
 
 .filter-group .single-filter[data-filter-status="active"] {
-   background-color: var(--color-primary) !important;
-   border: 1px solid var(--color-primary) !important;
+   background-color: var(--color-dark) !important;
+   border: 1px solid var(--color-dark) !important;
 }
 
 .filter-group .single-filter[data-filter-status="active"] span {
-  color: var(--color-dark) !important;
+  color: #fff !important;
 }
 
 @media screen and (max-width: 540px) {
@@ -1329,7 +1329,7 @@
 .single-partners-card::before {
    content: "";
    display: block;
-   padding-top: 100%;
+   padding-top: 60%;
 }
 
 .single-partners-card .boxed-logo {
