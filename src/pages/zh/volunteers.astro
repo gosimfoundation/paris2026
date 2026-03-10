@@ -1,6 +1,7 @@
 ---
 // Components
 import Layout from "layouts/LayoutLandingZh.astro"
+import HeroText from "components/HeroText.astro"
 import Content from "markdown/VolunteersZh.md"
 ---
 
@@ -10,67 +11,128 @@ import Content from "markdown/VolunteersZh.md"
   navBackground="light"
   pageTransitionName="Volunteers"
 >
+  <HeroText
+    title="志愿者"
+    lightgray
+  >
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSc62kJczw7lr-l0JAAbkabeIrrPPAD7OWyzwDopTD0L4HC6EQ/viewform"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="volunteer-cta"
+    >志愿者报名</a>
+  </HeroText>
+
   <section
-    class="section speaker-detail-header"
+    class="section volunteer-section"
     data-theme-section="light"
     data-bg-section="lightgray"
   >
-    <div class="gradient-circle-wrap">
-      <div class="gradient-circle"></div>
-    </div>
     <div class="container">
-      <div class="row">
-        <div class="col-markdown">
-          <h1>加入 GOSIM Paris 2026 志愿者团队</h1>
-          <div class="volunteer-cta-wrap">
-            <a class="volunteer-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSc62kJczw7lr-l0JAAbkabeIrrPPAD7OWyzwDopTD0L4HC6EQ/viewform" target="_blank">志愿者报名</a>
-          </div>
-          <img src="/images/homepage/paris_2025_crowd2.png" alt="GOSIM Paris 2025" class="volunteer-photo" />
-          <Content />
-        </div>
+      <div class="volunteer-body">
+        <img src="/images/homepage/paris_2025_crowd2.png" alt="GOSIM Paris 2025" class="volunteer-photo" />
+        <Content />
+        <div style="clear: both;"></div>
       </div>
     </div>
   </section>
 </Layout>
 
-<style>
-  .volunteer-cta-wrap {
-    margin: 0.5rem 0 2rem;
+<style is:global>
+  .volunteer-section {
+    padding-top: var(--row-gap) !important;
   }
+
+  .default-header .col-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .default-header .col-text .col-row {
+    max-width: none;
+    text-align: center;
+  }
+
   .volunteer-cta {
     display: inline-block;
-    padding: 0.7rem 1.8rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #333 !important;
+    padding: 0.9rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a !important;
     background: transparent;
-    border: 2px solid #333;
+    border: 2px solid #1a1a1a;
     border-radius: 50px;
     text-decoration: none !important;
-    cursor: pointer;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    animation: pulse 2s ease-in-out infinite;
   }
-  .col-markdown {
-    display: block !important;
+  .volunteer-cta:hover {
+    background: #1a1a1a;
+    color: #fff !important;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    animation: none;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(26, 26, 26, 0.3); }
+    50% { box-shadow: 0 0 0 10px rgba(26, 26, 26, 0); }
+  }
+
+  .volunteer-body {
+    width: 100%;
   }
   .volunteer-photo {
     float: right;
-    width: 45%;
-    margin: 0 0 1.5rem 1.5rem;
+    width: 35%;
+    margin: 0.25rem 0 1rem 2rem;
     border-radius: 12px;
   }
+
+  .volunteer-body h2 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .volunteer-body h2 ~ h2 {
+    clear: both;
+  }
+  .volunteer-body p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .volunteer-body ul {
+    list-style: disc;
+    padding-left: 1.5em;
+    margin-bottom: 1.5rem;
+  }
+  .volunteer-body ul li {
+    margin-bottom: 0.4rem;
+    line-height: 1.6;
+  }
+  .volunteer-body ul li::before {
+    display: none !important;
+  }
+  .volunteer-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  .volunteer-body th,
+  .volunteer-body td {
+    border: 1px solid #ccc;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  .volunteer-body th {
+    background: rgba(0,0,0,0.05);
+    font-weight: 700;
+  }
+
   @media (max-width: 600px) {
     .volunteer-photo {
       float: none;
       width: 100%;
       margin: 0 0 1.5rem 0;
     }
-  }
-  .volunteer-cta:hover {
-    background: #333;
-    color: #fff !important;
-    transform: translateY(-1px);
-    box-shadow: 0 5px 14px rgba(0,0,0,0.3);
   }
 </style>

@@ -6,6 +6,8 @@ interface Props {
 }
 
 const { title, text, lightgray } = Astro.props;
+const hasSlot = Astro.slots.has('default');
+const hasRightCol = text || hasSlot;
 ---
 
 <section
@@ -19,7 +21,7 @@ const { title, text, lightgray } = Astro.props;
     </div>
 
     <div class="container">
-        <div class={`row ${text ? 'grid' : ''}`}>
+        <div class={`row ${hasRightCol ? 'grid' : ''}`}>
             <div class="border-bottom" />
 
             <div class="col col-title">
@@ -28,10 +30,11 @@ const { title, text, lightgray } = Astro.props;
                 </div>
             </div>
 
-            {text &&
+            {hasRightCol &&
                 <div class="col col-text">
                     <div class="col-row styled-content">
-                        <p>{text}</p>
+                        {text && <p>{text}</p>}
+                        <slot />
                     </div>
                 </div>
             }

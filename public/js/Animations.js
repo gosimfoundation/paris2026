@@ -101,7 +101,7 @@ function initLenis() {
    const currentScrollY = window.scrollY || document.documentElement.scrollTop;
 
    scroll = new Lenis({
-      duration: 1
+      duration: 0.8
    });
 
    scroll.on('scroll', ScrollTrigger.update);
