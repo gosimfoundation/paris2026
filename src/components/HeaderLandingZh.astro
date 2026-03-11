@@ -8,6 +8,8 @@ const hasNotificationBar = false; // Set this to false when NotificationBar is r
 
 const slug = Astro.url.pathname;
 const isZhPath = slug.startsWith("/zh/");
+const isFrPath = slug.startsWith("/fr/");
+const basePath = isZhPath ? slug.replace(/^\/zh/, "") : isFrPath ? slug.replace(/^\/fr/, "") : slug;
 const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/";
 const anchorBase = isHomepage ? "" : "/zh/";
 const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`;
@@ -47,6 +49,19 @@ const links = [
   {
     text: "志愿者",
     link: "/zh/volunteers/",
+  },
+  {
+    text: "出行相关",
+    subLinks: [
+      {
+        text: "会议地点",
+        link: "/zh/venue/",
+      },
+{
+        text: "开源旅行基金",
+        link: "/zh/travel-fund-policy/",
+      },
+    ],
   },
 ];
 ---
@@ -119,19 +134,19 @@ const links = [
             <div class="language-mobile-menu">
               <a
                 class="language-item"
-                href={slug.replace("/zh", "") || "/"}
+                href={basePath}
                 onclick="localStorage.setItem('language_preference', 'en'); sessionStorage.setItem('language_just_switched', 'true');"
                 >English</a
               >
               <a
                 class="language-item active"
-                href={slug}
+                href={`/zh${basePath}`}
                 onclick="localStorage.setItem('language_preference', 'zh')"
                 >中文</a
               >
               <a
                 class="language-item"
-                href={slug.replace("/zh", "/fr") || "/fr/"}
+                href={`/fr${basePath}`}
                 onclick="localStorage.setItem('language_preference', 'fr'); sessionStorage.setItem('language_just_switched', 'true');"
                 >Français</a
               >
@@ -256,18 +271,18 @@ const links = [
           </button>
           <div class="language-dropdown-content">
             <a
-              href={slug.replace("/zh", "") || "/"}
+              href={basePath}
               onclick="localStorage.setItem('language_preference', 'en'); sessionStorage.setItem('language_just_switched', 'true');"
               >English</a
             >
             <a
-              href={slug}
+              href={`/zh${basePath}`}
               class="active"
               onclick="localStorage.setItem('language_preference', 'zh')"
               >中文</a
             >
             <a
-              href={slug.replace("/zh", "/fr") || "/fr/"}
+              href={`/fr${basePath}`}
               onclick="localStorage.setItem('language_preference', 'fr'); sessionStorage.setItem('language_just_switched', 'true');"
               >Français</a
             >

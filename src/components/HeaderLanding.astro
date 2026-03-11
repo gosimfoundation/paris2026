@@ -42,11 +42,25 @@ const rawLinks = [
     text: "Volunteers",
     link: "/volunteers/",
   },
+  {
+    text: "Travel Related",
+    subLinks: [
+      {
+        text: "Venue",
+        link: "/venue/",
+      },
+{
+        text: "Travel Fund Policy",
+        link: "/travel-fund-policy/",
+      },
+    ],
+  },
 ]
 
 const slug = Astro.url.pathname
 const isZhPath = slug.startsWith("/zh/")
 const isFrPath = slug.startsWith("/fr/")
+const basePath = isZhPath ? slug.replace(/^\/zh/, "") : isFrPath ? slug.replace(/^\/fr/, "") : slug
 const switchPath = isZhPath ? slug.replace("/zh/", "/") : `/zh${slug}`
 
 // If not on the homepage, prefix anchor links with the homepage path
@@ -123,19 +137,19 @@ const links = rawLinks.map(l => l.anchor ? { ...l, link: `${anchorBase}${l.ancho
             <div class="language-mobile-menu">
               <a
                 class="language-item active"
-                href={slug}
+                href={basePath}
                 onclick="localStorage.setItem('language_preference', 'en')"
                 >English</a
               >
               <a
                 class="language-item"
-                href={`/zh${slug}`}
+                href={`/zh${basePath}`}
                 onclick="localStorage.setItem('language_preference', 'zh'); sessionStorage.setItem('language_just_switched', 'true');"
                 >中文</a
               >
               <a
                 class="language-item"
-                href={`/fr${slug}`}
+                href={`/fr${basePath}`}
                 onclick="localStorage.setItem('language_preference', 'fr'); sessionStorage.setItem('language_just_switched', 'true');"
                 >Français</a
               >
@@ -255,18 +269,18 @@ const links = rawLinks.map(l => l.anchor ? { ...l, link: `${anchorBase}${l.ancho
           </button>
           <div class="language-dropdown-content">
             <a
-              href={slug}
+              href={basePath}
               class="active"
               onclick="localStorage.setItem('language_preference', 'en')"
               >English</a
             >
             <a
-              href={`/zh${slug}`}
+              href={`/zh${basePath}`}
               onclick="localStorage.setItem('language_preference', 'zh'); sessionStorage.setItem('language_just_switched', 'true');"
               >中文</a
             >
             <a
-              href={`/fr${slug}`}
+              href={`/fr${basePath}`}
               onclick="localStorage.setItem('language_preference', 'fr'); sessionStorage.setItem('language_just_switched', 'true');"
               >Français</a
             >

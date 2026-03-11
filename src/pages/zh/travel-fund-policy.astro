@@ -1,6 +1,7 @@
 ---
 // Components
 import Layout from "layouts/LayoutLandingZh.astro"
+import HeroText from "components/HeroText.astro"
 import Content from "markdown/TravelFundPolicyZh.md"
 ---
 
@@ -10,50 +11,119 @@ import Content from "markdown/TravelFundPolicyZh.md"
   navBackground="light"
   pageTransitionName="TravelFundPolicy"
 >
+  <HeroText
+    title="差旅资助政策"
+    lightgray
+  >
+    <a
+      href="/GOSIM-Travel-Fund-Reimbursement-Template.docx"
+      download
+      class="template-cta"
+    >下载报销模板（.docx）</a>
+  </HeroText>
+
   <section
-    class="section speaker-detail-header"
+    class="section travel-section"
     data-theme-section="light"
     data-bg-section="lightgray"
   >
-    <div class="gradient-circle-wrap">
-      <div class="gradient-circle"></div>
-    </div>
     <div class="container">
-      <div class="row">
-        <div class="col-markdown">
-          <h1>GOSIM Paris 2026 差旅资助政策</h1>
-          <div class="template-cta-wrap">
-            <a class="template-cta" href="/GOSIM-Travel-Fund-Reimbursement-Template.docx" download>下载报销模板（.docx）</a>
-          </div>
-          <Content />
-        </div>
+      <div class="travel-body">
+        <Content />
       </div>
     </div>
   </section>
 </Layout>
 
-<style>
-  .template-cta-wrap {
-    margin: 0.5rem 0 2rem;
+<style is:global>
+  .default-header .col-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  .default-header .col-text .col-row {
+    max-width: none;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .travel-section {
+    padding-top: var(--row-gap) !important;
+  }
+
   .template-cta {
     display: inline-block;
-    padding: 0.7rem 1.8rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #333 !important;
+    padding: 0.9rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a !important;
     background: transparent;
-    border: 2px solid #333;
+    border: 2px solid #1a1a1a;
     border-radius: 50px;
     text-decoration: none !important;
-    cursor: pointer;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    animation: pulse-template 2s ease-in-out infinite;
   }
   .template-cta:hover {
-    background: #333;
+    background: #1a1a1a;
     color: #fff !important;
-    transform: translateY(-1px);
-    box-shadow: 0 5px 14px rgba(0,0,0,0.3);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    animation: none;
+  }
+  @keyframes pulse-template {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(26, 26, 26, 0.3); }
+    50% { box-shadow: 0 0 0 10px rgba(26, 26, 26, 0); }
+  }
+
+  .travel-body {
+    width: 100%;
+  }
+  .travel-body h2 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .travel-body p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .travel-body ul, .travel-body ol {
+    padding-left: 1.5em;
+    margin-bottom: 1.5rem;
+  }
+  .travel-body ul {
+    list-style: disc;
+  }
+  .travel-body ol {
+    list-style: decimal;
+  }
+  .travel-body ul li,
+  .travel-body ol li {
+    margin-bottom: 0.4rem;
+    line-height: 1.6;
+  }
+  .travel-body ul li::before {
+    display: none !important;
+  }
+  .travel-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  .travel-body th,
+  .travel-body td {
+    border: 1px solid #ccc;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  .travel-body th {
+    background: rgba(0,0,0,0.05);
+    font-weight: 700;
+  }
+  .travel-body hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2rem 0;
   }
 </style>

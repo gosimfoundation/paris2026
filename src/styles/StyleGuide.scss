@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul, ol, span, strong, em, figcaption,
 h1, .h1 {
    font-family: 'Manrope', sans-serif;
    font-weight: 600;
-   font-size: calc(var(--title-size) * 0.8);
+   font-size: calc(var(--title-size) * 0.6);
    line-height: 1;
    color: var(--color-dark);
 }
@@ -190,7 +190,7 @@ h2, .h2 {
 
 @media screen and (max-width: 540px) {
    h1, .h1 {
-      font-size: calc(var(--title-size) * 0.55);
+      font-size: calc(var(--title-size) * 0.4);
    }
 
    h2, .h2 {

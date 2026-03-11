@@ -111,6 +111,12 @@ footer {
    }
 }
 
+@media screen and (min-width: 520px) {
+   .main-nav-bar .has-sublinks:hover svg {
+      transform: rotate(180deg);
+   }
+}
+
 .mobile-nav-box .has-sublinks {
    display: block;
 
@@ -245,7 +251,7 @@ footer {
 
 .main-nav-bar .logo-click {
    display: flex;
-   height: 34px;
+   height: 24px;
    justify-content: flex-start;
    align-items: center;
    overflow: hidden;
