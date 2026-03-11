@@ -246,7 +246,7 @@ const groupedCategories = {
       </div>
     </div>
 
-    <div class="row grid visible" data-filter-grid data-modal-grid>
+    <div class="row grid visible" data-filter-grid data-modal-grid style={`--columns: ${speakersData.columns || 5}`}>
       {
         filteredSpeakers.map((speaker, index) => (
           <div
