@@ -41,7 +41,7 @@
       "role": "VP",
       "org": "ModelBest",
       "roleOrg": "VP, ModelBest",
-      "image": "/images/speakers/chao-jia.png",
+      "image": "/images/speakers/better_portrait/chao-jia.png",
       "tags": [
         "agentic-ai-on-edge"
       ],
@@ -58,11 +58,11 @@
     {
       "id": "dong-xin",
       "name": "Dong Xin",
-      "bio": "2008-2017微软 技术leader 从事微软Azure企业云Dynamics365平台研发工作 2017- 华为技术有限公司 技术专家/产品总监 从事研发工具链，编程语言，IDE等核心基础软件研发工作。 在华为公司工作期间，先后作为首席技术专家和项目经理从事华为移动端AI研发工具，公司级AI研发平台，华为昇腾AI芯片工具链，鸿蒙OS工具链等相关工作。 2021年起负责华为编程语言和IDE基础软件的研发业务，并担任项目群总监，从事自主可控的编程语言及IDE开发工具的核心技术研发工作，对国产应用编程语言的技术规划，产品化，产业落地进展等工作出了重要的贡献",
-      "role": "华为中央软件院项目群总监",
-      "org": "华为",
-      "roleOrg": "华为中央软件院项目群总监, 华为",
-      "image": "/images/speakers/dong-xin.jpg",
+      "bio": "2008–2017 Technical Leader at Microsoft, working on Azure enterprise cloud and the Dynamics 365 platform. Since 2017, Technical Expert and Product Director at Huawei, focusing on R&D toolchains, programming languages, IDEs, and other core foundational software. During his tenure at Huawei, he served as Chief Technical Expert and Project Manager for Huawei's mobile AI development tools, the company-wide AI R&D platform, the Ascend AI chip toolchain, and the HarmonyOS toolchain. Since 2021, he has led the R&D of Huawei's programming language and IDE foundational software as Program Director, driving core technology development of independently controllable programming languages and IDE tools, and making significant contributions to technical planning, productization, and industry adoption of domestic application programming languages.",
+      "role": "Program Director, Central Software Institute",
+      "org": "Huawei",
+      "roleOrg": "Program Director, Central Software Institute, Huawei",
+      "image": "/images/speakers/better_portrait/dong-xin.png",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -80,10 +80,10 @@
       "id": "jiaming-liu",
       "name": "Jiaming Liu",
       "bio": "Jiaming Liu is a Ph.D. student at the School of Computer Science, Peking University. His research focuses on robotic manipulation and embodied foundation models. He has published 20 papers as first author or co-first author at top-tier international conferences, including CVPR, ICLR, and RSS (CCF-A or CAAI-A venues). His work has received over 3000 citations on Google Scholar. In terms of honors and awards, Jiaming Liu has received the 2025 ByteDance Scholarship (awarded to only 20 recipients), the National Scholarship, and the Peking University Presidential Scholarship. In international competitions, he won the championship in the ICCV 2023 Continual Generalization Learning Challenge, the championship in the Robust Multi-Task Learning Challenge, and third place in the CVPR 2023 Autonomous Driving Occupancy Prediction Challenge. He has also been invited as a keynote speaker and panelist at GOSIM 2024, the 2nd China Embodied Intelligence Conference, and the China Generative AI Conference. At the project level, he has successfully secured funding from the National Natural Science Foundation of China (Young Scientists Fund) and the China Association for Science and Technology (Young Elite Scientists Sponsorship Program).",
-      "role": "PDH student",
-      "org": "Peking university",
-      "roleOrg": "PDH student, Peking university",
-      "image": "/images/speakers/jiaming-liu.JPG",
+      "role": "PhD Student",
+      "org": "Peking University",
+      "roleOrg": "PhD Student, Peking University",
+      "image": "/images/speakers/better_portrait/jiaming-liu.png",
       "tags": [
         "open-source-robotics"
       ],
@@ -104,7 +104,7 @@
       "role": "ML Tech Lead • 12x AI + Open Source Award Winner • Google Developer Advisory Board Member • LinkedIn [in]structor • Book Author • Startup Advisor / Speaker / Tech Creator • Featured @ Forbes, UN, Google I/O, and more! ",
       "org": "Uber",
       "roleOrg": "ML Tech Lead • 12x AI + Open Source Award Winner • Google Developer Advisory Board Member • LinkedIn [in]structor • Book Author • Startup Advisor / Speaker / Tech Creator • Featured @ Forbes, UN, Google I/O, and more! , Uber",
-      "image": "/images/speakers/jigyasa-grover-co-speaker-rishabh-misra.jpg",
+      "image": "/images/speakers/better_portrait/jigyasa-grover-co-speaker-rishabh-misra.png",
       "tags": [
         "ai-generative-app"
       ],
@@ -125,7 +125,7 @@
       "role": "Principal Research Scientist and Tech Lead",
       "org": "NVIDIA",
       "roleOrg": "Principal Research Scientist and Tech Lead, NVIDIA",
-      "image": "/images/speakers/jinwei-gu.png",
+      "image": "/images/speakers/better_portrait/jinwei-gu.png",
       "tags": [
         "open-source-robotics"
       ],
@@ -146,7 +146,7 @@
       "role": "ML Research Engineer",
       "org": "Hugging Face",
       "roleOrg": "ML Research Engineer, Hugging Face",
-      "image": "/images/speakers/nouamane-tazi.jpeg",
+      "image": "/images/speakers/better_portrait/nouamane-tazi.png",
       "tags": [
         "open-source-model"
       ],
@@ -167,7 +167,7 @@
       "role": "Software Engineer",
       "org": "Hugging Face",
       "roleOrg": "Software Engineer, Hugging Face",
-      "image": "/images/speakers/xuan-son-nguyen.jpg",
+      "image": "/images/speakers/better_portrait/xuan-son-nguyen.png",
       "tags": [
         "agentic-ai-on-edge"
       ],
@@ -188,7 +188,7 @@
       "role": "Associate Professor",
       "org": "Fudan University",
       "roleOrg": "Associate Professor, Fudan University",
-      "image": "/images/speakers/yonghui-wu.JPG",
+      "image": "/images/speakers/better_portrait/yonghui-wu.png",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -205,11 +205,11 @@
     {
       "id": "yuxuan-zhang",
       "name": "Yuxuan Zhang",
-      "bio": "智谱AI技术布道师",
-      "role": "技术布道师",
+      "bio": "Technical Evangelist at ZhipuAI.",
+      "role": "Technical Evangelist",
       "org": "ZhipuAI",
-      "roleOrg": "技术布道师, ZhipuAI",
-      "image": "/images/speakers/yuxuan-zhang.jpg",
+      "roleOrg": "Technical Evangelist, ZhipuAI",
+      "image": "/images/speakers/better_portrait/yuxuan-zhang.png",
       "tags": [
         "open-source-model"
       ],
@@ -230,7 +230,7 @@
       "role": "Group Data Architect",
       "org": "Carrefour",
       "roleOrg": "Group Data Architect, Carrefour",
-      "image": "/images/speakers/guillaume-blaquiere.png",
+      "image": "/images/speakers/better_portrait/guillaume-blaquiere.png",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -246,12 +246,12 @@
     },
     {
       "id": "wzcai99",
-      "name": "wzcai99",
+      "name": "Wenzhe Cai",
       "bio": "An Embodied AI researcher, working on building an open-sourced embodied navigation foundation models.",
       "role": "Researcher",
       "org": "Shanghai AI Laboratory",
       "roleOrg": "Researcher, Shanghai AI Laboratory",
-      "image": "/images/speakers/wzcai99.jpg",
+      "image": "/images/speakers/better_portrait/wzcai99.png",
       "tags": [
         "open-source-robotics"
       ],
