@@ -111,8 +111,8 @@ body {
    line-height: 1.5;
    font-weight: 400;
    font-style: normal;
-   font-size: 16px;
-   font-size: clamp(16px, 1.2vw, 19px);
+   font-size: 14.4px;
+   font-size: clamp(14.4px, 1.08vw, 17.1px);
    background-color: var(--color-light-tint);
    overscroll-behavior-y: none;
 }
