@@ -1,16 +1,25 @@
 {
   "categories": [
-    { "name": "All" },
-    { "name": "Host" }
+    { "id": "all", "name": { "en": "All", "zh": "全部", "fr": "Tous" } },
+    { "id": "host", "name": { "en": "Host", "zh": "主办/承办", "fr": "Host" } },
+    { "id": "supporting-organizations", "name": { "en": "Supporting Organizations", "zh": "支持单位", "fr": "Organisations de soutien" } },
+    { "id": "speakers-affiliated", "name": { "en": "Speakers Affiliated (Partial)", "zh": "演讲嘉宾单位（部分）", "fr": "Affiliés aux intervenants (partiel)" } }
   ],
   "partners": [
-    {
-      "category": "Host",
-      "image": "csdn.png"
-    },
-    {
-      "category": "Host",
-      "image": "1msai.png"
-    }
+    { "category": "host", "image": "gosim.png" },
+    { "category": "host", "image": "csdn.png" },
+    { "category": "host", "image": "1msai.png" },
+    { "category": "supporting-organizations", "image": "vllm.png" },
+    { "category": "supporting-organizations", "image": "sgl.png" },
+    { "category": "speakers-affiliated", "image": "carrefour.png" },
+    { "category": "speakers-affiliated", "image": "fudan-university.png" },
+    { "category": "speakers-affiliated", "image": "huawei.png" },
+    { "category": "speakers-affiliated", "image": "huggingface.png" },
+    { "category": "speakers-affiliated", "image": "modelbest.png" },
+    { "category": "speakers-affiliated", "image": "nvidia.png" },
+    { "category": "speakers-affiliated", "image": "peking-university.png" },
+    { "category": "speakers-affiliated", "image": "shanghai-ai-lab.png" },
+    { "category": "speakers-affiliated", "image": "uber.png" },
+    { "category": "speakers-affiliated", "image": "zhipuai.png" }
   ]
 }

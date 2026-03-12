@@ -3,29 +3,29 @@
 import Layout from "layouts/LayoutLandingZh.astro";
 import GetTickets from "components/GetTickets.astro";
 import HeroText from "components/HeroText.astro";
-import AllSponsors from "components/SponsorsZh.astro";
+import AllSponsors from "components/Sponsors.astro";
 import TextAndSponsors from "components/TextAndSponsors.astro";
 ---
 
 <Layout
-  title="赞助商 – GOSIM Paris 2026"
-  description="GOSIM Paris 2026是开源AI项目、开发者、研究人员和行业赞助商的聚会，旨在分享知识、相互学习和合作。"
+  title="支持者 – GOSIM Paris 2026"
+  description="GOSIM Paris 2026是开源AI项目、开发者、研究人员和行业支持者的聚会，旨在分享知识、相互学习和合作。"
   navBackground="light"
-  pageTransitionName="赞助商"
+  pageTransitionName="支持者"
 >
   <HeroText
-    title="赞助商"
-    text="我们很高兴为您带来一次令人难以置信的体验，这要归功于我们的赞助商和合作伙伴的慷慨支持。我们与真正的创新者合作，他们正在推动我们行业的边界。"
+    title="支持者"
+    text="我们很高兴为您带来一次令人难以置信的体验，这要归功于我们的支持者和合作伙伴的慷慨支持。我们与真正的创新者合作，他们正在推动我们行业的边界。"
     lightgray
   />
 
-  <AllSponsors />
+  <AllSponsors lang="zh" />
 
   <TextAndSponsors
     id="sponsorship"
-    title="赞助机会"
+    title="支持机会"
     text="通过成为GOSIM Paris 2026的合作伙伴，接触到数千名目标受众。"
-    text2="*仅展示往届GOSIM会议赞助商，仅供参考。"
+    text2="*仅展示往届GOSIM会议支持者，仅供参考。"
     ctaButton={{
       text: "联系我们",
       link: "mailto:sponsor@gosim.org",

@@ -3,29 +3,29 @@
 import Layout from "layouts/LayoutLandingFr.astro";
 import GetTickets from "components/GetTickets.astro";
 import HeroText from "components/HeroText.astro";
-import AllSponsors from "components/SponsorsFr.astro";
+import AllSponsors from "components/Sponsors.astro";
 import TextAndSponsors from "components/TextAndSponsors.astro";
 ---
 
 <Layout
-  title="Sponsors – GOSIM Paris 2026"
-  description="GOSIM Paris 2026 est un rassemblement de projets IA open source, de développeurs, de chercheurs et de sponsors industriels pour partager les connaissances, apprendre les uns des autres et collaborer."
+  title="Soutiens – GOSIM Paris 2026"
+  description="GOSIM Paris 2026 est un rassemblement de projets IA open source, de développeurs, de chercheurs et de soutiens industriels pour partager les connaissances, apprendre les uns des autres et collaborer."
   navBackground="light"
-  pageTransitionName="Sponsors"
+  pageTransitionName="Soutiens"
 >
   <HeroText
-    title="Sponsors"
-    text="Nous sommes ravis de vous offrir une expérience incroyable, rendue possible grâce au généreux soutien de nos sponsors et organisations partenaires. Nous nous sommes associés à de véritables innovateurs qui repoussent les limites de notre industrie."
+    title="Soutiens"
+    text="Nous sommes ravis de vous offrir une expérience incroyable, rendue possible grâce au généreux soutien de nos soutiens et organisations partenaires. Nous nous sommes associés à de véritables innovateurs qui repoussent les limites de notre industrie."
     lightgray
   />
 
-  <AllSponsors />
+  <AllSponsors lang="fr" />
 
   <TextAndSponsors
     id="sponsorship"
     title="Opportunités de parrainage"
     text="Touchez des milliers de personnes dans votre audience cible en devenant une organisation partenaire de GOSIM Paris 2026."
-    text2="*Les sponsors des précédentes conférences GOSIM sont présentés à titre indicatif uniquement."
+    text2="*Les soutiens des précédentes conférences GOSIM sont présentés à titre indicatif uniquement."
     ctaButton={{
       text: "Contactez-nous",
       link: "mailto:sponsor@gosim.org",
