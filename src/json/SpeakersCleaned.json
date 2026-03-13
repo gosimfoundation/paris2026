@@ -1,0 +1,379 @@
+{
+  "categories": [
+    {
+      "name": "All",
+      "id": "all"
+    },
+    {
+      "name": "Agentic AI Summit",
+      "id": "agentic-ai-summit"
+    },
+    {
+      "name": "Open Source Robotics",
+      "id": "open-source-robotics"
+    },
+    {
+      "name": "Agentic App",
+      "id": "ai-generative-app"
+    },
+    {
+      "name": "Agentic AI on Edge",
+      "id": "agentic-ai-on-edge"
+    },
+    {
+      "name": "AI Hardware",
+      "id": "ai-hardware"
+    },
+    {
+      "name": "Open Source Model",
+      "id": "open-source-model"
+    },
+    {
+      "name": "SGLang Workshop",
+      "id": "ws-sglang-paris2026"
+    },
+    {
+      "name": "vLLM Workshop",
+      "id": "ws-vllm-paris2026"
+    }
+  ],
+  "speakers": [
+    {
+      "id": "chao-jia",
+      "name": "Chao Jia",
+      "bio": "Chao Jia, Vice President of Technology at ModelBest and Co-founder of the OpenBMB open-source community. He is primarily responsible for organizing the R&D and open-source management of the MiniCPM series of on-device models. Dubbed the \"ModelBest's Little Steel Cannon\" the MiniCPM family—which includes the MiniCPM large language model and he MiniCPM-o omni-modal model—has earned widespread acclaim in the global AI community for its high efficiency, low cost, and ability to \"punch above its weight.\" To date, these projects have amassed over 30,000 stars on GitHub and exceeded 24 million downloads worldwide, establishing themselves as benchmark works in the field of on-device AI.",
+      "role": "VP of Technology",
+      "org": "ModelBest",
+      "roleOrg": "VP of Technology, ModelBest",
+      "image": "/images/speakers/better_portrait/chao-jia.png",
+      "tags": [
+        "agentic-ai-on-edge"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "charbel-dandjinou",
+      "name": "Charbel Dandjinou",
+      "bio": "Charbel is the founder and CTO of Reflexion Robotics, a Paris-based startup building A OS  - a safety runtime for embodied AI. Previously AI Research Engineer and MLOps Tech Lead at EXXACT Robotics. He also founded IROKO and the Deep Takka research lab, focused on making AI accessible and inclusive.",
+      "role": "Founder & CTO",
+      "org": "Reflexion Robotics",
+      "roleOrg": "Founder & CTO, Reflexion Robotics",
+      "image": "/images/speakers/better_portrait/charbel-dandjinou.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/charbel-d-9569ba199",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "crozet-sbastien",
+      "name": "Sébastien Crozet",
+      "bio": "Sébastien Crozet has been in love with the Rust programming language since its earliest days. He is the creator and maintainer of popular open-source libraries, including nalgebra and Rapier, for the Rust ecosystem that specialize in linear algebra, geometry, and physics. He is the founder of Dimforge where he focuses on contributing to the future of cross-platform scientific computing and AI.",
+      "role": "Founder",
+      "org": "Dimforge",
+      "roleOrg": "Founder, Dimforge",
+      "image": "/images/speakers/better_portrait/crozet-sbastien.png",
+      "tags": [
+        "agentic-ai-on-edge"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/dimforge",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "dong-xin",
+      "name": "Dong Xin",
+      "bio": "2008–2017: Technical Leader at Microsoft, working on the Microsoft Azure enterprise cloud and Dynamics 365 platform R&D. 2017–present: Technical Expert and Product Director at Huawei Technologies Co., Ltd., working on the R&D of core infrastructure software including toolchains, programming languages, and IDEs. During his time at Huawei, he has served successively as Chief Technical Expert and Project Manager, working on Huawei's mobile AI R&D tools, the company-wide AI R&D platform, the Huawei Ascend AI chip toolchain, and the HarmonyOS toolchain, among other initiatives. Since 2021, he has been responsible for the R&D of Huawei's programming language and IDE infrastructure software, serving as Program Director. He leads the core technology R&D of proprietary and independently-controlled programming languages and IDE development tools, and has made significant contributions to the technical planning, productization, and industry adoption of domestically-developed application programming languages.",
+      "role": "Program Director, Central Software Institute",
+      "org": "Huawei",
+      "roleOrg": "Program Director, Central Software Institute, Huawei",
+      "image": "/images/speakers/better_portrait/dong-xin.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jiaming-liu",
+      "name": "Jiaming Liu",
+      "bio": "Jiaming Liu is a Ph.D. student at the School of Computer Science, Peking University. His research focuses on robotic manipulation and embodied foundation models. He has published 20 papers as first author or co-first author at top-tier international conferences, including CVPR, ICLR, and RSS (CCF-A or CAAI-A venues). His work has received over 3000 citations on Google Scholar. In terms of honors and awards, Jiaming Liu has received the 2025 ByteDance Scholarship (awarded to only 20 recipients), the National Scholarship, and the Peking University Presidential Scholarship. In international competitions, he won the championship in the ICCV 2023 Continual Generalization Learning Challenge, the championship in the Robust Multi-Task Learning Challenge, and third place in the CVPR 2023 Autonomous Driving Occupancy Prediction Challenge. He has also been invited as a keynote speaker and panelist at GOSIM 2024, the 2nd China Embodied Intelligence Conference, and the China Generative AI Conference. At the project level, he has successfully secured funding from the National Natural Science Foundation of China (Young Scientists Fund) and the China Association for Science and Technology (Young Elite Scientists Sponsorship Program).",
+      "role": "Ph.D. Student",
+      "org": "Peking University",
+      "roleOrg": "Ph.D. Student, Peking University",
+      "image": "/images/speakers/better_portrait/jiaming-liu.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jigyasa-grover-co-speaker-rishabh-misra",
+      "name": "Jigyasa Grover (co-speaker Rishabh Misra)",
+      "bio": "12-time award-winning AI lead and 'Sculpting Data For ML' author Jigyasa Grover drives rider personalization innovation at Uber after transforming Twitter/X, Facebook/Meta, Faire, and Bordo AI with large-scale ML systems. Handpicked by Google for their I/O keynote, she serves on Google's Developer Advisory Board while advising social search engine Diem and other Silicon Valley startups. \r\n\r\nAs a LinkedIn Learning instructor, Jigyasa educates thousands of professionals worldwide on cutting-edge AI-powered applications and agentic AI systems, solidifying her status as a thought leader in artificial intelligence education. As a Google Developer Expert, Women Techmaker Ambassador, and World Economic Forum Global Shaper, Jigyasa has also been featured in Forbes, Business Insider, VentureBeat, and International Business Times, and has elevated panels with Harvard University, Preston-Werner Ventures, Norwegian Business School, Humanitarian Frontier in AI, Women in Data, and more to her name. \r\n\r\nThe UC San Diego alumna has secured funding from the Canadian and Norwegian governments, the Linux Foundation, and multiple tech giants, enabling work that transcends geographical boundaries. With 200+ media features and contributions to open source recognized by Apache and Python Software Foundations, she mentors next-generation talent while shaping AI's future through advisory roles at Bezoku AI, Las Positas College, and various AI forums.\r\n",
+      "role": "ML Tech Lead",
+      "org": "Uber",
+      "roleOrg": "ML Tech Lead, Uber",
+      "image": "/images/speakers/better_portrait/jigyasa-grover-co-speaker-rishabh-misra.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/jigyasa_grover",
+        "github": "https://github.com/jigyasa-grover",
+        "linkedin": "https://www.linkedin.com/in/jigyasa-grover",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jinwei-gu",
+      "name": "Jinwei Gu",
+      "bio": "Dr. Jinwei Gu is currently a Principal Research Scientist at NVIDIA and an Adjunct Associate Professor at the Chinese University of Hong Kong, working on generative AI, world models, and the general fields of computer vision, computer graphics, and machine learning.  He received his Ph.D. in Computer Science from Columbia University in 2010, and B.S. and M.S. from Tsinghua University in 2002 and 2005, respectively. At NVIDIA, Dr. Gu is one of tech leads in cosmos model development – a family of multimodality world foundation models, with a focus on enabling real-world applications in robotics, autonomous driving, and generative AI. Prior to joining NVIDIA, he worked at SenseBrain as a R&D Executive Director, focusing on mobile computational photography with novel image sensors and imaging systems. He has published extensively in top-tier conferences and journals, and serves as an Associate Editor for IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) and IEEE Transactions on Computational Imaging (TCI) (2018-2023), an Area Chair for CVPR, NeurIPS, ICCV, ICCP, and ECCV, and organizing chairs for several workshops (MIPI, RichMediaGAI).  He is an IEEE senior member since 2018. His research work has been successfully transferred to many products such as NVIDIA-Cosmos, NVIDIA-CoPilot SDK, NVIDIA-DriveIX SDK, as well as Super Resolution, Super Night, Portrait Restoration, RGBW solution which are widely used in many flagship mobile phones.",
+      "role": "Principal Research Scientist",
+      "org": "NVIDIA",
+      "roleOrg": "Principal Research Scientist, NVIDIA",
+      "image": "/images/speakers/better_portrait/jinwei-gu.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": "https://www.gujinwei.org"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "nouamane-tazi",
+      "name": "Nouamane Tazi",
+      "bio": "Nouamane Tazi is a Machine Learning Research Engineer at Hugging Face, specializing in training large language models. He is a co-author of SmolLM3 and The Ultra Scale Playbook, and his research spans NLP, deep learning, and scalable AI infrastructure.",
+      "role": "ML Research Engineer",
+      "org": "Hugging Face",
+      "roleOrg": "ML Research Engineer, Hugging Face",
+      "image": "/images/speakers/better_portrait/nouamane-tazi.png",
+      "tags": [
+        "open-source-model"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/NouamaneTazi",
+        "github": "https://github.com/nouamanetazi",
+        "linkedin": "https://www.linkedin.com/in/nouamanetazi/",
+        "website": "https://nouamanetazi.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "qingyueannie-wang",
+      "name": "Qingyue (Annie) Wang",
+      "bio": "Annie Wang is a is a Software Engineer, Developer Advocate, and Internal Career Coach at Google where she helps developers build with AI. With 7 years of software engineering experience and 500+ career coaching hours at Google, she brings both technical depth and a talent for making complex concepts accessible. Annie specializes in Multi-Agent Systems, Google's Agent Development Kit (ADK), and Agent Evaluation, and has delivered keynotes at DevFest NYC, Boston, and Beijing. She is known for her \"learn by doing\" approach, helping engineers move from theory to building production-ready AI applications.",
+      "role": "Developer Relations Engineer",
+      "org": "Google",
+      "roleOrg": "Developer Relations Engineer, Google",
+      "image": "/images/speakers/better_portrait/qingyueannie-wang.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xinyuan-tong",
+      "name": "Xinyuan Tong",
+      "bio": "SGLang Maintainer",
+      "role": "Open Source Maintainer",
+      "org": "SGLang",
+      "roleOrg": "Open Source Maintainer, SGLang",
+      "image": "/images/speakers/better_portrait/xinyuan-tong.png",
+      "tags": [
+        "ws-sglang-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xuan-son-nguyen",
+      "name": "Xuan-Son Nguyen",
+      "bio": "I'm software engineer at Hugging Face, core maintainer of llama.cpp",
+      "role": "Software Engineer",
+      "org": "Hugging Face",
+      "roleOrg": "Software Engineer, Hugging Face",
+      "image": "/images/speakers/better_portrait/xuan-son-nguyen.png",
+      "tags": [
+        "agentic-ai-on-edge"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/ngxson",
+        "github": "https://github.com/ngxson",
+        "linkedin": "https://linkedin.com/in/ngxson",
+        "website": "https://ngxson.com"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yonghui-wu",
+      "name": "Yonghui Wu",
+      "bio": "Dr. Yonghui Wu, associate professor at Fudan University, visiting scholar at Stony Brook University, and, the chair of the ICPC Asia Training Committee. He won three medals in ACM ICPC World Finals for Fudan University. His book series “Collegiate Programming Contests and Education” has been published in simplified and traditional Chinese and English: the former by respective publishers of mainland China and Taiwan, and the latter, the first book’s translation, by CRC Press. Since 2013, he has been giving lectures not only in China, but also in other countries.",
+      "role": "Associate Professor",
+      "org": "Fudan University",
+      "roleOrg": "Associate Professor, Fudan University",
+      "image": "/images/speakers/better_portrait/yonghui-wu.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yuhao-yang",
+      "name": "Yuhao Yang",
+      "bio": "SGLang Developer",
+      "role": "Developer",
+      "org": "SGLang",
+      "roleOrg": "Developer, SGLang",
+      "image": "/images/speakers/better_portrait/yuhao-yang.png",
+      "tags": [
+        "ws-sglang-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yuxuan-zhang",
+      "name": "Yuxuan Zhang",
+      "bio": "Technology Evangelist at ZhipuAI.",
+      "role": "Technology Evangelist",
+      "org": "ZhipuAI",
+      "roleOrg": "Technology Evangelist, ZhipuAI",
+      "image": "/images/speakers/better_portrait/yuxuan-zhang.png",
+      "tags": [
+        "open-source-model"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/zRdianjiao",
+        "github": "https://github.com/zRzRzRzRzRzRzR",
+        "linkedin": "https://www.linkedin.com/in/yuxuan-zhang-86a124282/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "guillaume-blaquiere",
+      "name": "Guillaume Blaquiere",
+      "bio": "Guillaume is a Google Developer Expert on Cloud Platform since 2019 and works at Carrefour as Group Data Architect. \r\n\r\nInitially Java developer, and despite positions of responsibilities, he has always kept his wish to create, develop, discover and test new solutions, especially in the Cloud, the AI & genAI. He notably contributed to Python and Go open source project and libraries (Google SDK, Airflow, ADK). \r\n\r\nInnovation addict and Google Cloud 3x certified, writer and speaker in his free time, he's fascinated by the serverless and genAI solution and all the \"usual\" problems that they solve.\r\n",
+      "role": "Group Data Architect",
+      "org": "Carrefour",
+      "roleOrg": "Group Data Architect, Carrefour",
+      "image": "/images/speakers/better_portrait/guillaume-blaquiere.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/gblaquiere",
+        "github": "https://github.com/guillaumeblaquiere",
+        "linkedin": "https://www.linkedin.com/in/guillaume-blaquiere/",
+        "website": "https://medium.com/@guillaume-blaquiere"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wzcai99",
+      "name": "Wenzhe Cai",
+      "bio": "An Embodied AI researcher, working on building an open-sourced embodied navigation foundation models.",
+      "role": "Researcher",
+      "org": "Shanghai AI Laboratory",
+      "roleOrg": "Researcher, Shanghai AI Laboratory",
+      "image": "/images/speakers/better_portrait/wzcai99.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/WenzheC7616",
+        "github": "https://github.com/wzcai99/",
+        "linkedin": "",
+        "website": "https://wzcai99.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    }
+  ],
+  "columns": 5
+}

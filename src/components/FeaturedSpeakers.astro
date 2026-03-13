@@ -1,6 +1,6 @@
 ---
 // JSON
-import speakersData from "json/Speakers.json";
+import speakersData from "json/SpeakersCleaned.json";
 
 const filteredSpeakers = speakersData.speakers.filter(
   (speaker) => speaker.draft !== true && speaker.id !== "tbd",
@@ -88,7 +88,31 @@ const getRouteForTag = (tagId: string): string => {
       <button class="speakers-nav-btn speakers-next" aria-label="Next speakers">&#8594;</button>
     </div>
   </div>
+
+  <div class="container wide">
+    <div class="row" style="justify-content: center; padding-top: 2rem;">
+      <a href="/speakers/" class="all-speakers-link">All Speakers &rarr;</a>
+    </div>
+  </div>
 </section>
+
+<style>
+  .all-speakers-link {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.6em 2em;
+    border: 1px solid #6366f1;
+    border-radius: var(--border-radius);
+    color: #6366f1;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .all-speakers-link:hover {
+    background: #6366f1;
+    color: #fff;
+  }
+</style>
 
 <script>
   document.querySelectorAll('.speakers-marquee-container').forEach((container) => {

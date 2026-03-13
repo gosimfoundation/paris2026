@@ -31,7 +31,7 @@ const hasRightCol = text || hasSlot;
             </div>
 
             {hasRightCol &&
-                <div class="col col-text">
+                <div class="col col-text hero-text-right">
                     <div class="col-row styled-content">
                         {text && <p>{text}</p>}
                         <slot />
@@ -41,3 +41,16 @@ const hasRightCol = text || hasSlot;
         </div>
     </div>
 </section>
+
+<style>
+    .default-header .row.grid {
+        align-items: center;
+    }
+
+    .hero-text-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+</style>

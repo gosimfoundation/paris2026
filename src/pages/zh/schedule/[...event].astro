@@ -7,7 +7,7 @@ import type { ImageMetadata } from "astro";
 import Layout from "layouts/LayoutLandingZh.astro";
 import schedule from "json/ScheduleBilingual.json";
 import scheduleForum from "json/Schedule-forum.json";
-import speakers from "json/Speakers.json";
+import speakers from "json/SpeakersCleaned.json";
 import SocialShare from "components/SocialShare.astro";
 
 // Types
@@ -184,7 +184,7 @@ const getCategoryDisplayName = (categoryId: string) => {
           {
             eventDetails.speakers && eventDetails.speakers.length > 0 && (
               <>
-                <h2 class="h4 event-speaker-title">讲师</h2>
+                <h2 class="h4 event-speaker-title">演讲嘉宾</h2>
                 <div class="card-row card-row-speakers event-detail_speakers">
                   {eventDetails.speakers.map((speaker) => {
                     // Find full speaker details from unified speakers.json
