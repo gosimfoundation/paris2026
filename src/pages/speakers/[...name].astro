@@ -161,7 +161,13 @@ const socialIconMap: Record<string, string> = {
             }
             <div class="speaker-row-meta">
               <h1 class="h2">{speaker.name}</h1>
-              <p>{speaker.roleOrg}</p>
+              {(() => {
+                const lastComma = speaker.roleOrg.lastIndexOf(',');
+                if (lastComma === -1) return <p>{speaker.roleOrg}</p>;
+                const role = speaker.roleOrg.slice(0, lastComma).trim();
+                const company = speaker.roleOrg.slice(lastComma + 1).trim();
+                return <p>{role}<br/><strong>{company}</strong></p>;
+              })()}
             </div>
           </div>
 
