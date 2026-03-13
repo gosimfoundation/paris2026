@@ -81,6 +81,7 @@ tracks.forEach((track, i) => {
 >
   <div class="glow-orb glow-orb-1"></div>
   <div class="glow-orb glow-orb-2"></div>
+  <div class="glow-orb glow-orb-3"></div>
 
   <div class="container">
     <div class="section-header">
@@ -276,27 +277,38 @@ tracks.forEach((track, i) => {
   }
 
   .glow-orb-1 {
-    width: 40vw;
-    height: 40vw;
-    background: radial-gradient(circle, #6366f1, transparent 70%);
+    width: 45vw;
+    height: 45vw;
+    background: radial-gradient(circle, #6366f1, #818cf8, transparent 70%);
     top: -10vw;
     left: -10vw;
-    opacity: 0.06;
+    opacity: 0.08;
   }
 
   .glow-orb-2 {
-    width: 35vw;
-    height: 35vw;
-    background: radial-gradient(circle, #8b5cf6, transparent 70%);
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle, #8b5cf6, #a78bfa, transparent 70%);
     bottom: -8vw;
     right: -8vw;
-    opacity: 0.06;
+    opacity: 0.08;
     animation-delay: -6s;
   }
 
+  .glow-orb-3 {
+    width: 30vw;
+    height: 30vw;
+    background: radial-gradient(circle, #ec4899, #f472b6, transparent 70%);
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.06;
+    animation-delay: -3s;
+  }
+
   @keyframes orb-drift {
-    0% { transform: translate(0, 0) scale(1); opacity: 0.04; }
-    100% { transform: translate(2vw, 1.5vw) scale(1.08); opacity: 0.08; }
+    0% { transform: translate(0, 0) scale(1); opacity: 0.05; }
+    100% { transform: translate(3vw, 2vw) scale(1.12); opacity: 0.1; }
   }
 
   .container {
@@ -392,10 +404,45 @@ tracks.forEach((track, i) => {
     transition: transform 0.3s cubic-bezier(0.5, 0, 0.25, 1), border-color 0.3s ease, box-shadow 0.3s ease;
   }
 
+  .track-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent-from) 5%, transparent), color-mix(in srgb, var(--accent-to) 3%, transparent));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .track-card:hover::before { opacity: 1; }
+
+  .track-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: none;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .track-card:hover::after {
+    animation: shimmer 0.8s ease forwards;
+  }
+
+  @keyframes shimmer {
+    0% { left: -50%; }
+    100% { left: 150%; }
+  }
+
   .track-card:hover {
-    transform: translateY(-3px);
-    border-color: rgba(0, 0, 0, 0.08);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--accent-from) 25%, transparent);
+    box-shadow: 0 12px 32px color-mix(in srgb, var(--accent-from) 12%, transparent), 0 4px 12px rgba(0, 0, 0, 0.06);
   }
 
   .track-card-accent {
@@ -403,10 +450,10 @@ tracks.forEach((track, i) => {
     flex-shrink: 0;
     background: linear-gradient(to bottom, var(--accent-from), var(--accent-to));
     opacity: 0.6;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, width 0.3s ease;
   }
 
-  .track-card:hover .track-card-accent { opacity: 1; }
+  .track-card:hover .track-card-accent { opacity: 1; width: 6px; }
 
   .track-card-content {
     padding: 1.15rem 1.35rem;
@@ -426,10 +473,15 @@ tracks.forEach((track, i) => {
     height: 1.35rem;
     flex-shrink: 0;
     color: var(--accent-from);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    position: relative;
+    z-index: 2;
   }
 
-  .track-card:hover .track-icon { transform: scale(1.1); }
+  .track-card:hover .track-icon {
+    transform: scale(1.15) rotate(5deg);
+    filter: drop-shadow(0 0 6px var(--accent-from));
+  }
 
   .track-icon :global(svg) { width: 100%; height: 100%; }
 
@@ -527,7 +579,7 @@ tracks.forEach((track, i) => {
     border-radius: 16px;
     padding: 1rem 1.25rem;
     box-shadow: 0 2px 12px rgba(99, 102, 241, 0.06);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
   }
 
   .workshop-glow {
@@ -539,16 +591,18 @@ tracks.forEach((track, i) => {
     height: 60%;
     background: radial-gradient(ellipse, rgba(99, 102, 241, 0.1), transparent 70%);
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s ease, width 0.4s ease;
   }
 
   .workshop-card:hover .workshop-glow {
     opacity: 1.5;
+    width: 120%;
   }
 
   .workshop-card:hover .workshop-card-inner {
-    border-color: rgba(99, 102, 241, 0.35);
-    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.12), 0 2px 8px rgba(0, 0, 0, 0.04);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.18), 0 4px 12px rgba(99, 102, 241, 0.08);
+    background: linear-gradient(160deg, #eef2ff, #ddd6fe 50%, #e0e7ff);
   }
 
   .workshop-logo {
@@ -564,6 +618,12 @@ tracks.forEach((track, i) => {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .workshop-card:hover .workshop-logo {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.25);
   }
 
   .workshop-logo :global(img) {
@@ -632,12 +692,19 @@ tracks.forEach((track, i) => {
     padding: 2px;
     border-radius: 16px;
     background: linear-gradient(160deg, var(--hl-from), var(--hl-to) 40%, var(--hl-from) 60%, var(--hl-to));
+    background-size: 200% 200%;
     clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 50% 100%, 0% 82%);
     transition: box-shadow 0.35s ease;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
 
   .highlight-card:hover .highlight-outer {
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 40px color-mix(in srgb, var(--hl-from) 20%, transparent);
   }
 
   .highlight-inner {
@@ -649,6 +716,11 @@ tracks.forEach((track, i) => {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: background 0.4s ease;
+  }
+
+  .highlight-card:hover .highlight-inner {
+    background: linear-gradient(170deg, color-mix(in srgb, var(--hl-from) 10%, #fff), color-mix(in srgb, var(--hl-to) 8%, #fff) 80%);
   }
 
   .highlight-icon {
@@ -656,10 +728,13 @@ tracks.forEach((track, i) => {
     height: 2rem;
     margin-bottom: 0.85rem;
     color: var(--hl-from);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
 
-  .highlight-card:hover .highlight-icon { transform: scale(1.12); }
+  .highlight-card:hover .highlight-icon {
+    transform: scale(1.2) rotate(-5deg);
+    filter: drop-shadow(0 0 8px var(--hl-from));
+  }
 
   .highlight-icon :global(svg) { width: 100%; height: 100%; }
 
