@@ -18,6 +18,11 @@ import GetTickets from "components/GetTickets.astro"
     location="5 Parv. Alan Turing, 75013 Paris, France"
     image="/images/venue/station-f.jpg"
     text="STATION F is the world's largest startup campus, housing over 1,000 startups and numerous tech programs. Located in the 13th arrondissement of Paris along the Seine, it offers exceptional facilities for conferences and events. The iconic Halle Freyssinet building spans 34,000 m² and features modern event spaces, high-speed Wi-Fi, and excellent accessibility."
+    ctaButton={{
+      text: "Visit STATION F",
+      link: "https://stationf.co/",
+      openInNewTab: true,
+    }}
   >
     <div class="transport-strip">
       <div class="transport-item">
@@ -47,14 +52,43 @@ import GetTickets from "components/GetTickets.astro"
   >
     <div class="container">
       <h2 class="section-heading">Nearby Hotels</h2>
+      <p class="section-subheading">A small sampling of hotels near Station F</p>
       <div class="hotels-layout">
-        <!-- Map (left 1/3) -->
+        <!-- Map + Neighborhood info (left) -->
         <div class="hotels-map-col">
-          <div id="hotel-map" style="width:100%; height:100%; min-height:500px; border-radius:12px; border:1px solid #d5d5c2;"></div>
+          <div class="map-sticky">
+            <div id="hotel-map" style="width:100%; height:400px; border-radius:12px; border:1px solid #d5d5c2;"></div>
+          </div>
+          <div class="neighborhood-cards">
+            <h3 class="neighborhood-heading">The Neighborhood</h3>
+            <div class="neighborhood-card" style="border-left: 3px solid #16a34a;">
+              <h4>Quartier de la Gare</h4>
+              <p>The neighborhood where Station F is located, anchored by the Bibliothèque nationale de France. A modern, walkable district with riverside promenades, cinemas, and a growing food scene along Rue de Tolbiac. Well connected via Metro Line 14 and RER C.</p>
+            </div>
+            <div class="neighborhood-card" style="border-left: 3px solid #9333ea;">
+              <h4>Bercy / Gare de Lyon</h4>
+              <p>Just across the Seine, Bercy Village offers cobblestone streets lined with restaurants, shops, and wine bars in converted stone warehouses. The area is home to the Accor Arena and Parc de Bercy — a pleasant walk or one metro stop from Station F.</p>
+            </div>
+            <div class="neighborhood-card" style="border-left: 3px solid #ea580c;">
+              <h4>Place d'Italie</h4>
+              <p>A major hub of the 13th arrondissement, just a short walk from Station F. The square is surrounded by shops, cinemas, and restaurants, with easy metro access (Lines 5, 6, 7). A lively area that connects the venue to the rest of Paris.</p>
+            </div>
+            <div class="neighborhood-card" style="border-left: 3px solid #0891b2;">
+              <h4>Chinatown</h4>
+              <p>Paris's largest Asian quarter, centered around Avenue de Choisy and Avenue d'Ivry. A vibrant district packed with authentic Chinese, Vietnamese, and Thai restaurants, Asian supermarkets, and bubble tea shops — a great spot for affordable, delicious meals near the venue.</p>
+            </div>
+          </div>
         </div>
 
         <!-- Hotels (right 2/3) -->
         <div class="hotels-list-col">
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Hôtel Le Richemont <span class="hotel-stars">★★★</span></h3>
+              <span class="hotel-meta"><strong>~350m</strong> · 17 Rue Jean Colly · Near Station F, 13th arr.</span>
+            </div>
+            <a class="hotel-link" href="https://www.hotel-richemont.com/en/" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
           <div class="hotel-item">
             <div class="hotel-info">
               <h3>Mercure Paris Bercy Bibliothèque <span class="hotel-stars">★★★★</span></h3>
@@ -71,10 +105,10 @@ import GetTickets from "components/GetTickets.astro"
           </div>
           <div class="hotel-item">
             <div class="hotel-info">
-              <h3>Urban Bivouac Hôtel <span class="hotel-stars">★★★</span></h3>
-              <span class="hotel-meta"><strong>~1 km</strong> · 1 Rue Sthrau · Boutique, Metro Line 14</span>
+              <h3>Hôtel Sanso by HappyCulture <span class="hotel-stars">★★★</span></h3>
+              <span class="hotel-meta"><strong>~650m</strong> · 15 Rue de Tolbiac · Near Bibliothèque, Metro 14</span>
             </div>
-            <a class="hotel-link" href="https://www.ubparis.com" target="_blank" rel="noopener noreferrer">Website</a>
+            <a class="hotel-link" href="https://www.hotel-sanso.com/en/" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
           <div class="hotel-item">
             <div class="hotel-info">
@@ -82,6 +116,13 @@ import GetTickets from "components/GetTickets.astro"
               <span class="hotel-meta"><strong>~900m</strong> · 27 Rue Esquirol · Aparthotel with kitchens</span>
             </div>
             <a class="hotel-link" href="https://www.discoverasr.com/en/citadines/france/citadines-austerlitz-paris" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Urban Bivouac Hôtel <span class="hotel-stars">★★★</span></h3>
+              <span class="hotel-meta"><strong>~1 km</strong> · 1 Rue Sthrau · Boutique, Metro Line 14</span>
+            </div>
+            <a class="hotel-link" href="https://www.ubparis.com" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
           <div class="hotel-item">
             <div class="hotel-info">
@@ -113,10 +154,31 @@ import GetTickets from "components/GetTickets.astro"
           </div>
           <div class="hotel-item">
             <div class="hotel-info">
+              <h3>citizenM Paris Gare de Lyon <span class="hotel-stars">★★★★</span></h3>
+              <span class="hotel-meta"><strong>~1.2 km</strong> · 8 Rue Van Gogh · Modern design hotel, near Gare de Lyon</span>
+            </div>
+            <a class="hotel-link" href="https://www.citizenm.com/hotels/europe/paris/paris-gare-de-lyon-hotel" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
               <h3>Hôtel La Manufacture <span class="hotel-stars">★★★</span></h3>
               <span class="hotel-meta"><strong>~1.3 km</strong> · 8 Rue Philippe de Champagne · Left Bank, Metro 7</span>
             </div>
             <a class="hotel-link" href="https://www.hotel-la-manufacture.com/en/" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Mercure Paris Place d'Italie <span class="hotel-stars">★★★★</span></h3>
+              <span class="hotel-meta"><strong>~1.3 km</strong> · 25 Bd Auguste Blanqui · Accor, near Place d'Italie</span>
+            </div>
+            <a class="hotel-link" href="https://all.accor.com/hotel/1188/index.en.shtml" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Hôtel Marguerite <span class="hotel-stars">★★★</span></h3>
+              <span class="hotel-meta"><strong>~1.5 km</strong> · 102 Avenue de Choisy · Boutique, 13th arr.</span>
+            </div>
+            <a class="hotel-link" href="https://www.hotelmargueriteparis.com/" target="_blank" rel="noopener noreferrer">Website</a>
           </div>
         </div>
       </div>
@@ -141,9 +203,26 @@ import GetTickets from "components/GetTickets.astro"
             [48.8349, 2.3603, 'Citadines Austerlitz Paris ★★★', '27 Rue Esquirol', 'https://www.discoverasr.com/en/citadines/france/citadines-austerlitz-paris'],
             [48.8387, 2.3804, 'Novotel Paris Centre Bercy ★★★★', '85 Rue de Bercy', 'https://all.accor.com/hotel/0935/index.en.shtml'],
             [48.8314, 2.3871, 'Pullman Paris Centre Bercy ★★★★', '1 Rue de Libourne', 'https://all.accor.com/hotel/2192/index.en.shtml'],
-            [48.8440, 2.3796, 'Courtyard by Marriott ★★★★', '209 Rue de Bercy', 'https://www.marriott.com/en-us/hotels/pargl-courtyard-paris-gare-de-lyon/overview/']
+            [48.8440, 2.3796, 'Courtyard by Marriott ★★★★', '209 Rue de Bercy', 'https://www.marriott.com/en-us/hotels/pargl-courtyard-paris-gare-de-lyon/overview/'],
+            [48.8318, 2.3680, 'Hôtel Le Richemont ★★★', '17 Rue Jean Colly', 'https://www.hotel-richemont.com/en/'],
+            [48.8295, 2.3730, 'Hôtel Sanso by HappyCulture ★★★', '15 Rue de Tolbiac', 'https://www.hotel-sanso.com/en/'],
+            [48.8415, 2.3735, 'citizenM Paris Gare de Lyon ★★★★', '8 Rue Van Gogh', 'https://www.citizenm.com/hotels/europe/paris/paris-gare-de-lyon-hotel'],
+            [48.8310, 2.3510, "Mercure Paris Place d'Italie ★★★★", '25 Bd Auguste Blanqui', 'https://all.accor.com/hotel/1188/index.en.shtml'],
+            [48.8255, 2.3580, 'Hôtel Marguerite ★★★', '102 Avenue de Choisy', 'https://www.hotelmargueriteparis.com/']
           ];
           hotels.forEach(function(h) { L.marker([h[0], h[1]], { icon: hotelIcon }).addTo(map).bindPopup('<b>' + h[2] + '</b><br>' + h[3] + '<br><a href="' + h[4] + '" target="_blank" rel="noopener noreferrer">Website</a>'); });
+          var neighborhoods = [
+            { center: [48.8305, 2.3755], name: 'Quartier de la Gare', color: '#16a34a' },
+            { center: [48.8400, 2.3820], name: 'Bercy / Gare de Lyon', color: '#9333ea' },
+            { center: [48.8312, 2.3558], name: "Place d'Italie", color: '#ea580c' },
+            { center: [48.8265, 2.3615], name: 'Chinatown', color: '#0891b2' }
+          ];
+          var hoodLabelStyle = 'font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;color:#fff;opacity:0.85;text-align:center;width:140px;';
+          neighborhoods.forEach(function(n) {
+            L.circle(n.center, { radius: 350, color: n.color, fillColor: n.color, fillOpacity: 0.06, weight: 1.5, opacity: 0.4, dashArray: '6 4' }).addTo(map);
+            var icon = L.divIcon({ html: '<div style="' + hoodLabelStyle + 'background:' + n.color + ';transform:translate(-50%,-50%);">' + n.name + '</div>', className: 'leaflet-div-icon-clean', iconSize: null, iconAnchor: [0, 0] });
+            L.marker(n.center, { icon: icon, interactive: false }).addTo(map);
+          });
         });
       </script>
     </div>
@@ -197,6 +276,13 @@ import GetTickets from "components/GetTickets.astro"
 
   .section-heading {
     text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subheading {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #777;
     margin-bottom: 2.5rem;
   }
 
@@ -209,10 +295,49 @@ import GetTickets from "components/GetTickets.astro"
   }
 
   .hotels-map-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .map-sticky {
     position: sticky;
     top: calc(var(--nav-bar-height) + 1rem);
     border-radius: 12px;
     overflow: hidden;
+    z-index: 1;
+  }
+
+  .neighborhood-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .neighborhood-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0;
+  }
+
+  .neighborhood-card {
+    padding: 1rem 1.25rem;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e5e5dc;
+  }
+
+  .neighborhood-card h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 0.4rem;
+  }
+
+  .neighborhood-card p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: #555;
+    margin: 0;
   }
 
   .hotels-list-col {
@@ -286,9 +411,11 @@ import GetTickets from "components/GetTickets.astro"
     .hotels-layout {
       grid-template-columns: 1fr;
     }
-    .hotels-map-col {
+    .map-sticky {
       position: static;
-      min-height: 350px;
+    }
+    #hotel-map {
+      min-height: 300px;
     }
   }
 </style>
