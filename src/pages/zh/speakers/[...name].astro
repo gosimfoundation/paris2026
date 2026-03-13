@@ -322,7 +322,6 @@ const socialIconMap: Record<string, string> = {
   .speaker-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 1rem;
   }
 
@@ -340,6 +339,12 @@ const socialIconMap: Record<string, string> = {
 
   .speaker-nav-btn:hover {
     background: #f5f5f0;
+  }
+
+  .speaker-nav-prev,
+  .speaker-nav-next {
+    flex: 1;
+    min-width: 0;
   }
 
   .speaker-nav-next {
