@@ -42,7 +42,7 @@ const colorPalette = [
   { from: "#16a34a", to: "#4ade80" },   // Green — Open Source Robotics
   { from: "#2563eb", to: "#60a5fa" },   // Blue — Agentic App
   { from: "#ca8a04", to: "#eab308" },   // Yellow — Agentic AI on Edge
-  { from: "#db2777", to: "#f472b6" },   // Magenta — AI Hardware
+  { from: "#7c3aed", to: "#a78bfa" },   // Violet — AgenticOS
   { from: "#0891b2", to: "#22d3ee" },   // Cyan — Agentic App
   { from: "#ea580c", to: "#fb923c" },   // Orange — Open Source Model
 ];
@@ -57,8 +57,8 @@ const iconPalette = [
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
   // Bolt — Agentic AI on Edge
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
-  // Chip — AI Hardware
-  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>`,
+  // Layers — AgenticOS
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
   // Graph/network — Open Source Model
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 7l5 9M17 7l-5 9"/><path d="M7 6h10"/></svg>`,
 ];
@@ -169,12 +169,17 @@ tracks.forEach((track, i) => {
         <div class="highlights-grid">
           {highlights.map((item, i) => {
             const icons = [
+              // Star — Spotlight
               `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`,
+              // Robot — Robotics Hackathon
+              `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="4" width="10" height="8" rx="2"/><circle cx="10" cy="8" r="1" fill="currentColor"/><circle cx="14" cy="8" r="1" fill="currentColor"/><path d="M9 12v4h6v-4"/><path d="M5 8H3M21 8h-2M10 16v2M14 16v2"/></svg>`,
+              // Code brackets — Agentic Hackathon
               `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>`,
             ];
             const colors = [
               { from: "#c9a227", to: "#f0d060" },
               { from: "#7a8a9e", to: "#b8c8d8" },
+              { from: "#6d28d9", to: "#a78bfa" },
             ];
             const c = colors[i % colors.length];
             const cardClass = `highlight-card animate-slide-up`;
@@ -612,7 +617,7 @@ tracks.forEach((track, i) => {
 
   .highlights-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
 
