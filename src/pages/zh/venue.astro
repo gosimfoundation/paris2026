@@ -18,63 +18,26 @@ import GetTickets from "components/GetTickets.astro"
     location="5 Parv. Alan Turing, 75013 Paris, France"
     image="/images/venue/station-f.jpg"
     text="STATION F 是全球最大的初创企业园区，容纳了超过1,000家初创企业和众多科技项目。它位于巴黎第十三区塞纳河畔，拥有一流的会议和活动设施。标志性的 Halle Freyssinet 建筑占地34,000平方米，配备现代化活动空间、高速Wi-Fi和出色的无障碍设施。"
-  />
-
-  <!-- 交通信息 -->
-  <section
-    class="section section-connectivity"
-    data-theme-section="light"
-    data-bg-section="light"
   >
-    <div class="container">
-      <h2 class="section-heading">如何到达</h2>
-      <div class="connectivity-grid">
-        <div class="connectivity-card">
-          <div class="card-icon">
-            <svg width="24" height="24" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M140.554 60.8952H44.5035C44.0718 60.9005 43.6438 60.8153 43.2469 60.6452C42.8501 60.4752 42.4933 60.2239 42.1993 59.9077L31.9293 49.6377C30.6678 48.4347 28.9982 47.7528 27.2552 47.7285H7.50518C6.38638 47.7263 5.28546 48.0092 4.30637 48.5506C3.32728 49.092 2.50231 49.874 1.90934 50.8227C1.33153 51.8235 1.02734 52.9587 1.02734 54.1144C1.02734 55.27 1.33153 56.4052 1.90934 57.406L18.3677 90.3227C18.9147 91.4084 19.7518 92.3214 20.786 92.9605C21.8202 93.5996 23.0111 93.9399 24.2268 93.9435H62.7393C63.0699 93.9379 63.3951 94.0282 63.6755 94.2035C63.9559 94.3787 64.1795 94.6314 64.3193 94.931C64.4255 95.2454 64.4448 95.5826 64.3753 95.907C64.3058 96.2315 64.15 96.5311 63.9243 96.7744L38.5127 122.054C37.5882 122.971 36.9564 124.142 36.6971 125.418C36.4379 126.694 36.5627 128.018 37.056 129.223C37.5493 130.428 38.3887 131.459 39.4683 132.187C40.5479 132.915 41.819 133.306 43.121 133.312H66.7552C68.4982 133.288 70.1678 132.606 71.4293 131.403L108.033 94.7994C108.327 94.4831 108.683 94.2319 109.08 94.0618C109.477 93.8917 109.905 93.8066 110.337 93.8119H140.554C144.919 93.8119 149.106 92.0779 152.192 88.9913C155.279 85.9048 157.013 81.7186 157.013 77.3535C157.013 72.9885 155.279 68.8023 152.192 65.7157C149.106 62.6292 144.919 60.8952 140.554 60.8952Z" fill="currentColor"/>
-              <path d="M69.0579 53.3247C69.3643 53.6427 69.7327 53.8945 70.1404 54.0644C70.5481 54.2342 70.9863 54.3186 71.4279 54.3122H101.711C102.032 54.3133 102.347 54.2204 102.616 54.0449C102.885 53.8694 103.097 53.6191 103.225 53.3247C103.401 53.0494 103.495 52.7296 103.495 52.403C103.495 52.0764 103.401 51.7566 103.225 51.4813L78.0112 26.333C76.7496 25.13 75.0801 24.4481 73.337 24.4238H56.2862C54.9842 24.4293 53.713 24.8207 52.6335 25.5486C51.5539 26.2764 50.7144 27.3081 50.2212 28.5131C49.7279 29.718 49.603 31.0422 49.8623 32.3181C50.1216 33.5941 50.7534 34.7645 51.6779 35.6813L69.0579 53.3247Z" fill="currentColor"/>
-            </svg>
-          </div>
-          <h3>机场</h3>
-          <span class="card-value">28 km</span>
-          <p>巴黎戴高乐机场 (CDG) — 乘坐 RER B 到 Bibliothèque François Mitterrand，然后步行或换乘地铁14号线</p>
-        </div>
-        <div class="connectivity-card">
-          <div class="card-icon">
-            <svg width="24" height="24" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_train_zh)"><path d="M153.061 20.5391H92.165C81.9233 20.5199 71.9738 23.9524 63.9225 30.2825L29.2942 65.8325C28.98 66.1975 28.8154 66.6678 28.8334 67.1491C28.8604 67.3875 28.9392 67.6171 29.0643 67.8218C29.1894 68.0265 29.3578 68.2013 29.5575 68.3341C34.8168 71.8063 39.1332 76.5282 42.1203 82.0773C45.1074 87.6264 46.672 93.8296 46.6742 100.132C46.6829 104.774 45.8117 109.376 44.1067 113.693C43.9799 113.926 43.9135 114.186 43.9135 114.45C43.9135 114.715 43.9799 114.975 44.1067 115.207C44.2592 115.433 44.4654 115.617 44.7067 115.744C44.9479 115.87 45.2168 115.935 45.4892 115.932H94.535C94.7896 115.927 95.04 115.865 95.2677 115.751C95.4955 115.637 95.695 115.474 95.8517 115.273L112.903 93.1533C117.246 89.3793 122.817 87.3194 128.571 87.36H156.155C156.399 87.3904 156.646 87.3659 156.879 87.2883C157.112 87.2107 157.325 87.082 157.501 86.9116C157.678 86.7411 157.814 86.5333 157.9 86.3033C157.986 86.0734 158.02 85.8271 157.998 85.5825V25.4766C157.981 24.1724 157.456 22.9264 156.533 22.0042C155.611 21.0819 154.365 20.5562 153.061 20.5391ZM114.548 49.2425L103.554 60.2366C102.273 61.9658 100.607 63.372 98.6865 64.3435C96.7664 65.315 94.646 65.8248 92.4942 65.8325H55.4959C54.8802 65.7918 54.2883 65.5789 53.7877 65.2181C53.2872 64.8572 52.8982 64.363 52.665 63.7916C52.4071 63.2011 52.332 62.5469 52.4494 61.9132C52.5667 61.2796 52.8711 60.6957 53.3234 60.2366L68.465 44.6341C69.093 44.004 69.9454 43.6488 70.835 43.6466H112.442C113.092 43.6499 113.726 43.8454 114.265 44.2086C114.804 44.5718 115.223 45.0864 115.47 45.6875C115.716 46.3008 115.76 46.9768 115.594 47.6165C115.428 48.2562 115.061 48.826 114.548 49.2425Z" fill="currentColor"/><path d="M31.0076 115.998C31.3025 116.032 31.601 115.982 31.8688 115.854C32.1366 115.725 32.3629 115.525 32.5218 115.274C35.2885 110.753 36.7681 105.563 36.8009 100.264C36.8011 95.1665 35.4249 90.1638 32.8178 85.7837C30.2106 81.4037 26.4691 77.8089 21.9884 75.3788C21.6664 75.2194 21.3023 75.1654 20.9478 75.2245C20.5933 75.2835 20.2664 75.4527 20.0134 75.7079C10.7968 85.5829 9.8751 88.2163 9.8751 94.6021C9.85747 100.237 12.0699 105.649 16.0293 109.658C19.9887 113.667 25.3734 115.946 31.0076 115.998Z" fill="currentColor"/><path d="M156.353 97.3659H128.769C126.819 97.3867 124.898 97.8404 123.144 98.6943C121.391 99.5482 119.849 100.781 118.63 102.303L110.072 113.429C109.915 113.687 109.832 113.983 109.832 114.285C109.832 114.587 109.915 114.883 110.072 115.141C110.21 115.423 110.426 115.66 110.694 115.823C110.963 115.986 111.272 116.069 111.586 116.063H153.259C154.563 116.045 155.809 115.52 156.731 114.598C157.653 113.675 158.179 112.429 158.196 111.125V98.7484C158.131 98.3225 157.901 97.9392 157.557 97.6807C157.212 97.4223 156.78 97.3092 156.353 97.3659Z" fill="currentColor"/><path d="M151.417 124.293H6.58333C4.83732 124.293 3.16283 124.987 1.92821 126.221C0.693599 127.456 0 129.13 0 130.876C0 132.622 0.693599 134.297 1.92821 135.531C3.16283 136.766 4.83732 137.46 6.58333 137.46H151.417C153.163 137.46 154.837 136.766 156.072 135.531C157.306 134.297 158 132.622 158 130.876C158 129.13 157.306 127.456 156.072 126.221C154.837 124.987 153.163 124.293 151.417 124.293Z" fill="currentColor"/></g>
-              <defs><clipPath id="clip0_train_zh"><rect width="158" height="158" fill="white"/></clipPath></defs>
-            </svg>
-          </div>
-          <h3>火车站</h3>
-          <span class="card-value">0.5 km</span>
-          <p>奥斯特利茨火车站 (Gare d'Austerlitz) — 步行7分钟</p>
-        </div>
-        <div class="connectivity-card">
-          <div class="card-icon">
-            <svg width="24" height="24" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M151.417 145.755L132.852 134.629C132.65 134.507 132.476 134.345 132.34 134.152C132.204 133.96 132.11 133.741 132.062 133.51C132.001 133.045 132.118 132.575 132.391 132.193C134.041 130.19 134.948 127.678 134.959 125.083V85.1883L131.667 46.0833C131.667 40.8453 129.587 35.8218 125.883 32.118C122.179 28.4141 117.155 26.3333 111.917 26.3333H100.396C99.9596 26.3333 99.5415 26.1599 99.2328 25.8513C98.924 25.5426 98.7502 25.124 98.7502 24.6875V14.8125C98.7502 14.376 98.924 13.9574 99.2328 13.6487C99.5415 13.3401 99.9596 13.1667 100.396 13.1667H108.625C110.372 13.1667 112.046 12.473 113.281 11.2385C114.515 10.0038 115.209 8.32937 115.209 6.58333C115.209 4.83733 114.515 3.16283 113.281 1.92821C112.046 0.6936 110.372 0 108.625 0H49.3755C47.6295 0 45.955 0.6936 44.7204 1.92821C43.4858 3.16283 42.7922 4.83733 42.7922 6.58333C42.7922 8.32937 43.4858 10.0038 44.7204 11.2385C45.955 12.473 47.6295 13.1667 49.3755 13.1667H57.6047C58.0412 13.1667 58.4598 13.3401 58.7684 13.6487C59.0771 13.9574 59.2505 14.376 59.2505 14.8125V24.6875C59.2505 25.124 59.0771 25.5426 58.7684 25.8513C58.4598 26.1599 58.0412 26.3333 57.6047 26.3333H46.0839C40.9358 26.3315 35.9905 28.3399 32.3015 31.9306C28.6124 35.5212 26.4711 40.4105 26.3339 45.5567L23.0422 85.0567V125.083C23.0344 127.671 23.9178 130.181 25.5439 132.193C25.817 132.575 25.9347 133.045 25.873 133.51C25.8255 133.741 25.7308 133.96 25.5949 134.152C25.4589 134.345 25.2847 134.507 25.083 134.629L6.58386 145.755C5.34813 146.488 4.38615 147.606 3.8447 148.936C3.30327 150.267 3.21209 151.739 3.58508 153.126C3.95808 154.513 4.77477 155.741 5.91054 156.621C7.04628 157.501 8.43878 157.986 9.87553 158C11.0347 157.988 12.1703 157.67 13.1672 157.078L46.8739 136.868C47.1526 136.781 47.4509 136.781 47.7297 136.868H110.139C110.418 136.781 110.717 136.781 110.995 136.868L144.834 157.078C145.85 157.681 147.01 157.999 148.191 158C149.622 157.972 151.005 157.477 152.13 156.592C153.256 155.707 154.061 154.479 154.426 153.095C154.791 151.711 154.694 150.245 154.152 148.921C153.608 147.596 152.649 146.485 151.417 145.755ZM49.3755 118.5C47.4225 118.5 45.5132 117.921 43.8892 116.836C42.2653 115.751 40.9996 114.208 40.2522 112.404C39.5048 110.599 39.3092 108.614 39.6903 106.699C40.0713 104.783 41.0118 103.023 42.3929 101.642C43.7739 100.262 45.5334 99.3208 47.449 98.9396C49.3645 98.5584 51.3501 98.7539 53.1545 99.5018C54.9589 100.249 56.5012 101.515 57.5863 103.138C58.6714 104.763 59.2505 106.672 59.2505 108.625C59.2505 111.244 58.2101 113.756 56.3582 115.608C54.5063 117.46 51.9945 118.5 49.3755 118.5ZM108.625 118.5C106.673 118.5 104.763 117.921 103.139 116.836C101.515 115.751 100.25 114.208 99.502 112.404C98.7548 110.599 98.5593 108.614 98.9405 106.699C99.321 104.783 100.262 103.023 101.643 101.642C103.024 100.262 104.783 99.3208 106.699 98.9396C108.615 98.5584 110.6 98.7539 112.405 99.5018C114.209 100.249 115.751 101.515 116.837 103.138C117.922 104.763 118.5 106.672 118.5 108.625C118.5 111.244 117.46 113.756 115.608 115.608C113.756 117.46 111.245 118.5 108.625 118.5ZM120.673 78.4733C120.342 78.8071 119.893 78.9967 119.422 79H38.5789C38.1087 78.9967 37.6589 78.8071 37.328 78.4733C37.1832 78.3009 37.0737 78.102 37.006 77.8874C36.9382 77.6728 36.9134 77.447 36.933 77.2225L39.5005 46.0833C39.5005 44.3373 40.1942 42.6628 41.4287 41.4282C42.6634 40.1936 44.3378 39.5 46.0839 39.5H111.917C112.828 39.4971 113.729 39.6832 114.565 40.0464C115.399 40.4097 116.15 40.9423 116.769 41.6106C117.388 42.2788 117.861 43.0681 118.159 43.9287C118.457 44.7892 118.573 45.7022 118.5 46.61L121.068 77.2225C121.087 77.447 121.063 77.6728 120.995 77.8874C120.927 78.102 120.818 78.3009 120.673 78.4733Z" fill="currentColor"/></g>
-            </svg>
-          </div>
-          <h3>地铁</h3>
-          <span class="card-value">0.2 km</span>
-          <p>Chevaleret (6号线) — 步行3分钟</p>
-        </div>
-        <div class="connectivity-card">
-          <div class="card-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 14C8.66 14 10 12.66 10 11C10 9.34 8.66 8 7 8C5.34 8 4 9.34 4 11C4 12.66 5.34 14 7 14ZM7 10C7.55 10 8 10.45 8 11C8 11.55 7.55 12 7 12C6.45 12 6 11.55 6 11C6 10.45 6.45 10 7 10ZM19 7H11V1H3C1.35 1 0 2.35 0 4V17H2C2 18.66 3.34 20 5 20C6.66 20 8 18.66 8 17H16C16 18.66 17.34 20 19 20C20.66 20 22 18.66 22 17H24V12L21 7H19ZM5 18.5C4.17 18.5 3.5 17.83 3.5 17C3.5 16.17 4.17 15.5 5 15.5C5.83 15.5 6.5 16.17 6.5 17C6.5 17.83 5.83 18.5 5 18.5ZM19 18.5C18.17 18.5 17.5 17.83 17.5 17C17.5 16.17 18.17 15.5 19 15.5C19.83 15.5 20.5 16.17 20.5 17C20.5 17.83 19.83 18.5 19 18.5ZM19.5 12H13V9H19.5L21.46 12Z" fill="currentColor"/>
-            </svg>
-          </div>
-          <h3>公交</h3>
-          <span class="card-value">27, 64路</span>
-          <p>STATION F 200米范围内有多个公交站</p>
-        </div>
+    <div class="transport-strip">
+      <div class="transport-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="currentColor"/></svg>
+        <span><strong>机场</strong> — 距CDG 28公里</span>
+      </div>
+      <div class="transport-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c-4 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h2l2-2h4l2 2h2v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-4-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm3.5-6H6V6h5v5zm2 0V6h5v5h-5zm3.5 6c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" fill="currentColor"/></svg>
+        <span><strong>火车站</strong> — 距 Gare d'Austerlitz 0.5公里</span>
+      </div>
+      <div class="transport-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.8 2H6.2C4.44 2 3 3.44 3 5.2v12.6c0 1.76 1.44 3.2 3.2 3.2h11.6c1.76 0 3.2-1.44 3.2-3.2V5.2C21 3.44 19.56 2 17.8 2zM12 4c2.76 0 5 1.12 5 2.5S14.76 9 12 9 7 7.88 7 6.5 9.24 4 12 4zm0 15c-1.38 0-2.5-1.12-2.5-2.5S10.62 14 12 14s2.5 1.12 2.5 2.5S13.38 19 12 19zm5-7H7V7h10v5z" fill="currentColor"/></svg>
+        <span><strong>地铁</strong> — 距 Chevaleret 站（6号线）0.2公里</span>
+      </div>
+      <div class="transport-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z" fill="currentColor"/></svg>
+        <span><strong>公交</strong> — 27、64路，200米内</span>
       </div>
     </div>
-  </section>
-
+  </VenueInfo>
   <!-- 附近酒店 -->
   <section
     class="section section-hotels"
@@ -83,69 +46,106 @@ import GetTickets from "components/GetTickets.astro"
   >
     <div class="container">
       <h2 class="section-heading">附近酒店</h2>
-      <p class="hotels-intro">以下是步行距离或短途通勤即可到达 STATION F 的推荐酒店。</p>
-      <div class="hotels-grid">
-        <div class="hotel-card">
-          <h3>TOO Hôtel</h3>
-          <p class="hotel-distance">350m — 步行5分钟</p>
-          <p class="hotel-address">17 Bd du Général Jean Simon, 75013 Paris</p>
-          <p class="hotel-desc">现代屋顶酒店，可欣赏巴黎全景，紧邻 STATION F。</p>
-          <a class="hotel-link" href="https://toohotel.com/en/" target="_blank" rel="noopener noreferrer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            官网
-          </a>
+
+      <div class="hotels-layout">
+        <!-- Map (left 1/3) -->
+        <div class="hotels-map-col">
+          <div id="hotel-map" style="width:100%; height:100%; min-height:500px; border-radius:12px; border:1px solid #d5d5c2;"></div>
         </div>
-        <div class="hotel-card">
-          <h3>Novotel Paris Centre Bercy</h3>
-          <p class="hotel-distance">1.2 km — 步行15分钟</p>
-          <p class="hotel-address">85 Rue de Bercy, 75012 Paris</p>
-          <p class="hotel-desc">知名四星级酒店，靠近 Bercy Village，客房舒适，设有餐厅。</p>
-          <a class="hotel-link" href="https://all.accor.com/hotel/0935/index.en.shtml" target="_blank" rel="noopener noreferrer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            官网
-          </a>
-        </div>
-        <div class="hotel-card">
-          <h3>Pullman Paris Centre Bercy</h3>
-          <p class="hotel-distance">1.3 km — 步行16分钟</p>
-          <p class="hotel-address">1 Rue de Libourne, 75012 Paris</p>
-          <p class="hotel-desc">高档酒店，毗邻 AccorHotels Arena，设施现代，交通便利。</p>
-          <a class="hotel-link" href="https://www.pullmanpariscentrebercy.com/en/" target="_blank" rel="noopener noreferrer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            官网
-          </a>
-        </div>
-        <div class="hotel-card">
-          <h3>ibis Paris Gare de Lyon Diderot</h3>
-          <p class="hotel-distance">1.5 km — 步行18分钟</p>
-          <p class="hotel-address">31 Bd Diderot, 75012 Paris</p>
-          <p class="hotel-desc">经济实惠的选择，靠近里昂火车站，地铁可直达 STATION F。</p>
-          <a class="hotel-link" href="https://all.accor.com/hotel/3211/index.en.shtml" target="_blank" rel="noopener noreferrer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            官网
-          </a>
-        </div>
-        <div class="hotel-card">
-          <h3>Hôtel Mercure Paris Bercy Bibliothèque</h3>
-          <p class="hotel-distance">0.8 km — 步行10分钟</p>
-          <p class="hotel-address">17 Bd Vincent Auriol, 75013 Paris</p>
-          <p class="hotel-desc">舒适的中档酒店，位于第十三区，距会场非常近。</p>
-          <a class="hotel-link" href="https://all.accor.com/hotel/0934/index.en.shtml" target="_blank" rel="noopener noreferrer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            官网
-          </a>
-        </div>
-        <div class="hotel-card">
-          <h3>citizenM Paris Gare de Lyon</h3>
-          <p class="hotel-distance">1.4 km — 步行17分钟</p>
-          <p class="hotel-address">8 Rue Van Gogh, 75012 Paris</p>
-          <p class="hotel-desc">时尚科技感酒店，自助入住，精致紧凑的客房。</p>
-          <a class="hotel-link" href="https://www.citizenm.com/hotels/europe/paris/paris-gare-de-lyon-hotel" target="_blank" rel="noopener noreferrer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            官网
-          </a>
+
+        <!-- Hotels (right 2/3) -->
+        <div class="hotels-list-col">
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Mercure Paris Bercy Bibliothèque <span class="hotel-stars">★★★★</span></h3>
+              <span class="hotel-meta"><strong>~500m</strong> · 6 Bd Vincent Auriol · 雅高酒店，塞纳河景</span>
+            </div>
+            <a class="hotel-link" href="https://all.accor.com/hotel/0934/index.en.shtml" target="_blank" rel="noopener noreferrer">官网</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>ibis Styles Paris Tolbiac Bibliothèque <span class="hotel-stars">★★★</span></h3>
+              <span class="hotel-meta"><strong>~650m</strong> · 21 Rue de Tolbiac · 含早餐</span>
+            </div>
+            <a class="hotel-link" href="https://all.accor.com/hotel/7976/index.en.shtml" target="_blank" rel="noopener noreferrer">官网</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Urban Bivouac Hôtel <span class="hotel-stars">★★★</span></h3>
+              <span class="hotel-meta"><strong>~1 km</strong> · 1 Rue Sthrau · 精品酒店，近地铁14号线</span>
+            </div>
+            <a class="hotel-link" href="https://www.ubparis.com" target="_blank" rel="noopener noreferrer">官网</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Citadines Austerlitz Paris <span class="hotel-stars">★★★</span></h3>
+              <span class="hotel-meta"><strong>~900m</strong> · 27 Rue Esquirol · 公寓式酒店，配厨房</span>
+            </div>
+            <a class="hotel-link" href="https://www.discoverasr.com/en/citadines/france/citadines-austerlitz-paris" target="_blank" rel="noopener noreferrer">官网</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Novotel Paris Centre Bercy <span class="hotel-stars">★★★★</span></h3>
+              <span class="hotel-meta"><strong>~1 km</strong> · 85 Rue de Bercy · 雅高酒店，近 Bercy Village</span>
+            </div>
+            <a class="hotel-link" href="https://all.accor.com/hotel/0935/index.en.shtml" target="_blank" rel="noopener noreferrer">官网</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Jack's Hotel <span class="hotel-stars">★★★</span></h3>
+              <span class="hotel-meta"><strong>~1.1 km</strong> · 19 Av. Stephen Pichon · 环保酒店</span>
+            </div>
+            <a class="hotel-link" href="https://www.jacks-hotel.com" target="_blank" rel="noopener noreferrer">官网</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Pullman Paris Centre Bercy <span class="hotel-stars">★★★★</span></h3>
+              <span class="hotel-meta"><strong>~1.1 km</strong> · 1 Rue de Libourne · 雅高高档酒店，近 Arena</span>
+            </div>
+            <a class="hotel-link" href="https://all.accor.com/hotel/2192/index.en.shtml" target="_blank" rel="noopener noreferrer">官网</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Courtyard by Marriott <span class="hotel-stars">★★★★</span></h3>
+              <span class="hotel-meta"><strong>~1.2 km</strong> · 209 Rue de Bercy · 万豪酒店，近里昂火车站</span>
+            </div>
+            <a class="hotel-link" href="https://www.marriott.com/en-us/hotels/pargl-courtyard-paris-gare-de-lyon/overview/" target="_blank" rel="noopener noreferrer">官网</a>
+          </div>
+          <div class="hotel-item">
+            <div class="hotel-info">
+              <h3>Hôtel La Manufacture <span class="hotel-stars">★★★</span></h3>
+              <span class="hotel-meta"><strong>~1.3 km</strong> · 8 Rue Philippe de Champagne · 左岸精品酒店，近地铁7号线</span>
+            </div>
+            <a class="hotel-link" href="https://www.hotel-la-manufacture.com/en/" target="_blank" rel="noopener noreferrer">官网</a>
+          </div>
         </div>
       </div>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+      <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script is:inline>
+        document.addEventListener('DOMContentLoaded', function() {
+          var map = L.map('hotel-map', { scrollWheelZoom: false }).setView([48.8340, 2.3700], 14);
+          L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+            maxZoom: 18
+          }).addTo(map);
+          var venueIcon = L.divIcon({ html: '<div style="display:flex;flex-direction:column;align-items:center;"><div style="background:#dc2626;color:#fff;font-weight:700;padding:4px 10px;border-radius:6px;font-size:12px;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.3);margin-bottom:4px;">STATION F</div><div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid #dc2626;"></div></div>', className: 'leaflet-div-icon-clean', iconSize: [100, 40], iconAnchor: [50, 40] });
+          var hotelIcon = L.divIcon({ html: '<div style="background:#2563eb;color:#fff;width:20px;height:20px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);"></div>', className: '', iconSize: [26, 26], iconAnchor: [13, 13] });
+          L.marker([48.8345, 2.3709], { icon: venueIcon }).addTo(map).bindPopup('<b>STATION F</b><br>5 Parv. Alan Turing, 75013 Paris');
+          var hotels = [
+            [48.8374, 2.3730, 'Mercure Paris Bercy Bibliothèque ★★★★', '6 Bd Vincent Auriol', 'https://all.accor.com/hotel/0934/index.en.shtml'],
+            [48.8290, 2.3740, 'ibis Styles Paris Tolbiac Bibliothèque ★★★', '21 Rue de Tolbiac', 'https://all.accor.com/hotel/7976/index.en.shtml'],
+            [48.8273, 2.3669, 'Urban Bivouac Hôtel ★★★', '1 Rue Sthrau', 'https://www.ubparis.com'],
+            [48.8329, 2.3591, "Jack's Hotel ★★★", '19 Av. Stephen Pichon', 'https://www.jacks-hotel.com'],
+            [48.8329, 2.3554, 'Hôtel La Manufacture ★★★', '8 Rue Philippe de Champagne', 'https://www.hotel-la-manufacture.com/en/'],
+            [48.8349, 2.3603, 'Citadines Austerlitz Paris ★★★', '27 Rue Esquirol', 'https://www.discoverasr.com/en/citadines/france/citadines-austerlitz-paris'],
+            [48.8387, 2.3804, 'Novotel Paris Centre Bercy ★★★★', '85 Rue de Bercy', 'https://all.accor.com/hotel/0935/index.en.shtml'],
+            [48.8314, 2.3871, 'Pullman Paris Centre Bercy ★★★★', '1 Rue de Libourne', 'https://all.accor.com/hotel/2192/index.en.shtml'],
+            [48.8440, 2.3796, 'Courtyard by Marriott ★★★★', '209 Rue de Bercy', 'https://www.marriott.com/en-us/hotels/pargl-courtyard-paris-gare-de-lyon/overview/']
+          ];
+          hotels.forEach(function(h) { L.marker([h[0], h[1]], { icon: hotelIcon }).addTo(map).bindPopup('<b>' + h[2] + '</b><br>' + h[3] + '<br><a href="' + h[4] + '" target="_blank" rel="noopener noreferrer">官网</a>'); });
+        });
+      </script>
     </div>
   </section>
 
@@ -163,10 +163,36 @@ import GetTickets from "components/GetTickets.astro"
 </Layout>
 
 <style is:global>
-  /* Connectivity Section */
-  .section-connectivity {
-    padding-top: var(--row-gap) !important;
-    padding-bottom: var(--section-padding) !important;
+  /* Leaflet custom icon fix */
+  .leaflet-div-icon-clean {
+    background: none !important;
+    border: none !important;
+  }
+
+  /* Transport Strip */
+  .transport-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #d5d5c2;
+  }
+
+  .transport-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+
+  .transport-item svg {
+    flex-shrink: 0;
+    color: var(--color-dark);
+  }
+
+  .section-hotels {
+    padding-top: 1.5rem !important;
   }
 
   .section-heading {
@@ -174,160 +200,95 @@ import GetTickets from "components/GetTickets.astro"
     margin-bottom: 2.5rem;
   }
 
-  .connectivity-grid {
+  /* Hotels Layout - Map left, list right */
+  .hotels-layout {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--col-gap);
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
   }
 
-  .connectivity-card {
-    background: var(--color-white);
-    border: 1px solid #d5d5c2;
-    border-radius: 8px;
-    padding: 2rem;
+  .hotels-map-col {
+    position: sticky;
+    top: calc(var(--nav-bar-height) + 1rem);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .hotels-list-col {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
   }
 
-  .connectivity-card .card-icon {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 4px;
+  .hotel-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: var(--color-dark);
-    color: var(--color-white);
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #e5e5dc;
   }
 
-  .connectivity-card .card-icon svg {
-    width: 24px;
-    height: 24px;
-    color: var(--color-white);
+  .hotel-item:first-child {
+    padding-top: 0;
   }
 
-  .connectivity-card h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin: 0;
+  .hotel-item:last-child {
+    border-bottom: none;
   }
 
-  .connectivity-card .card-value {
-    font-size: 2rem;
+  .hotel-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .hotel-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.2rem;
+    line-height: 1.3;
+  }
+
+  .hotel-stars {
+    font-size: 0.8rem;
+    color: #d4a017;
     font-weight: 400;
-    line-height: 1.1;
+    letter-spacing: 1px;
+    margin-left: 0.25rem;
   }
 
-  .connectivity-card p {
-    font-size: 0.95rem;
-    color: var(--color-text);
-    margin: 0;
-    line-height: 1.5;
-  }
-
-  @media (max-width: 920px) {
-    .connectivity-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 540px) {
-    .connectivity-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* Hotels Section */
-  .hotels-intro {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.05rem;
-    color: var(--color-text);
-  }
-
-  .hotels-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .hotel-card {
-    background: var(--color-white);
-    border: 1px solid #d5d5c2;
-    border-radius: 8px;
-    padding: 1.75rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  .hotel-meta {
+    font-size: 0.85rem;
+    color: #777;
+    line-height: 1.4;
   }
 
   .hotel-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    align-self: flex-end;
-    margin-top: auto;
-    padding: 0.45rem 1rem;
-    font-size: 0.85rem;
+    flex-shrink: 0;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #999 !important;
     background: transparent;
     border: 1.5px solid #ccc;
     border-radius: 50px;
     text-decoration: none !important;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    transition: background 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
   }
 
   .hotel-link:hover {
     background: #ccc;
     color: #fff !important;
-    transform: translateY(-1px);
   }
 
-  .hotel-link:hover svg {
-    stroke: #fff;
-  }
-
-  .hotel-link svg {
-    flex-shrink: 0;
-  }
-
-  .hotel-card h3 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin: 0;
-  }
-
-  .hotel-distance {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--color-primary) !important;
-    margin: 0;
-  }
-
-  .hotel-address {
-    font-size: 0.85rem;
-    color: var(--color-text) !important;
-    margin: 0;
-  }
-
-  .hotel-desc {
-    font-size: 0.9rem;
-    color: var(--color-text) !important;
-    margin: 0;
-    line-height: 1.5;
-  }
-
-  @media (max-width: 920px) {
-    .hotels-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 540px) {
-    .hotels-grid {
+  @media (max-width: 860px) {
+    .hotels-layout {
       grid-template-columns: 1fr;
+    }
+    .hotels-map-col {
+      position: static;
+      min-height: 350px;
     }
   }
 </style>

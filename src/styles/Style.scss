@@ -245,18 +245,18 @@ footer {
 .main-nav-bar .logo {
    width: 85px;
    position: relative;
-   height: 24px;
+   height: 30px;
    transition: width var(--animation-primary) 0.3s;
 }
 
 .main-nav-bar .logo-click {
    display: flex;
-   height: 24px;
+   height: 30px;
    justify-content: flex-start;
    align-items: center;
    overflow: hidden;
    position: relative;
-   bottom: 6px;
+   bottom: 3px;
 }
 
 .main-nav-bar .logo svg {

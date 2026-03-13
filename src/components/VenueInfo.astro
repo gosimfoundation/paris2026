@@ -66,6 +66,7 @@ const { subtitle, title, location, image, text, ctaButton } = Astro.props;
           <div class="col-row">
             <p>{text}</p>
           </div>
+          <slot />
         </div>
       </div>
       <div class="col col-text styled-content">
