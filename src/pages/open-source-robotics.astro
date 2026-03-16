@@ -3,6 +3,7 @@ import Layout from "layouts/LayoutLanding.astro";
 import OpenArmViewer from "components/OpenArmViewer.astro";
 import BipedalViewer from "components/BipedalViewer.astro";
 import LeKiwiViewer from "components/LeKiwiViewer.astro";
+import AmazingHandViewer from "components/AmazingHandViewer.astro";
 ---
 
 <Layout
@@ -23,6 +24,9 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
         </div>
         <div class="viewer-right">
           <LeKiwiViewer />
+        </div>
+        <div class="viewer-amazinghand">
+          <AmazingHandViewer />
         </div>
       </div>
       <div class="hero-content">
@@ -56,6 +60,7 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
               <span class="speaker-name">Caroline Pascal</span>
               <span class="speaker-role">LeRobot Maintainer, Hugging Face</span>
               <span class="speaker-talk">LeRobot Dataset Roadmap!</span>
+              <span class="speaker-tag">dataset</span>
             </div>
           </a>
           <a href="https://github.com/Virgileboat" target="_blank" rel="noopener noreferrer" class="speaker-card">
@@ -64,6 +69,7 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
               <span class="speaker-name">Virgile Batto</span>
               <span class="speaker-role">Embodied Robotics Engineer, Hugging Face</span>
               <span class="speaker-talk">HuggingFace Legged Robot!</span>
+              <span class="speaker-tag">bipedal</span>
             </div>
           </a>
           <a href="https://github.com/wzcai99" target="_blank" rel="noopener noreferrer" class="speaker-card">
@@ -72,6 +78,7 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
               <span class="speaker-name">Wenzhe Cai</span>
               <span class="speaker-role">Researcher, Shanghai AI Laboratory</span>
               <span class="speaker-talk">Building Visual Navigation Foundation Models with Scalable Simulation Data</span>
+              <span class="speaker-tag">navigation</span>
             </div>
           </a>
           <a href="https://www.gujinwei.org/" target="_blank" rel="noopener noreferrer" class="speaker-card">
@@ -80,6 +87,7 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
               <span class="speaker-name">Jinwei Gu</span>
               <span class="speaker-role">Principal Research Scientist & Tech Lead, NVIDIA</span>
               <span class="speaker-talk">Cosmos: Unleashing Video Foundation Models for Physical AI and Generalist Robots</span>
+              <span class="speaker-tag">world model</span>
             </div>
           </a>
           <a href="https://liujiaming1996.github.io/" target="_blank" rel="noopener noreferrer" class="speaker-card">
@@ -88,6 +96,7 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
               <span class="speaker-name">Jiaming Liu</span>
               <span class="speaker-role">PhD Student, Peking University</span>
               <span class="speaker-talk">Enabling Robots to Both "Think" and "Act"</span>
+              <span class="speaker-tag">thinking</span>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/charbel-d-9569ba199/" target="_blank" rel="noopener noreferrer" class="speaker-card">
@@ -96,6 +105,7 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
               <span class="speaker-name">Charbel Dandjinou</span>
               <span class="speaker-role">CTO & Founder, Reflexion Robotics</span>
               <span class="speaker-talk">Skill Foundry: An AI That Embodies a Robot, Watches Itself, and Learns</span>
+              <span class="speaker-tag">skills</span>
             </div>
           </a>
           <a href="https://github.com/dimforge" target="_blank" rel="noopener noreferrer" class="speaker-card">
@@ -104,6 +114,16 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
               <span class="speaker-name">Sébastien Crozet</span>
               <span class="speaker-role">Founder, Dimforge</span>
               <span class="speaker-talk">Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics and Training Datasets Generation</span>
+              <span class="speaker-tag">simulation</span>
+            </div>
+          </a>
+          <a href="https://github.com/Jeremy-Laville" target="_blank" rel="noopener noreferrer" class="speaker-card">
+            <img src="/images/speakers/jeremy-laville.png" alt="Jeremy Laville" class="speaker-photo" />
+            <div class="speaker-info">
+              <span class="speaker-name">Jeremy Laville</span>
+              <span class="speaker-role">R&D Engineer, Pollen Robotics</span>
+              <span class="speaker-talk">Amazing Hand Tech Report</span>
+              <span class="speaker-tag">hand</span>
             </div>
           </a>
           <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="speaker-card speaker-card-cta">
@@ -228,29 +248,39 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
     position: absolute;
     top: 0;
     left: 0;
-    width: 33.33%;
+    width: 25%;
     height: 100%;
   }
 
   .viewer-center {
     position: absolute;
     top: 0;
-    left: 33.33%;
-    width: 33.33%;
+    left: 20%;
+    width: 30%;
+    height: 100%;
+  }
+
+  .viewer-amazinghand {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
     height: 100%;
   }
 
   .viewer-right {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 33.33%;
-    height: 100%;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 40%;
+    z-index: 1;
   }
 
   @media (max-width: 768px) {
     .viewer-center,
-    .viewer-right {
+    .viewer-right,
+    .viewer-amazinghand {
       display: none;
     }
     .viewer-left {
@@ -387,6 +417,20 @@ import LeKiwiViewer from "components/LeKiwiViewer.astro";
     color: #0e7aff;
     font-weight: 500;
     margin-top: 0.25rem;
+  }
+
+  .speaker-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #0e7aff;
+    background: rgba(14, 122, 255, 0.08);
+    border: 1px solid rgba(14, 122, 255, 0.2);
+    border-radius: 999px;
+    padding: 2px 10px;
+    margin-top: 0.25rem;
+    text-transform: lowercase;
+    width: fit-content;
   }
 
   .speaker-talk-cta {
