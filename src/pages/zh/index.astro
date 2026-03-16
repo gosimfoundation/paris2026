@@ -58,25 +58,37 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
     ]}
   />
 
-  <!-- <CardsSponsors
-    title="由以下机构赞助"
-    sponsors={[
+  <TextAndSponsors
+    id="supporting-organizations"
+    title="支持单位"
+    text="GOSIM Paris 2026 由引领开源和 AI 创新的领先机构鼎力支持。"
+    text2=""
+    logos={[
       {
-        name: "1ms.ai",
-        image: "/images/sponsors/1msai.png",
+        image: "minimax.png",
+        imageAlt: "MiniMax logo",
       },
       {
-        name: "Huawei",
-        image: "/images/sponsors/huawei.png",
+        image: "modelbest.png",
+        imageAlt: "ModelBest logo",
       },
       {
-        name: "CSDN",
-        image: "/images/sponsors/csdn.png",
+        image: "moonshot-ai.png",
+        imageAlt: "Moonshot AI logo",
+      },
+      {
+        image: "sgl.png",
+        imageAlt: "SGLang logo",
+      },
+      {
+        image: "vllm.png",
+        imageAlt: "vLLM logo",
+      },
+      {
+        image: "zhipuai.png",
+        imageAlt: "ZhipuAI logo",
       },
     ]}
-  /> -->
-  <FeaturedSpeakers
-    title="特邀演讲嘉宾"
   />
 
   <div
@@ -268,6 +280,11 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
         text: "学习使用 vLLM 的高吞吐、低延迟推理引擎部署和扩展大语言模型服务。",
         image: "vllm.png",
       },
+      {
+        title: "Own Your Data Science and AI Workshop",
+        text: "全天工作坊，聚焦前沿 AI 开源工具——从 GPU 加速的机器学习框架到开源主权大语言模型和表格基础模型。",
+        image: "probabl.png",
+      },
     ]}
     highlightsTitle="Spotlight & Hackathon"
     highlights={[
@@ -289,6 +306,10 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
 
   <!-- Marquee (Past Featured Projects) temporarily removed until projects are updated -->
+
+  <FeaturedSpeakers
+    title="特邀演讲嘉宾"
+  />
 
   <Timeline
     todayLabel="今天"
@@ -383,7 +404,7 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
         description:
           "一场汇聚全球思想家与实践者的高端闭门论坛，旨在探索人工智能如何与人类价值共生，确保AI发展始终以人为本。",
         image: "/images/homepage/co-located-ai-vision.png",
-        link: "https://forum.gosim.org/en/",
+        link: "https://paris2026.visionforum.ai/",
         openInNewTab: false,
       },
       {
@@ -414,43 +435,6 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   /> -->
 
   <div class="section-divider"></div>
-
-  <TextAndSponsors
-    id="sponsorship"
-    title="支持机会"
-    text="通过成为GOSIM Paris 2026的合作伙伴，接触到数千名目标受众。"
-    text2="*仅展示往届GOSIM会议支持者，仅供参考。"
-    ctaButton={{
-      text: "联系我们",
-      link: "mailto:sponsor@gosim.org",
-    }}
-    logos={[
-      {
-        image: "openwallet.png",
-        imageAlt: "OpenWallet logo",
-      },
-      {
-        image: "ajtis.jpg",
-        imageAlt: "AJTIS logo",
-      },
-      {
-        image: "aifc.png",
-        imageAlt: "AIFC logo",
-      },
-      {
-        image: "lf-gen-ai.png",
-        imageAlt: "Linux Foudnation logo",
-      },
-      {
-        image: "eclipse-foundation.png",
-        imageAlt: "Eclipse Foundation logo",
-      },
-      {
-        image: "osi.png",
-        imageAlt: "Open Source Initiative logo",
-      },
-    ]}
-  />
 
   <VenueInfo
     subtitle="会议地点"

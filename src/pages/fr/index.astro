@@ -58,8 +58,37 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
     ]}
   />
 
-  <FeaturedSpeakers
-    title="Intervenants en vedette"
+  <TextAndSponsors
+    id="supporting-organizations"
+    title="Organisations de soutien"
+    text="GOSIM Paris 2026 est rendu possible grâce au soutien d'organisations de premier plan qui stimulent l'innovation en open source et en IA."
+    text2=""
+    logos={[
+      {
+        image: "minimax.png",
+        imageAlt: "Logo MiniMax",
+      },
+      {
+        image: "modelbest.png",
+        imageAlt: "Logo ModelBest",
+      },
+      {
+        image: "moonshot-ai.png",
+        imageAlt: "Logo Moonshot AI",
+      },
+      {
+        image: "sgl.png",
+        imageAlt: "Logo SGLang",
+      },
+      {
+        image: "vllm.png",
+        imageAlt: "Logo vLLM",
+      },
+      {
+        image: "zhipuai.png",
+        imageAlt: "Logo ZhipuAI",
+      },
+    ]}
   />
 
   <div
@@ -121,6 +150,11 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
         text: "Apprenez à déployer et à mettre à l'échelle le service de grands modèles de langage avec le moteur d'inférence haute performance et faible latence de vLLM.",
         image: "vllm.png",
       },
+      {
+        title: "Own Your Data Science and AI Workshop",
+        text: "Un atelier d'une journée complète sur les outils open source pour l'IA de pointe — des frameworks ML accélérés par GPU aux LLMs souverains et modèles de fondation tabulaires.",
+        image: "probabl.png",
+      },
     ]}
     highlightsTitle="Spotlight & Hackathon"
     highlights={[
@@ -141,6 +175,10 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
 
   <!-- Marquee (Past Featured Projects) temporarily removed until projects are updated -->
+
+  <FeaturedSpeakers
+    title="Intervenants en vedette"
+  />
 
   <Timeline
     todayLabel="Aujourd'hui"
@@ -215,43 +253,6 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
 
   <div class="section-divider"></div>
-
-  <TextAndSponsors
-    id="sponsorship"
-    title="Opportunités de soutien"
-    text="Touchez des milliers de personnes dans votre audience cible en devenant une organisation partenaire de GOSIM Paris 2026."
-    text2="*Les soutiens des précédentes conférences GOSIM sont présentés à titre indicatif uniquement."
-    ctaButton={{
-      text: "Contactez-nous",
-      link: "mailto:sponsor@gosim.org",
-    }}
-    logos={[
-      {
-        image: "openwallet.png",
-        imageAlt: "Logo OpenWallet",
-      },
-      {
-        image: "ajtis.jpg",
-        imageAlt: "Logo AJTIS",
-      },
-      {
-        image: "aifc.png",
-        imageAlt: "Logo AIFC",
-      },
-      {
-        image: "lf-gen-ai.png",
-        imageAlt: "Logo Linux Foundation",
-      },
-      {
-        image: "eclipse-foundation.png",
-        imageAlt: "Logo Eclipse Foundation",
-      },
-      {
-        image: "osi.png",
-        imageAlt: "Logo Open Source Initiative",
-      },
-    ]}
-  />
 
   <VenueInfo
     subtitle="Le lieu"

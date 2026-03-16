@@ -57,25 +57,37 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
       },
     ]}
   />
-  <!-- <CardsSponsors
-    title="Proudly Sponsored By"
-    sponsors={[
+  <TextAndSponsors
+    id="supporting-organizations"
+    title="Supporting Organizations"
+    text="GOSIM Paris 2026 is made possible by the generous support of leading organizations driving innovation in open source and AI."
+    text2=""
+    logos={[
       {
-        name: "1ms.ai",
-        image: "/images/sponsors/1msai.png",
+        image: "minimax.png",
+        imageAlt: "MiniMax logo",
       },
       {
-        name: "Huawei",
-        image: "/images/sponsors/huawei.png",
+        image: "modelbest.png",
+        imageAlt: "ModelBest logo",
       },
       {
-        name: "CSDN",
-        image: "/images/sponsors/csdn.png",
+        image: "moonshot-ai.png",
+        imageAlt: "Moonshot AI logo",
       },
-    ]} -->
-
-  <FeaturedSpeakers
-    title="Featured Speakers"
+      {
+        image: "sgl.png",
+        imageAlt: "SGLang logo",
+      },
+      {
+        image: "vllm.png",
+        imageAlt: "vLLM logo",
+      },
+      {
+        image: "zhipuai.png",
+        imageAlt: "ZhipuAI logo",
+      },
+    ]}
   />
 
   <div
@@ -267,6 +279,11 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
         text: "Learn to deploy and scale large language model serving with vLLM's high-throughput, low-latency inference engine.",
         image: "vllm.png",
       },
+      {
+        title: "Own Your Data Science and AI Workshop",
+        text: "A full-day workshop on open source tooling for state-of-the-art AI — from GPU-accelerated ML frameworks to sovereign LLMs and tabular foundation models.",
+        image: "probabl.png",
+      },
     ]}
     highlightsTitle="Spotlight & Hackathon"
     highlights={[
@@ -288,6 +305,10 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
 
   <!-- Marquee (Past Featured Projects) temporarily removed until projects are updated -->
+
+  <FeaturedSpeakers
+    title="Featured Speakers"
+  />
 
   <Timeline
     todayLabel="Today"
@@ -379,7 +400,7 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
         description:
           "An exclusive forum for global thinkers and practitioners to explore a symbiotic future for AI and humanity, ensuring technological progress is guided by core human values.",
         image: "/images/homepage/ai-vision-foum-min.png",
-        link: "https://forum.gosim.org/en/",
+        link: "https://paris2026.visionforum.ai/",
         openInNewTab: false,
       },
       {
@@ -410,43 +431,6 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   /> -->
 
   <div class="section-divider"></div>
-
-  <TextAndSponsors
-    id="sponsorship"
-    title="Support Opportunities"
-    text="Reach thousands of people in your target audience by becoming a supporting organization at GOSIM Paris 2026."
-    text2="*Previous GOSIM conference supporters shown for illustration purposes only."
-    ctaButton={{
-      text: "Contact Us",
-      link: "mailto:sponsor@gosim.org",
-    }}
-    logos={[
-      {
-        image: "openwallet.png",
-        imageAlt: "OpenWallet logo",
-      },
-      {
-        image: "ajtis.jpg",
-        imageAlt: "AJTIS logo",
-      },
-      {
-        image: "aifc.png",
-        imageAlt: "AIFC logo",
-      },
-      {
-        image: "lf-gen-ai.png",
-        imageAlt: "Linux Foudnation logo",
-      },
-      {
-        image: "eclipse-foundation.png",
-        imageAlt: "Eclipse Foundation logo",
-      },
-      {
-        image: "osi.png",
-        imageAlt: "Open Source Initiative logo",
-      },
-    ]}
-  />
 
   <VenueInfo
     subtitle="The Venue"

@@ -898,7 +898,11 @@ footer {
 @media screen and (max-width: 640px) {
    .btn-home-wrap{
       gap: 1rem;
-      flex-direction: column;
+      flex-direction: row;
+   }
+
+   .section-home-header .btn-home-wrap {
+      bottom: calc(-40vh + 6rem);
    }
 }
 
