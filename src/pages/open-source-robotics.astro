@@ -2,6 +2,7 @@
 import Layout from "layouts/LayoutLanding.astro";
 import OpenArmViewer from "components/OpenArmViewer.astro";
 import BipedalViewer from "components/BipedalViewer.astro";
+import LeKiwiViewer from "components/LeKiwiViewer.astro";
 ---
 
 <Layout
@@ -17,8 +18,11 @@ import BipedalViewer from "components/BipedalViewer.astro";
         <div class="viewer-left">
           <OpenArmViewer />
         </div>
-        <div class="viewer-right">
+        <div class="viewer-center">
           <BipedalViewer />
+        </div>
+        <div class="viewer-right">
+          <LeKiwiViewer />
         </div>
       </div>
       <div class="hero-content">
@@ -198,7 +202,15 @@ import BipedalViewer from "components/BipedalViewer.astro";
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 33.33%;
+    height: 100%;
+  }
+
+  .viewer-center {
+    position: absolute;
+    top: 0;
+    left: 33.33%;
+    width: 33.33%;
     height: 100%;
   }
 
@@ -206,11 +218,12 @@ import BipedalViewer from "components/BipedalViewer.astro";
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 33.33%;
     height: 100%;
   }
 
   @media (max-width: 768px) {
+    .viewer-center,
     .viewer-right {
       display: none;
     }

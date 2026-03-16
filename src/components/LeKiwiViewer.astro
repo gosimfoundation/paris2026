@@ -1,7 +1,7 @@
 ---
 ---
 
-<canvas id="bipedal-canvas"></canvas>
+<canvas id="lekiwi-canvas"></canvas>
 
 <script>
   import * as THREE from "three";
@@ -9,26 +9,17 @@
   import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js";
   import URDFLoader from "urdf-loader";
 
-  function initBipedal() {
-    const canvas = document.getElementById("bipedal-canvas") as HTMLCanvasElement;
-    if (!canvas) {
-      console.error("[BipedalViewer] Canvas not found");
-      return;
-    }
-    console.log("[BipedalViewer] Canvas found, initializing...");
+  function initLeKiwi() {
+    const canvas = document.getElementById("lekiwi-canvas") as HTMLCanvasElement;
+    if (!canvas) return;
 
-    const container = (canvas.closest('.viewer-center') || canvas.closest('.viewer-right')) as HTMLElement;
-    if (!container) {
-      console.error("[BipedalViewer] viewer container not found");
-      return;
-    }
-    console.log("[BipedalViewer] Container size:", container.clientWidth, container.clientHeight);
+    const container = canvas.closest('.viewer-right') as HTMLElement;
+    if (!container) return;
 
     let renderer: THREE.WebGLRenderer;
     try {
       renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
     } catch (e) {
-      console.error("[BipedalViewer] WebGL init failed", e);
       canvas.style.display = "none";
       return;
     }
@@ -73,35 +64,28 @@
           },
           undefined,
           (err: unknown) => {
-            console.error("[BipedalViewer] STL load error:", path, err);
+            console.error("[LeKiwiViewer] STL load error:", path, err);
             done(null, err);
           }
         );
       } else {
-        console.error("[BipedalViewer] Unknown mesh format:", path);
         done(null, new Error(`Unknown mesh format: ${path}`));
       }
     };
 
-    console.log("[BipedalViewer] Loading URDF...");
-    urdfLoader.load("https://huggingface.co/datasets/haixuantao/urdfs/resolve/main/bipedal/robot_no_arms.urdf", (result: THREE.Object3D) => {
-      console.log("[BipedalViewer] URDF loaded, children:", result.children.length);
+    urdfLoader.load("https://huggingface.co/datasets/haixuantao/urdfs/resolve/main/lekiwi/LeKiwi.urdf", (result: THREE.Object3D) => {
       result.rotation.x = -Math.PI / 2;
 
-      // Auto-center and scale
       const box = new THREE.Box3().setFromObject(result);
       const size = box.getSize(new THREE.Vector3());
-      console.log("[BipedalViewer] Model size:", size.x, size.y, size.z);
       const maxDim = Math.max(size.x, size.y, size.z);
       if (maxDim === 0) {
-        console.error("[BipedalViewer] Model has zero size!");
         scene.add(result);
         return;
       }
       const scale = 1.0 / maxDim;
       result.scale.setScalar(scale);
 
-      // Recalculate after scaling
       const box2 = new THREE.Box3().setFromObject(result);
       const center2 = box2.getCenter(new THREE.Vector3());
       result.position.sub(center2);
@@ -109,10 +93,8 @@
 
       scene.add(result);
 
-      // Update camera target
       controls.target.set(0, box2.getSize(new THREE.Vector3()).y / 2, 0);
       controls.update();
-      console.log("[BipedalViewer] Model added to scene");
     });
 
     function resize() {
@@ -145,14 +127,14 @@
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initBipedal);
+    document.addEventListener("DOMContentLoaded", initLeKiwi);
   } else {
-    initBipedal();
+    initLeKiwi();
   }
 </script>
 
 <style>
-  #bipedal-canvas {
+  #lekiwi-canvas {
     position: absolute;
     top: 0;
     left: 0;

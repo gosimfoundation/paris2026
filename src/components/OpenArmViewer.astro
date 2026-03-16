@@ -65,7 +65,7 @@
       }
     };
 
-    urdfLoader.load("/models/openarm/openarm_v10.urdf", (result: THREE.Object3D) => {
+    urdfLoader.load("https://huggingface.co/datasets/haixuantao/urdfs/resolve/main/openarm/openarm_v10.urdf", (result: THREE.Object3D) => {
       result.rotation.x = -Math.PI / 2;
       scene.add(result);
     });
