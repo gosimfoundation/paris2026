@@ -33,11 +33,37 @@ import BipedalViewer from "components/BipedalViewer.astro";
                 <img src="/images/speakers/caroline-pascal.jpg" alt="Caroline Pascal" class="person-photo" />
                 <span class="person-name">Caroline Pascal</span>
                 <span class="person-role">LeRobot Maintainer</span>
+                <span class="person-org">Hugging Face</span>
               </a>
               <a href="https://github.com/Virgileboat" target="_blank" rel="noopener noreferrer" class="person-card">
                 <img src="/images/speakers/virgile-batto.jpg" alt="Virgile Batto" class="person-photo" />
                 <span class="person-name">Virgile Batto</span>
-                <span class="person-role">HF Legged Robot</span>
+                <span class="person-role">Embodied Robotics Engineer</span>
+                <span class="person-org">Hugging Face</span>
+              </a>
+              <a href="https://github.com/wzcai99" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/wzcai99.jpg" alt="Wenzhe Cai" class="person-photo" />
+                <span class="person-name">Wenzhe Cai</span>
+                <span class="person-role">Researcher</span>
+                <span class="person-org">Shanghai AI Lab</span>
+              </a>
+              <a href="https://www.gujinwei.org/" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/jinwei-gu.png" alt="Jinwei Gu" class="person-photo" />
+                <span class="person-name">Jinwei Gu</span>
+                <span class="person-role">Principal Research Scientist</span>
+                <span class="person-org">NVIDIA</span>
+              </a>
+              <a href="https://liujiaming1996.github.io/" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/jiaming-liu.JPG" alt="Jiaming Liu" class="person-photo" />
+                <span class="person-name">Jiaming Liu</span>
+                <span class="person-role">PhD Student</span>
+                <span class="person-org">Peking University</span>
+              </a>
+              <a href="https://www.linkedin.com/in/charbel-d-9569ba199/" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/charbel-dandjinou.jpeg" alt="Charbel Dandjinou" class="person-photo" />
+                <span class="person-name">Charbel Dandjinou</span>
+                <span class="person-role">CTO & Founder</span>
+                <span class="person-org">Reflexion Robotics</span>
               </a>
               <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="person-card person-card-cta">
                 <span class="person-photo person-photo-cta">?</span>
@@ -52,7 +78,8 @@ import BipedalViewer from "components/BipedalViewer.astro";
               <a href="https://github.com/haixuanTao" target="_blank" rel="noopener noreferrer" class="person-card">
                 <img src="/images/speakers/haixuan-tao.jpg" alt="Haixuan Xavier Tao" class="person-photo" />
                 <span class="person-name">Haixuan Xavier Tao</span>
-                <span class="person-role">Founder @ 1ms.ai</span>
+                <span class="person-role">Founder</span>
+                <span class="person-org">1ms.ai</span>
               </a>
             </div>
           </div>
@@ -361,6 +388,7 @@ import BipedalViewer from "components/BipedalViewer.astro";
   .hero-people-row {
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
   }
 
   .person-card {
@@ -415,6 +443,12 @@ import BipedalViewer from "components/BipedalViewer.astro";
   .person-role {
     color: rgba(255, 255, 255, 0.45);
     font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .person-org {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.7rem;
     text-align: center;
   }
 
