@@ -4,6 +4,7 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
 import BipedalViewer from "components/BipedalViewer.astro";
 import LeKiwiViewer from "components/LeKiwiViewer.astro";
 import AmazingHandViewer from "components/AmazingHandViewer.astro";
+import XLeRobotViewer from "components/XLeRobotViewer.astro";
 ---
 
 <Layout
@@ -27,6 +28,9 @@ import AmazingHandViewer from "components/AmazingHandViewer.astro";
         </div>
         <div class="viewer-amazinghand">
           <AmazingHandViewer />
+        </div>
+        <div class="viewer-xlerobot">
+          <XLeRobotViewer />
         </div>
       </div>
       <div class="hero-content">
@@ -124,6 +128,15 @@ import AmazingHandViewer from "components/AmazingHandViewer.astro";
               <span class="speaker-role">R&D Engineer, Pollen Robotics</span>
               <span class="speaker-talk">Amazing Hand Tech Report</span>
               <span class="speaker-tag">hand</span>
+            </div>
+          </a>
+          <a href="https://github.com/Vector-Wangel" target="_blank" rel="noopener noreferrer" class="speaker-card">
+            <img src="/images/speakers/vector-wang.jpg" alt="Vector Wang" class="speaker-photo" />
+            <div class="speaker-info">
+              <span class="speaker-name">Vector Wang</span>
+              <span class="speaker-role">PhD Student, Rice University</span>
+              <span class="speaker-talk">XLeRobot: Practical Dual-Arm Mobile Home Robot</span>
+              <span class="speaker-tag">mobile manipulation</span>
             </div>
           </a>
           <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="speaker-card speaker-card-cta">
@@ -277,10 +290,20 @@ import AmazingHandViewer from "components/AmazingHandViewer.astro";
     z-index: 1;
   }
 
+  .viewer-xlerobot {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 20%;
+    height: 40%;
+    z-index: 1;
+  }
+
   @media (max-width: 768px) {
     .viewer-center,
     .viewer-right,
-    .viewer-amazinghand {
+    .viewer-amazinghand,
+    .viewer-xlerobot {
       display: none;
     }
     .viewer-left {
