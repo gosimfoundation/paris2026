@@ -81,7 +81,9 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
             <div class="speaker-info">
               <span class="speaker-name">Wenzhe Cai</span>
               <span class="speaker-role">Researcher, Shanghai AI Laboratory</span>
+              <span class="speaker-bio">Embodied AI researcher working on open-source embodied navigation foundation models.</span>
               <span class="speaker-talk">Building Visual Navigation Foundation Models with Scalable Simulation Data</span>
+              <span class="speaker-abstract">Building a general navigation system using only an external camera, leveraging scalable simulated data pipelines to train capable navigation policies.</span>
               <span class="speaker-tag">navigation</span>
             </div>
           </a>
@@ -90,7 +92,9 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
             <div class="speaker-info">
               <span class="speaker-name">Jinwei Gu</span>
               <span class="speaker-role">Principal Research Scientist & Tech Lead, NVIDIA</span>
+              <span class="speaker-bio">Tech lead on Cosmos world foundation models at NVIDIA. PhD from Columbia University. Adjunct Associate Professor at CUHK. IEEE Senior Member.</span>
               <span class="speaker-talk">Cosmos: Unleashing Video Foundation Models for Physical AI and Generalist Robots</span>
+              <span class="speaker-abstract">How large-scale pretrained video generation models can be transformed into infrastructure for robot control, data generation, and simulation — featuring Cosmos Policy, DreamDojo, and scalable policy evaluation.</span>
               <span class="speaker-tag">world model</span>
             </div>
           </a>
@@ -99,7 +103,9 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
             <div class="speaker-info">
               <span class="speaker-name">Jiaming Liu</span>
               <span class="speaker-role">PhD Student, Peking University</span>
+              <span class="speaker-bio">Research on robotic manipulation and embodied foundation models. 20 first-author papers at CVPR, ICLR, RSS. 3000+ citations. 2025 ByteDance Scholarship recipient.</span>
               <span class="speaker-talk">Enabling Robots to Both "Think" and "Act"</span>
+              <span class="speaker-abstract">Unified Vision-Language-Action (VLA) foundation models integrating perception, reasoning, and control — featuring HybridVLA, RoboMIND dataset, and TwinRL for efficient real-world RL.</span>
               <span class="speaker-tag">thinking</span>
             </div>
           </a>
@@ -108,7 +114,9 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
             <div class="speaker-info">
               <span class="speaker-name">Charbel Dandjinou</span>
               <span class="speaker-role">CTO & Founder, Reflexion Robotics</span>
+              <span class="speaker-bio">Founder of Reflexion Robotics (Paris), building a safety runtime for embodied AI. Previously AI Research Engineer at EXXACT Robotics. Founded IROKO and Deep Takka research lab.</span>
               <span class="speaker-talk">Skill Foundry: An AI That Embodies a Robot, Watches Itself, and Learns</span>
+              <span class="speaker-abstract">An AI embodies a simulated robot, observes itself through robot POV and scene cameras, then iterates on reward, strategy, and training params. Running on Unitree G1 in NVIDIA IsaacLab.</span>
               <span class="speaker-tag">skills</span>
             </div>
           </a>
@@ -117,7 +125,9 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
             <div class="speaker-info">
               <span class="speaker-name">Sébastien Crozet</span>
               <span class="speaker-role">Founder, Dimforge</span>
+              <span class="speaker-bio">Creator of nalgebra and Rapier for the Rust ecosystem. Focused on cross-platform scientific computing and AI at Dimforge.</span>
               <span class="speaker-talk">Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics and Training Datasets Generation</span>
+              <span class="speaker-abstract">A Rust alternative to Nvidia Warp and Genesis, compiled with rust-gpu, running on all GPU platforms including the web. Featuring Khal, Vortx, glamx and a live demo.</span>
               <span class="speaker-tag">simulation</span>
             </div>
           </a>
@@ -126,6 +136,7 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
             <div class="speaker-info">
               <span class="speaker-name">Jeremy Laville</span>
               <span class="speaker-role">R&D Engineer, Pollen Robotics</span>
+              <span class="speaker-bio">Creator of the Amazing Hand, an open-source 3D-printed robotic hand with 8 DOF. Previously designed hands and forearms for the Pepper robot at Aldebaran Robotics.</span>
               <span class="speaker-talk">Amazing Hand Tech Report</span>
               <span class="speaker-tag">hand</span>
             </div>
@@ -135,7 +146,9 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
             <div class="speaker-info">
               <span class="speaker-name">Vector Wang</span>
               <span class="speaker-role">PhD Student, Rice University</span>
+              <span class="speaker-bio">Creator of XLeRobot, a $660 open-source dual-arm mobile robot with 4.8k+ GitHub stars and 6,000+ builders worldwide. Built on the Hugging Face LeRobot ecosystem.</span>
               <span class="speaker-talk">XLeRobot: Practical Dual-Arm Mobile Home Robot</span>
+              <span class="speaker-abstract">How a PhD side project became a globally adopted platform — design philosophy, community growth with zero promotion, and the evolving landscape from DORA middleware to NVIDIA's open Physical AI stack integrating into LeRobot.</span>
               <span class="speaker-tag">mobile manipulation</span>
             </div>
           </a>
@@ -377,9 +390,9 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
   }
 
   .speakers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .speaker-card {
@@ -439,6 +452,20 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
     font-size: 0.85rem;
     color: #0e7aff;
     font-weight: 500;
+    margin-top: 0.25rem;
+  }
+
+  .speaker-bio {
+    font-size: 0.8rem;
+    color: #475569;
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  .speaker-abstract {
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.5;
     margin-top: 0.25rem;
   }
 
