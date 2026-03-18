@@ -1088,6 +1088,12 @@ footer {
 .section-home-sponsors .row.grid {
    --columns: 2;
    align-items: center;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+}
+
+.section-home-sponsors .row.grid > .col {
+   width: 100%;
 }
 
 .section-home-sponsors .col-row {
@@ -1106,13 +1112,12 @@ footer {
    width: 100%;
    display: flex;
    flex-wrap: wrap;
-   gap: 0.75em var(--gap);
-   --gap: 0.75em;
-   --columns: 3;
+   justify-content: center;
+   gap: 0.75em;
 }
 
 .section-home-sponsors .single-logo-tile {
-   width: calc((99.99% / var(--columns)) - (var(--gap) * ((var(--columns) - 1) / var(--columns))));
+   width: calc((100% - 0.75em * 4) / 5);
    position: relative;
    display: flex;
    align-items: center;
