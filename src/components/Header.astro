@@ -6,12 +6,59 @@ import NotificationBar from "components/NotificationBar.astro"
 
 const hasNotificationBar = false // Set this to false when NotificationBar is removed or page will crash
 
-const links = [
+const isZhPath = slug.startsWith("/zh/")
+const isFrPath = slug.startsWith("/fr/")
+const basePath = isZhPath ? slug.replace(/^\/zh/, "") : isFrPath ? slug.replace(/^\/fr/, "") : slug
+const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/"
+const anchorBase = isHomepage ? "" : isZhPath ? "/zh/" : isFrPath ? "/fr/" : "/"
+
+const rawLinks = [
   {
-    text: "About",
-    link: "/about",
+    text: "Tracks",
+    anchor: "#tracks",
+  },
+  {
+    text: "Speakers",
+    link: "/speakers/",
+  },
+  {
+    text: "Supporters",
+    link: "/sponsors/",
+  },
+  {
+    text: "Proposals",
+    anchor: "#proposals",
+  },
+  {
+    text: "Co-located Events",
+    subLinks: [
+      {
+        text: "Spotlight: Frontier Creators",
+        link: "https://spotlight.gosim.org/paris2026/",
+        openInNewTab: true,
+      },
+      {
+        text: "Robotics Hackathon",
+        link: "/unaite-hackathon/",
+      },
+      {
+        text: "AI Vision Forum",
+        link: "https://paris2026.visionforum.ai/",
+        openInNewTab: true,
+      },
+    ],
+  },
+  {
+    text: "Volunteers",
+    link: "/volunteers/",
+  },
+  {
+    text: "Venue",
+    link: "/venue/",
   },
 ]
+
+const links = rawLinks.map(l => l.anchor ? { ...l, link: `${anchorBase}${l.anchor}` } : l) as Array<{ text: string; link: string; anchor?: string; openInNewTab?: boolean; subLinks?: any[] }>
 
 const slug = Astro.url.pathname
 ---
@@ -28,8 +75,8 @@ const slug = Astro.url.pathname
 
   <div class="floating-ticket-button">
     <Button
-      text="Event ended, thanks for attending"
-      link="https://www.eventbrite.com/e/gosim-ai-paris-tickets-1265928669729?aff=oddtdtcreator"
+      text="Get Tickets"
+      link="https://gosimparis2026.eventbrite.com/"
       openInNewTab
       class="btn primary btn-floating btn-hover"
     />
