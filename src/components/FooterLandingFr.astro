@@ -34,7 +34,16 @@ const firstColumnLinks = [
   },
 ];
 
-const secondColumnLinks = [];
+const secondColumnLinks = [
+  {
+    text: "Code de conduite",
+    link: "/fr/code-of-conduct/",
+  },
+  {
+    text: "Confidentialité",
+    link: "/fr/privacy/",
+  },
+];
 ---
 
 <footer class="section footer" data-theme-section="dark" data-bg-section="dark">
@@ -44,89 +53,6 @@ const secondColumnLinks = [];
         <div class="logo">
           <a href="/fr/" aria-label="Aller à l'accueil" class="logo-click">
             <Logo />
-          </a>
-        </div>
-      </div>
-
-      <nav class="col col-sitemap" aria-label="Navigation pied de page">
-        <ul>
-          {
-            firstColumnLinks.map((loop: any) => (
-              <li
-                class="link link-hover"
-                data-barba-update
-                data-link-status={loop.link === slug ? "active" : "not-active"}
-              >
-                <a
-                  class="link-click"
-                  href={loop.link}
-                  target={loop?.openInNewTab ? "_blank" : "_self"}
-                  rel={loop?.openInNewTab ? "noopener noreferrer" : ""}
-                >
-                  <span>{loop.text}</span>
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-
-        <ul>
-          {
-            secondColumnLinks.map((loop: any) => (
-              <li
-                class="link link-hover"
-                data-barba-update
-                data-link-status={loop.link === slug ? "active" : "not-active"}
-              >
-                {loop.subLinks ? (
-                  <div style="margin-top: 2.25rem;">
-                    <span style="color: #fff; font-size: 1rem;">
-                      {loop.text}
-                    </span>
-                    <ul style="margin-top: 0.75rem;">
-                      {loop.subLinks.map((subLink: any) => (
-                        <li class="link link-hover">
-                          <a
-                            class="link-click"
-                            href={subLink.link}
-                            target={subLink?.openInNewTab ? "_blank" : "_self"}
-                            rel={
-                              subLink?.openInNewTab ? "noopener noreferrer" : ""
-                            }
-                          >
-                            <span>{subLink.text}</span>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : (
-                  <a
-                    class="link-click"
-                    href={loop.link}
-                    target={loop?.openInNewTab ? "_blank" : "_self"}
-                    rel={loop?.openInNewTab ? "noopener noreferrer" : ""}
-                  >
-                    <span>{loop.text}</span>
-                  </a>
-                )}
-              </li>
-            ))
-          }
-        </ul>
-      </nav>
-    </div>
-
-    <div class="row row-end">
-      <div class="col col-logo-gosim2">
-        <div class="logo">
-          <a
-            href="https://gosim.org"
-            target="_blank"
-            class="logo-click"
-            aria-label="GOSIM Foundation"
-          >
-            <Logo width="141" height="24" />
           </a>
         </div>
         <div class="row footer-socials">
@@ -203,20 +129,74 @@ const secondColumnLinks = [];
         </div>
       </div>
 
-      <div class="col col-copyright"></div>
+      <nav class="col col-sitemap" aria-label="Navigation pied de page">
+        <ul>
+          {
+            firstColumnLinks.map((loop: any) => (
+              <li
+                class="link link-hover"
+                data-barba-update
+                data-link-status={loop.link === slug ? "active" : "not-active"}
+              >
+                <a
+                  class="link-click"
+                  href={loop.link}
+                  target={loop?.openInNewTab ? "_blank" : "_self"}
+                  rel={loop?.openInNewTab ? "noopener noreferrer" : ""}
+                >
+                  <span>{loop.text}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
 
-      <div class="col col-dev-credits">
-        <div class="link link-hover">
-          <a class="link-click" href="/fr/code-of-conduct/">
-            <span>Code de conduite</span>
-          </a>
-        </div>
-        <div class="link link-hover">
-          <a class="link-click" href="/fr/privacy/">
-            <span>Confidentialité</span>
-          </a>
-        </div>
-      </div>
+        <ul>
+          {
+            secondColumnLinks.map((loop: any) => (
+              <li
+                class="link link-hover"
+                data-barba-update
+                data-link-status={loop.link === slug ? "active" : "not-active"}
+              >
+                {loop.subLinks ? (
+                  <div style="margin-top: 2.25rem;">
+                    <span style="color: #fff; font-size: 1rem;">
+                      {loop.text}
+                    </span>
+                    <ul style="margin-top: 0.75rem;">
+                      {loop.subLinks.map((subLink: any) => (
+                        <li class="link link-hover">
+                          <a
+                            class="link-click"
+                            href={subLink.link}
+                            target={subLink?.openInNewTab ? "_blank" : "_self"}
+                            rel={
+                              subLink?.openInNewTab ? "noopener noreferrer" : ""
+                            }
+                          >
+                            <span>{subLink.text}</span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : (
+                  <a
+                    class="link-click"
+                    href={loop.link}
+                    target={loop?.openInNewTab ? "_blank" : "_self"}
+                    rel={loop?.openInNewTab ? "noopener noreferrer" : ""}
+                  >
+                    <span>{loop.text}</span>
+                  </a>
+                )}
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
     </div>
+
   </div>
 </footer>

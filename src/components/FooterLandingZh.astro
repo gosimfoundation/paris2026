@@ -34,7 +34,16 @@ const firstColumnLinks = [
   },
 ];
 
-const secondColumnLinks = [];
+const secondColumnLinks = [
+  {
+    text: "行为准则",
+    link: "/zh/code-of-conduct/",
+  },
+  {
+    text: "隐私政策",
+    link: "/zh/privacy/",
+  },
+];
 ---
 
 <footer class="section footer" data-theme-section="dark" data-bg-section="dark">
@@ -44,6 +53,78 @@ const secondColumnLinks = [];
         <div class="logo">
           <a href="/zh/" aria-label="前往首页" class="logo-click">
             <Logo />
+          </a>
+        </div>
+        <div class="row footer-socials">
+          <a
+            href="https://mastodon.social/@gosim"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/icons/icon-mastodon.svg"
+              alt="在Mastodon上关注我们"
+              width="18"
+              height="18"
+              loading="lazy"
+              style="filter: invert(1);"
+            />
+          </a>
+          <a
+            href="https://x.com/gosimfoundation"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/icons/icon-x.svg"
+              alt="在X (twitter)上关注我们"
+              width="18"
+              height="18"
+              loading="lazy"
+              style="filter: invert(1);"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/gosim-foundation"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/icons/icon-linkedin.svg"
+              alt="在LinkedIn上关注我们"
+              width="18"
+              height="18"
+              loading="lazy"
+              style="filter: invert(1);"
+            />
+          </a>
+          <a
+            href="https://bsky.app/profile/gosimfoundation.bsky.social"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/icons/icon-bluesky.svg"
+              alt="在BlueSky上关注我们"
+              width="18"
+              height="18"
+              loading="lazy"
+              style="filter: invert(1);"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/@GOSIMFoundation"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/icons/icon-youtube.svg"
+              alt="在Youtube上关注我们"
+              width="18"
+              height="18"
+              loading="lazy"
+              style="filter: invert(1);"
+            />
           </a>
         </div>
       </div>
@@ -135,106 +216,5 @@ const secondColumnLinks = [];
       </div> -->
     </div>
 
-    <div class="row row-end">
-      <div class="col col-logo-gosim2">
-        <div class="logo">
-          <a
-            href="https://gosim.org"
-            target="_blank"
-            class="logo-click"
-            aria-label="GOSIM 基金会"
-          >
-            <Logo width="141" height="24" />
-          </a>
-        </div>
-        <div class="row footer-socials">
-          <a
-            href="https://mastodon.social/@gosim"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/icons/icon-mastodon.svg"
-              alt="在Mastodon上关注我们"
-              width="18"
-              height="18"
-              loading="lazy"
-              style="filter: invert(1);"
-            />
-          </a>
-          <a
-            href="https://x.com/gosimfoundation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/icons/icon-x.svg"
-              alt="在X (twitter)上关注我们"
-              width="18"
-              height="18"
-              loading="lazy"
-              style="filter: invert(1);"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/gosim-foundation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/icons/icon-linkedin.svg"
-              alt="在LinkedIn上关注我们"
-              width="18"
-              height="18"
-              loading="lazy"
-              style="filter: invert(1);"
-            />
-          </a>
-          <a
-            href="https://bsky.app/profile/gosimfoundation.bsky.social"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/icons/icon-bluesky.svg"
-              alt="在BlueSky上关注我们"
-              width="18"
-              height="18"
-              loading="lazy"
-              style="filter: invert(1);"
-            />
-          </a>
-          <a
-            href="https://www.youtube.com/@GOSIMFoundation"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/icons/icon-youtube.svg"
-              alt="在Youtube上关注我们"
-              width="18"
-              height="18"
-              loading="lazy"
-              style="filter: invert(1);"
-            />
-          </a>
-        </div>
-      </div>
-
-      <div class="col col-copyright"></div>
-
-      <div class="col col-dev-credits">
-        <div class="link link-hover">
-          <a class="link-click" href="/zh/code-of-conduct/">
-            <span>行为准则</span>
-          </a>
-        </div>
-        <div class="link link-hover">
-          <a class="link-click" href="/zh/privacy/">
-            <span>隐私政策</span>
-          </a>
-        </div>
-      </div>
-    </div>
   </div>
 </footer>
