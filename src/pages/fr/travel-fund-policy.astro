@@ -62,22 +62,36 @@ import Content from "markdown/TravelFundPolicyFr.md"
     border-radius: 50px;
     text-decoration: none !important;
     transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+  }
+  .template-cta::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 50px;
+    border: 4px solid rgba(26, 26, 26, 0.3);
     animation: pulse-template 2s ease-in-out infinite;
+    pointer-events: none;
+    will-change: transform, opacity;
   }
   .template-cta:hover {
     background: #1a1a1a;
     color: #fff !important;
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+  .template-cta:hover::after {
     animation: none;
+    opacity: 0;
   }
   @keyframes pulse-template {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(26, 26, 26, 0.3); }
-    50% { box-shadow: 0 0 0 10px rgba(26, 26, 26, 0); }
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.25); opacity: 0; }
   }
 
   .travel-body {
     width: 100%;
+    font-size: 1.05rem;
   }
   .travel-body h2 {
     font-size: 1.4rem;
@@ -93,10 +107,18 @@ import Content from "markdown/TravelFundPolicyFr.md"
     margin-bottom: 1.5rem;
   }
   .travel-body ul {
-    list-style: disc;
+    list-style: disc !important;
   }
   .travel-body ol {
-    list-style: decimal;
+    list-style: decimal !important;
+  }
+  .travel-body ul li {
+    list-style: disc !important;
+    display: list-item;
+  }
+  .travel-body ol li {
+    list-style: decimal !important;
+    display: list-item;
   }
   .travel-body ul li,
   .travel-body ol li {
