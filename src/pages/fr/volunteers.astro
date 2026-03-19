@@ -8,26 +8,35 @@ import Content from "markdown/VolunteersFr.md"
 <Layout
   title="Bénévoles – GOSIM Paris 2026"
   description="Rejoignez l'équipe de bénévoles de GOSIM Paris 2026 et vivez une expérience unique lors de l'une des plus grandes conférences open source en Europe."
-  navBackground="light"
+  navBackground="dark"
+  navDarkMode
   pageTransitionName="Volunteers"
 >
-  <HeroText
-    title="Bénévoles"
-    lightgray
-  >
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSc62kJczw7lr-l0JAAbkabeIrrPPAD7OWyzwDopTD0L4HC6EQ/viewform"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="volunteer-cta"
-    >Inscription bénévole</a>
-  </HeroText>
+  <!-- Fixed 3D point cloud background -->
+  <div id="vol-canvas-container"></div>
 
-  <section
-    class="section volunteer-section"
-    data-theme-section="light"
-    data-bg-section="lightgray"
-  >
+  <!-- Title section -->
+  <section class="section default-header vol-header" data-theme-section="dark" data-scroll-section>
+    <div class="container">
+      <div class="row">
+        <div class="border-bottom"></div>
+        <div class="col col-title">
+          <div class="col-row col-row-title vol-title-row">
+            <h1>Bénévoles</h1>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc62kJczw7lr-l0JAAbkabeIrrPPAD7OWyzwDopTD0L4HC6EQ/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="volunteer-cta"
+            >Inscription bénévole</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content on left half -->
+  <section class="section volunteer-section" data-theme-section="dark">
     <div class="container">
       <div class="volunteer-body">
         <img src="/images/homepage/paris_2025_crowd2.png" alt="GOSIM Paris 2025" class="volunteer-photo" />
@@ -38,114 +47,55 @@ import Content from "markdown/VolunteersFr.md"
   </section>
 </Layout>
 
-<style is:global>
-  .volunteer-section {
-    padding-top: var(--row-gap) !important;
-  }
+<!-- Three.js point cloud (shared) -->
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script is:inline src="/js/eiffel-pointcloud.js"></script>
 
-  .default-header .col-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .default-header .col-text .col-row {
-    max-width: none;
-    text-align: center;
-  }
+<style is:global>
+  #vol-canvas-container { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; }
+  #vol-canvas-container canvas { display: block; }
+
+  .vol-header { position: relative; z-index: 1; background: transparent !important; }
+  .vol-header h1 { color: #fff !important; }
+  .vol-header .border-bottom { border-color: rgba(255, 255, 255, 0.1) !important; }
+
+  .vol-title-row { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  .vol-title-row h1 { margin: 0; line-height: 1; }
 
   .volunteer-cta {
-    display: inline-block;
-    padding: 0.9rem 2.2rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #1a1a1a !important;
-    background: transparent;
-    border: 2px solid #1a1a1a;
-    border-radius: 50px;
-    text-decoration: none !important;
+    display: inline-block; padding: 0.9rem 2.2rem; font-size: 1rem; font-weight: 700;
+    color: #fff !important; background: transparent; border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px; text-decoration: none !important; white-space: nowrap;
     transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    position: relative;
-  }
-  .volunteer-cta::after {
-    content: '';
-    position: absolute;
-    inset: -2px;
-    border-radius: 50px;
-    border: 4px solid rgba(26, 26, 26, 0.3);
-    animation: pulse 2s ease-in-out infinite;
-    pointer-events: none;
-    will-change: transform, opacity;
   }
   .volunteer-cta:hover {
-    background: #1a1a1a;
-    color: #fff !important;
-    transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  }
-  .volunteer-cta:hover::after {
-    animation: none;
-    opacity: 0;
-  }
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.25); opacity: 0; }
+    background: #fff; color: #0a0a0f !important;
+    transform: translateY(-2px) scale(1.03); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   }
 
-  .volunteer-body {
-    width: 100%;
-  }
-  .volunteer-photo {
-    float: right;
-    width: 35%;
-    margin: 0.25rem 0 1rem 2rem;
-    border-radius: 12px;
-  }
+  .default-header .col-text { display: flex; align-items: center; justify-content: center; }
+  .default-header .col-text .col-row { max-width: none; text-align: center; }
 
-  .volunteer-body h2 {
-    font-size: 1.4rem;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-  }
-  .volunteer-body h2 ~ h2 {
-    clear: both;
-  }
-  .volunteer-body p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-  }
-  .volunteer-body ul {
-    list-style: disc;
-    padding-left: 1.5em;
-    margin-bottom: 1.5rem;
-  }
-  .volunteer-body ul li {
-    margin-bottom: 0.4rem;
-    line-height: 1.6;
-  }
-  .volunteer-body ul li::before {
-    display: none !important;
-  }
-  .volunteer-body table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1.5rem;
-  }
-  .volunteer-body th,
-  .volunteer-body td {
-    border: 1px solid #ccc;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-  .volunteer-body th {
-    background: rgba(0,0,0,0.05);
-    font-weight: 700;
-  }
+  .volunteer-section { position: relative; z-index: 1; padding-top: var(--row-gap) !important; background: transparent !important; }
+  .volunteer-body { width: 50%; color: rgba(224, 224, 232, 0.85); }
+  .volunteer-photo { float: right; width: 55%; margin: 0.25rem 0 1rem 2rem; border-radius: 12px; }
+  .volunteer-body h2 { font-size: 1.35rem; margin-top: 2.5rem; margin-bottom: 0.75rem; color: #fff; position: relative; padding-left: 1rem; }
+  .volunteer-body h2::before { content: ''; position: absolute; left: 0; top: 0.15em; bottom: 0.15em; width: 3px; background: #c9a96e; border-radius: 2px; }
+  .volunteer-body h2 ~ h2 { clear: both; }
+  .volunteer-body p { margin-bottom: 1rem; line-height: 1.75; }
+  .volunteer-body ul { list-style: none; padding-left: 0; margin-bottom: 1.5rem; }
+  .volunteer-body ul li { margin-bottom: 0.6rem; line-height: 1.7; padding-left: 1.5em; position: relative; }
+  .volunteer-body ul li::before { content: '→' !important; display: inline !important; position: absolute; left: 0; color: #c9a96e; font-weight: 700; }
+  .volunteer-body table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 0.92rem; }
+  .volunteer-body th, .volunteer-body td { border: 1px solid rgba(255, 255, 255, 0.08); padding: 0.8rem 1rem; text-align: left; }
+  .volunteer-body th { background: rgba(201, 169, 110, 0.08); font-weight: 700; color: #fff; white-space: nowrap; }
+  .volunteer-body td { background: rgba(255, 255, 255, 0.015); }
+  .volunteer-body strong { color: #fff; }
 
-  @media (max-width: 600px) {
-    .volunteer-photo {
-      float: none;
-      width: 100%;
-      margin: 0 0 1.5rem 0;
-    }
+  .footer { background: transparent !important; position: relative; z-index: 1; }
+
+  @media (max-width: 768px) {
+    .volunteer-body { width: 100%; }
+    .volunteer-photo { float: none; width: 100%; margin: 0 0 1.5rem 0; }
   }
 </style>
