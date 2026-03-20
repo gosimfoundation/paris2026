@@ -9,32 +9,28 @@
       "id": "agentic-ai-summit"
     },
     {
-      "name": "Open Source Robotics",
-      "id": "open-source-robotics"
+      "name": "Agentic AI on Edge",
+      "id": "agentic-ai-on-edge"
     },
     {
       "name": "Agentic App",
       "id": "ai-generative-app"
     },
     {
-      "name": "Agentic AI on Edge",
-      "id": "agentic-ai-on-edge"
-    },
-    {
-      "name": "AI Hardware",
-      "id": "ai-hardware"
-    },
-    {
       "name": "Open Source Model",
       "id": "open-source-model"
     },
     {
-      "name": "SGLang Workshop",
-      "id": "ws-sglang-paris2026"
+      "name": "Open Source Robotics",
+      "id": "open-source-robotics"
     },
     {
-      "name": "vLLM Workshop",
-      "id": "ws-vllm-paris2026"
+      "name": "Own Your Data Workshop",
+      "id": "ws-own-your-data-paris2026"
+    },
+    {
+      "name": "SGLang Workshop",
+      "id": "ws-sglang-paris2026"
     }
   ],
   "speakers": [
@@ -81,30 +77,9 @@
       "draft": false
     },
     {
-      "id": "crozet-sbastien",
-      "name": "Sébastien Crozet",
-      "bio": "Sébastien Crozet has been in love with the Rust programming language since its earliest days. He is the creator and maintainer of popular open-source libraries, including nalgebra and Rapier, for the Rust ecosystem that specialize in linear algebra, geometry, and physics. He is the founder of Dimforge where he focuses on contributing to the future of cross-platform scientific computing and AI.",
-      "role": "Founder",
-      "org": "Dimforge",
-      "roleOrg": "Founder, Dimforge",
-      "image": "/images/speakers/better_portrait/crozet-sbastien.png",
-      "tags": [
-        "agentic-ai-on-edge"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "",
-        "github": "https://github.com/dimforge",
-        "linkedin": "",
-        "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
       "id": "dong-xin",
       "name": "Dong Xin",
-      "bio": "2008–2017: Technical Leader at Microsoft, working on the Microsoft Azure enterprise cloud and Dynamics 365 platform R&D. 2017–present: Technical Expert and Product Director at Huawei Technologies Co., Ltd., working on the R&D of core infrastructure software including toolchains, programming languages, and IDEs. During his time at Huawei, he has served successively as Chief Technical Expert and Project Manager, working on Huawei's mobile AI R&D tools, the company-wide AI R&D platform, the Huawei Ascend AI chip toolchain, and the HarmonyOS toolchain, among other initiatives. Since 2021, he has been responsible for the R&D of Huawei's programming language and IDE infrastructure software, serving as Program Director. He leads the core technology R&D of proprietary and independently-controlled programming languages and IDE development tools, and has made significant contributions to the technical planning, productization, and industry adoption of domestically-developed application programming languages.",
+      "bio": "2008–2017: Technical Leader at Microsoft, working on the Microsoft Azure enterprise cloud and Dynamics 365 platform R&D. 2017–present: Technical Expert and Product Director at Huawei Technologies Co., Ltd., working on the R&D of core infrastructure software including toolchains, programming languages, and IDEs. During his time at Huawei, he has served successively as Chief Technical Expert and Project Manager, working on Huawei’s mobile AI R&D tools, the company-wide AI R&D platform, the Huawei Ascend AI chip toolchain, and the HarmonyOS toolchain, among other initiatives. Since 2021, he has been responsible for the R&D of Huawei’s programming language and IDE infrastructure software, serving as Program Director. He leads the core technology R&D of proprietary and independently-controlled programming languages and IDE development tools, and has made significant contributions to the technical planning, productization, and industry adoption of domestically-developed application programming languages.",
       "role": "Program Director, Central Software Institute",
       "org": "Huawei",
       "roleOrg": "Program Director, Central Software Institute, Huawei",
@@ -118,6 +93,48 @@
         "github": "",
         "linkedin": "",
         "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "vector-wang",
+      "name": "Gaotian (Vector) Wang",
+      "bio": "Gaotian (Vector) Wang is a Computer Science PhD student at Rice University. He is the creator of XLeRobot, a fully open-source, low-cost ($660) dual-arm mobile robot platform that has gained 4.8k+ GitHub stars and a global community of 6,000+ builders since its release in May 2025. XLeRobot is built on the Hugging Face LeRobot ecosystem and has been adopted by researchers, educators, and hobbyists worldwide.",
+      "role": "Ph.D. Student",
+      "org": "Rice University",
+      "roleOrg": "Ph.D. Student, Rice University",
+      "image": "/images/speakers/better_portrait/vector-wang.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/VectorWang2",
+        "github": "https://github.com/Vector-Wangel",
+        "linkedin": "https://www.linkedin.com/in/gaotian-wang/",
+        "website": "https://vector-wangel.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "guillaume-blaquiere",
+      "name": "Guillaume Blaquiere",
+      "bio": "Guillaume is a Google Developer Expert on Cloud Platform since 2019 and works at Carrefour as Group Data Architect. \r\n\r\nInitially Java developer, and despite positions of responsibilities, he has always kept his wish to create, develop, discover and test new solutions, especially in the Cloud, the AI & genAI. He notably contributed to Python and Go open source project and libraries (Google SDK, Airflow, ADK). \r\n\r\nInnovation addict and Google Cloud 3x certified, writer and speaker in his free time, he’s fascinated by the serverless and genAI solution and all the \"usual\" problems that they solve.\r\n",
+      "role": "Group Data Architect",
+      "org": "Carrefour",
+      "roleOrg": "Group Data Architect, Carrefour",
+      "image": "/images/speakers/better_portrait/guillaume-blaquiere.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/gblaquiere",
+        "github": "https://github.com/guillaumeblaquiere",
+        "linkedin": "https://www.linkedin.com/in/guillaume-blaquiere/",
+        "website": "https://medium.com/@guillaume-blaquiere"
       },
       "status": "Accept",
       "draft": false
@@ -186,6 +203,112 @@
       "draft": false
     },
     {
+      "id": "luke-lu",
+      "name": "Luke Lu",
+      "bio": "Luke is a student at the University of Texas at Austin and the founder of Correx, an open-source robotic task verification and safety compliance layer. His journey in robotics began as a competitor, rising through the ranks of competitive robotics to claim a world championship title. That experience ignited a drive to mentor aspiring engineers and contribute to the open-source robotics community. Today, Luke channels that same competitive energy into founding technology ventures at the intersection of AI and robotics, believing that the best ideas should be accessible to everyone willing to build them.",
+      "role": "Founder & CEO",
+      "org": "Robolytics",
+      "roleOrg": "Founder & CEO, Robolytics",
+      "image": "/images/speakers/better_portrait/luke-lu.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/lukelul",
+        "linkedin": "",
+        "website": "https://www.youtube.com/channel/UC6fV8liRSA8cYi6DcJK4d8A/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "marcin-zubrzycki",
+      "name": "Marcin Zubrzycki",
+      "bio": "I'm a SWE @ StrongDM (now part of Delinea), I'm currently studying Algorithmic Computer Science @ WrocTech - Love my country and my girlfriend.",
+      "role": "Software Engineer",
+      "org": "Delinea",
+      "roleOrg": "Software Engineer, Delinea",
+      "image": "/images/speakers/better_portrait/marcin-zubrzycki.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "markus-tavenrath",
+      "name": "Markus Tavenrath",
+      "bio": "Markus Tavenrath studied computer science with a focus on computer graphics at RWTH Aachen University. This academic background provided a solid foundation for his career in the technology industry.\r\n\r\nIn 2008, Markus joined NVIDIA, where he began working on real-time ray tracing on GPUs. Over the years, he has contributed to performance optimization for ray tracing, scene graphs, OpenGL, WebGL, Vulkan, and AI. His work has played a role in advancing these technologies.\r\n\r\nMarkus is also a co-founder of the Vulkan-Hpp project, which has been beneficial to the Vulkan community. His efforts have helped improve the use and implementation of Vulkan.\r\n\r\nRecently, Markus was elected as the Chair of the ML Council at Khronos. In this role, he helps coordinate and support AI and machine learning initiatives within the Khronos group. His election to this position reflects his expertise and leadership qualities.\r\n\r\nMarkus Tavenrath is a dedicated professional whose contributions have positively impacted the technological landscape at NVIDIA and beyond.",
+      "role": "Principal Engineer",
+      "org": "NVIDIA",
+      "roleOrg": "Principal Engineer, NVIDIA",
+      "image": "/images/speakers/better_portrait/markus-tavenrath.png",
+      "tags": [
+        "agentic-ai-summit",
+        "agentic-ai-on-edge"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/markus-tavenrath/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "merel-theisen",
+      "name": "Merel Theisen",
+      "bio": "I am a Principal Software Engineer at QuantumBlack, where I am currently the tech lead of Kedro, an open-source project part of the Linux Foundation. I have over ten years of experience in the software industry, with most of my career focused on backend product engineering. I am passionate about building products that solve real user problems, and I care deeply about creating robust, well-tested software that follows good engineering principles. I am also a strong advocate for open-source software, and I find working with the community to be both inspiring and energising.",
+      "role": "Principal Software Engineer",
+      "org": "QuantumBlack",
+      "roleOrg": "Principal Software Engineer, QuantumBlack",
+      "image": "/images/speakers/better_portrait/merel-theisen.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "minakokojima",
+      "name": "Minakokojima",
+      "bio": "I'm the Head of Developer Relations at Kimi, where I've also held positions in post-training and infrastructure. Prior to joining Kimi, I worked as an algorithm engineer at Google. I won several gold medals at ACM ICPC regional contests during college.",
+      "role": "Head of Developer Relations",
+      "org": "Moonshot AI (Kimi)",
+      "roleOrg": "Head of Developer Relations, Moonshot AI (Kimi)",
+      "image": "/images/speakers/better_portrait/minakokojima.png",
+      "tags": [
+        "open-source-model"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/MinakoOikawa",
+        "github": "https://github.com/lychees",
+        "linkedin": "",
+        "website": "https://www.shuizilong.com"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "nouamane-tazi",
       "name": "Nouamane Tazi",
       "bio": "Nouamane Tazi is a Machine Learning Research Engineer at Hugging Face, specializing in training large language models. He is a co-author of SmolLM3 and The Ultra Scale Playbook, and his research spans NLP, deep learning, and scalable AI infrastructure.",
@@ -223,6 +346,132 @@
         "github": "",
         "linkedin": "",
         "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "ran-shemtov",
+      "name": "Ran Shemtov",
+      "bio": "Ran is a web developer with over a decade of experience building products for the web. Since 2023, he has been deeply involved in the emerging world of AI-powered applications, helping companies design and bring AI agents into production. At CopilotKit, Ran works closely with teams building real-world AI experiences, guiding them through the challenges of turning LLM prototypes into systems that serve real users.",
+      "role": "Founding Engineer",
+      "org": "CopilotKit",
+      "roleOrg": "Founding Engineer, CopilotKit",
+      "image": "/images/speakers/better_portrait/ran-shemtov.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/ranst91",
+        "linkedin": "https://linkedin.com/in/ran-shem-tov",
+        "website": "https://www.ranst.dev/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "rik-arends",
+      "name": "Rik Arends",
+      "bio": "With 20+ years’ experience as a C/C++, JavaScript and more recently Rust developer, I've always been excited by using computation for visuals and audio. For this to work you need performance, and a smooth workflow enabled by the right tooling. After having everything I wanted with C except stable code I moved to JavaScript and web technologies. However, this never got to the point of being able to make fast applications that use modern CPU and GPU power. Now with Rust we have a new chance. I've been an entrepreneur my entire life building VJ software in the 00's, then web UI technology and web IDEs with Cloud9, and am now reimagining the developer workflow in Rust with Makepad. And lately how to leverage AI to write Rust and UI code.",
+      "role": "Co-Founder",
+      "org": "Makepad",
+      "roleOrg": "Co-Founder, Makepad",
+      "image": "/images/speakers/better_portrait/rik-arends.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/rikarends",
+        "github": "https://github.com/makepad/makepad",
+        "linkedin": "https://www.linkedin.com/in/arendsrik/",
+        "website": "https://makepad.nl/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "shiwei-liu",
+      "name": "Shiwei Liu",
+      "bio": "Shiwei Liu is a group leader at Max Planck Institute for Intelligent System and a PI at ELLIS Institute Tubingen. He was a Royal Society Newton International Fellow at the University of Oxford. He previously served as a Postdoctoral Fellow at the University of Texas at Austin. He obtained his Ph.D. with Cum Laude from Eindhoven University of Technology in 2022. Dr. Liu has received two Rising Star Awards from KAUST and the Conference on Parsimony and Learning (CPAL). His Ph.D. thesis received the 2023 Best Dissertation Runner-up from Informatics Europe. He has a broad interests of life-cycle of large foundation models.",
+      "role": "Group Leader & PI",
+      "org": "Max Planck Institute for Intelligent Systems",
+      "roleOrg": "Group Leader & PI, Max Planck Institute for Intelligent Systems",
+      "image": "/images/speakers/better_portrait/shiwei-liu.png",
+      "tags": [
+        "open-source-model"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/Shiwei_Liu66",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/shiwei-liu-3b60771ab/",
+        "website": "https://shiweiliuiiiiiii.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "crozet-sbastien",
+      "name": "Sébastien Crozet",
+      "bio": "Sébastien Crozet has been in love with the Rust programming language since its earliest days. He is the creator and maintainer of popular open-source libraries, including nalgebra and Rapier, for the Rust ecosystem that specialize in linear algebra, geometry, and physics. He is the founder of Dimforge where he focuses on contributing to the future of cross-platform scientific computing and AI.",
+      "role": "Founder",
+      "org": "Dimforge",
+      "roleOrg": "Founder, Dimforge",
+      "image": "/images/speakers/better_portrait/crozet-sbastien.png",
+      "tags": [
+        "agentic-ai-on-edge"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/dimforge",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "ervinxie",
+      "name": "Weiyu (Ervin) Xie",
+      "bio": "Weiyu Xie is a fifth-year Ph.D. student in the Institute for High Performance Computing, Department of Computer Science and Technology, Tsinghua University. His research interests include computer systems, large language model (LLM) inference, graph computing, and databases.",
+      "role": "Ph.D. Candidate",
+      "org": "Tsinghua University",
+      "roleOrg": "Ph.D. Candidate, Tsinghua University",
+      "image": "/images/speakers/better_portrait/ervinxie.png",
+      "tags": [
+        "agentic-ai-on-edge"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/ErvinXie",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wzcai99",
+      "name": "Wenzhe Cai",
+      "bio": "An Embodied AI researcher, working on building an open-sourced embodied navigation foundation models.",
+      "role": "Researcher",
+      "org": "Shanghai AI Laboratory",
+      "roleOrg": "Researcher, Shanghai AI Laboratory",
+      "image": "/images/speakers/better_portrait/wzcai99.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/WenzheC7616",
+        "github": "https://github.com/wzcai99/",
+        "linkedin": "",
+        "website": "https://wzcai99.github.io/"
       },
       "status": "Accept",
       "draft": false
@@ -328,48 +577,6 @@
         "github": "https://github.com/zRzRzRzRzRzRzR",
         "linkedin": "https://www.linkedin.com/in/yuxuan-zhang-86a124282/",
         "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
-      "id": "guillaume-blaquiere",
-      "name": "Guillaume Blaquiere",
-      "bio": "Guillaume is a Google Developer Expert on Cloud Platform since 2019 and works at Carrefour as Group Data Architect. \r\n\r\nInitially Java developer, and despite positions of responsibilities, he has always kept his wish to create, develop, discover and test new solutions, especially in the Cloud, the AI & genAI. He notably contributed to Python and Go open source project and libraries (Google SDK, Airflow, ADK). \r\n\r\nInnovation addict and Google Cloud 3x certified, writer and speaker in his free time, he's fascinated by the serverless and genAI solution and all the \"usual\" problems that they solve.\r\n",
-      "role": "Group Data Architect",
-      "org": "Carrefour",
-      "roleOrg": "Group Data Architect, Carrefour",
-      "image": "/images/speakers/better_portrait/guillaume-blaquiere.png",
-      "tags": [
-        "agentic-ai-summit"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "https://x.com/gblaquiere",
-        "github": "https://github.com/guillaumeblaquiere",
-        "linkedin": "https://www.linkedin.com/in/guillaume-blaquiere/",
-        "website": "https://medium.com/@guillaume-blaquiere"
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
-      "id": "wzcai99",
-      "name": "Wenzhe Cai",
-      "bio": "An Embodied AI researcher, working on building an open-sourced embodied navigation foundation models.",
-      "role": "Researcher",
-      "org": "Shanghai AI Laboratory",
-      "roleOrg": "Researcher, Shanghai AI Laboratory",
-      "image": "/images/speakers/better_portrait/wzcai99.png",
-      "tags": [
-        "open-source-robotics"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "https://x.com/WenzheC7616",
-        "github": "https://github.com/wzcai99/",
-        "linkedin": "",
-        "website": "https://wzcai99.github.io/"
       },
       "status": "Accept",
       "draft": false
