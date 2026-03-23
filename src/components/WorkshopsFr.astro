@@ -23,7 +23,7 @@ const filteredSpeakers = speakersData.speakers.filter(
     </div>
   </div>
   <div class="filter-box">
-    <p>Filter:</p>
+    <p>Filtrer :</p>
     <div class="filter-group" data-filter-group>
       {
         speakersData.categories.filter(cat => workshopCategories.includes(cat.id)).map((category) => (
@@ -80,7 +80,7 @@ const filteredSpeakers = speakersData.speakers.filter(
             data-filter-category={speaker.tags?.[0]}
           >
             <a
-              href={`/zh/workshops/${speaker.id}/`}
+              href={`/fr/workshops/${speaker.id}/`}
               class="single-speakers-card"
               data-modal-card-status="not-active"
               data-modal-card-id={speaker.id}
@@ -106,7 +106,7 @@ const filteredSpeakers = speakersData.speakers.filter(
         ))
       }
       <p style="text-align: center; width: 100%; margin: 1rem 0;">
-        演讲嘉宾可能会有变动
+        Les intervenants sont susceptibles de changer
       </p>
     </div>
   </div>

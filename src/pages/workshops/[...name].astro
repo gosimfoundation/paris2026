@@ -43,6 +43,8 @@ interface schedule {
 export async function getStaticPaths() {
   // Filter only workshop speakers based on their tags
   const workshopCategories = [
+    "ws-sglang-paris2026",
+    "ws-vllm-paris2026",
     "ws-future-web",
     "ws-cann",
     "ws-flutter",
@@ -58,7 +60,7 @@ export async function getStaticPaths() {
     "forum-aivision",
   ];
   const workshopSpeakers = speakers.speakers.filter((speaker: Speaker) =>
-    workshopCategories.includes(speaker.tag)
+    speaker.tags?.some((t: string) => workshopCategories.includes(t))
   );
 
   return workshopSpeakers.map((speaker: Speaker) => ({
@@ -131,7 +133,7 @@ const socialIconMap: Record<string, string> = {
 ---
 
 <Layout
-  title={`${speaker.name} – GOSIM Paris 2025`}
+  title={`${speaker.name} – GOSIM Paris 2026`}
   description={speaker.roleOrg}
   navBackground="light"
   pageTransitionName={speaker.name}
@@ -263,8 +265,10 @@ const socialIconMap: Record<string, string> = {
     overflow: hidden;
     aspect-ratio: 1/1;
     width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
   }
-  
+
   .speaker-detail-image img {
     width: 100%;
     height: 100%;

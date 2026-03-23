@@ -71,7 +71,9 @@ const groupedCategories = {
 }
 
 // Use the provided props or default values based on language
-const defaultDay = currentLang === 'zh' ? "9月13日" : "September 13"
+const defaultDay = processedScheduleData.days.length > 0
+  ? getBilingualText(processedScheduleData.days[0].date, currentLang)
+  : currentLang === 'zh' ? "5月5日" : "May 5"
 const { currentDay = defaultDay, activeCategory = "All" } = Astro.props
 
 // Helper function to get category name from tag ID with bilingual support
@@ -92,7 +94,7 @@ const sortSessionsByDateAndTime = (sessions: BilingualSession[]) => {
 
     // If dates are the same, sort by time
     // Handle TBD times - put them at the end
-    const tbdTime = currentLang === 'zh' ? "待定时间" : "TBD time"
+    const tbdTime = currentLang === 'zh' ? "待定时间" : currentLang === 'fr' ? "Horaire à confirmer" : "TBD time"
     if (a.timeSlot === tbdTime && b.timeSlot === tbdTime) return 0
     if (a.timeSlot === tbdTime) return 1
     if (b.timeSlot === tbdTime) return -1
@@ -167,7 +169,7 @@ const getEventUrl = (title: BilingualText | string): string => {
   // Use English title for URL generation (consistent across both languages)
   const titleText = getBilingualText(title, 'en')
   // Create language-appropriate path
-  const basePath = currentLang === 'zh' ? '/zh/schedule' : '/schedule';
+  const basePath = currentLang === 'zh' ? '/zh/schedule' : currentLang === 'fr' ? '/fr/schedule' : '/schedule';
   // Create the full URL with domain
   return `${origin}${basePath}/${titleText.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, "-").replace(/-+/g, '-').trim()}/`;
 }
@@ -205,25 +207,25 @@ const getSessionCategoryClass = (session: BilingualSession): string => {
 
 // Helper function to get localized text with error handling
 const getLocalizedText = (key: string): string => {
-  const texts: Record<string, string> = {
-    'All': currentLang === 'zh' ? 'All Events 全部议程' : 'All Events',
-    'All Tracks': currentLang === 'zh' ? 'All Tracks' : 'All Tracks',
-    'Filter:': currentLang === 'zh' ? 'Filter:' : 'Filter:',
-    'No sessions available for this day': currentLang === 'zh' ? '此日暂无议程' : 'No sessions available for this day',
-    'No sessions available for category': currentLang === 'zh' ? '此日没有此议程：' : 'No sessions available for category',
-    'Schedules are subject to change': currentLang === 'zh' ? '议程为参考，实际可能变化' : 'Schedules are subject to change',
-    'TBA': currentLang === 'zh' ? 'TBA' : 'TBA',
-    'Plenary & Tracks': currentLang === 'zh' ? '全体大会 & 主题' : 'Plenary & Tracks',
-    'Workshops': currentLang === 'zh' ? '工作坊' : 'Workshops',
-    'Colocated Events': currentLang === 'zh' ? '同期活动' : 'Co-located Events'
+  const texts: Record<string, Record<string, string>> = {
+    'All': { en: 'All Events', zh: 'All Events 全部议程', fr: 'Tous les événements' },
+    'All Tracks': { en: 'All Tracks', zh: 'All Tracks', fr: 'Toutes les thématiques' },
+    'Filter:': { en: 'Filter:', zh: 'Filter:', fr: 'Filtrer :' },
+    'No sessions available for this day': { en: 'No sessions available for this day', zh: '此日暂无议程', fr: 'Aucune session disponible pour cette journée' },
+    'No sessions available for category': { en: 'No sessions available for category', zh: '此日没有此议程：', fr: 'Aucune session disponible pour la catégorie' },
+    'Schedules are subject to change': { en: 'Schedules are subject to change', zh: '议程为参考，实际可能变化', fr: 'Le programme est susceptible de changer' },
+    'TBA': { en: 'TBA', zh: 'TBA', fr: 'À confirmer' },
+    'Plenary & Tracks': { en: 'Plenary & Tracks', zh: '全体大会 & 主题', fr: 'Plénières & Thématiques' },
+    'Workshops': { en: 'Workshops', zh: '工作坊', fr: 'Ateliers' },
+    'Colocated Events': { en: 'Co-located Events', zh: '同期活动', fr: 'Événements co-localisés' }
   }
   
   if (!(key in texts)) {
     handleError(`Missing localized text for key: ${key}`, 'getLocalizedText')
     return key
   }
-  
-  return texts[key]
+
+  return texts[key][currentLang] || texts[key]['en'] || key
 }
 ---
 
@@ -637,7 +639,7 @@ const getLocalizedText = (key: string): string => {
 
                               <!-- Social share component with reduced spacing -->
                               <SocialShare
-                                title={`${getBilingualText(session.title, currentLang)} - GOSIM AI Paris 2025`}
+                                title={`${getBilingualText(session.title, currentLang)} - GOSIM AI Paris 2026`}
                                 url={getEventUrl(session.title)}
                                 description={session.content ? getBilingualText(session.content, currentLang).replace(/<[^>]*>/g, "").substring(0, 160) : ""}
                               />
@@ -802,7 +804,7 @@ const getLocalizedText = (key: string): string => {
 
                                   <!-- Social share component with reduced spacing -->
                                   <SocialShare
-                                    title={`${getBilingualText(session.title, currentLang)} - GOSIM AI Paris 2025`}
+                                    title={`${getBilingualText(session.title, currentLang)} - GOSIM AI Paris 2026`}
                                     url={getEventUrl(session.title)}
                                     description={session.content ? getBilingualText(session.content, currentLang).replace(/<[^>]*>/g, "").substring(0, 160) : ""}
                                   />

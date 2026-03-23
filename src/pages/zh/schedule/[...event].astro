@@ -125,7 +125,7 @@ const getCategoryDisplayName = (categoryId: string) => {
 ---
 
 <Layout
-  title={`${eventDetails.title} – GOSIM 杭州 2025`}
+  title={`${eventDetails.title} – GOSIM Paris 2026`}
   description={eventDetails.content
     .replace(/\n/g, " ")
     .replace(/<[^>]*>/g, "")
@@ -193,8 +193,8 @@ const getCategoryDisplayName = (categoryId: string) => {
                     );
                     
                     // Check if this speaker is a workshop speaker based on their tag
-                    const workshopCategories = ["ws-future-web", "ws-cann", "ws-flutter", "ws-cangjie", "ws-edge-ai", "ws-chitu", "ws-ai-education", "ws-rn", "ws-dora", "ws-rust", "ws-sglang", "open-for-sdg", "forum-aivision"];
-                    let isWorkshopSpeaker = fullSpeakerDetails ? workshopCategories.includes(fullSpeakerDetails.tag) : false;
+                    const workshopCategories = ["ws-future-web", "ws-cann", "ws-flutter", "ws-cangjie", "ws-edge-ai", "ws-chitu", "ws-ai-education", "ws-rn", "ws-dora", "ws-rust", "ws-sglang", "ws-sglang-paris2026", "ws-vllm-paris2026", "open-for-sdg", "forum-aivision"];
+                    let isWorkshopSpeaker = fullSpeakerDetails ? fullSpeakerDetails.tags?.some((t: string) => workshopCategories.includes(t)) : false;
 
                     // Determine the correct URL path
                     const speakerPath = isWorkshopSpeaker
@@ -244,7 +244,7 @@ const getCategoryDisplayName = (categoryId: string) => {
             )
           }
           <SocialShare
-            title={`${eventDetails.title} - GOSIM 杭州 2025`}
+            title={`${eventDetails.title} - GOSIM Paris 2026`}
             description={eventDetails.content
               .replace(/\n/g, " ")
               .replace(/<[^>]*>/g, "")

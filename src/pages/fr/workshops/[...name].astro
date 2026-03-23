@@ -4,7 +4,7 @@ import { Picture } from "astro:assets";
 import type { ImageMetadata } from "astro";
 
 // Components
-import Layout from "layouts/LayoutLanding.astro";
+import Layout from "layouts/LayoutLandingFr.astro";
 import speakers from "json/SpeakersCleaned.json";
 import schedule from "json/ScheduleBilingual.json";
 import scheduleForum from "json/Schedule-forum.json";
@@ -16,6 +16,7 @@ interface Speaker {
   roleOrg: string;
   bio: string;
   image?: string;
+  tag: string;
   socialLinks?: {
     website?: string;
     github?: string;
@@ -40,19 +41,35 @@ interface schedule {
 
 // Get the speaker name from the route parameter
 export async function getStaticPaths() {
-  return speakers.speakers.map((speaker: Speaker) => ({
+  // Filter only workshop speakers based on their tags
+  const workshopCategories = [
+    "ws-sglang-paris2026",
+    "ws-vllm-paris2026",
+    "ws-future-web",
+    "ws-cann",
+    "ws-flutter",
+    "ws-cangjie",
+    "ws-edge-ai",
+    "ws-chitu",
+    "ws-ai-education",
+    "ws-rn",
+    "ws-dora",
+    "ws-rust",
+    "ws-sglang",
+    "open-for-sdg",
+    "forum-aivision",
+  ];
+  const workshopSpeakers = speakers.speakers.filter((speaker: Speaker) =>
+    speaker.tags?.some((t: string) => workshopCategories.includes(t))
+  );
+
+  return workshopSpeakers.map((speaker: Speaker) => ({
     params: { name: speaker.id },
     props: { speaker },
   }));
 }
 
 const { speaker } = Astro.props as { speaker: Speaker };
-
-// Previous/Next speaker navigation
-const allSpeakers = speakers.speakers as Speaker[];
-const currentIndex = allSpeakers.findIndex((s: Speaker) => s.id === speaker.id);
-const prevSpeaker = currentIndex > 0 ? allSpeakers[currentIndex - 1] : allSpeakers[allSpeakers.length - 1];
-const nextSpeaker = currentIndex < allSpeakers.length - 1 ? allSpeakers[currentIndex + 1] : allSpeakers[0];
 
 // For images in public directory, we can reference them directly
 
@@ -63,18 +80,24 @@ const speakerSessions = [
     (acc: Session[], [category, sessions]: [string, Session[]]) => {
       const matchingSessions = sessions
         .filter((session) =>
-          session.speakers.some((s) => {
-            const sessionSpeakerName = typeof s.name === 'string' ? s.name : s.name?.en;
-            const sessionSpeakerId = s.id;
-            return sessionSpeakerName === speaker.name || sessionSpeakerId === speaker.id;
-          })
+          session.speakers.some(
+            (s) =>
+              (typeof s.name === "string" ? s.name : s.name?.en) ===
+              speaker.name
+          )
         )
         .map((session) => ({
-          title: typeof session.title === 'string' ? session.title : session.title?.en || '',
-          speakers: session.speakers.map(s => ({
-            name: typeof s.name === 'string' ? s.name : s.name?.en || ''
+          title:
+            typeof session.title === "string"
+              ? session.title
+              : session.title?.en || "",
+          speakers: session.speakers.map((s) => ({
+            name: typeof s.name === "string" ? s.name : s.name?.en || "",
           })),
-          date: typeof session.date === 'string' ? session.date : session.date?.en || '',
+          date:
+            typeof session.date === "string"
+              ? session.date
+              : session.date?.en || "",
           timeSlot: session.timeSlot,
           category,
         }));
@@ -115,29 +138,6 @@ const socialIconMap: Record<string, string> = {
   navBackground="light"
   pageTransitionName={speaker.name}
 >
-  <!-- Previous/Next Speaker Navigation -->
-  <div class="speaker-nav-bar" data-theme-section="light" data-bg-section="light">
-    <div class="container">
-      <div class="speaker-nav">
-        <a href={`/speakers/${prevSpeaker.id}/`} class="speaker-nav-btn speaker-nav-prev">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-          <div class="speaker-nav-info">
-            <span class="speaker-nav-label">Previous</span>
-            <span class="speaker-nav-name">{prevSpeaker.name}</span>
-          </div>
-        </a>
-        <a href="/speakers/" class="speaker-nav-btn speaker-nav-all">All Speakers</a>
-        <a href={`/speakers/${nextSpeaker.id}/`} class="speaker-nav-btn speaker-nav-next">
-          <div class="speaker-nav-info" style="text-align:right;">
-            <span class="speaker-nav-label">Next</span>
-            <span class="speaker-nav-name">{nextSpeaker.name}</span>
-          </div>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <section
     class="section speaker-detail-header"
     data-theme-section="light"
@@ -158,17 +158,11 @@ const socialIconMap: Record<string, string> = {
                     alt={speaker.name}
                   />
                 </div>
-              )
+                )
             }
             <div class="speaker-row-meta">
               <h1 class="h2">{speaker.name}</h1>
-              {(() => {
-                const lastComma = speaker.roleOrg.lastIndexOf(',');
-                if (lastComma === -1) return <p>{speaker.roleOrg}</p>;
-                const role = speaker.roleOrg.slice(0, lastComma).trim();
-                const company = speaker.roleOrg.slice(lastComma + 1).trim();
-                return <p>{role}<br/><strong>{company}</strong></p>;
-              })()}
+              <p>{speaker.roleOrg}</p>
             </div>
           </div>
 
@@ -230,17 +224,18 @@ const socialIconMap: Record<string, string> = {
               <ul class="row row-list">
                 {speakerSessions.map((session) => (
                   <a
-                    href={`/schedule/${session.title
+                    href={`/fr/schedule/${session.title
                       .toLowerCase()
-                      .replace(/[^\w\s-]/g, "")
+                      .replace(/[^\w\s\u4e00-\u9fff-]/g, "")
                       .replace(/\s+/g, "-")
                       .replace(/-+/g, "-")
+                      .replace(/^-+|-+$/g, "")
                       .trim()}/`}
                   >
                     <li class="single-agenda-card single-accordion-item card-hover">
                       <div class="top">
                         <div class="left">
-                          <div class="timeslot">
+                          <div class="timeslot timeslot-speaker">
                             <p class="timedate">{session.date}</p>
                             <p>{session.timeSlot}</p>
                           </div>
@@ -262,7 +257,6 @@ const socialIconMap: Record<string, string> = {
       </section>
     )
   }
-
 </Layout>
 
 <style>
@@ -281,10 +275,6 @@ const socialIconMap: Record<string, string> = {
     object-fit: cover;
     object-position: center center;
   }
-  .gradient-circle-wrap {
-    display: flex;
-    justify-content: center;
-  }
   .timeslot {
     width: 8em !important;
   }
@@ -293,96 +283,8 @@ const socialIconMap: Record<string, string> = {
       width: 100% !important;
     }
   }
-
-  .speaker-detail-header {
-    padding-top: 1.5rem !important;
-  }
-
-  /* Speaker Navigation Bar */
-  .speaker-nav-bar {
-    border-bottom: 1px solid #e5e5e5;
-    padding: 0.75rem 0;
-    padding-top: calc(var(--nav-bar-height) + 0.75rem);
-  }
-
-  .speaker-nav {
+  .gradient-circle-wrap {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .speaker-nav-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    border-radius: 8px;
-    text-decoration: none !important;
-    color: var(--color-dark) !important;
-    transition: background 0.2s ease;
-    min-width: 0;
-  }
-
-  .speaker-nav-btn:hover {
-    background: #f5f5f0;
-  }
-
-  .speaker-nav-prev,
-  .speaker-nav-next {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .speaker-nav-next {
-    justify-content: flex-end;
-  }
-
-  .speaker-nav-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    min-width: 0;
-  }
-
-  .speaker-nav-label {
-    font-size: 0.75rem;
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .speaker-nav-name {
-    font-size: 0.95rem;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .speaker-nav-btn svg {
-    flex-shrink: 0;
-    color: #999;
-  }
-
-  .speaker-nav-all {
-    font-size: 0.85rem;
-    font-weight: 600;
-    white-space: nowrap;
-    border: 1px solid #6366f1;
-    color: #6366f1 !important;
-    border-radius: 6px;
-    padding: 0.4rem 1rem;
-    transition: background 0.2s ease, color 0.2s ease;
-  }
-
-  .speaker-nav-all:hover {
-    background: #6366f1;
-    color: #fff !important;
-  }
-
-  @media screen and (max-width: 640px) {
-    .speaker-nav-name {
-      max-width: 120px;
-    }
+    justify-content: center;
   }
 </style>

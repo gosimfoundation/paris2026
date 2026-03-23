@@ -1,213 +1,588 @@
 ---
-import { Picture } from "astro:assets";
-import type { ImageMetadata } from "astro";
-
 interface Track {
   title: string;
   text: string;
   link?: string;
 }
 
+type WorkshopTheme = "structured-runtime" | "model-serving" | "open-tooling";
+type HighlightTheme = "frontier-demo" | "robotics-hackathon" | "agentic-hackathon";
+
+interface CardItem {
+  title: string;
+  text: string;
+  image?: string;
+  link?: string;
+  theme?: WorkshopTheme;
+}
+
 interface Props {
   id?: string;
+  kicker?: string;
   title: string;
+  intro?: string;
   tracksTitle?: string;
   tracks: Track[];
   workshopsTitle?: string;
-  workshops?: Array<{ title: string; text: string; image?: string; link?: string }>;
+  workshops?: CardItem[];
   highlightsTitle?: string;
-  highlights?: Array<{ title: string; text: string; link?: string }>;
+  highlights?: CardItem[];
+  viewRouteLabel?: string;
+  labLabel?: string;
+  openLabel?: string;
+  enterLabel?: string;
 }
 
 const {
   id = "tracks",
+  kicker = "Track Atlas",
   title,
+  intro = "A route map for the agentic stack: each line carries a different signal, from embodied systems and open models to edge deployment and new agent runtimes.",
   tracksTitle,
   tracks,
   workshopsTitle,
   workshops,
   highlightsTitle,
   highlights,
+  viewRouteLabel = "View route",
+  labLabel = "Lab",
+  openLabel = "Open",
+  enterLabel = "Enter",
 } = Astro.props;
 
-// Import workshop logo images
-const workshopImages = import.meta.glob<{ default: ImageMetadata }>(
-  "/public/images/sponsors/*.{jpeg,jpg,png,gif}",
-  { eager: true }
-);
-
-// 7 maximally distinct hues: red, green, blue, yellow, magenta, cyan, orange
-const colorPalette = [
-  { from: "#dc2626", to: "#ef4444" },   // Red — Agentic AI Summit
-  { from: "#16a34a", to: "#4ade80" },   // Green — Open Source Robotics
-  { from: "#2563eb", to: "#60a5fa" },   // Blue — Agentic App
-  { from: "#ca8a04", to: "#eab308" },   // Yellow — Agentic AI on Edge
-  { from: "#7c3aed", to: "#a78bfa" },   // Violet — AgenticOS
-  { from: "#0891b2", to: "#22d3ee" },   // Cyan — Agentic App
-  { from: "#ea580c", to: "#fb923c" },   // Orange — Open Source Model
+const routePalette = [
+  { from: "#ef4444", to: "#f97316" },
+  { from: "#0ea5e9", to: "#38bdf8" },
+  { from: "#8b5cf6", to: "#c084fc" },
+  { from: "#f59e0b", to: "#facc15" },
+  { from: "#22c55e", to: "#4ade80" },
+  { from: "#ec4899", to: "#fb7185" },
+  { from: "#14b8a6", to: "#2dd4bf" },
 ];
 
-// Simple SVG icons for each track (same order as colorPalette)
-const iconPalette = [
-  // Sparkle — Agentic AI Summit
-  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/></svg>`,
-  // Robot arm — Open Source Robotics
-  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="18" width="8" height="4" rx="1"/><path d="M12 18v-4"/><path d="M12 14l6-6"/><path d="M18 8l-4-4"/><circle cx="14" cy="4" r="1.5" fill="currentColor"/><circle cx="12" cy="14" r="1.5"/><circle cx="18" cy="8" r="1.5"/></svg>`,
-  // Grid — Agentic App
-  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
-  // Bolt — Agentic AI on Edge
-  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
-  // Layers — AgenticOS
-  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
-  // Graph/network — Open Source Model
-  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 7l5 9M17 7l-5 9"/><path d="M7 6h10"/></svg>`,
+const signalSets = [
+  ["MCP", "A2A", "Sovereign"],
+  ["Embodied", "Hardware", "OpenArm"],
+  ["Multimodal", "Agents", "Creative"],
+  ["On-device", "Realtime", "Compression"],
+  ["Runtime", "Coordination", "Trust"],
+  ["LLM", "Audio", "Vision"],
+  ["Systems", "Tooling", "Builders"],
 ];
 
-// Build a color + icon map keyed by track title
-const trackColorMap = new Map<string, { from: string; to: string }>();
-const trackIconMap = new Map<string, string>();
-tracks.forEach((track, i) => {
-  trackColorMap.set(track.title, colorPalette[i % colorPalette.length]);
-  trackIconMap.set(track.title, iconPalette[i % iconPalette.length]);
+const teaserFromText = (text: string) => {
+  const cleaned = text.replace(/\s+/g, " ").trim();
+  if (!cleaned) {
+    return "";
+  }
+
+  const firstSentence = cleaned
+    .split(/(?<=[.!?。])/)
+    .map((part) => part.trim())
+    .filter(Boolean)[0] || cleaned;
+
+  if (firstSentence.length <= 170) {
+    return firstSentence;
+  }
+  return `${firstSentence.slice(0, 167).trim()}...`;
+};
+
+const routeCodeFromTitle = (title: string, index: number) => {
+  const letters = title
+    .replace(/\(.*?\)/g, "")
+    .split(/[^A-Za-z0-9\u4e00-\u9fff]+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => {
+      const ascii = word.match(/[A-Za-z]/);
+      return ascii ? ascii[0].toUpperCase() : word[0];
+    })
+    .join("");
+
+  return `${letters || "R"}${String(index + 1).padStart(2, "0")}`;
+};
+
+const svgToDataUri = (svg: string) =>
+  `data:image/svg+xml,${encodeURIComponent(svg)
+    .replace(/%0A/g, "")
+    .replace(/%20/g, " ")}`;
+
+const workshopBackgroundSvg = (
+  theme: WorkshopTheme,
+  from: string,
+  to: string,
+) => {
+  const sharedDefs = `
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="${from}" />
+        <stop offset="100%" stop-color="${to}" />
+      </linearGradient>
+      <radialGradient id="glowA" cx="0.22" cy="0.18" r="0.72">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="glowB" cx="0.84" cy="0.82" r="0.62">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+      </radialGradient>
+      <pattern id="micro" width="36" height="36" patternUnits="userSpaceOnUse">
+        <path d="M0 0H36V36" fill="none" stroke="#ffffff" stroke-opacity="0.08" />
+      </pattern>
+    </defs>
+    <rect width="720" height="960" rx="48" fill="url(#bg)" />
+    <rect width="720" height="960" rx="48" fill="url(#glowA)" />
+    <rect width="720" height="960" rx="48" fill="url(#glowB)" />
+    <rect x="36" y="36" width="648" height="888" rx="40" fill="url(#micro)" opacity="0.52" />
+  `;
+
+  const themeShapes: Record<WorkshopTheme, string> = {
+    "structured-runtime": `
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.34" stroke-width="8" stroke-linecap="round">
+        <path d="M128 248C216 182 330 176 412 246S558 340 608 282" />
+        <path d="M116 616C206 528 310 506 398 564S558 674 610 622" />
+      </g>
+      <g>
+        <circle cx="124" cy="250" r="18" fill="#ffffff" fill-opacity="0.55" />
+        <circle cx="420" cy="246" r="16" fill="#ffffff" fill-opacity="0.42" />
+        <circle cx="608" cy="282" r="14" fill="#ffffff" fill-opacity="0.38" />
+        <circle cx="118" cy="616" r="16" fill="#ffffff" fill-opacity="0.48" />
+        <circle cx="398" cy="564" r="14" fill="#ffffff" fill-opacity="0.36" />
+        <circle cx="610" cy="622" r="18" fill="#ffffff" fill-opacity="0.4" />
+      </g>
+      <g>
+        <rect x="172" y="318" width="378" height="244" rx="34" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.28" />
+        <rect x="204" y="356" width="140" height="56" rx="18" fill="#ffffff" fill-opacity="0.12" />
+        <rect x="362" y="356" width="156" height="56" rx="18" fill="#ffffff" fill-opacity="0.14" />
+        <rect x="204" y="434" width="314" height="22" rx="11" fill="#ffffff" fill-opacity="0.18" />
+        <rect x="204" y="478" width="220" height="22" rx="11" fill="#ffffff" fill-opacity="0.14" />
+        <rect x="438" y="478" width="80" height="22" rx="11" fill="#ffffff" fill-opacity="0.1" />
+      </g>
+    `,
+    "model-serving": `
+      <g fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.22" stroke-width="6">
+        <path d="M202 244L360 166L518 244L360 322Z" />
+        <path d="M202 244V416L360 494V322Z" />
+        <path d="M518 244V416L360 494V322Z" />
+        <path d="M164 444L322 366L480 444L322 522Z" />
+        <path d="M164 444V616L322 694V522Z" />
+        <path d="M480 444V616L322 694V522Z" />
+      </g>
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.34" stroke-width="10" stroke-linecap="round">
+        <path d="M134 746H586" />
+        <path d="M170 782H550" />
+        <path d="M208 818H512" />
+      </g>
+      <g fill="#ffffff" fill-opacity="0.5">
+        <circle cx="154" cy="746" r="14" />
+        <circle cx="586" cy="746" r="14" />
+        <circle cx="190" cy="782" r="12" />
+        <circle cx="550" cy="782" r="12" />
+      </g>
+    `,
+    "open-tooling": `
+      <g>
+        <rect x="172" y="168" width="376" height="532" rx="40" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.26" stroke-width="6" />
+        <path d="M236 276H482" stroke="#ffffff" stroke-opacity="0.36" stroke-width="16" stroke-linecap="round" />
+        <path d="M236 330H440" stroke="#ffffff" stroke-opacity="0.26" stroke-width="12" stroke-linecap="round" />
+        <path d="M236 384H470" stroke="#ffffff" stroke-opacity="0.18" stroke-width="12" stroke-linecap="round" />
+        <rect x="232" y="472" width="114" height="118" rx="22" fill="#ffffff" fill-opacity="0.14" />
+        <rect x="370" y="472" width="146" height="54" rx="18" fill="#ffffff" fill-opacity="0.12" />
+        <rect x="370" y="544" width="94" height="46" rx="16" fill="#ffffff" fill-opacity="0.1" />
+      </g>
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.32" stroke-width="8" stroke-linecap="round">
+        <path d="M126 746C214 692 272 692 350 742S496 796 602 728" />
+      </g>
+      <g fill="#ffffff" fill-opacity="0.46">
+        <circle cx="128" cy="746" r="16" />
+        <circle cx="350" cy="742" r="14" />
+        <circle cx="602" cy="728" r="16" />
+      </g>
+    `,
+  };
+
+  return svgToDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" fill="none">
+      ${sharedDefs}
+      ${themeShapes[theme]}
+    </svg>
+  `);
+};
+
+const highlightBackgroundSvg = (
+  theme: HighlightTheme,
+  from: string,
+  to: string,
+) => {
+  const sharedDefs = `
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="${from}" />
+        <stop offset="100%" stop-color="${to}" />
+      </linearGradient>
+      <radialGradient id="glowA" cx="0.22" cy="0.18" r="0.74">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.24" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="glowB" cx="0.78" cy="0.82" r="0.68">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+      </radialGradient>
+      <pattern id="micro" width="34" height="34" patternUnits="userSpaceOnUse">
+        <path d="M0 0H34V34" fill="none" stroke="#ffffff" stroke-opacity="0.08" />
+      </pattern>
+    </defs>
+    <rect width="720" height="960" rx="48" fill="url(#bg)" />
+    <rect width="720" height="960" rx="48" fill="url(#glowA)" />
+    <rect width="720" height="960" rx="48" fill="url(#glowB)" />
+    <rect x="36" y="36" width="648" height="888" rx="40" fill="url(#micro)" opacity="0.5" />
+  `;
+
+  const themeShapes: Record<HighlightTheme, string> = {
+    "frontier-demo": `
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.34" stroke-width="10" stroke-linecap="round">
+        <path d="M140 722L240 466L360 250L480 466L580 722" />
+        <path d="M220 722L300 500L360 386L420 500L500 722" />
+      </g>
+      <g fill="#ffffff" fill-opacity="0.12">
+        <ellipse cx="360" cy="746" rx="212" ry="82" />
+        <rect x="206" y="208" width="308" height="54" rx="27" />
+      </g>
+      <g fill="#ffffff" fill-opacity="0.46">
+        <circle cx="240" cy="466" r="16" />
+        <circle cx="360" cy="250" r="22" />
+        <circle cx="480" cy="466" r="16" />
+      </g>
+    `,
+    "robotics-hackathon": `
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M196 706L286 590L360 452L438 330L534 248" />
+        <path d="M164 778H560" />
+      </g>
+      <g fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.26" stroke-width="6">
+        <rect x="298" y="232" width="168" height="86" rx="26" />
+        <rect x="252" y="350" width="160" height="72" rx="24" />
+        <rect x="156" y="760" width="408" height="52" rx="26" />
+      </g>
+      <g fill="#ffffff" fill-opacity="0.48">
+        <circle cx="286" cy="590" r="18" />
+        <circle cx="360" cy="452" r="22" />
+        <circle cx="438" cy="330" r="18" />
+        <circle cx="534" cy="248" r="16" />
+      </g>
+    `,
+    "agentic-hackathon": `
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.32" stroke-width="8" stroke-linecap="round">
+        <path d="M136 238C228 178 312 176 394 234S550 316 594 266" />
+        <path d="M124 626C230 564 304 562 382 620S540 716 602 676" />
+        <path d="M190 396H528" />
+      </g>
+      <g fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.24" stroke-width="6">
+        <rect x="194" y="320" width="132" height="112" rx="28" />
+        <rect x="360" y="320" width="164" height="112" rx="28" />
+        <rect x="242" y="470" width="236" height="90" rx="26" />
+      </g>
+      <g fill="#ffffff" fill-opacity="0.46">
+        <circle cx="136" cy="238" r="16" />
+        <circle cx="394" cy="234" r="18" />
+        <circle cx="594" cy="266" r="14" />
+        <circle cx="124" cy="626" r="16" />
+        <circle cx="382" cy="620" r="18" />
+        <circle cx="602" cy="676" r="14" />
+      </g>
+    `,
+  };
+
+  return svgToDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" fill="none">
+      ${sharedDefs}
+      ${themeShapes[theme]}
+    </svg>
+  `);
+};
+
+const trackCards = tracks.map((track, index) => {
+  const accent = routePalette[index % routePalette.length];
+  const signals = signalSets[index % signalSets.length];
+
+  return {
+    ...track,
+    accent,
+    signals,
+    teaser: teaserFromText(track.text),
+    code: routeCodeFromTitle(track.title, index),
+    anchor: `track-route-${index + 1}`,
+  };
+});
+
+const workshopThemeMeta: Record<
+  WorkshopTheme,
+  { accent: { from: string; to: string } }
+> = {
+  "structured-runtime": {
+    accent: { from: "#0f766e", to: "#22d3ee" },
+  },
+  "model-serving": {
+    accent: { from: "#1d4ed8", to: "#818cf8" },
+  },
+  "open-tooling": {
+    accent: { from: "#c2410c", to: "#f59e0b" },
+  },
+};
+
+const inferWorkshopTheme = (item: CardItem): WorkshopTheme => {
+  if (item.theme) {
+    return item.theme;
+  }
+
+  const text = `${item.title} ${item.text}`.toLowerCase();
+  if (text.includes("sglang")) {
+    return "structured-runtime";
+  }
+  if (text.includes("vllm")) {
+    return "model-serving";
+  }
+  return "open-tooling";
+};
+
+const workshopCards = (workshops || []).map((item, index) => {
+  const theme = inferWorkshopTheme(item);
+  const themeMeta = workshopThemeMeta[theme];
+  return {
+    ...item,
+    theme,
+    accent: themeMeta.accent,
+    background: workshopBackgroundSvg(theme, themeMeta.accent.from, themeMeta.accent.to),
+    code: `WS-${String(index + 1).padStart(2, "0")}`,
+  };
+});
+
+const highlightThemeMeta: Record<
+  HighlightTheme,
+  { accent: { from: string; to: string }; label: string; codePrefix: string }
+> = {
+  "frontier-demo": {
+    accent: { from: "#db2777", to: "#f97316" },
+    label: "Spotlight",
+    codePrefix: "SP",
+  },
+  "robotics-hackathon": {
+    accent: { from: "#0f766e", to: "#22d3ee" },
+    label: "Hackathon",
+    codePrefix: "RB",
+  },
+  "agentic-hackathon": {
+    accent: { from: "#4338ca", to: "#8b5cf6" },
+    label: "Hackathon",
+    codePrefix: "AG",
+  },
+};
+
+const inferHighlightTheme = (item: CardItem): HighlightTheme => {
+  const text = `${item.title} ${item.text}`.toLowerCase();
+  if (text.includes("robot") || text.includes("openarm")) {
+    return "robotics-hackathon";
+  }
+  if (text.includes("agent")) {
+    return "agentic-hackathon";
+  }
+  return "frontier-demo";
+};
+
+const highlightCards = (highlights || []).map((item, index) => {
+  const theme = inferHighlightTheme(item);
+  const themeMeta = highlightThemeMeta[theme];
+  return {
+    ...item,
+    theme,
+    accent: themeMeta.accent,
+    badge: themeMeta.label,
+    code: `${themeMeta.codePrefix}-${String(index + 1).padStart(2, "0")}`,
+    background: highlightBackgroundSvg(theme, themeMeta.accent.from, themeMeta.accent.to),
+  };
 });
 ---
 
 <section
-  class="section section-conference-tracks"
+  class="section section-track-atlas"
   id={id}
   data-theme-section="light"
   data-bg-section="lightgray"
   data-scroll-section
 >
-  <div class="glow-orb glow-orb-1"></div>
-  <div class="glow-orb glow-orb-2"></div>
-  <div class="glow-orb glow-orb-3"></div>
-
+  <div class="track-atlas-noise"></div>
   <div class="container">
-    <div class="section-header">
-      <span class="section-label animate-fade-in">What to Expect</span>
-      <h2 class="animate-fade-in animate-delay-1">{title}</h2>
+    <div class="track-atlas-header">
+      <span class="track-atlas-kicker animate-fade-in">{kicker}</span>
+      <h2 class="track-atlas-title animate-fade-in animate-delay-1">{title}</h2>
+      <p class="track-atlas-intro animate-fade-in animate-delay-2">
+        {intro}
+      </p>
     </div>
 
-    <!-- Tracks Section -->
-    <div class="stacked-section">
-      {tracksTitle && <h3 class="column-title animate-fade-in animate-delay-2">{tracksTitle}</h3>}
-      <div class="tracks-grid">
-        {tracks.map((track, i) => {
-          const color = trackColorMap.get(track.title) || colorPalette[0];
-          const icon = trackIconMap.get(track.title) || iconPalette[0];
-          const cardAttrs = {
-            class: `track-card animate-slide-up${track.link ? ' track-card-link' : ''}`,
-            style: `--accent-from: ${color.from}; --accent-to: ${color.to}; --stagger: ${i};`,
-          };
-          return (
-            <div {...cardAttrs}>
-              <div class="track-card-accent accent-left"></div>
-              <div class="track-card-content">
-                <div class="track-card-top">
-                  <div class="track-icon" set:html={icon} />
-                  <h5>{track.title}</h5>
-                  {track.link && <a href={track.link} class="track-visit-link">View &rarr;</a>}
-                </div>
-                <div class="track-desc-wrap">
-                  <p class="track-desc">{track.text}</p>
-                </div>
+    {tracksTitle && <h3 class="track-section-title animate-fade-in">{tracksTitle}</h3>}
+
+    <div class="track-route-strip animate-fade-in animate-delay-1">
+      {
+        trackCards.map((track) => (
+          <a
+            href={`#${track.anchor}`}
+            class="route-chip"
+            style={`--accent-from:${track.accent.from}; --accent-to:${track.accent.to};`}
+          >
+            <span class="route-chip-code">{track.code}</span>
+            <span class="route-chip-title">{track.title}</span>
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="track-route-board">
+      <div class="track-route-spine"></div>
+      {
+        trackCards.map((track, index) => (
+          <article
+            id={track.anchor}
+            class={`track-station animate-slide-up ${index % 2 === 0 ? "is-left" : "is-right"}`}
+            style={`--accent-from:${track.accent.from}; --accent-to:${track.accent.to}; --stagger:${index};`}
+          >
+            <div class="track-stop">
+              <span class="track-stop-dot"></span>
+              <span class="track-stop-code">{track.code}</span>
+            </div>
+
+            <div class="track-panel">
+              <div class="track-panel-top">
+                <span class="track-panel-index">{String(index + 1).padStart(2, "0")}</span>
+                {track.link && <a href={track.link} class="track-visit-link">{viewRouteLabel} &rarr;</a>}
+              </div>
+
+              <h4>{track.title}</h4>
+              <p class="track-teaser">{track.teaser}</p>
+
+              <div class="track-signal-row">
+                {
+                  track.signals.map((signal) => (
+                    <span class="track-signal-pill">{signal}</span>
+                  ))
+                }
+              </div>
+
+              <div class="track-desc-wrap">
+                <p class="track-desc">{track.text}</p>
+              </div>
+
+              <div class="track-panel-footer">
+                <span class="track-scanline"></span>
                 <span class="track-chevron"></span>
               </div>
-              <div class="track-card-accent accent-right"></div>
             </div>
-          );
-        })}
-      </div>
+          </article>
+        ))
+      }
     </div>
 
-    <!-- Workshops Section -->
-    {workshops && workshops.length > 0 && (
-      <div class="stacked-section animate-fade-in">
-        {workshopsTitle && <h3 class="column-title">{workshopsTitle}</h3>}
-        <div class="workshops-grid">
-          {workshops.map((item, i) => {
-            const cardStyle = `--stagger: ${i};`;
-            const imgPath = item.image ? `/public/images/sponsors/${item.image}` : null;
-            const imgMeta = imgPath && workshopImages[imgPath] ? workshopImages[imgPath].default : null;
-            return (
-              <div class="workshop-card animate-slide-up" style={cardStyle}>
-                <div class="workshop-card-inner">
-                  <div class="workshop-glow"></div>
-                  {imgMeta && (
-                    <div class="workshop-logo">
-                      <Picture
-                        src={imgMeta}
-                        formats={["webp", "png"]}
-                        alt={item.title}
-                        widths={[120, 240]}
-                        sizes="120px"
-                      />
-                    </div>
-                  )}
-                  <div class="workshop-content">
-                    <span class="workshop-title">
-                      {item.link ? (
-                        <a href={item.link} class="workshop-title-link" target={item.link.startsWith("http") ? "_blank" : undefined} rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined} onclick="event.stopPropagation();">
-                          {item.title} <span class="highlight-link-arrow">&rarr;</span>
+    {workshopsTitle && workshopCards.length > 0 && (
+      <>
+        <h3 class="track-section-title animate-fade-in">{workshopsTitle}</h3>
+        <div class="support-grid">
+          {
+            workshopCards.map((item, index) => (
+              <article
+                class="support-card support-card-workshop animate-slide-up"
+                data-workshop-theme={item.theme}
+                style={`--accent-from:${item.accent.from}; --accent-to:${item.accent.to}; --stagger:${index}; --workshop-bg:url('${item.background}');`}
+              >
+                <div class="support-workshop-grid"></div>
+                <div class="support-workshop-vignette"></div>
+                <div class="support-workshop-wash"></div>
+
+                <div class="support-workshop-content">
+                  <div class="support-card-top">
+                    <span class="support-card-label">{labLabel}</span>
+                    <span class="support-card-code">{item.code}</span>
+                  </div>
+
+                  <div class="support-workshop-overlay">
+                    <div class="support-workshop-meta">
+                      <span class="support-workshop-rule"></span>
+                      {item.link && (
+                        <a
+                          href={item.link}
+                          class="support-link"
+                          target={item.link.startsWith("http") ? "_blank" : undefined}
+                          rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                        >
+                          {openLabel} &rarr;
                         </a>
-                      ) : item.title}
-                    </span>
-                    <p class="workshop-desc">{item.text}</p>
+                      )}
+                    </div>
+
+                    <h4>{item.title}</h4>
+                    <p>{item.text}</p>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              </article>
+            ))
+          }
         </div>
-      </div>
+      </>
     )}
 
-    <!-- Spotlight & Hackathon Section -->
-    {highlights && highlights.length > 0 && (
-      <div class="stacked-section animate-fade-in">
-        {highlightsTitle && <h3 class="column-title">{highlightsTitle}</h3>}
-        <div class="highlights-grid">
-          {highlights.map((item, i) => {
-            const icons = [
-              // Star — Spotlight
-              `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`,
-              // Robot — Robotics Hackathon
-              `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="4" width="10" height="8" rx="2"/><circle cx="10" cy="8" r="1" fill="currentColor"/><circle cx="14" cy="8" r="1" fill="currentColor"/><path d="M9 12v4h6v-4"/><path d="M5 8H3M21 8h-2M10 16v2M14 16v2"/></svg>`,
-              // Code brackets — Agentic Hackathon
-              `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>`,
-            ];
-            const colors = [
-              { from: "#c9a227", to: "#f0d060" },
-              { from: "#7a8a9e", to: "#b8c8d8" },
-              { from: "#6d28d9", to: "#a78bfa" },
-            ];
-            const c = colors[i % colors.length];
-            const cardClass = `highlight-card animate-slide-up`;
-            const cardStyle = `--stagger: ${i}; --hl-from: ${c.from}; --hl-to: ${c.to};`;
-            return (
-              <div class={cardClass} style={cardStyle}>
-                <div class="highlight-outer">
-                  <div class="highlight-inner">
-                    <div class="highlight-icon" set:html={icons[i % icons.length]} />
-                    <span class="highlight-title">{item.link ? <a href={item.link} class="highlight-title-link" target={item.link.startsWith("http") ? "_blank" : undefined} rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined} onclick="event.stopPropagation();">{item.title} <span class="highlight-link-arrow">&rarr;</span></a> : item.title}</span>
-                    <div class="highlight-desc-wrap">
-                      <p class="highlight-desc">{item.text}</p>
+    {highlightsTitle && highlightCards.length > 0 && (
+      <>
+        <h3 class="track-section-title animate-fade-in">{highlightsTitle}</h3>
+        <div class="support-grid support-grid-highlights">
+          {
+            highlightCards.map((item, index) => (
+              <article
+                class="support-card support-card-workshop support-card-highlight-immersive highlight-card animate-slide-up"
+                data-highlight-theme={item.theme}
+                style={`--accent-from:${item.accent.from}; --accent-to:${item.accent.to}; --stagger:${index}; --workshop-bg:url('${item.background}');`}
+              >
+                <div class="support-workshop-grid"></div>
+                <div class="support-workshop-vignette"></div>
+                <div class="support-workshop-wash"></div>
+
+                <div class="support-workshop-content">
+                  <div class="support-card-top">
+                    <span class="support-card-label">{item.badge}</span>
+                    <span class="support-card-code">{item.code}</span>
+                  </div>
+
+                  <div class="support-workshop-overlay">
+                    <div class="support-workshop-meta">
+                      <span class="support-workshop-rule"></span>
+                      {item.link && (
+                        <a
+                          href={item.link}
+                          class="support-link"
+                          target={item.link.startsWith("http") ? "_blank" : undefined}
+                          rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                        >
+                          {enterLabel} &rarr;
+                        </a>
+                      )}
                     </div>
-                    <span class="highlight-chevron"></span>
+                    <h4>{item.title}</h4>
+                    <p>{item.text}</p>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              </article>
+            ))
+          }
         </div>
-      </div>
+      </>
     )}
   </div>
 </section>
 
 <script>
-  function initTrackAnimations() {
+  function initTrackAtlas() {
+    const targets = document.querySelectorAll(
+      ".section-track-atlas .animate-fade-in, .section-track-atlas .animate-slide-up",
+    );
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -217,605 +592,704 @@ tracks.forEach((track, i) => {
           }
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.15, rootMargin: "0px 0px -50px 0px" },
     );
 
-    document
-      .querySelectorAll(
-        ".section-conference-tracks .animate-fade-in, .section-conference-tracks .animate-slide-up, .section-conference-tracks .animate-grow-line"
-      )
-      .forEach((el) => observer.observe(el));
-  }
+    targets.forEach((target) => observer.observe(target));
 
-  function initReadMoreToggles() {
-    document.querySelectorAll('.track-card').forEach(function(card) {
-      card.addEventListener('click', function(e) {
-        if (e.target.closest('.track-visit-link')) return;
-        card.classList.toggle('expanded');
-      });
-    });
-    document.querySelectorAll('.workshop-card').forEach(function(card) {
-      card.addEventListener('click', function(e) {
-        if (e.target.closest('.workshop-title-link')) return;
-        card.classList.toggle('expanded');
-      });
-    });
-    document.querySelectorAll('.highlight-card').forEach(function(card) {
-      card.addEventListener('click', function() {
-        card.classList.toggle('expanded');
+    document.querySelectorAll(".section-track-atlas .track-station").forEach((station) => {
+      if (station.dataset.initialized === "true") {
+        return;
+      }
+
+      station.dataset.initialized = "true";
+      station.addEventListener("click", (event) => {
+        if (event.target.closest(".track-visit-link")) {
+          return;
+        }
+        station.classList.toggle("expanded");
       });
     });
   }
 
-  // Run on initial load
-  initTrackAnimations();
-  initReadMoreToggles();
-
-  // Re-run after Astro page transitions
-  document.addEventListener("astro:page-load", function() {
-    initTrackAnimations();
-    initReadMoreToggles();
-  });
+  initTrackAtlas();
+  document.addEventListener("astro:page-load", initTrackAtlas);
 </script>
 
 <style>
-  .section-conference-tracks {
-    padding-top: var(--section-padding);
-    padding-bottom: calc(var(--section-padding) * 0.5);
+  .section-track-atlas {
     position: relative;
     overflow: hidden;
-    background: var(--color-lightgray, #E8EEF4);
+    background:
+      radial-gradient(circle at 10% 18%, rgba(14, 165, 233, 0.14), transparent 28%),
+      radial-gradient(circle at 87% 12%, rgba(236, 72, 153, 0.14), transparent 25%),
+      linear-gradient(180deg, #f5f8fd 0%, #edf3fb 100%);
   }
 
-  /* Background glow orbs */
-  .glow-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(8vw);
-    pointer-events: none;
-    animation: orb-drift 12s ease-in-out infinite alternate;
-  }
-
-  .glow-orb-1 {
-    width: 45vw;
-    height: 45vw;
-    background: radial-gradient(circle, #6366f1, #818cf8, transparent 70%);
-    top: -10vw;
-    left: -10vw;
-    opacity: 0.08;
-  }
-
-  .glow-orb-2 {
-    width: 40vw;
-    height: 40vw;
-    background: radial-gradient(circle, #8b5cf6, #a78bfa, transparent 70%);
-    bottom: -8vw;
-    right: -8vw;
-    opacity: 0.08;
-    animation-delay: -6s;
-  }
-
-  .glow-orb-3 {
-    width: 30vw;
-    height: 30vw;
-    background: radial-gradient(circle, #ec4899, #f472b6, transparent 70%);
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.06;
-    animation-delay: -3s;
-  }
-
-  @keyframes orb-drift {
-    0% { transform: translate(0, 0) scale(1); opacity: 0.05; }
-    100% { transform: translate(3vw, 2vw) scale(1.12); opacity: 0.1; }
-  }
-
-  .container {
-    position: relative;
-    z-index: 1;
-  }
-
-  /* ---- Scroll-triggered animations ---- */
-
-  .animate-fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s cubic-bezier(0.5, 0, 0.25, 1), transform 0.6s cubic-bezier(0.5, 0, 0.25, 1);
-  }
-
-  .animate-fade-in.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .animate-delay-1 { transition-delay: 0.12s; }
-  .animate-delay-2 { transition-delay: 0.24s; }
-
-  .animate-slide-up {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.5s cubic-bezier(0.5, 0, 0.25, 1), transform 0.5s cubic-bezier(0.5, 0, 0.25, 1);
-    transition-delay: calc(0.08s * var(--stagger, 0));
-  }
-
-  .animate-slide-up.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* ---- Section header ---- */
-
-  .section-header {
-    text-align: center;
-    margin-bottom: 3.5rem;
-  }
-
-  .section-label {
-    display: inline-block;
-    font-size: 0.75em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--color-primary, #2D4E9C);
-    margin-bottom: 0.75rem;
-  }
-
-  .section-header h2 {
-    margin: 0;
-  }
-
-  /* ---- Stacked sections layout ---- */
-
-  .stacked-section {
-    margin-bottom: 3rem;
-  }
-
-  .stacked-section:last-child {
-    margin-bottom: 0;
-  }
-
-  .column-title {
-    margin: 0 0 1.25rem;
-    font-size: 1.35em;
-    font-weight: 700;
-    color: var(--color-dark, #1c1d24);
-  }
-
-  /* ---- Track grid (2 columns) ---- */
-
-  .tracks-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.85rem;
-  }
-
-  /* ---- Track card ---- */
-
-  .track-card {
-    position: relative;
-    display: flex;
-    border-radius: 12px;
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-    cursor: pointer;
-    transition: transform 0.3s cubic-bezier(0.5, 0, 0.25, 1), border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .track-card::before {
-    content: '';
+  .track-atlas-noise {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, color-mix(in srgb, var(--accent-from) 5%, transparent), color-mix(in srgb, var(--accent-to) 3%, transparent));
-    opacity: 0;
-    transition: opacity 0.4s ease;
     pointer-events: none;
-    z-index: 0;
+    background-image:
+      linear-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.14) 1px, transparent 1px);
+    background-size: 3rem 3rem;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85), transparent);
   }
 
-  .track-card:hover::before { opacity: 1; }
+  .section-track-atlas .container {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 1.5rem;
+  }
 
-  .track-card::after {
-    content: '';
+  .track-atlas-header {
+    display: grid;
+    gap: 0.8rem;
+    max-width: 48rem;
+  }
+
+  .track-atlas-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(15, 23, 42, 0.72);
+  }
+
+  .track-atlas-kicker::before {
+    content: "";
+    width: 3rem;
+    height: 1px;
+    background: linear-gradient(90deg, #ef4444, transparent);
+  }
+
+  .track-atlas-title {
+    margin: 0;
+    font-size: clamp(2.4rem, 4vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    color: #020617;
+  }
+
+  .track-atlas-intro {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(15, 23, 42, 0.72);
+  }
+
+  .track-section-title {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(15, 23, 42, 0.78);
+  }
+
+  .track-route-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .route-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    min-height: 3rem;
+    padding: 0.75rem 0.95rem;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: 0 14px 24px rgba(15, 23, 42, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .route-chip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 28px rgba(15, 23, 42, 0.1);
+  }
+
+  .route-chip-code {
+    display: inline-grid;
+    place-items: center;
+    min-width: 3rem;
+    height: 2rem;
+    padding: 0 0.55rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  }
+
+  .route-chip-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: rgba(15, 23, 42, 0.78);
+  }
+
+  .track-route-board {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 3.2rem minmax(0, 1fr);
+    gap: 0.85rem 0.95rem;
+    align-items: start;
+    padding: 0.65rem 0 0.2rem;
+  }
+
+  .track-route-spine {
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: none;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.08), rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.08));
+  }
+
+  .track-route-spine::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.6), transparent 18%, transparent 82%, rgba(255, 255, 255, 0.6));
+    mix-blend-mode: screen;
+  }
+
+  .track-station {
+    position: relative;
+    display: grid;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .track-station.is-left {
+    grid-column: 1 / 2;
+    grid-template-columns: minmax(0, 1fr) 2.8rem;
+  }
+
+  .track-station.is-right {
+    grid-column: 3 / 4;
+    grid-template-columns: 2.8rem minmax(0, 1fr);
+    margin-top: 0.85rem;
+  }
+
+  .track-station::before {
+    content: "";
+    position: absolute;
+    top: 1.55rem;
+    width: clamp(0.9rem, 4vw, 2.2rem);
+    height: 2px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--accent-from) 38%, transparent), transparent);
     pointer-events: none;
-    z-index: 1;
   }
 
-  .track-card:hover::after {
-    animation: shimmer 0.8s ease forwards;
+  .track-station.is-left::before {
+    right: 1.85rem;
   }
 
-  @keyframes shimmer {
-    0% { left: -50%; }
-    100% { left: 150%; }
+  .track-station.is-right::before {
+    left: 1.85rem;
+    transform: scaleX(-1);
   }
 
-  .track-card:hover {
-    transform: translateY(-4px);
-    border-color: color-mix(in srgb, var(--accent-from) 25%, transparent);
-    box-shadow: 0 12px 32px color-mix(in srgb, var(--accent-from) 12%, transparent), 0 4px 12px rgba(0, 0, 0, 0.06);
-  }
-
-  .track-card-accent {
-    width: 5px;
-    flex-shrink: 0;
-    background: linear-gradient(to bottom, var(--accent-from), var(--accent-to));
-    opacity: 0.6;
-    transition: opacity 0.3s ease, width 0.3s ease;
-  }
-
-  .track-card:hover .track-card-accent { opacity: 1; width: 6px; }
-
-  .track-card-content {
-    padding: 1.15rem 1.35rem;
-    flex: 1;
-    min-width: 0;
-  }
-
-  .track-card-top {
-    display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .track-icon {
-    width: 1.35rem;
-    height: 1.35rem;
-    flex-shrink: 0;
-    color: var(--accent-from);
-    transition: transform 0.3s ease, filter 0.3s ease;
+  .track-stop {
     position: relative;
     z-index: 2;
-  }
-
-  .track-card:hover .track-icon {
-    transform: scale(1.15) rotate(5deg);
-    filter: drop-shadow(0 0 6px var(--accent-from));
-  }
-
-  .track-icon :global(svg) { width: 100%; height: 100%; }
-
-  .track-card h5 {
-    margin: 0;
-    font-size: 1.15rem;
-    font-weight: 700;
-    line-height: 1.25;
-    color: var(--color-dark, #1c1d24);
-    letter-spacing: -0.01em;
-  }
-
-  .track-desc-wrap {
-    max-height: 2.6em;
-    overflow: hidden;
-    transition: max-height 0.35s ease;
-  }
-
-  .track-card.expanded .track-desc-wrap { max-height: 40em; }
-
-  .track-desc {
-    margin: 0;
-    font-size: 0.82em;
-    line-height: 1.55;
-    color: rgba(28, 29, 36, 0.55);
-  }
-
-  .track-card:hover .track-desc { color: rgba(28, 29, 36, 0.75); }
-
-  .track-chevron {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 0.3rem;
-  }
-
-  .track-chevron::after {
-    content: '';
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border-right: 2px solid rgba(28, 29, 36, 0.35);
-    border-bottom: 2px solid rgba(28, 29, 36, 0.35);
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
-  }
-
-  .track-card.expanded .track-chevron::after { transform: rotate(-135deg); }
-  .track-card:hover .track-chevron::after { border-color: rgba(28, 29, 36, 0.55); }
-
-  .track-visit-link {
-    margin-left: auto;
-    flex-shrink: 0;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 0.2em 0.6em;
-    border-radius: 4px;
-    color: rgba(28, 29, 36, 0.45);
-    border: 1px solid rgba(28, 29, 36, 0.15);
-    background: transparent;
-    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-    white-space: nowrap;
-  }
-
-  .track-visit-link:hover {
-    color: #fff;
-    background: rgba(28, 29, 36, 0.85);
-    border-color: rgba(28, 29, 36, 0.85);
-  }
-
-  /* ---- Workshop cards (dark theme) ---- */
-
-  .workshops-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25rem;
+    place-items: center;
+    gap: 0.5rem;
   }
 
-  .workshop-card {
-    transition: transform 0.35s ease;
+  .track-stop-dot {
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--accent-from) 28%, transparent),
+      0 0 24px color-mix(in srgb, var(--accent-to) 24%, transparent);
   }
 
-  .workshop-card:hover { transform: translateY(-4px); }
+  .track-stop-code {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(15, 23, 42, 0.5);
+  }
 
-  .workshop-card-inner {
+  .track-panel {
     position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    background: linear-gradient(160deg, #eef2ff, #e0e7ff 50%, #ede9fe);
-    border: 1px solid rgba(99, 102, 241, 0.18);
-    border-radius: 16px;
-    padding: 1rem 1.25rem;
-    box-shadow: 0 2px 12px rgba(99, 102, 241, 0.06);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
-  }
-
-  .workshop-glow {
-    position: absolute;
-    top: -40%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 60%;
-    background: radial-gradient(ellipse, rgba(99, 102, 241, 0.1), transparent 70%);
-    pointer-events: none;
-    transition: opacity 0.4s ease, width 0.4s ease;
-  }
-
-  .workshop-card:hover .workshop-glow {
-    opacity: 1.5;
-    width: 120%;
-  }
-
-  .workshop-card:hover .workshop-card-inner {
-    border-color: rgba(99, 102, 241, 0.4);
-    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.18), 0 4px 12px rgba(99, 102, 241, 0.08);
-    background: linear-gradient(160deg, #eef2ff, #ddd6fe 50%, #e0e7ff);
-  }
-
-  .workshop-logo {
-    width: 72px;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 10px;
-    flex-shrink: 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    position: relative;
-    z-index: 1;
+    display: grid;
+    gap: 0.8rem;
+    padding: 1.2rem 1.25rem;
+    border-radius: 1.7rem;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72)),
+      radial-gradient(circle at top left, color-mix(in srgb, var(--accent-from) 12%, transparent), transparent 55%);
+    box-shadow: 0 24px 50px rgba(15, 23, 42, 0.08);
+    cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  .workshop-card:hover .workshop-logo {
-    transform: scale(1.08) rotate(-2deg);
-    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.25);
+  .track-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(140deg, color-mix(in srgb, var(--accent-from) 28%, transparent), transparent 40%, color-mix(in srgb, var(--accent-to) 18%, transparent));
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
   }
 
-  .workshop-logo :global(img) {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  .track-panel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 28px 50px rgba(15, 23, 42, 0.1);
   }
 
-  .workshop-content {
-    flex: 1;
-    min-width: 0;
+  .track-station.is-left .track-stop {
+    order: 2;
   }
 
-  .workshop-title {
-    display: block;
-    font-size: 1.1em;
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--color-dark, #1c1d24);
-    margin-bottom: 0.25rem;
-    position: relative;
-    z-index: 1;
-    text-align: left;
+  .track-station.is-left .track-panel {
+    order: 1;
   }
 
-  .workshop-title-link {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.2s ease;
+  .track-station.is-right .track-stop {
+    order: 1;
   }
 
-  .workshop-title-link:hover {
-    color: #6366f1;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+  .track-station.is-right .track-panel {
+    order: 2;
+    grid-column: auto;
   }
 
-  .workshop-desc {
-    margin: 0;
-    font-size: 0.82em;
-    line-height: 1.55;
-    color: rgba(28, 29, 36, 0.55);
-    position: relative;
-    z-index: 1;
-    text-align: left;
-  }
-
-  .workshop-card:hover .workshop-desc { color: rgba(28, 29, 36, 0.75); }
-
-  /* ---- Highlight cards (Spotlight & Hackathon) ---- */
-
-  .highlights-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .track-panel-top,
+  .track-panel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
   }
 
-  .highlight-card {
-    cursor: pointer;
-    transition: transform 0.35s ease;
+  .track-panel-index {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(15, 23, 42, 0.42);
   }
 
-  .highlight-card:hover { transform: translateY(-4px); }
-
-  .highlight-outer {
-    padding: 2px;
-    border-radius: 16px;
-    background: linear-gradient(160deg, var(--hl-from), var(--hl-to) 40%, var(--hl-from) 60%, var(--hl-to));
-    background-size: 200% 200%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 50% 100%, 0% 82%);
-    transition: box-shadow 0.35s ease;
-    animation: gradient-shift 4s ease infinite;
+  .track-visit-link,
+  .support-link {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(15, 23, 42, 0.62);
   }
 
-  @keyframes gradient-shift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+  .track-panel h4,
+  .support-card h4 {
+    margin: 0;
+    font-size: 1.45rem;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: #020617;
   }
 
-  .highlight-card:hover .highlight-outer {
-    box-shadow: 0 12px 40px color-mix(in srgb, var(--hl-from) 20%, transparent);
+  .track-teaser,
+  .support-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: rgba(15, 23, 42, 0.74);
   }
 
-  .highlight-inner {
-    background: linear-gradient(170deg, color-mix(in srgb, var(--hl-from) 6%, #fff), color-mix(in srgb, var(--hl-to) 4%, #fff) 80%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 50% 100%, 0% 82%);
-    border-radius: 14px;
-    padding: 1.75rem 1.5rem 3.5rem;
+  .track-signal-row {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+  }
+
+  .track-signal-pill,
+  .support-card-label {
+    display: inline-flex;
     align-items: center;
-    text-align: center;
-    transition: background 0.4s ease;
+    justify-content: center;
+    min-height: 2rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(15, 23, 42, 0.7);
+    background: color-mix(in srgb, var(--accent-from) 10%, white);
   }
 
-  .highlight-card:hover .highlight-inner {
-    background: linear-gradient(170deg, color-mix(in srgb, var(--hl-from) 10%, #fff), color-mix(in srgb, var(--hl-to) 8%, #fff) 80%);
-  }
-
-  .highlight-icon {
-    width: 2rem;
-    height: 2rem;
-    margin-bottom: 0.85rem;
-    color: var(--hl-from);
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-
-  .highlight-card:hover .highlight-icon {
-    transform: scale(1.2) rotate(-5deg);
-    filter: drop-shadow(0 0 8px var(--hl-from));
-  }
-
-  .highlight-icon :global(svg) { width: 100%; height: 100%; }
-
-  .highlight-title {
-    display: block;
-    font-size: 1.1em;
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--color-dark, #1c1d24);
-    margin-bottom: 0.5rem;
-  }
-
-  .highlight-desc-wrap {
-    max-height: 2.4em;
+  .track-desc-wrap {
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;
   }
 
-  .highlight-card.expanded .highlight-desc-wrap { max-height: 40em; }
+  .track-station.expanded .track-desc-wrap {
+    max-height: 40rem;
+  }
 
-  .highlight-desc {
+  .track-desc {
     margin: 0;
-    font-size: 0.82em;
-    line-height: 1.55;
-    color: rgba(28, 29, 36, 0.55);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(15, 23, 42, 0.66);
   }
 
-  .highlight-card:hover .highlight-desc { color: rgba(28, 29, 36, 0.75); }
-
-  .highlight-chevron {
-    display: flex;
-    justify-content: center;
-    align-self: stretch;
-    margin-top: 0.5rem;
+  .track-scanline {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--accent-from) 35%, transparent), transparent);
   }
 
-  .highlight-chevron::after {
-    content: '';
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border-right: 2px solid rgba(28, 29, 36, 0.3);
-    border-bottom: 2px solid rgba(28, 29, 36, 0.3);
+  .track-chevron {
+    width: 0.9rem;
+    height: 0.9rem;
+    border-right: 2px solid rgba(15, 23, 42, 0.42);
+    border-bottom: 2px solid rgba(15, 23, 42, 0.42);
     transform: rotate(45deg);
     transition: transform 0.3s ease;
   }
 
-  .highlight-card.expanded .highlight-chevron::after { transform: rotate(-135deg); }
-  .highlight-card:hover .highlight-chevron::after { border-color: rgba(28, 29, 36, 0.5); }
-
-  .highlight-title-link {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.2s ease;
+  .track-station.expanded .track-chevron {
+    transform: rotate(-135deg);
   }
 
-  .highlight-title-link:hover {
-    color: var(--hl-from);
-    text-decoration: underline;
-    text-underline-offset: 3px;
+  .support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
   }
 
-  .highlight-link-arrow {
-    margin-left: 0.3em;
-    opacity: 0.4;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-    display: inline-block;
+  .support-card {
+    display: grid;
+    gap: 0.9rem;
+    padding: 1.3rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72)),
+      radial-gradient(circle at top right, color-mix(in srgb, var(--accent-from) 14%, transparent), transparent 55%);
+    box-shadow: 0 22px 38px rgba(15, 23, 42, 0.07);
   }
 
-  .highlight-title-link:hover .highlight-link-arrow {
+  .support-card-workshop {
+    position: relative;
+    display: flex;
+    padding: 0;
+    gap: 0;
+    overflow: hidden;
+    isolation: isolate;
+    min-height: clamp(24rem, 34vw, 31rem);
+    background-color: color-mix(in srgb, var(--accent-from) 18%, #0f172a);
+    background-image: var(--workshop-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .support-card-workshop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--accent-from) 28%, transparent),
+      rgba(255, 255, 255, 0.32) 38%,
+      color-mix(in srgb, var(--accent-to) 18%, transparent)
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .support-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .support-workshop-grid {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 1.45rem 1.45rem;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 85%);
+    opacity: 0.42;
+    z-index: 1;
+  }
+
+  .support-workshop-vignette {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 18% 16%, color-mix(in srgb, var(--accent-from) 30%, transparent), transparent 32%),
+      radial-gradient(circle at 84% 14%, color-mix(in srgb, var(--accent-to) 28%, transparent), transparent 24%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(2, 6, 23, 0.2) 52%, rgba(2, 6, 23, 0.38));
+    z-index: 2;
+  }
+
+  .support-workshop-wash {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--accent-from) 24%, rgba(255, 255, 255, 0.16)),
+        color-mix(in srgb, var(--accent-to) 22%, rgba(255, 255, 255, 0.1))
+      ),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(2, 6, 23, 0.08) 24%, rgba(2, 6, 23, 0.3) 100%);
+    opacity: 0.72;
+    z-index: 3;
+  }
+
+  .support-workshop-content {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    min-height: inherit;
+    padding: 1rem;
+  }
+
+  .support-card-workshop .support-card-top {
+    position: relative;
+    align-self: start;
+  }
+
+  .support-card-code {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(248, 250, 252, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08));
+    box-shadow: 0 12px 22px rgba(15, 23, 42, 0.16);
+  }
+
+  .support-card-workshop .support-card-label {
+    color: rgba(248, 250, 252, 0.82);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.07));
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 12px 22px rgba(15, 23, 42, 0.16);
+  }
+
+  .support-workshop-overlay {
+    position: relative;
+    display: grid;
+    gap: 0.9rem;
+    align-self: start;
+    justify-self: center;
+    width: min(86%, 24rem);
+    margin: 0 auto auto;
+    padding: 1.15rem 1.2rem 1.2rem;
+    border-radius: 1.35rem;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.14));
+    box-shadow: 0 18px 36px rgba(15, 23, 42, 0.18);
+  }
+
+  .support-workshop-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .support-workshop-rule {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.72),
+      color-mix(in srgb, var(--accent-to) 32%, rgba(255, 255, 255, 0.2))
+    );
+  }
+
+  .support-card-workshop .support-workshop-overlay h4,
+  .support-card-workshop .support-workshop-overlay p,
+  .support-card-workshop .support-link {
+    color: rgba(248, 250, 252, 0.96);
+  }
+
+  .support-card-workshop .support-workshop-overlay p {
+    color: rgba(248, 250, 252, 0.88);
+  }
+
+  .support-card-workshop .support-link {
+    text-shadow: 0 1px 2px rgba(2, 6, 23, 0.28);
+  }
+
+  .highlight-card {
+    min-height: 100%;
+  }
+
+  .support-card-highlight-immersive {
+    min-height: clamp(26rem, 36vw, 33rem);
+  }
+
+  .support-card-highlight-immersive .support-workshop-overlay {
+    width: min(88%, 26rem);
+  }
+
+  .animate-fade-in,
+  .animate-slide-up {
+    opacity: 0;
+    transition:
+      opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: calc(0.1s * var(--stagger, 0));
+  }
+
+  .animate-fade-in {
+    transform: translateY(18px);
+  }
+
+  .animate-slide-up {
+    transform: translateY(40px) scale(0.98);
+  }
+
+  .animate-fade-in.is-visible,
+  .animate-slide-up.is-visible {
     opacity: 1;
-    transform: translateX(2px);
+    transform: none;
   }
 
-  /* ---- Responsive ---- */
+  .animate-delay-1 {
+    transition-delay: 0.14s;
+  }
 
-  @media (max-width: 860px) {
-    .tracks-grid,
-    .workshops-grid,
-    .highlights-grid {
+  .animate-delay-2 {
+    transition-delay: 0.28s;
+  }
+
+  @media (max-width: 980px) {
+    .track-route-board {
       grid-template-columns: 1fr;
+      gap: 0.8rem;
+      padding-top: 0.4rem;
+    }
+
+    .track-route-spine {
+      left: 1.15rem;
+      transform: none;
+    }
+
+    .track-station,
+    .track-station.is-left,
+    .track-station.is-right {
+      grid-column: 1 / -1;
+      grid-template-columns: 2.3rem minmax(0, 1fr);
+      margin-top: 0;
+    }
+
+    .track-stop,
+    .track-station.is-left .track-stop,
+    .track-station.is-right .track-stop {
+      order: 1;
+    }
+
+    .track-station.is-left .track-panel,
+    .track-station.is-right .track-panel {
+      order: 2;
+      grid-column: 2 / 3;
+    }
+
+    .track-station::before {
+      display: none;
+    }
+
+    .support-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .track-route-strip {
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+      flex-wrap: nowrap;
+    }
+
+    .route-chip {
+      min-width: 15rem;
+    }
+
+    .track-panel {
+      padding: 1.1rem;
+    }
+
+    .track-panel h4 {
+      font-size: 1.25rem;
+    }
+
+    .support-card-workshop {
+      min-height: 22rem;
+    }
+
+    .support-workshop-overlay {
+      width: min(90%, 23rem);
+    }
+
+    .support-card-highlight-immersive {
+      min-height: 24rem;
+    }
+
+    .support-card-highlight-immersive .support-workshop-overlay {
+      width: min(92%, 24rem);
+    }
+  }
+
+  @media (max-width: 560px) {
+    .support-workshop-overlay {
+      width: auto;
     }
   }
 </style>

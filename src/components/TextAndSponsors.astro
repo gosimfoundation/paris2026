@@ -27,6 +27,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "images/sponsors/*.{jpeg,jpg,png,gif}"
 );
 
+const isRemoteImage = (image?: string) => Boolean(image && /^https?:\/\//.test(image));
+
 const { id, title, text, text2, logos, ctaButton } = Astro.props;
 ---
 
@@ -66,19 +68,30 @@ const { id, title, text, text2, logos, ctaButton } = Astro.props;
         <div class="logo-tiles">
           {
             logos?.map((loop) => (
-              <div class="single-logo-tile">
-                <div class="boxed-logo xll">
-                  {loop?.image && (
-                    <Picture
-                      src={images[`/public/images/sponsors/${loop.image}`]()}
-                      formats={["webp", "jpg"]}
-                      alt={loop.imageAlt}
-                      widths={[75, 150, 225, 450]}
-                      sizes="(max-width: 480px) 75px, 225px"
-                    />
-                  )}
+                <div class="single-logo-tile">
+                  <div class="boxed-logo xll">
+                  {loop?.image &&
+                    (isRemoteImage(loop.image) ? (
+                      <img
+                        class="sponsor-logo-image"
+                        src={loop.image}
+                        alt={loop.imageAlt}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      images[`/public/images/sponsors/${loop.image}`] && (
+                        <Picture
+                          src={images[`/public/images/sponsors/${loop.image}`]()}
+                          formats={["webp", "jpg"]}
+                          alt={loop.imageAlt}
+                          widths={[75, 150, 225, 450]}
+                          sizes="(max-width: 480px) 75px, 225px"
+                        />
+                      )
+                    ))}
+                  </div>
                 </div>
-              </div>
             ))
           }
         </div>
@@ -86,3 +99,12 @@ const { id, title, text, text2, logos, ctaButton } = Astro.props;
     </div>
   </div>
 </section>
+
+<style>
+  .sponsor-logo-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+</style>

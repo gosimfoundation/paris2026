@@ -35,14 +35,16 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 
 <Layout
   title="GOSIM Paris 2026"
-  description="GOSIM Paris - May 5-6, 2026"
+  description="GOSIM Paris 2026 — The Agentic AI Convergence. May 4-6, 2026 at STATION F, Paris."
   navDarkMode={true}
   navBackground="header-home"
   pageTransitionName="Home"
 >
   <Hero
-    date="May 5-6, 2026"
+    date="May 4-6, 2026"
     location="STATION F, Paris"
+    subtitle="The Agentic AI Convergence"
+    description="Top open source projects, global builders, latest agentic movements, and developer-first experiences, together for three days at STATION F."
     links={[
       {
         text: "Submit a Proposal",
@@ -109,12 +111,50 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
     data-bg-section="lightgray"
   >
     <div class="intro-statistics-container" style="">
-      <Intro>
-        <h3 class="h3 light split-words animate-read">
-          Join us at GOSIM Paris 2026, the premier open-source conference, where
-          innovation, collaboration, and technological breakthroughs converge.
-        </h3>
-      </Intro>
+      <Intro
+        eyebrow="GOSIM PARIS 2026 / MAY 4-6 / STATION F"
+        headlineLines={[
+          "Understand What's",
+          "Happening At The Frontier",
+          "Of Agentic AI —",
+          "At GOSIM, In Paris",
+        ]}
+        accentLine={0}
+        body="Top open source projects, leading developers, and the latest agentic AI frontiers — all converging at STATION F in Paris for two days of immersive developer experiences."
+        facetsTitle="Across The Program"
+        facets={[
+          {
+            title: "Top Projects",
+            text: "Meet the teams behind llama.cpp, GLM, SGLang, vLLM, and other fast-moving open source efforts shaping the stack.",
+          },
+          {
+            title: "Diverse Speakers",
+            text: "Builders, researchers, founders, infrastructure engineers, and open source maintainers from multiple regions and communities.",
+          },
+          {
+            title: "Latest Movements",
+            text: "Follow the newest momentum across agent frameworks, MCP-style interoperability, model serving, edge deployment, and production systems.",
+          },
+          {
+            title: "Builder Experience",
+            text: "Workshops, spotlight demos, hackathons, and a global participant base make it one of Europe's most distinctive open source agentic AI conferences.",
+          },
+        ]}
+        signals={[
+          "Foundation Models",
+          "Agent Frameworks",
+          "Model Serving",
+          "Edge Deployment",
+          "Production Systems",
+        ]}
+        projectsLabel="Projects in the room"
+        projects={[
+          "llama.cpp",
+          "GLM",
+          "SGLang",
+          "vLLM",
+        ]}
+      />
 
       <!-- <Statistics
         stats={[
@@ -142,6 +182,39 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
       /> -->
     </div>
   </div>
+
+  <TextAndSponsors
+    id="supporting-organizations"
+    title="Supporting Organizations"
+    text="GOSIM Paris 2026 is made possible by the generous support of leading organizations driving innovation in open source and AI."
+    text2=""
+    logos={[
+      {
+        image: "minimax.png",
+        imageAlt: "MiniMax logo",
+      },
+      {
+        image: "modelbest.png",
+        imageAlt: "ModelBest logo",
+      },
+      {
+        image: "https://vectorseek.com/wp-content/uploads/2025/08/Kimi-Ai-Logo-PNG-SVG-Vector.png",
+        imageAlt: "Kimi AI logo",
+      },
+      {
+        image: "sgl.png",
+        imageAlt: "SGLang logo",
+      },
+      {
+        image: "vllm.png",
+        imageAlt: "vLLM logo",
+      },
+      {
+        image: "https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/zai.png",
+        imageAlt: "Z.ai logo",
+      },
+    ]}
+  />
 
   <!-- <Tracks
     id="tracks"
@@ -250,16 +323,18 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   /> -->
 
   <ConferenceTracks
+    kicker="Conference Program"
     title="Exciting Tracks and Workshops"
+    intro="From open source models and agent frameworks to robotics, edge AI, and the emerging layer between agentic apps and agentic operating systems, the program is built to show where the stack is moving next and let developers get close to the people building it."
     tracksTitle="Conference Tracks"
     tracks={[
       {
         title: "Agentic AI Summit",
-        text: "2026 marks a pivotal year for the explosive growth of the agentic ecosystem. This summit focuses on the core standards and evolving software paradigms of agentic systems, exploring protocols like MCP and A2A, as well as emerging trends in sovereign AI. We will dissect new AI software development models driven by tools like Codex. Bringing together innovative startups, creators, venture capitalists, and enterprise leaders, this event is dedicated to charting the innovative pathways and commercial future of open-source agents.",
+        text: "The strategy layer of the agentic wave: protocols, software patterns, tooling, and business models. Follow MCP, A2A, sovereign AI, AI-native development, and the emerging playbook for open-source agents.",
       },
       {
         title: "Open Source Robotics",
-        text: "While large models give robots a \"soul,\" open source is forging their \"body.\" This track showcases the latest advancements and innovations in open-source platforms and applications for Embodied AI. Through a dynamic mix of keynote speeches and hands-on workshops, you will learn to build autonomous robotics systems and real-world AI applications using open-source frameworks. This is the ultimate proving ground where hardware meets algorithms to define the next generation of embodied intelligence.",
+        text: "Where agentic software meets physical systems. Explore open robotics platforms, embodied AI stacks, and hands-on methods for building autonomous machines that can perceive, plan, and act.",
         link: "/open-source-robotics",
       },
       {
@@ -272,25 +347,25 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
       },
       {
         title: "Open Source Model",
-        text: "Open-source models are reaching a paradigm-shifting inflection point where \"small models punch above their weight.\" Covering open foundation models across LLMs, audio, image, and video, this track spotlights the latest technological evolutions and application breakthroughs. From general-purpose capabilities to domain-specific verticals, open-source models are relentlessly pushing the boundaries of what AI can achieve.",
+        text: "Open models are advancing quickly across language, vision, audio, and video. This track follows the latest breakthroughs, practical deployments, and the new capabilities emerging from the open model ecosystem.",
       },
     ]}
     workshopsTitle="Workshops"
     workshops={[
       {
         title: "SGLang Workshop",
-        text: "Master efficient and controllable large language model inference and interaction using SGLang.",
-        image: "sgl.png",
+        text: "Go beyond prompting and learn the project-level ideas that make SGLang fast and controllable: structured generation, RadixAttention, KV cache reuse, agent loops, and the patterns teams use to build production inference and workflow systems.",
+        theme: "structured-runtime",
       },
       {
         title: "vLLM Workshop",
-        text: "Learn to deploy and scale large language model serving with vLLM's high-throughput, low-latency inference engine.",
-        image: "vllm.png",
+        text: "Work directly with the vLLM serving stack: paged attention, continuous batching, multi-GPU deployment, and the operational patterns teams use to run high-throughput, low-latency open model services in production.",
+        theme: "model-serving",
       },
       {
         title: "Own Your Data Science and AI Workshop",
         text: "A full-day workshop on open source tooling for state-of-the-art AI — from GPU-accelerated ML frameworks to sovereign LLMs and tabular foundation models.",
-        image: "probabl.png",
+        theme: "open-tooling",
       },
       {
         title: "Build Your Own Agentic App Workshop",

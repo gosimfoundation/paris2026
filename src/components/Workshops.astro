@@ -6,9 +6,9 @@ import type { ImageMetadata } from "astro"
 import speakersData from "json/SpeakersCleaned.json"
 
 // Filter speakers to only include workshop speakers where draft is false and id is not "tbd"
-const workshopCategories = ["ws-future-web", "ws-cann", "ws-flutter", "ws-cangjie", "ws-edge-ai", "ws-chitu", "ws-ai-education", "ws-rn", "ws-dora", "ws-rust", "ws-sglang", "open-for-sdg", "forum-aivision"];
+const workshopCategories = ["ws-sglang-paris2026", "ws-vllm-paris2026", "ws-future-web", "ws-cann", "ws-flutter", "ws-cangjie", "ws-edge-ai", "ws-chitu", "ws-ai-education", "ws-rn", "ws-dora", "ws-rust", "ws-sglang", "open-for-sdg", "forum-aivision"];
 const filteredSpeakers = speakersData.speakers.filter(
-  (speaker) => speaker.draft !== true && speaker.id !== "tbd" && workshopCategories.includes(speaker.tag)
+  (speaker) => speaker.draft !== true && speaker.id !== "tbd" && speaker.tags?.some((t: string) => workshopCategories.includes(t))
 )
 
 // For images in public directory, we can reference them directly
@@ -77,7 +77,7 @@ const filteredSpeakers = speakersData.speakers.filter(
             data-filter-status="active"
             data-filter-index={index}
             data-filter-index-even={index % 2 === 0}
-            data-filter-category={speaker.tag}
+            data-filter-category={speaker.tags?.[0]}
           >
             <a
               href={`/workshops/${speaker.id}/`}

@@ -133,7 +133,7 @@ const eventCategory = category || "Uncategorized"
 
           <div class="box-row box-row-text styled-content">
             <p class="location-text">
-              <strong>Location:</strong>
+              <strong>Lieu :</strong>
               {
                 eventDetails.room ||
                   (() => {
@@ -146,7 +146,7 @@ const eventCategory = category || "Uncategorized"
                         ? cat.room
                         : cat.room?.en || ""
                     }
-                    return "TBA"
+                    return "À confirmer"
                   })()
               }
             </p>
@@ -159,7 +159,7 @@ const eventCategory = category || "Uncategorized"
           {
             eventDetails.speakers && eventDetails.speakers.length > 0 && (
               <>
-                <h2 class="h4 event-speaker-title">Speakers</h2>
+                <h2 class="h4 event-speaker-title">Intervenants</h2>
                 <div class="card-row card-row-speakers event-detail_speakers">
                   {eventDetails.speakers.map((speaker) => {
                     // Find full speaker details from unified speakers.json
@@ -180,11 +180,13 @@ const eventCategory = category || "Uncategorized"
                       "ws-dora",
                       "ws-rust",
                       "ws-sglang",
+                      "ws-sglang-paris2026",
+                      "ws-vllm-paris2026",
                       "open-for-sdg",
                       "forum-aivision",
                     ]
                     let isWorkshopSpeaker = fullSpeakerDetails
-                      ? workshopCategories.includes(fullSpeakerDetails.tag)
+                      ? fullSpeakerDetails.tags?.some((t: string) => workshopCategories.includes(t))
                       : false
 
                     // Determine the correct URL path

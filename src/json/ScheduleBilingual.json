@@ -2,12 +2,50 @@
   "days": [
     {
       "date": {
+        "en": "May 4",
+        "zh": "5月4日"
+      },
+      "title": {
+        "en": "Day 0 — AI Vision Forum",
+        "zh": "第零天 — AI愿景论坛",
+        "fr": "Jour 0 — AI Vision Forum"
+      },
+      "url": {
+        "en": "/schedule-day-0/",
+        "zh": "/zh/schedule-day-0/",
+        "fr": "/fr/schedule-day-0/"
+      }
+    },
+    {
+      "date": {
         "en": "May 5",
         "zh": "5月5日"
       },
-      "dayLabel": {
+      "title": {
         "en": "Day 1",
-        "zh": "第一天"
+        "zh": "第一天",
+        "fr": "Jour 1"
+      },
+      "url": {
+        "en": "/schedule/",
+        "zh": "/zh/schedule/",
+        "fr": "/fr/schedule/"
+      }
+    },
+    {
+      "date": {
+        "en": "May 6",
+        "zh": "5月6日"
+      },
+      "title": {
+        "en": "Day 2",
+        "zh": "第二天",
+        "fr": "Jour 2"
+      },
+      "url": {
+        "en": "/schedule-day-2/",
+        "zh": "/zh/schedule-day-2/",
+        "fr": "/fr/schedule-day-2/"
       }
     }
   ],
@@ -16,7 +54,13 @@
       "id": "placeholder",
       "name": {
         "en": "TBD",
-        "zh": "待定"
+        "zh": "待定",
+        "fr": "A venir"
+      },
+      "room": {
+        "en": "TBA",
+        "zh": "待定",
+        "fr": "A confirmer"
       }
     }
   ],

@@ -743,7 +743,7 @@ footer {
 
 .section-home-header .logo-gosim-scroll {
    position: absolute;
-   top: 20%;
+   top: 41%;
    left: 50%;
    transform: translate(-50%, -50%);
    width: calc(var(--title-size) * 9);
@@ -874,6 +874,10 @@ footer {
 }
 
 @media screen and (max-width: 860px) {
+
+   .section-home-header .logo-gosim-scroll {
+      top: 43%;
+   }
 
    .section-home-header .event-facts {
       left: 0%;

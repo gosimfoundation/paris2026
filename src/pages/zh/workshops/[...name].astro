@@ -43,6 +43,8 @@ interface schedule {
 export async function getStaticPaths() {
   // Filter only workshop speakers based on their tags
   const workshopCategories = [
+    "ws-sglang-paris2026",
+    "ws-vllm-paris2026",
     "ws-future-web",
     "ws-cann",
     "ws-flutter",
@@ -58,7 +60,7 @@ export async function getStaticPaths() {
     "forum-aivision",
   ];
   const workshopSpeakers = speakers.speakers.filter((speaker: Speaker) =>
-    workshopCategories.includes(speaker.tag)
+    speaker.tags?.some((t: string) => workshopCategories.includes(t))
   );
 
   return workshopSpeakers.map((speaker: Speaker) => ({
@@ -140,7 +142,7 @@ const socialIconMap: Record<string, string> = {
 ---
 
 <Layout
-  title={`${speaker.name} – GOSIM Paris 2025`}
+  title={`${speaker.name} – GOSIM Paris 2026`}
   description={speaker.roleOrg}
   navBackground="light"
   pageTransitionName={speaker.name}
@@ -164,14 +166,6 @@ const socialIconMap: Record<string, string> = {
                     src={speaker.image}
                     alt={speaker.name}
                   />
-                      class="speaker-detail-image"
-                      widths={[275, 400, 500, 600, 750, 900]}
-                      sizes="(max-width: 700px) 58vw, 450px"
-                      height={400}
-                      width={400}
-                      loading="eager"
-                      style="object-fit: cover; object-position: center 15% !important;"
-                    />
                   </div>
                 )
             }
@@ -239,7 +233,7 @@ const socialIconMap: Record<string, string> = {
               <ul class="row row-list">
                 {speakerSessions.map((session) => (
                   <a
-                    href={`/schedule/${session.titleEn
+                    href={`/zh/schedule/${session.titleEn
                       .toLowerCase()
                       .replace(/[^\w\s\u4e00-\u9fff-]/g, "")
                       .replace(/\s+/g, "-")
@@ -278,10 +272,12 @@ const socialIconMap: Record<string, string> = {
   .speaker-detail-image {
     position: relative;
     overflow: hidden;
+    aspect-ratio: 1/1;
     width: 100%;
-    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
   }
-  
+
   .speaker-detail-image img {
     width: 100%;
     height: 100%;
