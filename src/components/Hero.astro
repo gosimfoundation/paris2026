@@ -79,30 +79,33 @@ const { date, location, subtitle, description, links } = Astro.props
           <path d="M23.2475 13.1497C21.7107 13.1497 20.4459 12.6601 19.4531 11.6945C18.4603 10.7153 17.9707 9.47775 17.9707 7.98175C17.9707 6.47215 18.4875 5.22095 19.5075 4.24175C20.5275 3.26255 21.8059 2.77295 23.3155 2.77295C24.9339 2.77295 26.4027 3.41215 27.3275 4.33695L25.8859 5.96895C25.1515 5.27535 24.2947 4.93535 23.3019 4.93535C22.4179 4.93535 21.6971 5.22095 21.1259 5.80575C20.5547 6.37695 20.2691 7.09775 20.2691 7.95455C20.2691 8.81135 20.5547 9.53215 21.1123 10.1169C21.6699 10.7017 22.4043 11.0009 23.2883 11.0009C24.2675 11.0009 25.2331 10.5929 25.7907 10.0489V8.89295H23.2339V6.96175H27.8307V11.1913C26.5251 12.497 25.0019 13.1497 23.2475 13.1497Z" fill="url(#gosimGradient)"/>
           </svg>
 
-          {(subtitle || description) && (
-            <div class="hero-copy-box">
-              {subtitle && <p class="hero-subtitle">{subtitle}</p>}
-              {description && <p class="hero-description">{description}</p>}
-            </div>
-          )}
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <div class="event-facts">
-            {date && <p>{date}</p>}
-            {location && <p>{location}</p>}
-          </div>
+  <div class="hero-bottom-box">
+    <div class="container">
+      {subtitle && <p class="hero-subtitle">{subtitle}</p>}
+      {description && <p class="hero-description">{description}</p>}
 
-          <div class="btn-home-wrap">
-            {
-              links?.map((loop) => (
-                <Button
-                  text={loop.text}
-                  link={loop.link}
-                  openInNewTab={loop?.openInNewTab}
-                  class={loop.class || "btn xl btn-hover fade-in-last"}
-                />
-              ))
-            }
-          </div>
+      <div class="hero-bottom-meta">
+        <div class="event-facts">
+          {date && <p>{date}</p>}
+          {location && <p>{location}</p>}
+        </div>
+
+        <div class="btn-home-wrap">
+          {
+            links?.map((loop) => (
+              <Button
+                text={loop.text}
+                link={loop.link}
+                openInNewTab={loop?.openInNewTab}
+                class={loop.class || "btn xl btn-hover fade-in-last"}
+              />
+            ))
+          }
         </div>
       </div>
     </div>
@@ -119,12 +122,12 @@ const { date, location, subtitle, description, links } = Astro.props
     z-index: 3;
   }
 
-  .hero-copy-box {
-    position: relative;
+  .hero-bottom-box {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
     z-index: 4;
-    width: min(58rem, 100%);
-    margin-top: 10.6rem;
-    padding: 0;
   }
 
   .hero-subtitle {
@@ -135,20 +138,25 @@ const { date, location, subtitle, description, links } = Astro.props
     line-height: 1.18;
     opacity: 0.98;
     color: rgba(255, 255, 255, 0.98);
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 0 0.5rem;
   }
 
   .hero-description {
     max-width: 54rem;
-    margin-top: 0.75rem;
-    margin-bottom: 0;
+    margin: 0 0 1.2rem;
     font-size: clamp(1.18rem, 0.98rem + 0.45vw, 1.45rem);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.01em;
     opacity: 0.96;
     color: rgba(255, 255, 255, 0.94);
+  }
+
+  .hero-bottom-meta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
 
   .section-home-header .logo-gosim-scroll svg {
@@ -176,9 +184,8 @@ const { date, location, subtitle, description, links } = Astro.props
       height: auto;
     }
 
-    .hero-copy-box {
-      width: min(92vw, 100%);
-      margin-top: 7.6rem;
+    .hero-bottom-box {
+      bottom: 1.5rem;
     }
 
     .hero-subtitle {
@@ -190,6 +197,12 @@ const { date, location, subtitle, description, links } = Astro.props
       max-width: 100%;
       font-size: 1.08rem;
       line-height: 1.48;
+    }
+
+    .hero-bottom-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
     }
   }
 </style>
