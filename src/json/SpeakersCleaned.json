@@ -13,7 +13,7 @@
       "id": "agentic-ai-on-edge"
     },
     {
-      "name": "Agentic OS & App",
+      "name": "Agentic App",
       "id": "ai-generative-app"
     },
     {
@@ -25,15 +25,36 @@
       "id": "open-source-robotics"
     },
     {
-      "name": "Own Your Data",
+      "name": "Own Your Data Workshop",
       "id": "ws-own-your-data-paris2026"
     },
     {
-      "name": "SGLang",
+      "name": "SGLang Workshop",
       "id": "ws-sglang-paris2026"
     }
   ],
   "speakers": [
+    {
+      "id": "caroline-pascal",
+      "name": "Caroline Pascal",
+      "bio": "Caroline Pascal is a robotics engineer at Hugging Face, working on the LeRobot team. She’s become the team’s unofficial Swiss army knife, jumping across the library while focusing on expanding data modalities and models to make AI for robotics more accessible. She is also involved in the development and promotion of Reachy Mini, where she mainly focuses on the robot’s acoustic design and chips in on core media functionalities—basically making sure robots not only work, but sound good doing it.",
+      "role": "Robotics Engineer",
+      "org": "Hugging Face",
+      "roleOrg": "Robotics Engineer, Hugging Face",
+      "image": "/images/speakers/better_portrait/caroline-pascal.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
     {
       "id": "chao-jia",
       "name": "Chao Jia",
@@ -71,6 +92,27 @@
         "twitter": "",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/charbel-d-9569ba199",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "maitre-christian",
+      "name": "Christian Maitre",
+      "bio": "A digital transformation and innovation expert with extensive international leadership experiences in Telecom\r\nPresident & Founder – Caspera-Lab, Founder of Caspera-Lab, a premier global advisory firm specializing in guiding the telecom companies to (re) build, review, (re)start their sustainable digital transformation journeys with AI, genAI and Agentic AI.\r\nFormer CIO deputy for Digital Transformation – Orange Group, 10 years as Group CIO driving digital transformation worldwide  (21 opcos),\r\nTM Forum partner / ambassador, Recognized contributor to TM Forum innovation programs, founder of the autonomous networks concepts, leader on digital Maturity evaluation project\r\nForeign Trade Advisor of France (CNCCEF), Chair of the Digital-IA-Tech Expert Group at CNCCEF a french governmental association.",
+      "role": "CEO",
+      "org": "Caspera-Lab",
+      "roleOrg": "CEO, Caspera-Lab",
+      "image": "/images/speakers/better_portrait/maitre-christian.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
         "website": ""
       },
       "status": "Accept",
@@ -135,6 +177,27 @@
         "github": "https://github.com/guillaumeblaquiere",
         "linkedin": "https://www.linkedin.com/in/guillaume-blaquiere/",
         "website": "https://medium.com/@guillaume-blaquiere"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jeremy-laville",
+      "name": "Jeremy Laville",
+      "bio": "Mechanical engineer, with strong passion for robotic. Worked for Aldebaran on Pepper robot, and more recently on Reachy 2 for Pollen Robotics. I also designed Amazing Hand open source project.",
+      "role": "R&D Engineer",
+      "org": "Pollen Robotics",
+      "roleOrg": "R&D Engineer, Pollen Robotics",
+      "image": "/images/speakers/better_portrait/jeremy-laville.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
       },
       "status": "Accept",
       "draft": false
@@ -330,6 +393,27 @@
       "draft": false
     },
     {
+      "id": "priyanka-jain",
+      "name": "Priyanka Jain",
+      "bio": "Building non-invasive brain computer interfaces.",
+      "role": "CEO & Co-Founder",
+      "org": "Nubrain",
+      "roleOrg": "CEO & Co-Founder, Nubrain",
+      "image": "/images/speakers/better_portrait/priyanka-jain.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "qingyueannie-wang",
       "name": "Qingyue (Annie) Wang",
       "bio": "Annie Wang is a is a Software Engineer, Developer Advocate, and Internal Career Coach at Google where she helps developers build with AI. With 7 years of software engineering experience and 500+ career coaching hours at Google, she brings both technical depth and a talent for making complex concepts accessible. Annie specializes in Multi-Agent Systems, Google's Agent Development Kit (ADK), and Agent Evaluation, and has delivered keynotes at DevFest NYC, Boston, and Beijing. She is known for her \"learn by doing\" approach, helping engineers move from theory to building production-ready AI applications.",
@@ -414,6 +498,27 @@
       "draft": false
     },
     {
+      "id": "sylvain-corlay",
+      "name": "Sylvain Corlay",
+      "bio": "Sylvain Corlay is the founder and president of QuantStack, a company specializing in open-source software for scientific computing.\r\n\r\nAs an open-source developer, Sylvain is highly active in the free scientific computing ecosystem, particularly in the Jupyter project, as well as in the conda-forge and xtensor projects. In 2018, he was honored, along with other Jupyter leadership members, with the ACM Software System Award.\r\n\r\nBeyond QuantStack, Sylvain is deeply involved in the community. He served on the board of directors of the NumFOCUS Foundation from 2018 to 2024, organized JupyterCon 2023 in Paris, and has coordinated the PyData community in Paris since 2017, acting as the organizer of the meetup group and the PyData conference in 2024 and 2025.",
+      "role": "Founder & CEO",
+      "org": "QuantStack",
+      "roleOrg": "Founder & CEO, QuantStack",
+      "image": "/images/speakers/better_portrait/sylvain-corlay.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "https://mastodon.social/@SylvainCorlay",
+        "twitter": "",
+        "github": "https://github.com/SylvainCorlay",
+        "linkedin": "https://www.linkedin.com/in/sylvaincorlay/",
+        "website": "https://quantstack.net"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "crozet-sbastien",
       "name": "Sébastien Crozet",
       "bio": "Sébastien Crozet has been in love with the Rust programming language since its earliest days. He is the creator and maintainer of popular open-source libraries, including nalgebra and Rapier, for the Rust ecosystem that specialize in linear algebra, geometry, and physics. He is the founder of Dimforge where he focuses on contributing to the future of cross-platform scientific computing and AI.",
@@ -428,6 +533,48 @@
         "mastodon": "",
         "twitter": "",
         "github": "https://github.com/dimforge",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "tim-head",
+      "name": "Tim Head",
+      "bio": "I am a scikit-learn and cuML maintainer. I work at NVIDIA",
+      "role": "Software Engineer",
+      "org": "NVIDIA",
+      "roleOrg": "Software Engineer, NVIDIA",
+      "image": "/images/speakers/better_portrait/tim-head.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "virgile-batto",
+      "name": "Virgile Batto",
+      "bio": "Robot Architect. I optimize,design, and control legged robot",
+      "role": "Embodied Robotics Engineer",
+      "org": "Hugging Face",
+      "roleOrg": "Embodied Robotics Engineer, Hugging Face",
+      "image": "/images/speakers/better_portrait/virgile-batto.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
         "linkedin": "",
         "website": ""
       },
@@ -576,6 +723,27 @@
         "twitter": "https://x.com/zRdianjiao",
         "github": "https://github.com/zRzRzRzRzRzRzR",
         "linkedin": "https://www.linkedin.com/in/yuxuan-zhang-86a124282/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhipeng-huang",
+      "name": "Zhipeng Huang",
+      "bio": "Zhipeng Huang currently serve as Director of AI Open Source for Huawei. Zhipeng is now the Board chairperson of LFAI&Data Foundation, TAC Chair of Open Model Initiative, executive member of CCF Open Source Development Committee, co-lead of the Kubernetes Policy WG, project lead of CNCF Security SIG, founder of the OpenStack Cyborg project, and co-founder of OpenStack Public Cloud WG. Zhipeng used to give Keynote presentations at OpenStack Summit, KubeCon and RISC-V Workshop",
+      "role": "Board Chairperson",
+      "org": "LFAI&Data Foundation",
+      "roleOrg": "Board Chairperson, LFAI&Data Foundation",
+      "image": "/images/speakers/better_portrait/zhipeng-huang.png",
+      "tags": [
+        "open-source-model"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
         "website": ""
       },
       "status": "Accept",
