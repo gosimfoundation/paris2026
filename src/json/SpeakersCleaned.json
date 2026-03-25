@@ -17,6 +17,10 @@
       "id": "ai-generative-app"
     },
     {
+      "name": "OH Tech Forum",
+      "id": "ws-oh-tech-forum"
+    },
+    {
       "name": "Open Source Model",
       "id": "open-source-model"
     },
@@ -34,6 +38,111 @@
     }
   ],
   "speakers": [
+    {
+      "id": "anastasiastasenko1",
+      "name": "Anastasia Stasenko",
+      "bio": "Anastasia Stasenko is co-founder and CEO of Pleias, a Franco-German lab developing data infrastructure for frontier AI systems. Under her leadership, Pleias created Common Corpus — the largest open multilingual dataset for LLM training at over 2 trillion tokens — and leaded the SYNTH, producing open synthetic data at scale for training sovereign AI models and agentic applications. A senior associate lecturer at Sorbonne-Nouvelle University, she came to AI through digital humanities and philosophy degree at the École Normale Supérieure",
+      "role": "CEO & Co-Founder",
+      "org": "Pleias",
+      "roleOrg": "CEO & Co-Founder, Pleias",
+      "image": "/images/speakers/better_portrait/anastasiastasenko1.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "andy-terrel",
+      "name": "Andy Terrel",
+      "bio": "Andy is the CUDA Python Product Lead at NVIDIA. He has been a technical executive / product leader / ML Engineer with experience in several industries and an thought leader in the Python open data science community (PyData) with over 1000 citations of his academic articles. His work specializes in developing new technology from the ground up, scaling to large systems, and building a support team to operationalize products. He is a co-creator of the popular Dask distributed computing framework, the Conda package manager, and the SymPy symbolic computing library.",
+      "role": "CUDA Python Product Lead",
+      "org": "NVIDIA",
+      "roleOrg": "CUDA Python Product Lead, NVIDIA",
+      "image": "/images/speakers/better_portrait/andy-terrel.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/aterrel",
+        "linkedin": "https://www.linkedin.com/in/linkedin.com/in/aterrel",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "arturo-amor",
+      "name": "Arturo Amor",
+      "bio": "I did my PhD in theoretical quantum physics at the National Autonomous University of Mexico (UNAM), followed by a postdoctoral position in the same field at École Polytechnique in France. Since 2021, I have been a core contributor to scikit-learn, serving as a member of the documentation team to ensure clear, accessible and up-to-date documentation for easier usability.  \r\n\r\nCurrently, I’m a co-founder at :probabl., a company founded by the scikit-learn creators and maintainers. In this role, I’m part of the training and certification team, where I work developing educational materials and certification programs that bridge the gap between theory and practice, helping professionals achieve internationally recognized standards in machine learning and the related good practices.",
+      "role": "ML Engineer",
+      "org": "Probabl",
+      "roleOrg": "ML Engineer, Probabl",
+      "image": "/images/speakers/better_portrait/arturo-amor.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "bjrn-plster",
+      "name": "Björn Plüster",
+      "bio": "Co-Founder/CTO of ellamind - building the next generation of secure and reliable agentic AI. My focus is currently on secure agent runtimes, advanced evals and monitoring, and agent harness engineering to get AI agents to reliably solve real enterprise problems.",
+      "role": "Co-Founder/CTO",
+      "org": "ellamind GmbH",
+      "roleOrg": "Co-Founder/CTO, ellamind GmbH",
+      "image": "/images/speakers/better_portrait/bjrn-plster.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "bryce-adelstein-lelbach",
+      "name": "Bryce Adelstein Lelbach",
+      "bio": "Bryce Adelstein Lelbach has spent over a decade developing programming languages, compilers, and libraries. He is passionate about parallel programming and strives to make it more accessible for everyone.\r\n\r\nBryce is a Principal Engineer at NVIDIA, where he founded the Core C++ Compute Libraries team and now leads the Vanguard Programming group that drives NVIDIA's roadmap for programming languages, compilers, and core libraries.\r\n\r\nHe is a leader of the systems programming language community, having served as chair of the C++ Library Evolution and the US programming language standards committee. He has been an organizer and program chair for many conferences over the years. On the C++ committee, he has worked on concurrency primitives, parallel algorithms, senders, and multidimensional arrays.\r\n\r\nOutside of work, Bryce is passionate about airplanes and watches. He lives in Midtown Manhattan with his girlfriend and dog.",
+      "role": "Principal Engineer",
+      "org": "NVIDIA",
+      "roleOrg": "Principal Engineer, NVIDIA",
+      "image": "/images/speakers/better_portrait/bryce-adelstein-lelbach.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://twitter.com/blelbach",
+        "github": "https://github.com/brycelelbach",
+        "linkedin": "https://www.linkedin.com/in/brycelelbach",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
     {
       "id": "caroline-pascal",
       "name": "Caroline Pascal",
@@ -119,6 +228,27 @@
       "draft": false
     },
     {
+      "id": "daniel",
+      "name": "Daniel",
+      "bio": "As Minimax’s European Representative, I’m driven by a deep passion for AI and a commitment to staying ahead of the curve. I constantly track the latest market trends and technological shifts across Europe, ensuring I bring you not just a product, but the most forward-thinking AI solutions available today.",
+      "role": "AI Model Business Developer",
+      "org": "Minimax",
+      "roleOrg": "AI Model Business Developer, Minimax",
+      "image": "/images/speakers/better_portrait/daniel.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "dong-xin",
       "name": "Dong Xin",
       "bio": "2008–2017: Technical Leader at Microsoft, working on the Microsoft Azure enterprise cloud and Dynamics 365 platform R&D. 2017–present: Technical Expert and Product Director at Huawei Technologies Co., Ltd., working on the R&D of core infrastructure software including toolchains, programming languages, and IDEs. During his time at Huawei, he has served successively as Chief Technical Expert and Project Manager, working on Huawei’s mobile AI R&D tools, the company-wide AI R&D platform, the Huawei Ascend AI chip toolchain, and the HarmonyOS toolchain, among other initiatives. Since 2021, he has been responsible for the R&D of Huawei’s programming language and IDE infrastructure software, serving as Program Director. He leads the core technology R&D of proprietary and independently-controlled programming languages and IDE development tools, and has made significant contributions to the technical planning, productization, and industry adoption of domestically-developed application programming languages.",
@@ -140,6 +270,90 @@
       "draft": false
     },
     {
+      "id": "emily-chen",
+      "name": "Emily Chen",
+      "bio": "Emily Chen is Co-founder of Kaiyuanshe and currently serves as General Manager of Open Source Strategy and Ecosystem at Dexmal. She is a long-time open source practitioner and community leader, dedicated to advancing collaboration between China and the global open source ecosystem.\r\nUnder her leadership, Kaiyuanshe became the first Chinese Affiliate Member of the Open Source Initiative (OSI). She also initiated several influential projects, including the China Open Source Annual Report and COSCon.\r\nEmily was a contributor to Mozilla, a GSoC mentor, and a TOC Mentor at the OpenAtom Foundation. Recently, she initiated the RoboChallenge platform and community, one of the first large scale real robot evaluation benchmarks for embodied intelligence.\r\nWith over 20 years of experience, she worked at Sun Microsystems, Oracle, and Microsoft, with expertise in open source governance, cloud computing, and embodied intelligence.",
+      "role": "Co-founder",
+      "org": "Kaiyuanshe",
+      "roleOrg": "Co-founder, Kaiyuanshe",
+      "image": "/images/speakers/better_portrait/emily-chen.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "evgeni-burovski",
+      "name": "Evgeni Burovski",
+      "bio": "Evgeni's background is computational physics, where he studied exotic states of quantum matter. This line of research involves numeric simulations, which led him towards using the NumPy stack, which led him to joining the SciPy maintainer team. Currently Evgeni works on OSS sustainability at Quansight.",
+      "role": "Senior Software Engineer",
+      "org": "Quansight",
+      "roleOrg": "Senior Software Engineer, Quansight",
+      "image": "/images/speakers/better_portrait/evgeni-burovski.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "fabien",
+      "name": "Fabien",
+      "bio": "After studying maths, physics and computer sciences at ENS of Paris, I did a PhD in Reinforcement Learning at INRIA Lille.\r\nFollowing a postdoc combining cybersecurity and reinforcement learning, I worked as an independent researcher and research engineer for the manga industry.\r\nNow, I am happy to work for Probabl as a developer relations engineer!",
+      "role": "Developer Relations Engineer",
+      "org": "Probabl",
+      "roleOrg": "Developer Relations Engineer, Probabl",
+      "image": "/images/speakers/better_portrait/fabien.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "feliana-citradewi",
+      "name": "Feliana Citradewi",
+      "bio": "CEO of Global AI Assembly",
+      "role": "CEO",
+      "org": "Global AI Assembly",
+      "roleOrg": "CEO, Global AI Assembly",
+      "image": "/images/speakers/better_portrait/feliana-citradewi.png",
+      "tags": [
+        "ws-oh-tech-forum"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/feliana-citradewi-39657a83",
+        "website": "https://globalaiassembly.lovable.app/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "vector-wang",
       "name": "Gaotian (Vector) Wang",
       "bio": "Gaotian (Vector) Wang is a Computer Science PhD student at Rice University. He is the creator of XLeRobot, a fully open-source, low-cost ($660) dual-arm mobile robot platform that has gained 4.8k+ GitHub stars and a global community of 6,000+ builders since its release in May 2025. XLeRobot is built on the Hugging Face LeRobot ecosystem and has been adopted by researchers, educators, and hobbyists worldwide.",
@@ -156,6 +370,27 @@
         "github": "https://github.com/Vector-Wangel",
         "linkedin": "https://www.linkedin.com/in/gaotian-wang/",
         "website": "https://vector-wangel.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "gal-varoquaux",
+      "name": "Gaël Varoquaux",
+      "bio": "AI researcher, co-founder of scikit-learn and probabl",
+      "role": "Chief Science Officer",
+      "org": "Probabl",
+      "roleOrg": "Chief Science Officer, Probabl",
+      "image": "/images/speakers/better_portrait/gal-varoquaux.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
       },
       "status": "Accept",
       "draft": false
@@ -219,6 +454,27 @@
         "github": "",
         "linkedin": "",
         "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jianzhong-li",
+      "name": "Jianzhong Li",
+      "bio": "He is currently the President of Singularity Intelligence Research Institute and Senior Vice President of CSDN, with profound insights and in-depth research experience in the fields of artificial intelligence, technological innovation and industrial ecology. He initiated and founded the Singularity Intelligence Technology Summit (SITS) in 2016, which has become a highly influential high-end technical seminar and exchange platform in the field of AI. In recent years, he has mainly focused on the AI paradigm Shifts, and his related research and speeches have attracted great attention in the industry. In 2005, he initiated and organized the 1st C++ and System Software Technology Conference, and is a member of the ISO-C++ International Standards Committee. He is also a member of the Artificial Intelligence Expert Committee of the Science Technology Vision Forum, and jointly released \"Tech Predictions and Future Visions 2049'\" with many scientists at Tengchong Scientists Forum in 2025.",
+      "role": "President",
+      "org": "Singularity Intelligence Research Institute",
+      "roleOrg": "President, Singularity Intelligence Research Institute",
+      "image": "/images/speakers/better_portrait/jianzhong-li.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": "https://singintelligence.com"
       },
       "status": "Accept",
       "draft": false
@@ -330,6 +586,27 @@
       "draft": false
     },
     {
+      "id": "megan-knight",
+      "name": "Megan Knight",
+      "bio": "Megan Knight is the Director of Software Communities at Arm where she leads engineering initiatives and upstream engagements with open source communities. She holds many leadership positions across the software stack including Governing Board Member and Global Cyber Policy Workgroup Lead for OpenSSF, Board Member and Advocacy Chair for the Yocto Project, Steering Committee and OSPO SIG Lead for UXL Foundation, and Governing Board Member for Zephyr Project. Prior to Arm, Megan was building the IoT and Automotive open source portfolio at Amazon Web Services and launching projects in neutral spaces including Valkey.",
+      "role": "Director of Software Communities",
+      "org": "Arm",
+      "roleOrg": "Director of Software Communities, Arm",
+      "image": "/images/speakers/better_portrait/megan-knight.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/businesscasualkesha",
+        "linkedin": "https://www.linkedin.com/in/meganelizabethknight/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "merel-theisen",
       "name": "Merel Theisen",
       "bio": "I am a Principal Software Engineer at QuantumBlack, where I am currently the tech lead of Kedro, an open-source project part of the Linux Foundation. I have over ten years of experience in the software industry, with most of my career focused on backend product engineering. I am passionate about building products that solve real user problems, and I care deeply about creating robust, well-tested software that follows good engineering principles. I am also a strong advocate for open-source software, and I find working with the community to be both inspiring and energising.",
@@ -388,6 +665,27 @@
         "github": "https://github.com/nouamanetazi",
         "linkedin": "https://www.linkedin.com/in/nouamanetazi/",
         "website": "https://nouamanetazi.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "olivier-grisel",
+      "name": "Olivier Grisel",
+      "bio": "Olivier Grisel is a software engineer at Probabl and a core contributor of the scikit-learn project.",
+      "role": "Software engineer",
+      "org": "Probabl & scikit-learn",
+      "roleOrg": "Software engineer, Probabl & scikit-learn",
+      "image": "/images/speakers/better_portrait/olivier-grisel.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
       },
       "status": "Accept",
       "draft": false
@@ -477,6 +775,27 @@
       "draft": false
     },
     {
+      "id": "said-taghadouini",
+      "name": "Said Taghadouini",
+      "bio": "Said Taghadouini is an ML Research Engineer at LightOn, working on vision-language models and multimodal systems. He is part of the core team behind ModernBERT, leads LightOnOCR, and is an author of ArabicWeb24 and vit.cpp. His interests span multimodality, distributed training, and efficient ML systems.",
+      "role": "ML Research Engineer",
+      "org": "LightOn",
+      "roleOrg": "ML Research Engineer, LightOn",
+      "image": "/images/speakers/better_portrait/said-taghadouini.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "shiwei-liu",
       "name": "Shiwei Liu",
       "bio": "Shiwei Liu is a group leader at Max Planck Institute for Intelligent System and a PI at ELLIS Institute Tubingen. He was a Royal Society Newton International Fellow at the University of Oxford. He previously served as a Postdoctoral Fellow at the University of Texas at Austin. He obtained his Ph.D. with Cum Laude from Eindhoven University of Technology in 2022. Dr. Liu has received two Rising Star Awards from KAUST and the Conference on Parsimony and Learning (CPAL). His Ph.D. thesis received the 2023 Best Dissertation Runner-up from Informatics Europe. He has a broad interests of life-cycle of large foundation models.",
@@ -493,6 +812,27 @@
         "github": "",
         "linkedin": "https://www.linkedin.com/in/shiwei-liu-3b60771ab/",
         "website": "https://shiweiliuiiiiiii.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "stefanie-senger",
+      "name": "Stefanie Senger",
+      "bio": "Stefanie is an open-source developer and maintainer of scikit-learn, contributing also to related libraries. She trained and taught at LeWagon (2022–2023), interned with scikit-learn (2023), and worked at muffintech (2023) before joining probabl’s open-source team in 2024. She holds a PhD in History from the University of Potsdam (2021) and was active on Wikipedia as a writer and mentor (2011–2014).",
+      "role": "Open Source Developer",
+      "org": "Probabl",
+      "roleOrg": "Open Source Developer, Probabl",
+      "image": "/images/speakers/better_portrait/stefanie-senger.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
       },
       "status": "Accept",
       "draft": false
@@ -682,6 +1022,27 @@
         "github": "",
         "linkedin": "",
         "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yu-cheng",
+      "name": "Yu Cheng",
+      "bio": "Yu Cheng is a Ph.D student in School of Computer Science at Peking University, he is a core developer of TileLang, a programming language for AI workload on various hardware platforms.",
+      "role": "Ph.D. Student",
+      "org": "Peking University",
+      "roleOrg": "Ph.D. Student, Peking University",
+      "image": "/images/speakers/better_portrait/yu-cheng.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/chengyupku",
+        "linkedin": "",
+        "website": "https://chengyupku.github.io/"
       },
       "status": "Accept",
       "draft": false

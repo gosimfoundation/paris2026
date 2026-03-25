@@ -61,45 +61,20 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
   <TextAndSponsors
     id="supporting-organizations"
-    title="Speakers & Supporting Orgs From"
-    text="GOSIM Paris 2026 brings together leading voices from the world's most innovative organizations in open source and AI."
+    title="Supporting Organizations"
+    text="GOSIM Paris 2026 is proudly supported by leading open source and AI organizations."
     text2=""
-    logos={[
+    logoGroups={[
       {
-        image: "google.png",
-        imageAlt: "Google logo",
-      },
-      {
-        image: "nvidia.png",
-        imageAlt: "Nvidia logo",
-      },
-      {
-        image: "uber.png",
-        imageAlt: "Uber logo",
-      },
-      {
-        image: "minimax.png",
-        imageAlt: "MiniMax logo",
-      },
-      {
-        image: "modelbest.png",
-        imageAlt: "ModelBest logo",
-      },
-      {
-        image: "moonshot-ai.png",
-        imageAlt: "Moonshot AI logo",
-      },
-      {
-        image: "sgl.png",
-        imageAlt: "SGLang logo",
-      },
-      {
-        image: "vllm.png",
-        imageAlt: "vLLM logo",
-      },
-      {
-        image: "zhipuai.png",
-        imageAlt: "ZhipuAI logo",
+        cols: 3,
+        logos: [
+          { image: "minimax-wide.png", imageAlt: "MiniMax" },
+          { image: "modelbest.png", imageAlt: "ModelBest" },
+          { image: "kimi-logo.png", imageAlt: "Kimi" },
+          { image: "sgl.png", imageAlt: "SGLang" },
+          { image: "vllm.png", imageAlt: "vLLM" },
+          { image: "zai.png", imageAlt: "ZhipuAI", logoClass: "m" },
+        ],
       },
     ]}
   />
@@ -362,6 +337,37 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 
   <FeaturedSpeakers
     title="Featured Speakers"
+  />
+
+  <TextAndSponsors
+    id="speaker-organizations"
+    title="Speakers Representing"
+    text="Our speakers come from universities, research labs, open source projects, and companies at the forefront of agentic AI — here is the full roster of organizations in the room."
+    text2=""
+    logos={[
+      { image: "carrefour.png", imageAlt: "Carrefour" },
+      { image: "dimforge.png", imageAlt: "Dimforge" },
+      { image: "ellamind.png", imageAlt: "ellamind" },
+      { image: "fraunhofer.png", imageAlt: "Fraunhofer" },
+      { image: "fudan-university.png", imageAlt: "Fudan University" },
+      { image: "google.png", imageAlt: "Google" },
+      { image: "huawei.png", imageAlt: "Huawei" },
+      { image: "huggingface.png", imageAlt: "Hugging Face" },
+      { image: "inria.png", imageAlt: "INRIA" },
+      { image: "modelbest.png", imageAlt: "ModelBest" },
+      { image: "moonshot-ai.png", imageAlt: "Moonshot AI (Kimi)" },
+      { image: "mozilla-ai.png", imageAlt: "Mozilla AI" },
+      { image: "nvidia.png", imageAlt: "NVIDIA" },
+      { image: "peking-university.png", imageAlt: "Peking University" },
+      { image: "pleias.png", imageAlt: "Pleias" },
+      { image: "probabl.png", imageAlt: "Probabl" },
+      { image: "quansight.png", imageAlt: "Quansight" },
+      { image: "sgl.png", imageAlt: "SGLang" },
+      { image: "shanghai-ai-lab.png", imageAlt: "Shanghai AI Laboratory" },
+      { image: "tsinghua-university.png", imageAlt: "Tsinghua University" },
+      { image: "uber.png", imageAlt: "Uber" },
+      { image: "zhipuai.png", imageAlt: "ZhipuAI" },
+    ]}
   />
 
   <Timeline

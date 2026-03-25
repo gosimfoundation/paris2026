@@ -104,7 +104,7 @@ const isRemoteImage = (image?: string): boolean =>
                                             <div class="col">
                                                 <div class="single-partners-card card-hover">
                                                     <div class="overlay card-fill" />
-                                                    <div class="card-logo boxed-logo">
+                                                    <div class={`card-logo boxed-logo${partner.logoClass ? ` ${partner.logoClass}` : ''}`}>
                                                         {partner?.image &&
                                                             (isRemoteImage(
                                                                 partner.image,

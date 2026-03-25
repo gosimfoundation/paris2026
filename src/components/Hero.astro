@@ -86,27 +86,31 @@ const { date, location, subtitle, description, links } = Astro.props
 
   <div class="hero-bottom-box">
     <div class="container">
-      {subtitle && <p class="hero-subtitle">{subtitle}</p>}
-      {description && <p class="hero-description">{description}</p>}
-
-      <div class="hero-bottom-meta">
-        <div class="event-facts">
-          {date && <p>{date}</p>}
-          {location && <p>{location}</p>}
+      <div class="hero-content-row">
+        <div class="hero-text-left">
+          {subtitle && <p class="hero-subtitle">{subtitle}</p>}
+          {description && <p class="hero-description">{description}</p>}
         </div>
 
-        <div class="btn-home-wrap">
-          {
-            links?.map((loop) => (
-              <Button
-                text={loop.text}
-                link={loop.link}
-                openInNewTab={loop?.openInNewTab}
-                class={loop.class || "btn xl btn-hover fade-in-last"}
-              />
-            ))
-          }
-        </div>
+        {(date || location) && (
+          <div class="hero-date-block">
+            {date && <p class="hero-date">{date}</p>}
+            {location && <p class="hero-location">{location}</p>}
+          </div>
+        )}
+      </div>
+
+      <div class="btn-home-wrap">
+        {
+          links?.map((loop) => (
+            <Button
+              text={loop.text}
+              link={loop.link}
+              openInNewTab={loop?.openInNewTab}
+              class={loop.class || "btn xl btn-hover fade-in-last"}
+            />
+          ))
+        }
       </div>
     </div>
   </div>
@@ -143,7 +147,7 @@ const { date, location, subtitle, description, links } = Astro.props
 
   .hero-description {
     max-width: 54rem;
-    margin: 0 0 1.2rem;
+    margin: 0;
     font-size: clamp(1.18rem, 0.98rem + 0.45vw, 1.45rem);
     font-weight: 400;
     line-height: 1.5;
@@ -152,11 +156,41 @@ const { date, location, subtitle, description, links } = Astro.props
     color: rgba(255, 255, 255, 0.94);
   }
 
-  .hero-bottom-meta {
+  .hero-content-row {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
     gap: 2rem;
-    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+  }
+
+  .hero-text-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-date-block {
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .hero-date {
+    font-size: clamp(1.55rem, 1.3rem + 0.9vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  .hero-location {
+    font-size: clamp(0.88rem, 0.78rem + 0.35vw, 1.05rem);
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+    margin: 0.4rem 0 0;
   }
 
   .section-home-header .logo-gosim-scroll svg {
@@ -199,10 +233,14 @@ const { date, location, subtitle, description, links } = Astro.props
       line-height: 1.48;
     }
 
-    .hero-bottom-meta {
+    .hero-content-row {
       flex-direction: column;
       align-items: flex-start;
-      gap: 1rem;
+      gap: 1.2rem;
+    }
+
+    .hero-date-block {
+      text-align: left;
     }
   }
 </style>

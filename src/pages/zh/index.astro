@@ -62,45 +62,20 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 
   <TextAndSponsors
     id="supporting-organizations"
-    title="演讲嘉宾与支持单位来自"
-    text="GOSIM Paris 2026 汇聚了全球最具创新力的开源和 AI 组织的领军人物。"
+    title="支持单位"
+    text="GOSIM Paris 2026 获得多家顶级开源与 AI 组织的鼎力支持。"
     text2=""
-    logos={[
+    logoGroups={[
       {
-        image: "google.png",
-        imageAlt: "Google logo",
-      },
-      {
-        image: "nvidia.png",
-        imageAlt: "Nvidia logo",
-      },
-      {
-        image: "uber.png",
-        imageAlt: "Uber logo",
-      },
-      {
-        image: "minimax.png",
-        imageAlt: "MiniMax logo",
-      },
-      {
-        image: "modelbest.png",
-        imageAlt: "ModelBest logo",
-      },
-      {
-        image: "moonshot-ai.png",
-        imageAlt: "Moonshot AI logo",
-      },
-      {
-        image: "sgl.png",
-        imageAlt: "SGLang logo",
-      },
-      {
-        image: "vllm.png",
-        imageAlt: "vLLM logo",
-      },
-      {
-        image: "zhipuai.png",
-        imageAlt: "ZhipuAI logo",
+        cols: 3,
+        logos: [
+          { image: "minimax-wide.png", imageAlt: "MiniMax" },
+          { image: "modelbest.png", imageAlt: "ModelBest" },
+          { image: "kimi-logo.png", imageAlt: "Kimi" },
+          { image: "sgl.png", imageAlt: "SGLang" },
+          { image: "vllm.png", imageAlt: "vLLM" },
+          { image: "zai.png", imageAlt: "智谱 ZAI", logoClass: "m" },
+        ],
       },
     ]}
   />
@@ -367,6 +342,37 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 
   <FeaturedSpeakers
     title="特邀演讲嘉宾"
+  />
+
+  <TextAndSponsors
+    id="speaker-organizations"
+    title="演讲嘉宾所在机构"
+    text="我们的演讲嘉宾来自高校、科研机构、开源项目及前沿 AI 企业，以下是现场所有机构的完整名单。"
+    text2=""
+    logos={[
+      { image: "carrefour.png", imageAlt: "Carrefour" },
+      { image: "dimforge.png", imageAlt: "Dimforge" },
+      { image: "ellamind.png", imageAlt: "ellamind" },
+      { image: "fraunhofer.png", imageAlt: "Fraunhofer" },
+      { image: "fudan-university.png", imageAlt: "复旦大学" },
+      { image: "google.png", imageAlt: "Google" },
+      { image: "huawei.png", imageAlt: "华为" },
+      { image: "huggingface.png", imageAlt: "Hugging Face" },
+      { image: "inria.png", imageAlt: "INRIA" },
+      { image: "modelbest.png", imageAlt: "ModelBest" },
+      { image: "moonshot-ai.png", imageAlt: "Moonshot AI（Kimi）" },
+      { image: "mozilla-ai.png", imageAlt: "Mozilla AI" },
+      { image: "nvidia.png", imageAlt: "NVIDIA" },
+      { image: "peking-university.png", imageAlt: "北京大学" },
+      { image: "pleias.png", imageAlt: "Pleias" },
+      { image: "probabl.png", imageAlt: "Probabl" },
+      { image: "quansight.png", imageAlt: "Quansight" },
+      { image: "sgl.png", imageAlt: "SGLang" },
+      { image: "shanghai-ai-lab.png", imageAlt: "上海人工智能实验室" },
+      { image: "tsinghua-university.png", imageAlt: "清华大学" },
+      { image: "uber.png", imageAlt: "Uber" },
+      { image: "zhipuai.png", imageAlt: "智谱AI" },
+    ]}
   />
 
   <Timeline
