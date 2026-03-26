@@ -9,41 +9,29 @@ const isFrPath = slug.startsWith("/fr/");
 const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/";
 const anchorBase = isHomepage ? "" : isZhPath ? "/zh/" : isFrPath ? "/fr/" : "/";
 
-const firstColumnLinks = [
+const navGroups = [
   {
-    text: "Tracks",
-    link: `${anchorBase}#tracks`,
+    label: "Conference",
+    links: [
+      { text: "Tracks", link: `${anchorBase}#tracks` },
+      { text: "Speakers", link: "/speakers/" },
+      { text: "Venue", link: "/venue/" },
+    ],
   },
   {
-    text: "Speakers",
-    link: "/speakers/",
+    label: "Get Involved",
+    links: [
+      { text: "Proposals", link: `${anchorBase}#proposals` },
+      { text: "Volunteers", link: "/volunteers/" },
+      { text: "Supporters", link: "/sponsors/" },
+    ],
   },
   {
-    text: "Supporters",
-    link: "/sponsors/",
-  },
-  {
-    text: "Proposals",
-    link: `${anchorBase}#proposals`,
-  },
-  {
-    text: "Volunteers",
-    link: "/volunteers/",
-  },
-  {
-    text: "Venue",
-    link: "/venue/",
-  },
-];
-
-const secondColumnLinks = [
-  {
-    text: "Code of Conduct",
-    link: "/code-of-conduct/",
-  },
-  {
-    text: "Privacy",
-    link: "/privacy/",
+    label: "About",
+    links: [
+      { text: "Code of Conduct", link: "/code-of-conduct/" },
+      { text: "Privacy", link: "/privacy/" },
+    ],
   },
 ];
 ---
@@ -132,9 +120,10 @@ const secondColumnLinks = [
       </div>
 
       <nav class="col col-sitemap" aria-label="Navigation Footer">
-        <ul>
-          {
-            firstColumnLinks.map((loop: any) => (
+        {navGroups.map((group) => (
+          <ul>
+            <li class="nav-group-label">{group.label}</li>
+            {group.links.map((loop: any) => (
               <li
                 class="link link-hover"
                 data-barba-update
@@ -149,54 +138,9 @@ const secondColumnLinks = [
                   <span>{loop.text}</span>
                 </a>
               </li>
-            ))
-          }
-        </ul>
-
-        <ul>
-          {
-            secondColumnLinks.map((loop: any) => (
-              <li
-                class="link link-hover"
-                data-barba-update
-                data-link-status={loop.link === slug ? "active" : "not-active"}
-              >
-                {loop.subLinks ? (
-                  <div style="margin-top: 2.25rem;">
-                    <span style="color: #fff; font-size: 1rem;">
-                      {loop.text}
-                    </span>
-                    <ul style="margin-top: 0.75rem;">
-                      {loop.subLinks.map((subLink: any) => (
-                        <li class="link link-hover">
-                          <a
-                            class="link-click"
-                            href={subLink.link}
-                            target={subLink?.openInNewTab ? "_blank" : "_self"}
-                            rel={
-                              subLink?.openInNewTab ? "noopener noreferrer" : ""
-                            }
-                          >
-                            <span>{subLink.text}</span>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : (
-                  <a
-                    class="link-click"
-                    href={loop.link}
-                    target={loop?.openInNewTab ? "_blank" : "_self"}
-                    rel={loop?.openInNewTab ? "noopener noreferrer" : ""}
-                  >
-                    <span>{loop.text}</span>
-                  </a>
-                )}
-              </li>
-            ))
-          }
-        </ul>
+            ))}
+          </ul>
+        ))}
       </nav>
 
       <!-- <div class="col col-newsletter">

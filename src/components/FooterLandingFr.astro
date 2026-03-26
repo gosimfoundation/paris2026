@@ -7,41 +7,29 @@ const slug = Astro.url.pathname;
 const isHomepage = slug === "/" || slug === "/zh/" || slug === "/fr/";
 const anchorBase = isHomepage ? "" : "/fr/";
 
-const firstColumnLinks = [
+const navGroups = [
   {
-    text: "Thématiques",
-    link: `${anchorBase}#tracks`,
+    label: "Conférence",
+    links: [
+      { text: "Thématiques", link: `${anchorBase}#tracks` },
+      { text: "Intervenants", link: "/fr/speakers/" },
+      { text: "Lieu", link: "/fr/venue/" },
+    ],
   },
   {
-    text: "Intervenants",
-    link: "/fr/speakers/",
+    label: "Participer",
+    links: [
+      { text: "Propositions", link: `${anchorBase}#proposals` },
+      { text: "Bénévoles", link: "/fr/volunteers/" },
+      { text: "Soutiens", link: "/fr/sponsors/" },
+    ],
   },
   {
-    text: "Soutiens",
-    link: "/fr/sponsors/",
-  },
-  {
-    text: "Propositions",
-    link: `${anchorBase}#proposals`,
-  },
-  {
-    text: "Bénévoles",
-    link: "/fr/volunteers/",
-  },
-  {
-    text: "Lieu",
-    link: "/fr/venue/",
-  },
-];
-
-const secondColumnLinks = [
-  {
-    text: "Code de conduite",
-    link: "/fr/code-of-conduct/",
-  },
-  {
-    text: "Confidentialité",
-    link: "/fr/privacy/",
+    label: "À propos",
+    links: [
+      { text: "Code de conduite", link: "/fr/code-of-conduct/" },
+      { text: "Confidentialité", link: "/fr/privacy/" },
+    ],
   },
 ];
 ---
@@ -130,9 +118,10 @@ const secondColumnLinks = [
       </div>
 
       <nav class="col col-sitemap" aria-label="Navigation pied de page">
-        <ul>
-          {
-            firstColumnLinks.map((loop: any) => (
+        {navGroups.map((group) => (
+          <ul>
+            <li class="nav-group-label">{group.label}</li>
+            {group.links.map((loop: any) => (
               <li
                 class="link link-hover"
                 data-barba-update
@@ -147,54 +136,9 @@ const secondColumnLinks = [
                   <span>{loop.text}</span>
                 </a>
               </li>
-            ))
-          }
-        </ul>
-
-        <ul>
-          {
-            secondColumnLinks.map((loop: any) => (
-              <li
-                class="link link-hover"
-                data-barba-update
-                data-link-status={loop.link === slug ? "active" : "not-active"}
-              >
-                {loop.subLinks ? (
-                  <div style="margin-top: 2.25rem;">
-                    <span style="color: #fff; font-size: 1rem;">
-                      {loop.text}
-                    </span>
-                    <ul style="margin-top: 0.75rem;">
-                      {loop.subLinks.map((subLink: any) => (
-                        <li class="link link-hover">
-                          <a
-                            class="link-click"
-                            href={subLink.link}
-                            target={subLink?.openInNewTab ? "_blank" : "_self"}
-                            rel={
-                              subLink?.openInNewTab ? "noopener noreferrer" : ""
-                            }
-                          >
-                            <span>{subLink.text}</span>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : (
-                  <a
-                    class="link-click"
-                    href={loop.link}
-                    target={loop?.openInNewTab ? "_blank" : "_self"}
-                    rel={loop?.openInNewTab ? "noopener noreferrer" : ""}
-                  >
-                    <span>{loop.text}</span>
-                  </a>
-                )}
-              </li>
-            ))
-          }
-        </ul>
+            ))}
+          </ul>
+        ))}
       </nav>
     </div>
 

@@ -1418,7 +1418,7 @@ footer {
    flex-direction: row;
    align-items: flex-start;
    justify-content: flex-start;
-   gap: 5vw;
+   gap: 6vw;
 }
 
 .footer .col-sitemap ul {
@@ -1429,8 +1429,19 @@ footer {
 }
 
 .footer .col-sitemap ul .link .link-click span {
-   font-size: 0.95em;
-   font-weight: 400;
+   font-size: 1.05em;
+   font-weight: 500;
+   color: rgba(255, 255, 255, 0.85);
+}
+
+.footer .col-sitemap .nav-group-label {
+   font-size: 0.6em;
+   font-weight: 700;
+   letter-spacing: 0.18em;
+   text-transform: uppercase;
+   color: rgba(255, 255, 255, 0.3);
+   margin-bottom: 0.75em;
+   pointer-events: none;
 }
 
 .footer .col-newsletter {
@@ -1520,8 +1531,13 @@ footer {
       gap: 0;
    }
 
+   .footer .row-base .col-sitemap {
+      flex-wrap: wrap;
+      gap: 2rem 6vw;
+   }
+
    .footer .col-sitemap ul {
-      width: 50%;
+      width: auto;
       gap: 0.5em;
    }
 
