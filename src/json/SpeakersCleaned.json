@@ -102,6 +102,27 @@
       "draft": false
     },
     {
+      "id": "aubertin-baptiste",
+      "name": "Baptiste Aubertin",
+      "bio": "I'm an AI/ML engineer at Lighton, where I contributed to LightonOCR, a 1B VLM model trained for OCR that reached state of the art on the OLMoOCR benchmark",
+      "role": "AI/ML Engineer",
+      "org": "LightOn",
+      "roleOrg": "AI/ML Engineer, LightOn",
+      "image": "/images/speakers/better_portrait/aubertin-baptiste.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/baptaubertin",
+        "github": "https://github.com/baptiste-aubertin",
+        "linkedin": "https://www.linkedin.com/in/baptiste-aubertin-0914a7171/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "bjrn-plster",
       "name": "Björn Plüster",
       "bio": "Co-Founder/CTO of ellamind - building the next generation of secure and reliable agentic AI. My focus is currently on secure agent runtimes, advanced evals and monitoring, and agent harness engineering to get AI agents to reliably solve real enterprise problems.",
@@ -138,6 +159,27 @@
         "twitter": "https://twitter.com/blelbach",
         "github": "https://github.com/brycelelbach",
         "linkedin": "https://www.linkedin.com/in/brycelelbach",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "cailean-osborne",
+      "name": "Cailean Osborne",
+      "bio": "Cailean is Head of Ecosystem Development at Probabl, the company founded by the creators of scikit-learn.",
+      "role": "Head of Ecosystem Development",
+      "org": "Probabl",
+      "roleOrg": "Head of Ecosystem Development, Probabl",
+      "image": "/images/speakers/better_portrait/cailean-osborne.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
         "website": ""
       },
       "status": "Accept",
@@ -649,6 +691,27 @@
       "draft": false
     },
     {
+      "id": "nicolas-flores-herr",
+      "name": "Nicolas Flores-Herr",
+      "bio": "I am the Site Lead of Fraunhofer IAIS in Dresden, where I head an interdisciplinary team working since 2022 on the development and application of large language models (LLMs) and generative AI. Our expertise spans the full lifecycle: from dataset creation, pretraining and continued pretraining to fine-tuning and instruction tuning. We carry out this work in European flagship projects such as OpenGPT-X, TrustLLM, OpenEuroLLM and Eurolingua.\r\n\r\nIn my leadership role, I combine scientific excellence with strategic impact. My team develops bespoke GenAI solutions for industry partners across diverse sectors, including scalable enterprise chatbots and specialised tools for semantic search and knowledge access.",
+      "role": "Team Lead Foundation Models",
+      "org": "Fraunhofer IAIS",
+      "roleOrg": "Team Lead Foundation Models, Fraunhofer IAIS",
+      "image": "/images/speakers/better_portrait/nicolas-flores-herr.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/Modalities",
+        "linkedin": "https://www.linkedin.com/in/floresherr/",
+        "website": "https://www.iais.fraunhofer.de"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "nouamane-tazi",
       "name": "Nouamane Tazi",
       "bio": "Nouamane Tazi is a Machine Learning Research Engineer at Hugging Face, specializing in training large language models. He is a co-author of SmolLM3 and The Ultra Scale Playbook, and his research spans NLP, deep learning, and scalable AI infrastructure.",
@@ -796,6 +859,27 @@
       "draft": false
     },
     {
+      "id": "sajid-alam",
+      "name": "Sajid Alam",
+      "bio": "Senior Software Engineer at QuantumBlack, AI by McKinsey, where I maintain and develop Kedro, an open-source Python framework for building maintainable, modular data pipelines used by thousands of data teams worldwide. I work across the full stack: Python backend, React frontend, cloud infrastructure, and AI integrations designing systems that make complex data workflows simpler and more reliable. \r\nI'm passionate about developer experience, architectural design, and bridging the gap between data science experimentation and production-ready software.",
+      "role": "Senior Software Engineer",
+      "org": "McKinsey & Company",
+      "roleOrg": "Senior Software Engineer, McKinsey & Company",
+      "image": "/images/speakers/better_portrait/sajid-alam.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/SajidAlamQB",
+        "linkedin": "https://www.linkedin.com/in/sajid-alam-b2a228151/",
+        "website": "https://sajidalam.co.uk"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "shiwei-liu",
       "name": "Shiwei Liu",
       "bio": "Shiwei Liu is a group leader at Max Planck Institute for Intelligent System and a PI at ELLIS Institute Tubingen. He was a Royal Society Newton International Fellow at the University of Oxford. He previously served as a Postdoctoral Fellow at the University of Texas at Austin. He obtained his Ph.D. with Cum Laude from Eindhoven University of Technology in 2022. Dr. Liu has received two Rising Star Awards from KAUST and the Conference on Parsimony and Learning (CPAL). His Ph.D. thesis received the 2023 Best Dissertation Runner-up from Informatics Europe. He has a broad interests of life-cycle of large foundation models.",
@@ -915,27 +999,6 @@
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
-        "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
-      "id": "ervinxie",
-      "name": "Weiyu (Ervin) Xie",
-      "bio": "Weiyu Xie is a fifth-year Ph.D. student in the Institute for High Performance Computing, Department of Computer Science and Technology, Tsinghua University. His research interests include computer systems, large language model (LLM) inference, graph computing, and databases.",
-      "role": "Ph.D. Candidate",
-      "org": "Tsinghua University",
-      "roleOrg": "Ph.D. Candidate, Tsinghua University",
-      "image": "/images/speakers/better_portrait/ervinxie.png",
-      "tags": [
-        "agentic-ai-on-edge"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "",
-        "github": "https://github.com/ErvinXie",
         "linkedin": "",
         "website": ""
       },

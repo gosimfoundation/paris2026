@@ -55,26 +55,47 @@ const { id, title, text, text2, logos, logoGroups, ctaButton } = Astro.props;
           <h2>{title}</h2>
         </div>
 
-        <div class="col-row col-row-text styled-content">
-          <p>{text}</p>
-          <p>{text2}</p>
-        </div>
-
-        {
-          ctaButton?.text && (
-            <div class="col-row col-row-btn">
-              <Button
-                text={ctaButton.text}
-                link={ctaButton.link}
-                openInNewTab={ctaButton?.openInNewTab}
-                class="btn outline btn-hover xl"
-              />
+        {(logos || logoGroups) && (
+          <>
+            <div class="col-row col-row-text styled-content">
+              <p>{text}</p>
+              <p>{text2}</p>
             </div>
-          )
-        }
+
+            {ctaButton?.text && (
+              <div class="col-row col-row-btn">
+                <Button
+                  text={ctaButton.text}
+                  link={ctaButton.link}
+                  openInNewTab={ctaButton?.openInNewTab}
+                  class="btn outline btn-hover xl"
+                />
+              </div>
+            )}
+          </>
+        )}
       </div>
 
       <div class="col">
+        {!(logos || logoGroups) && (
+          <>
+            <div class="col-row col-row-text styled-content">
+              <p>{text}</p>
+              <p>{text2}</p>
+            </div>
+
+            {ctaButton?.text && (
+              <div class="col-row col-row-btn">
+                <Button
+                  text={ctaButton.text}
+                  link={ctaButton.link}
+                  openInNewTab={ctaButton?.openInNewTab}
+                  class="btn outline btn-hover xl"
+                />
+              </div>
+            )}
+          </>
+        )}
         {logoGroups ? (
           <div class="logo-groups">
             {logoGroups.map((group) => (
