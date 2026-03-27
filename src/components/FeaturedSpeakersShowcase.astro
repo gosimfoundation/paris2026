@@ -184,7 +184,7 @@ const sentenceFromBio = (bio = "") => {
   }
 
   const sentences = cleaned
-    .split(/(?<=[.!?。])/)
+    .split(/(?<!(?:Dr|Mr|Mrs|Ms|Prof|Ph|St|vs|etc|al|Fig|No))[.!?。]\s+(?=[A-Z\u4e00-\u9fff])/)
     .map((part) => part.trim())
     .filter(Boolean);
 
