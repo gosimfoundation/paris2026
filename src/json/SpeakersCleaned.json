@@ -13,7 +13,7 @@
       "id": "agentic-ai-on-edge"
     },
     {
-      "name": "Agentic App",
+      "name": "Agentic OS & App",
       "id": "ai-generative-app"
     },
     {
@@ -522,27 +522,6 @@
       "draft": false
     },
     {
-      "id": "jigyasa-grover-co-speaker-rishabh-misra",
-      "name": "Jigyasa Grover (co-speaker Rishabh Misra)",
-      "bio": "12-time award-winning AI lead and 'Sculpting Data For ML' author Jigyasa Grover drives rider personalization innovation at Uber after transforming Twitter/X, Facebook/Meta, Faire, and Bordo AI with large-scale ML systems. Handpicked by Google for their I/O keynote, she serves on Google's Developer Advisory Board while advising social search engine Diem and other Silicon Valley startups. \r\n\r\nAs a LinkedIn Learning instructor, Jigyasa educates thousands of professionals worldwide on cutting-edge AI-powered applications and agentic AI systems, solidifying her status as a thought leader in artificial intelligence education. As a Google Developer Expert, Women Techmaker Ambassador, and World Economic Forum Global Shaper, Jigyasa has also been featured in Forbes, Business Insider, VentureBeat, and International Business Times, and has elevated panels with Harvard University, Preston-Werner Ventures, Norwegian Business School, Humanitarian Frontier in AI, Women in Data, and more to her name. \r\n\r\nThe UC San Diego alumna has secured funding from the Canadian and Norwegian governments, the Linux Foundation, and multiple tech giants, enabling work that transcends geographical boundaries. With 200+ media features and contributions to open source recognized by Apache and Python Software Foundations, she mentors next-generation talent while shaping AI's future through advisory roles at Bezoku AI, Las Positas College, and various AI forums.\r\n",
-      "role": "ML Tech Lead",
-      "org": "Uber",
-      "roleOrg": "ML Tech Lead, Uber",
-      "image": "/images/speakers/better_portrait/jigyasa-grover-co-speaker-rishabh-misra.png",
-      "tags": [
-        "ai-generative-app"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "https://x.com/jigyasa_grover",
-        "github": "https://github.com/jigyasa-grover",
-        "linkedin": "https://www.linkedin.com/in/jigyasa-grover",
-        "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
       "id": "jinwei-gu",
       "name": "Jinwei Gu",
       "bio": "Dr. Jinwei Gu is currently a Principal Research Scientist at NVIDIA and an Adjunct Associate Professor at the Chinese University of Hong Kong, working on generative AI, world models, and the general fields of computer vision, computer graphics, and machine learning.  He received his Ph.D. in Computer Science from Columbia University in 2010, and B.S. and M.S. from Tsinghua University in 2002 and 2005, respectively. At NVIDIA, Dr. Gu is one of tech leads in cosmos model development – a family of multimodality world foundation models, with a focus on enabling real-world applications in robotics, autonomous driving, and generative AI. Prior to joining NVIDIA, he worked at SenseBrain as a R&D Executive Director, focusing on mobile computational photography with novel image sensors and imaging systems. He has published extensively in top-tier conferences and journals, and serves as an Associate Editor for IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) and IEEE Transactions on Computational Imaging (TCI) (2018-2023), an Area Chair for CVPR, NeurIPS, ICCV, ICCP, and ECCV, and organizing chairs for several workshops (MIPI, RichMediaGAI).  He is an IEEE senior member since 2018. His research work has been successfully transferred to many products such as NVIDIA-Cosmos, NVIDIA-CoPilot SDK, NVIDIA-DriveIX SDK, as well as Super Resolution, Super Night, Portrait Restoration, RGBW solution which are widely used in many flagship mobile phones.",
@@ -581,8 +560,8 @@
         "linkedin": "",
         "website": "https://www.youtube.com/channel/UC6fV8liRSA8cYi6DcJK4d8A/"
       },
-      "status": "Accept",
-      "draft": false
+      "status": "Hold",
+      "draft": true
     },
     {
       "id": "marcin-zubrzycki",
@@ -671,7 +650,7 @@
     },
     {
       "id": "minakokojima",
-      "name": "Minakokojima",
+      "name": "Minako Kojima",
       "bio": "I'm the Head of Developer Relations at Kimi, where I've also held positions in post-training and infrastructure. Prior to joining Kimi, I worked as an algorithm engineer at Google. I won several gold medals at ACM ICPC regional contests during college.",
       "role": "Head of Developer Relations",
       "org": "Moonshot AI (Kimi)",

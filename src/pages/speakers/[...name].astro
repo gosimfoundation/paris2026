@@ -40,10 +40,12 @@ interface schedule {
 
 // Get the speaker name from the route parameter
 export async function getStaticPaths() {
-  return speakers.speakers.map((speaker: Speaker) => ({
-    params: { name: speaker.id },
-    props: { speaker },
-  }));
+  return speakers.speakers
+    .filter((speaker: Speaker) => speaker.draft !== true)
+    .map((speaker: Speaker) => ({
+      params: { name: speaker.id },
+      props: { speaker },
+    }));
 }
 
 const { speaker } = Astro.props as { speaker: Speaker };
