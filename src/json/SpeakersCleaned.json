@@ -13,7 +13,7 @@
       "id": "agentic-ai-on-edge"
     },
     {
-      "name": "Agentic OS & App",
+      "name": "Agentic App",
       "id": "ai-generative-app"
     },
     {
@@ -35,6 +35,10 @@
     {
       "name": "SGLang Workshop",
       "id": "ws-sglang-paris2026"
+    },
+    {
+      "name": "Special Keynote",
+      "id": "special-keynote"
     }
   ],
   "speakers": [
@@ -459,6 +463,27 @@
       "draft": false
     },
     {
+      "id": "jacky-hsu",
+      "name": "Jacky Hsu",
+      "bio": "Jacky Hsu is the Founder of Ingora, an AI-native learning companion company building next-generation AI companion devices for children.\r\n\r\nPreviously, he spent over 20 years at Microsoft as a product leader, where he led product strategy and growth initiatives across multiple businesses including SharePoint Copilot and Agent. He played a key role in bringing Copilot and Agent experiences into real-world enterprise scenarios.\r\n\r\nJacky combines deep expertise in AI product design with a unique perspective on integrating agent systems, education, and hardware. At Ingora, he is exploring how AI companions can reshape how children learn, think, and grow.",
+      "role": "Founder & CEO",
+      "org": "Ingora",
+      "roleOrg": "Founder & CEO, Ingora",
+      "image": "/images/speakers/better_portrait/jacky-hsu.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/jacky-hsu-7ba6341/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "jeremy-laville",
       "name": "Jeremy Laville",
       "bio": "Mechanical engineer, with strong passion for robotic. Worked for Aldebaran on Pepper robot, and more recently on Reachy 2 for Pollen Robotics. I also designed Amazing Hand open source project.",
@@ -560,8 +585,8 @@
         "linkedin": "",
         "website": "https://www.youtube.com/channel/UC6fV8liRSA8cYi6DcJK4d8A/"
       },
-      "status": "Hold",
-      "draft": true
+      "status": "Accept",
+      "draft": false
     },
     {
       "id": "marcin-zubrzycki",
@@ -650,7 +675,7 @@
     },
     {
       "id": "minakokojima",
-      "name": "Minako Kojima",
+      "name": "Minakokojima",
       "bio": "I'm the Head of Developer Relations at Kimi, where I've also held positions in post-training and infrastructure. Prior to joining Kimi, I worked as an algorithm engineer at Google. I won several gold medals at ACM ICPC regional contests during college.",
       "role": "Head of Developer Relations",
       "org": "Moonshot AI (Kimi)",
@@ -964,6 +989,27 @@
       "draft": false
     },
     {
+      "id": "tom-mulder",
+      "name": "Tom Mulder",
+      "bio": "All round builder with 27 years professional experience, 17 years in ML / AI and a lifelong passion for robotics",
+      "role": "Founder",
+      "org": "Algoryn",
+      "roleOrg": "Founder, Algoryn",
+      "image": "/images/speakers/better_portrait/tom-mulder.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/darkseed",
+        "github": "https://github.com/algoryn-nl",
+        "linkedin": "https://www.linkedin.com/in/temulder/",
+        "website": "https://algoryn.nl/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "virgile-batto",
       "name": "Virgile Batto",
       "bio": "Robot Architect. I optimize,design, and control legged robot",
@@ -973,6 +1019,27 @@
       "image": "/images/speakers/better_portrait/virgile-batto.png",
       "tags": [
         "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wei-wang",
+      "name": "Wei Wang",
+      "bio": "Wei Wang is the Director of the Open Source Technology Committee at Singularity Intelligence Research Institute, Head of the Open Source Governance Standards Working Group at the Ministry of Industry and Information Technology's Electronics Standards Institute, Secretary-General of the UN Consultative Open Source Innovation Committee, and Professor at East China Normal University. He is a Distinguished Member of CCF. He led the development of China's first set of open source governance standards, with research focusing on open source governance and evaluation. He has published over 100 papers in top conferences and journals including ICSE, WWW, and ACL.",
+      "role": "Professor",
+      "org": "East China Normal University",
+      "roleOrg": "Professor, East China Normal University",
+      "image": "/images/speakers/better_portrait/wei-wang.png",
+      "tags": [
+        "agentic-ai-summit"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1001,6 +1068,27 @@
         "github": "https://github.com/wzcai99/",
         "linkedin": "",
         "website": "https://wzcai99.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xingda-wei",
+      "name": "Xingda Wei",
+      "bio": "Xingda Wei is a tenure-track Associate Professor at Shanghai Jiao Tong University. His main research interests include improving the performance, reliability, and resource efficiency of system support for AI. He has published papers in conferences including OSDI/SOSP, Eurosys, and NSDI. He has received awards including the Eurosys 2024 Best Paper Award, 2022 Huawei OlympusMons Award, and 2021 ACM SIGOPS Dennis M. Ritchie Award. He serves on the program committees of multiple leading system conferences including OSDI, ASPLOS, NSDI, and as the program committee chair of ACM ChinaSys 2025 and the shadow program committee chair of Eurosys 2026.",
+      "role": "Associate Professor",
+      "org": "Shanghai Jiao Tong University",
+      "roleOrg": "Associate Professor, Shanghai Jiao Tong University",
+      "image": "/images/speakers/better_portrait/xingda-wei.png",
+      "tags": [
+        "open-source-model"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": "https://ipads.se.sjtu.edu.cn/pub/members/xingda_wei"
       },
       "status": "Accept",
       "draft": false
@@ -1043,6 +1131,49 @@
         "github": "https://github.com/ngxson",
         "linkedin": "https://linkedin.com/in/ngxson",
         "website": "https://ngxson.com"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yanzhi-wang",
+      "name": "Yanzhi Wang",
+      "bio": "Yanzhi Wang is Professor in the Department of Electrical and Computer Engineering and Computer Science at Northeastern University, a senior member of IEEE. His research interests focus on real-time and energy-efficient deep learning and artificial intelligence systems, especially on efficient large language models and large-scale generative AI systems. His research works have been published broadly in (i) machine learning conferences such as AAAI, CVPR, NeurIPS, ICML, ICCV, ICLR, IJCAI, ECCV, KDD, ICRA, ACM MM, ICDM, etc., (ii) architecture and system conferences such as ASPLOS, ISCA, MICRO, HPCA, CCS, VLDB, PLDI, WWW, ICS, PACT, CGO, IPDPS, INFOCOM, ICDCS, DAC, ICCAD, FPGA, FCCM, ISSCC, CICC, RTAS, RTSS, etc., and (iii) IEEE and ACM transactions. His research works have been cited over 26,500 times. He has received six Best Paper Awards and another 12 Best Paper Nominations. His research work has been reported and cited by around 500 media. He has 15 academic descendents as tenure-track faculty members at University of Minnesota, University of Massachusetts Amherst, University of Arizona, Michigan State University, University of Georgia, etc.",
+      "role": "Professor",
+      "org": "Northeastern University",
+      "roleOrg": "Professor, Northeastern University",
+      "image": "/images/speakers/better_portrait/yanzhi-wang.png",
+      "tags": [
+        "agentic-ai-on-edge",
+        "open-source-model"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "yonghua-lin",
+      "name": "Yonghua Lin",
+      "bio": "Yonghua Lin is the Vice President and Chief Engineer of Beijing Academy of Artificial Intelligence, responsible for AI System, and Large Model Foundation Technology research, industry and open-source ecosystem cooperation. She is formerly the Director of IBM China Research Lab and Distinguished Engineer at IBM, she led global AI system innovation within IBM. She has been engaged in research on system architecture, cloud computing, AI systems, computer vision, and other fields for more than 20 years. She holds over 50 global patents and has won the ACM/IEEE Best Paper awards. She was named one of the \"50 Leading Female Tech Leaders in China\" by Forbes in 2019. She is member of IEEE Women in Engineering Asia Pacific Leadership Team and the founder of IEEE Women in Engineering Beijing affinity.",
+      "role": "Vice President & Chief Engineer",
+      "org": "BAAI",
+      "roleOrg": "Vice President & Chief Engineer, BAAI",
+      "image": "/images/speakers/better_portrait/yonghua-lin.png",
+      "tags": [
+        "special-keynote"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
       },
       "status": "Accept",
       "draft": false
@@ -1126,6 +1257,27 @@
         "twitter": "https://x.com/zRdianjiao",
         "github": "https://github.com/zRzRzRzRzRzRzR",
         "linkedin": "https://www.linkedin.com/in/yuxuan-zhang-86a124282/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhaoyun",
+      "name": "Zhao Yun",
+      "bio": "Zhao Yun is a Senior Engineer at Huawei. He completed his Ph.D. at Tsinghua University (2021–2025).",
+      "role": "Senior Engineer",
+      "org": "Huawei",
+      "roleOrg": "Senior Engineer, Huawei",
+      "image": "/images/speakers/better_portrait/zhaoyun.png",
+      "tags": [
+        "open-source-model"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
         "website": ""
       },
       "status": "Accept",
