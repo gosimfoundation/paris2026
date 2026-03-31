@@ -359,8 +359,8 @@
     },
     {
       "id": "fabien",
-      "name": "Fabien",
-      "bio": "After studying maths, physics and computer sciences at ENS of Paris, I did a PhD in Reinforcement Learning at INRIA Lille.\r\nFollowing a postdoc combining cybersecurity and reinforcement learning, I worked as an independent researcher and research engineer for the manga industry.\r\nNow, I am happy to work for Probabl as a developer relations engineer!",
+      "name": "Fabien Pesquerel",
+      "bio": "A researcher at heart with a passion for robust open source, Fabien is a Developer Relations Engineer at Probabl.\r\nAfter studying mathematics, physics, and computer science at ENS Paris, he earned a PhD in Reinforcement Learning from INRIA Lille.\r\nHis career spans from postdoctoral research in cybersecurity to serving as an independent research engineer for the manga industry.\r\nToday at Probabl, Fabien leverages this diverse technical background to empower the machine learning community, both academic and industrial, and support the sustainable growth of the open-source ecosystem.\r\nA researcher turned community advocate.",
       "role": "Developer Relations Engineer",
       "org": "Probabl",
       "roleOrg": "Developer Relations Engineer, Probabl",
@@ -372,7 +372,7 @@
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/in/fabien-pesquerel-73515a124/",
         "website": ""
       },
       "status": "Accept",
