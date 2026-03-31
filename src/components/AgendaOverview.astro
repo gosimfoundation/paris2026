@@ -353,21 +353,8 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
                           <div class="session-body">
                             <div class="session-venue">
                               <span class="venue-name">{t(session.venue)}</span>
-                              <span class="venue-capacity">{session.capacity}</span>
                             </div>
                             <p class="session-name">{t(session.name)}</p>
-                            {isHackathon && session.items && (
-                              <ul class="hackathon-list">
-                                {session.items.map((item) => (
-                                  <li>{t(item)}</li>
-                                ))}
-                              </ul>
-                            )}
-                            {session.confirmed && (
-                              <span class="confirmed-badge">
-                                {lang === "zh" ? "已确认" : lang === "fr" ? "Confirmé" : "Confirmed"}
-                              </span>
-                            )}
                           </div>
                         </div>
                       );
@@ -399,7 +386,7 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
 
   /* Day section */
   .agenda-overview .day-section {
-    margin-bottom: calc(var(--section-padding) * 1.5);
+    margin-bottom: 3rem;
   }
 
   .agenda-overview .day-section:last-of-type {
