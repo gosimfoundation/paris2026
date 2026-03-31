@@ -1,0 +1,33 @@
+---
+import Layout from "layouts/LayoutLandingFr.astro";
+import GetTickets from "components/GetTickets.astro";
+import HeroText from "components/HeroText.astro";
+import AgendaOverview from "components/AgendaOverview.astro";
+---
+
+<Layout
+  title="Programme – GOSIM Paris 2026"
+  description="Découvrez le programme de GOSIM Paris 2026 — intervenants et thématiques pour toutes les sessions et ateliers."
+  navBackground="light"
+  pageTransitionName="Programme"
+>
+  <HeroText
+    title="Aperçu du programme"
+    text="Un aperçu des intervenants et des thématiques pour toutes les sessions de la conférence et les ateliers. Le programme complet avec les horaires sera publié à l'approche de l'événement."
+    lightgray
+  />
+
+  <AgendaOverview lang="fr" speakerBasePath="/fr/speakers/" />
+
+  <GetTickets
+    title="Obtenez votre billet GOSIM Paris"
+    location="Paris"
+    date="5-6 mai 2026"
+    text="Réservez votre place dès aujourd'hui à GOSIM Paris 2026. Collaborez avec des innovateurs, échangez avec des pionniers de l'industrie et participez à façonner l'avenir de la technologie open source."
+    ctaButton={{
+      text: "Obtenir des billets",
+      link: "https://gosimparis2026.eventbrite.com/",
+      openInNewTab: true,
+    }}
+  />
+</Layout>

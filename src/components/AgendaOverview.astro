@@ -1,0 +1,685 @@
+---
+interface Props {
+  lang?: "en" | "zh" | "fr";
+}
+
+const { lang = "en" } = Astro.props;
+
+type L = { en: string; zh: string; fr: string };
+type Session = {
+  venue: L;
+  capacity: string;
+  name: L;
+  colorId?: string;
+  confirmed?: boolean;
+  type?: "hackathons";
+  items?: L[];
+};
+type Block =
+  | { type: "break" | "keynote" | "spotlight" | "closing"; time: string; label: L; note?: L }
+  | { type: "sessions"; time: string; sessions: Session[] };
+
+const trackColors: Record<string, { from: string; to: string }> = {
+  "agentic-ai-summit":         { from: "#dc2626", to: "#f97316" },
+  "open-source-model":         { from: "#0f766e", to: "#2dd4bf" },
+  "ai-generative-app":         { from: "#2563eb", to: "#60a5fa" },
+  "agentic-ai-on-edge":        { from: "#ca8a04", to: "#facc15" },
+  "open-source-robotics":      { from: "#0891b2", to: "#22d3ee" },
+  "special-keynote":           { from: "#7c3aed", to: "#c084fc" },
+  "ws-vllm-paris2026":         { from: "#4f46e5", to: "#818cf8" },
+  "ws-oh-tech-forum":          { from: "#be123c", to: "#fb7185" },
+  "ws-own-your-data-paris2026":{ from: "#0f766e", to: "#34d399" },
+  "ws-sglang-paris2026":       { from: "#7c3aed", to: "#a78bfa" },
+  "hackathon":                 { from: "#475569", to: "#94a3b8" },
+};
+
+const t = (val: L) => val[lang] ?? val.en;
+
+const days: Array<{ date: L; label: L; blocks: Block[] }> = [
+  {
+    date: { en: "May 5, 2026", zh: "2026年5月5日", fr: "5 mai 2026" },
+    label: { en: "Day 1", zh: "第一天", fr: "Jour 1" },
+    blocks: [
+      {
+        type: "break",
+        time: "8:30 – 9:30",
+        label: { en: "Registration & Breakfast", zh: "签到 + 早餐", fr: "Inscription & Petit-déjeuner" },
+      },
+      {
+        type: "keynote",
+        time: "9:30 – 10:00",
+        label: { en: "Keynote", zh: "主题演讲", fr: "Conférence Plénière" },
+      },
+      {
+        type: "break",
+        time: "10:00 – 10:20",
+        label: { en: "Morning Coffee", zh: "上午茶歇", fr: "Pause Café" },
+      },
+      {
+        type: "sessions",
+        time: "10:20 – 12:00",
+        sessions: [
+          {
+            venue: { en: "Master Stage", zh: "主舞台", fr: "Scène Principale" },
+            capacity: "350",
+            name: { en: "Agentic AI Summit", zh: "智能体 AI 峰会", fr: "Agentic AI Summit" },
+            colorId: "agentic-ai-summit",
+          },
+          {
+            venue: { en: "Open Stage", zh: "开放舞台", fr: "Scène Ouverte" },
+            capacity: "100",
+            name: { en: "Open Source Models", zh: "开源模型", fr: "Modèles Open Source" },
+            colorId: "open-source-model",
+          },
+          {
+            venue: { en: "Junior Stage", zh: "Jr. 舞台", fr: "Scène Junior" },
+            capacity: "50",
+            name: { en: "Agentic OS & App", zh: "智能体操作系统和应用", fr: "Agentic OS & App" },
+            colorId: "ai-generative-app",
+          },
+          {
+            venue: { en: "Central Room", zh: "中央会议室", fr: "Salle Centrale" },
+            capacity: "100",
+            name: { en: "Agentic AI on Edge", zh: "边缘智能体 AI", fr: "Agentic AI sur Edge" },
+            colorId: "agentic-ai-on-edge",
+          },
+          {
+            venue: { en: "Founders Cafe", zh: "创始人咖啡厅", fr: "Founders Cafe" },
+            capacity: "75",
+            name: { en: "vLLM Workshop", zh: "vLLM 工作坊", fr: "Atelier vLLM" },
+            colorId: "ws-vllm-paris2026",
+            confirmed: true,
+          },
+          {
+            venue: { en: "Open Platform", zh: "开放平台（外场）", fr: "Plateforme Ouverte" },
+            capacity: "900m²",
+            name: { en: "Hackathon Hub", zh: "黑客松区", fr: "Hub Hackathon" },
+            type: "hackathons",
+            items: [
+              { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" },
+              { en: "GOSIM Agentic Hackathon", zh: "GOSIM Agentic Hackathon", fr: "GOSIM Agentic Hackathon" },
+              { en: "AI Hardware Hackathon", zh: "AI 硬件黑客松", fr: "Hackathon IA Hardware" },
+            ],
+          },
+        ],
+      },
+      {
+        type: "spotlight",
+        time: "12:00 – 14:00",
+        label: { en: "Spotlight Demo & Lunch", zh: "Spotlight Demo + 午餐", fr: "Spotlight Demo & Déjeuner" },
+      },
+      {
+        type: "sessions",
+        time: "14:00 – 17:30",
+        sessions: [
+          {
+            venue: { en: "Master Stage", zh: "主舞台", fr: "Scène Principale" },
+            capacity: "350",
+            name: { en: "Agentic AI Summit", zh: "智能体 AI 峰会", fr: "Agentic AI Summit" },
+            colorId: "agentic-ai-summit",
+          },
+          {
+            venue: { en: "Open Stage", zh: "开放舞台", fr: "Scène Ouverte" },
+            capacity: "100",
+            name: { en: "Open Source Models", zh: "开源模型", fr: "Modèles Open Source" },
+            colorId: "open-source-model",
+          },
+          {
+            venue: { en: "Junior Stage", zh: "Jr. 舞台", fr: "Scène Junior" },
+            capacity: "50",
+            name: { en: "Agentic OS & App", zh: "智能体操作系统和应用", fr: "Agentic OS & App" },
+            colorId: "ai-generative-app",
+          },
+          {
+            venue: { en: "Central Room", zh: "中央会议室", fr: "Salle Centrale" },
+            capacity: "100",
+            name: { en: "BAAI Special Session", zh: "智源专场", fr: "Session Spéciale BAAI" },
+            colorId: "special-keynote",
+          },
+          {
+            venue: { en: "Founders Cafe", zh: "创始人咖啡厅", fr: "Founders Cafe" },
+            capacity: "75",
+            name: { en: "OpenHarmony Tech Forum", zh: "OpenHarmony Tech Forum", fr: "Forum Tech OpenHarmony" },
+            colorId: "ws-oh-tech-forum",
+            confirmed: true,
+          },
+          {
+            venue: { en: "Open Platform", zh: "开放平台（外场）", fr: "Plateforme Ouverte" },
+            capacity: "900m²",
+            name: { en: "Hackathon Hub", zh: "黑客松区", fr: "Hub Hackathon" },
+            type: "hackathons",
+            items: [
+              { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" },
+              { en: "GOSIM Agentic Hackathon", zh: "GOSIM Agentic Hackathon", fr: "GOSIM Agentic Hackathon" },
+              { en: "Zhipu Hackathon", zh: "智谱黑客松", fr: "Hackathon Zhipu" },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    date: { en: "May 6, 2026", zh: "2026年5月6日", fr: "6 mai 2026" },
+    label: { en: "Day 2", zh: "第二天", fr: "Jour 2" },
+    blocks: [
+      {
+        type: "keynote",
+        time: "9:30 – 10:00",
+        label: { en: "Keynote", zh: "主题演讲", fr: "Conférence Plénière" },
+      },
+      {
+        type: "break",
+        time: "10:00 – 10:20",
+        label: { en: "Morning Coffee", zh: "上午茶歇", fr: "Pause Café" },
+      },
+      {
+        type: "sessions",
+        time: "10:20 – 12:00",
+        sessions: [
+          {
+            venue: { en: "Master Stage", zh: "主舞台", fr: "Scène Principale" },
+            capacity: "350",
+            name: { en: "Agentic AI Summit", zh: "智能体 AI 峰会", fr: "Agentic AI Summit" },
+            colorId: "agentic-ai-summit",
+          },
+          {
+            venue: { en: "Open Stage", zh: "开放舞台", fr: "Scène Ouverte" },
+            capacity: "100",
+            name: { en: "Own Your Data Workshop", zh: "Own Your Data 工作坊", fr: "Atelier Own Your Data" },
+            colorId: "ws-own-your-data-paris2026",
+          },
+          {
+            venue: { en: "Junior Stage", zh: "Jr. 舞台", fr: "Scène Junior" },
+            capacity: "50",
+            name: { en: "Build Your Own Agentic App Workshop", zh: "Build Your Own Agentic App 工作坊", fr: "Atelier Agentic App" },
+            colorId: "ai-generative-app",
+          },
+          {
+            venue: { en: "Central Room", zh: "中央会议室", fr: "Salle Centrale" },
+            capacity: "100",
+            name: { en: "Agentic AI on Edge", zh: "边缘智能体 AI", fr: "Agentic AI sur Edge" },
+            colorId: "agentic-ai-on-edge",
+          },
+          {
+            venue: { en: "Founders Cafe", zh: "创始人咖啡厅", fr: "Founders Cafe" },
+            capacity: "75",
+            name: { en: "Open Source Robotics", zh: "开源机器人", fr: "Robotique Open Source" },
+            colorId: "open-source-robotics",
+          },
+          {
+            venue: { en: "Open Platform", zh: "开放平台（外场）", fr: "Plateforme Ouverte" },
+            capacity: "900m²",
+            name: { en: "Hackathon Hub", zh: "黑客松区", fr: "Hub Hackathon" },
+            type: "hackathons",
+            items: [
+              { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" },
+              { en: "GOSIM Agentic Hackathon", zh: "GOSIM Agentic Hackathon", fr: "GOSIM Agentic Hackathon" },
+              { en: "Open Claw Hackathon", zh: "开源小章鱼黑客松", fr: "Hackathon Open Claw" },
+            ],
+          },
+        ],
+      },
+      {
+        type: "spotlight",
+        time: "12:00 – 14:00",
+        label: { en: "Spotlight Demo & Lunch", zh: "Spotlight Demo + 午餐", fr: "Spotlight Demo & Déjeuner" },
+      },
+      {
+        type: "sessions",
+        time: "14:00 – 17:30",
+        sessions: [
+          {
+            venue: { en: "Master Stage", zh: "主舞台", fr: "Scène Principale" },
+            capacity: "350",
+            name: { en: "Agentic AI Summit", zh: "智能体 AI 峰会", fr: "Agentic AI Summit" },
+            colorId: "agentic-ai-summit",
+          },
+          {
+            venue: { en: "Open Stage", zh: "开放舞台", fr: "Scène Ouverte" },
+            capacity: "100",
+            name: { en: "Own Your Data Workshop", zh: "Own Your Data 工作坊", fr: "Atelier Own Your Data" },
+            colorId: "ws-own-your-data-paris2026",
+          },
+          {
+            venue: { en: "Junior Stage", zh: "Jr. 舞台", fr: "Scène Junior" },
+            capacity: "50",
+            name: { en: "Build Your Own Agentic App Workshop", zh: "Build Your Own Agentic App 工作坊", fr: "Atelier Agentic App" },
+            colorId: "ai-generative-app",
+          },
+          {
+            venue: { en: "Central Room", zh: "中央会议室", fr: "Salle Centrale" },
+            capacity: "100",
+            name: { en: "SGLang Workshop", zh: "SGLang 工作坊", fr: "Atelier SGLang" },
+            colorId: "ws-sglang-paris2026",
+            confirmed: true,
+          },
+          {
+            venue: { en: "Founders Cafe", zh: "创始人咖啡厅", fr: "Founders Cafe" },
+            capacity: "75",
+            name: { en: "Open Source Robotics", zh: "开源机器人", fr: "Robotique Open Source" },
+            colorId: "open-source-robotics",
+          },
+          {
+            venue: { en: "Open Platform", zh: "开放平台（外场）", fr: "Plateforme Ouverte" },
+            capacity: "900m²",
+            name: { en: "Hackathon Hub", zh: "黑客松区", fr: "Hub Hackathon" },
+            type: "hackathons",
+            items: [
+              { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" },
+              { en: "GOSIM Agentic Hackathon", zh: "GOSIM Agentic Hackathon", fr: "GOSIM Agentic Hackathon" },
+            ],
+          },
+        ],
+      },
+      {
+        type: "closing",
+        time: "17:30 – 18:00",
+        label: { en: "Closing Ceremony & Awards", zh: "闭幕式与颁奖典礼", fr: "Cérémonie de Clôture & Remise des Prix" },
+        note: {
+          en: "Spotlight: 10 online winners + 5 in-person finalists",
+          zh: "Spotlight：10 位线上获奖者 + 5 位线下入围者",
+          fr: "Spotlight : 10 gagnants en ligne + 5 finalistes en présentiel",
+        },
+      },
+    ],
+  },
+];
+---
+
+<section class="section agenda-overview" data-theme-section="light" data-bg-section="lightgray">
+  <div class="container">
+    {days.map((day) => (
+      <div class="day-section">
+        <div class="day-header">
+          <span class="day-label">{t(day.label)}</span>
+          <span class="day-date">{t(day.date)}</span>
+        </div>
+
+        <div class="blocks">
+          {day.blocks.map((block) => {
+            if (block.type === "break") {
+              return (
+                <div class="block block-break">
+                  <span class="block-time">{block.time}</span>
+                  <span class="block-label">{t(block.label)}</span>
+                </div>
+              );
+            }
+
+            if (block.type === "keynote") {
+              return (
+                <div class="block block-keynote">
+                  <span class="block-time">{block.time}</span>
+                  <span class="block-label">{t(block.label)}</span>
+                </div>
+              );
+            }
+
+            if (block.type === "spotlight") {
+              return (
+                <div class="block block-spotlight">
+                  <span class="block-time">{block.time}</span>
+                  <span class="block-label">{t(block.label)}</span>
+                </div>
+              );
+            }
+
+            if (block.type === "closing") {
+              return (
+                <div class="block block-closing">
+                  <span class="block-time">{block.time}</span>
+                  <div class="block-closing-content">
+                    <span class="block-label">{t(block.label)}</span>
+                    {block.note && <span class="block-note">{t(block.note)}</span>}
+                  </div>
+                </div>
+              );
+            }
+
+            if (block.type === "sessions") {
+              return (
+                <div class="block block-sessions">
+                  <span class="block-time">{block.time}</span>
+                  <div class="sessions-grid">
+                    {block.sessions.map((session) => {
+                      const color = trackColors[session.colorId ?? "hackathon"] ?? trackColors["hackathon"];
+                      const isHackathon = session.type === "hackathons";
+                      return (
+                        <div
+                          class={`session-card${isHackathon ? " session-card-hackathon" : ""}`}
+                          style={`--from: ${color.from}; --to: ${color.to};`}
+                        >
+                          <div class="session-bar"></div>
+                          <div class="session-body">
+                            <div class="session-venue">
+                              <span class="venue-name">{t(session.venue)}</span>
+                              <span class="venue-capacity">{session.capacity}</span>
+                            </div>
+                            <p class="session-name">{t(session.name)}</p>
+                            {isHackathon && session.items && (
+                              <ul class="hackathon-list">
+                                {session.items.map((item) => (
+                                  <li>{t(item)}</li>
+                                ))}
+                              </ul>
+                            )}
+                            {session.confirmed && (
+                              <span class="confirmed-badge">
+                                {lang === "zh" ? "已确认" : lang === "fr" ? "Confirmé" : "Confirmed"}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            }
+          })}
+        </div>
+      </div>
+    ))}
+
+    <p class="disclaimer">
+      {lang === "zh"
+        ? "日程安排如有变动，请以最新信息为准。"
+        : lang === "fr"
+        ? "Le programme est susceptible d'évoluer."
+        : "Schedule is subject to change."}
+    </p>
+  </div>
+</section>
+
+<style>
+  .agenda-overview {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
+
+  /* Day section */
+  .day-section {
+    margin-bottom: calc(var(--section-padding) * 1.5);
+  }
+
+  .day-section:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .day-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--color-dark, #0f172a);
+  }
+
+  .day-label {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 800;
+    color: var(--color-dark, #0f172a);
+    letter-spacing: -0.01em;
+  }
+
+  .day-date {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(15, 23, 42, 0.45);
+  }
+
+  /* Blocks */
+  .blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .block {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .block-time {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(15, 23, 42, 0.4);
+    white-space: nowrap;
+    width: 7rem;
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+
+  /* Full-width event blocks */
+  .block-break,
+  .block-keynote,
+  .block-spotlight,
+  .block-closing {
+    align-items: center;
+  }
+
+  .block-break .block-label,
+  .block-keynote .block-label,
+  .block-spotlight .block-label,
+  .block-closing .block-label {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .block-break .block-label {
+    background: rgba(15, 23, 42, 0.05);
+    color: rgba(15, 23, 42, 0.45);
+  }
+
+  .block-keynote .block-label {
+    background: var(--color-dark, #0f172a);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .block-spotlight .block-label {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .block-closing {
+    align-items: flex-start;
+  }
+
+  .block-closing-content {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--color-dark, #0f172a);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .block-closing .block-label {
+    padding: 0;
+    background: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .block-note {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 400;
+  }
+
+  /* Session blocks */
+  .block-sessions {
+    align-items: flex-start;
+    padding: 0.5rem 0;
+  }
+
+  .block-sessions .block-time {
+    padding-top: 0.75rem;
+  }
+
+  .sessions-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+  }
+
+  .session-card {
+    background: #fff;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    border: 1px solid rgba(15, 23, 42, 0.07);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .session-bar {
+    height: 3px;
+    background: linear-gradient(to right, var(--from), var(--to));
+    flex-shrink: 0;
+  }
+
+  .session-body {
+    padding: 0.65rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    flex: 1;
+  }
+
+  .session-venue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+  }
+
+  .venue-name {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(15, 23, 42, 0.4);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .venue-capacity {
+    font-size: 0.6rem;
+    color: rgba(15, 23, 42, 0.3);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .session-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--color-dark, #0f172a);
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .hackathon-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .hackathon-list li {
+    font-size: 0.68rem;
+    color: rgba(15, 23, 42, 0.55);
+    padding-left: 0.75rem;
+    position: relative;
+    line-height: 1.3;
+  }
+
+  .hackathon-list li::before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    color: rgba(15, 23, 42, 0.3);
+  }
+
+  .confirmed-badge {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #16a34a;
+    background: #dcfce7;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.25rem;
+    align-self: flex-start;
+  }
+
+  .disclaimer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(15, 23, 42, 0.35);
+    margin-top: 2.5rem;
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 1100px) {
+    .sessions-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .block {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+
+    .block-time {
+      width: auto;
+    }
+
+    .block-sessions .block-time {
+      padding-top: 0;
+    }
+
+    .sessions-grid {
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+    }
+
+    .block-break .block-label,
+    .block-keynote .block-label,
+    .block-spotlight .block-label {
+      width: 100%;
+    }
+
+    .block-closing-content {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .sessions-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
