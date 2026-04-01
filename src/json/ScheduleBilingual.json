@@ -201,25 +201,6 @@
       },
       {
         "title": {
-          "en": "Keynote",
-          "zh": "主题演讲"
-        },
-        "speakers": [
-          {
-            "name": "Bill Ren",
-            "title": "Chief Open Source Liaison Officer, Board member of CNCF"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "09:45 - 10:00",
-        "type": "keynote"
-      },
-      {
-        "title": {
           "en": "Morning Coffee",
           "zh": "茶歇",
           "fr": "Café du matin"
@@ -603,14 +584,6 @@
             "name": "Nicolas Flores-Herr",
             "title": "Team Lead Foundation Models, Fraunhofer IAIS"
           },
-          {
-            "name": "Wendy Seltzer",
-            "title": ""
-          },
-          {
-            "name": "Drummond Reed",
-            "title": ""
-          }
         ],
         "date": {
           "en": "May 6",
@@ -1157,25 +1130,6 @@
         "timeSlot": "15:20 - 15:40",
         "type": "break"
       },
-      {
-        "title": {
-          "en": "Embedded AI",
-          "zh": "嵌入式 AI"
-        },
-        "speakers": [
-          {
-            "name": "Prof. Bart Massey",
-            "title": "Portland State University"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "15:40 - 17:00",
-        "type": "workshop"
-      }
     ],
     "agentic-ai-on-edge": [
       {
@@ -1403,25 +1357,6 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break"
-      },
-      {
-        "title": {
-          "en": "Robotics with Zenoh: From ROS 2 to ros-z and Beyond",
-          "zh": "Zenoh 机器人开发：从 ROS 2 到 ros-z 及未来展望"
-        },
-        "speakers": [
-          {
-            "name": "TBD",
-            "title": "Senior Solutions Architect, ZettaScale Technology"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "14:00 - 14:25",
-        "type": "talk"
       },
       {
         "title": {
