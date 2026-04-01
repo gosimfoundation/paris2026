@@ -51,18 +51,1991 @@
   ],
   "categories": [
     {
-      "id": "placeholder",
+      "id": "agentic-ai-summit",
       "name": {
-        "en": "TBD",
-        "zh": "待定",
-        "fr": "A venir"
+        "en": "Agentic AI Summit",
+        "zh": "Agentic AI 峰会",
+        "fr": "Sommet Agentic AI"
       },
       "room": {
-        "en": "TBA",
-        "zh": "待定",
-        "fr": "A confirmer"
+        "en": "Main Stage",
+        "zh": "主会场",
+        "fr": "Scène principale"
+      }
+    },
+    {
+      "id": "open-source-model",
+      "name": {
+        "en": "Open Source Models",
+        "zh": "开源模型",
+        "fr": "Modèles Open Source"
+      },
+      "room": {
+        "en": "Track A",
+        "zh": "分会场 A",
+        "fr": "Piste A"
+      }
+    },
+    {
+      "id": "ai-generative-app",
+      "name": {
+        "en": "Agentic OS & App",
+        "zh": "Agentic OS 与应用",
+        "fr": "Agentic OS & App"
+      },
+      "room": {
+        "en": "Track B",
+        "zh": "分会场 B",
+        "fr": "Piste B"
+      }
+    },
+    {
+      "id": "agentic-ai-on-edge",
+      "name": {
+        "en": "Agentic AI on Edge",
+        "zh": "边缘侧 Agentic AI",
+        "fr": "Agentic AI on Edge"
+      },
+      "room": {
+        "en": "Track C",
+        "zh": "分会场 C",
+        "fr": "Piste C"
+      }
+    },
+    {
+      "id": "open-source-robotics",
+      "name": {
+        "en": "Open Source Robotics",
+        "zh": "开源机器人",
+        "fr": "Robotique Open Source"
+      },
+      "room": {
+        "en": "Track D",
+        "zh": "分会场 D",
+        "fr": "Piste D"
+      }
+    },
+    {
+      "id": "ws-vllm-paris2026",
+      "name": {
+        "en": "vLLM Workshop",
+        "zh": "vLLM 工作坊",
+        "fr": "Atelier vLLM"
+      },
+      "room": {
+        "en": "Workshop Room",
+        "zh": "工作坊会场",
+        "fr": "Salle Atelier"
+      }
+    },
+    {
+      "id": "ws-oh-tech-forum",
+      "name": {
+        "en": "OpenHarmony Tech Forum",
+        "zh": "OpenHarmony 技术论坛",
+        "fr": "Forum Technique OpenHarmony"
+      },
+      "room": {
+        "en": "Workshop Room",
+        "zh": "工作坊会场",
+        "fr": "Salle Atelier"
+      }
+    },
+    {
+      "id": "ws-open-compute",
+      "name": {
+        "en": "Open Compute for Agentic AI",
+        "zh": "面向 Agentic AI 的开放计算",
+        "fr": "Open Compute pour l'IA Agentique"
+      },
+      "room": {
+        "en": "Workshop Room",
+        "zh": "工作坊会场",
+        "fr": "Salle Atelier"
+      }
+    },
+    {
+      "id": "ws-sglang-paris2026",
+      "name": {
+        "en": "SGLang Workshop",
+        "zh": "SGLang 工作坊",
+        "fr": "Atelier SGLang"
+      },
+      "room": {
+        "en": "Workshop Room",
+        "zh": "工作坊会场",
+        "fr": "Salle Atelier"
+      }
+    },
+    {
+      "id": "ws-own-your-data-paris2026",
+      "name": {
+        "en": "Own Your Data Science and AI Workshop",
+        "zh": "数据科学与 AI 工作坊",
+        "fr": "Atelier Data Science & IA"
+      },
+      "room": {
+        "en": "Workshop Room",
+        "zh": "工作坊会场",
+        "fr": "Salle Atelier"
+      }
+    },
+    {
+      "id": "ws-agentic-app",
+      "name": {
+        "en": "Build Your Own Agentic App Workshop",
+        "zh": "构建 Agentic 应用工作坊",
+        "fr": "Atelier Application Agentique"
+      },
+      "room": {
+        "en": "Workshop Room",
+        "zh": "工作坊会场",
+        "fr": "Salle Atelier"
       }
     }
   ],
-  "sessions": {}
+  "sessions": {
+    "agentic-ai-summit": [
+      {
+        "title": {
+          "en": "From ChatGPT to OpenClaw: How Agentic AI is Redefining AI Compute and the Open Evaluation",
+          "zh": "从 ChatGPT 到 OpenClaw：Agentic AI 如何重新定义 AI 计算与开放评测"
+        },
+        "speakers": [
+          {
+            "name": "Yonghua Lin",
+            "title": "VP & Chief Engineer, BAAI"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:30 - 09:45",
+        "type": "keynote"
+      },
+      {
+        "title": {
+          "en": "Keynote",
+          "zh": "主题演讲"
+        },
+        "speakers": [
+          {
+            "name": "Bill Ren",
+            "title": "Chief Open Source Liaison Officer, Board member of CNCF"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:45 - 10:00",
+        "type": "keynote"
+      },
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Tile Programming for GPUs",
+          "zh": "GPU 的 Tile 编程"
+        },
+        "speakers": [
+          {
+            "name": "Bryce Adelstein Lelbach",
+            "title": "Principal Engineer, NVIDIA"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:40 - 11:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Panel: The Agentic AI Moment — From Models to Intelligent Systems",
+          "zh": "圆桌论坛：Agentic AI 时刻——从模型到智能系统"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "11:00 - 12:00",
+        "type": "panel"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Agent Reshapes the New Paradigm of the Software Industry",
+          "zh": "Agent 重塑软件行业新范式"
+        },
+        "speakers": [
+          {
+            "name": "Jianzhong Li",
+            "title": "President, Singularity Intelligence Research Institute; SVP, CSDN"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 14:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
+          "zh": "Agent、代码与平行世界——仓颉编程语言团队 300 天的 Agentic 进化之路"
+        },
+        "speakers": [
+          {
+            "name": "Dong Xin",
+            "title": "Program Director, Central Software Institute, Huawei"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:20 - 14:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "TileLang: Bridge Programmability and Performance in Modern Neural Kernels",
+          "zh": "TileLang：架起现代神经网络核心可编程性与性能之间的桥梁"
+        },
+        "speakers": [
+          {
+            "name": "Yu Cheng",
+            "title": "Ph.D. Student, Peking University"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:40 - 15:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:00 - 15:30",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Panel: Agentic AI in the Enterprise — Rethinking Software and Work",
+          "zh": "圆桌论坛：企业中的 Agentic AI——重新思考软件与工作"
+        },
+        "speakers": [
+          {
+            "name": "Christian Maitre",
+            "title": "CEO, Caspera Lab (Moderator)"
+          },
+          {
+            "name": "Guillaume Blaquiere",
+            "title": "Group Data Architect, Carrefour"
+          },
+          {
+            "name": "Gaël Varoquaux",
+            "title": "Chief Science Officer, Probabl"
+          },
+          {
+            "name": "Alexio Cassani",
+            "title": "Co-Founder & CEO, FairMind"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:30 - 16:30",
+        "type": "panel"
+      },
+      {
+        "title": {
+          "en": "Panel: Europe in the Age of Agentic AI — Open Innovation and Global Collaboration",
+          "zh": "圆桌论坛：Agentic AI 时代的欧洲——开放创新与全球合作"
+        },
+        "speakers": [
+          {
+            "name": "Björn Plüster",
+            "title": "Co-Founder & CTO, ellamind"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:30 - 17:30",
+        "type": "panel"
+      },
+      {
+        "title": {
+          "en": "Symposium: Embrace the Ecosystem",
+          "zh": "研讨会：拥抱生态系统"
+        },
+        "speakers": [
+          {
+            "name": "Niko Matsakis",
+            "title": "Senior Principal Engineer, Amazon"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "09:30 - 09:45",
+        "type": "keynote"
+      },
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Thoughts to Text & Image: Foundation Models for Brain Computer Interfaces",
+          "zh": "从思想到文字与图像：脑机接口基础模型"
+        },
+        "speakers": [
+          {
+            "name": "Priyanka Jain",
+            "title": "CEO & Co-Founder, NuBrain"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 10:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
+          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
+        },
+        "speakers": [
+          {
+            "name": "Daniel",
+            "title": "AI Model Business Developer, Minimax"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:40 - 11:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Panel: Open-Source AI and the New Generation of Builders",
+          "zh": "圆桌论坛：开源 AI 与新一代构建者"
+        },
+        "speakers": [
+          {
+            "name": "Minako Kojima",
+            "title": "Head of Developer Relations, Moonshot AI (Moderator)"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:00 - 12:00",
+        "type": "panel"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Pie: A Programmable Serving System for Agentic Applications",
+          "zh": "Pie：面向 Agentic 应用的可编程服务系统"
+        },
+        "speakers": [
+          {
+            "name": "Lin Zhong",
+            "title": "Professor of Computer Science, Yale University"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:00 - 14:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Open-Source, Openness and Standardization of Large Models",
+          "zh": "大模型的开源、开放与标准化"
+        },
+        "speakers": [
+          {
+            "name": "Hang Chen",
+            "title": "Engineer, China Electronics Standardization Institute"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:20 - 14:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:00 - 15:30",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Panel: AI Education — Learning in the Age of Agents",
+          "zh": "圆桌论坛：AI 教育——在 Agent 时代学习"
+        },
+        "speakers": [
+          {
+            "name": "Dr. Chao Mbogho",
+            "title": "Senior Fellow, Responsible Computing, Mozilla Foundation (Moderator)"
+          },
+          {
+            "name": "Yonghui Wu",
+            "title": "Associate Professor, Fudan University"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:30 - 16:30",
+        "type": "panel"
+      },
+      {
+        "title": {
+          "en": "Panel: Trustworthy Agentic AI — Standards, Safety and Governance",
+          "zh": "圆桌论坛：可信 Agentic AI——标准、安全与治理"
+        },
+        "speakers": [
+          {
+            "name": "Wenjing Chu",
+            "title": "Senior Director of Technology Strategy, Futurewei Technologies (Moderator)"
+          },
+          {
+            "name": "Markus Tavenrath",
+            "title": "Principal Engineer Developer Technology, NVIDIA"
+          },
+          {
+            "name": "Nicolas Flores-Herr",
+            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
+          },
+          {
+            "name": "Wendy Seltzer",
+            "title": ""
+          },
+          {
+            "name": "Drummond Reed",
+            "title": ""
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "16:30 - 17:30",
+        "type": "panel"
+      },
+      {
+        "title": {
+          "en": "GOSIM Spotlight 2026: Frontier Creators Awards Ceremony",
+          "zh": "GOSIM Spotlight 2026：前沿创造者颁奖典礼"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "17:30 - 17:40",
+        "type": "ceremony"
+      },
+      {
+        "title": {
+          "en": "Hackathon Winning Projects Showcase & Awards",
+          "zh": "黑客马拉松获奖项目展示与颁奖"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "17:40 - 17:55",
+        "type": "ceremony"
+      },
+      {
+        "title": {
+          "en": "Closing Remarks & Thanks",
+          "zh": "闭幕致辞与感谢"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "17:55 - 18:00",
+        "type": "ceremony"
+      }
+    ],
+    "open-source-model": [
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Linear Attention: Past, Present and Future",
+          "zh": "线性注意力机制：过去、现在与未来"
+        },
+        "speakers": [
+          {
+            "name": "Minako Kojima",
+            "title": "Head of Developer Relations, Moonshot AI"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:20 - 10:50",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "The Open-Source Journey of the GLM Models",
+          "zh": "GLM 模型的开源历程"
+        },
+        "speakers": [
+          {
+            "name": "Yuxuan Zhang",
+            "title": "Technical Evangelist, ZhipuAI"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:50 - 11:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
+          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
+        },
+        "speakers": [
+          {
+            "name": "Daniel",
+            "title": "AI Model Business Developer, Minimax"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "11:20 - 12:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "World Model for Universal Generation and Control",
+          "zh": "用于通用生成与控制的世界模型"
+        },
+        "speakers": [
+          {
+            "name": "Yanzhi Wang",
+            "title": "Professor, Northeastern University"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 14:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Building Scalable LLM Inference Infrastructure",
+          "zh": "构建可扩展的 LLM 推理基础设施"
+        },
+        "speakers": [
+          {
+            "name": "Xingda Wei",
+            "title": "Associate Professor, Shanghai Jiao Tong University"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:20 - 14:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "When Does Sparsity Mitigate the Curse of Depth in LLMs",
+          "zh": "稀疏性何时能缓解 LLM 的深度诅咒"
+        },
+        "speakers": [
+          {
+            "name": "Shiwei Liu",
+            "title": "Group Leader, Max Planck Institute for Intelligent Systems; PI, ELLIS Institute Tübingen"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:40 - 15:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Exploring HiFloat8: A Tapered Format Complementing the FP8 Ecosystem for Robust Model Training",
+          "zh": "探索 HiFloat8：为 FP8 生态补充的渐变格式，实现稳健模型训练"
+        },
+        "speakers": [
+          {
+            "name": "Zhao Yun",
+            "title": "Senior Engineer, Huawei"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:00 - 15:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:20 - 15:40",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "The Smol Training Playbook: Lessons from Training State-of-the-Art LLMs",
+          "zh": "小型训练手册：训练最先进 LLM 的经验教训"
+        },
+        "speakers": [
+          {
+            "name": "Nouamane Tazi",
+            "title": "ML Research Engineer, Hugging Face"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:40 - 16:10",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Building World's First Multi-Modal Model SpeedRun in Open Source",
+          "zh": "开源构建全球首个多模态模型 SpeedRun"
+        },
+        "speakers": [
+          {
+            "name": "Zhipeng Huang",
+            "title": "Board Chairperson, LFAI & Data Foundation"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:10 - 16:40",
+        "type": "talk"
+      }
+    ],
+    "ai-generative-app": [
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Writing Rust AI Applications with Makepad",
+          "zh": "使用 Makepad 编写 Rust AI 应用"
+        },
+        "speakers": [
+          {
+            "name": "Rik Arends",
+            "title": "Co-Founder, Makepad"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:20 - 10:50",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Frontier of Agentic AI",
+          "zh": "Agentic AI 的前沿探索"
+        },
+        "speakers": [
+          {
+            "name": "Wang Chi",
+            "title": "Senior Staff Research Scientist, Google DeepMind"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:50 - 11:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Building Agentic Apps with CopilotKit and AG-UI",
+          "zh": "使用 CopilotKit 和 AG-UI 构建 Agentic 应用"
+        },
+        "speakers": [
+          {
+            "name": "Ran Shemtov",
+            "title": "Founding Engineer, CopilotKit"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "11:20 - 12:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Building with StrongDM Attractor",
+          "zh": "使用 StrongDM Attractor 进行构建"
+        },
+        "speakers": [
+          {
+            "name": "Marcin Zubrzycki",
+            "title": "Software Engineer, StrongDM"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 14:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "How to Build Multi-Agent Systems with ADK and Agent Skills",
+          "zh": "如何使用 ADK 和 Agent Skills 构建多智能体系统"
+        },
+        "speakers": [
+          {
+            "name": "Qingyue (Annie) Wang",
+            "title": "Developer Relations Engineer, Google Cloud"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:30 - 15:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:20 - 15:40",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Vibe Native for More: Why AI Agents Deserve a Better App Framework",
+          "zh": "Vibe Native for More：AI Agent 为什么需要更好的应用框架"
+        },
+        "speakers": [
+          {
+            "name": "Xuan Huang",
+            "title": "Software Architect, Lynx, ByteDance"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:00 - 16:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Bridging the Chasm: Practical AI Experiments in the Servo Engine",
+          "zh": "跨越鸿沟：Servo 引擎中的 AI 实验探索"
+        },
+        "speakers": [
+          {
+            "name": "Gregory Terzian",
+            "title": "Founder, FOSS(Shanghai) Technology"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:20 - 16:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "AI Companion is the New Interface: Building a Learning Agent Device with China's Hardware Ecosystem",
+          "zh": "AI 伴侣是新界面：利用中国硬件生态构建学习 Agent 设备"
+        },
+        "speakers": [
+          {
+            "name": "Jacky Hsu",
+            "title": "Founder & CEO, Ingora"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:40 - 17:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Agent-to-Agent (A2A) Protocol",
+          "zh": "Agent 间通信协议（A2A）"
+        },
+        "speakers": [
+          {
+            "name": "Holt Skinner",
+            "title": "Google Cloud"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "17:00 - 17:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Octos Workshop",
+          "zh": "Octos 工作坊"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 12:00",
+        "type": "workshop"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Makepad Splash",
+          "zh": "Makepad Splash 工作坊"
+        },
+        "speakers": [
+          {
+            "name": "Rik Arends",
+            "title": "Co-Founder, Makepad"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:00 - 15:20",
+        "type": "workshop"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:20 - 15:40",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Embedded AI",
+          "zh": "嵌入式 AI"
+        },
+        "speakers": [
+          {
+            "name": "Prof. Bart Massey",
+            "title": "Portland State University"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:40 - 17:00",
+        "type": "workshop"
+      }
+    ],
+    "agentic-ai-on-edge": [
+      {
+        "title": {
+          "en": "One Year of llama.cpp: Milestones and Future Plans",
+          "zh": "llama.cpp 一年历程：里程碑与未来规划"
+        },
+        "speakers": [
+          {
+            "name": "Xuan-Son Nguyen",
+            "title": "Software Engineer, Hugging Face"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:20 - 10:45",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Bridging AI Ecosystems: RustNN as a Universal WebNN Implementation",
+          "zh": "桥接 AI 生态：RustNN 作为通用 WebNN 实现"
+        },
+        "speakers": [
+          {
+            "name": "Markus Tavenrath",
+            "title": "Principal Engineer Developer Technology, NVIDIA"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:45 - 11:10",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Khal and Inferi: Towards Single-Language Cross-Platform GPU Inference with Rust and rust-gpu",
+          "zh": "Khal 与 Inferi：用 Rust 和 rust-gpu 实现单语言跨平台 GPU 推理"
+        },
+        "speakers": [
+          {
+            "name": "Sébastien Crozet",
+            "title": "Founder, Dimforge"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "11:10 - 11:35",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "KTransformers: Full-Precision Inference for 600B+ MoE Models on Consumer Hardware",
+          "zh": "KTransformers：在消费级硬件上实现 600B+ MoE 模型的全精度推理"
+        },
+        "speakers": [
+          {
+            "name": "Ervin Xie",
+            "title": "Ph.D. Candidate, Tsinghua University"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 10:45",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Power Every Smart Device with Intelligence",
+          "zh": "赋能每一台智能设备"
+        },
+        "speakers": [
+          {
+            "name": "Chao Jia",
+            "title": "VP, ModelBest"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:45 - 11:10",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "OminiX: Fully Automated Native C++ Deployment for Diverse Large-Scale Learning Models",
+          "zh": "OminiX：面向多种大规模学习模型的全自动原生 C++ 部署"
+        },
+        "speakers": [
+          {
+            "name": "Yanzhi Wang",
+            "title": "Professor, Northeastern University"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:10 - 11:35",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Vulkan for Edge AI: Expanding the Hardware Frontier with llama.cpp",
+          "zh": "Vulkan 赋能边缘 AI：用 llama.cpp 拓展硬件前沿"
+        },
+        "speakers": [
+          {
+            "name": "Ruben Ortlam",
+            "title": "Author and Maintainer of the llama.cpp Vulkan Backend, Red Hat"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:35 - 12:00",
+        "type": "talk"
+      }
+    ],
+    "open-source-robotics": [
+      {
+        "title": {
+          "en": "RoboChallenge Annual Report on Large-Scale Real Robot Benchmark",
+          "zh": "RoboChallenge 大规模真实机器人基准测试年度报告"
+        },
+        "speakers": [
+          {
+            "name": "Emily Chen",
+            "title": "Co-Founder, Kaiyuanshe"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 10:45",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "LeRobot Humanoide: An Open Source 3D Printed Robot",
+          "zh": "LeRobot Humanoide：一款开源 3D 打印机器人"
+        },
+        "speakers": [
+          {
+            "name": "Virgile Batto",
+            "title": "Embodied Robotics Engineer, Hugging Face"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:45 - 11:10",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Skill Foundry: An AI That Embodies a Robot, Watches Itself, and Learns",
+          "zh": "Skill Foundry：一个能「化身机器人」、自我观察并学习的 AI"
+        },
+        "speakers": [
+          {
+            "name": "Charbel Dandjinou",
+            "title": "CTO, Founder & AI Research Engineer, Reflexion Robotics"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:50 - 11:25",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Amazing Hand: An Open Source Robotic Hand Tech Report",
+          "zh": "Amazing Hand（一款开源机器人灵巧手）技术报告"
+        },
+        "speakers": [
+          {
+            "name": "Jeremy Laville",
+            "title": "Embodied Robotics Engineer, Hugging Face"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:25 - 12:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Robotics with Zenoh: From ROS 2 to ros-z and Beyond",
+          "zh": "Zenoh 机器人开发：从 ROS 2 到 ros-z 及未来展望"
+        },
+        "speakers": [
+          {
+            "name": "TBD",
+            "title": "Senior Solutions Architect, ZettaScale Technology"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:00 - 14:25",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Reachy Mini: How to Have Fun with Expressive Robotics",
+          "zh": "Reachy Mini——如何玩转富有表现力的机器人"
+        },
+        "speakers": [
+          {
+            "name": "Tom Mulder",
+            "title": "Lifelong Builder, Algoryn"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:25 - 14:50",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Building Visual Navigation Foundation Models with Scalable Simulation Data",
+          "zh": "利用可扩展仿真数据构建视觉导航基础模型"
+        },
+        "speakers": [
+          {
+            "name": "Wenzhe Cai",
+            "title": "Researcher, Shanghai AI Laboratory"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:50 - 15:15",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:15 - 15:40",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Project Nexus: Cross-Platform GPU Rust Multiphysics Simulator for Robotics and Training Data Generation",
+          "zh": "Project Nexus：面向机器人与训练数据生成的跨平台 GPU Rust 多物理场仿真平台"
+        },
+        "speakers": [
+          {
+            "name": "Sébastien Crozet",
+            "title": "Founder, Dimforge"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:40 - 16:05",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "LeRobotDataset: Scaling Across Modalities",
+          "zh": "LeRobotDataset：跨模态扩展"
+        },
+        "speakers": [
+          {
+            "name": "Caroline Pascal",
+            "title": "Robotics Engineer, Hugging Face"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "16:05 - 16:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "XLeRobot: Building an Open-Source Dual-Arm Mobile Robot for Everyone",
+          "zh": "XLeRobot：打造人人可用的开源双臂移动机器人"
+        },
+        "speakers": [
+          {
+            "name": "Vector Wang",
+            "title": "Ph.D. Student, Rice University"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "16:30 - 16:55",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "From Zero to Robot: How to Start an Open Source Robotics Project and Why It Matters",
+          "zh": "从零到机器人：如何启动一个开源机器人项目及其重要意义"
+        },
+        "speakers": [
+          {
+            "name": "Luke Lu",
+            "title": "Founder & CEO, Robolytics"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "16:55 - 17:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Cosmos: Unleashing Video Foundation Models for Physical AI and Generalist Robots",
+          "zh": "Cosmos：释放视频基础模型的潜力，赋能物理 AI 与通用机器人"
+        },
+        "speakers": [
+          {
+            "name": "Jinwei Gu",
+            "title": "Principal Research Scientist and Tech Lead, NVIDIA"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "17:20 - 17:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Enabling Robots to Both \"Think\" and \"Act\"",
+          "zh": "让机器人既能「思考」又能「行动」"
+        },
+        "speakers": [
+          {
+            "name": "Jiaming Liu",
+            "title": "Ph.D. Student, Peking University"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "17:20 - 17:40",
+        "type": "talk"
+      }
+    ],
+    "ws-vllm-paris2026": [
+      {
+        "title": {
+          "en": "vLLM Workshop",
+          "zh": "vLLM 工作坊"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:20 - 12:00",
+        "type": "workshop"
+      }
+    ],
+    "ws-oh-tech-forum": [
+      {
+        "title": {
+          "en": "Démocratisation of AI All Around the World to Shape the Future AGI",
+          "zh": "AI 的全球普及：塑造未来 AGI"
+        },
+        "speakers": [
+          {
+            "name": "Feliana Citradewi",
+            "title": "CEO, Global AI Assembly"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 17:30",
+        "type": "talk"
+      }
+    ],
+    "ws-open-compute": [
+      {
+        "title": {
+          "en": "FlagOS + OpenClaw Platform Overview",
+          "zh": "FlagOS + OpenClaw 平台宣讲"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:10 - 14:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Technology Details of PanEVEL",
+          "zh": "PanEVEL 技术详解"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:10 - 15:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "PanEVEL Official Launch",
+          "zh": "PanEVEL 正式发布"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:30 - 15:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "KernelGen",
+          "zh": "KernelGen"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:00 - 16:20",
+        "type": "talk"
+      }
+    ],
+    "ws-sglang-paris2026": [
+      {
+        "title": {
+          "en": "SGLang Diffusion: A High-Performance Inference Framework for Image and Video Generation",
+          "zh": "SGLang Diffusion：面向图像和视频生成的高性能推理框架"
+        },
+        "speakers": [
+          {
+            "name": "Yuhao Yang",
+            "title": "Developer, SGLang"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 12:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "SGLang: High-Performance Serving Framework for LLMs and Multimodal Models",
+          "zh": "SGLang：面向 LLM 和多模态模型的高性能服务框架"
+        },
+        "speakers": [
+          {
+            "name": "Xinyuan Tong",
+            "title": "Opensource Maintainer, SGLang"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:00 - 17:30",
+        "type": "talk"
+      }
+    ],
+    "ws-own-your-data-paris2026": [
+      {
+        "title": {
+          "en": "Embedding Software Engineering Best Practices into AI Projects with Kedro",
+          "zh": "使用 Kedro 将软件工程最佳实践嵌入 AI 项目"
+        },
+        "speakers": [
+          {
+            "name": "Merel Theisen",
+            "title": "Principal Software Engineer, QuantumBlack"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Notebook.link: Run Notebooks Instantly in Your Browser",
+          "zh": "Notebook.link：在浏览器中即时运行 Notebook"
+        },
+        "speakers": [
+          {
+            "name": "Sylvain Corlay",
+            "title": "CEO, QuantStack"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Accelerated scikit-learn Three Ways",
+          "zh": "三种方式加速 scikit-learn"
+        },
+        "speakers": [
+          {
+            "name": "Tim Head",
+            "title": "Software Engineer, NVIDIA"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "From Model to Metal: An Open Source Stack for Accelerating Artificial Intelligence",
+          "zh": "从模型到芯片：加速人工智能的开源技术栈"
+        },
+        "speakers": [
+          {
+            "name": "Megan Knight",
+            "title": "Director of Software Communities, Arm"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Evaluating Frontier Agents on Economically Valuable Tasks",
+          "zh": "在经济价值任务上评估前沿 Agent"
+        },
+        "speakers": [
+          {
+            "name": "Björn Plüster",
+            "title": "Co-Founder & CTO, ellamind GmbH"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Leading-Edge Tabular AI: Open Table Foundation Models with TabICL",
+          "zh": "前沿表格 AI：TabICL 开放表格基础模型"
+        },
+        "speakers": [
+          {
+            "name": "Gaël Varoquaux",
+            "title": "Chief Science Officer, Probabl"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Python on GPUs: Speeding Up Machine Learning",
+          "zh": "GPU 上的 Python：加速机器学习"
+        },
+        "speakers": [
+          {
+            "name": "Andy Terrel",
+            "title": "CUDA Python Product Lead, NVIDIA"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments",
+          "zh": "公共合成数据：使用合成环境构建开放的最先进 LLM"
+        },
+        "speakers": [
+          {
+            "name": "Anastasia Stasenko",
+            "title": "CEO, Pleias"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "The Adoption of the Python Array API in scikit-learn",
+          "zh": "Python Array API 在 scikit-learn 中的应用"
+        },
+        "speakers": [
+          {
+            "name": "Olivier Grisel",
+            "title": "Software Engineer, Probabl & scikit-learn"
+          },
+          {
+            "name": "Stefanie Senger",
+            "title": "Open Source Developer, Probabl"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Skore: Track, Explore, and Share Your Data Science Workflows",
+          "zh": "Skore：追踪、探索和分享你的数据科学工作流"
+        },
+        "speakers": [
+          {
+            "name": "Fabien Pesquerel",
+            "title": "Developer Relations Engineer, Probabl"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models",
+          "zh": "LightOnOCR：突破开放 OCR 模型的性能-效率帕累托前沿"
+        },
+        "speakers": [
+          {
+            "name": "Said Taghadouini",
+            "title": "ML Research Engineer, LightOn"
+          },
+          {
+            "name": "Aubertin Baptiste",
+            "title": "AI/ML Engineer, LightOn"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Skolar and the Value of Creating Curated ML Skills Education",
+          "zh": "Skolar 与精心策划的 ML 技能教育的价值"
+        },
+        "speakers": [
+          {
+            "name": "Arturo Amor",
+            "title": "ML Engineer, Probabl"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "SciPy's Support for GPUs/PyTorch/CuPy/Jax",
+          "zh": "SciPy 对 GPU/PyTorch/CuPy/Jax 的支持"
+        },
+        "speakers": [
+          {
+            "name": "Evgeni Burovski",
+            "title": "Senior Software Engineer, Quansight"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "The Long Game: Building Europe's Sovereign AI Layer",
+          "zh": "长期布局：构建欧洲主权 AI 层"
+        },
+        "speakers": [
+          {
+            "name": "Nicolas Flores-Herr",
+            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 17:30",
+        "type": "talk"
+      }
+    ]
+  }
 }

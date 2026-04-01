@@ -10,6 +10,7 @@ interface LogoItem {
   image: string;
   imageAlt: string;
   logoClass?: string;
+  url?: string;
 }
 
 interface LogoGroup {
@@ -109,22 +110,20 @@ const { id, title, text, text2, logos, logoGroups, ctaButton } = Astro.props;
                     >
                       <div class={`boxed-logo xll${loop.logoClass ? ` ${loop.logoClass}` : ""}`}>
                         {loop?.image && (
-                          isRemoteImage(loop.image) ? (
-                            <img
-                              class="sponsor-logo-image"
-                              src={loop.image}
-                              alt={loop.imageAlt}
-                              loading="lazy"
-                              decoding="async"
-                            />
+                          loop.url ? (
+                            <a href={loop.url} target="_blank" rel="noopener noreferrer" class="logo-link-overlay" aria-label={loop.imageAlt}>
+                              {isRemoteImage(loop.image) ? (
+                                <img class="sponsor-logo-image" src={loop.image} alt={loop.imageAlt} loading="lazy" decoding="async" />
+                              ) : (
+                                <img class="sponsor-logo-image" src={`/images/sponsors/${loop.image}`} alt={loop.imageAlt} loading="lazy" decoding="async" />
+                              )}
+                            </a>
                           ) : (
-                            <img
-                              class="sponsor-logo-image"
-                              src={`/images/sponsors/${loop.image}`}
-                              alt={loop.imageAlt}
-                              loading="lazy"
-                              decoding="async"
-                            />
+                            isRemoteImage(loop.image) ? (
+                              <img class="sponsor-logo-image" src={loop.image} alt={loop.imageAlt} loading="lazy" decoding="async" />
+                            ) : (
+                              <img class="sponsor-logo-image" src={`/images/sponsors/${loop.image}`} alt={loop.imageAlt} loading="lazy" decoding="async" />
+                            )
                           )
                         )}
                       </div>
@@ -138,30 +137,42 @@ const { id, title, text, text2, logos, logoGroups, ctaButton } = Astro.props;
           <div class="logo-tiles">
             {
               logos?.map((loop) => (
-                  <div class="single-logo-tile">
-                    <div class="boxed-logo xll">
+                <div class="single-logo-tile">
+                  <div class="boxed-logo xll">
                     {loop?.image &&
-                      (isRemoteImage(loop.image) ? (
-                        <img
-                          class="sponsor-logo-image"
-                          src={loop.image}
-                          alt={loop.imageAlt}
-                          loading="lazy"
-                          decoding="async"
-                        />
+                      (loop.url ? (
+                        <a href={loop.url} target="_blank" rel="noopener noreferrer" class="logo-link-overlay" aria-label={loop.imageAlt}>
+                          {isRemoteImage(loop.image) ? (
+                            <img class="sponsor-logo-image" src={loop.image} alt={loop.imageAlt} loading="lazy" decoding="async" />
+                          ) : (
+                            images[`/public/images/sponsors/${loop.image}`] && (
+                              <Picture
+                                src={images[`/public/images/sponsors/${loop.image}`]()}
+                                formats={["webp", "jpg"]}
+                                alt={loop.imageAlt}
+                                widths={[75, 150, 225, 450]}
+                                sizes="(max-width: 480px) 75px, 225px"
+                              />
+                            )
+                          )}
+                        </a>
                       ) : (
-                        images[`/public/images/sponsors/${loop.image}`] && (
-                          <Picture
-                            src={images[`/public/images/sponsors/${loop.image}`]()}
-                            formats={["webp", "jpg"]}
-                            alt={loop.imageAlt}
-                            widths={[75, 150, 225, 450]}
-                            sizes="(max-width: 480px) 75px, 225px"
-                          />
+                        isRemoteImage(loop.image) ? (
+                          <img class="sponsor-logo-image" src={loop.image} alt={loop.imageAlt} loading="lazy" decoding="async" />
+                        ) : (
+                          images[`/public/images/sponsors/${loop.image}`] && (
+                            <Picture
+                              src={images[`/public/images/sponsors/${loop.image}`]()}
+                              formats={["webp", "jpg"]}
+                              alt={loop.imageAlt}
+                              widths={[75, 150, 225, 450]}
+                              sizes="(max-width: 480px) 75px, 225px"
+                            />
+                          )
                         )
                       ))}
-                    </div>
                   </div>
+                </div>
               ))
             }
           </div>
@@ -177,6 +188,18 @@ const { id, title, text, text2, logos, logoGroups, ctaButton } = Astro.props;
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+
+  .single-logo-tile .boxed-logo {
+    border-radius: var(--border-radius);
+  }
+
+  .logo-link-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
   }
 
   .logo-groups {

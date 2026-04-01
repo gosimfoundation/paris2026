@@ -61,20 +61,22 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
 
   <TextAndSponsors
-    id="supporting-organizations"
-    title="支持单位"
-    text="GOSIM Paris 2026 获得多家顶级开源与 AI 组织的鼎力支持。"
+    id="sponsors"
+    title="赞助商"
+    text="GOSIM Paris 2026 由以下领先机构联合主办与赞助支持。"
     text2=""
     logoGroups={[
       {
-        cols: 3,
+        cols: 4,
         logos: [
-          { image: "minimax-wide.png", imageAlt: "MiniMax" },
-          { image: "modelbest.png", imageAlt: "ModelBest" },
-          { image: "kimi-logo.png", imageAlt: "Kimi" },
-          { image: "sgl.png", imageAlt: "SGLang" },
-          { image: "vllm.png", imageAlt: "vLLM" },
-          { image: "zai.png", imageAlt: "智谱 ZAI", logoClass: "m" },
+          { image: "huawei-vertical.png", imageAlt: "华为", logoClass: "xl", url: "https://www.huawei.com" },
+          { image: "csdn.png", imageAlt: "CSDN", url: "https://www.csdn.net" },
+          { image: "1msai.png", imageAlt: "1ms.ai", url: "https://1ms.ai/" },
+          { image: "openharmony.png", imageAlt: "OpenHarmony", url: "https://www.openharmony.cn" },
+          { image: "openbmb.png", imageAlt: "OpenBMB", url: "https://www.openbmb.cn" },
+          { image: "minimax.png", imageAlt: "MiniMax", logoClass: "xl", url: "https://www.minimaxi.com" },
+          { image: "kimi-logo.png", imageAlt: "Kimi", url: "https://kimi.ai" },
+          { image: "zai.png", imageAlt: "智谱 ZAI", logoClass: "xl", url: "https://z.ai" },
         ],
       },
     ]}
@@ -350,29 +352,32 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
     title="演讲嘉宾所在机构"
     text="我们的演讲嘉宾来自高校、科研机构、开源项目及前沿 AI 企业，以下是现场所有机构的完整名单。"
     text2=""
-    logos={[
-      { image: "amazon.png", imageAlt: "Amazon" },
-      { image: "carrefour.png", imageAlt: "Carrefour" },
-      { image: "dimforge.png", imageAlt: "Dimforge" },
-      { image: "ellamind.png", imageAlt: "ellamind" },
-      { image: "fraunhofer.png", imageAlt: "Fraunhofer" },
-      { image: "fudan-university.png", imageAlt: "复旦大学" },
-      { image: "google.png", imageAlt: "Google" },
-      { image: "huawei.png", imageAlt: "华为" },
-      { image: "huggingface.png", imageAlt: "Hugging Face" },
-      { image: "inria.png", imageAlt: "INRIA" },
-      { image: "modelbest.png", imageAlt: "ModelBest" },
-      { image: "moonshot-ai.png", imageAlt: "Moonshot AI（Kimi）" },
-      { image: "mozilla-ai.png", imageAlt: "Mozilla AI" },
-      { image: "nvidia.png", imageAlt: "NVIDIA" },
-      { image: "peking-university.png", imageAlt: "北京大学" },
-      { image: "pleias.png", imageAlt: "Pleias" },
-      { image: "probabl.png", imageAlt: "Probabl" },
-      { image: "quansight.png", imageAlt: "Quansight" },
-      { image: "sgl.png", imageAlt: "SGLang" },
-      { image: "shanghai-ai-lab.png", imageAlt: "上海人工智能实验室" },
-      { image: "tsinghua-university.png", imageAlt: "清华大学" },
-      { image: "zhipuai.png", imageAlt: "智谱AI" },
+    logoGroups={[
+      {
+        cols: 5,
+        logos: [
+          { image: "amazon.png", imageAlt: "Amazon", url: "https://www.amazon.com" },
+          { image: "carrefour.png", imageAlt: "Carrefour", url: "https://www.carrefour.com" },
+          { image: "dimforge.png", imageAlt: "Dimforge", url: "https://www.dimforge.com" },
+          { image: "ellamind.png", imageAlt: "ellamind", url: "https://ellamind.com" },
+          { image: "fraunhofer.png", imageAlt: "Fraunhofer IAIS", url: "https://www.fraunhofer.de" },
+          { image: "fudan-university.png", imageAlt: "复旦大学", url: "https://www.fudan.edu.cn" },
+          { image: "google.png", imageAlt: "Google", url: "https://www.google.com" },
+          { image: "huawei-vertical.png", imageAlt: "华为", logoClass: "xl", url: "https://www.huawei.com" },
+          { image: "huggingface.png", imageAlt: "Hugging Face", url: "https://huggingface.co" },
+          { image: "inria.png", imageAlt: "INRIA", url: "https://www.inria.fr" },
+          { image: "modelbest.png", imageAlt: "ModelBest", url: "https://modelbest.cn/en" },
+          { image: "mozilla-ai.png", imageAlt: "Mozilla Foundation", url: "https://mozilla.ai" },
+          { image: "nvidia.png", imageAlt: "NVIDIA", url: "https://www.nvidia.com" },
+          { image: "peking-university.png", imageAlt: "北京大学", url: "https://www.pku.edu.cn" },
+          { image: "pleias.png", imageAlt: "Pleias", url: "https://pleias.fr" },
+          { image: "probabl.png", imageAlt: "Probabl", url: "https://probabl.ai" },
+          { image: "quansight.png", imageAlt: "Quansight", url: "https://quansight.com" },
+          { image: "sgl.png", imageAlt: "SGLang", url: "https://sglang.ai" },
+          { image: "shanghai-ai-lab.png", imageAlt: "上海人工智能实验室", url: "https://www.shlab.org.cn" },
+          { image: "zhipuai.png", imageAlt: "智谱AI", url: "https://www.zhipuai.cn" },
+        ],
+      },
     ]}
   />
 
