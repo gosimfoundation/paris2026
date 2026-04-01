@@ -213,39 +213,14 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                   <span class="panel-count">{sessions.length} session{sessions.length !== 1 ? "s" : ""}</span>
                 </div>
 
-                {/* Keynotes — always shown in every track */}
-                {keynotes.length > 0 && (
-                  <div class="keynote-block">
-                    <p class="keynote-block-label">★ Keynotes — All Attendees</p>
-                    <div class="session-list">
-                      {keynotes.map((session) => {
-                        const hasContent = session.speakers && session.speakers.length > 0
-                        const slug = createSlug(en(session.title))
-                        return (
-                          <a class="session-card is-keynote" href={`/schedule/${slug}/`}>
-                            <div class="session-left">
-                              <span class="session-time">{session.timeSlot}</span>
-                              <span class="type-badge keynote-badge">KEYNOTE</span>
-                            </div>
-                            <div class="session-right">
-                              <h3 class="session-title">{en(session.title)}</h3>
-                              {hasContent && (
-                                <div class="speaker-list">
-                                  {session.speakers.map((sp: any) => (
-                                    <div class="speaker-row">
-                                      <span class="speaker-name">{sp.name}</span>
-                                      {sp.title && <span class="speaker-role">{sp.title}</span>}
-                                    </div>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
-                          </a>
-                        )
-                      })}
-                    </div>
+                {/* Keynote placeholder */}
+                <div class="keynote-block">
+                  <p class="keynote-block-label">★ Keynotes — All Attendees</p>
+                  <div class="keynote-tbd">
+                    <span class="keynote-tbd-badge">TBD</span>
+                    <span class="keynote-tbd-text">Keynote speakers will be announced soon.</span>
                   </div>
-                )}
+                </div>
 
                 {sessions.length === 0 ? (() => {
                   const otherDays = (catDaysMap[cat.id] || []).filter(d => d !== dayEn)
@@ -666,40 +641,27 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     margin: 0 0 0.65rem 0;
   }
 
-  .keynote-block .session-list {
-    gap: 0.5rem;
+  .keynote-tbd {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0.25rem;
   }
 
-  .session-card.is-keynote {
-    background: #fff;
-    border-left: 3px solid #f59e0b;
+  .keynote-tbd-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    background: #f59e0b;
+    color: #451a03;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    flex-shrink: 0;
   }
 
-  .session-card.is-keynote:hover {
-    background: #fef3c7;
-  }
-
-  .session-card.is-keynote .session-time {
+  .keynote-tbd-text {
+    font-size: 0.85rem;
     color: #92400e;
-  }
-
-  .session-card.is-keynote .session-title {
-    color: #1c1917;
-    font-size: 0.97rem;
-  }
-
-  .session-card.is-keynote .speaker-name {
-    color: #44403c;
-  }
-
-  .session-card.is-keynote .speaker-role {
-    color: #78716c;
-  }
-
-  .keynote-badge {
-    background: #f59e0b !important;
-    color: #451a03 !important;
-    font-weight: 900 !important;
   }
 
   /* ── Break divider ── */
