@@ -192,7 +192,7 @@ const groupedCategories = {
       </div>
     </div>
 
-    <div class="row grid visible" data-filter-grid data-modal-grid style={`--columns: ${speakersData.columns || 5}`}>
+    <div class="row grid visible speakers-grid" data-filter-grid data-modal-grid>
       {
         filteredSpeakers.map((speaker, index) => (
           <div
@@ -300,6 +300,11 @@ const groupedCategories = {
   .section-speakers-grid :global(.grid) {
     padding-top: 1.5rem;
   }
+
+  :global(.speakers-grid) { --columns: 6; }
+  @media screen and (max-width: 1024px) { :global(.speakers-grid) { --columns: 4; } }
+  @media screen and (max-width: 720px)  { :global(.speakers-grid) { --columns: 3; } }
+  @media screen and (max-width: 480px)  { :global(.speakers-grid) { --columns: 2; } }
 
   /* Fix scrolling issues */
   html,

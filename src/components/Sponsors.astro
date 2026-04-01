@@ -26,31 +26,6 @@ const isRemoteImage = (image?: string): boolean =>
     Boolean(image && /^https?:\/\//.test(image));
 ---
 
-<div class="filter-container filter-alpha-animate">
-    <div class="overlay overlay-dark" data-filter-toggle="close">
-        <div class="close" data-filter-toggle="close">
-            <div class="close-fill"></div>
-            <div class="bar bar-top"></div>
-            <div class="bar bar-bottom"></div>
-        </div>
-    </div>
-    <div class="filter-box">
-        <p>Filter:</p>
-        <div class="filter-group" data-filter-group>
-            {sponsorsData.categories.map((category) => (
-                <div
-                    class="single-filter"
-                    data-anchor-target="#grid"
-                    data-filter-status={category.id === "all" ? "active" : "not-active"}
-                    data-filter-category={category.id}
-                >
-                    <span>{getCategoryName(category)}</span>
-                </div>
-            ))}
-        </div>
-    </div>
-</div>
-
 <section
     class="section section-partners-grid"
     id="grid"
@@ -59,27 +34,6 @@ const isRemoteImage = (image?: string): boolean =>
     data-bg-section="lightgray"
 >
     <div class="container">
-        <div class="row row-filter">
-            <div class="col">
-                <div class="filter-group" data-filter-group>
-                    {
-                        sponsorsData.categories.map((category) => (
-                            <div
-                                class="single-filter"
-                                data-filter-status={
-                                    category.id === "all"
-                                        ? "active"
-                                        : "not-active"
-                                }
-                                data-filter-category={category.id}
-                            >
-                                <span>{getCategoryName(category)}</span>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
-        </div>
         <div class="grid-wrap visible" data-filter-grid>
             {
                 sponsorsData.categories.map(
@@ -103,6 +57,9 @@ const isRemoteImage = (image?: string): boolean =>
                                         .map((partner) => (
                                             <div class="col">
                                                 <div class="single-partners-card card-hover">
+                                                    {partner.url && (
+                                                        <a class="sponsor-link-overlay" href={partner.url} target="_blank" rel="noopener noreferrer" aria-label="Sponsor website" />
+                                                    )}
                                                     <div class="overlay card-fill" />
                                                     <div class={`card-logo boxed-logo${partner.logoClass ? ` ${partner.logoClass}` : ''}`}>
                                                         {partner?.image &&
@@ -159,5 +116,11 @@ const isRemoteImage = (image?: string): boolean =>
         width: 100%;
         height: auto;
         object-fit: contain;
+    }
+    .sponsor-link-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 3;
+        border-radius: inherit;
     }
 </style>
