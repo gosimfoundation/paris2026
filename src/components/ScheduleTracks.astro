@@ -17,6 +17,65 @@ const en = (obj: any): string => {
   return obj.en || obj.zh || ""
 }
 
+// Get text in current language (for UI labels and translated content like break names)
+const loc = (obj: any): string => {
+  if (!obj) return ""
+  if (typeof obj === "string") return obj
+  return obj[lang] || obj.en || obj.zh || ""
+}
+
+const i18n = {
+  en: {
+    conferenceTracks: "Conference Tracks",
+    workshops: "Workshops",
+    overview: "Overview",
+    allTracks: "All Tracks",
+    keynotesLabel: "★ Keynotes — All Attendees",
+    tbd: "TBD",
+    keynotesTbd: "Keynote speakers will be announced soon.",
+    noSessionsOnDay: (day: string) => `No sessions on ${day} for this track.`,
+    noSessions: "No sessions scheduled for this track.",
+    sessionsScheduledOn: "Sessions are scheduled on:",
+    viewDaySessions: (day: string) => `→ View ${day} sessions`,
+    disclaimer: "Schedule is subject to change.",
+    dayOnly: (day: string) => `${day} only`,
+    tracks: "Tracks",
+  },
+  zh: {
+    conferenceTracks: "会议轨",
+    workshops: "工作坊",
+    overview: "概览",
+    allTracks: "所有议题",
+    keynotesLabel: "★ 主题演讲 — 全体参会者",
+    tbd: "待定",
+    keynotesTbd: "主题演讲嘉宾将很快公布。",
+    noSessionsOnDay: (day: string) => `${day} 暂无该议题的会议安排。`,
+    noSessions: "该议题暂无会议安排。",
+    sessionsScheduledOn: "会议安排在：",
+    viewDaySessions: (day: string) => `→ 查看 ${day} 的会议`,
+    disclaimer: "日程安排可能有所变动。",
+    dayOnly: (day: string) => `仅 ${day}`,
+    tracks: "议题",
+  },
+  fr: {
+    conferenceTracks: "Thématiques",
+    workshops: "Ateliers",
+    overview: "Vue d'ensemble",
+    allTracks: "Tous les thèmes",
+    keynotesLabel: "★ Conférences plénières — Tous les participants",
+    tbd: "À confirmer",
+    keynotesTbd: "Les conférenciers seront annoncés prochainement.",
+    noSessionsOnDay: (day: string) => `Aucune session le ${day} pour ce thème.`,
+    noSessions: "Aucune session prévue pour ce thème.",
+    sessionsScheduledOn: "Sessions prévues le :",
+    viewDaySessions: (day: string) => `→ Voir les sessions du ${day}`,
+    disclaimer: "Le programme est susceptible de changer.",
+    dayOnly: (day: string) => `${day} uniquement`,
+    tracks: "Thèmes",
+  },
+}
+const t = i18n[lang] || i18n.en
+
 const isWorkshop = (id: string) => id.startsWith("ws-")
 const tracks = scheduleData.categories.filter((c) => !isWorkshop(c.id))
 const workshops = scheduleData.categories.filter((c) => isWorkshop(c.id))
@@ -111,8 +170,8 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
           </button>
         ))}
         <button class="sched-day-btn" data-view="overview">
-          <span class="day-label">Overview</span>
-          <span class="day-date">All Tracks</span>
+          <span class="day-label">{t.overview}</span>
+          <span class="day-date">{t.allTracks}</span>
         </button>
       </div>
     </div>
@@ -124,7 +183,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
       <!-- Left Sidebar -->
       <aside class="sched-sidebar">
         <div class="track-group">
-          <p class="track-group-label">Conference Tracks</p>
+          <p class="track-group-label">{t.conferenceTracks}</p>
           {tracks.map((cat, i) => {
             const catDays = catDaysMap[cat.id] || []
             const dayBadge = catDays.length === days.length ? null : catDays.join(" & ")
@@ -139,7 +198,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                 <span class="track-info">
                   <span class="track-name">{en(cat.name)}</span>
                   {cat.room && <span class="track-room">{en(cat.room)}</span>}
-                  {dayBadge && <span class="track-day-badge">{dayBadge} only</span>}
+                  {dayBadge && <span class="track-day-badge">{t.dayOnly(dayBadge)}</span>}
                 </span>
               </button>
             )
@@ -147,7 +206,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
         </div>
 
         <div class="track-group">
-          <p class="track-group-label">Workshops</p>
+          <p class="track-group-label">{t.workshops}</p>
           {workshops.map((cat) => {
             const catDays = catDaysMap[cat.id] || []
             const dayBadge = catDays.length === days.length ? null : catDays.join(" & ")
@@ -176,7 +235,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
         <!-- Mobile track selector -->
         <div class="mobile-track-scroll">
           <div class="mobile-track-inner">
-            <p class="mobile-track-label">Tracks</p>
+            <p class="mobile-track-label">{t.tracks}</p>
             <div class="mobile-track-pills">
               {allCategories.map((cat, i) => (
                 <button
@@ -215,10 +274,10 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
 
                 {/* Keynote placeholder */}
                 <div class="keynote-block">
-                  <p class="keynote-block-label">★ Keynotes — All Attendees</p>
+                  <p class="keynote-block-label">{t.keynotesLabel}</p>
                   <div class="keynote-tbd">
-                    <span class="keynote-tbd-badge">TBD</span>
-                    <span class="keynote-tbd-text">Keynote speakers will be announced soon.</span>
+                    <span class="keynote-tbd-badge">{t.tbd}</span>
+                    <span class="keynote-tbd-text">{t.keynotesTbd}</span>
                   </div>
                 </div>
 
@@ -228,16 +287,16 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                     <div class="no-sessions">
                       {otherDays.length > 0 ? (
                         <>
-                          <p class="no-sessions-msg">No sessions on {dayEn} for this track.</p>
-                          <p class="no-sessions-hint">Sessions are scheduled on:</p>
+                          <p class="no-sessions-msg">{t.noSessionsOnDay(dayEn)}</p>
+                          <p class="no-sessions-hint">{t.sessionsScheduledOn}</p>
                           <div class="no-sessions-days">
                             {otherDays.map(d => (
-                              <button class="switch-day-btn" data-switch-day={d}>→ View {d} sessions</button>
+                              <button class="switch-day-btn" data-switch-day={d}>{t.viewDaySessions(d)}</button>
                             ))}
                           </div>
                         </>
                       ) : (
-                        <p class="no-sessions-msg">No sessions scheduled for this track.</p>
+                        <p class="no-sessions-msg">{t.noSessions}</p>
                       )}
                     </div>
                   )
@@ -253,7 +312,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                             <span class="break-line" />
                             <span class="break-label">
                               {session.timeSlot && <span class="break-time">{session.timeSlot}</span>}
-                              {en(session.title)}
+                              {loc(session.title)}
                             </span>
                             <span class="break-line" />
                           </div>
@@ -291,7 +350,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
           })
         })}
 
-        <p class="disclaimer">Schedule is subject to change.</p>
+        <p class="disclaimer">{t.disclaimer}</p>
       </div>
     </div>
   </div>
