@@ -231,7 +231,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
               <span class="track-info">
                 <span class="track-name">{en(cat.name)}</span>
                 {cat.room && <span class="track-room">{en(cat.room)}</span>}
-                {dayBadge && <span class="track-day-badge">{dayBadge} only</span>}
+                {dayBadge && <span class="track-day-badge">{t.dayOnly(dayBadge)}</span>}
               </span>
             </button>
             )
