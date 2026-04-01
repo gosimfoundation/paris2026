@@ -1081,25 +1081,6 @@
       },
       {
         "title": {
-          "en": "Agent-to-Agent (A2A) Protocol",
-          "zh": "Agent 间通信协议（A2A）"
-        },
-        "speakers": [
-          {
-            "name": "Holt Skinner",
-            "title": "Google Cloud"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "17:00 - 17:20",
-        "type": "talk"
-      },
-      {
-        "title": {
           "en": "Morning Coffee",
           "zh": "茶歇",
           "fr": "Café du matin"
