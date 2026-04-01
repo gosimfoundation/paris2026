@@ -535,7 +535,7 @@ const speakerFilters = [
                 <span class="speaker-hive-wall"></span>
                 {
                   speaker.image ? (
-                    <img src={speaker.image} alt={speaker.name} class="speaker-node-image" />
+                    <img src={speaker.image} alt={speaker.name} class="speaker-node-image" loading="lazy" />
                   ) : (
                     <span class="speaker-node-monogram">{speaker.monogram}</span>
                   )

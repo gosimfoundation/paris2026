@@ -33,20 +33,36 @@ const todayInsertIndex = events.findIndex((e) => e.isoDate > todayIso);
 
 // Build ordered list of items (events + today marker) for rendering
 type TimelineItem =
-  | { kind: "event"; ev: (typeof events)[0]; index: number; side: string; type: string; position: number }
+  | { kind: "event"; ev: (typeof events)[0]; index: number; side: string; type: string; position: number; flip: boolean }
   | { kind: "today" };
 
 const items: TimelineItem[] = [];
 let todayInserted = false;
+
+// Assign sides, flipping to avoid same-side events that are too close (< 8% apart)
+const sides: string[] = [];
+events.forEach((_, i) => {
+  const preferred = i % 2 === 0 ? "above" : "below";
+  if (i === 0) { sides.push(preferred); return; }
+  // Check last assigned side at a close position
+  const tooClose = positions[i] - positions[i - 1] < 8;
+  if (tooClose && sides[i - 1] === preferred) {
+    sides.push(preferred === "above" ? "below" : "above");
+  } else {
+    sides.push(preferred);
+  }
+});
 
 events.forEach((ev, i) => {
   if (showToday && !todayInserted && todayInsertIndex === i) {
     items.push({ kind: "today" });
     todayInserted = true;
   }
-  const side = i % 2 === 0 ? "above" : "below";
+  const side = sides[i];
   const t = ev.type || "event";
-  items.push({ kind: "event", ev, index: i, side, type: t, position: positions[i] });
+  // Flip label to left-of-dot when very close to the next event
+  const flip = i < events.length - 1 && positions[i + 1] - positions[i] < 4;
+  items.push({ kind: "event", ev, index: i, side, type: t, position: positions[i], flip });
 });
 
 if (showToday && !todayInserted) {
@@ -83,7 +99,7 @@ const isoDateList = events.map((e) => e.isoDate);
           );
         }
         return (
-          <div class={`tl-ev tl-ev--${item.side} tl-ev--${item.type}`} style={`left:${item.position}%`}>
+          <div class={`tl-ev tl-ev--${item.side} tl-ev--${item.type}${item.flip ? " tl-ev--flip" : ""}`} style={`left:${item.position}%`}>
             <div class="tl-dot"></div>
             <div class="tl-info">
               <h4>{item.ev.date}</h4>
@@ -163,6 +179,13 @@ const isoDateList = events.map((e) => e.isoDate);
   /* below: label sits below dot */
   .tl-ev--below .tl-info {
     top: 28px;
+  }
+
+  /* flipped: label extends LEFT of dot, right-aligned */
+  .tl-ev--flip .tl-info {
+    left: auto;
+    right: 10px;
+    text-align: right;
   }
 
   /* ---- today marker ---- */
