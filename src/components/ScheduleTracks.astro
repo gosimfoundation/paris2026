@@ -27,7 +27,7 @@ const loc = (obj: any): string => {
 const i18n = {
   en: {
     conferenceTracks: "Conference Tracks",
-    workshops: "Workshops",
+    workshops: "Workshop",
     overview: "Overview",
     allTracks: "All Tracks",
     keynotesLabel: "★ Keynotes — All Attendees",
@@ -40,15 +40,17 @@ const i18n = {
     disclaimer: "Schedule is subject to change.",
     dayOnly: (day: string) => `${day} only`,
     tracks: "Tracks",
+    sessionCount: (n: number) => `${n} session${n !== 1 ? "s" : ""}`,
+    typeLabels: { keynote: "Keynote", talk: "Talk", panel: "Panel", break: "Break", workshop: "Workshop" },
   },
   zh: {
-    conferenceTracks: "会议轨",
-    workshops: "工作坊",
+    conferenceTracks: "主题演讲",
+    workshops: "Workshop",
     overview: "概览",
     allTracks: "所有议题",
-    keynotesLabel: "★ 主题演讲 — 全体参会者",
-    tbd: "待定",
-    keynotesTbd: "主题演讲嘉宾将很快公布。",
+    keynotesLabel: "★ 主旨演讲 — 全体参会者",
+    tbd: "TBD",
+    keynotesTbd: "主旨演讲嘉宾将很快公布。",
     noSessionsOnDay: (day: string) => `${day} 暂无该议题的会议安排。`,
     noSessions: "该议题暂无会议安排。",
     sessionsScheduledOn: "会议安排在：",
@@ -56,14 +58,16 @@ const i18n = {
     disclaimer: "日程安排可能有所变动。",
     dayOnly: (day: string) => `仅 ${day}`,
     tracks: "议题",
+    sessionCount: (n: number) => `${n} 场演讲`,
+    typeLabels: { keynote: "主旨演讲", talk: "演讲", panel: "圆桌", break: "休息", workshop: "Workshop" },
   },
   fr: {
-    conferenceTracks: "Thématiques",
-    workshops: "Ateliers",
+    conferenceTracks: "Conference Tracks",
+    workshops: "Workshop",
     overview: "Vue d'ensemble",
     allTracks: "Tous les thèmes",
     keynotesLabel: "★ Conférences plénières — Tous les participants",
-    tbd: "À confirmer",
+    tbd: "TBD",
     keynotesTbd: "Les conférenciers seront annoncés prochainement.",
     noSessionsOnDay: (day: string) => `Aucune session le ${day} pour ce thème.`,
     noSessions: "Aucune session prévue pour ce thème.",
@@ -72,6 +76,8 @@ const i18n = {
     disclaimer: "Le programme est susceptible de changer.",
     dayOnly: (day: string) => `${day} uniquement`,
     tracks: "Thèmes",
+    sessionCount: (n: number) => `${n} session${n !== 1 ? "s" : ""}`,
+    typeLabels: { keynote: "Keynote", talk: "Conférence", panel: "Table ronde", break: "Pause", workshop: "Workshop" },
   },
 }
 const t = i18n[lang] || i18n.en
@@ -122,14 +128,18 @@ const TRACK_COLORS: Record<string, string> = {
 const WORKSHOP_COLOR = "#475569"
 const trackColor = (id: string) => TRACK_COLORS[id] || WORKSHOP_COLOR
 
-const TYPE_META: Record<string, { label: string; bg: string; fg: string }> = {
-  keynote:  { label: "Keynote",  bg: "#0f172a", fg: "#ffffff" },
-  talk:     { label: "Talk",     bg: "#e2e8f0", fg: "#475569" },
-  panel:    { label: "Panel",    bg: "#e2e8f0", fg: "#475569" },
-  break:    { label: "Break",    bg: "#e2e8f0", fg: "#94a3b8" },
-  workshop: { label: "Workshop", bg: "#e2e8f0", fg: "#475569" },
+const TYPE_BG_FG: Record<string, { bg: string; fg: string }> = {
+  keynote:  { bg: "#0f172a", fg: "#ffffff" },
+  talk:     { bg: "#e2e8f0", fg: "#475569" },
+  panel:    { bg: "#e2e8f0", fg: "#475569" },
+  break:    { bg: "#e2e8f0", fg: "#94a3b8" },
+  workshop: { bg: "#e2e8f0", fg: "#475569" },
 }
-const typeMeta = (type: string) => TYPE_META[type] || { label: type || "Talk", bg: "#e2e8f0", fg: "#475569" }
+const typeMeta = (type: string) => {
+  const style = TYPE_BG_FG[type] || { bg: "#e2e8f0", fg: "#475569" }
+  const label = (t.typeLabels as Record<string, string>)[type] || type || t.typeLabels.talk
+  return { label, ...style }
+}
 
 const createSlug = (title: string) =>
   title
@@ -269,7 +279,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                     <h2 class="panel-title">{en(cat.name)}</h2>
                     {cat.room && <span class="panel-room">{en(cat.room)}</span>}
                   </div>
-                  <span class="panel-count">{sessions.length} session{sessions.length !== 1 ? "s" : ""}</span>
+                  <span class="panel-count">{t.sessionCount(sessions.length)}</span>
                 </div>
 
                 {/* Keynote placeholder */}
