@@ -3,18 +3,18 @@
 import Layout from "layouts/LayoutLanding.astro";
 import GetTickets from "components/GetTickets.astro";
 import HeroText from "components/HeroText.astro";
-import BilingualSchedule from "components/BilingualSchedule.astro";
+import ScheduleTracks from "components/ScheduleTracks.astro";
 ---
 
 <Layout
-  title="May 5 – GOSIM Paris 2026"
+  title="Schedule – GOSIM Paris 2026"
   description="GOSIM Paris 2026 is a gathering of open-source AI projects, developers, researchers, and industry sponsors to share knowledge, learn from each other, and collaborate."
   navBackground="light"
   pageTransitionName="May 5"
 >
-  <HeroText title="Schedule: May 5" lightgray />
+  <HeroText title="Schedule" lightgray />
 
-  <BilingualSchedule currentDay="May 5" />
+  <ScheduleTracks currentDay="May 5" lang="en" speakerBasePath="/speakers/" />
 
   <GetTickets
     title="Grab your GOSIM Paris ticket"

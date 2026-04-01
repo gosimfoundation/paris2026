@@ -12,19 +12,21 @@ interface Props {
   className?: string
   fallback?: string
   showBothLanguages?: boolean
+  lang?: 'en' | 'zh' | 'fr'
 }
 
-const { 
-  text, 
-  element = 'span', 
-  className = '', 
+const {
+  text,
+  element = 'span',
+  className = '',
   fallback = '',
-  showBothLanguages = true
+  lang,
+  showBothLanguages = lang ? false : true
 } = Astro.props
 
-// Helper function to determine language from URL
-const isChinesePage = Astro.url.pathname.startsWith('/zh/')
-const isFrenchPage = Astro.url.pathname.startsWith('/fr/')
+// Helper function to determine language from URL (overridden by lang prop)
+const isChinesePage = lang ? lang === 'zh' : Astro.url.pathname.startsWith('/zh/')
+const isFrenchPage = lang ? lang === 'fr' : Astro.url.pathname.startsWith('/fr/')
 
 // Helper function to get bilingual text content
 const getBilingualContent = (textData: BilingualTextData | string) => {

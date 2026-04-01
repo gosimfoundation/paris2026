@@ -2,22 +2,6 @@
   "days": [
     {
       "date": {
-        "en": "May 4",
-        "zh": "5月4日"
-      },
-      "title": {
-        "en": "Day 0 — AI Vision Forum",
-        "zh": "第零天 — AI愿景论坛",
-        "fr": "Jour 0 — AI Vision Forum"
-      },
-      "url": {
-        "en": "/schedule-day-0/",
-        "zh": "/zh/schedule-day-0/",
-        "fr": "/fr/schedule-day-0/"
-      }
-    },
-    {
-      "date": {
         "en": "May 5",
         "zh": "5月5日"
       },
@@ -58,9 +42,9 @@
         "fr": "Sommet Agentic AI"
       },
       "room": {
-        "en": "Main Stage",
-        "zh": "主会场",
-        "fr": "Scène principale"
+        "en": "Master Stage",
+        "zh": "主舞台",
+        "fr": "Scène Principale"
       }
     },
     {
@@ -71,9 +55,9 @@
         "fr": "Modèles Open Source"
       },
       "room": {
-        "en": "Track A",
-        "zh": "分会场 A",
-        "fr": "Piste A"
+        "en": "Open Stage",
+        "zh": "开放舞台",
+        "fr": "Scène Ouverte"
       }
     },
     {
@@ -84,9 +68,9 @@
         "fr": "Agentic OS & App"
       },
       "room": {
-        "en": "Track B",
-        "zh": "分会场 B",
-        "fr": "Piste B"
+        "en": "Junior Stage",
+        "zh": "Jr. 舞台",
+        "fr": "Scène Junior"
       }
     },
     {
@@ -97,9 +81,9 @@
         "fr": "Agentic AI on Edge"
       },
       "room": {
-        "en": "Track C",
-        "zh": "分会场 C",
-        "fr": "Piste C"
+        "en": "Central Room",
+        "zh": "中央会议室",
+        "fr": "Salle Centrale"
       }
     },
     {
@@ -110,9 +94,9 @@
         "fr": "Robotique Open Source"
       },
       "room": {
-        "en": "Track D",
-        "zh": "分会场 D",
-        "fr": "Piste D"
+        "en": "Founders Cafe",
+        "zh": "创始人咖啡厅",
+        "fr": "Founders Cafe"
       }
     },
     {
@@ -123,9 +107,9 @@
         "fr": "Atelier vLLM"
       },
       "room": {
-        "en": "Workshop Room",
-        "zh": "工作坊会场",
-        "fr": "Salle Atelier"
+        "en": "Founders Cafe",
+        "zh": "创始人咖啡厅",
+        "fr": "Founders Cafe"
       }
     },
     {
@@ -136,9 +120,9 @@
         "fr": "Forum Technique OpenHarmony"
       },
       "room": {
-        "en": "Workshop Room",
-        "zh": "工作坊会场",
-        "fr": "Salle Atelier"
+        "en": "Founders Cafe",
+        "zh": "创始人咖啡厅",
+        "fr": "Founders Cafe"
       }
     },
     {
@@ -149,9 +133,9 @@
         "fr": "Open Compute pour l'IA Agentique"
       },
       "room": {
-        "en": "Workshop Room",
-        "zh": "工作坊会场",
-        "fr": "Salle Atelier"
+        "en": "Central Room",
+        "zh": "中央会议室",
+        "fr": "Salle Centrale"
       }
     },
     {
@@ -162,9 +146,9 @@
         "fr": "Atelier SGLang"
       },
       "room": {
-        "en": "Workshop Room",
-        "zh": "工作坊会场",
-        "fr": "Salle Atelier"
+        "en": "Central Room",
+        "zh": "中央会议室",
+        "fr": "Salle Centrale"
       }
     },
     {
@@ -175,9 +159,9 @@
         "fr": "Atelier Data Science & IA"
       },
       "room": {
-        "en": "Workshop Room",
-        "zh": "工作坊会场",
-        "fr": "Salle Atelier"
+        "en": "Open Stage",
+        "zh": "开放舞台",
+        "fr": "Scène Ouverte"
       }
     },
     {
@@ -188,9 +172,9 @@
         "fr": "Atelier Application Agentique"
       },
       "room": {
-        "en": "Workshop Room",
-        "zh": "工作坊会场",
-        "fr": "Salle Atelier"
+        "en": "Junior Stage",
+        "zh": "Jr. 舞台",
+        "fr": "Scène Junior"
       }
     }
   ],

@@ -1,0 +1,938 @@
+---
+import scheduleData from "json/ScheduleBilingual.json"
+import AgendaOverview from "components/AgendaOverview.astro"
+
+interface Props {
+  currentDay?: string
+  lang?: "en" | "zh" | "fr"
+  speakerBasePath?: string
+}
+
+const { lang = "en", speakerBasePath = "/speakers/" } = Astro.props
+
+// Get English text from bilingual objects
+const en = (obj: any): string => {
+  if (!obj) return ""
+  if (typeof obj === "string") return obj
+  return obj.en || obj.zh || ""
+}
+
+const isWorkshop = (id: string) => id.startsWith("ws-")
+const tracks = scheduleData.categories.filter((c) => !isWorkshop(c.id))
+const workshops = scheduleData.categories.filter((c) => isWorkshop(c.id))
+const allCategories = [...tracks, ...workshops]
+
+// Collect all keynotes across every category for a given day
+const getKeynotes = (day: string) => {
+  const result: any[] = []
+  for (const cat of allCategories) {
+    const all = (scheduleData.sessions as Record<string, any[]>)[cat.id] || []
+    all.filter((s) => en(s.date) === day && s.type === "keynote").forEach((s) => result.push(s))
+  }
+  // Dedupe by title + timeSlot in case a keynote appears in multiple categories
+  const seen = new Set<string>()
+  return result.filter((s) => {
+    const key = `${s.timeSlot}||${en(s.title)}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  }).sort((a, b) => (a.timeSlot || "").localeCompare(b.timeSlot || ""))
+}
+
+// Get non-keynote sessions for a specific day + category, sorted by time
+const getSessions = (catId: string, day: string) => {
+  const all = (scheduleData.sessions as Record<string, any[]>)[catId] || []
+  return all
+    .filter((s) => en(s.date) === day && s.type !== "keynote")
+    .sort((a, b) => (a.timeSlot || "").localeCompare(b.timeSlot || ""))
+}
+
+const TRACK_COLORS: Record<string, string> = {
+  "agentic-ai-summit":          "#dc2626",
+  "open-source-model":          "#0f766e",
+  "ai-generative-app":          "#2563eb",
+  "agentic-ai-on-edge":         "#ca8a04",
+  "open-source-robotics":       "#0891b2",
+  "ws-vllm-paris2026":          "#4f46e5",
+  "ws-oh-tech-forum":           "#be123c",
+  "ws-open-compute":            "#0f766e",
+  "ws-sglang-paris2026":        "#7c3aed",
+  "ws-own-your-data-paris2026": "#0f766e",
+  "ws-agentic-app":             "#2563eb",
+}
+const WORKSHOP_COLOR = "#475569"
+const trackColor = (id: string) => TRACK_COLORS[id] || WORKSHOP_COLOR
+
+const TYPE_META: Record<string, { label: string; bg: string; fg: string }> = {
+  keynote:  { label: "Keynote",  bg: "#0f172a", fg: "#ffffff" },
+  talk:     { label: "Talk",     bg: "#e2e8f0", fg: "#475569" },
+  panel:    { label: "Panel",    bg: "#e2e8f0", fg: "#475569" },
+  break:    { label: "Break",    bg: "#e2e8f0", fg: "#94a3b8" },
+  workshop: { label: "Workshop", bg: "#e2e8f0", fg: "#475569" },
+}
+const typeMeta = (type: string) => TYPE_META[type] || { label: type || "Talk", bg: "#e2e8f0", fg: "#475569" }
+
+const createSlug = (title: string) =>
+  title
+    .toLowerCase()
+    .replace(/[^\w\s\u4e00-\u9fff-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .trim()
+
+const days = scheduleData.days
+const firstDay = en(days[0]?.date)
+const firstCat = allCategories[0]?.id || ""
+
+// Which days each category has at least one (non-keynote) session
+const catDaysMap: Record<string, string[]> = {}
+for (const cat of allCategories) {
+  catDaysMap[cat.id] = days
+    .map((d) => en(d.date))
+    .filter((dayEn) => getSessions(cat.id, dayEn).length > 0)
+}
+
+// Short day label for display (e.g. "May 5" → "May 5")
+const dayLabels: Record<string, string> = {}
+for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
+---
+
+<section class="sched-section" data-bg-section="lightgray" data-theme-section="light">
+
+  <!-- Day Tabs -->
+  <div class="sched-day-nav">
+    <div class="day-nav-inner">
+      <div class="day-tabs-track">
+        {days.map((day, i) => (
+          <button class={`sched-day-btn${i === 0 ? " active" : ""}`} data-day={en(day.date)}>
+            <span class="day-label">{en(day.title)}</span>
+            <span class="day-date">{en(day.date)}</span>
+          </button>
+        ))}
+        <button class="sched-day-btn" data-view="overview">
+          <span class="day-label">Overview</span>
+          <span class="day-date">All Tracks</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="sched-container">
+    <div class="sched-body">
+
+      <!-- Left Sidebar -->
+      <aside class="sched-sidebar">
+        <div class="track-group">
+          <p class="track-group-label">Conference Tracks</p>
+          {tracks.map((cat, i) => {
+            const catDays = catDaysMap[cat.id] || []
+            const dayBadge = catDays.length === days.length ? null : catDays.join(" & ")
+            return (
+              <button
+                class={`sched-track-btn${i === 0 ? " active" : ""}`}
+                data-track={cat.id}
+                data-cat-days={catDays.join(",")}
+                style={`--tc: ${trackColor(cat.id)}`}
+              >
+                <span class="track-dot"></span>
+                <span class="track-info">
+                  <span class="track-name">{en(cat.name)}</span>
+                  {cat.room && <span class="track-room">{en(cat.room)}</span>}
+                  {dayBadge && <span class="track-day-badge">{dayBadge} only</span>}
+                </span>
+              </button>
+            )
+          })}
+        </div>
+
+        <div class="track-group">
+          <p class="track-group-label">Workshops</p>
+          {workshops.map((cat) => {
+            const catDays = catDaysMap[cat.id] || []
+            const dayBadge = catDays.length === days.length ? null : catDays.join(" & ")
+            return (
+            <button
+              class="sched-track-btn"
+              data-track={cat.id}
+              data-cat-days={catDays.join(",")}
+              style={`--tc: ${trackColor(cat.id)}`}
+            >
+              <span class="track-dot"></span>
+              <span class="track-info">
+                <span class="track-name">{en(cat.name)}</span>
+                {cat.room && <span class="track-room">{en(cat.room)}</span>}
+                {dayBadge && <span class="track-day-badge">{dayBadge} only</span>}
+              </span>
+            </button>
+            )
+          })}
+        </div>
+      </aside>
+
+      <!-- Sessions Panel -->
+      <div class="sched-main">
+
+        <!-- Mobile track selector -->
+        <div class="mobile-track-scroll">
+          <div class="mobile-track-inner">
+            <p class="mobile-track-label">Tracks</p>
+            <div class="mobile-track-pills">
+              {allCategories.map((cat, i) => (
+                <button
+                  class={`mobile-track-pill${i === 0 ? " active" : ""}`}
+                  data-track={cat.id}
+                  style={`--tc: ${trackColor(cat.id)}`}
+                >
+                  {en(cat.name)}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- One panel per day × track combination -->
+        {days.map((day) => {
+          const dayEn = en(day.date)
+          const keynotes = getKeynotes(dayEn)
+          return allCategories.map((cat) => {
+            const sessions = getSessions(cat.id, dayEn)
+            const color = trackColor(cat.id)
+            return (
+              <div
+                class="track-panel"
+                data-panel-day={dayEn}
+                data-panel-track={cat.id}
+                style="display:none"
+              >
+                <div class="panel-header" style={`border-left-color: ${color}`}>
+                  <div class="panel-header-left">
+                    <h2 class="panel-title">{en(cat.name)}</h2>
+                    {cat.room && <span class="panel-room">{en(cat.room)}</span>}
+                  </div>
+                  <span class="panel-count">{sessions.length} session{sessions.length !== 1 ? "s" : ""}</span>
+                </div>
+
+                {/* Keynotes — always shown in every track */}
+                {keynotes.length > 0 && (
+                  <div class="keynote-block">
+                    <p class="keynote-block-label">★ Keynotes — All Attendees</p>
+                    <div class="session-list">
+                      {keynotes.map((session) => {
+                        const hasContent = session.speakers && session.speakers.length > 0
+                        const slug = createSlug(en(session.title))
+                        return (
+                          <a class="session-card is-keynote" href={`/schedule/${slug}/`}>
+                            <div class="session-left">
+                              <span class="session-time">{session.timeSlot}</span>
+                              <span class="type-badge keynote-badge">KEYNOTE</span>
+                            </div>
+                            <div class="session-right">
+                              <h3 class="session-title">{en(session.title)}</h3>
+                              {hasContent && (
+                                <div class="speaker-list">
+                                  {session.speakers.map((sp: any) => (
+                                    <div class="speaker-row">
+                                      <span class="speaker-name">{sp.name}</span>
+                                      {sp.title && <span class="speaker-role">{sp.title}</span>}
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          </a>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {sessions.length === 0 ? (() => {
+                  const otherDays = (catDaysMap[cat.id] || []).filter(d => d !== dayEn)
+                  return (
+                    <div class="no-sessions">
+                      {otherDays.length > 0 ? (
+                        <>
+                          <p class="no-sessions-msg">No sessions on {dayEn} for this track.</p>
+                          <p class="no-sessions-hint">Sessions are scheduled on:</p>
+                          <div class="no-sessions-days">
+                            {otherDays.map(d => (
+                              <button class="switch-day-btn" data-switch-day={d}>→ View {d} sessions</button>
+                            ))}
+                          </div>
+                        </>
+                      ) : (
+                        <p class="no-sessions-msg">No sessions scheduled for this track.</p>
+                      )}
+                    </div>
+                  )
+                })() : (
+                  <div class="session-list">
+                    {sessions.map((session) => {
+                      const meta = typeMeta(session.type)
+                      const isBreak = session.type === "break"
+                      const hasContent = !isBreak && session.speakers && session.speakers.length > 0
+                      if (isBreak) {
+                        return (
+                          <div class="break-divider">
+                            <span class="break-line" />
+                            <span class="break-label">
+                              {session.timeSlot && <span class="break-time">{session.timeSlot}</span>}
+                              {en(session.title)}
+                            </span>
+                            <span class="break-line" />
+                          </div>
+                        )
+                      }
+                      const slug = createSlug(en(session.title))
+                      return (
+                        <a class="session-card" href={`/schedule/${slug}/`}>
+                          <div class="session-left">
+                            <span class="session-time">{session.timeSlot}</span>
+                            <span class="type-badge" style={`background:${meta.bg}; color:${meta.fg}`}>
+                              {meta.label}
+                            </span>
+                          </div>
+                          <div class="session-right">
+                            <h3 class="session-title">{en(session.title)}</h3>
+                            {hasContent && (
+                              <div class="speaker-list">
+                                {session.speakers.map((sp: any) => (
+                                  <div class="speaker-row">
+                                    <span class="speaker-name">{sp.name}</span>
+                                    {sp.title && <span class="speaker-role">{sp.title}</span>}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </a>
+                      )
+                    })}
+                  </div>
+                )}
+              </div>
+            )
+          })
+        })}
+
+        <p class="disclaimer">Schedule is subject to change.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overview panel (hidden by default) -->
+  <div class="overview-panel" style="display:none; --section-padding: 0px">
+    <AgendaOverview lang={lang} speakerBasePath={speakerBasePath} />
+  </div>
+
+</section>
+
+<script define:vars={{ firstDay, firstCat }}>
+  let activeDay = firstDay
+  let activeTrack = firstCat
+
+  const schedContainer = document.querySelector(".sched-container")
+  const overviewPanel = document.querySelector(".overview-panel")
+  const overviewBtn = document.querySelector("[data-view='overview']")
+
+  function setAllTabsInactive() {
+    document.querySelectorAll("[data-day], [data-view]").forEach((btn) => btn.classList.remove("active"))
+  }
+
+  function showOverview() {
+    setAllTabsInactive()
+    overviewBtn.classList.add("active")
+    schedContainer.style.display = "none"
+    overviewPanel.style.display = "block"
+  }
+
+  function show(day, track) {
+    activeDay = day
+    activeTrack = track
+
+    overviewPanel.style.display = "none"
+    schedContainer.style.display = ""
+
+    setAllTabsInactive()
+    document.querySelectorAll("[data-day]").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.day === day)
+    })
+
+    document.querySelectorAll("[data-track]").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.track === track)
+      const catDays = (btn.dataset.catDays || "").split(",").filter(Boolean)
+      const hasSessionsOnDay = catDays.length === 0 || catDays.includes(day)
+      btn.classList.toggle("off-day", !hasSessionsOnDay)
+    })
+
+    document.querySelectorAll("[data-panel-day]").forEach((panel) => {
+      const match = panel.dataset.panelDay === day && panel.dataset.panelTrack === track
+      panel.style.display = match ? "block" : "none"
+    })
+  }
+
+  overviewBtn.addEventListener("click", showOverview)
+
+  document.querySelectorAll("[data-day]").forEach((btn) => {
+    btn.addEventListener("click", () => show(btn.dataset.day, activeTrack))
+  })
+
+  document.querySelectorAll("[data-track]").forEach((btn) => {
+    btn.addEventListener("click", () => show(activeDay, btn.dataset.track))
+  })
+
+  document.querySelectorAll("[data-switch-day]").forEach((btn) => {
+    btn.addEventListener("click", () => show(btn.dataset.switchDay, activeTrack))
+  })
+
+  show(firstDay, firstCat)
+</script>
+
+<style>
+  .sched-section {
+    background-color: var(--color-lightgray);
+    padding-bottom: 5rem;
+  }
+
+  /* ── Day navigation bar ── */
+  .sched-day-nav {
+    background: var(--color-lightgray);
+    padding: 1rem var(--container-padding) 1rem;
+  }
+
+  .day-nav-inner {
+    max-width: calc(var(--title-size) * 12);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .day-tabs-track {
+    display: inline-flex;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.07);
+    border-radius: 14px;
+    padding: 0.35rem;
+  }
+
+  .sched-day-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 2.5rem;
+    gap: 0.15rem;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.45);
+    min-width: 140px;
+  }
+
+  .sched-day-btn:hover:not(.active) {
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .sched-day-btn.active {
+    background: #fff;
+    color: var(--color-dark);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  .sched-day-btn.active .day-label {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .day-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.35);
+  }
+
+  .day-date {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* ── Layout container ── */
+  .sched-container {
+    max-width: calc(var(--title-size) * 12);
+    margin: 0 auto;
+    padding: 1.5rem var(--container-padding) 2rem;
+  }
+
+  .sched-body {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  /* ── Sidebar ── */
+  .sched-sidebar {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    align-self: start;
+  }
+
+  .track-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .track-group-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 0 0 0.5rem 0.5rem;
+  }
+
+  .sched-track-btn {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    color: var(--color-dark);
+    font-family: inherit;
+  }
+
+  .sched-track-btn:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+
+  .sched-track-btn.active {
+    background: rgba(0, 0, 0, 0.06);
+  }
+
+  .sched-track-btn.active .track-dot {
+    background: var(--tc);
+    transform: scale(1.2);
+  }
+
+  .track-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.18);
+    flex-shrink: 0;
+    margin-top: 5px;
+    transition: background 0.15s, transform 0.15s;
+  }
+
+  .track-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .track-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .track-room {
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .track-day-badge {
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: #b45309;
+    background: #fef3c7;
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+    width: fit-content;
+    margin-top: 0.1rem;
+  }
+
+  .sched-track-btn.off-day {
+    opacity: 0.45;
+  }
+
+  .sched-track-btn.off-day .track-day-badge {
+    background: #fee2e2;
+    color: #b91c1c;
+  }
+
+  /* ── Main panel ── */
+  .sched-main {
+    min-height: 500px;
+  }
+
+  .track-panel {}
+
+  .panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    border-left: 4px solid;
+    margin-bottom: 0.75rem;
+  }
+
+  .panel-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .panel-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .panel-room {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.65rem;
+    background: rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+
+  .panel-count {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.35);
+    white-space: nowrap;
+  }
+
+  /* ── Session list ── */
+  .session-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .session-card {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    align-items: start;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .session-card:hover {
+    background: #f1f5f9;
+  }
+
+
+  /* ── Keynote block ── */
+  .keynote-block {
+    border: 2px solid #f59e0b;
+    border-radius: var(--border-radius);
+    padding: 0.85rem 1.25rem 1.1rem;
+    margin-bottom: 1rem;
+    background: #fffbeb;
+  }
+
+  .keynote-block-label {
+    font-size: 0.6rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #b45309;
+    margin: 0 0 0.65rem 0;
+  }
+
+  .keynote-block .session-list {
+    gap: 0.5rem;
+  }
+
+  .session-card.is-keynote {
+    background: #fff;
+    border-left: 3px solid #f59e0b;
+  }
+
+  .session-card.is-keynote:hover {
+    background: #fef3c7;
+  }
+
+  .session-card.is-keynote .session-time {
+    color: #92400e;
+  }
+
+  .session-card.is-keynote .session-title {
+    color: #1c1917;
+    font-size: 0.97rem;
+  }
+
+  .session-card.is-keynote .speaker-name {
+    color: #44403c;
+  }
+
+  .session-card.is-keynote .speaker-role {
+    color: #78716c;
+  }
+
+  .keynote-badge {
+    background: #f59e0b !important;
+    color: #451a03 !important;
+    font-weight: 900 !important;
+  }
+
+  /* ── Break divider ── */
+  .break-divider {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.4rem 0;
+    margin: 0.2rem 0;
+  }
+
+  .break-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .break-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.38);
+    white-space: nowrap;
+  }
+
+  .break-time {
+    font-variant-numeric: tabular-nums;
+    color: rgba(0, 0, 0, 0.28);
+  }
+
+  .session-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding-top: 2px;
+  }
+
+  .session-time {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .type-badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    border-radius: 20px;
+    width: fit-content;
+  }
+
+  .session-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .session-title {
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+
+  .speaker-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .speaker-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.3rem;
+  }
+
+  .speaker-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  .speaker-role {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.45);
+  }
+
+  .no-sessions {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: 1.75rem 2rem;
+    text-align: center;
+  }
+
+  .no-sessions-msg {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.45);
+    margin: 0 0 0.4rem;
+  }
+
+  .no-sessions-hint {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 0 0 0.75rem;
+  }
+
+  .no-sessions-days {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .switch-day-btn {
+    background: #0f172a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.45rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  .switch-day-btn:hover {
+    background: #1e293b;
+  }
+
+  .disclaimer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+  }
+
+  /* ── Mobile track selector ── */
+  .mobile-track-scroll {
+    display: none;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-track-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .mobile-track-pills {
+    display: flex;
+    gap: 0.4rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .mobile-track-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-track-pill {
+    white-space: nowrap;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    background: var(--color-light);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color-dark);
+    flex-shrink: 0;
+    font-family: inherit;
+  }
+
+  .mobile-track-pill.active {
+    background: var(--tc);
+    border-color: var(--tc);
+    color: #fff;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .sched-body {
+      grid-template-columns: 1fr;
+    }
+
+    .sched-sidebar {
+      display: none;
+    }
+
+    .mobile-track-scroll {
+      display: block;
+    }
+
+    .session-card {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+
+    .session-left {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sched-day-btn {
+      padding: 0.6rem 1rem;
+    }
+
+    .day-date {
+      font-size: 0.85rem;
+    }
+
+    .day-label {
+      display: none;
+    }
+
+    .sched-day-btn {
+      min-width: unset;
+      padding: 0.6rem 1.5rem;
+    }
+  }
+</style>

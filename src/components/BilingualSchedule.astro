@@ -39,8 +39,10 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "images/speakers/*.{jpeg,jpg,png,gif}"
 )
 
-// Detect current language from route
-const currentLang = detectLanguageFromRoute(Astro.url.pathname)
+// Detect current language from route (used only for URL generation)
+const routeLang = detectLanguageFromRoute(Astro.url.pathname)
+// Always display schedule content in English
+const currentLang = 'en'
 
 // Error handling for schedule data processing
 const errorMessages: string[] = []
@@ -169,7 +171,7 @@ const getEventUrl = (title: BilingualText | string): string => {
   // Use English title for URL generation (consistent across both languages)
   const titleText = getBilingualText(title, 'en')
   // Create language-appropriate path
-  const basePath = currentLang === 'zh' ? '/zh/schedule' : currentLang === 'fr' ? '/fr/schedule' : '/schedule';
+  const basePath = routeLang === 'zh' ? '/zh/schedule' : routeLang === 'fr' ? '/fr/schedule' : '/schedule';
   // Create the full URL with domain
   return `${origin}${basePath}/${titleText.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, "-").replace(/-+/g, '-').trim()}/`;
 }
@@ -246,7 +248,7 @@ const getLocalizedText = (key: string): string => {
             processedScheduleData.days.map((day) => {
               const dayDate = getBilingualText(day.date, currentLang)
               const dayTitle = getBilingualText(day.title, currentLang)
-              const dayUrl = generateLanguageUrl(day.url, currentLang)
+              const dayUrl = generateLanguageUrl(day.url, routeLang)
               
               return (
                 <a
@@ -398,7 +400,7 @@ const getLocalizedText = (key: string): string => {
                 processedScheduleData.days.map((day) => {
                   const dayDate = getBilingualText(day.date, currentLang)
                   const dayTitle = getBilingualText(day.title, currentLang)
-                  const dayUrl = generateLanguageUrl(day.url, currentLang)
+                  const dayUrl = generateLanguageUrl(day.url, routeLang)
                   
                   return (
                     <a
@@ -541,7 +543,7 @@ const getLocalizedText = (key: string): string => {
                           <p>{session.timeSlot}</p>
                         </div>
                         <h2 class="h5">
-                          <BilingualText text={sessionTitle} element="span" />
+                          <BilingualText text={sessionTitle} element="span" lang="en" />
                         </h2>
                       </div>
                       <div class="tracks">
@@ -576,7 +578,7 @@ const getLocalizedText = (key: string): string => {
                             )}
                             {session.content && (
                               <div class="card-row styled-content">
-                                <BilingualText text={sessionContent} element="div" />
+                                <BilingualText text={sessionContent} element="div" lang="en" />
                               </div>
                             )}
 
@@ -624,10 +626,10 @@ const getLocalizedText = (key: string): string => {
                                           </div>
                                           <div class="card-row card-row-info">
                                             <h3 class="h5">
-                                              <BilingualText text={speakerName} element="span" />
+                                              <BilingualText text={speakerName} element="span" lang="en" />
                                             </h3>
                                             <p>
-                                              <BilingualText text={speakerRole} element="span" />
+                                              <BilingualText text={speakerRole} element="span" lang="en" />
                                             </p>
                                           </div>
                                         </a>
@@ -701,7 +703,7 @@ const getLocalizedText = (key: string): string => {
                               <p>{session.timeSlot}</p>
                             </div>
                             <h2 class="h5">
-                              <BilingualText text={sessionTitle} element="span" />
+                              <BilingualText text={sessionTitle} element="span" lang="en" />
                             </h2>
                           </div>
                           <div class="tracks">
@@ -738,7 +740,7 @@ const getLocalizedText = (key: string): string => {
                                 )}
                                 {session.content && (
                                   <div class="card-row styled-content">
-                                    <BilingualText text={sessionContent} element="div" />
+                                    <BilingualText text={sessionContent} element="div" lang="en" />
                                   </div>
                                 )}
 
@@ -789,10 +791,10 @@ const getLocalizedText = (key: string): string => {
                                               </div>
                                               <div class="card-row card-row-info">
                                                 <h3 class="h5">
-                                                  <BilingualText text={speakerName} element="span" />
+                                                  <BilingualText text={speakerName} element="span" lang="en" />
                                                 </h3>
                                                 <p>
-                                                  <BilingualText text={speakerRole} element="span" />
+                                                  <BilingualText text={speakerRole} element="span" lang="en" />
                                                 </p>
                                               </div>
                                             </a>
