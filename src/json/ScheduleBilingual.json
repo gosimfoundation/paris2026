@@ -583,7 +583,7 @@
           {
             "name": "Nicolas Flores-Herr",
             "title": "Team Lead Foundation Models, Fraunhofer IAIS"
-          },
+          }
         ],
         "date": {
           "en": "May 6",
@@ -1129,7 +1129,7 @@
         },
         "timeSlot": "15:20 - 15:40",
         "type": "break"
-      },
+      }
     ],
     "agentic-ai-on-edge": [
       {
