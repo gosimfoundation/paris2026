@@ -182,6 +182,21 @@
     "agentic-ai-summit": [
       {
         "title": {
+          "en": "Registration & Breakfast",
+          "zh": "注册 & 早餐",
+          "fr": "Inscription & Petit-déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:00 - 09:30",
+        "type": "break"
+      },
+      {
+        "title": {
           "en": "From ChatGPT to OpenClaw: How Agentic AI is Redefining AI Compute and the Open Evaluation",
           "zh": "从 ChatGPT 到 OpenClaw：Agentic AI 如何重新定义 AI 计算与开放评测"
         },
@@ -639,6 +654,21 @@
     "open-source-model": [
       {
         "title": {
+          "en": "Registration & Breakfast",
+          "zh": "注册 & 早餐",
+          "fr": "Inscription & Petit-déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:00 - 09:30",
+        "type": "break"
+      },
+      {
+        "title": {
           "en": "Morning Coffee",
           "zh": "茶歇",
           "fr": "Café du matin"
@@ -855,6 +885,21 @@
       }
     ],
     "ai-generative-app": [
+      {
+        "title": {
+          "en": "Registration & Breakfast",
+          "zh": "注册 & 早餐",
+          "fr": "Inscription & Petit-déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:00 - 09:30",
+        "type": "break"
+      },
       {
         "title": {
           "en": "Morning Coffee",
@@ -1132,6 +1177,21 @@
       }
     ],
     "agentic-ai-on-edge": [
+      {
+        "title": {
+          "en": "Registration & Breakfast",
+          "zh": "注册 & 早餐",
+          "fr": "Inscription & Petit-déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:00 - 09:30",
+        "type": "break"
+      },
       {
         "title": {
           "en": "One Year of llama.cpp: Milestones and Future Plans",
