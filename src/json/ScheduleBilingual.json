@@ -1194,6 +1194,21 @@
       },
       {
         "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
           "en": "One Year of llama.cpp: Milestones and Future Plans",
           "zh": "llama.cpp 一年历程：里程碑与未来规划"
         },
@@ -1248,6 +1263,36 @@
         },
         "timeSlot": "11:10 - 11:35",
         "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
       },
       {
         "title": {
@@ -1324,9 +1369,39 @@
         },
         "timeSlot": "11:35 - 12:00",
         "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
       }
     ],
     "open-source-robotics": [
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
       {
         "title": {
           "en": "RoboChallenge Annual Report on Large-Scale Real Robot Benchmark",
@@ -1589,6 +1664,21 @@
     "ws-vllm-paris2026": [
       {
         "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
           "en": "vLLM Workshop",
           "zh": "vLLM 工作坊"
         },
@@ -1600,9 +1690,54 @@
         },
         "timeSlot": "10:20 - 12:00",
         "type": "workshop"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
       }
     ],
     "ws-oh-tech-forum": [
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:20 - 15:40",
+        "type": "break"
+      },
       {
         "title": {
           "en": "Démocratisation of AI All Around the World to Shape the Future AGI",
@@ -1624,6 +1759,21 @@
       }
     ],
     "ws-open-compute": [
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
       {
         "title": {
           "en": "FlagOS + OpenClaw Platform Overview",
@@ -1668,6 +1818,21 @@
       },
       {
         "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:40 - 16:00",
+        "type": "break"
+      },
+      {
+        "title": {
           "en": "KernelGen",
           "zh": "KernelGen"
         },
@@ -1682,6 +1847,21 @@
       }
     ],
     "ws-sglang-paris2026": [
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
       {
         "title": {
           "en": "SGLang Diffusion: A High-Performance Inference Framework for Image and Video Generation",
@@ -1700,6 +1880,36 @@
         },
         "timeSlot": "10:20 - 12:00",
         "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:20 - 15:40",
+        "type": "break"
       },
       {
         "title": {
@@ -1722,6 +1932,51 @@
       }
     ],
     "ws-own-your-data-paris2026": [
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:20 - 15:40",
+        "type": "break"
+      },
       {
         "title": {
           "en": "Embedding Software Engineering Best Practices into AI Projects with Kedro",

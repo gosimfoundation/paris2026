@@ -344,8 +344,9 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                       const isBreak = session.type === "break"
                       const hasContent = !isBreak && session.speakers && session.speakers.length > 0
                       if (isBreak) {
+                        const isLunch = (session.title as any)?.en === "Lunch" || session.title === "Lunch"
                         return (
-                          <div class="break-divider">
+                          <div class={isLunch ? "break-divider lunch-divider" : "break-divider"}>
                             <span class="break-line" />
                             <span class="break-label">
                               {session.timeSlot && <span class="break-time">{session.timeSlot}</span>}
@@ -809,6 +810,25 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
   .break-time {
     font-variant-numeric: tabular-nums;
     color: rgba(0, 0, 0, 0.28);
+  }
+
+  /* ── Lunch divider (AM/PM separator) ── */
+  .lunch-divider .break-line {
+    height: 4px;
+    background: rgba(180, 110, 20, 0.45);
+    border-radius: 2px;
+  }
+
+  .lunch-divider .break-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: rgba(140, 75, 10, 0.85);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .lunch-divider .break-time {
+    color: rgba(140, 75, 10, 0.6);
   }
 
   .session-left {
