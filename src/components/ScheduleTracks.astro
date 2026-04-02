@@ -288,16 +288,19 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                 {/* Pre-keynote breaks (e.g. Registration & Breakfast) */}
                 {earlyBreaks.length > 0 && (
                   <div class="session-list">
-                    {earlyBreaks.map((session) => (
-                      <div class="break-divider">
-                        <span class="break-line" />
-                        <span class="break-label">
-                          {session.timeSlot && <span class="break-time">{session.timeSlot}</span>}
-                          {loc(session.title)}
-                        </span>
-                        <span class="break-line" />
-                      </div>
-                    ))}
+                    {earlyBreaks.map((session) => {
+                      const isReg = (session.title as any)?.en === "Registration & Breakfast"
+                      return (
+                        <div class={isReg ? "break-divider registration-divider" : "break-divider"}>
+                          <span class="break-line" />
+                          <span class="break-label">
+                            {session.timeSlot && <span class="break-time">{session.timeSlot}</span>}
+                            {loc(session.title)}
+                          </span>
+                          <span class="break-line" />
+                        </div>
+                      )
+                    })}
                   </div>
                 )}
 
@@ -345,8 +348,9 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                       const hasContent = !isBreak && session.speakers && session.speakers.length > 0
                       if (isBreak) {
                         const isLunch = (session.title as any)?.en === "Lunch" || session.title === "Lunch"
+                        const isRegistration = (session.title as any)?.en === "Registration & Breakfast"
                         return (
-                          <div class={isLunch ? "break-divider lunch-divider" : "break-divider"}>
+                          <div class={isLunch ? "break-divider lunch-divider" : isRegistration ? "break-divider registration-divider" : "break-divider"}>
                             <span class="break-line" />
                             <span class="break-label">
                               {session.timeSlot && <span class="break-time">{session.timeSlot}</span>}
@@ -810,6 +814,21 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
   .break-time {
     font-variant-numeric: tabular-nums;
     color: rgba(0, 0, 0, 0.28);
+  }
+
+  /* ── Registration & Breakfast divider ── */
+  .registration-divider .break-line {
+    background: rgba(0, 0, 0, 0.18);
+  }
+
+  .registration-divider .break-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .registration-divider .break-time {
+    color: rgba(0, 0, 0, 0.45);
   }
 
   /* ── Lunch divider (AM/PM separator) ── */
