@@ -128,9 +128,9 @@
     {
       "id": "ws-open-compute",
       "name": {
-        "en": "Open Compute for Agentic AI",
-        "zh": "面向 Agentic AI 的开放计算",
-        "fr": "Open Compute pour l'IA Agentique"
+        "en": "Open Compute for Agentic AI (FlagOS)",
+        "zh": "面向 Agentic AI 的开放计算 (FlagOS)",
+        "fr": "Open Compute pour l'IA Agentique (FlagOS)"
       },
       "room": {
         "en": "Central Room",
