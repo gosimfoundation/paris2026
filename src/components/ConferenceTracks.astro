@@ -492,6 +492,7 @@ const highlightCards = (highlights || []).map((item, index) => {
               <article
                 class="support-card support-card-workshop animate-slide-up"
                 data-workshop-theme={item.theme}
+                data-href={item.link || undefined}
                 style={`--accent-from:${item.accent.from}; --accent-to:${item.accent.to}; --stagger:${index}; --workshop-bg:url('${item.background}');`}
               >
                 <div class="support-workshop-grid"></div>
@@ -597,6 +598,16 @@ const highlightCards = (highlights || []).map((item, index) => {
     );
 
     targets.forEach((target) => observer.observe(target));
+
+    document.querySelectorAll(".section-track-atlas .support-card[data-href]").forEach((card) => {
+      if (card.dataset.initialized === "true") return;
+      card.dataset.initialized = "true";
+      card.style.cursor = "pointer";
+      card.addEventListener("click", (event) => {
+        if (event.target.closest("a")) return;
+        window.location.href = card.dataset.href;
+      });
+    });
 
     document.querySelectorAll(".section-track-atlas .track-station").forEach((station) => {
       if (station.dataset.initialized === "true") {

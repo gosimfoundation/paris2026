@@ -457,7 +457,15 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     btn.addEventListener("click", () => show(btn.dataset.switchDay, activeTrack))
   })
 
-  show(firstDay, firstCat)
+  const hashTrack = window.location.hash.slice(1)
+  const hashBtn = hashTrack && document.querySelector(`.sched-sidebar [data-track="${hashTrack}"]`)
+  if (hashBtn) {
+    const catDays = (hashBtn.dataset.catDays || "").split(",").filter(Boolean)
+    const targetDay = catDays.includes(firstDay) ? firstDay : (catDays[0] || firstDay)
+    show(targetDay, hashTrack)
+  } else {
+    show(firstDay, firstCat)
+  }
 </script>
 
 <style>
