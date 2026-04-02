@@ -1,127 +1,133 @@
 ---
-// Packages
-import { Picture } from "astro:assets";
-import type { ImageMetadata } from "astro";
-
 // Components
-import Layout from "layouts/LayoutLandingZh.astro";
-import schedule from "json/ScheduleBilingual.json";
-import scheduleForum from "json/Schedule-forum.json";
-import speakers from "json/SpeakersCleaned.json";
-import SocialShare from "components/SocialShare.astro";
+import Layout from "layouts/LayoutLandingZh.astro"
+import schedule from "json/ScheduleBilingual.json"
+import scheduleForum from "json/Schedule-forum.json"
+import speakers from "json/SpeakersCleaned.json"
 
 // Types
 type Event = {
-  title: string;
-  content: string;
-  date: string;
-  timeSlot: string;
-  speakers?: { name: string; image?: string; roleOrg: string }[];
-  room?: string;
-};
+  title: string
+  content: string
+  date: string
+  timeSlot: string
+  speakers?: { name: string; image?: string; roleOrg: string }[]
+  room?: string
+}
 
-// Generate static paths for events
 export async function getStaticPaths() {
   const events: {
-    params: { event: string };
-    props: { event: Event; category: string };
-  }[] = [];
+    params: { event: string }
+    props: { event: Event; category: string }
+  }[] = []
 
   const createSlug = (title: string) => {
     return title
       .toLowerCase()
-      .replace(/[^\w\s\u4e00-\u9fff-]/g, "")  // Keep ASCII word chars, spaces, Chinese chars, and hyphens
+      .replace(/[^\w\s\u4e00-\u9fff-]/g, "")
       .replace(/\s+/g, "-")
       .replace(/-+/g, "-")
-      .replace(/^-+|-+$/g, "")  // Remove leading/trailing hyphens
-      .trim();
-  };
+      .replace(/^-+|-+$/g, "")
+      .trim()
+  }
 
-  // Collect all sessions from all categories in main schedule (bilingual structure)
   Object.entries(schedule.sessions).forEach(([category, categoryEvents]) => {
     categoryEvents.forEach((event: any) => {
-      const eventTitle = typeof event.title === 'string' ? event.title : event.title?.zh || event.title?.en || '';
-      const eventTitleForSlug = typeof event.title === 'string' ? event.title : event.title?.en || '';
+      const eventTitleForSlug = typeof event.title === "string" ? event.title : event.title?.en || ""
+      const eventTitle = typeof event.title === "string" ? event.title : event.title?.zh || event.title?.en || ""
       const transformedEvent = {
         title: eventTitle,
-        content: typeof event.content === 'string' ? event.content : event.content?.zh || event.content?.en || '',
-        date: typeof event.date === 'string' ? event.date : event.date?.zh || event.date?.en || '',
+        content: typeof event.content === "string" ? event.content : event.content?.zh || event.content?.en || "",
+        date: typeof event.date === "string" ? event.date : event.date?.zh || event.date?.en || "",
         timeSlot: event.timeSlot,
         speakers: event.speakers?.map((s: any) => ({
-          name: typeof s.name === 'string' ? s.name : s.name?.zh || s.name?.en || '',
+          name: typeof s.name === "string" ? s.name : s.name?.zh || s.name?.en || "",
           image: s.image,
-          roleOrg: typeof s.roleOrg === 'string' ? s.roleOrg : s.roleOrg?.zh || s.roleOrg?.en || ''
+          roleOrg: typeof s.roleOrg === "string" ? s.roleOrg : s.roleOrg?.zh || s.roleOrg?.en || "",
         })) || [],
-        room: typeof event.room === 'string' ? event.room : event.room?.zh || event.room?.en || ''
-      };
+        room: typeof event.room === "string" ? event.room : event.room?.zh || event.room?.en || "",
+      }
       events.push({
-        params: {
-          event: createSlug(eventTitleForSlug),
-        },
+        params: { event: createSlug(eventTitleForSlug) },
         props: { event: transformedEvent, category },
-      });
-    });
-  });
+      })
+    })
+  })
 
-  // Add forum events
   scheduleForum.forEach((event: Event) => {
     events.push({
-      params: {
-        event: createSlug(event.title),
-      },
+      params: { event: event.title.toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-").trim() },
       props: { event, category: "论坛" },
-    });
-  });
+    })
+  })
 
-  return events;
+  return events
 }
 
-// Get the event from the route parameter
 const { event: eventDetails, category } = Astro.props as {
-  event: Event;
-  category: string;
-};
+  event: Event
+  category: string
+}
 
-// Import all images
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "images/speakers/*.{jpeg,jpg,png,gif}"
-);
+// Prev/next navigation (use EN titles for slugs)
+const createSlugNav = (title: string) =>
+  title.toLowerCase().replace(/[^\w\s\u4e00-\u9fff-]/g, "").replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-+|-+$/g, "").trim()
 
-// Find the first matching category for the event
-const eventCategory = category || "未分类";
+const allEvents: { slug: string; title: string }[] = []
+Object.entries(schedule.sessions).forEach(([_cat, categoryEvents]) => {
+  ;(categoryEvents as any[]).forEach((ev) => {
+    const title = typeof ev.title === "string" ? ev.title : ev.title?.en || ""
+    if (title) allEvents.push({ slug: createSlugNav(title), title })
+  })
+})
 
-// Get Chinese category name
-const getCategoryDisplayName = (categoryId: string) => {
-  const categoryMap: Record<string, string> = {
-    'gosim-plenary': 'GOSIM 全体大会',
-    'ai-models-infra': 'AI 模型 × 基础设施',
-    'embodied-ai': '具身智能',
-    'agentic-web': '智能体网络',
-    'apps-agents': '应用 × 智能体',
-    'ai-next': 'AI Next',
-    'ws-sglang': 'SGLang Workshop',
-    'ws-cangjie': '仓颉 Workshop',
-    'ws-dora': 'Open Source Robotics Workshop',
-    'ws-future-web': 'Future Web Workshop',
-    'ws-edge-ai': 'Edge AI Workshop',
-    'ws-cann': 'CANN Workshop',
-    'ws-flutter': 'Flutter Meetup',
-    'ws-chitu': '开源赤兔首次聚会',
-    'ws-ai-education': 'AI教育 Workshop',
-    'ws-rn': 'RN Workshop',
-    'ws-rust': 'Rust Workshop',
-    'ws-embedded-rust': '嵌入式Rust × AI WorkShop',
-    'ws-solana': 'Solana for Rustaceans Workshop',
-    'ws-globalization': '开源全球化 Workshop',
-    'open-for-sdg': 'Open for SDG 会议',
-    'forum-aivision': 'AI Vision 论坛',
-    'rust-china-plenary': 'RustChinaConf & Rust Global China',
-    'rust-china-1': 'RustChinaConf Track 1',
-    'rust-china-2': 'RustChinaConf Track 2',
-    'rust-china-3': 'RustChinaConf Track 3'
-  };
-  return categoryMap[categoryId] || categoryId;
-};
+const currentSlug = createSlugNav(
+  // Use EN title for slug matching
+  (() => {
+    for (const [_cat, evs] of Object.entries(schedule.sessions)) {
+      for (const ev of evs as any[]) {
+        const zhTitle = typeof ev.title === "string" ? ev.title : ev.title?.zh || ev.title?.en || ""
+        if (zhTitle === eventDetails.title) {
+          return typeof ev.title === "string" ? ev.title : ev.title?.en || ""
+        }
+      }
+    }
+    return eventDetails.title
+  })()
+)
+const currentIndex = allEvents.findIndex((e) => e.slug === currentSlug)
+const prevEvent = currentIndex > 0 ? allEvents[currentIndex - 1] : allEvents[allEvents.length - 1]
+const nextEvent = currentIndex < allEvents.length - 1 ? allEvents[currentIndex + 1] : allEvents[0]
+
+const categoryMap: Record<string, string> = {
+  "gosim-plenary": "GOSIM 全体大会",
+  "ai-models-infra": "AI 模型 × 基础设施",
+  "embodied-ai": "具身智能",
+  "agentic-web": "智能体网络",
+  "apps-agents": "应用 × 智能体",
+  "ai-next": "AI Next",
+  "agentic-ai-on-edge": "边缘 Agentic AI",
+  "open-source-robotics": "开源机器人",
+  "ws-sglang-paris2026": "SGLang Workshop",
+  "ws-vllm-paris2026": "vLLM Workshop",
+  "ws-oh-tech-forum": "OpenHarmony 技术论坛",
+  "ws-open-compute": "Open Compute for Agentic AI (FlagOS)",
+  "ws-own-your-data-paris2026": "Own Your Data Workshop",
+  "ws-sglang": "SGLang Workshop",
+  "ws-cangjie": "仓颉 Workshop",
+  "ws-dora": "Open Source Robotics Workshop",
+  "ws-future-web": "Future Web Workshop",
+  "ws-edge-ai": "Edge AI Workshop",
+  "ws-cann": "CANN Workshop",
+  "ws-flutter": "Flutter Meetup",
+  "ws-chitu": "开源赤兔首次聚会",
+  "ws-ai-education": "AI教育 Workshop",
+  "ws-rn": "RN Workshop",
+  "ws-rust": "Rust Workshop",
+  "open-for-sdg": "Open for SDG 会议",
+  "forum-aivision": "AI Vision 论坛",
+}
+const eventCategory = categoryMap[category] || category || "未分类"
 ---
 
 <Layout
@@ -133,136 +139,304 @@ const getCategoryDisplayName = (categoryId: string) => {
   navBackground="light"
   pageTransitionName={eventDetails.title}
 >
+  <!-- Top nav bar: prev / all schedule / next -->
+  <div class="ev-nav-bar" data-theme-section="light" data-bg-section="light">
+    <div class="container">
+      <div class="ev-nav">
+        <a href={`/zh/schedule/${prevEvent.slug}/`} class="ev-nav-btn ev-nav-prev">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          <div class="ev-nav-info">
+            <span class="ev-nav-label">上一个</span>
+            <span class="ev-nav-name">{prevEvent.title}</span>
+          </div>
+        </a>
+        <a href="/zh/schedule/" class="ev-nav-btn ev-nav-all">所有日程</a>
+        <a href={`/zh/schedule/${nextEvent.slug}/`} class="ev-nav-btn ev-nav-next">
+          <div class="ev-nav-info" style="text-align:right">
+            <span class="ev-nav-label">下一个</span>
+            <span class="ev-nav-name">{nextEvent.title}</span>
+          </div>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <section
     class="section speaker-detail-header"
     data-theme-section="light"
     data-bg-section="light"
   >
-    <div class="gradient-circle-wrap">
-      <div class="gradient-circle"></div>
-    </div>
     <div class="container">
-      <div class="row">
-        <div class="col-speaker">
-          <div class="row-speaker">
-            <div class="speaker-row-meta">
-              <div class="card-tags group-tags event-tag">
-                <div class="single-tag">
-                  <p>{getCategoryDisplayName(category)}</p>
-                </div>
-              </div>
-              <h1 class="h2">{eventDetails.title}</h1>
-              <div class="flex-event">
-                <p class="timedate">{eventDetails.date}</p>
-                <p>•</p>
-                <p>{eventDetails.timeSlot}</p>
-              </div>
-            </div>
-          </div>
 
-          <div class="box-row box-row-text styled-content">
-            <p class="location-text">
-              <strong>地点：</strong>
-              {
-                eventDetails.room ||
-                  (() => {
-                    // Find category by matching the category ID with the event's category
-                    const cat = schedule.categories.find((cat) => cat.id === category);
-                    if (cat && cat.room) {
-                      return typeof cat.room === 'string' ? cat.room : cat.room?.zh || cat.room?.en || '';
-                    }
-                    return "待定";
-                  })()
-              }
-            </p>
-          </div>
+      <span class="ev-tag">{eventCategory}</span>
 
-          <div class="box-row box-row-text styled-content">
-            <Fragment set:html={eventDetails.content.replace(/\n/g, "<br>")} />
-          </div>
+      <h1 class="ev-title">{eventDetails.title}</h1>
 
-          {
-            eventDetails.speakers && eventDetails.speakers.length > 0 && (
-              <>
-                <h2 class="h4 event-speaker-title">演讲嘉宾</h2>
-                <div class="card-row card-row-speakers event-detail_speakers">
-                  {eventDetails.speakers.map((speaker) => {
-                    // Find full speaker details from unified speakers.json
-                    let fullSpeakerDetails = speakers.speakers.find(
-                      (s) => s.name === speaker.name || s.id === speaker.id
-                    );
-                    
-                    // Check if this speaker is a workshop speaker based on their tag
-                    const workshopCategories = ["ws-future-web", "ws-cann", "ws-flutter", "ws-cangjie", "ws-edge-ai", "ws-chitu", "ws-ai-education", "ws-rn", "ws-dora", "ws-rust", "ws-sglang", "ws-sglang-paris2026", "ws-vllm-paris2026", "open-for-sdg", "forum-aivision"];
-                    let isWorkshopSpeaker = fullSpeakerDetails ? fullSpeakerDetails.tags?.some((t: string) => workshopCategories.includes(t)) : false;
-
-                    // Determine the correct URL path
-                    const speakerPath = isWorkshopSpeaker
-                      ? "/zh/workshops/"
-                      : "/zh/speakers/";
-                    const speakerId =
-                      fullSpeakerDetails?.id ||
-                      speaker.name.toLowerCase().replace(/\s+/g, "-");
-
-                    return (
-                      <div class="card-col">
-                        <a href={`${speakerPath}${speakerId}/`}>
-                          <div class="single-speakers-card">
-                            <div class="card-row card-row-image">
-                              <div class="card-image">
-                                {(fullSpeakerDetails?.image ||
-                                  speaker?.image) &&
-                                  images[
-                                    `/public/images/speakers/${fullSpeakerDetails?.image || speaker.image}`
-                                  ] && (
-                                    <Picture
-                                      src={images[
-                                        `/public/images/speakers/${fullSpeakerDetails?.image || speaker.image}`
-                                      ]()}
-                                      formats={["webp", "jpg"]}
-                                      alt={speaker.name}
-                                      class="overlay"
-                                      widths={[275, 400, 500, 600, 750, 900]}
-                                      sizes="(max-width: 700px) 58vw, 450px"
-                                    />
-                                  )}
-                              </div>
-                            </div>
-                            <div class="card-row card-row-info">
-                              <h3 class="h5">{speaker.name}</h3>
-                              <p>
-                                {fullSpeakerDetails?.roleOrg || speaker.roleOrg}
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    );
-                  })}
-                </div>
-              </>
-            )
-          }
-          <SocialShare
-            title={`${eventDetails.title} - GOSIM Paris 2026`}
-            description={eventDetails.content
-              .replace(/\n/g, " ")
-              .replace(/<[^>]*>/g, "")
-              .substring(0, 160)}
-          />
-        </div>
+      <div class="ev-meta">
+        <span class="ev-meta-item">
+          <span class="ev-meta-label">日期</span>
+          <span class="ev-meta-value">{eventDetails.date}</span>
+        </span>
+        <span class="ev-meta-divider" />
+        <span class="ev-meta-item">
+          <span class="ev-meta-label">时间</span>
+          <span class="ev-meta-value">{eventDetails.timeSlot}</span>
+        </span>
+        <span class="ev-meta-divider" />
+        <span class="ev-meta-item">
+          <span class="ev-meta-label">地点</span>
+          <span class="ev-meta-value">
+            {eventDetails.room || (() => {
+              const cat = schedule.categories.find((c) => c.id === category)
+              if (cat?.room) return typeof cat.room === "string" ? cat.room : (cat.room as any)?.zh || (cat.room as any)?.en || ""
+              return "待定"
+            })()}
+          </span>
+        </span>
       </div>
+
+      {eventDetails.content && (
+        <div class="ev-description styled-content">
+          <Fragment set:html={eventDetails.content.replace(/\n/g, "<br>")} />
+        </div>
+      )}
+
+      {eventDetails.speakers && eventDetails.speakers.length > 0 && (
+        <div class="ev-speakers">
+          <p class="ev-speakers-label">演讲嘉宾</p>
+          <div class="ev-speaker-list">
+            {eventDetails.speakers.map((speaker) => {
+              const full = speakers.speakers.find((s) => s.name === speaker.name)
+              const workshopCategories = ["ws-future-web","ws-cann","ws-flutter","ws-cangjie","ws-edge-ai","ws-chitu","ws-ai-education","ws-rn","ws-dora","ws-rust","ws-sglang","ws-sglang-paris2026","ws-vllm-paris2026","open-for-sdg","forum-aivision"]
+              const isWorkshop = full ? full.tags?.some((t: string) => workshopCategories.includes(t)) : false
+              const speakerPath = isWorkshop ? "/zh/workshops/" : "/zh/speakers/"
+              const speakerId = full?.id || speaker.name.toLowerCase().replace(/\s+/g, "-")
+              const img = full?.image || speaker?.image
+              return (
+                <a href={`${speakerPath}${speakerId}/`} class="ev-speaker-card">
+                  {img
+                    ? <img src={img} alt={speaker.name} class="ev-speaker-img" />
+                    : <div class="ev-speaker-placeholder" />
+                  }
+                  <div class="ev-speaker-info">
+                    <span class="ev-speaker-name">{speaker.name}</span>
+                    <span class="ev-speaker-role">{full?.roleOrg || speaker.roleOrg}</span>
+                  </div>
+                </a>
+              )
+            })}
+          </div>
+        </div>
+      )}
+
     </div>
   </section>
 </Layout>
 
 <style>
-  .location-text {
-    font-size: 0.85em;
-    padding-bottom: 2rem;
+  .ev-nav-bar {
+    border-bottom: 1px solid #e5e5e5;
+    padding: calc(var(--nav-bar-height) + 0.75rem) 0 0.75rem;
   }
-  .gradient-circle-wrap {
+
+  .ev-nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .ev-nav-btn {
     display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    text-decoration: none !important;
+    color: var(--color-dark) !important;
+  }
+  .ev-nav-btn:hover { background: #f5f5f0; }
+
+  .ev-nav-next { justify-content: flex-end; }
+
+  .ev-nav-all {
+    border: 1.5px solid currentColor;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    white-space: nowrap;
+  }
+
+  .ev-nav-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+  }
+
+  .ev-nav-label {
+    font-size: 0.75rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ev-nav-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .ev-nav-btn svg { flex-shrink: 0; }
+
+  .speaker-detail-header {
+    padding-top: 2.5rem !important;
+    padding-bottom: 5rem !important;
+  }
+
+  .ev-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: #0f172a;
+    color: #fff;
+    padding: 0.3rem 0.85rem;
+    border-radius: 20px;
+    margin-bottom: 0.85rem;
+  }
+
+  .ev-title {
+    font-size: clamp(1.35rem, 2.2vw, 1.9rem) !important;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0.5rem 0 1.5rem !important;
+    letter-spacing: -0.02em;
+  }
+
+  .ev-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+    align-items: flex-start;
+    padding: 1.25rem 1.5rem;
+    background: var(--color-lightgray);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+  }
+
+  .ev-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .ev-meta-divider {
+    width: 1px;
+    height: 2rem;
+    background: rgba(0,0,0,0.12);
+    align-self: center;
+  }
+
+  .ev-meta-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.35);
+  }
+
+  .ev-meta-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-dark);
+  }
+
+  .ev-description {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: rgba(0,0,0,0.75);
+    margin-bottom: 2.5rem;
+  }
+
+  .ev-speakers {
+    margin-bottom: 2rem;
+  }
+
+  .ev-speakers-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.35);
+    margin: 0 0 0.85rem;
+  }
+
+  .ev-speaker-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .ev-speaker-card {
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+    color: inherit;
+    background: var(--color-lightgray);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .ev-speaker-card:hover { background: #e2e8f0; }
+
+  .ev-speaker-img,
+  .ev-speaker-placeholder {
+    width: 160px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    background: #cbd5e1;
+    min-height: 220px;
+  }
+
+  .ev-speaker-info {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 0.4rem;
+    padding: 1.25rem 1.4rem;
+  }
+
+  .ev-speaker-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .ev-speaker-role {
+    font-size: 0.83rem;
+    color: rgba(0,0,0,0.5);
+    line-height: 1.45;
+  }
+
+  @media (max-width: 900px) {
+    .ev-speaker-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .ev-speaker-list {
+      grid-template-columns: 1fr;
+    }
+    .ev-meta {
+      gap: 1rem;
+    }
+    .ev-meta-divider {
+      display: none;
+    }
   }
 </style>

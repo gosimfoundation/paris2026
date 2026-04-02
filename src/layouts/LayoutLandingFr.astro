@@ -3,6 +3,7 @@
 import Header from "components/HeaderLandingFr.astro";
 import Footer from "components/FooterLandingFr.astro";
 import Seo from "components/Seo.astro";
+import AnnouncementBar from "components/AnnouncementBar.astro";
 
 // Styles
 import "styles/Normalize.scss";
@@ -95,7 +96,9 @@ const {
     data-bg-nav={navBackground}
     data-scrolling-direction="down"
     data-barba="wrapper"
+    style="padding-top: 40px"
   >
+    <AnnouncementBar lang="fr" />
     <Header />
 
     <main

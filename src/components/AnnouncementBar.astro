@@ -1,0 +1,180 @@
+---
+interface Props {
+  text?: string;
+  link?: string;
+  lang?: "en" | "zh" | "fr";
+}
+
+const { lang = "en" } = Astro.props;
+
+const content = {
+  en: {
+    badge: "LIMITED TIME",
+    text: "Grab your Early Bird ticket and save 30%!",
+    cta: "Deal ends April 6th — Get Tickets Now!",
+    link: "https://gosimparis2026.eventbrite.com/",
+  },
+  zh: {
+    badge: "限时优惠",
+    text: "立即抢购早鸟票，享7折优惠！",
+    cta: "4月6日截止 — 立即购票！",
+    link: "https://gosimparis2026.eventbrite.com/",
+  },
+  fr: {
+    badge: "OFFRE LIMITÉE",
+    text: "Réservez votre billet Early Bird et économisez 30% !",
+    cta: "Offre valable jusqu'au 6 avril — Réservez maintenant !",
+    link: "https://gosimparis2026.eventbrite.com/",
+  },
+};
+
+const { badge, text, cta, link } = content[lang];
+---
+
+<div class="announcement-bar">
+  <a href={link} target="_blank" rel="noopener noreferrer" class="announcement-bar__link">
+    <span class="announcement-bar__badge">{badge}</span>
+    <span class="announcement-bar__text">{text}</span>
+    <span class="announcement-bar__divider">·</span>
+    <span class="announcement-bar__cta">{cta}</span>
+    <span class="announcement-bar__arrow">→</span>
+  </a>
+</div>
+
+<style>
+  .announcement-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: linear-gradient(90deg, #2d4e9c 0%, #6c63ff 50%, #2d4e9c 100%);
+    background-size: 200% 100%;
+    animation: gradient-shift 6s ease infinite;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  @keyframes gradient-shift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Rainbow bar at bottom */
+  .announcement-bar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      #ff0000,
+      #ff7700,
+      #ffdd00,
+      #00cc44,
+      #0088ff,
+      #7744ff,
+      #ff00cc,
+      #ff0000
+    );
+    background-size: 200% 100%;
+    animation: rainbow-slide 4s linear infinite;
+  }
+
+  @keyframes rainbow-slide {
+    0%   { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+  }
+
+  /* Subtle shimmer sweep */
+  .announcement-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    animation: shimmer 3.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0%   { left: -60%; }
+    100% { left: 120%; }
+  }
+
+  .announcement-bar__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0 1rem;
+    transition: opacity 0.15s;
+    position: relative;
+  }
+
+  .announcement-bar__link:hover {
+    opacity: 0.9;
+  }
+
+  .announcement-bar__badge {
+    background: #f59e0b;
+    color: #000;
+    font-size: 0.6rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.18rem 0.5rem;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .announcement-bar__text {
+    color: #fff;
+  }
+
+  .announcement-bar__divider {
+    color: rgba(255,255,255,0.3);
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .announcement-bar__cta {
+    color: #fbbf24;
+    font-weight: 700;
+  }
+
+  .announcement-bar__arrow {
+    color: #fbbf24;
+    font-size: 1rem;
+    transition: transform 0.15s;
+    display: inline-block;
+  }
+
+  .announcement-bar__link:hover .announcement-bar__arrow {
+    transform: translateX(4px);
+  }
+
+  @media (max-width: 640px) {
+    .announcement-bar__text,
+    .announcement-bar__divider {
+      display: none;
+    }
+  }
+
+  /* Push nav bar content down slightly from announcement bar */
+  :global(.main-nav-bar) {
+    padding-top: calc(var(--row-gap) + 8px) !important;
+  }
+</style>

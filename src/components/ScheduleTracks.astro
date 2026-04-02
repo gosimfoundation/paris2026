@@ -306,17 +306,24 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
 
                 {/* Keynote placeholder */}
                 <div class="keynote-block">
-                  <p class="keynote-block-label">{t.keynotesLabel}</p>
                   {keynotes.length > 0 ? keynotes.map((kn) => (
                     <div class="keynote-tbd">
-                      {kn.timeSlot && <span class="keynote-tbd-time">{kn.timeSlot}</span>}
-                      <span class="keynote-tbd-badge">{t.tbd}</span>
-                      <span class="keynote-tbd-text">{t.keynotesTbd}</span>
+                      <div class="session-left">
+                        {kn.timeSlot && <span class="session-time">{kn.timeSlot}</span>}
+                        <span class="keynote-tbd-badge">{t.keynotesLabel}</span>
+                      </div>
+                      <div class="session-right">
+                        <span class="keynote-tbd-text">{t.keynotesTbd}</span>
+                      </div>
                     </div>
                   )) : (
                     <div class="keynote-tbd">
-                      <span class="keynote-tbd-badge">{t.tbd}</span>
-                      <span class="keynote-tbd-text">{t.keynotesTbd}</span>
+                      <div class="session-left">
+                        <span class="keynote-tbd-badge">{t.keynotesLabel}</span>
+                      </div>
+                      <div class="session-right">
+                        <span class="keynote-tbd-text">{t.keynotesTbd}</span>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -535,7 +542,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: rgba(0, 0, 0, 0.35);
+    color: rgba(0, 0, 0, 0.55);
   }
 
   .day-date {
@@ -580,7 +587,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.35);
+    color: rgba(0, 0, 0, 0.55);
     margin: 0 0 0.5rem 0.5rem;
   }
 
@@ -695,12 +702,12 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.38);
+    color: rgba(0, 0, 0, 0.55);
   }
 
   .panel-count {
     font-size: 0.75rem;
-    color: rgba(0, 0, 0, 0.35);
+    color: rgba(0, 0, 0, 0.55);
     white-space: nowrap;
     flex-shrink: 0;
   }
@@ -732,58 +739,36 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
 
   /* ── Keynote block ── */
   .keynote-block {
-    border: 2px solid #f59e0b;
-    border-radius: var(--border-radius);
-    padding: 0.85rem 1.25rem 1.1rem;
     margin-bottom: 1rem;
-    background: #fffbeb;
-  }
-
-  .keynote-block-label {
-    font-size: 0.6rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #b45309;
-    margin: 0 0 0.65rem 0;
   }
 
   .keynote-tbd {
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.5rem 0.25rem;
-    border-top: 1px solid rgba(245,158,11,0.2);
-  }
-
-  .keynote-tbd:first-of-type {
-    border-top: none;
-    padding-top: 0.25rem;
-  }
-
-  .keynote-tbd-time {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: #92400e;
-    font-variant-numeric: tabular-nums;
-    white-space: nowrap;
-    min-width: 110px;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    align-items: start;
+    margin-bottom: 0.5rem;
   }
 
   .keynote-tbd-badge {
     font-size: 0.65rem;
     font-weight: 800;
     letter-spacing: 0.1em;
-    background: #f59e0b;
-    color: #451a03;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.55);
     padding: 0.2rem 0.55rem;
     border-radius: 4px;
     flex-shrink: 0;
+    white-space: nowrap;
   }
 
   .keynote-tbd-text {
-    font-size: 0.85rem;
-    color: #92400e;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.45);
+    font-style: italic;
   }
 
   /* ── Break divider ── */
@@ -806,14 +791,14 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     align-items: center;
     gap: 0.4rem;
     font-size: 0.78rem;
-    font-weight: 600;
+    font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
     white-space: nowrap;
   }
 
   .break-time {
     font-variant-numeric: tabular-nums;
-    color: rgba(0, 0, 0, 0.45);
+    color: rgba(0, 0, 0, 0.55);
   }
 
   /* ── Lunch divider (AM/PM separator) ── */
@@ -825,7 +810,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
 
   .lunch-divider .break-label {
     font-size: 0.78rem;
-    font-weight: 700;
+    font-weight: 500;
     color: rgba(140, 75, 10, 0.85);
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -908,13 +893,13 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
 
   .no-sessions-msg {
     font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.45);
+    color: rgba(0, 0, 0, 0.6);
     margin: 0 0 0.4rem;
   }
 
   .no-sessions-hint {
     font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.35);
+    color: rgba(0, 0, 0, 0.55);
     margin: 0 0 0.75rem;
   }
 
@@ -944,7 +929,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
   .disclaimer {
     text-align: center;
     font-size: 0.75rem;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.5);
     margin-top: 2rem;
   }
 
@@ -959,7 +944,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.35);
+    color: rgba(0, 0, 0, 0.55);
     margin: 0 0 0.5rem 0;
   }
 

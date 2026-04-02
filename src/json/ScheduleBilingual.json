@@ -200,6 +200,11 @@
           "en": "From ChatGPT to OpenClaw: How Agentic AI is Redefining AI Compute and the Open Evaluation",
           "zh": "从 ChatGPT 到 OpenClaw：Agentic AI 如何重新定义 AI 计算与开放评测"
         },
+        "content": {
+          "en": "The evolution from ChatGPT's conversational AI to OpenClaw's autonomous agent ecosystem marks a paradigm shift in AI compute. This transformation is fundamentally bidirectional: while advanced compute infrastructure enables increasingly sophisticated agentic capabilities, the agentic paradigm itself is reshaping compute delivery through modular, skill-based architectures.\n\nOpenClaw exemplifies this new wave, where agentic AI system capabilities are determined by the interplay of large models, skills, and agent systems. This tripartite architecture demands new evaluation methodologies that assess not just model performance, but the orchestration of skills and autonomous decision-making—addressed by open evaluation initiatives like FlagEval and the Eclipse partnership PanEval.\n\nFlagOS sits at the center of this transformation, building universal and inclusive AI compute capabilities that support heterogeneous hardware backends.",
+          "zh": "从 ChatGPT 的对话式 AI 到 OpenClaw 的自主 Agent 生态系统，这一演变标志着 AI 计算范式的深刻转变。OpenClaw 代表了新一波浪潮——Agentic AI 系统的能力由大模型、技能与 Agent 系统的协同作用决定。FlagOS 处于这一转型的核心，构建支持异构硬件后端的通用、包容性 AI 算力能力。",
+          "fr": "L'évolution de l'IA conversationnelle de ChatGPT vers l'écosystème d'agents autonomes d'OpenClaw marque un changement de paradigme dans le calcul IA. FlagOS est au cœur de cette transformation, construisant des capacités de calcul IA universelles et inclusives."
+        },
         "speakers": [
           {
             "name": "Yonghua Lin",
@@ -231,8 +236,38 @@
       },
       {
         "title": {
+          "en": "State of Agentic AI: Insights from the Global Open Source Development Report",
+          "zh": "Agentic AI 现状：来自全球开源发展报告的洞察",
+          "fr": "État de l'Agentic AI : Insights du rapport mondial sur le développement open source"
+        },
+        "content": {
+          "en": "What is the true state of Agentic AI in the open source world? Drawing on the Global Open Source Development Report, this talk presents a data-driven snapshot of global development activity across 150+ agent-related projects (2023–2026). We quantify trends in framework adoption, regional contribution patterns, and emerging technical divides—revealing rapid growth in multi-agent systems and domain-specific agents, alongside persistent challenges in interoperability, safety, and governance. The analysis highlights a shifting center of gravity: while foundational layers remain concentrated, application-layer innovation is increasingly distributed across Asia, Europe, and emerging communities.",
+          "zh": "开源世界中 Agentic AI 的真实现状如何？本演讲基于《全球开源发展报告》，对 150 余个 Agent 相关项目（2023–2026 年）的全球开发活动进行数据驱动的全景梳理，量化框架采用趋势、区域贡献格局与新兴技术鸿沟，揭示多 Agent 系统与领域专用 Agent 的快速增长，以及互操作性、安全性与治理方面持续存在的挑战。",
+          "fr": "Quel est le véritable état de l'Agentic AI dans le monde open source ? S'appuyant sur le Global Open Source Development Report, cet exposé présente un aperçu basé sur les données de l'activité de développement mondiale sur 150+ projets liés aux agents (2023–2026)."
+        },
+        "speakers": [
+          {
+            "name": "Wei Wang",
+            "title": "Professor, East China Normal University"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:20 - 10:40",
+        "type": "talk"
+      },
+      {
+        "title": {
           "en": "Tile Programming for GPUs",
           "zh": "GPU 的 Tile 编程"
+        },
+        "content": {
+          "en": "Parallel programming can be intimidating, but doesn't need to be! There's a new paradigm for parallel programming that's newcomer-friendly, highly productive, and performant: tile-based programming models.\n\nIn this example-driven talk, we'll introduce you to tile-based programming in Python, C++, and Rust. We'll present cuTile, NVIDIA's new tile programming stack and Tile IR, the new compiler stack that it is built with. You'll learn all about new features of CUDA Tile that have recently been announced, including multi-GPU communication, interoperability with traditional CUDA SIMT, and support for more diverse kernels like convolutions and stencils. We'll compare and contrast tile-based models with traditional parallel programming models. You'll see examples from a variety of domains, including HPC stencils, a sparse matrix vector (SPMV) and conjugate gradient (CG) solver, and AI models from TileGym.\n\nBy the end of the session, you'll understand how tile programming enables more intuitive, portable, and efficient development of high-performance, data-parallel applications, for HPC, data science, and machine learning.",
+          "zh": "并行编程不一定令人望而生畏！Tile 编程模型是一种对新手友好、高效且性能卓越的全新并行编程范式。\n\n本演讲将通过丰富示例，带您了解 Python、C++ 和 Rust 中的 Tile 编程。我们将介绍 NVIDIA 全新的 Tile 编程栈 cuTile 及其底层编译器栈 Tile IR，并讲解 CUDA Tile 最新特性，包括多 GPU 通信、与传统 CUDA SIMT 的互操作性，以及对卷积、模板等多样化算子的支持。演讲涵盖 HPC 模板、稀疏矩阵向量乘（SPMV）、共轭梯度（CG）求解器及 TileGym AI 模型等多领域示例。",
+          "fr": "La programmation parallèle n'a pas besoin d'être intimidante ! Les modèles de programmation par tuiles constituent un nouveau paradigme convivial, productif et performant.\n\nCet exposé axé sur des exemples présente la programmation par tuiles en Python, C++ et Rust. Nous présenterons cuTile, la nouvelle pile de programmation par tuiles de NVIDIA, et Tile IR, la pile de compilateurs sur laquelle elle repose. Vous découvrirez les nouvelles fonctionnalités de CUDA Tile, incluant la communication multi-GPU, l'interopérabilité avec CUDA SIMT traditionnel, et le support de noyaux diversifiés comme les convolutions et les stencils."
         },
         "speakers": [
           {
@@ -282,6 +317,11 @@
           "en": "Agent Reshapes the New Paradigm of the Software Industry",
           "zh": "Agent 重塑软件行业新范式"
         },
+        "content": {
+          "en": "Driven by AI Agent, the entire software industry is undergoing a fundamental paradigm shift. From the traditional \"tool rental\" SaaS model to the new \"result delivery\" AaaS (Agent as a Service) form; from manual operation to autonomous collaboration, Agents are redefining the production relations, business logic and ecological pattern of the software industry.\n\nThis talk focuses on the paradigm shift of the software industry driven by Agents, exploring the core changes of Agents in software development, delivery, operations, and business models, and discussing the innovation opportunities and new paradigm of the software industry.",
+          "zh": "在 AI Agent 的驱动下，整个软件行业正在经历根本性的范式转变。从传统的「工具租用」SaaS 模式到新兴的「结果交付」AaaS（Agent as a Service）形态；从人工操作到自主协作，Agent 正在重新定义软件行业的生产关系、业务逻辑与生态格局。",
+          "fr": "Porté par l'IA Agent, l'ensemble du secteur logiciel connaît un changement de paradigme fondamental. Du modèle SaaS traditionnel au nouveau modèle AaaS (Agent as a Service), les Agents redéfinissent les relations de production, la logique métier et l'écosystème du secteur."
+        },
         "speakers": [
           {
             "name": "Jianzhong Li",
@@ -301,6 +341,11 @@
           "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
           "zh": "Agent、代码与平行世界——仓颉编程语言团队 300 天的 Agentic 进化之路"
         },
+        "content": {
+          "en": "This talk describes the complete process of Cangjie's 300-day AI R&D transformation. Starting with an accidental AI coding attempt in May 2025, the team began piloting and nurturing AI pilot teams, gradually implemented the Agent Centric Engineering (ACE) model, and selected 30% of teams to pilot end-to-end AI.\n\nResults: the pilot Sprint productivity of the compiler team improved by 240%–2600%, the third-party library team by 132%–816%, and the standard library team by 125%. The core concept: actively embrace AI, break the shackles of thinking, and realize the reconstruction of individual and team values.",
+          "zh": "本演讲介绍仓颉团队 300 天 AI 研发转型的完整历程。从 2025 年 5 月一次偶然的 AI 编程尝试出发，团队逐步推行 Agent Centric Engineering（ACE）模型，选取 30% 团队试点端到端 AI。编译器团队 Sprint 生产力提升 240%–2600%，第三方库团队提升 132%–816%，标准库团队提升 125%。",
+          "fr": "Cet exposé décrit le processus complet de la transformation R&D IA de Cangjie sur 300 jours, en implémentant progressivement le modèle Agent Centric Engineering (ACE). La productivité Sprint de l'équipe compilateur a augmenté de 240% à 2600%."
+        },
         "speakers": [
           {
             "name": "Dong Xin",
@@ -319,6 +364,11 @@
         "title": {
           "en": "TileLang: Bridge Programmability and Performance in Modern Neural Kernels",
           "zh": "TileLang：架起现代神经网络核心可编程性与性能之间的桥梁"
+        },
+        "content": {
+          "en": "We present TileLang, a Pythonic DSL designed to streamline high-performance kernel development (e.g., FlashAttention, GEMM). TileLang introduces a multi-level programming model that provides explicit tile-level primitives for memory placement and parallel scheduling, allowing developers to seamlessly navigate between high-level productivity and low-level hardware-specific optimizations.\n\nBy decoupling tile logic from execution details, TileLang ensures cross-platform portability across NVIDIA and AMD GPUs while significantly reducing code complexity. We demonstrate that TileLang achieves state-of-the-art performance while reducing code complexity by an order of magnitude, offering a unified solution for cross-platform kernel optimization.",
+          "zh": "我们介绍 TileLang——一种专为高性能核函数开发（如 FlashAttention、GEMM）而设计的 Pythonic DSL。TileLang 引入多级编程模型，提供显式的 Tile 级内存放置与并行调度原语，实现跨 NVIDIA 和 AMD GPU 的跨平台可移植性，同时将代码复杂度降低一个数量级。",
+          "fr": "Nous présentons TileLang, un DSL Pythonique conçu pour simplifier le développement de noyaux haute performance (FlashAttention, GEMM). TileLang réduit la complexité du code d'un ordre de grandeur tout en atteignant des performances de pointe sur NVIDIA et AMD GPU."
         },
         "speakers": [
           {
@@ -404,6 +454,11 @@
           "en": "Symposium: Embrace the Ecosystem",
           "zh": "研讨会：拥抱生态系统"
         },
+        "content": {
+          "en": "The Rust world moves quickly, and that's only become more true with agents writing more and more code. Frontier models know Rust basics well, but they struggle when presented with new patterns that weren't present in their training data — new language features, new libraries, idioms that diverge from the familiar.\n\nThis talk introduces Symposium, an open-source system that changes that. Symposium lets crate authors ship skills, tools, and guidance alongside their code — so adding a dependency doesn't just give your agent new APIs to call, it gives your agent the knowledge to use them well. Learn how it works and what it means to bring Rust's decentralized, composable ecosystem model to AI tooling.",
+          "zh": "Rust 生态发展迅速，随着 Agent 编写越来越多的代码，这一趋势愈发明显。前沿模型熟悉 Rust 基础，但面对训练数据中未出现过的新模式时会遇到困难。Symposium 是一个开源系统，让 crate 作者能够随代码一起发布技能、工具和指引，使 Agent 不仅能调用新 API，还能真正掌握使用方法。",
+          "fr": "Symposium est un système open source qui permet aux auteurs de crates Rust de distribuer compétences, outils et conseils avec leur code — afin que l'ajout d'une dépendance donne à votre agent non seulement de nouvelles API, mais aussi la connaissance pour les utiliser efficacement."
+        },
         "speakers": [
           {
             "name": "Niko Matsakis",
@@ -438,6 +493,11 @@
           "en": "Thoughts to Text & Image: Foundation Models for Brain Computer Interfaces",
           "zh": "从思想到文字与图像：脑机接口基础模型"
         },
+        "content": {
+          "en": "Brain foundation models trained on massive brain data can convert thoughts into texts and images. This was impossible until a few years ago. This talk explores how large-scale pretrained models are enabling a new generation of non-invasive brain-computer interfaces, transforming raw neural signals into language and imagery with unprecedented accuracy.",
+          "zh": "基于海量脑数据训练的脑基础模型，能够将人的思想转化为文字和图像。这在几年前还是不可能实现的。本演讲探讨大规模预训练模型如何推动新一代非侵入式脑机接口的发展，以前所未有的精度将原始神经信号转化为语言与图像。",
+          "fr": "Des modèles de fondation cérébraux entraînés sur des données cérébrales massives peuvent convertir les pensées en textes et images. Cet exposé explore comment les modèles pré-entraînés à grande échelle permettent une nouvelle génération d'interfaces cerveau-ordinateur non invasives."
+        },
         "speakers": [
           {
             "name": "Priyanka Jain",
@@ -456,6 +516,11 @@
         "title": {
           "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
           "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
+        },
+        "content": {
+          "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
+          "zh": "聊天机器人时代正让位于更强大的事物：自主 Agent 生态系统，AI 系统在其中主动规划、协调和执行复杂工作流，无需大量人工干预。Minimax 一直站在这一转变的前沿，开发支持大规模 Agent 原生应用的模型和基础设施。\n\n本演讲探讨如何从简单问答交互迈向多步骤 Agentic 流程——所需的模型能力、工具和编排层，以及在生产环境中部署自主 Agent 的现实挑战。",
+          "fr": "L'ère du chatbot cède la place à quelque chose de plus puissant : les écosystèmes d'agents autonomes où les systèmes IA planifient, coordonnent et exécutent des workflows complexes avec un minimum d'intervention humaine. Minimax est à l'avant-garde de cette transition.\n\nCette présentation examine ce qu'il faut pour aller au-delà des interactions simples vers des pipelines agentiques multi-étapes — les capacités de modèles requises, les couches d'outillage et d'orchestration nécessaires, et les défis réels du déploiement d'agents autonomes en production."
         },
         "speakers": [
           {
@@ -510,6 +575,11 @@
           "en": "Pie: A Programmable Serving System for Agentic Applications",
           "zh": "Pie：面向 Agentic 应用的可编程服务系统"
         },
+        "content": {
+          "en": "Emerging large language model (LLM) applications involve diverse reasoning strategies and agentic workflows, straining the capabilities of existing serving systems built on a monolithic token generation loop. This talk presents Pie, a programmable LLM serving system designed for flexibility and efficiency.\n\nPie decomposes the traditional generation loop into fine-grained service handlers exposed via an API and delegates control of the generation process to user-provided programs called inferlets. This enables applications to implement new KV cache strategies, bespoke generation logic, and seamlessly integrate computation and I/O—entirely within the application, without requiring modifications to the serving system.\n\nPie executes inferlets using WebAssembly, benefiting from its lightweight sandboxing. Evaluation shows Pie improves latency and throughput by 1.3×–3.4× on agentic workflows. Pie is open-source at pie-project.org.",
+          "zh": "新兴 LLM 应用涉及多样化推理策略与 Agentic 工作流，现有基于单体 Token 生成循环的服务系统难以胜任。Pie 是一个可编程 LLM 服务系统，将传统生成循环分解为细粒度服务处理器，通过用户自定义程序（inferlet）控制生成过程，在 Agentic 工作流上实现 1.3×–3.4× 的延迟与吞吐量提升。",
+          "fr": "Pie est un système de service LLM programmable qui décompose la boucle de génération traditionnelle en gestionnaires de services à grain fin, permettant aux applications d'implémenter de nouvelles stratégies de cache KV et une logique de génération sur mesure. Pie améliore la latence et le débit de 1,3× à 3,4×."
+        },
         "speakers": [
           {
             "name": "Lin Zhong",
@@ -528,6 +598,11 @@
         "title": {
           "en": "Open-Source, Openness and Standardization of Large Models",
           "zh": "大模型的开源、开放与标准化"
+        },
+        "content": {
+          "en": "This presentation shares China's relevant policies and standards for open-source models, introducing the country's advancements in the open-sourcing of AI models and the development of open-source licenses. It demonstrates the development status and operational mechanisms of Chinese open-source communities, including the Mulan Open Source Community, and promotes joint efforts between China and the international community in incubating open-source projects, promoting the openness of AI models, and advancing cooperation in standardization.",
+          "zh": "本报告分享中国在开源模型领域的相关政策与标准，介绍 AI 模型开源的最新进展及开源许可证的发展情况，展示包括木兰开源社区在内的中国开源社区发展现状与运营机制，并推动中国与国际社会在孵化开源项目、推进 AI 模型开放及标准化合作等方面的共同努力。",
+          "fr": "Cette présentation partage les politiques et normes chinoises relatives aux modèles open source, en présentant les progrès dans l'ouverture des modèles IA et le développement des licences open source, notamment la communauté Mulan Open Source."
         },
         "speakers": [
           {
@@ -687,6 +762,11 @@
           "en": "Linear Attention: Past, Present and Future",
           "zh": "线性注意力机制：过去、现在与未来"
         },
+        "content": {
+          "en": "The quadratic complexity of standard self-attention has become the fundamental bottleneck for long-context AI agents and edge-deployed models. Linear attention mechanisms—transforming the attention computation from O(n²) to O(n)—have emerged as one of the most significant algorithmic breakthroughs in efficient sequence modeling.\n\nThis talk presents a comprehensive technical journey through the evolution of linear attention: from theoretical foundations (Performer, Linear Transformer, RNN reformulations) through current state-of-the-art architectures (Mamba, RetNet, GLA) to critical research frontiers shaping 2026—hybrid attention strategies for agentic workflows, hardware-software co-design for edge deployment, and the convergence of linear attention with state-space models. Drawing from production experience at Kimi training large-scale foundation models.",
+          "zh": "标准自注意力的二次方复杂度已成为长上下文 AI Agent 与边缘部署模型的根本瓶颈。线性注意力机制将计算从 O(n²) 降至 O(n)，是高效序列建模领域最重要的算法突破之一。本演讲从理论基础出发，经由 Mamba、RetNet、GLA 等主流架构，一路延伸至 2026 年最前沿研究方向，并结合 Kimi 大规模基础模型训练的生产实践。",
+          "fr": "La complexité quadratique de l'auto-attention standard est devenue le goulot d'étranglement fondamental. Les mécanismes d'attention linéaire (O(n) au lieu de O(n²)) ont émergé comme l'une des avancées algorithmiques les plus significatives en modélisation de séquences efficace."
+        },
         "speakers": [
           {
             "name": "Minako Kojima",
@@ -725,6 +805,11 @@
           "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
           "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
         },
+        "content": {
+          "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
+          "zh": "聊天机器人时代正让位于更强大的事物：自主 Agent 生态系统，AI 系统在其中主动规划、协调和执行复杂工作流，无需大量人工干预。Minimax 一直站在这一转变的前沿，开发支持大规模 Agent 原生应用的模型和基础设施。\n\n本演讲探讨如何从简单问答交互迈向多步骤 Agentic 流程——所需的模型能力、工具和编排层，以及在生产环境中部署自主 Agent 的现实挑战。",
+          "fr": "L'ère du chatbot cède la place à quelque chose de plus puissant : les écosystèmes d'agents autonomes où les systèmes IA planifient, coordonnent et exécutent des workflows complexes avec un minimum d'intervention humaine. Minimax est à l'avant-garde de cette transition.\n\nCette présentation examine ce qu'il faut pour aller au-delà des interactions simples vers des pipelines agentiques multi-étapes — les capacités de modèles requises, les couches d'outillage et d'orchestration nécessaires, et les défis réels du déploiement d'agents autonomes en production."
+        },
         "speakers": [
           {
             "name": "Daniel",
@@ -759,6 +844,11 @@
           "en": "World Model for Universal Generation and Control",
           "zh": "用于通用生成与控制的世界模型"
         },
+        "content": {
+          "en": "An effective world model needs to sense and learn real-world knowledge, predict and generate real-world scenes, reason and control according to physical laws, and act robustly with human-in-the-loop. This talk presents two innovations toward the first open-source, physically grounded world model from academia.\n\nFirst, a flow matching and DPO reinforcement learning framework improves continuity and physical awareness in world model representation and generation, achieving best-of-results in physical awareness and state-of-the-art in open-source video generation. Second, a comprehensive physical awareness benchmarking and arena system extracts 50–60 metrics demonstrating physical law awareness across video quality, common sense, Newtonian mechanics, optics, energy, chemical, and material properties. The talk concludes with the concept of \"world model for all\"—a single world model for robotic control, navigation, task management, and 3D reconstruction.",
+          "zh": "本演讲介绍迈向学界首个开源、物理基础世界模型的两项创新：一是通过流匹配与 DPO 强化学习框架提升世界模型表示与生成中的连续性和物理意识；二是构建涵盖 50–60 项指标的物理意识基准体系。最终提出「人人皆可用的世界模型」概念——单一世界模型支撑机器人控制、导航、任务管理与 3D 重建。",
+          "fr": "Cet exposé présente deux innovations vers le premier modèle du monde physiquement ancré en open source : un cadre de flow matching et d'apprentissage par renforcement DPO, et un système de benchmarking de la conscience physique avec 50–60 métriques."
+        },
         "speakers": [
           {
             "name": "Yanzhi Wang",
@@ -777,6 +867,11 @@
         "title": {
           "en": "Building Scalable LLM Inference Infrastructure",
           "zh": "构建可扩展的 LLM 推理基础设施"
+        },
+        "content": {
+          "en": "LLM serving infrastructure has become a key pillar for modern society, but building scalable LLM infrastructure remains challenging at scale due to system issues like load imbalancing, stragglers, and lack of elasticity. This talk presents recent work on scalable and efficient LLM infrastructure, including a simple but efficient multiplication-based LLM global router and ultra-fast autoscaling mechanisms. Some of these works have been or are being deployed at the world's largest LLM service providers.",
+          "zh": "LLM 推理基础设施已成为现代社会的关键支柱，但受负载不均衡、慢节点及弹性不足等系统性问题影响，大规模可扩展基础设施的构建仍面临挑战。本演讲介绍近期在可扩展高效 LLM 基础设施方面的工作，包括简洁高效的乘法基 LLM 全局路由器与超快速自动扩缩容机制，部分成果已在全球最大 LLM 服务商落地部署。",
+          "fr": "Cette présentation expose des travaux récents sur une infrastructure LLM scalable et efficace, incluant un routeur global basé sur la multiplication et des mécanismes d'autoscaling ultra-rapides, déployés chez les plus grands fournisseurs de services LLM au monde."
         },
         "speakers": [
           {
@@ -797,6 +892,11 @@
           "en": "When Does Sparsity Mitigate the Curse of Depth in LLMs",
           "zh": "稀疏性何时能缓解 LLM 的深度诅咒"
         },
+        "content": {
+          "en": "Recent work has demonstrated the curse of depth in large language models, where later layers contribute less to learning and representation than earlier layers. This paper demonstrates that sparsity, beyond enabling efficiency, acts as a regulator of variance propagation and thereby improves depth utilization.\n\nThe investigation covers two sources of sparsity: implicit sparsity (weight sparsity from weight decay, attention sparsity from long-context inputs) and explicit sparsity (key/value-sharing in Grouped-Query Attention, expert-activation sparsity in Mixture-of-Experts). A consistent relationship emerges: sparsity improves layer utilization by reducing output variance and promoting functional differentiation, yielding a notable 4.6% accuracy improvement on downstream tasks.",
+          "zh": "近期研究发现 LLM 的「深度诅咒」——越深的层对学习与表示的贡献越小。本研究证明，稀疏性不仅能提升效率，还能作为方差传播的调节器从而改善深度利用率。研究涵盖隐式稀疏性（权重衰减引起的权重稀疏、长上下文引起的注意力稀疏）与显式稀疏性（GQA 的 KV 共享、MoE 的专家激活稀疏），在下游任务上实现 4.6% 的准确率提升。",
+          "fr": "Cet article démontre que la sparsité agit comme un régulateur de la propagation de la variance dans les LLM, améliorant l'utilisation des couches profondes. Elle couvre la sparsité implicite et explicite, obtenant une amélioration de 4,6% de précision sur les tâches en aval."
+        },
         "speakers": [
           {
             "name": "Shiwei Liu",
@@ -815,6 +915,11 @@
         "title": {
           "en": "Exploring HiFloat8: A Tapered Format Complementing the FP8 Ecosystem for Robust Model Training",
           "zh": "探索 HiFloat8：为 FP8 生态补充的渐变格式，实现稳健模型训练"
+        },
+        "content": {
+          "en": "Standard FP8 formats suffer from frequent gradient overflows and heavy reliance on complex dynamic scaling (Delayed Scaling), which often lead to training instability in billion-parameter models. This session introduces HiFloat8 (HiF8)—a tapered precision format whose natural alignment with neural network weight/gradient distributions allows it to capture high-magnitude outliers without aggressive scaling.\n\nWe demonstrate HiF8 implementation within PyTorch using torch.npu, show training stability analysis with BF16-level convergence achieved with reduced reliance on delay scaling, and present 1.5–1.7× GEMM performance gains versus FP16 in specific scenarios. We also discuss ongoing collaboration on dedicated hardware support for HiF8.",
+          "zh": "标准 FP8 格式存在梯度溢出频繁、高度依赖复杂动态缩放（延迟缩放）等问题，导致十亿参数模型训练不稳定。本演讲介绍 HiFloat8（HiF8）——一种渐变精度格式，其与神经网络权重/梯度分布的天然契合使其无需激进缩放即可捕获高幅度离群值，在特定场景下实现相对 FP16 约 1.5–1.7× 的 GEMM 性能提升。",
+          "fr": "HiFloat8 (HiF8) est un format de précision effilé qui s'aligne naturellement avec les distributions de poids/gradients des réseaux de neurones. Il atteint une convergence de niveau BF16 avec une dépendance réduite au scaling retardé, et offre des gains de performance GEMM de 1,5 à 1,7× versus FP16."
         },
         "speakers": [
           {
@@ -850,6 +955,11 @@
           "en": "The Smol Training Playbook: Lessons from Training State-of-the-Art LLMs",
           "zh": "小型训练手册：训练最先进 LLM 的经验教训"
         },
+        "content": {
+          "en": "A deep dive into the real-world challenges of training LLMs at scale, covering infrastructure, 5D parallelism, performance tuning, and hard-earned lessons from training SmolLM3 on hundreds of GPUs.\n\nThis talk builds on the Ultra-Scale Playbook presented at GOSIM 2025 and goes further with insights from the SmolLM3 training campaign. Topics include: 5D parallelism (data, tensor, pipeline, context, and expert), real vs theoretical bandwidth validation across the hardware stack, communication patterns and NCCL tuning, checkpointing strategies, and MoE training challenges. The session distills practical recommendations tying them to benchmarks and case studies, aimed at engineers ready to scale beyond single-GPU setups.",
+          "zh": "深度剖析大规模 LLM 训练的真实挑战，涵盖基础设施、5D 并行、性能调优，以及在数百张 GPU 上训练 SmolLM3 的实战经验。议题包括：5D 并行（数据、张量、流水线、上下文、专家并行）、硬件栈带宽验证、NCCL 调优、检查点策略及 MoE 训练挑战。",
+          "fr": "Une plongée dans les défis réels de l'entraînement de LLMs à grande échelle, couvrant le parallélisme 5D, l'optimisation des performances NCCL, et les leçons tirées de l'entraînement de SmolLM3 sur des centaines de GPU."
+        },
         "speakers": [
           {
             "name": "Nouamane Tazi",
@@ -868,6 +978,11 @@
         "title": {
           "en": "Building World's First Multi-Modal Model SpeedRun in Open Source",
           "zh": "开源构建全球首个多模态模型 SpeedRun"
+        },
+        "content": {
+          "en": "Standing on the shoulders of giants like modded-nanogpt speedrun and marin speedrun, the Open Model Initiative under LFAI&Data Foundation kickstarted a new speedrun effort focusing on multi-modal models in early 2026. This is the first effort to accelerate model architecture and training/inference innovation for multi-modal tasks worldwide.\n\nThis talk shares the motivation for this effort, how it came about, and the latest submissions received since launch—demonstrating how open collaboration can accelerate the development of next-generation multimodal AI.",
+          "zh": "站在 modded-nanogpt speedrun 和 marin speedrun 等先驱的肩膀上，LFAI&Data 基金会旗下的 Open Model Initiative 于 2026 年初启动了面向多模态模型的全新 speedrun 挑战。这是全球首个加速多模态任务模型架构与训练/推理创新的举措。本演讲分享这一行动的动机、起源及自发布以来收到的最新提交成果。",
+          "fr": "L'Open Model Initiative sous LFAI&Data Foundation a lancé en 2026 un speedrun pour les modèles multimodaux — la première initiative mondiale pour accélérer l'innovation en architecture et entraînement de modèles multimodaux. Cet exposé partage la motivation, l'origine et les dernières soumissions."
         },
         "speakers": [
           {
@@ -920,6 +1035,11 @@
           "en": "Writing Rust AI Applications with Makepad",
           "zh": "使用 Makepad 编写 Rust AI 应用"
         },
+        "content": {
+          "en": "This talk shows how to rapidly create high-performance Rust applications with Makepad, using AI coding assistants like Claude. Rust is the ideal language for AI generation because of its strong compiler guarantees and superb performance—we no longer need to write it by hand.\n\nMakepad Studio has automation integration for AI so it can generate, see, click buttons, and iterate completely automated on visual applications. Makepad compiles to web, desktop (Windows, Linux, macOS), mobile (Android, iOS), and XR (Quest). The talk demos how far we can push AI application generation including AI-generated CAD, 3D, map rendering, vector engines, and mixed reality 3D world scanning.",
+          "zh": "本演讲展示如何借助 Claude 等 AI 编程助手，用 Makepad 快速创建高性能 Rust 应用。Rust 因强大的编译器保证和卓越性能而成为 AI 代码生成的理想语言。Makepad Studio 集成 AI 自动化，可自动生成、查看、点击并迭代可视化应用，支持 Web、桌面、移动及 XR（Quest）等多平台编译。",
+          "fr": "Cette présentation montre comment créer rapidement des applications Rust haute performance avec Makepad, en utilisant des assistants de codage IA comme Claude. Makepad compile vers le web, desktop, mobile et XR, permettant une génération d'applications IA automatisée de bout en bout."
+        },
         "speakers": [
           {
             "name": "Rik Arends",
@@ -939,6 +1059,11 @@
           "en": "Frontier of Agentic AI",
           "zh": "Agentic AI 的前沿探索"
         },
+        "content": {
+          "en": "This talk traces the evolution of agentic AI from multi-agent research to real-world personal AI systems. Starting with AutoGen (AG2) and its multi-agent coordination framework, through autonomous coding with Claude Code, to scalable parallel execution with MassGen, and culminating in Sutando—a personal AI agent with real-time voice, vision, phone calls, and autonomous self-building capabilities.\n\nThe talk includes a live demo showing three systems (Sutando, MassGen, and coding agents) coordinating on a single task without human direction. It concludes with three open problems grounded in real deployment experience: ambient intelligence (knowing when to act vs. stay silent), earned trust (gradual capability escalation), and human-agent partnership (genuine collaboration, not just delegation).",
+          "zh": "本演讲追溯 Agentic AI 从多智能体研究到真实个人 AI 系统的演进历程：从 AutoGen（AG2）多智能体协调框架，到 Claude Code 自主编程，再到 MassGen 可扩展并行执行，最终到 Sutando——一个具备实时语音、视觉、电话拨打与自主自建能力的个人 AI Agent。演讲含现场演示，并以三个来自实际部署的开放难题作为结语：环境感知、渐进信任、人机协作。",
+          "fr": "Cette conférence retrace l'évolution de l'IA agentique, d'AutoGen (AG2) à Sutando — un agent IA personnel avec voix en temps réel, vision et appels téléphoniques. Elle inclut une démo en direct de trois systèmes coordonnant une tâche sans direction humaine."
+        },
         "speakers": [
           {
             "name": "Wang Chi",
@@ -957,6 +1082,11 @@
         "title": {
           "en": "Building Agentic Apps with CopilotKit and AG-UI",
           "zh": "使用 CopilotKit 和 AG-UI 构建 Agentic 应用"
+        },
+        "content": {
+          "en": "AI agents are reshaping how users interact with software. This talk explores Agentic UX through AG-UI, an open protocol that standardizes agent-to-user interactions, enabling intuitive, real-time, and collaborative AI experiences.\n\nAttendees will learn how Agentic UX differs from conventional design paradigms, the AG-UI event model (from streaming messages to tool calls and shared state), how human-in-the-loop is essential for AI-native applications, patterns for building intuitive AI-native interfaces, and how vendor-neutral messaging enables interoperability across frameworks like LangGraph, CrewAI, and Mastra.",
+          "zh": "AI Agent 正在重塑用户与软件的交互方式。本演讲通过 AG-UI——一个标准化 Agent 与用户交互的开放协议——探讨 Agentic UX。议题涵盖：Agentic UX 与传统设计范式的差异、AG-UI 事件模型（从流式消息到工具调用与状态共享）、人在回路对 AI 原生应用的重要性，以及跨 LangGraph、CrewAI、Mastra 等框架的互操作性。",
+          "fr": "AG-UI est un protocole ouvert qui standardise les interactions agent-utilisateur. Cet exposé présente comment l'Agentic UX diffère des paradigmes classiques, le modèle d'événements AG-UI, et comment la messagerie vendor-neutral permet l'interopérabilité entre LangGraph, CrewAI et Mastra."
         },
         "speakers": [
           {
@@ -992,6 +1122,11 @@
           "en": "Building with StrongDM Attractor",
           "zh": "使用 StrongDM Attractor 进行构建"
         },
+        "content": {
+          "en": "This talk covers experience working with StrongDM's Attractor: a multi-agent orchestrator capable of delivering production-ready features by walking a graph of nodes. Attractor has been used internally to deliver drivers for cloud databases, one-shot simple compiler development (which took a lot of prompting previously), and for complicated numerical analysis algorithm tasks. The specification is open source.",
+          "zh": "本演讲分享使用 StrongDM Attractor 的实践经验——这是一个通过遍历节点图来交付生产就绪功能的多 Agent 编排器。Attractor 已用于交付云数据库驱动、一次性简单编译器开发以及复杂数值分析算法任务，规范已开源。",
+          "fr": "Cette présentation couvre l'expérience avec Attractor de StrongDM : un orchestrateur multi-agents capable de livrer des fonctionnalités prêtes pour la production en parcourant un graphe de nœuds. Utilisé pour des pilotes de bases de données cloud, du développement de compilateurs et des tâches d'analyse numérique. La spécification est open source."
+        },
         "speakers": [
           {
             "name": "Marcin Zubrzycki",
@@ -1010,6 +1145,11 @@
         "title": {
           "en": "How to Build Multi-Agent Systems with ADK and Agent Skills",
           "zh": "如何使用 ADK 和 Agent Skills 构建多智能体系统"
+        },
+        "content": {
+          "en": "Multi-agent systems are one of the most promising patterns in AI application development, but how do you actually build one that is modular, maintainable, and useful in real developer workflows?\n\nThis talk explores how to design and build a practical multi-agent system using the Google Agent Development Kit (ADK), Antigravity, and Agent Skills. By the end of the session, you will understand how to design a multi-agent architecture, decide when to use sub-agents versus agent-like tools, and create reusable skills that make agents more effective in real-world development environments.",
+          "zh": "多智能体系统是 AI 应用开发中最具前景的模式之一。本演讲探讨如何使用 Google Agent Development Kit（ADK）、Antigravity 和 Agent Skills 设计并构建实用的多智能体系统，帮助你掌握多智能体架构设计、子 Agent 与 Agent 工具的选择时机，以及创建可复用技能以提升 Agent 在真实开发环境中的效果。",
+          "fr": "Cet exposé explore comment concevoir et construire un système multi-agents pratique avec Google ADK, Antigravity et Agent Skills — comment architecturer un système multi-agents, choisir entre sous-agents et outils, et créer des compétences réutilisables."
         },
         "speakers": [
           {
@@ -1045,6 +1185,11 @@
           "en": "Vibe Native for More: Why AI Agents Deserve a Better App Framework",
           "zh": "Vibe Native for More：AI Agent 为什么需要更好的应用框架"
         },
+        "content": {
+          "en": "AI is transforming how apps are built, but not what they're built on. Without a cross-platform framework, agents must generate, verify, and maintain separate code for every platform, or degrade to web pages that don't feel native.\n\nThis talk introduces Lynx, the open-source cross-platform framework powering TikTok and CapCut at billion-user scale, and presents three principles for AI-native app infrastructure: AI-Ergonomic (harness-able by agents), AI-Efficient (token-economical via cross-platform code reuse), and AI-Expressive (intent-driven UI with A2UI protocols, JSON-to-UI rendering, and streaming-friendly architectures for real-time progressive generation).",
+          "zh": "AI 正在改变应用的构建方式，却未改变其构建基础。本演讲介绍 Lynx——为 TikTok 和 CapCut 提供十亿级用户规模支撑的开源跨平台框架，并提出 AI 原生应用基础设施的三大原则：AI 人机工程学（可被 Agent 驾驭）、AI 高效性（跨平台复用降低 Token 成本）、AI 表达力（A2UI 协议、JSON-to-UI 渲染与流式架构）。",
+          "fr": "Lynx est le framework cross-platform open source qui propulse TikTok et CapCut à l'échelle du milliard d'utilisateurs. Cet exposé présente trois principes pour l'infrastructure d'apps IA-native : AI-Ergonomique, AI-Efficace (économie de tokens via la réutilisation cross-platform), et AI-Expressif (protocoles A2UI, rendu JSON-to-UI)."
+        },
         "speakers": [
           {
             "name": "Xuan Huang",
@@ -1064,6 +1209,11 @@
           "en": "Bridging the Chasm: Practical AI Experiments in the Servo Engine",
           "zh": "跨越鸿沟：Servo 引擎中的 AI 实验探索"
         },
+        "content": {
+          "en": "Can AI-assisted coding significantly accelerate the implementation of complex web standards? This talk explores two experiments on a fork of the Servo web engine aimed at closing the feature gap with dominant engines.\n\nExperiment 1 — Architect as Director (WebNN): A developer with deep architectural knowledge uses AI as a high-speed implementation partner to bridge high-level structural intent and low-level boilerplate for a new API. Experiment 2 — Novice using Test-Driven AI (CSS Grid): What happens when the human knows nothing about the domain? This experiment implements CSS Grid by delegating logic to AI, using WPT tests as absolute ground truth, analyzing whether a rigorous test suite is sufficient to steer an AI through a black-box implementation.",
+          "zh": "AI 辅助编程能否显著加速复杂 Web 标准的实现？本演讲通过两个 Servo 引擎分支实验进行探索。实验一：建筑师式引导（WebNN）——具备深厚架构知识的开发者将 AI 用作高速实现伙伴。实验二：测试驱动 AI（CSS Grid）——对领域一无所知的用户通过 WPT 测试作为绝对基准，委托 AI 实现逻辑，分析严格测试套件是否足以引导 AI 完成黑盒实现。",
+          "fr": "Deux expériences sur un fork du moteur web Servo : Architect as Director (WebNN) — un développeur avec une connaissance architecturale profonde utilise l'IA comme partenaire d'implémentation ; Novice avec Test-Driven AI (CSS Grid) — utiliser les tests WPT comme vérité absolue pour guider l'IA."
+        },
         "speakers": [
           {
             "name": "Gregory Terzian",
@@ -1082,6 +1232,11 @@
         "title": {
           "en": "AI Companion is the New Interface: Building a Learning Agent Device with China's Hardware Ecosystem",
           "zh": "AI 伴侣是新界面：利用中国硬件生态构建学习 Agent 设备"
+        },
+        "content": {
+          "en": "AI is rapidly evolving from chatbots to copilots, and now toward agent-based systems. But most AI experiences still live inside apps—fragmented, reactive, and short-lived. What if AI becomes a long-term companion instead?\n\nThis talk shares the journey from leading Microsoft Copilot and Agent product initiatives to building Ingora, an AI-native learning companion for children. It introduces a new paradigm: AI companions that combine agent intelligence, multimodal interaction (voice and vision), and hardware to support continuous, personalized learning. The talk also explores why traditional AI tutor models fall short, and shares practical insights on building AI-native hardware products with China's supply chain.",
+          "zh": "AI 正在从聊天机器人迅速演进为副驾驶，进而走向基于 Agent 的系统。本演讲分享从主导微软 Copilot 和 Agent 产品到创建 Ingora（面向儿童的 AI 原生学习伴侣）的历程，介绍一种结合 Agent 智能、多模态交互与硬件以支持持续个性化学习的全新范式，并探讨中国供应链如何赋能 AI 原生硬件产品的快速迭代。",
+          "fr": "L'IA évolue rapidement des chatbots vers les copilotes, puis vers les systèmes basés sur des agents. Cet exposé partage le parcours de la création d'Ingora, un compagnon d'apprentissage IA-natif pour enfants, et explore comment l'écosystème matériel chinois accélère l'innovation produit IA."
         },
         "speakers": [
           {
@@ -1212,6 +1367,11 @@
           "en": "One Year of llama.cpp: Milestones and Future Plans",
           "zh": "llama.cpp 一年历程：里程碑与未来规划"
         },
+        "content": {
+          "en": "llama.cpp has revolutionized efficient LLM inference on consumer hardware, enabling accessible AI for developers worldwide. This talk reflects on the journey from mid-2025 to mid-2026, highlighting key achievements including: the new Web UI, support for popular models like GPT-OSS, Qwen3.5, and GLM-5, key performance improvements, and integrations with downstream applications like LM Studio and LlamaBarn.\n\nLooking ahead, the talk discusses upcoming features and collaborative roadmaps to push open-source AI inference further.",
+          "zh": "llama.cpp 彻底改变了消费级硬件上的高效 LLM 推理，让全球开发者都能触及 AI。本演讲回顾 2025 年中至 2026 年中的历程，重点介绍全新 Web UI、对 GPT-OSS、Qwen3.5、GLM-5 等热门模型的支持、关键性能提升，以及与 LM Studio、LlamaBarn 等下游应用的集成，并展望未来功能规划与协作路线图。",
+          "fr": "llama.cpp a révolutionné l'inférence LLM efficace sur matériel grand public. Cette présentation retrace le parcours de mi-2025 à mi-2026 : nouvelle Web UI, support des modèles GPT-OSS, Qwen3.5, GLM-5, améliorations de performance et intégrations avec LM Studio et LlamaBarn."
+        },
         "speakers": [
           {
             "name": "Xuan-Son Nguyen",
@@ -1231,6 +1391,11 @@
           "en": "Bridging AI Ecosystems: RustNN as a Universal WebNN Implementation",
           "zh": "桥接 AI 生态：RustNN 作为通用 WebNN 实现"
         },
+        "content": {
+          "en": "WebNN offers a massive opportunity to unify the AI landscape through a single, high-performance standard that runs everywhere. Originally started as a specialized backend for a single browser engine, RustNN is growing into a robust, native Rust implementation of the WebNN specification.\n\nThis session demonstrates how RustNN creates a unified pipeline: meeting developers at the source via ONNX and Torch converters; targeting CoreML, TensorRT, and WebAssembly for native-speed execution; integrating into a Servo fork to provide a first-class, memory-safe WebNN backend; and Python/Node.js bindings enabling teams to use the same Rust-powered engine across their entire stack.",
+          "zh": "WebNN 通过一套可在任何地方运行的高性能标准，为统一 AI 格局提供了巨大机遇。RustNN 从单一浏览器引擎的专用后端，逐步成长为 WebNN 规范的原生 Rust 实现，通过 ONNX/Torch 转换器对接开发者，面向 CoreML、TensorRT 和 WebAssembly 实现原生速度执行，并集成进 Servo 分支以提供一流的内存安全 WebNN 后端。",
+          "fr": "WebNN offre une opportunité majeure d'unifier le paysage IA. RustNN est une implémentation native Rust de la spécification WebNN ciblant CoreML, TensorRT et WebAssembly, avec des bindings Python et Node.js permettant d'utiliser le même moteur Rust dans toute la stack."
+        },
         "speakers": [
           {
             "name": "Markus Tavenrath",
@@ -1249,6 +1414,11 @@
         "title": {
           "en": "Khal and Inferi: Towards Single-Language Cross-Platform GPU Inference with Rust and rust-gpu",
           "zh": "Khal 与 Inferi：用 Rust 和 rust-gpu 实现单语言跨平台 GPU 推理"
+        },
+        "content": {
+          "en": "After multiple technological explorations for cross-platform GPU programming (WGSL, Slang), this talk presents an experiment where both CPU code and GPU kernels are written in the same language: Rust. By leveraging cargo and the Rust compiler (through rust-gpu), common tensor and LLM inference operators run on all major platforms, including the web.\n\nKhal provides an abstraction layer between spirv shaders and Rust code, enabling strong typing across the GPU/CPU boundary. Vortx and Inferi are the resulting tensor library and LLM inference engine written entirely in Rust. The talk also hints at Nexus (physics-based dataset generation for robotics training) as an example of how Rust GPU code enables easy reuse across domains beyond pure inference.",
+          "zh": "在探索了 WGSL、Slang 等跨平台 GPU 编程技术后，本演讲介绍一项将 CPU 代码与 GPU 核函数统一用 Rust 编写的实验。Khal 提供 spirv 着色器与 Rust 代码之间的抽象层，实现跨 GPU/CPU 边界的强类型保证；Vortx 和 Inferi 则是由此产生的纯 Rust 张量库与 LLM 推理引擎，可在所有主流平台（含 Web）运行。",
+          "fr": "Cette présentation explore une codebase où le code CPU et les noyaux GPU sont écrits dans le même langage : Rust. Khal fournit une couche d'abstraction entre les shaders spirv et le code Rust, avec un typage fort à travers la frontière GPU/CPU. Vortx et Inferi sont la bibliothèque tenseur et le moteur d'inférence LLM résultants."
         },
         "speakers": [
           {
@@ -1299,6 +1469,11 @@
           "en": "KTransformers: Full-Precision Inference for 600B+ MoE Models on Consumer Hardware",
           "zh": "KTransformers：在消费级硬件上实现 600B+ MoE 模型的全精度推理"
         },
+        "content": {
+          "en": "KTransformers is an open-source CPU-GPU heterogeneous inference framework that runs frontier MoE models like DeepSeek-V3 and Qwen3.5-397B at FP8 precision on consumer GPUs. By offloading expert computations to CPU with CUDA Graph-capturable coordination, it achieves 35+ tokens/sec decode speed—making 600B+ models accessible without datacenter infrastructure.",
+          "zh": "KTransformers 是一个开源 CPU-GPU 异构推理框架，能够在消费级 GPU 上以 FP8 精度运行 DeepSeek-V3、Qwen3.5-397B 等前沿 MoE 模型。通过将专家计算卸载至 CPU 并结合 CUDA Graph 可捕获协调，实现 35+ tokens/sec 的解码速度，让 600B+ 模型无需数据中心基础设施即可运行。",
+          "fr": "KTransformers est un framework d'inférence hétérogène CPU-GPU open source qui exécute des modèles MoE frontière comme DeepSeek-V3 et Qwen3.5-397B en précision FP8 sur des GPU grand public, atteignant 35+ tokens/sec sans infrastructure de datacenter."
+        },
         "speakers": [
           {
             "name": "Ervin Xie",
@@ -1317,6 +1492,11 @@
         "title": {
           "en": "Power Every Smart Device with Intelligence",
           "zh": "赋能每一台智能设备"
+        },
+        "content": {
+          "en": "This presentation focuses on the technical details of ModelBest's on-device large models—MiniCPM and MiniCPM-o—as well as their real-world applications across smart cockpits, smartphones, smart home devices, and robotics.\n\nThe MiniCPM family has earned widespread acclaim in the global AI community for its high efficiency, low cost, and ability to \"punch above its weight.\" To date, these projects have amassed over 30,000 GitHub stars and exceeded 24 million downloads worldwide, establishing themselves as benchmark works in the field of on-device AI.",
+          "zh": "本报告重点介绍 ModelBest 端侧大模型 MiniCPM 与 MiniCPM-o 的技术细节，以及其在智能座舱、智能手机、智慧家居和机器人领域的真实落地应用。MiniCPM 系列以高效率、低成本、「小身材大能量」在全球 AI 社区广受认可，迄今已在 GitHub 积累超过 3 万星标、全球下载量突破 2400 万次。",
+          "fr": "Cette présentation se concentre sur les détails techniques des modèles embarqués de ModelBest — MiniCPM et MiniCPM-o — et leurs applications dans les cockpits intelligents, smartphones, maisons connectées et robotique. Plus de 30 000 étoiles GitHub et 24 millions de téléchargements mondiaux."
         },
         "speakers": [
           {
@@ -1337,6 +1517,11 @@
           "en": "OminiX: Fully Automated Native C++ Deployment for Diverse Large-Scale Learning Models",
           "zh": "OminiX：面向多种大规模学习模型的全自动原生 C++ 部署"
         },
+        "content": {
+          "en": "Running deep learning inference in native C++ enables efficient edge deployment, eliminates Python/PyTorch dependencies, and allows fast, accurate quantization. However, converting a PyTorch model to native C++ requires weeks of labor-intensive development.\n\nOminiX is an automated pipeline where an AI agent with structured procedural skills converts arbitrary PyTorch models into optimized C++ inference code targeting the GGML runtime. OminiX generalizes beyond LLMs to support image/video generation, speech recognition, TTS, world models, and VLA models. Case study: OpenVLA (7B-parameter VLA model) achieves near-lossless task success rate, up to 63% memory reduction, and up to 1.52× speedup.",
+          "zh": "原生 C++ 深度学习推理能实现高效边缘部署，消除 Python/PyTorch 依赖，并支持快速精确量化。然而将 PyTorch 模型转化为原生 C++ 需要数周繁重开发工作。OminiX 是一个自动化流水线：AI Agent 凭借结构化程序技能，将任意 PyTorch 模型转换为面向 GGML 运行时的优化 C++ 推理代码，涵盖 LLM、图像/视频生成、语音识别、TTS、世界模型和 VLA 等多类模型。",
+          "fr": "OminiX est un pipeline automatisé où un agent IA convertit des modèles PyTorch arbitraires en code C++ optimisé ciblant le runtime GGML. Cas d'usage : OpenVLA (7B paramètres VLA) avec jusqu'à 63% de réduction mémoire et 1,52× d'accélération."
+        },
         "speakers": [
           {
             "name": "Yanzhi Wang",
@@ -1355,6 +1540,11 @@
         "title": {
           "en": "Vulkan for Edge AI: Expanding the Hardware Frontier with llama.cpp",
           "zh": "Vulkan 赋能边缘 AI：用 llama.cpp 拓展硬件前沿"
+        },
+        "content": {
+          "en": "Agentic AI on the edge requires accessible, low-latency inference, yet hardware fragmentation limits deployment. While CUDA dominates acceleration, its vendor lock-in constrains local intelligence. This talk examines Vulkan as a vendor-neutral alternative, showcasing how it expanded compatibility and reduced deployment complexity in llama.cpp across Intel, AMD, and NVIDIA GPUs.\n\nThe talk outlines real engineering roadblocks—driver inconsistencies and compute limitations—and looks ahead to VK_NV_cooperative_matrix2 as a blueprint for offloading hardware-specific optimizations to the driver, enabling peak performance via vendor optimizations while maintaining broad support through generic shader fallbacks.",
+          "zh": "边缘 Agentic AI 需要可及、低延迟的推理，而硬件碎片化限制了部署。本演讲探讨 Vulkan 作为厂商中立替代方案，展示其如何在 llama.cpp 中扩展 Intel、AMD 和 NVIDIA GPU 的兼容性并降低部署复杂度，并展望 VK_NV_cooperative_matrix2 作为将硬件特定优化卸载至驱动层的蓝图。",
+          "fr": "Cette présentation examine Vulkan comme alternative vendor-neutre à CUDA, montrant comment il a étendu la compatibilité dans llama.cpp sur GPU Intel, AMD et NVIDIA. Elle explore VK_NV_cooperative_matrix2 comme modèle pour déléguer les optimisations matérielles au pilote."
         },
         "speakers": [
           {
@@ -1407,6 +1597,11 @@
           "en": "RoboChallenge Annual Report on Large-Scale Real Robot Benchmark",
           "zh": "RoboChallenge 大规模真实机器人基准测试年度报告"
         },
+        "content": {
+          "en": "RoboChallenge is a large-scale real robot benchmark initiative designed to evaluate and advance the capabilities of robotic systems across diverse real-world tasks. This annual report presents the latest findings, metrics, and insights from running benchmarks on physical robots at scale.\n\nThe talk covers what makes real-robot benchmarking uniquely challenging compared to simulation, how RoboChallenge structures its evaluation framework across manipulation, navigation, and interaction tasks, and what the 2025 results reveal about the state of open-source robotics. Attendees will learn how to participate in future challenges and how community-driven benchmarking is accelerating progress in embodied AI.",
+          "zh": "RoboChallenge 是一项大规模真实机器人基准测试计划，旨在评估和推进机器人系统在多样化真实场景中的能力。本次年度报告呈现最新发现、评估指标及规模化测试的洞察。\n\n演讲涵盖真实机器人基准测试的独特挑战、RoboChallenge 的评估框架设计、以及 2025 年结果所揭示的开源机器人现状，并介绍如何参与未来挑战。",
+          "fr": "RoboChallenge est une initiative de benchmark à grande échelle sur des robots réels, conçue pour évaluer et faire progresser les capacités robotiques dans des tâches du monde réel. Ce rapport annuel présente les dernières découvertes, métriques et enseignements issus des évaluations à grande échelle.\n\nLa présentation couvre les défis spécifiques au benchmark sur robots réels, le cadre d'évaluation de RoboChallenge, et ce que les résultats 2025 révèlent sur l'état de la robotique open source."
+        },
         "speakers": [
           {
             "name": "Emily Chen",
@@ -1425,6 +1620,11 @@
         "title": {
           "en": "LeRobot Humanoide: An Open Source 3D Printed Robot",
           "zh": "LeRobot Humanoide：一款开源 3D 打印机器人"
+        },
+        "content": {
+          "en": "LeRobot Humanoide is a fully open-source humanoid robot designed to be 3D printed and assembled by anyone with access to consumer-grade hardware. This talk introduces the robot's mechanical design, electronics stack, and software integration with the Hugging Face LeRobot ecosystem.\n\nVirgile Batto walks through the design philosophy—making humanoid robotics accessible and reproducible—and shares practical lessons from building, iterating, and open-sourcing a physical robot platform. The session covers how the robot connects to standard training pipelines, what challenges arise when bridging hardware and learning, and how the community can contribute to and extend the project.",
+          "zh": "LeRobot Humanoide 是一款完全开源的仿人机器人，设计为可使用消费级硬件进行 3D 打印和组装。本演讲介绍机器人的机械设计、电子系统及与 Hugging Face LeRobot 生态的软件集成。\n\n演讲者将分享让仿人机器人平民化的设计理念、开源物理机器人平台的实践经验，以及社区如何参与贡献和扩展该项目。",
+          "fr": "LeRobot Humanoide est un robot humanoïde entièrement open source conçu pour être imprimé en 3D et assemblé avec du matériel grand public. Cette présentation couvre la conception mécanique, la pile électronique et l'intégration logicielle avec l'écosystème LeRobot de Hugging Face.\n\nVirgile Batto partage la philosophie de conception axée sur l'accessibilité, les leçons pratiques du développement open source d'une plateforme robotique physique, et comment la communauté peut contribuer au projet."
         },
         "speakers": [
           {
@@ -1445,6 +1645,11 @@
           "en": "Skill Foundry: An AI That Embodies a Robot, Watches Itself, and Learns",
           "zh": "Skill Foundry：一个能「化身机器人」、自我观察并学习的 AI"
         },
+        "content": {
+          "en": "Skill Foundry is a novel approach to robot skill acquisition where an AI agent literally embodies a robot, watches its own behavior through cameras, and iteratively learns from what it observes. Rather than relying solely on human demonstrations or simulated environments, the system uses a closed-loop self-improvement cycle grounded in real physical interaction.\n\nCharbel Dandjinou presents the architecture behind Skill Foundry, how it combines vision-language models with motor control, and the surprising capabilities that emerge when a robot can critique and refine its own actions. The talk addresses the challenges of real-world self-supervised learning and outlines the path toward robots that continuously improve without constant human supervision.",
+          "zh": "Skill Foundry 是一种新颖的机器人技能习得方法：AI 智能体化身为机器人，通过摄像头观察自身行为，并从中迭代学习。该系统利用基于真实物理交互的闭环自我改进机制，而非仅依赖人类演示或仿真环境。\n\n演讲者介绍 Skill Foundry 的架构、视觉语言模型与运动控制的结合方式，以及机器人能够批判和改进自身动作所带来的能力涌现。",
+          "fr": "Skill Foundry est une approche originale d'acquisition de compétences robotiques où un agent IA s'incarne dans un robot, observe son propre comportement via des caméras et apprend de manière itérative. Le système utilise un cycle d'auto-amélioration en boucle fermée ancré dans l'interaction physique réelle.\n\nCharbel Dandjinou présente l'architecture de Skill Foundry, la combinaison de modèles vision-langage et de contrôle moteur, et la voie vers des robots qui s'améliorent en continu sans supervision humaine constante."
+        },
         "speakers": [
           {
             "name": "Charbel Dandjinou",
@@ -1463,6 +1668,11 @@
         "title": {
           "en": "Amazing Hand: An Open Source Robotic Hand Tech Report",
           "zh": "Amazing Hand（一款开源机器人灵巧手）技术报告"
+        },
+        "content": {
+          "en": "Amazing Hand is an open-source dexterous robotic hand developed at Hugging Face as part of the broader LeRobot initiative. This tech report covers the full development journey: from mechanical design and actuator selection to embedded firmware and integration with learning-based control policies.\n\nJeremy Laville shares the engineering decisions that shaped the hand's design, the trade-offs between cost, dexterity, and reliability, and how the hardware interfaces with state-of-the-art manipulation algorithms. The talk includes live demos and a frank discussion of what works, what doesn't, and what the open-source community needs to push dexterous manipulation forward.",
+          "zh": "Amazing Hand 是 Hugging Face 作为 LeRobot 计划的一部分开发的开源灵巧机器人手。本技术报告涵盖完整的开发历程：从机械设计和执行器选择到嵌入式固件及与基于学习的控制策略的集成。\n\n演讲者分享形塑设计的工程决策、成本与灵活性和可靠性之间的权衡，以及硬件如何与先进操控算法对接，并坦诚讨论开源灵巧操控的挑战与机遇。",
+          "fr": "Amazing Hand est une main robotique dextre open source développée chez Hugging Face dans le cadre de l'initiative LeRobot. Ce rapport technique couvre le parcours complet de développement : conception mécanique, sélection des actionneurs, firmware embarqué et intégration avec des politiques de contrôle basées sur l'apprentissage.\n\nJeremy Laville partage les décisions d'ingénierie, les compromis entre coût, dextérité et fiabilité, et comment la communauté open source peut faire avancer la manipulation dextre."
         },
         "speakers": [
           {
@@ -1495,8 +1705,38 @@
       },
       {
         "title": {
+          "en": "Robotics with Zenoh",
+          "zh": "基于 Zenoh 的机器人开发",
+          "fr": "La robotique avec Zenoh"
+        },
+        "content": {
+          "en": "Zenoh is a next-generation communication protocol designed for robotics and distributed systems, addressing fundamental limitations of ROS 2's DDS middleware. This talk traces the journey from ROS 2 to ros-z, the Zenoh-native robotics framework, showing how Zenoh enables lower latency, better scalability, and seamless operation across local networks, the cloud, and constrained edge devices.\n\nJulien Enoch covers the architecture of Zenoh, real-world deployments in robotics applications, and the practical migration path for teams currently on ROS 2. Attendees will learn how Zenoh's pub/sub, query, and storage capabilities map to robotics use cases, and why the community is increasingly adopting it as a foundation for next-generation robot middleware.",
+          "zh": "Zenoh 是为机器人和分布式系统设计的下一代通信协议，解决了 ROS 2 DDS 中间件的根本局限性。本演讲追溯从 ROS 2 到 ros-z（Zenoh 原生机器人框架）的演进历程，展示 Zenoh 如何实现更低延迟、更好可扩展性，并在本地网络、云端和边缘设备间无缝运行。\n\n演讲者介绍 Zenoh 架构、机器人应用中的实际部署，以及从 ROS 2 迁移的实践路径。",
+          "fr": "Zenoh est un protocole de communication nouvelle génération pour la robotique et les systèmes distribués, résolvant les limitations fondamentales du middleware DDS de ROS 2. Cette présentation retrace le parcours de ROS 2 vers ros-z, le framework robotique natif Zenoh.\n\nJulien Enoch couvre l'architecture de Zenoh, les déploiements réels en robotique et le chemin de migration pratique pour les équipes utilisant ROS 2, expliquant pourquoi la communauté adopte Zenoh comme fondation pour le middleware robotique de prochaine génération."
+        },
+        "speakers": [
+          {
+            "name": "Julien Enoch",
+            "title": "Senior Solutions Architect, ZettaScale Technology"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:00 - 14:25",
+        "type": "talk"
+      },
+      {
+        "title": {
           "en": "Reachy Mini: How to Have Fun with Expressive Robotics",
           "zh": "Reachy Mini——如何玩转富有表现力的机器人"
+        },
+        "content": {
+          "en": "Reachy Mini is a compact, expressive open-source robot designed to make robotics more approachable, playful, and human-centred. Unlike industrial or research platforms focused purely on task performance, Reachy Mini prioritises expressiveness — the ability to communicate intent, emotion, and personality through movement.\n\nTom Mulder shares his experience building with Reachy Mini, exploring what happens when you design robots not just to be useful but to be delightful. The talk covers the hardware platform, its software SDK, real projects built on top of it, and a broader philosophy of why fun and expressiveness matter in the future of human-robot interaction.",
+          "zh": "Reachy Mini 是一款紧凑、富有表现力的开源机器人，旨在让机器人更易接近、更有趣、更以人为中心。与专注于任务表现的工业或研究平台不同，Reachy Mini 优先注重表达能力——通过动作传达意图、情感和个性。\n\n演讲者分享使用 Reachy Mini 的构建经验，探索当机器人设计不仅实用而且令人愉悦时会发生什么，以及为何表达力在人机交互未来中至关重要。",
+          "fr": "Reachy Mini est un robot open source compact et expressif conçu pour rendre la robotique plus accessible, ludique et centrée sur l'humain. Contrairement aux plateformes industrielles ou de recherche axées sur la performance des tâches, Reachy Mini privilégie l'expressivité — la capacité à communiquer l'intention, l'émotion et la personnalité à travers le mouvement.\n\nTom Mulder partage son expérience de construction avec Reachy Mini et explore pourquoi la joie et l'expressivité comptent dans l'avenir de l'interaction humain-robot."
         },
         "speakers": [
           {
@@ -1516,6 +1756,11 @@
         "title": {
           "en": "Building Visual Navigation Foundation Models with Scalable Simulation Data",
           "zh": "利用可扩展仿真数据构建视觉导航基础模型"
+        },
+        "content": {
+          "en": "Visual navigation — the ability of a robot to move through an environment using only camera input — is a fundamental challenge in embodied AI. This talk presents a research program for building foundation models for visual navigation by leveraging scalable simulation data generated at scale.\n\nWenzhe Cai discusses how modern simulation environments can generate diverse, photorealistic training data that transfers to real robots, the model architectures that generalise across environments and tasks, and the evaluation benchmarks used to measure progress. The session highlights open-source contributions from Shanghai AI Laboratory and provides practical guidance for researchers looking to advance robot navigation through simulation-to-real transfer.",
+          "zh": "视觉导航——机器人仅凭摄像头输入在环境中移动的能力——是具身 AI 的核心挑战。本演讲介绍通过可扩展仿真数据构建视觉导航基础模型的研究方案。\n\n演讲者讨论现代仿真环境如何生成可迁移至真实机器人的多样化、逼真训练数据，以及跨环境和任务泛化的模型架构，并分享上海人工智能实验室的开源贡献。",
+          "fr": "La navigation visuelle — la capacité d'un robot à se déplacer dans un environnement en utilisant uniquement des caméras — est un défi fondamental de l'IA incarnée. Cette présentation expose un programme de recherche pour construire des modèles fondamentaux de navigation visuelle en exploitant des données de simulation scalables.\n\nWenzhe Cai discute de la génération de données d'entraînement photo-réalistes transférables aux robots réels, des architectures de modèles qui généralisent à travers les environnements, et des contributions open source du Shanghai AI Laboratory."
         },
         "speakers": [
           {
@@ -1551,6 +1796,11 @@
           "en": "Project Nexus: Cross-Platform GPU Rust Multiphysics Simulator for Robotics and Training Data Generation",
           "zh": "Project Nexus：面向机器人与训练数据生成的跨平台 GPU Rust 多物理场仿真平台"
         },
+        "content": {
+          "en": "Project Nexus is a cross-platform, GPU-accelerated multiphysics simulator written in Rust, designed specifically for robotics applications and large-scale training data generation. Built on the Rapier physics engine, Nexus brings together rigid body dynamics, soft body simulation, and fluid mechanics into a single unified framework that runs efficiently on both CPU and GPU across Linux, macOS, and Windows.\n\nSébastien Crozet presents the architecture of Nexus, how it achieves cross-platform GPU acceleration without vendor lock-in, and why Rust is an ideal language for high-performance simulation infrastructure. The talk covers real use cases in robot training data generation, the open-source ecosystem around Dimforge's physics stack, and the roadmap for making Nexus the go-to simulator for embodied AI research.",
+          "zh": "Project Nexus 是用 Rust 编写的跨平台 GPU 加速多物理场仿真器，专为机器人应用和大规模训练数据生成而设计。基于 Rapier 物理引擎，Nexus 将刚体动力学、软体仿真和流体力学整合到统一框架中，在 Linux、macOS 和 Windows 的 CPU 和 GPU 上高效运行。\n\n演讲者介绍 Nexus 的架构、实现跨平台 GPU 加速的方式、Rust 在高性能仿真基础设施中的优势，以及在机器人训练数据生成中的实际应用。",
+          "fr": "Project Nexus est un simulateur multiphysique cross-platform accéléré par GPU, écrit en Rust, conçu spécifiquement pour les applications robotiques et la génération de données d'entraînement à grande échelle. Basé sur le moteur physique Rapier, Nexus combine dynamique des corps rigides, simulation des corps mous et mécanique des fluides dans un framework unifié.\n\nSébastien Crozet présente l'architecture de Nexus, l'accélération GPU cross-platform sans vendor lock-in, et pourquoi Rust est idéal pour l'infrastructure de simulation haute performance en robotique."
+        },
         "speakers": [
           {
             "name": "Sébastien Crozet",
@@ -1569,6 +1819,11 @@
         "title": {
           "en": "LeRobotDataset: Scaling Across Modalities",
           "zh": "LeRobotDataset：跨模态扩展"
+        },
+        "content": {
+          "en": "LeRobotDataset is Hugging Face's open standard for robot learning datasets, designed to make it easy to collect, share, and reuse diverse robotics data across different hardware platforms and modalities. This talk covers the evolution of the dataset format and how it has been extended to support video, depth, tactile sensing, audio, and proprioception — enabling truly multimodal robot learning.\n\nCaroline Pascal shares lessons from scaling the dataset across dozens of robot embodiments and hundreds of contributors, the tooling built around it for visualisation, filtering, and streaming, and how standardised open datasets are becoming a key lever for accelerating progress in robot manipulation and navigation.",
+          "zh": "LeRobotDataset 是 Hugging Face 的开放机器人学习数据集标准，旨在简化跨不同硬件平台和模态的机器人数据收集、共享和复用。本演讲涵盖数据集格式的演进，以及对视频、深度、触觉、音频和本体感觉的支持扩展。\n\n演讲者分享跨数十种机器人形态和数百位贡献者扩展数据集的经验，以及标准化开放数据集如何加速机器人操控和导航的进展。",
+          "fr": "LeRobotDataset est la norme open source de Hugging Face pour les datasets d'apprentissage robotique, conçue pour faciliter la collecte, le partage et la réutilisation de données robotiques à travers différentes plateformes et modalités. Cette présentation couvre l'évolution du format de données pour supporter la vidéo, la profondeur, le toucher, l'audio et la proprioception.\n\nCaroline Pascal partage les leçons tirées du passage à l'échelle à travers des dizaines d'embodiments robotiques et des centaines de contributeurs, et comment les datasets ouverts standardisés accélèrent les progrès en robotique."
         },
         "speakers": [
           {
@@ -1589,6 +1844,11 @@
           "en": "XLeRobot: Building an Open-Source Dual-Arm Mobile Robot for Everyone",
           "zh": "XLeRobot：打造人人可用的开源双臂移动机器人"
         },
+        "content": {
+          "en": "XLeRobot is an open-source dual-arm mobile robot platform built on top of the LeRobot ecosystem and designed to be affordable, reproducible, and capable of real-world household tasks. The platform combines a mobile base with two dexterous arms, targeting the gap between expensive commercial humanoids and fixed-arm research platforms.\n\nVector Wang presents the design philosophy behind XLeRobot, the engineering choices that keep the cost low without sacrificing capability, and the learning pipelines used to teach the robot household tasks through imitation and reinforcement learning. The talk also covers the open-source community around XLeRobot and the roadmap toward a truly general-purpose home robot.",
+          "zh": "XLeRobot 是基于 LeRobot 生态系统构建的开源双臂移动机器人平台，设计为经济实惠、可复制，并能胜任真实家庭场景任务。该平台将移动底座与两只灵巧手臂结合，填补了昂贵商业人形机器人与固定臂研究平台之间的空白。\n\n演讲者介绍 XLeRobot 的设计理念、在保持低成本同时不牺牲能力的工程选择，以及通过模仿和强化学习训练机器人完成家庭任务的学习流程。",
+          "fr": "XLeRobot est une plateforme robotique mobile à deux bras open source construite sur l'écosystème LeRobot, conçue pour être abordable, reproductible et capable de tâches domestiques réelles. La plateforme combine une base mobile avec deux bras dexters, comblant le fossé entre les humanoïdes commerciaux coûteux et les plateformes de recherche à bras fixe.\n\nVector Wang présente la philosophie de conception de XLeRobot, les choix d'ingénierie permettant de maintenir un faible coût, et les pipelines d'apprentissage par imitation et renforcement pour les tâches domestiques."
+        },
         "speakers": [
           {
             "name": "Vector Wang",
@@ -1607,6 +1867,11 @@
         "title": {
           "en": "From Zero to Robot: How to Start an Open Source Robotics Project and Why It Matters",
           "zh": "从零到机器人：如何启动一个开源机器人项目及其重要意义"
+        },
+        "content": {
+          "en": "Starting an open-source robotics project is both deeply rewarding and surprisingly difficult. From choosing the right hardware platform and software stack to building a community and navigating licensing — the path from idea to thriving project is full of non-obvious decisions.\n\nLuke Lu shares the lessons learned from founding Robolytics and launching open-source robotics initiatives, covering the practical steps to go from zero to a working robot project, what open source means for hardware (not just software), how to attract contributors, and why open-source robotics matters for democratising access to embodied AI. Whether you're a researcher, hobbyist, or startup founder, this talk offers a practical playbook for building in the open.",
+          "zh": "启动一个开源机器人项目既深具价值，又充满挑战。从选择合适的硬件平台和软件栈，到建立社区和处理许可证问题——从想法到蓬勃发展的项目，充满了不那么显而易见的决策。\n\n演讲者分享创立 Robolytics 和开源机器人项目的经验教训，涵盖从零启动机器人项目的实践步骤、开源对于硬件的特殊意义、如何吸引贡献者，以及开源机器人为何对普及具身 AI 至关重要。",
+          "fr": "Lancer un projet robotique open source est à la fois profondément gratifiant et étonnamment difficile. Du choix de la plateforme matérielle et logicielle à la construction d'une communauté, le chemin de l'idée à un projet florissant est plein de décisions non évidentes.\n\nLuke Lu partage les leçons apprises en fondant Robolytics, couvrant les étapes pratiques pour passer de zéro à un projet robotique fonctionnel, ce que signifie l'open source pour le matériel, et pourquoi la robotique open source est cruciale pour démocratiser l'accès à l'IA incarnée."
         },
         "speakers": [
           {
@@ -1627,6 +1892,11 @@
           "en": "Cosmos: Unleashing Video Foundation Models for Physical AI and Generalist Robots",
           "zh": "Cosmos：释放视频基础模型的潜力，赋能物理 AI 与通用机器人"
         },
+        "content": {
+          "en": "Cosmos is NVIDIA's open-source platform for video foundation models designed to power physical AI systems — robots, autonomous vehicles, and embodied agents that must understand and interact with the physical world. By pre-training on massive video datasets, Cosmos learns rich representations of how the world looks and moves, enabling downstream tasks like robot policy learning, world modelling, and synthetic data generation.\n\nJinwei Gu presents the architecture of Cosmos, the challenges of training at scale on video data, and how open-sourcing the platform enables the broader research community to build on it. The talk covers specific applications to generalist robot training, including how Cosmos world models can substitute for expensive real-world data collection and simulation pipelines.",
+          "zh": "Cosmos 是 NVIDIA 的开源视频基础模型平台，专为赋能物理 AI 系统——机器人、自动驾驶车辆和需要理解并与物理世界交互的具身智能体——而设计。通过在海量视频数据集上预训练，Cosmos 学习丰富的世界外观和运动表示，支持机器人策略学习、世界建模和合成数据生成等下游任务。\n\n演讲者介绍 Cosmos 的架构、视频数据规模化训练的挑战，以及开源该平台如何使更广泛的研究社区受益。",
+          "fr": "Cosmos est la plateforme open source de NVIDIA pour les modèles fondamentaux vidéo conçus pour alimenter les systèmes d'IA physique — robots, véhicules autonomes et agents incarnés. En pré-entraînant sur de massifs ensembles de données vidéo, Cosmos apprend des représentations riches du monde physique, permettant l'apprentissage de politiques robotiques, la modélisation du monde et la génération de données synthétiques.\n\nJinwei Gu présente l'architecture de Cosmos, les défis de l'entraînement à grande échelle, et comment l'open source de la plateforme bénéficie à la communauté de recherche sur les robots généralistes."
+        },
         "speakers": [
           {
             "name": "Jinwei Gu",
@@ -1645,6 +1915,11 @@
         "title": {
           "en": "Enabling Robots to Both \"Think\" and \"Act\"",
           "zh": "让机器人既能「思考」又能「行动」"
+        },
+        "content": {
+          "en": "The next frontier in robotics is closing the gap between high-level reasoning and low-level motor control — enabling robots that can not only perform precise physical actions but also think through complex, multi-step tasks in open-ended environments. This talk presents research on architectures that unify language-based planning with motor policy execution.\n\nJiaming Liu discusses the challenges of grounding abstract reasoning in physical action, the role of large language models as high-level planners, and the neural architectures that bridge the thinking-acting divide. The presentation includes results from real robot experiments demonstrating that tight integration of cognition and control leads to substantially more capable and generalisable robotic systems.",
+          "zh": "机器人领域的下一个前沿是缩小高层推理与低层运动控制之间的差距——让机器人不仅能执行精确的物理动作，还能在开放环境中思考复杂的多步骤任务。本演讲介绍统一基于语言规划与运动策略执行的架构研究。\n\n演讲者讨论将抽象推理落地为物理行动的挑战、大语言模型作为高层规划器的作用，以及弥合思考与行动鸿沟的神经网络架构，并展示真实机器人实验结果。",
+          "fr": "La prochaine frontière en robotique est de combler le fossé entre le raisonnement de haut niveau et le contrôle moteur de bas niveau — permettant aux robots de non seulement effectuer des actions physiques précises, mais aussi de raisonner sur des tâches complexes en plusieurs étapes dans des environnements ouverts.\n\nJiaming Liu discute des défis pour ancrer le raisonnement abstrait dans l'action physique, le rôle des grands modèles de langage comme planificateurs de haut niveau, et les architectures neuronales qui comblent le fossé pensée-action, avec des résultats sur robots réels."
         },
         "speakers": [
           {
@@ -1742,6 +2017,11 @@
         "title": {
           "en": "Démocratisation of AI All Around the World to Shape the Future AGI",
           "zh": "AI 的全球普及：塑造未来 AGI"
+        },
+        "content": {
+          "en": "Artificial General Intelligence will not be shaped by a handful of labs in a handful of countries — it will be shaped by the collective intelligence, values, and contributions of people from every corner of the world. But today, access to AI development, education, and governance is deeply unequal.\n\nFeliana Citradewi presents the work of Global AI Assembly in building inclusive, globally distributed AI communities and the practical steps needed to democratise AI development beyond the current concentration in the US, Europe, and China. The talk covers grassroots AI education, open-source as an equaliser, governance frameworks that include underrepresented voices, and what it would actually take to ensure that the future of AGI reflects all of humanity.",
+          "zh": "通用人工智能不会由少数几个国家的少数实验室塑造——它将由世界各地人们的集体智慧、价值观和贡献来塑造。然而今天，参与 AI 开发、教育和治理的机会极度不平等。\n\n演讲者介绍 Global AI Assembly 在构建包容性、全球分布式 AI 社区方面的工作，以及将 AI 开发民主化所需的实践步骤，探讨开源作为均衡器的作用，以及确保 AGI 未来反映全人类需要采取的措施。",
+          "fr": "L'intelligence artificielle générale ne sera pas façonnée par une poignée de laboratoires dans une poignée de pays — elle sera façonnée par l'intelligence collective, les valeurs et les contributions de personnes du monde entier. Pourtant, l'accès au développement, à l'éducation et à la gouvernance de l'IA reste profondément inégal.\n\nFeliana Citradewi présente le travail de Global AI Assembly pour construire des communautés IA inclusives et mondialement distribuées, et les étapes pratiques pour démocratiser le développement de l'IA au-delà de sa concentration actuelle."
         },
         "speakers": [
           {
@@ -1867,6 +2147,11 @@
           "en": "SGLang Diffusion: A High-Performance Inference Framework for Image and Video Generation",
           "zh": "SGLang Diffusion：面向图像和视频生成的高性能推理框架"
         },
+        "content": {
+          "en": "SGLang has established itself as a leading serving framework for large language models, and SGLang Diffusion extends that performance to the world of image and video generation. This session presents the architecture and key innovations behind SGLang Diffusion, which brings the same throughput optimisations, batching strategies, and memory management techniques that made SGLang fast for LLMs to diffusion-based generative models.\n\nYuhao Yang covers the unique challenges of serving diffusion models at scale — multi-step inference, variable resolution, and the memory footprint of large UNet and transformer-based denoisers — and shows how SGLang Diffusion addresses them. Attendees will see benchmarks comparing SGLang Diffusion against existing solutions and learn how to integrate it into their own image and video generation pipelines.",
+          "zh": "SGLang 已成为大语言模型的领先服务框架，而 SGLang Diffusion 将这一性能扩展到图像和视频生成领域。本次会议介绍 SGLang Diffusion 的架构和关键创新，将 LLM 高吞吐量优化、批处理策略和内存管理技术应用于扩散式生成模型。\n\n演讲者介绍大规模服务扩散模型的独特挑战——多步推理、可变分辨率和大型 UNet 及基于 Transformer 的去噪器内存占用——并展示 SGLang Diffusion 如何应对这些挑战。",
+          "fr": "SGLang s'est imposé comme un framework de service de premier plan pour les grands modèles de langage, et SGLang Diffusion étend cette performance aux domaines de la génération d'images et de vidéos. Cette session présente l'architecture et les innovations clés de SGLang Diffusion.\n\nYuhao Yang couvre les défis uniques du service des modèles de diffusion à grande échelle — inférence multi-étapes, résolution variable — et montre comment SGLang Diffusion les résout, avec des benchmarks comparatifs et des guides d'intégration."
+        },
         "speakers": [
           {
             "name": "Yuhao Yang",
@@ -1915,6 +2200,11 @@
         "title": {
           "en": "SGLang: High-Performance Serving Framework for LLMs and Multimodal Models",
           "zh": "SGLang：面向 LLM 和多模态模型的高性能服务框架"
+        },
+        "content": {
+          "en": "SGLang is an open-source high-performance serving framework designed for large language models and multimodal models. At its core, SGLang introduces RadixAttention — a novel KV cache management technique that enables efficient prefix sharing across requests — alongside a highly optimised CUDA kernel library and a flexible batching engine that maximises GPU utilisation.\n\nXinyuan Tong presents the technical foundations of SGLang, the key algorithmic and systems innovations that give it its performance edge, and how the maintainer community has scaled the project to support dozens of model architectures including the latest multimodal and reasoning models. The session includes a deep dive into the serving stack, a live demo, and practical guidance on deploying SGLang for production workloads.",
+          "zh": "SGLang 是专为大语言模型和多模态模型设计的开源高性能服务框架。其核心创新 RadixAttention 是一种新颖的 KV 缓存管理技术，支持跨请求的高效前缀共享，配合高度优化的 CUDA 内核库和灵活的批处理引擎，最大化 GPU 利用率。\n\n演讲者介绍 SGLang 的技术基础、性能优势的关键算法和系统创新，以及维护者社区如何将项目扩展以支持包括最新多模态和推理模型在内的数十种模型架构。",
+          "fr": "SGLang est un framework de service open source haute performance conçu pour les grands modèles de langage et les modèles multimodaux. Au cœur de SGLang, RadixAttention est une technique novatrice de gestion du cache KV permettant un partage efficace des préfixes entre les requêtes.\n\nXinyuan Tong présente les fondements techniques de SGLang, les innovations algorithmiques et systèmes clés, et comment la communauté de mainteneurs a mis à l'échelle le projet pour supporter des dizaines d'architectures de modèles, avec une démo en direct et des conseils de déploiement en production."
         },
         "speakers": [
           {
@@ -1982,6 +2272,11 @@
           "en": "Embedding Software Engineering Best Practices into AI Projects with Kedro",
           "zh": "使用 Kedro 将软件工程最佳实践嵌入 AI 项目"
         },
+        "content": {
+          "en": "AI and machine learning projects are notorious for accumulating technical debt: notebooks that can't be reproduced, pipelines that break when data changes, models that nobody can explain how to retrain. Kedro is an open-source Python framework that brings software engineering discipline — modular pipelines, reproducible experiments, and clean data interfaces — to data science and ML workflows.\n\nMerel Theisen presents how Kedro structures ML projects from the ground up, integrating with tools like MLflow, Jupyter, and cloud storage to create pipelines that are testable, versionable, and team-friendly. The session covers real-world patterns for embedding best practices without sacrificing the exploratory freedom that makes data science productive.",
+          "zh": "AI 和机器学习项目因积累技术债务而闻名：无法复现的笔记本、数据变化时会崩溃的流水线、没人知道如何重新训练的模型。Kedro 是一个开源 Python 框架，将软件工程规范——模块化流水线、可复现实验和清晰的数据接口——带入数据科学和 ML 工作流。\n\n演讲者介绍 Kedro 如何从头构建 ML 项目，与 MLflow、Jupyter 和云存储等工具集成，创建可测试、可版本控制、团队友好的流水线。",
+          "fr": "Les projets d'IA et de machine learning sont réputés pour accumuler de la dette technique. Kedro est un framework Python open source qui apporte la discipline du génie logiciel — pipelines modulaires, expériences reproductibles et interfaces de données propres — aux workflows de data science et ML.\n\nMerel Theisen présente comment Kedro structure les projets ML de bout en bout, en s'intégrant avec MLflow, Jupyter et le stockage cloud pour créer des pipelines testables, versionnables et adaptés aux équipes."
+        },
         "speakers": [
           {
             "name": "Merel Theisen",
@@ -2000,6 +2295,11 @@
         "title": {
           "en": "Notebook.link: Run Notebooks Instantly in Your Browser",
           "zh": "Notebook.link：在浏览器中即时运行 Notebook"
+        },
+        "content": {
+          "en": "Notebook.link is a new service from QuantStack that lets anyone run a Jupyter notebook instantly in the browser — no installation, no server setup, no waiting. By leveraging WebAssembly and JupyterLite, Notebook.link delivers a fully functional Python environment that launches in seconds and works entirely client-side.\n\nSylvain Corlay presents the architecture behind Notebook.link, how WebAssembly enables Python to run natively in the browser at near-native speed, and the implications for sharing reproducible research, interactive tutorials, and data science education. The session covers the technical limits of in-browser computation, what packages are currently supported, and the roadmap for expanding capabilities to meet more demanding ML workloads.",
+          "zh": "Notebook.link 是 QuantStack 推出的新服务，让任何人都能在浏览器中即时运行 Jupyter notebook——无需安装、无需服务器配置、无需等待。通过利用 WebAssembly 和 JupyterLite，Notebook.link 提供在几秒内启动、完全在客户端运行的 Python 环境。\n\n演讲者介绍 Notebook.link 的架构、WebAssembly 如何使 Python 在浏览器中以接近原生的速度运行，以及对共享可复现研究和数据科学教育的影响。",
+          "fr": "Notebook.link est un nouveau service de QuantStack qui permet à n'importe qui d'exécuter un notebook Jupyter instantanément dans le navigateur — sans installation, sans configuration de serveur. En tirant parti de WebAssembly et JupyterLite, Notebook.link fournit un environnement Python complet qui se lance en quelques secondes et fonctionne entièrement côté client.\n\nSylvain Corlay présente l'architecture de Notebook.link, comment WebAssembly permet à Python de s'exécuter à vitesse quasi-native dans le navigateur, et les implications pour le partage de recherches reproductibles et l'éducation à la data science."
         },
         "speakers": [
           {
@@ -2039,6 +2339,11 @@
           "en": "From Model to Metal: An Open Source Stack for Accelerating Artificial Intelligence",
           "zh": "从模型到芯片：加速人工智能的开源技术栈"
         },
+        "content": {
+          "en": "Deploying AI at the edge and across diverse hardware requires more than a good model — it requires a coherent open-source stack that connects frameworks, compilers, runtimes, and silicon. Arm's ecosystem spans billions of devices, and making AI fast on all of them demands a principled approach to the software layers between model and metal.\n\nMegan Knight presents the open-source tools and standards that Arm supports and contributes to — from MLIR and TVM to ExecuTorch and KleidiAI — and how they compose into a stack that accelerates AI inference from smartphones to servers. The talk covers the challenges of hardware diversity, the role of open standards in enabling portability, and practical patterns for deploying optimised AI on Arm-based platforms.",
+          "zh": "在边缘和多样化硬件上部署 AI 不仅需要一个好模型，还需要连接框架、编译器、运行时和芯片的连贯开源技术栈。Arm 生态系统涵盖数十亿设备，在所有设备上实现 AI 加速需要对模型到硬件之间软件层的系统化方法。\n\n演讲者介绍 Arm 支持和贡献的开源工具和标准——从 MLIR 和 TVM 到 ExecuTorch 和 KleidiAI——以及它们如何组合成从智能手机到服务器的 AI 推理加速栈。",
+          "fr": "Déployer l'IA sur des appareils en périphérie et sur du matériel diversifié nécessite une pile open source cohérente reliant frameworks, compilateurs, runtimes et silicium. L'écosystème Arm couvre des milliards d'appareils.\n\nMegan Knight présente les outils et standards open source qu'Arm soutient et auxquels il contribue — de MLIR et TVM à ExecuTorch et KleidiAI — et comment ils se composent en une pile accélérant l'inférence IA des smartphones aux serveurs, avec les défis de la diversité matérielle et le rôle des standards ouverts pour la portabilité."
+        },
         "speakers": [
           {
             "name": "Megan Knight",
@@ -2057,6 +2362,11 @@
         "title": {
           "en": "Evaluating Frontier Agents on Economically Valuable Tasks",
           "zh": "在经济价值任务上评估前沿 Agent"
+        },
+        "content": {
+          "en": "Most AI benchmarks measure what models can do in a controlled setting. But the question that matters for business is different: can an AI agent actually do real economic work — tasks that people get paid for, that require judgment, context, and tool use across hours-long sessions?\n\nBjörn Plüster presents ellamind's approach to evaluating frontier AI agents on economically valuable tasks: the methodology for selecting and standardising tasks, the metrics that capture real-world performance beyond accuracy, and what the evaluation results reveal about the current state of agentic AI. The session discusses which classes of tasks frontier agents handle well today, where they fail, and what the gap tells us about the next steps for agent development.",
+          "zh": "大多数 AI 基准测试在受控环境中衡量模型能做什么。但对商业真正重要的问题不同：AI Agent 能实际完成真实经济工作吗——那些需要判断力、上下文和跨越数小时会话的工具使用的任务？\n\n演讲者介绍 ellamind 在经济价值任务上评估前沿 AI Agent 的方法：任务选择和标准化的方法论、捕捉超越准确率的真实世界性能的指标，以及评估结果揭示的 Agentic AI 现状。",
+          "fr": "La plupart des benchmarks d'IA mesurent ce que les modèles peuvent faire dans un cadre contrôlé. Mais la question qui importe pour les entreprises est différente : un agent IA peut-il vraiment effectuer un travail économique réel ?\n\nBjörn Plüster présente l'approche d'ellamind pour évaluer les agents IA frontière sur des tâches économiquement précieuses : la méthodologie de sélection des tâches, les métriques qui capturent la performance réelle, et ce que les résultats révèlent sur l'état actuel de l'IA agentique."
         },
         "speakers": [
           {
@@ -2077,6 +2387,11 @@
           "en": "Leading-Edge Tabular AI: Open Table Foundation Models with TabICL",
           "zh": "前沿表格 AI：TabICL 开放表格基础模型"
         },
+        "content": {
+          "en": "Tabular data — spreadsheets, databases, structured records — remains the dominant form of enterprise data, yet it has been largely left behind in the foundation model revolution. TabICL is an open-source approach to building foundation models for tabular data using in-context learning, enabling strong performance on new tables without task-specific fine-tuning.\n\nGaël Varoquaux presents the TabICL methodology, how in-context learning translates to the tabular domain, and how TabICL compares to classical methods like gradient boosting on real-world benchmarks. The session covers the open-source implementation, the datasets used for pre-training, and the implications for practitioners who need to build predictive models quickly on new structured datasets without extensive ML expertise.",
+          "zh": "表格数据——电子表格、数据库、结构化记录——仍然是企业数据的主要形式，但在基础模型革命中基本上被忽视了。TabICL 是一种使用上下文学习构建表格数据基础模型的开源方法，无需针对特定任务微调即可在新表格上实现强大性能。\n\n演讲者介绍 TabICL 方法论、上下文学习如何转化到表格领域，以及 TabICL 与梯度提升等经典方法在真实基准测试上的比较，并分享开源实现和预训练数据集。",
+          "fr": "Les données tabulaires — tableurs, bases de données, enregistrements structurés — restent la forme dominante des données d'entreprise, pourtant largement oubliées dans la révolution des modèles fondamentaux. TabICL est une approche open source pour construire des modèles fondamentaux pour données tabulaires utilisant l'apprentissage en contexte.\n\nGaël Varoquaux présente la méthodologie TabICL, comment l'apprentissage en contexte se transpose au domaine tabulaire, et les comparaisons avec des méthodes classiques comme le gradient boosting sur des benchmarks du monde réel."
+        },
         "speakers": [
           {
             "name": "Gaël Varoquaux",
@@ -2095,6 +2410,11 @@
         "title": {
           "en": "Python on GPUs: Speeding Up Machine Learning",
           "zh": "GPU 上的 Python：加速机器学习"
+        },
+        "content": {
+          "en": "Python has become the de facto language of machine learning, but its interpreted nature creates performance bottlenecks — especially when working with large datasets and compute-intensive operations. CUDA Python brings the full power of NVIDIA's GPU ecosystem directly to Python developers, enabling near-C performance without leaving the Python ecosystem.\n\nAndy Terrel presents the landscape of GPU-accelerated Python tools: from CUDA Python's low-level access to NVIDIA hardware, to higher-level libraries like cuDF, cuML, and cuGraph that mirror familiar pandas and scikit-learn interfaces. The session covers practical patterns for speeding up ML pipelines, when GPU acceleration makes the biggest difference, and how to profile and optimise Python ML code for GPU execution.",
+          "zh": "Python 已成为机器学习的事实标准语言，但其解释性本质带来了性能瓶颈——尤其是在处理大型数据集和计算密集型操作时。CUDA Python 将 NVIDIA GPU 生态系统的全部力量直接带给 Python 开发者，在不离开 Python 生态的情况下实现接近 C 的性能。\n\n演讲者介绍 GPU 加速 Python 工具的全景：从 CUDA Python 的底层硬件访问，到镜像熟悉的 pandas 和 scikit-learn 接口的高级库（如 cuDF、cuML、cuGraph）。",
+          "fr": "Python est devenu le langage de facto du machine learning, mais sa nature interprétée crée des goulots d'étranglement de performance. CUDA Python apporte toute la puissance de l'écosystème GPU NVIDIA directement aux développeurs Python.\n\nAndy Terrel présente le paysage des outils Python accélérés par GPU : de l'accès bas niveau de CUDA Python au matériel NVIDIA aux bibliothèques de plus haut niveau comme cuDF, cuML et cuGraph, avec des patterns pratiques pour accélérer les pipelines ML."
         },
         "speakers": [
           {
@@ -2115,6 +2435,11 @@
           "en": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments",
           "zh": "公共合成数据：使用合成环境构建开放的最先进 LLM"
         },
+        "content": {
+          "en": "Synthetic data has emerged as one of the most powerful techniques for training state-of-the-art language models — but most synthetic data pipelines are proprietary, closed, and inaccessible to the open-source community. Pleias is building synthetic data infrastructure for the commons: open datasets, open pipelines, and open models trained entirely on synthetic and permissively licensed data.\n\nAnastasia Stasenko presents the methodology behind Pleias's synthetic data approach, the challenges of building high-quality synthetic environments at scale, and the surprising results achievable when training open LLMs entirely on synthetic data. The talk covers data quality, diversity, and verification techniques, and the broader implications of synthetic data for democratising access to state-of-the-art language model training.",
+          "zh": "合成数据已成为训练最先进语言模型的最强大技术之一——但大多数合成数据流水线是专有的、封闭的，对开源社区不可访问。Pleias 正在为公共利益构建合成数据基础设施：开放数据集、开放流水线和完全在合成及宽松许可数据上训练的开放模型。\n\n演讲者介绍 Pleias 合成数据方法的方法论、大规模构建高质量合成环境的挑战，以及完全在合成数据上训练开放 LLM 所获得的令人惊讶的结果。",
+          "fr": "Les données synthétiques sont devenues l'une des techniques les plus puissantes pour entraîner des modèles de langage de pointe — mais la plupart des pipelines de données synthétiques sont propriétaires et inaccessibles à la communauté open source. Pleias construit une infrastructure de données synthétiques pour les biens communs.\n\nAnastasia Stasenko présente la méthodologie de l'approche de données synthétiques de Pleias, les défis de construire des environnements synthétiques de haute qualité à grande échelle, et les résultats surprenants obtenus en entraînant des LLM ouverts entièrement sur des données synthétiques."
+        },
         "speakers": [
           {
             "name": "Anastasia Stasenko",
@@ -2133,6 +2458,11 @@
         "title": {
           "en": "The Adoption of the Python Array API in scikit-learn",
           "zh": "Python Array API 在 scikit-learn 中的应用"
+        },
+        "content": {
+          "en": "For decades, NumPy has been the universal array standard for Python scientific computing. But the proliferation of GPU-accelerated array libraries — PyTorch, CuPy, JAX — has created fragmentation: algorithms written for NumPy don't run on GPU, and GPU code can't easily run on CPU. The Python Array API Standard is a community effort to define a common interface across all these libraries, enabling write-once-run-anywhere scientific code.\n\nOlivier Grisel and Stefanie Senger present the ongoing work to adopt the Array API in scikit-learn, the technical challenges of making classical ML algorithms backend-agnostic, and the practical performance gains achieved when scikit-learn estimators run natively on GPU arrays. The session covers what's already working, what remains challenging, and how the community can contribute to completing the adoption.",
+          "zh": "数十年来，NumPy 一直是 Python 科学计算的通用数组标准。但 GPU 加速数组库的激增——PyTorch、CuPy、JAX——造成了碎片化。Python Array API 标准是跨所有这些库定义通用接口的社区努力，实现一次编写处处运行的科学代码。\n\n两位演讲者介绍在 scikit-learn 中采用 Array API 的持续工作、使经典 ML 算法与后端无关的技术挑战，以及 scikit-learn 估计器在 GPU 数组上原生运行时实现的实际性能提升。",
+          "fr": "Depuis des décennies, NumPy est la norme universelle des tableaux pour le calcul scientifique Python. La prolifération des bibliothèques de tableaux accélérées par GPU a créé une fragmentation. La norme Python Array API est un effort communautaire pour définir une interface commune à toutes ces bibliothèques.\n\nOlivier Grisel et Stefanie Senger présentent le travail en cours pour adopter l'Array API dans scikit-learn, les défis techniques pour rendre les algorithmes ML classiques indépendants du backend, et les gains de performance obtenus quand scikit-learn s'exécute nativement sur des tableaux GPU."
         },
         "speakers": [
           {
@@ -2157,6 +2487,11 @@
           "en": "Skore: Track, Explore, and Share Your Data Science Workflows",
           "zh": "Skore：追踪、探索和分享你的数据科学工作流"
         },
+        "content": {
+          "en": "Data science workflows are notoriously hard to track, document, and share. Experiments pile up, results get lost in notebooks, and teammates can't reproduce what you did last Tuesday. Skore is an open-source Python library from Probabl designed to address this: it lets you track experiments, explore results interactively, and share workflows in a way that's lightweight enough to fit into existing projects without major refactoring.\n\nFabien Pesquerel presents Skore's core features, how it integrates with scikit-learn and common ML workflows, and the design philosophy of keeping things simple and Pythonic. The session includes a live demo showing how Skore can improve a typical data science team's workflow from exploration to production handoff.",
+          "zh": "数据科学工作流出了名地难以追踪、记录和共享。实验不断积累，结果散落在笔记本中，团队成员无法复现上周四的工作。Skore 是 Probabl 的开源 Python 库，旨在解决这个问题：它允许追踪实验、交互式探索结果，并以轻量级方式共享工作流，无需大规模重构现有项目。\n\n演讲者介绍 Skore 的核心功能、与 scikit-learn 和常见 ML 工作流的集成，以及保持简洁和 Pythonic 的设计理念，包括现场演示。",
+          "fr": "Les workflows de data science sont notoirement difficiles à suivre, documenter et partager. Skore est une bibliothèque Python open source de Probabl conçue pour y remédier : elle permet de suivre les expériences, d'explorer les résultats de manière interactive et de partager les workflows de manière légère, sans refactorisation majeure des projets existants.\n\nFabien Pesquerel présente les fonctionnalités principales de Skore, son intégration avec scikit-learn et les workflows ML courants, avec une démo en direct montrant comment Skore améliore le workflow d'une équipe de data science typique."
+        },
         "speakers": [
           {
             "name": "Fabien Pesquerel",
@@ -2175,6 +2510,11 @@
         "title": {
           "en": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models",
           "zh": "LightOnOCR：突破开放 OCR 模型的性能-效率帕累托前沿"
+        },
+        "content": {
+          "en": "Optical Character Recognition is a mature field, but open-source OCR models have long lagged behind commercial systems in accuracy, multilingual coverage, and robustness to document quality variations. LightOnOCR is LightOn's open-source initiative to push the performance-efficiency frontier of OCR, developing models that match or exceed proprietary systems while remaining small enough to run efficiently on CPUs and edge devices.\n\nSaid Taghadouini and Aubertin Baptiste present the training methodology, architecture choices, and dataset curation strategies that enable LightOnOCR's strong results across diverse document types and languages. The talk covers the trade-offs between model size and accuracy, how synthetic data augmentation helps with long-tail document formats, and benchmarks comparing LightOnOCR against leading commercial and open-source alternatives.",
+          "zh": "光学字符识别是一个成熟的领域，但开源 OCR 模型在准确性、多语言覆盖和文档质量变化的鲁棒性方面长期落后于商业系统。LightOnOCR 是 LightOn 的开源计划，旨在推进 OCR 的性能-效率前沿，开发在匹配或超越专有系统的同时足够小以在 CPU 和边缘设备上高效运行的模型。\n\n两位演讲者介绍训练方法论、架构选择和数据集管理策略，以及 LightOnOCR 在不同文档类型和语言上的基准测试比较。",
+          "fr": "La reconnaissance optique de caractères est un domaine mature, mais les modèles OCR open source ont longtemps été en retard par rapport aux systèmes commerciaux. LightOnOCR est l'initiative open source de LightOn pour pousser la frontière performance-efficacité de l'OCR.\n\nSaid Taghadouini et Aubertin Baptiste présentent la méthodologie d'entraînement, les choix d'architecture et les stratégies de curation de données qui permettent les forts résultats de LightOnOCR à travers divers types de documents et langues, avec des benchmarks comparatifs."
         },
         "speakers": [
           {
@@ -2199,6 +2539,11 @@
           "en": "Skolar and the Value of Creating Curated ML Skills Education",
           "zh": "Skolar 与精心策划的 ML 技能教育的价值"
         },
+        "content": {
+          "en": "The machine learning field moves fast, and the educational resources available online are overwhelming in quantity but uneven in quality. Skolar is Probabl's approach to curated ML education: carefully structured learning paths that connect theory to practice, using real open-source tools and datasets to build genuine ML engineering skills.\n\nArturo Amor presents the philosophy behind Skolar, the challenges of creating ML education that stays current with a rapidly evolving field, and what distinguishes curated structured learning from self-directed exploration through documentation and tutorials. The session covers the curriculum design process, how Skolar integrates with the broader Probabl and scikit-learn ecosystem, and the evidence for what makes ML education actually stick.",
+          "zh": "机器学习领域发展迅速，网上的教育资源数量泛滥但质量参差不齐。Skolar 是 Probabl 精心策划 ML 教育的方法：仔细构建的学习路径，将理论与实践联系起来，使用真实的开源工具和数据集来培养真正的 ML 工程技能。\n\n演讲者介绍 Skolar 的理念、创建跟上快速发展领域的 ML 教育的挑战，以及精心策划的结构化学习与通过文档和教程自主探索的区别。",
+          "fr": "Le domaine du machine learning évolue rapidement, et les ressources éducatives disponibles en ligne sont écrasantes en quantité mais inégales en qualité. Skolar est l'approche de Probabl pour une éducation ML curatée : des parcours d'apprentissage soigneusement structurés qui connectent théorie et pratique.\n\nArturo Amor présente la philosophie de Skolar, les défis de créer une éducation ML qui reste à jour avec un domaine en rapide évolution, et ce qui distingue l'apprentissage structuré curé de l'exploration auto-dirigée."
+        },
         "speakers": [
           {
             "name": "Arturo Amor",
@@ -2218,6 +2563,11 @@
           "en": "SciPy's Support for GPUs/PyTorch/CuPy/Jax",
           "zh": "SciPy 对 GPU/PyTorch/CuPy/Jax 的支持"
         },
+        "content": {
+          "en": "SciPy is one of the foundational libraries of the scientific Python ecosystem, providing algorithms for optimization, linear algebra, integration, signal processing, and more. But as GPU computing has moved from optional to essential for serious scientific computing, SciPy has faced a choice: remain NumPy-only, or embrace the heterogeneous array landscape.\n\nEvgeni Burovski presents the ongoing work to add backend support in SciPy for GPU array libraries including PyTorch, CuPy, and JAX via the Python Array API standard. The talk covers the technical challenges of adapting decades of numerical code to be backend-agnostic, the testing infrastructure needed to ensure correctness across backends, and what the roadmap looks like for full GPU support in SciPy.",
+          "zh": "SciPy 是科学 Python 生态系统的基础库之一，提供优化、线性代数、积分、信号处理等算法。但随着 GPU 计算从可选变为必要，SciPy 面临选择：保持仅 NumPy，还是拥抱异构数组生态。\n\n演讲者介绍通过 Python Array API 标准在 SciPy 中添加 PyTorch、CuPy 和 JAX GPU 数组库后端支持的持续工作，涵盖将数十年数值代码适配为与后端无关的技术挑战，以及 SciPy 完整 GPU 支持的路线图。",
+          "fr": "SciPy est l'une des bibliothèques fondamentales de l'écosystème Python scientifique. Alors que le calcul GPU est devenu essentiel pour le calcul scientifique sérieux, SciPy a dû choisir entre rester NumPy-only ou embrasser le paysage hétérogène des tableaux.\n\nEvgeni Burovski présente le travail en cours pour ajouter le support de backends GPU dans SciPy — PyTorch, CuPy, JAX — via la norme Python Array API, les défis techniques de l'adaptation du code numérique existant, et la feuille de route pour le support GPU complet."
+        },
         "speakers": [
           {
             "name": "Evgeni Burovski",
@@ -2236,6 +2586,11 @@
         "title": {
           "en": "The Long Game: Building Europe's Sovereign AI Layer",
           "zh": "长期布局：构建欧洲主权 AI 层"
+        },
+        "content": {
+          "en": "Europe faces a strategic challenge: the foundational AI infrastructure — the models, the data, the compute — is concentrated in a small number of American and Chinese organisations. For European enterprises and public institutions that need AI systems they can trust, audit, and control, this dependency creates real risks around data privacy, security, and long-term strategic autonomy.\n\nNicolas Flores-Herr presents the work at Fraunhofer IAIS on building Europe's sovereign AI layer: open foundation models trained on European data, with European values, within European regulatory frameworks. The talk covers the technical work on large-scale multilingual model training, the governance structures needed for trusted AI, and why the long game of building sovereign AI infrastructure matters for Europe's competitiveness and democratic future.",
+          "zh": "欧洲面临战略挑战：基础 AI 基础设施——模型、数据、算力——集中在少数美国和中国组织手中。对于需要可信任、可审计、可控制 AI 系统的欧洲企业和公共机构，这种依赖在数据隐私、安全和长期战略自主方面带来了真实风险。\n\n演讲者介绍 Fraunhofer IAIS 在构建欧洲主权 AI 层方面的工作：在欧洲监管框架内、基于欧洲数据、以欧洲价值观训练的开放基础模型，以及为何这对欧洲竞争力和民主未来至关重要。",
+          "fr": "L'Europe fait face à un défi stratégique : l'infrastructure IA fondamentale est concentrée dans un petit nombre d'organisations américaines et chinoises. Pour les entreprises et institutions publiques européennes qui ont besoin de systèmes IA qu'elles peuvent faire confiance, auditer et contrôler, cette dépendance crée des risques réels.\n\nNicolas Flores-Herr présente le travail de Fraunhofer IAIS sur la construction de la couche IA souveraine de l'Europe : des modèles fondamentaux ouverts entraînés sur des données européennes, avec des valeurs européennes, dans des cadres réglementaires européens, et pourquoi ce jeu long est essentiel pour l'avenir de l'Europe."
         },
         "speakers": [
           {

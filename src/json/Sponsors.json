@@ -20,6 +20,7 @@
     { "category": "organizer", "image": "gosim.png", "url": "https://gosim.org" },
     { "category": "co-organizer", "image": "csdn.png", "url": "https://www.csdn.net" },
     { "category": "co-organizer", "image": "1msai.png", "url": "https://1ms.ai/" },
+    { "category": "co-organizer", "image": "probabl.png", "url": "https://probabl.ai" },
     { "category": "speakers-affiliated", "image": "amazon.png", "url": "https://www.amazon.com" },
     { "category": "speakers-affiliated", "image": "carrefour.png", "url": "https://www.carrefour.com" },
     { "category": "speakers-affiliated", "image": "dimforge.png", "url": "https://www.dimforge.com" },

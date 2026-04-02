@@ -253,6 +253,27 @@
       "draft": false
     },
     {
+      "id": "chi-wang",
+      "name": "Chi Wang",
+      "bio": "Creator of AutoGen (AG2). Senior Staff Research Scientist at Google DeepMind. Research focus: agentic AI systems, multi-agent coordination, and autonomous agents. Built Sutando, a personal AI agent with real-time voice, vision, and autonomous action. Building MassGen for scalable parallel agent execution.",
+      "role": "Senior Staff Research Scientist",
+      "org": "Google DeepMind",
+      "roleOrg": "Senior Staff Research Scientist, Google DeepMind",
+      "image": "/images/speakers/better_portrait/chi-wang.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/Chi_Wang_",
+        "github": "https://github.com/sonichi",
+        "linkedin": "https://linkedin.com/in/chi-wang-autogen",
+        "website": "https://sutando.ai"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "maitre-christian",
       "name": "Christian Maitre",
       "bio": "A digital transformation and innovation expert with extensive international leadership experiences in Telecom\r\nPresident & Founder – Caspera-Lab, Founder of Caspera-Lab, a premier global advisory firm specializing in guiding the telecom companies to (re) build, review, (re)start their sustainable digital transformation journeys with AI, genAI and Agentic AI.\r\nFormer CIO deputy for Digital Transformation – Orange Group, 10 years as Group CIO driving digital transformation worldwide  (21 opcos),\r\nTM Forum partner / ambassador, Recognized contributor to TM Forum innovation programs, founder of the autonomous networks concepts, leader on digital Maturity evaluation project\r\nForeign Trade Advisor of France (CNCCEF), Chair of the Digital-IA-Tech Expert Group at CNCCEF a french governmental association.",
@@ -401,7 +422,7 @@
     },
     {
       "id": "vector-wang",
-      "name": "Gaotian (Vector) Wang",
+      "name": "Vector Wang",
       "bio": "Gaotian (Vector) Wang is a Computer Science PhD student at Rice University. He is the creator of XLeRobot, a fully open-source, low-cost ($660) dual-arm mobile robot platform that has gained 4.8k+ GitHub stars and a global community of 6,000+ builders since its release in May 2025. XLeRobot is built on the Hugging Face LeRobot ecosystem and has been adopted by researchers, educators, and hobbyists worldwide.",
       "role": "Ph.D. Student",
       "org": "Rice University",
@@ -442,6 +463,27 @@
       "draft": false
     },
     {
+      "id": "gregory-terzian",
+      "name": "Gregory Terzian",
+      "bio": "Servo browser engine maintainer",
+      "role": "Founder",
+      "org": "FOSS Shanghai",
+      "roleOrg": "Founder, FOSS Shanghai",
+      "image": "/images/speakers/better_portrait/gregory-terzian.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/gterzian",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "guillaume-blaquiere",
       "name": "Guillaume Blaquiere",
       "bio": "Guillaume is a Google Developer Expert on Cloud Platform since 2019 and works at Carrefour as Group Data Architect. \r\n\r\nInitially Java developer, and despite positions of responsibilities, he has always kept his wish to create, develop, discover and test new solutions, especially in the Cloud, the AI & genAI. He notably contributed to Python and Go open source project and libraries (Google SDK, Airflow, ADK). \r\n\r\nInnovation addict and Google Cloud 3x certified, writer and speaker in his free time, he’s fascinated by the serverless and genAI solution and all the \"usual\" problems that they solve.\r\n",
@@ -458,6 +500,27 @@
         "github": "https://github.com/guillaumeblaquiere",
         "linkedin": "https://www.linkedin.com/in/guillaume-blaquiere/",
         "website": "https://medium.com/@guillaume-blaquiere"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "hang-chen",
+      "name": "Hang Chen",
+      "bio": "ISO/IEC JTC1/SC38 international standard registration expert, has participated in multiple national policies and planning guidelines in the open source field, and planned the first open source system in the defense field. Participated in the key research and development plan of the National Science and Technology Department, launched the Mulan open source community and China's first and only Mulan PSL v2 international open source license. Compiled \"Open Source Laws, Policies and Practices (2nd Edition)\", established open source industry standards, and is committed to promoting the open source and openness of AI large models.",
+      "role": "Engineer",
+      "org": "China Electronics Standardization Institute",
+      "roleOrg": "Engineer, China Electronics Standardization Institute",
+      "image": "/images/speakers/better_portrait/hang-chen.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
       },
       "status": "Accept",
       "draft": false
@@ -563,6 +626,48 @@
         "github": "",
         "linkedin": "",
         "website": "https://www.gujinwei.org"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "julien-enoch",
+      "name": "Julien Enoch",
+      "bio": "Julien is an Eclipse Zenoh committer and a Senior Solutions Architect at ZettaScale Technology. He has been deeply involved in the development of Zenoh and its integration with the ROS 2 ecosystem, from the early zenoh-bridge-dds plugin to rmw_zenoh and now ros-z. Julien is a regular speaker in the open-source and robotics community — he has presented at EclipseCon (2022), ROSCon (2022 to 2025), ROSCon FR (2024, 2025), ROSCon UK (2025) and FOSDEM (2025, 2026).",
+      "role": "Senior Solutions Architect",
+      "org": "ZettaScale Technology",
+      "roleOrg": "Senior Solutions Architect, ZettaScale Technology",
+      "image": "/images/speakers/better_portrait/julien-enoch.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/JEnoch",
+        "linkedin": "https://www.linkedin.com/in/julienenoch/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "lin-zhong",
+      "name": "Lin Zhong",
+      "bio": "Lin Zhong is Joseph C. Tsai Professor of Computer Science with Yale University. He received his B.S and M.S. from Tsinghua University and Ph.D. from Princeton University. From 2005 to 2019, he was with Rice University. At Yale, he leads the Efficient Computing Lab to make computing, communication, and interfacing more efficient and effective. He and his students received the best paper awards from ACM MobileHCI, IEEE PerCom, ACM MobiSys (3), ACM ASPLOS, IEEE QCE and NDSS. He is a recipient of the NSF CAREER Award, the Duncan Award from Rice University, the RockStar Award (2014) and Test of Time Award (2022) from ACM SIGMOBILE. He is a Fellow of IEEE and ACM. More information about his research can be found at http://www.yecl.org.",
+      "role": "Professor of Computer Science",
+      "org": "Yale University",
+      "roleOrg": "Professor of Computer Science, Yale University",
+      "image": "/images/speakers/better_portrait/lin-zhong.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/lin-zhong-02a41a1/",
+        "website": "https://www.linzhong.org"
       },
       "status": "Accept",
       "draft": false
@@ -690,6 +795,27 @@
         "github": "https://github.com/lychees",
         "linkedin": "",
         "website": "https://www.shuizilong.com"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "niko-matsakis",
+      "name": "Niko Matsakis",
+      "bio": "Nicholas Matsakis is a Senior Principal Engineer at AWS and co-lead of the open source Rust language design team. He has worked on Rust since 2011, and led the design of its “secret sauce”, the borrow checker. He has played a number of other roles in Rust over the years, such as being a member of the Rust core team, the lead of the Rust compiler team, and helping to launch the Rust Foundation. Prior to working on Rust, he completed a PhDat ETH Zurich and did his undergraduate study at MIT.",
+      "role": "Senior Principal Engineer",
+      "org": "Amazon",
+      "roleOrg": "Senior Principal Engineer, Amazon",
+      "image": "/images/speakers/better_portrait/niko-matsakis.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/nikomatsakis",
+        "linkedin": "https://www.linkedin.com/in/nicholas-matsakis-615614/",
+        "website": "https://smallcultfollowing.com/babysteps/"
       },
       "status": "Accept",
       "draft": false
@@ -837,6 +963,27 @@
         "github": "https://github.com/makepad/makepad",
         "linkedin": "https://www.linkedin.com/in/arendsrik/",
         "website": "https://makepad.nl/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "ruben-ortlam",
+      "name": "Ruben Ortlam",
+      "bio": "Author and Maintainer of the llama.cpp Vulkan Backend",
+      "role": "Senior ML Engineer",
+      "org": "Red Hat",
+      "roleOrg": "Senior ML Engineer, Red Hat",
+      "image": "/images/speakers/better_portrait/ruben-ortlam.png",
+      "tags": [
+        "agentic-ai-on-edge"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/0cc4m",
+        "linkedin": "",
+        "website": ""
       },
       "status": "Accept",
       "draft": false
@@ -1052,6 +1199,27 @@
       "draft": false
     },
     {
+      "id": "wenjing-chu",
+      "name": "Wenjing Chu",
+      "bio": "Wenjing is the Sr. Director of Technology Strategy on Trust of AI Agents & Agentic Systems at Futurewei. He is a long time leader of open source communities currently contributing to the OpenWallet Foundation and the Linux Foundation Decentralized Trust, and was a founding member of the OpenWallet Governing Board. He chairs the AI and Human Trust (AIM) Working Group in Trust over IP (ToIP) where the specification of TEA (TSP-Enabled AI Agents), including TMCP/TA2A (running MCP and A2A over TSP)\r\nIs being developed. He is the co-author of the Trust Spanning Protocol (TSP) specification and is an advisor to the Linux Foundation First Person Identity Project.",
+      "role": "Senior Director of Technology Strategy",
+      "org": "Futurewei Technologies",
+      "roleOrg": "Senior Director of Technology Strategy, Futurewei Technologies",
+      "image": "/images/speakers/better_portrait/wenjing-chu.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/wenjingchu/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "wzcai99",
       "name": "Wenzhe Cai",
       "bio": "An Embodied AI researcher, working on building an open-sourced embodied navigation foundation models.",
@@ -1110,6 +1278,27 @@
         "github": "",
         "linkedin": "",
         "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xuan-huang",
+      "name": "Xuan Huang",
+      "bio": "Xuan Huang (@huxpro) is the Architect of Lynx at ByteDance, an open-source, cross-platform framework powering TikTok and CapCut. He is exploring what app frameworks should look like in the age of AI, and he was previously on the React Core Team at Meta.",
+      "role": "Software Architect",
+      "org": "ByteDance",
+      "roleOrg": "Software Architect, ByteDance",
+      "image": "/images/speakers/better_portrait/xuan-huang.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/huxpro",
+        "github": "https://github.com/huxpro",
+        "linkedin": "https://www.linkedin.com/in/huxpro",
+        "website": "https://hux.pro"
       },
       "status": "Accept",
       "draft": false
