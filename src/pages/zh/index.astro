@@ -61,22 +61,33 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
 
   <TextAndSponsors
-    id="sponsors"
-    title="赞助商"
-    text="GOSIM Paris 2026 由以下领先机构联合主办与赞助支持。"
+    id="speaker-organizations"
+    title="演讲嘉宾所在机构"
+    text="我们的演讲嘉宾来自高校、科研机构、开源项目及前沿 AI 企业，以下是现场所有机构的完整名单。"
     text2=""
     logoGroups={[
       {
-        cols: 4,
+        cols: 5,
         logos: [
+          { image: "amazon.png", imageAlt: "Amazon", url: "https://www.amazon.com" },
+          { image: "carrefour.png", imageAlt: "Carrefour", url: "https://www.carrefour.com" },
+          { image: "dimforge.png", imageAlt: "Dimforge", url: "https://www.dimforge.com" },
+          { image: "ellamind.png", imageAlt: "ellamind", url: "https://ellamind.com" },
+          { image: "fraunhofer.png", imageAlt: "Fraunhofer IAIS", url: "https://www.fraunhofer.de" },
+          { image: "fudan-university.png", imageAlt: "复旦大学", url: "https://www.fudan.edu.cn" },
+          { image: "google.png", imageAlt: "Google", url: "https://www.google.com" },
           { image: "huawei-vertical.png", imageAlt: "华为", logoClass: "xl", url: "https://www.huawei.com" },
-          { image: "csdn.png", imageAlt: "CSDN", url: "https://www.csdn.net" },
-          { image: "1msai.png", imageAlt: "1ms.ai", url: "https://1ms.ai/" },
-          { image: "openharmony.png", imageAlt: "OpenHarmony", url: "https://www.openharmony.cn" },
-          { image: "openbmb.png", imageAlt: "OpenBMB", url: "https://www.openbmb.cn" },
-          { image: "minimax.png", imageAlt: "MiniMax", logoClass: "xl", url: "https://www.minimaxi.com" },
-          { image: "kimi-logo.png", imageAlt: "Kimi", url: "https://kimi.ai" },
-          { image: "zai.png", imageAlt: "智谱 ZAI", logoClass: "xl", url: "https://z.ai" },
+          { image: "huggingface.png", imageAlt: "Hugging Face", url: "https://huggingface.co" },
+          { image: "inria.png", imageAlt: "INRIA", url: "https://www.inria.fr" },
+          { image: "mozilla-ai.png", imageAlt: "Mozilla Foundation", url: "https://mozilla.ai" },
+          { image: "nvidia.png", imageAlt: "NVIDIA", url: "https://www.nvidia.com" },
+          { image: "peking-university.png", imageAlt: "北京大学", url: "https://www.pku.edu.cn" },
+          { image: "pleias.png", imageAlt: "Pleias", url: "https://pleias.fr" },
+          { image: "probabl.png", imageAlt: "Probabl", url: "https://probabl.ai" },
+          { image: "quansight.png", imageAlt: "Quansight", url: "https://quansight.com" },
+          { image: "sgl.png", imageAlt: "SGLang", url: "https://sglang.ai" },
+          { image: "shanghai-ai-lab.png", imageAlt: "上海人工智能实验室", url: "https://www.shlab.org.cn" },
+          { image: "zhipuai.png", imageAlt: "智谱AI", url: "https://www.zhipuai.cn" },
         ],
       },
     ]}
@@ -267,9 +278,31 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
     }}
   /> -->
 
+  <TextAndSponsors
+    id="sponsors"
+    title="赞助商"
+    text="GOSIM Paris 2026 由以下机构赞助支持。"
+    text2=""
+    logoGroups={[
+      {
+        cols: 4,
+        logos: [
+          { image: "huawei-vertical.png", imageAlt: "华为", logoClass: "xl", url: "https://www.huawei.com" },
+          { image: "openharmony.png", imageAlt: "OpenHarmony", url: "https://www.openharmony.cn" },
+          { image: "openbmb.png", imageAlt: "OpenBMB", url: "https://www.openbmb.cn" },
+          { image: "minimax.png", imageAlt: "MiniMax", url: "https://www.minimaxi.com" },
+          { image: "kimi-logo.png", imageAlt: "Kimi", url: "https://kimi.ai" },
+          { image: "zai.png", imageAlt: "智谱 ZAI", logoClass: "xl", url: "https://z.ai" },
+        ],
+      },
+    ]}
+  />
+
   <ConferenceTracks
     kicker="大会内容"
     title="精彩主题演讲与工作坊"
+    titleLink="/zh/schedule/"
+    titleLinkLabel="查看日程"
     intro="从开源模型、智能体框架到机器人、边缘 AI，再到连接智能体应用与 AgenticOS 的新一层，整套议程的目标是让你看清这条技术栈下一步往哪里走，也真正接近正在构建它的人。"
     tracksTitle="主题演讲"
     viewRouteLabel="查看日程"
@@ -309,20 +342,24 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
         title: "SGLang Workshop",
         text: "不只讲提示工程，而是深入 SGLang 项目本身：结构化生成、RadixAttention、KV Cache 复用、agent loop 设计，以及如何把这些能力真正用于高效可控的生产级推理与工作流系统。",
         theme: "structured-runtime",
+        link: "/zh/schedule/#ws-sglang-paris2026",
       },
       {
         title: "vLLM Workshop",
         text: "直接上手 vLLM 项目级实践：PagedAttention、continuous batching、多 GPU 部署，以及团队如何用它搭建高吞吐、低延迟、面向生产的开源模型服务。",
         theme: "model-serving",
+        link: "/zh/schedule/#ws-vllm-paris2026",
       },
       {
         title: "Own Your Data Science and AI Workshop",
         text: "全天工作坊，聚焦前沿 AI 开源工具——从 GPU 加速的机器学习框架到开源主权大语言模型和表格基础模型。",
         theme: "open-tooling",
+        link: "/zh/schedule/#ws-own-your-data-paris2026",
       },
       {
         title: "Build Your Own Agentic App Workshop",
         text: "动手工作坊，使用开源工具和框架从零构建自主 AI 智能体，涵盖智能体设计模式、工具集成和实际部署。",
+        link: "/zh/schedule/#ws-agentic-app",
       },
     ]}
     highlightsTitle="Spotlight & Hackathon"
@@ -349,40 +386,6 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 
   <FeaturedSpeakers
     title="特邀演讲嘉宾"
-  />
-
-  <TextAndSponsors
-    id="speaker-organizations"
-    title="演讲嘉宾所在机构"
-    text="我们的演讲嘉宾来自高校、科研机构、开源项目及前沿 AI 企业，以下是现场所有机构的完整名单。"
-    text2=""
-    logoGroups={[
-      {
-        cols: 5,
-        logos: [
-          { image: "amazon.png", imageAlt: "Amazon", url: "https://www.amazon.com" },
-          { image: "carrefour.png", imageAlt: "Carrefour", url: "https://www.carrefour.com" },
-          { image: "dimforge.png", imageAlt: "Dimforge", url: "https://www.dimforge.com" },
-          { image: "ellamind.png", imageAlt: "ellamind", url: "https://ellamind.com" },
-          { image: "fraunhofer.png", imageAlt: "Fraunhofer IAIS", url: "https://www.fraunhofer.de" },
-          { image: "fudan-university.png", imageAlt: "复旦大学", url: "https://www.fudan.edu.cn" },
-          { image: "google.png", imageAlt: "Google", url: "https://www.google.com" },
-          { image: "huawei-vertical.png", imageAlt: "华为", logoClass: "xl", url: "https://www.huawei.com" },
-          { image: "huggingface.png", imageAlt: "Hugging Face", url: "https://huggingface.co" },
-          { image: "inria.png", imageAlt: "INRIA", url: "https://www.inria.fr" },
-          { image: "modelbest.png", imageAlt: "ModelBest", url: "https://modelbest.cn/en" },
-          { image: "mozilla-ai.png", imageAlt: "Mozilla Foundation", url: "https://mozilla.ai" },
-          { image: "nvidia.png", imageAlt: "NVIDIA", url: "https://www.nvidia.com" },
-          { image: "peking-university.png", imageAlt: "北京大学", url: "https://www.pku.edu.cn" },
-          { image: "pleias.png", imageAlt: "Pleias", url: "https://pleias.fr" },
-          { image: "probabl.png", imageAlt: "Probabl", url: "https://probabl.ai" },
-          { image: "quansight.png", imageAlt: "Quansight", url: "https://quansight.com" },
-          { image: "sgl.png", imageAlt: "SGLang", url: "https://sglang.ai" },
-          { image: "shanghai-ai-lab.png", imageAlt: "上海人工智能实验室", url: "https://www.shlab.org.cn" },
-          { image: "zhipuai.png", imageAlt: "智谱AI", url: "https://www.zhipuai.cn" },
-        ],
-      },
-    ]}
   />
 
   <Timeline
