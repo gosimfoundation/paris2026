@@ -285,10 +285,18 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                 {/* Keynote placeholder */}
                 <div class="keynote-block">
                   <p class="keynote-block-label">{t.keynotesLabel}</p>
-                  <div class="keynote-tbd">
-                    <span class="keynote-tbd-badge">{t.tbd}</span>
-                    <span class="keynote-tbd-text">{t.keynotesTbd}</span>
-                  </div>
+                  {keynotes.length > 0 ? keynotes.map((kn) => (
+                    <div class="keynote-tbd">
+                      {kn.timeSlot && <span class="keynote-tbd-time">{kn.timeSlot}</span>}
+                      <span class="keynote-tbd-badge">{t.tbd}</span>
+                      <span class="keynote-tbd-text">{t.keynotesTbd}</span>
+                    </div>
+                  )) : (
+                    <div class="keynote-tbd">
+                      <span class="keynote-tbd-badge">{t.tbd}</span>
+                      <span class="keynote-tbd-text">{t.keynotesTbd}</span>
+                    </div>
+                  )}
                 </div>
 
                 {sessions.length === 0 ? (() => {
@@ -714,7 +722,22 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.75rem 0.25rem;
+    padding: 0.5rem 0.25rem;
+    border-top: 1px solid rgba(245,158,11,0.2);
+  }
+
+  .keynote-tbd:first-of-type {
+    border-top: none;
+    padding-top: 0.25rem;
+  }
+
+  .keynote-tbd-time {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #92400e;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    min-width: 110px;
   }
 
   .keynote-tbd-badge {
