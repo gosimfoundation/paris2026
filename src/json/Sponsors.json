@@ -11,7 +11,7 @@
     { "category": "host", "image": "huawei-vertical.png", "logoClass": "xl", "url": "https://www.huawei.com" },
     { "category": "host", "image": "openharmony.png", "url": "https://www.openharmony.cn" },
     { "category": "host", "image": "openbmb.png", "url": "https://www.openbmb.cn" },
-    { "category": "host", "image": "minimax.png", "logoClass": "xl", "url": "https://www.minimaxi.com" },
+    { "category": "host", "image": "minimax.png", "url": "https://www.minimaxi.com" },
     { "category": "host", "image": "kimi-logo.png", "url": "https://kimi.ai" },
     { "category": "host", "image": "zai.png", "logoClass": "xl", "url": "https://z.ai" },
     { "category": "supporting-organizations", "image": "baai.png", "url": "https://www.baai.ac.cn" },
