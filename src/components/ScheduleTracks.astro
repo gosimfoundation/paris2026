@@ -266,6 +266,9 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
           const keynotes = getKeynotes(dayEn)
           return allCategories.map((cat) => {
             const sessions = getSessions(cat.id, dayEn)
+            const firstKeynoteTime = keynotes[0]?.timeSlot || "99:99"
+            const earlyBreaks = sessions.filter(s => (s.timeSlot || "99:99") < firstKeynoteTime)
+            const laterSessions = sessions.filter(s => (s.timeSlot || "99:99") >= firstKeynoteTime)
             const color = trackColor(cat.id)
             return (
               <div
@@ -281,6 +284,22 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                   </div>
                   <span class="panel-count">{t.sessionCount(sessions.length)}</span>
                 </div>
+
+                {/* Pre-keynote breaks (e.g. Registration & Breakfast) */}
+                {earlyBreaks.length > 0 && (
+                  <div class="session-list">
+                    {earlyBreaks.map((session) => (
+                      <div class="break-divider">
+                        <span class="break-line" />
+                        <span class="break-label">
+                          {session.timeSlot && <span class="break-time">{session.timeSlot}</span>}
+                          {loc(session.title)}
+                        </span>
+                        <span class="break-line" />
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 {/* Keynote placeholder */}
                 <div class="keynote-block">
@@ -299,7 +318,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                   )}
                 </div>
 
-                {sessions.length === 0 ? (() => {
+                {laterSessions.length === 0 ? (() => {
                   const otherDays = (catDaysMap[cat.id] || []).filter(d => d !== dayEn)
                   return (
                     <div class="no-sessions">
@@ -320,7 +339,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                   )
                 })() : (
                   <div class="session-list">
-                    {sessions.map((session) => {
+                    {laterSessions.map((session) => {
                       const meta = typeMeta(session.type)
                       const isBreak = session.type === "break"
                       const hasContent = !isBreak && session.speakers && session.speakers.length > 0
