@@ -278,9 +278,33 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
     }}
   /> -->
 
+  <TextAndSponsors
+    id="sponsors"
+    title="Sponsors"
+    text="GOSIM Paris 2026 is proudly hosted and sponsored by these leading organizations."
+    text2=""
+    logoGroups={[
+      {
+        cols: 4,
+        logos: [
+          { image: "huawei-vertical.png", imageAlt: "Huawei", logoClass: "xl", url: "https://www.huawei.com" },
+          { image: "csdn.png", imageAlt: "CSDN", url: "https://www.csdn.net" },
+          { image: "1msai.png", imageAlt: "1ms.ai", url: "https://1ms.ai/" },
+          { image: "openharmony.png", imageAlt: "OpenHarmony", url: "https://www.openharmony.cn" },
+          { image: "openbmb.png", imageAlt: "OpenBMB", url: "https://www.openbmb.cn" },
+          { image: "minimax.png", imageAlt: "MiniMax", logoClass: "xl", url: "https://www.minimaxi.com" },
+          { image: "kimi-logo.png", imageAlt: "Kimi", url: "https://kimi.ai" },
+          { image: "zai.png", imageAlt: "Z.ai", logoClass: "xl", url: "https://z.ai" },
+        ],
+      },
+    ]}
+  />
+
   <ConferenceTracks
     kicker="Conference Program"
     title="Exciting Tracks and Workshops"
+    titleLink="/schedule/"
+    titleLinkLabel="View Schedule"
     intro="From open source models and agent frameworks to robotics, edge AI, and the emerging layer between agentic apps and agentic operating systems, the program is built to show where the stack is moving next and let developers get close to the people building it."
     tracksTitle="Conference Tracks"
     tracks={[
@@ -357,28 +381,6 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   />
 
   <!-- Marquee (Past Featured Projects) temporarily removed until projects are updated -->
-
-  <TextAndSponsors
-    id="sponsors"
-    title="Sponsors"
-    text="GOSIM Paris 2026 is proudly hosted and sponsored by these leading organizations."
-    text2=""
-    logoGroups={[
-      {
-        cols: 4,
-        logos: [
-          { image: "huawei-vertical.png", imageAlt: "Huawei", logoClass: "xl", url: "https://www.huawei.com" },
-          { image: "csdn.png", imageAlt: "CSDN", url: "https://www.csdn.net" },
-          { image: "1msai.png", imageAlt: "1ms.ai", url: "https://1ms.ai/" },
-          { image: "openharmony.png", imageAlt: "OpenHarmony", url: "https://www.openharmony.cn" },
-          { image: "openbmb.png", imageAlt: "OpenBMB", url: "https://www.openbmb.cn" },
-          { image: "minimax.png", imageAlt: "MiniMax", logoClass: "xl", url: "https://www.minimaxi.com" },
-          { image: "kimi-logo.png", imageAlt: "Kimi", url: "https://kimi.ai" },
-          { image: "zai.png", imageAlt: "Z.ai", logoClass: "xl", url: "https://z.ai" },
-        ],
-      },
-    ]}
-  />
 
   <FeaturedSpeakers
     title="Featured Speakers"

@@ -31,6 +31,8 @@ interface Props {
   labLabel?: string;
   openLabel?: string;
   enterLabel?: string;
+  titleLink?: string;
+  titleLinkLabel?: string;
 }
 
 const {
@@ -48,6 +50,8 @@ const {
   labLabel = "Lab",
   openLabel = "View Schedule",
   enterLabel = "Enter",
+  titleLink,
+  titleLinkLabel = "View Schedule",
 } = Astro.props;
 
 const routePalette = [
@@ -414,7 +418,12 @@ const highlightCards = (highlights || []).map((item, index) => {
   <div class="container">
     <div class="track-atlas-header">
       <span class="track-atlas-kicker animate-fade-in">{kicker}</span>
-      <h2 class="track-atlas-title animate-fade-in animate-delay-1">{title}</h2>
+      <div class="track-atlas-title-row animate-fade-in animate-delay-1">
+        <h2 class="track-atlas-title">{title}</h2>
+        {titleLink && (
+          <a href={titleLink} class="track-atlas-title-link">{titleLinkLabel} →</a>
+        )}
+      </div>
       <p class="track-atlas-intro animate-fade-in animate-delay-2">
         {intro}
       </p>
@@ -684,12 +693,38 @@ const highlightCards = (highlights || []).map((item, index) => {
     background: linear-gradient(90deg, #ef4444, transparent);
   }
 
+  .track-atlas-title-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
   .track-atlas-title {
     margin: 0;
     font-size: clamp(2.4rem, 4vw, 4.8rem);
     line-height: 0.95;
     letter-spacing: -0.05em;
     color: #020617;
+  }
+
+  .track-atlas-title-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2563eb;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.3);
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .track-atlas-title-link:hover {
+    color: #1d4ed8;
+    border-color: #1d4ed8;
   }
 
   .track-atlas-intro {
@@ -1029,7 +1064,7 @@ const highlightCards = (highlights || []).map((item, index) => {
     gap: 0;
     overflow: hidden;
     isolation: isolate;
-    min-height: clamp(24rem, 34vw, 31rem);
+    min-height: clamp(18rem, 24vw, 22rem);
     background-color: color-mix(in srgb, var(--accent-from) 18%, #0f172a);
     background-image: var(--workshop-bg);
     background-position: center;
@@ -1291,7 +1326,7 @@ const highlightCards = (highlights || []).map((item, index) => {
     }
 
     .support-card-workshop {
-      min-height: 22rem;
+      min-height: 17rem;
     }
 
     .support-workshop-overlay {
