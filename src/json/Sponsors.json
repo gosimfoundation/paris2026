@@ -3,7 +3,8 @@
     { "id": "all", "name": { "en": "All", "zh": "全部", "fr": "Tous" } },
     { "id": "host", "name": { "en": "Sponsors", "zh": "赞助商", "fr": "Sponsors" } },
     { "id": "supporting-organizations", "name": { "en": "Supporting Organizations", "zh": "支持单位", "fr": "Organisations de soutien" } },
-    { "id": "hosts", "name": { "en": "Hosts", "zh": "主办方", "fr": "Organisateurs" } },
+    { "id": "organizer", "name": { "en": "Organizer", "zh": "主办方", "fr": "Organisateur" } },
+    { "id": "co-organizer", "name": { "en": "Co-organizer", "zh": "承办方", "fr": "Co-organisateur" } },
     { "id": "speakers-affiliated", "name": { "en": "Speakers Affiliated (Partial)", "zh": "演讲嘉宾单位（部分）", "fr": "Affiliés aux intervenants (partiel)" } }
   ],
   "partners": [
@@ -16,9 +17,9 @@
     { "category": "supporting-organizations", "image": "baai.png", "url": "https://www.baai.ac.cn" },
     { "category": "supporting-organizations", "image": "sgl.png", "url": "https://sglang.ai" },
     { "category": "supporting-organizations", "image": "vllm.png", "url": "https://vllm.ai" },
-    { "category": "hosts", "image": "gosim.png", "url": "https://gosim.org" },
-    { "category": "hosts", "image": "csdn.png", "url": "https://www.csdn.net" },
-    { "category": "hosts", "image": "1msai.png", "url": "https://1ms.ai/" },
+    { "category": "organizer", "image": "gosim.png", "url": "https://gosim.org" },
+    { "category": "co-organizer", "image": "csdn.png", "url": "https://www.csdn.net" },
+    { "category": "co-organizer", "image": "1msai.png", "url": "https://1ms.ai/" },
     { "category": "speakers-affiliated", "image": "amazon.png", "url": "https://www.amazon.com" },
     { "category": "speakers-affiliated", "image": "carrefour.png", "url": "https://www.carrefour.com" },
     { "category": "speakers-affiliated", "image": "dimforge.png", "url": "https://www.dimforge.com" },
