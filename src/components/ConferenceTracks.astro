@@ -445,6 +445,7 @@ const highlightCards = (highlights || []).map((item, index) => {
             id={track.anchor}
             class={`track-station animate-slide-up ${index % 2 === 0 ? "is-left" : "is-right"}`}
             style={`--accent-from:${track.accent.from}; --accent-to:${track.accent.to}; --stagger:${index};`}
+            data-href={track.link || undefined}
           >
             <div class="track-stop">
               <span class="track-stop-dot"></span>
@@ -607,6 +608,10 @@ const highlightCards = (highlights || []).map((item, index) => {
         if (event.target.closest(".track-visit-link")) {
           return;
         }
+        if (station.dataset.href) {
+          window.location.href = station.dataset.href;
+          return;
+        }
         station.classList.toggle("expanded");
       });
     });
@@ -765,6 +770,10 @@ const highlightCards = (highlights || []).map((item, index) => {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.6), transparent 18%, transparent 82%, rgba(255, 255, 255, 0.6));
     mix-blend-mode: screen;
+  }
+
+  .track-station[data-href] {
+    cursor: pointer;
   }
 
   .track-station {
