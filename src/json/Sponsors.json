@@ -21,7 +21,7 @@
     { "category": "co-organizer", "image": "csdn.png", "url": "https://www.csdn.net" },
     { "category": "co-organizer", "image": "1msai.png", "url": "https://1ms.ai/" },
     { "category": "co-organizer", "image": "probabl.png", "url": "https://probabl.ai" },
-    { "category": "speakers-affiliated", "image": "amazon.png", "logoClass": "xl", "url": "https://www.amazon.com" },
+    { "category": "speakers-affiliated", "image": "amazon.png", "logoClass": "xll", "url": "https://www.amazon.com" },
     { "category": "speakers-affiliated", "image": "arm.png", "logoClass": "xl", "url": "https://www.arm.com" },
     { "category": "speakers-affiliated", "image": "bytedance.png", "url": "https://www.bytedance.com" },
     { "category": "speakers-affiliated", "image": "carrefour.png", "url": "https://www.carrefour.com" },
