@@ -39,7 +39,7 @@
     { "category": "speakers-affiliated", "image": "makepad.png", "url": "https://makepad.nl" },
     { "category": "speakers-affiliated", "image": "modelbest.png", "url": "https://modelbest.cn" },
     { "category": "speakers-affiliated", "image": "mozilla-ai.png", "url": "https://mozilla.ai" },
-    { "category": "speakers-affiliated", "image": "nvidia.png", "logoClass": "xl", "url": "https://www.nvidia.com" },
+    { "category": "speakers-affiliated", "image": "nvidia.png", "logoClass": "xll", "url": "https://www.nvidia.com" },
     { "category": "speakers-affiliated", "image": "peking-university.png", "url": "https://www.pku.edu.cn" },
     { "category": "speakers-affiliated", "image": "pleias.png", "url": "https://pleias.fr" },
     { "category": "speakers-affiliated", "image": "pollen-robotics.png", "url": "https://www.pollen-robotics.com" },
