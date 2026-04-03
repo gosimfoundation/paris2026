@@ -46,13 +46,13 @@
     { "category": "speakers-affiliated", "image": "probabl.png", "url": "https://probabl.ai" },
     { "category": "speakers-affiliated", "image": "quansight.png", "url": "https://quansight.com" },
     { "category": "speakers-affiliated", "image": "redhat.png", "url": "https://www.redhat.com" },
-    { "category": "speakers-affiliated", "image": "rice-university.svg", "url": "https://www.rice.edu" },
+    { "category": "speakers-affiliated", "image": "rice-university.png", "url": "https://www.rice.edu" },
     { "category": "speakers-affiliated", "image": "robolytics.png", "url": "https://robolytics.ai" },
     { "category": "speakers-affiliated", "image": "sgl.png", "url": "https://sglang.ai" },
     { "category": "speakers-affiliated", "image": "shanghai-ai-lab.png", "url": "https://www.shlab.org.cn" },
     { "category": "speakers-affiliated", "image": "shanghai-jiaotong-university.png", "url": "https://www.sjtu.edu.cn" },
     { "category": "speakers-affiliated", "image": "singularity-intelligence.png", "url": "https://singularity-ai.com" },
-    { "category": "speakers-affiliated", "image": "copilotkit.svg", "url": "https://copilotkit.ai" },
+    { "category": "speakers-affiliated", "image": "copilotkit.png", "url": "https://copilotkit.ai" },
     { "category": "speakers-affiliated", "image": "zenoh.png", "url": "https://zenoh.io" },
     { "category": "speakers-affiliated", "image": "zhipuai.png", "url": "https://www.zhipuai.cn" }
   ]
