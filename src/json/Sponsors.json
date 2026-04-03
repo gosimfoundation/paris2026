@@ -32,7 +32,7 @@
     { "category": "speakers-affiliated", "image": "futurewei.png", "url": "https://www.futurewei.com" },
     { "category": "speakers-affiliated", "image": "google.png", "logoClass": "xl", "url": "https://www.google.com" },
     { "category": "speakers-affiliated", "image": "huawei-vertical.png", "logoClass": "xl", "url": "https://www.huawei.com" },
-    { "category": "speakers-affiliated", "image": "huggingface.png", "logoClass": "xl", "url": "https://huggingface.co" },
+    { "category": "speakers-affiliated", "image": "huggingface.png", "logoClass": "l", "url": "https://huggingface.co" },
     { "category": "speakers-affiliated", "image": "inria.png", "url": "https://www.inria.fr" },
     { "category": "speakers-affiliated", "image": "kaiyuanshe.png", "url": "https://kaiyuanshe.cn" },
     { "category": "speakers-affiliated", "image": "kedro.png", "url": "https://kedro.org" },
