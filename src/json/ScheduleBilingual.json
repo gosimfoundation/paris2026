@@ -236,21 +236,11 @@
       },
       {
         "title": {
-          "en": "State of Agentic AI: Insights from the Global Open Source Development Report",
-          "zh": "Agentic AI 现状：来自全球开源发展报告的洞察",
-          "fr": "État de l'Agentic AI : Insights du rapport mondial sur le développement open source"
+          "en": "TBD",
+          "zh": "待定",
+          "fr": "À confirmer"
         },
-        "content": {
-          "en": "What is the true state of Agentic AI in the open source world? Drawing on the Global Open Source Development Report, this talk presents a data-driven snapshot of global development activity across 150+ agent-related projects (2023–2026). We quantify trends in framework adoption, regional contribution patterns, and emerging technical divides—revealing rapid growth in multi-agent systems and domain-specific agents, alongside persistent challenges in interoperability, safety, and governance. The analysis highlights a shifting center of gravity: while foundational layers remain concentrated, application-layer innovation is increasingly distributed across Asia, Europe, and emerging communities.",
-          "zh": "开源世界中 Agentic AI 的真实现状如何？本演讲基于《全球开源发展报告》，对 150 余个 Agent 相关项目（2023–2026 年）的全球开发活动进行数据驱动的全景梳理，量化框架采用趋势、区域贡献格局与新兴技术鸿沟，揭示多 Agent 系统与领域专用 Agent 的快速增长，以及互操作性、安全性与治理方面持续存在的挑战。",
-          "fr": "Quel est le véritable état de l'Agentic AI dans le monde open source ? S'appuyant sur le Global Open Source Development Report, cet exposé présente un aperçu basé sur les données de l'activité de développement mondiale sur 150+ projets liés aux agents (2023–2026)."
-        },
-        "speakers": [
-          {
-            "name": "Wei Wang",
-            "title": "Professor, East China Normal University"
-          }
-        ],
+        "speakers": [],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
@@ -759,6 +749,30 @@
       },
       {
         "title": {
+          "en": "The Smol Training Playbook: Lessons from Training State-of-the-Art LLMs",
+          "zh": "小型训练手册：训练最先进 LLM 的经验教训"
+        },
+        "content": {
+          "en": "A deep dive into the real-world challenges of training LLMs at scale, covering infrastructure, 5D parallelism, performance tuning, and hard-earned lessons from training SmolLM3 on hundreds of GPUs.\n\nThis talk builds on the Ultra-Scale Playbook presented at GOSIM 2025 and goes further with insights from the SmolLM3 training campaign. Topics include: 5D parallelism (data, tensor, pipeline, context, and expert), real vs theoretical bandwidth validation across the hardware stack, communication patterns and NCCL tuning, checkpointing strategies, and MoE training challenges. The session distills practical recommendations tying them to benchmarks and case studies, aimed at engineers ready to scale beyond single-GPU setups.",
+          "zh": "深度剖析大规模 LLM 训练的真实挑战，涵盖基础设施、5D 并行、性能调优，以及在数百张 GPU 上训练 SmolLM3 的实战经验。议题包括：5D 并行（数据、张量、流水线、上下文、专家并行）、硬件栈带宽验证、NCCL 调优、检查点策略及 MoE 训练挑战。",
+          "fr": "Une plongée dans les défis réels de l'entraînement de LLMs à grande échelle, couvrant le parallélisme 5D, l'optimisation des performances NCCL, et les leçons tirées de l'entraînement de SmolLM3 sur des centaines de GPU."
+        },
+        "speakers": [
+          {
+            "name": "Nouamane Tazi",
+            "title": "ML Research Engineer, Hugging Face"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:20 - 10:50",
+        "type": "talk"
+      },
+      {
+        "title": {
           "en": "Linear Attention: Past, Present and Future",
           "zh": "线性注意力机制：过去、现在与未来"
         },
@@ -778,7 +792,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "10:20 - 10:50",
+        "timeSlot": "10:50 - 11:20",
         "type": "talk"
       },
       {
@@ -790,30 +804,6 @@
           {
             "name": "Yuxuan Zhang",
             "title": "Technical Evangelist, ZhipuAI"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "10:50 - 11:20",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
-          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
-        },
-        "content": {
-          "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
-          "zh": "聊天机器人时代正让位于更强大的事物：自主 Agent 生态系统，AI 系统在其中主动规划、协调和执行复杂工作流，无需大量人工干预。Minimax 一直站在这一转变的前沿，开发支持大规模 Agent 原生应用的模型和基础设施。\n\n本演讲探讨如何从简单问答交互迈向多步骤 Agentic 流程——所需的模型能力、工具和编排层，以及在生产环境中部署自主 Agent 的现实挑战。",
-          "fr": "L'ère du chatbot cède la place à quelque chose de plus puissant : les écosystèmes d'agents autonomes où les systèmes IA planifient, coordonnent et exécutent des workflows complexes avec un minimum d'intervention humaine. Minimax est à l'avant-garde de cette transition.\n\nCette présentation examine ce qu'il faut pour aller au-delà des interactions simples vers des pipelines agentiques multi-étapes — les capacités de modèles requises, les couches d'outillage et d'orchestration nécessaires, et les défis réels du déploiement d'agents autonomes en production."
-        },
-        "speakers": [
-          {
-            "name": "Daniel",
-            "title": "AI Model Business Developer, Minimax"
           }
         ],
         "date": {
@@ -841,6 +831,30 @@
       },
       {
         "title": {
+          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
+          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
+        },
+        "content": {
+          "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
+          "zh": "聊天机器人时代正让位于更强大的事物：自主 Agent 生态系统，AI 系统在其中主动规划、协调和执行复杂工作流，无需大量人工干预。Minimax 一直站在这一转变的前沿，开发支持大规模 Agent 原生应用的模型和基础设施。\n\n本演讲探讨如何从简单问答交互迈向多步骤 Agentic 流程——所需的模型能力、工具和编排层，以及在生产环境中部署自主 Agent 的现实挑战。",
+          "fr": "L'ère du chatbot cède la place à quelque chose de plus puissant : les écosystèmes d'agents autonomes où les systèmes IA planifient, coordonnent et exécutent des workflows complexes avec un minimum d'intervention humaine. Minimax est à l'avant-garde de cette transition.\n\nCette présentation examine ce qu'il faut pour aller au-delà des interactions simples vers des pipelines agentiques multi-étapes — les capacités de modèles requises, les couches d'outillage et d'orchestration nécessaires, et les défis réels du déploiement d'agents autonomes en production."
+        },
+        "speakers": [
+          {
+            "name": "Daniel",
+            "title": "AI Model Business Developer, Minimax"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 14:20",
+        "type": "talk"
+      },
+      {
+        "title": {
           "en": "World Model for Universal Generation and Control",
           "zh": "用于通用生成与控制的世界模型"
         },
@@ -860,7 +874,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "14:00 - 14:20",
+        "timeSlot": "14:20 - 14:40",
         "type": "talk"
       },
       {
@@ -884,7 +898,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "14:20 - 14:40",
+        "timeSlot": "14:40 - 15:00",
         "type": "talk"
       },
       {
@@ -901,30 +915,6 @@
           {
             "name": "Shiwei Liu",
             "title": "Group Leader, Max Planck Institute for Intelligent Systems; PI, ELLIS Institute Tübingen"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "14:40 - 15:00",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Exploring HiFloat8: A Tapered Format Complementing the FP8 Ecosystem for Robust Model Training",
-          "zh": "探索 HiFloat8：为 FP8 生态补充的渐变格式，实现稳健模型训练"
-        },
-        "content": {
-          "en": "Standard FP8 formats suffer from frequent gradient overflows and heavy reliance on complex dynamic scaling (Delayed Scaling), which often lead to training instability in billion-parameter models. This session introduces HiFloat8 (HiF8)—a tapered precision format whose natural alignment with neural network weight/gradient distributions allows it to capture high-magnitude outliers without aggressive scaling.\n\nWe demonstrate HiF8 implementation within PyTorch using torch.npu, show training stability analysis with BF16-level convergence achieved with reduced reliance on delay scaling, and present 1.5–1.7× GEMM performance gains versus FP16 in specific scenarios. We also discuss ongoing collaboration on dedicated hardware support for HiF8.",
-          "zh": "标准 FP8 格式存在梯度溢出频繁、高度依赖复杂动态缩放（延迟缩放）等问题，导致十亿参数模型训练不稳定。本演讲介绍 HiFloat8（HiF8）——一种渐变精度格式，其与神经网络权重/梯度分布的天然契合使其无需激进缩放即可捕获高幅度离群值，在特定场景下实现相对 FP16 约 1.5–1.7× 的 GEMM 性能提升。",
-          "fr": "HiFloat8 (HiF8) est un format de précision effilé qui s'aligne naturellement avec les distributions de poids/gradients des réseaux de neurones. Il atteint une convergence de niveau BF16 avec une dépendance réduite au scaling retardé, et offre des gains de performance GEMM de 1,5 à 1,7× versus FP16."
-        },
-        "speakers": [
-          {
-            "name": "Zhao Yun",
-            "title": "Senior Engineer, Huawei"
           }
         ],
         "date": {
@@ -952,18 +942,18 @@
       },
       {
         "title": {
-          "en": "The Smol Training Playbook: Lessons from Training State-of-the-Art LLMs",
-          "zh": "小型训练手册：训练最先进 LLM 的经验教训"
+          "en": "Exploring HiFloat8: A Tapered Format Complementing the FP8 Ecosystem for Robust Model Training",
+          "zh": "探索 HiFloat8：为 FP8 生态补充的渐变格式，实现稳健模型训练"
         },
         "content": {
-          "en": "A deep dive into the real-world challenges of training LLMs at scale, covering infrastructure, 5D parallelism, performance tuning, and hard-earned lessons from training SmolLM3 on hundreds of GPUs.\n\nThis talk builds on the Ultra-Scale Playbook presented at GOSIM 2025 and goes further with insights from the SmolLM3 training campaign. Topics include: 5D parallelism (data, tensor, pipeline, context, and expert), real vs theoretical bandwidth validation across the hardware stack, communication patterns and NCCL tuning, checkpointing strategies, and MoE training challenges. The session distills practical recommendations tying them to benchmarks and case studies, aimed at engineers ready to scale beyond single-GPU setups.",
-          "zh": "深度剖析大规模 LLM 训练的真实挑战，涵盖基础设施、5D 并行、性能调优，以及在数百张 GPU 上训练 SmolLM3 的实战经验。议题包括：5D 并行（数据、张量、流水线、上下文、专家并行）、硬件栈带宽验证、NCCL 调优、检查点策略及 MoE 训练挑战。",
-          "fr": "Une plongée dans les défis réels de l'entraînement de LLMs à grande échelle, couvrant le parallélisme 5D, l'optimisation des performances NCCL, et les leçons tirées de l'entraînement de SmolLM3 sur des centaines de GPU."
+          "en": "Standard FP8 formats suffer from frequent gradient overflows and heavy reliance on complex dynamic scaling (Delayed Scaling), which often lead to training instability in billion-parameter models. This session introduces HiFloat8 (HiF8)—a tapered precision format whose natural alignment with neural network weight/gradient distributions allows it to capture high-magnitude outliers without aggressive scaling.\n\nWe demonstrate HiF8 implementation within PyTorch using torch.npu, show training stability analysis with BF16-level convergence achieved with reduced reliance on delay scaling, and present 1.5–1.7× GEMM performance gains versus FP16 in specific scenarios. We also discuss ongoing collaboration on dedicated hardware support for HiF8.",
+          "zh": "标准 FP8 格式存在梯度溢出频繁、高度依赖复杂动态缩放（延迟缩放）等问题，导致十亿参数模型训练不稳定。本演讲介绍 HiFloat8（HiF8）——一种渐变精度格式，其与神经网络权重/梯度分布的天然契合使其无需激进缩放即可捕获高幅度离群值，在特定场景下实现相对 FP16 约 1.5–1.7× 的 GEMM 性能提升。",
+          "fr": "HiFloat8 (HiF8) est un format de précision effilé qui s'aligne naturellement avec les distributions de poids/gradients des réseaux de neurones. Il atteint une convergence de niveau BF16 avec une dépendance réduite au scaling retardé, et offre des gains de performance GEMM de 1,5 à 1,7× versus FP16."
         },
         "speakers": [
           {
-            "name": "Nouamane Tazi",
-            "title": "ML Research Engineer, Hugging Face"
+            "name": "Zhao Yun",
+            "title": "Senior Engineer, Huawei"
           }
         ],
         "date": {
@@ -1793,6 +1783,31 @@
       },
       {
         "title": {
+          "en": "Can Robots Learn Surgery? Open Data, Foundation Models, and the Road to Surgical Autonomy",
+          "zh": "机器人能学会外科手术吗？开放数据、基础模型与迈向手术自主性的道路",
+          "fr": "Les robots peuvent-ils apprendre la chirurgie ? Données ouvertes, modèles fondamentaux et chemin vers l'autonomie chirurgicale"
+        },
+        "content": {
+          "en": "Surgical robotics stands at a unique intersection of precision engineering, AI, and medical practice. This talk explores whether the same open-data and foundation-model approaches transforming general robotics can be applied to the highly specialised domain of surgery — where errors have irreversible consequences and training data is scarce.\n\nJad Fayad draws on his experience at Moon Surgical to examine the challenges of building AI systems for surgical assistance: collecting and curating surgical video datasets, adapting foundation models for tool tracking and scene understanding, and navigating the regulatory constraints of medical AI. The talk outlines the open-source tools and datasets emerging in surgical robotics, and presents a roadmap for how the community can accelerate progress toward safe, data-driven surgical autonomy.",
+          "zh": "外科机器人处于精密工程、AI 与医疗实践的独特交汇点。本演讲探讨是否可将正在改变通用机器人技术的开放数据与基础模型方法，应用于手术这一高度专业化领域——在这里，错误不可逆，训练数据极为稀缺。\n\n演讲者基于在 Moon Surgical 的经验，探讨构建手术辅助 AI 系统的挑战：收集和整理手术视频数据集、适配基础模型用于器械跟踪和场景理解，以及应对医疗 AI 的监管约束。",
+          "fr": "La robotique chirurgicale se situe à l'intersection unique de l'ingénierie de précision, de l'IA et de la pratique médicale. Cette présentation explore si les approches de données ouvertes et de modèles fondamentaux transformant la robotique générale peuvent s'appliquer au domaine chirurgical.\n\nJad Fayad s'appuie sur son expérience chez Moon Surgical pour examiner les défis de la construction de systèmes d'IA pour l'assistance chirurgicale : collecte de datasets vidéo, adaptation des modèles fondamentaux, et navigation dans les contraintes réglementaires de l'IA médicale."
+        },
+        "speakers": [
+          {
+            "name": "Jad Fayad",
+            "title": "Manager of Systems & AI Engineering, Moon Surgical"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:40 - 16:05",
+        "type": "talk"
+      },
+      {
+        "title": {
           "en": "Project Nexus: Cross-Platform GPU Rust Multiphysics Simulator for Robotics and Training Data Generation",
           "zh": "Project Nexus：面向机器人与训练数据生成的跨平台 GPU Rust 多物理场仿真平台"
         },
@@ -1812,7 +1827,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "15:40 - 16:05",
+        "timeSlot": "16:05 - 16:30",
         "type": "talk"
       },
       {
@@ -1836,7 +1851,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "16:05 - 16:30",
+        "timeSlot": "16:30 - 16:55",
         "type": "talk"
       },
       {
@@ -1860,7 +1875,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "16:30 - 16:55",
+        "timeSlot": "16:55 - 17:20",
         "type": "talk"
       },
       {
@@ -1884,7 +1899,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "16:55 - 17:20",
+        "timeSlot": "17:20 - 17:40",
         "type": "talk"
       },
       {
