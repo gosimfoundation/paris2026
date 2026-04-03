@@ -45,7 +45,7 @@
     { "category": "speakers-affiliated", "image": "pollen-robotics.png", "url": "https://www.pollen-robotics.com" },
     { "category": "speakers-affiliated", "image": "probabl.png", "url": "https://probabl.ai" },
     { "category": "speakers-affiliated", "image": "quansight.png", "url": "https://quansight.com" },
-    { "category": "speakers-affiliated", "image": "redhat.png", "logoClass": "l", "url": "https://www.redhat.com" },
+    { "category": "speakers-affiliated", "image": "redhat.png", "logoClass": "xl", "url": "https://www.redhat.com" },
     { "category": "speakers-affiliated", "image": "rice-university.png", "url": "https://www.rice.edu" },
     { "category": "speakers-affiliated", "image": "robolytics.png", "url": "https://robolytics.ai" },
     { "category": "speakers-affiliated", "image": "sgl.png", "url": "https://sglang.ai" },
