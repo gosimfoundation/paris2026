@@ -182,27 +182,6 @@
       "draft": false
     },
     {
-      "id": "jiaming-liu",
-      "name": "Jiaming Liu",
-      "bio": "Jiaming Liu is a Ph.D. student at the School of Computer Science, Peking University. His research focuses on robotic manipulation and embodied foundation models. He has published 20 papers as first author or co-first author at top-tier international conferences, including CVPR, ICLR, and RSS (CCF-A or CAAI-A venues). His work has received over 3000 citations on Google Scholar. In terms of honors and awards, Jiaming Liu has received the 2025 ByteDance Scholarship (awarded to only 20 recipients), the National Scholarship, and the Peking University Presidential Scholarship. In international competitions, he won the championship in the ICCV 2023 Continual Generalization Learning Challenge, the championship in the Robust Multi-Task Learning Challenge, and third place in the CVPR 2023 Autonomous Driving Occupancy Prediction Challenge. He has also been invited as a keynote speaker and panelist at GOSIM 2024, the 2nd China Embodied Intelligence Conference, and the China Generative AI Conference. At the project level, he has successfully secured funding from the National Natural Science Foundation of China (Young Scientists Fund) and the China Association for Science and Technology (Young Elite Scientists Sponsorship Program).",
-      "role": "PDH student",
-      "org": "Peking university",
-      "roleOrg": "PDH student, Peking university",
-      "image": "/images/speakers/jiaming-liu.JPG",
-      "tags": [
-        "open-source-robotics"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
       "id": "jigyasa-grover-co-speaker-rishabh-misra",
       "name": "Jigyasa Grover (co-speaker Rishabh Misra)",
       "bio": "12-time award-winning AI lead and 'Sculpting Data For ML' author Jigyasa Grover drives rider personalization innovation at Uber after transforming Twitter/X, Facebook/Meta, Faire, and Bordo AI with large-scale ML systems. Handpicked by Google for their I/O keynote, she serves on Google's Developer Advisory Board while advising social search engine Diem and other Silicon Valley startups. \r\n\r\nAs a LinkedIn Learning instructor, Jigyasa educates thousands of professionals worldwide on cutting-edge AI-powered applications and agentic AI systems, solidifying her status as a thought leader in artificial intelligence education. As a Google Developer Expert, Women Techmaker Ambassador, and World Economic Forum Global Shaper, Jigyasa has also been featured in Forbes, Business Insider, VentureBeat, and International Business Times, and has elevated panels with Harvard University, Preston-Werner Ventures, Norwegian Business School, Humanitarian Frontier in AI, Women in Data, and more to her name. \r\n\r\nThe UC San Diego alumna has secured funding from the Canadian and Norwegian governments, the Linux Foundation, and multiple tech giants, enabling work that transcends geographical boundaries. With 200+ media features and contributions to open source recognized by Apache and Python Software Foundations, she mentors next-generation talent while shaping AI's future through advisory roles at Bezoku AI, Las Positas College, and various AI forums.",
@@ -219,27 +198,6 @@
         "github": "https://github.com/jigyasa-grover",
         "linkedin": "https://www.linkedin.com/in/jigyasa-grover",
         "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
-      "id": "jinwei-gu",
-      "name": "Jinwei Gu",
-      "bio": "Dr. Jinwei Gu is currently a Principal Research Scientist at NVIDIA and an Adjunct Associate Professor at the Chinese University of Hong Kong, working on generative AI, world models, and the general fields of computer vision, computer graphics, and machine learning.  He received his Ph.D. in Computer Science from Columbia University in 2010, and B.S. and M.S. from Tsinghua University in 2002 and 2005, respectively. At NVIDIA, Dr. Gu is one of tech leads in cosmos model development – a family of multimodality world foundation models, with a focus on enabling real-world applications in robotics, autonomous driving, and generative AI. Prior to joining NVIDIA, he worked at SenseBrain as a R&D Executive Director, focusing on mobile computational photography with novel image sensors and imaging systems. He has published extensively in top-tier conferences and journals, and serves as an Associate Editor for IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) and IEEE Transactions on Computational Imaging (TCI) (2018-2023), an Area Chair for CVPR, NeurIPS, ICCV, ICCP, and ECCV, and organizing chairs for several workshops (MIPI, RichMediaGAI).  He is an IEEE senior member since 2018. His research work has been successfully transferred to many products such as NVIDIA-Cosmos, NVIDIA-CoPilot SDK, NVIDIA-DriveIX SDK, as well as Super Resolution, Super Night, Portrait Restoration, RGBW solution which are widely used in many flagship mobile phones.",
-      "role": "Principal Research Scientist and Tech Lead",
-      "org": "NVIDIA",
-      "roleOrg": "Principal Research Scientist and Tech Lead, NVIDIA",
-      "image": "/images/speakers/jinwei-gu.png",
-      "tags": [
-        "open-source-robotics"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": "www.gujinwei.org"
       },
       "status": "Accept",
       "draft": false

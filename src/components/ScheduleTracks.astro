@@ -27,9 +27,12 @@ const loc = (obj: any): string => {
 const i18n = {
   en: {
     conferenceTracks: "Conference Tracks",
-    workshops: "Workshop",
+    hackathons: "Spotlight & Hackathons",
+    workshops: "Workshops",
     overview: "Overview",
     allTracks: "All Tracks",
+    venue: "Venue – STATION F",
+    venueMaps: "Our Spaces",
     keynotesLabel: "★ Keynotes — All Attendees",
     tbd: "TBD",
     keynotesTbd: "Keynote speakers will be announced soon.",
@@ -41,13 +44,16 @@ const i18n = {
     dayOnly: (day: string) => `${day} only`,
     tracks: "Tracks",
     sessionCount: (n: number) => `${n} session${n !== 1 ? "s" : ""}`,
-    typeLabels: { keynote: "Keynote", talk: "Talk", panel: "Panel", break: "Break", workshop: "Workshop" },
+    typeLabels: { keynote: "Keynote", talk: "Talk", panel: "Panel", break: "Break", workshop: "Workshop", hackathon: "Hackathon" },
   },
   zh: {
     conferenceTracks: "主题演讲",
-    workshops: "Workshop",
+    hackathons: "Spotlight 与黑客马拉松",
+    workshops: "工作坊",
     overview: "概览",
     allTracks: "所有议题",
+    venue: "场地",
+    venueMaps: "Our Spaces",
     keynotesLabel: "★ 主旨演讲 — 全体参会者",
     tbd: "TBD",
     keynotesTbd: "主旨演讲嘉宾将很快公布。",
@@ -59,13 +65,16 @@ const i18n = {
     dayOnly: (day: string) => `仅 ${day}`,
     tracks: "议题",
     sessionCount: (n: number) => `${n} 场演讲`,
-    typeLabels: { keynote: "主旨演讲", talk: "演讲", panel: "圆桌", break: "休息", workshop: "Workshop" },
+    typeLabels: { keynote: "主旨演讲", talk: "演讲", panel: "圆桌", break: "休息", workshop: "Workshop", hackathon: "黑客马拉松" },
   },
   fr: {
     conferenceTracks: "Conference Tracks",
-    workshops: "Workshop",
+    hackathons: "Spotlight & Hackathons",
+    workshops: "Ateliers",
     overview: "Vue d'ensemble",
     allTracks: "Tous les thèmes",
+    venue: "Lieu",
+    venueMaps: "Our Spaces",
     keynotesLabel: "★ Conférences plénières — Tous les participants",
     tbd: "TBD",
     keynotesTbd: "Les conférenciers seront annoncés prochainement.",
@@ -77,15 +86,17 @@ const i18n = {
     dayOnly: (day: string) => `${day} uniquement`,
     tracks: "Thèmes",
     sessionCount: (n: number) => `${n} session${n !== 1 ? "s" : ""}`,
-    typeLabels: { keynote: "Keynote", talk: "Conférence", panel: "Table ronde", break: "Pause", workshop: "Workshop" },
+    typeLabels: { keynote: "Keynote", talk: "Conférence", panel: "Table ronde", break: "Pause", workshop: "Workshop", hackathon: "Hackathon" },
   },
 }
 const t = i18n[lang] || i18n.en
 
 const isWorkshop = (id: string) => id.startsWith("ws-")
-const tracks = scheduleData.categories.filter((c) => !isWorkshop(c.id))
+const isHackathon = (id: string) => id.startsWith("hackathon-")
+const tracks = scheduleData.categories.filter((c) => !isWorkshop(c.id) && !isHackathon(c.id))
+const hackathons = scheduleData.categories.filter((c) => isHackathon(c.id))
 const workshops = scheduleData.categories.filter((c) => isWorkshop(c.id))
-const allCategories = [...tracks, ...workshops]
+const allCategories = [...tracks, ...workshops, ...hackathons]
 
 // Collect all keynotes across every category for a given day
 const getKeynotes = (day: string) => {
@@ -118,6 +129,9 @@ const TRACK_COLORS: Record<string, string> = {
   "ai-generative-app":          "#2563eb",
   "agentic-ai-on-edge":         "#ca8a04",
   "open-source-robotics":       "#0891b2",
+  "hackathon-spotlight":        "#7c3aed",
+  "hackathon-robotics":         "#0891b2",
+  "hackathon-agentic":          "#dc2626",
   "ws-vllm-paris2026":          "#4f46e5",
   "ws-oh-tech-forum":           "#be123c",
   "ws-open-compute":            "#0f766e",
@@ -129,11 +143,12 @@ const WORKSHOP_COLOR = "#475569"
 const trackColor = (id: string) => TRACK_COLORS[id] || WORKSHOP_COLOR
 
 const TYPE_BG_FG: Record<string, { bg: string; fg: string }> = {
-  keynote:  { bg: "#0f172a", fg: "#ffffff" },
-  talk:     { bg: "#e2e8f0", fg: "#475569" },
-  panel:    { bg: "#e2e8f0", fg: "#475569" },
-  break:    { bg: "#e2e8f0", fg: "#94a3b8" },
-  workshop: { bg: "#e2e8f0", fg: "#475569" },
+  keynote:   { bg: "#0f172a", fg: "#ffffff" },
+  talk:      { bg: "#e2e8f0", fg: "#475569" },
+  panel:     { bg: "#e2e8f0", fg: "#475569" },
+  break:     { bg: "#e2e8f0", fg: "#94a3b8" },
+  workshop:  { bg: "#e2e8f0", fg: "#475569" },
+  hackathon: { bg: "#7c3aed", fg: "#ffffff" },
 }
 const typeMeta = (type: string) => {
   const style = TYPE_BG_FG[type] || { bg: "#e2e8f0", fg: "#475569" }
@@ -182,6 +197,10 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
         <button class="sched-day-btn" data-view="overview">
           <span class="day-label">{t.overview}</span>
           <span class="day-date">{t.allTracks}</span>
+        </button>
+        <button class="sched-day-btn" data-view="venue">
+          <span class="day-label">{t.venue}</span>
+          <span class="day-date">{t.venueMaps}</span>
         </button>
       </div>
     </div>
@@ -237,6 +256,31 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
             )
           })}
         </div>
+
+        {hackathons.length > 0 && (
+          <div class="track-group">
+            <p class="track-group-label">{t.hackathons}</p>
+            {hackathons.map((cat) => {
+              const catDays = catDaysMap[cat.id] || []
+              const dayBadge = catDays.length === days.length ? null : catDays.join(" & ")
+              return (
+                <button
+                  class="sched-track-btn"
+                  data-track={cat.id}
+                  data-cat-days={catDays.join(",")}
+                  style={`--tc: ${trackColor(cat.id)}`}
+                >
+                  <span class="track-dot"></span>
+                  <span class="track-info">
+                    <span class="track-name">{en(cat.name)}</span>
+                    {cat.room && <span class="track-room">{en(cat.room)}</span>}
+                    {dayBadge && <span class="track-day-badge">{t.dayOnly(dayBadge)}</span>}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
+        )}
       </aside>
 
       <!-- Sessions Panel -->
@@ -409,6 +453,28 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     <AgendaOverview lang={lang} speakerBasePath={speakerBasePath} />
   </div>
 
+  <!-- Venue map panel (hidden by default) -->
+  <div class="venue-panel" style="display:none">
+    <div class="venue-inner">
+      <h2 class="venue-title">
+        {lang === "zh" ? "STATION F 场地地图" : lang === "fr" ? "Plans des salles – STATION F" : "STATION F – Meeting & Event Room Maps"}
+      </h2>
+      <p class="venue-subtitle">
+        {lang === "zh" ? "请参阅以下地图找到您的会议室" : lang === "fr" ? "Utilisez ces plans pour trouver votre salle de réunion" : "Use the maps below to locate your meeting and event rooms on campus"}
+      </p>
+      <div class="venue-maps">
+        <img src="/images/venue/station-f-floorplan.png" alt="STATION F floor map" class="venue-map-img" id="venue-map-img" />
+        <p class="venue-map-hint">Click to enlarge</p>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="venue-lightbox" id="venue-lightbox">
+        <button class="venue-lightbox-close" id="venue-lightbox-close" aria-label="Close">✕</button>
+        <img src="/images/venue/station-f-floorplan.png" alt="STATION F floor map" class="venue-lightbox-img" />
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <script define:vars={{ firstDay, firstCat }}>
@@ -417,7 +483,9 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
 
   const schedContainer = document.querySelector(".sched-container")
   const overviewPanel = document.querySelector(".overview-panel")
+  const venuePanel = document.querySelector(".venue-panel")
   const overviewBtn = document.querySelector("[data-view='overview']")
+  const venueBtn = document.querySelector("[data-view='venue']")
 
   function setAllTabsInactive() {
     document.querySelectorAll("[data-day], [data-view]").forEach((btn) => btn.classList.remove("active"))
@@ -428,6 +496,15 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     overviewBtn.classList.add("active")
     schedContainer.style.display = "none"
     overviewPanel.style.display = "block"
+    venuePanel.style.display = "none"
+  }
+
+  function showVenue() {
+    setAllTabsInactive()
+    venueBtn.classList.add("active")
+    schedContainer.style.display = "none"
+    overviewPanel.style.display = "none"
+    venuePanel.style.display = "block"
   }
 
   function show(day, track) {
@@ -435,6 +512,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     activeTrack = track
 
     overviewPanel.style.display = "none"
+    venuePanel.style.display = "none"
     schedContainer.style.display = ""
 
     setAllTabsInactive()
@@ -456,6 +534,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
   }
 
   overviewBtn.addEventListener("click", showOverview)
+  venueBtn.addEventListener("click", showVenue)
 
   document.querySelectorAll("[data-day]").forEach((btn) => {
     btn.addEventListener("click", () => show(btn.dataset.day, activeTrack))
@@ -468,6 +547,16 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
   document.querySelectorAll("[data-switch-day]").forEach((btn) => {
     btn.addEventListener("click", () => show(btn.dataset.switchDay, activeTrack))
   })
+
+  // Venue map lightbox
+  const venueMapImg = document.getElementById("venue-map-img")
+  const venueLightbox = document.getElementById("venue-lightbox")
+  const venueLightboxClose = document.getElementById("venue-lightbox-close")
+
+  venueMapImg.addEventListener("click", () => venueLightbox.classList.add("open"))
+  venueLightboxClose.addEventListener("click", (e) => { e.stopPropagation(); venueLightbox.classList.remove("open") })
+  venueLightbox.addEventListener("click", () => venueLightbox.classList.remove("open"))
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") venueLightbox.classList.remove("open") })
 
   const hashTrack = window.location.hash.slice(1)
   const hashBtn = hashTrack && document.querySelector(`.sched-sidebar [data-track="${hashTrack}"]`)
@@ -506,6 +595,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     border-radius: 14px;
     padding: 0.35rem;
   }
+
 
   .sched-day-btn {
     display: flex;
@@ -1022,5 +1112,101 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
       min-width: unset;
       padding: 0.6rem 1.5rem;
     }
+  }
+
+  /* ── Venue panel ── */
+  .venue-panel {
+    max-width: calc(var(--title-size) * 12);
+    margin: 0 auto;
+    padding: 2rem var(--container-padding) 4rem;
+  }
+
+  .venue-inner {
+    text-align: center;
+  }
+
+  .venue-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.5rem;
+  }
+
+  .venue-subtitle {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.55);
+    margin: 0 0 2rem;
+  }
+
+  .venue-maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .venue-map-img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    cursor: zoom-in;
+    transition: opacity 0.15s;
+  }
+
+  .venue-map-img:hover {
+    opacity: 0.9;
+  }
+
+  .venue-map-hint {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0.5rem 0 0;
+  }
+
+  .venue-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    cursor: zoom-out;
+  }
+
+  .venue-lightbox.open {
+    display: flex;
+  }
+
+  .venue-lightbox-img {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+  }
+
+  .venue-lightbox-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  .venue-lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.25);
   }
 </style>

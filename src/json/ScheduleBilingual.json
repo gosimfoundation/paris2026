@@ -100,6 +100,30 @@
       }
     },
     {
+      "id": "hackathon-spotlight",
+      "name": {
+        "en": "GOSIM Spotlight 2026: Frontier Creators",
+        "zh": "GOSIM Spotlight 2026: Frontier Creators",
+        "fr": "GOSIM Spotlight 2026: Frontier Creators"
+      }
+    },
+    {
+      "id": "hackathon-robotics",
+      "name": {
+        "en": "Robotics Hackathon",
+        "zh": "Robotics Hackathon",
+        "fr": "Robotics Hackathon"
+      }
+    },
+    {
+      "id": "hackathon-agentic",
+      "name": {
+        "en": "GOSIM Agentic Hackathon",
+        "zh": "GOSIM Agentic Hackathon",
+        "fr": "GOSIM Agentic Hackathon"
+      }
+    },
+    {
       "id": "ws-vllm-paris2026",
       "name": {
         "en": "vLLM Workshop",
@@ -179,6 +203,280 @@
     }
   ],
   "sessions": {
+    "hackathon-spotlight": [],
+    "hackathon-robotics": [],
+    "hackathon-agentic": [
+      {
+        "title": {
+          "en": "Check-in",
+          "zh": "签到",
+          "fr": "Enregistrement"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "08:30 - 09:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "GOSIM Keynote",
+          "zh": "GOSIM 主旨演讲",
+          "fr": "Keynote GOSIM"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:30 - 10:10",
+        "type": "keynote"
+      },
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "上午茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "type": "break",
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:20"
+      },
+      {
+        "title": {
+          "en": "Hackathon Opening",
+          "zh": "黑客马拉松开幕",
+          "fr": "Ouverture du Hackathon"
+        },
+        "content": {
+          "en": "Introduction, themes, judging criteria",
+          "zh": "介绍、主题及评分标准",
+          "fr": "Introduction, thèmes, critères d'évaluation"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:30 - 11:00",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Setup Session",
+          "zh": "环境搭建",
+          "fr": "Session de Configuration"
+        },
+        "content": {
+          "en": "Dev environment, API access, toolchain setup, challenge topics revealed",
+          "zh": "开发环境、API 访问、工具链配置，挑战主题揭晓",
+          "fr": "Environnement de développement, accès API, configuration des outils, révélation des sujets"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "11:00 - 12:00",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Lunch + Team Formation",
+          "zh": "午餐 + 组队",
+          "fr": "Déjeuner + Constitution des équipes"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 13:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Hacking",
+          "zh": "编程竞赛",
+          "fr": "Hackathon"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "13:00 - 18:00",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Checkpoint",
+          "zh": "进度检查",
+          "fr": "Point d'étape"
+        },
+        "content": {
+          "en": "1-min team updates",
+          "zh": "各团队1分钟进度汇报",
+          "fr": "Mise à jour de 1 min par équipe"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "17:50 - 18:00",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Check-in",
+          "zh": "签到",
+          "fr": "Enregistrement"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "08:30 - 09:30",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "GOSIM Keynote",
+          "zh": "GOSIM 主旨演讲",
+          "fr": "Keynote GOSIM"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "09:30 - 10:00",
+        "type": "keynote"
+      },
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "上午茶歇",
+          "fr": "Café du matin"
+        },
+        "speakers": [],
+        "type": "break",
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 10:20"
+      },
+      {
+        "title": {
+          "en": "Hacking — Final Push + Demo Prep",
+          "zh": "编程竞赛 — 冲刺与演示准备",
+          "fr": "Hackathon — Sprint final + Préparation démo"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 12:00",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Demo & Presentations",
+          "zh": "演示与展示",
+          "fr": "Démos & Présentations"
+        },
+        "content": {
+          "en": "Each team presents their project, followed by Q&A",
+          "zh": "各团队展示项目并进行问答",
+          "fr": "Chaque équipe présente son projet, suivi d'une session Q&A"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 13:30",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Judging",
+          "zh": "评审",
+          "fr": "Délibération"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "13:30 - 14:30",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Awards Ceremony",
+          "zh": "颁奖典礼",
+          "fr": "Cérémonie de remise des prix"
+        },
+        "content": {
+          "en": "At GOSIM closing session",
+          "zh": "GOSIM 闭幕式环节",
+          "fr": "Lors de la session de clôture GOSIM"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:30 - 15:00",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Dinner & Networking",
+          "zh": "晚宴与交流",
+          "fr": "Dîner & Networking"
+        },
+        "content": {
+          "en": "Winners, sponsors & judges",
+          "zh": "获奖者、赞助商及评委",
+          "fr": "Lauréats, sponsors & jurés"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "18:30 - 20:00",
+        "type": "break"
+      }
+    ],
     "agentic-ai-summit": [
       {
         "title": {
