@@ -1901,54 +1901,6 @@
         },
         "timeSlot": "17:20 - 17:40",
         "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Cosmos: Unleashing Video Foundation Models for Physical AI and Generalist Robots",
-          "zh": "Cosmos：释放视频基础模型的潜力，赋能物理 AI 与通用机器人"
-        },
-        "content": {
-          "en": "Cosmos is NVIDIA's open-source platform for video foundation models designed to power physical AI systems — robots, autonomous vehicles, and embodied agents that must understand and interact with the physical world. By pre-training on massive video datasets, Cosmos learns rich representations of how the world looks and moves, enabling downstream tasks like robot policy learning, world modelling, and synthetic data generation.\n\nJinwei Gu presents the architecture of Cosmos, the challenges of training at scale on video data, and how open-sourcing the platform enables the broader research community to build on it. The talk covers specific applications to generalist robot training, including how Cosmos world models can substitute for expensive real-world data collection and simulation pipelines.",
-          "zh": "Cosmos 是 NVIDIA 的开源视频基础模型平台，专为赋能物理 AI 系统——机器人、自动驾驶车辆和需要理解并与物理世界交互的具身智能体——而设计。通过在海量视频数据集上预训练，Cosmos 学习丰富的世界外观和运动表示，支持机器人策略学习、世界建模和合成数据生成等下游任务。\n\n演讲者介绍 Cosmos 的架构、视频数据规模化训练的挑战，以及开源该平台如何使更广泛的研究社区受益。",
-          "fr": "Cosmos est la plateforme open source de NVIDIA pour les modèles fondamentaux vidéo conçus pour alimenter les systèmes d'IA physique — robots, véhicules autonomes et agents incarnés. En pré-entraînant sur de massifs ensembles de données vidéo, Cosmos apprend des représentations riches du monde physique, permettant l'apprentissage de politiques robotiques, la modélisation du monde et la génération de données synthétiques.\n\nJinwei Gu présente l'architecture de Cosmos, les défis de l'entraînement à grande échelle, et comment l'open source de la plateforme bénéficie à la communauté de recherche sur les robots généralistes."
-        },
-        "speakers": [
-          {
-            "name": "Jinwei Gu",
-            "title": "Principal Research Scientist and Tech Lead, NVIDIA"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "17:20 - 17:40",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Enabling Robots to Both \"Think\" and \"Act\"",
-          "zh": "让机器人既能「思考」又能「行动」"
-        },
-        "content": {
-          "en": "The next frontier in robotics is closing the gap between high-level reasoning and low-level motor control — enabling robots that can not only perform precise physical actions but also think through complex, multi-step tasks in open-ended environments. This talk presents research on architectures that unify language-based planning with motor policy execution.\n\nJiaming Liu discusses the challenges of grounding abstract reasoning in physical action, the role of large language models as high-level planners, and the neural architectures that bridge the thinking-acting divide. The presentation includes results from real robot experiments demonstrating that tight integration of cognition and control leads to substantially more capable and generalisable robotic systems.",
-          "zh": "机器人领域的下一个前沿是缩小高层推理与低层运动控制之间的差距——让机器人不仅能执行精确的物理动作，还能在开放环境中思考复杂的多步骤任务。本演讲介绍统一基于语言规划与运动策略执行的架构研究。\n\n演讲者讨论将抽象推理落地为物理行动的挑战、大语言模型作为高层规划器的作用，以及弥合思考与行动鸿沟的神经网络架构，并展示真实机器人实验结果。",
-          "fr": "La prochaine frontière en robotique est de combler le fossé entre le raisonnement de haut niveau et le contrôle moteur de bas niveau — permettant aux robots de non seulement effectuer des actions physiques précises, mais aussi de raisonner sur des tâches complexes en plusieurs étapes dans des environnements ouverts.\n\nJiaming Liu discute des défis pour ancrer le raisonnement abstrait dans l'action physique, le rôle des grands modèles de langage comme planificateurs de haut niveau, et les architectures neuronales qui comblent le fossé pensée-action, avec des résultats sur robots réels."
-        },
-        "speakers": [
-          {
-            "name": "Jiaming Liu",
-            "title": "Ph.D. Student, Peking University"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "17:20 - 17:40",
-        "type": "talk"
       }
     ],
     "ws-vllm-paris2026": [
