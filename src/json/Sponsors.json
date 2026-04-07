@@ -219,11 +219,6 @@
     },
     {
       "category": "speakers-affiliated",
-      "image": "mozilla-ai.png",
-      "url": "https://mozilla.ai"
-    },
-    {
-      "category": "speakers-affiliated",
       "image": "pleias.png",
       "url": "https://pleias.fr"
     },
