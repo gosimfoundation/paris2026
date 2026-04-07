@@ -50,20 +50,6 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
               </a>
             </div>
           </div>
-          <div class="hero-people-group">
-            <h3>Sponsors</h3>
-            <div class="hero-people-row">
-              <a href="https://kimi.ai" target="_blank" rel="noopener noreferrer" class="sponsor-logo-card">
-                <img src="/images/sponsors/kimi-logo.png" alt="Kimi" />
-              </a>
-              <a href="https://www.zhipuai.cn" target="_blank" rel="noopener noreferrer" class="sponsor-logo-card">
-                <img src="/images/sponsors/zhipuai.png" alt="Zhipu AI" />
-              </a>
-              <a href="https://www.minimaxi.com" target="_blank" rel="noopener noreferrer" class="sponsor-logo-card">
-                <img src="/images/sponsors/minimax.png" alt="MiniMax" />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -110,6 +96,19 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
           <li><strong>Simulation</strong> environment available before the event</li>
         </ul>
         <a href="https://openarm.dev" target="_blank" rel="noopener noreferrer" class="cta-button">Learn More about OpenArm</a>
+      </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership-section">
+      <div class="container">
+        <h2>Partnership &amp; Sponsorship</h2>
+        <p class="intro-text">
+          Partners get their name featured on the event website, signage, screens, and roll-up banners — plus access to the networking event. The hackathon features human-size robots with industrial use cases, including a cloth-folding model, and the entire stack is fully open source.
+        </p>
+        <p class="intro-text">
+          Interested in supporting the next generation of open-source robotics? Reach out to become a sponsor.
+        </p>
       </div>
     </section>
 
@@ -363,38 +362,6 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
   .partnership-section {
     padding: 40px 0;
     background: #fff;
-  }
-
-  .sponsor-logos {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-  }
-
-  .sponsor-logo-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    padding: 0.75rem 1.25rem;
-    transition: transform 0.2s ease, background 0.2s ease;
-  }
-
-  .sponsor-logo-card:hover {
-    transform: translateY(-3px);
-    background: rgba(255, 255, 255, 0.95);
-  }
-
-  .sponsor-logo-card img {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
   }
 
   /* Venue Section */
