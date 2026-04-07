@@ -98,6 +98,16 @@
       "url": "https://vllm.ai"
     },
     {
+      "category": "supporting-organizations",
+      "image": "unaite.png",
+      "url": "https://unaite.fr"
+    },
+    {
+      "category": "supporting-organizations",
+      "image": "42-ai.png",
+      "url": "https://42-ai.github.io"
+    },
+    {
       "category": "organizer",
       "image": "gosim.png",
       "url": "https://gosim.org"
