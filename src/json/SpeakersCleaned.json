@@ -289,6 +289,26 @@
       "draft": false
     },
     {
+      "name": "Jiabei Chen",
+      "role": "Ph.D. Student",
+      "org": "Institute of Automation, Chinese Academy of Sciences & BAAI",
+      "roleOrg": "Ph.D. Student, Institute of Automation, Chinese Academy of Sciences & BAAI",
+      "image": "/images/speakers/jiabei-chen.png",
+      "bio": "Jiabei Chen is a 2nd-year Ph.D. student at the Institute of Automation, Chinese Academy of Sciences (CASIA), advised by Prof. Kang Liu. He has published several papers in ACL, EMNLP, and NAACL. He is currently a core contributor to the OpenSeek project of BAAI, an open-source initiative focused on efficient large language model pretraining.",
+      "tags": [
+        "open-source-model"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/A-PolarBear",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "yu-cheng",
       "name": "Yu Cheng",
       "bio": "Yu Cheng is a Ph.D student in School of Computer Science at Peking University, he is a core developer of TileLang, a programming language for AI workload on various hardware platforms.",
@@ -509,6 +529,26 @@
         "twitter": "",
         "github": "",
         "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "name": "Erwan Gallen",
+      "role": "Senior Principal Product Manager - Generative AI",
+      "org": "Red Hat",
+      "roleOrg": "Senior Principal Product Manager - Generative AI, Red Hat",
+      "image": "/images/speakers/erwan-gallen.png",
+      "bio": "Erwan Gallen is Senior Principal Product Manager, Generative AI, at Red Hat, where he follows Red Hat AI Inference product and manages hardware-accelerator enablement across OpenShift, RHEL AI, and OpenShift AI. His remit covers strategy, roadmap, and lifecycle management for AI accelerators, and emerging silicon, ensuring customers can run state-of-the-art generative workloads seamlessly in hybrid clouds.",
+      "tags": [
+        "ws-vllm-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/egallen/",
         "website": ""
       },
       "status": "Accept",
@@ -849,6 +889,26 @@
       "draft": false
     },
     {
+      "name": "Bart Massey",
+      "role": "Assoc Prof Computer Science",
+      "org": "Portland State University",
+      "roleOrg": "Assoc Prof Computer Science, Portland State University",
+      "image": "/images/speakers/bart-massey.png",
+      "bio": "Bart Massey is a 26-year CS Professor with a PhD in AI and an MSc in PL implementation; he has been an open source developer for many decades. Bart is a member of the Rust Embedded Working Group, and is involved in a number of low-level Rust and Rust Education projects. ",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "@po8@fosstodon.org",
+        "twitter": "",
+        "github": "https://github.com/BartMassey",
+        "linkedin": "",
+        "website": "https://www.cs.pdx.edu/~bart"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "niko-matsakis",
       "name": "Niko Matsakis",
       "bio": "Nicholas Matsakis is a Senior Principal Engineer at AWS and co-lead of the open source Rust language design team. He has worked on Rust since 2011, and led the design of its “secret sauce”, the borrow checker. He has played a number of other roles in Rust over the years, such as being a member of the Rust core team, the lead of the Rust compiler team, and helping to launch the Rust Foundation. Prior to working on Rust, he completed a PhDat ETH Zurich and did his undergraduate study at MIT.",
@@ -1120,6 +1180,26 @@
       "draft": false
     },
     {
+      "name": "Ethan (Yusheng) Su",
+      "role": "Member of Technical Staff",
+      "org": "RadixArk",
+      "roleOrg": "Member of Technical Staff, RadixArk",
+      "image": "/images/speakers/ethan-su.png",
+      "bio": "Member of Technical Staff at RadixArk",
+      "tags": [
+        "ws-sglang-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": "https://yushengsu-thu.github.io/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "said-taghadouini",
       "name": "Said Taghadouini",
       "bio": "Said Taghadouini is an ML Research Engineer at LightOn, working on vision-language models and multimodal systems. He is part of the core team behind ModernBERT, leads LightOnOCR, and is an author of ArabicWeb24 and vit.cpp. His interests span multimodality, distributed training, and efficient ML systems.",
@@ -1281,6 +1361,26 @@
         "twitter": "",
         "github": "",
         "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "name": "Daniele Trifirò",
+      "role": "Principal Software Engineer",
+      "org": "Red Hat",
+      "roleOrg": "Principal Software Engineer, Red Hat",
+      "image": "/images/speakers/daniele-trifirò.png",
+      "bio": "Daniele is a Principal Software Engineer at Red Hat, working on AI Inference. Daniele focuses on vLLM and Red Hat AI Inference Server, Red Hat's trusted and verified build of vLLM.",
+      "tags": [
+        "ws-vllm-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/dtrifiro",
+        "linkedin": "https://www.linkedin.com/in/daniele-trifiro",
         "website": ""
       },
       "status": "Accept",
@@ -1553,6 +1653,26 @@
         "twitter": "https://x.com/zRdianjiao",
         "github": "https://github.com/zRzRzRzRzRzRzR",
         "linkedin": "https://www.linkedin.com/in/yuxuan-zhang-86a124282/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "name": "Jiaju Zhang",
+      "role": "Chief Architect",
+      "org": "Red Hat",
+      "roleOrg": "Chief Architect, Red Hat",
+      "image": "/images/speakers/jiaju-zhang.png",
+      "bio": "Jiaju Zhang is a passionate open-source advocate with over 20 years of experience in R&D, architectural design, and engineering management. His expertise spans Linux, distributed systems, cloud-native technologies, and AI infrastructure. Throughout his career, Jiaju has held senior leadership roles, including Chief Architect, Technical Director and Head of R&D in China, at major multinational and ICT enterprises. As an independent contributor, he has successfully launched and promoted globally recognized open-source projects.\r\n\r\nCurrently, Jiaju serves as Chief Architect in Field CTO Organization, Red Hat, focuses on advancing open source AI communities like vLLM and llm-d and fostering enterprise solutions through co-engineering with ecosystem partners. His work is instrumental in driving AI technology strategy and accelerating the industrial deployment of Red Hat solutions across various vertical sectors.",
+      "tags": [
+        "ws-vllm-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
         "website": ""
       },
       "status": "Accept",
