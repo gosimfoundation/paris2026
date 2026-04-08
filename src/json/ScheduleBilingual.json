@@ -480,9 +480,9 @@
       },
       {
         "title": {
-          "en": "TBD",
-          "zh": "待定",
-          "fr": "À confirmer"
+          "en": "Keynote: Gaël Varoquaux",
+          "zh": "主旨演讲：Gaël Varoquaux",
+          "fr": "Conférence plénière : Gaël Varoquaux"
         },
         "speakers": [
           {
@@ -500,9 +500,9 @@
       },
       {
         "title": {
-          "en": "TBD",
-          "zh": "待定",
-          "fr": "À confirmer"
+          "en": "Keynote: Bill Ren",
+          "zh": "主旨演讲：Bill Ren",
+          "fr": "Conférence plénière : Bill Ren"
         },
         "speakers": [
           {
@@ -2642,8 +2642,8 @@
       {
         "title": {
           "en": "Morning Coffee",
-          "zh": "茶歇",
-          "fr": "Café du matin"
+          "zh": "Morning Coffee",
+          "fr": "Morning Coffee"
         },
         "speakers": [],
         "date": {
@@ -2656,163 +2656,14 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
-      },
-      {
-        "title": {
-          "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "15:20 - 15:40",
-        "type": "break"
-      },
-      {
-        "title": {
-          "en": "Embedding Software Engineering Best Practices into AI Projects with Kedro",
-          "zh": "使用 Kedro 将软件工程最佳实践嵌入 AI 项目"
-        },
-        "content": {
-          "en": "AI and machine learning projects are notorious for accumulating technical debt: notebooks that can't be reproduced, pipelines that break when data changes, models that nobody can explain how to retrain. Kedro is an open-source Python framework that brings software engineering discipline — modular pipelines, reproducible experiments, and clean data interfaces — to data science and ML workflows.\n\nMerel Theisen presents how Kedro structures ML projects from the ground up, integrating with tools like MLflow, Jupyter, and cloud storage to create pipelines that are testable, versionable, and team-friendly. The session covers real-world patterns for embedding best practices without sacrificing the exploratory freedom that makes data science productive.",
-          "zh": "AI 和机器学习项目因积累技术债务而闻名：无法复现的笔记本、数据变化时会崩溃的流水线、没人知道如何重新训练的模型。Kedro 是一个开源 Python 框架，将软件工程规范——模块化流水线、可复现实验和清晰的数据接口——带入数据科学和 ML 工作流。\n\n演讲者介绍 Kedro 如何从头构建 ML 项目，与 MLflow、Jupyter 和云存储等工具集成，创建可测试、可版本控制、团队友好的流水线。",
-          "fr": "Les projets d'IA et de machine learning sont réputés pour accumuler de la dette technique. Kedro est un framework Python open source qui apporte la discipline du génie logiciel — pipelines modulaires, expériences reproductibles et interfaces de données propres — aux workflows de data science et ML.\n\nMerel Theisen présente comment Kedro structure les projets ML de bout en bout, en s'intégrant avec MLflow, Jupyter et le stockage cloud pour créer des pipelines testables, versionnables et adaptés aux équipes."
-        },
-        "speakers": [
-          {
-            "name": "Merel Theisen",
-            "title": "Principal Software Engineer, QuantumBlack"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Notebook.link: Run Notebooks Instantly in Your Browser",
-          "zh": "Notebook.link：在浏览器中即时运行 Notebook"
-        },
-        "content": {
-          "en": "Notebook.link is a new service from QuantStack that lets anyone run a Jupyter notebook instantly in the browser — no installation, no server setup, no waiting. By leveraging WebAssembly and JupyterLite, Notebook.link delivers a fully functional Python environment that launches in seconds and works entirely client-side.\n\nSylvain Corlay presents the architecture behind Notebook.link, how WebAssembly enables Python to run natively in the browser at near-native speed, and the implications for sharing reproducible research, interactive tutorials, and data science education. The session covers the technical limits of in-browser computation, what packages are currently supported, and the roadmap for expanding capabilities to meet more demanding ML workloads.",
-          "zh": "Notebook.link 是 QuantStack 推出的新服务，让任何人都能在浏览器中即时运行 Jupyter notebook——无需安装、无需服务器配置、无需等待。通过利用 WebAssembly 和 JupyterLite，Notebook.link 提供在几秒内启动、完全在客户端运行的 Python 环境。\n\n演讲者介绍 Notebook.link 的架构、WebAssembly 如何使 Python 在浏览器中以接近原生的速度运行，以及对共享可复现研究和数据科学教育的影响。",
-          "fr": "Notebook.link est un nouveau service de QuantStack qui permet à n'importe qui d'exécuter un notebook Jupyter instantanément dans le navigateur — sans installation, sans configuration de serveur. En tirant parti de WebAssembly et JupyterLite, Notebook.link fournit un environnement Python complet qui se lance en quelques secondes et fonctionne entièrement côté client.\n\nSylvain Corlay présente l'architecture de Notebook.link, comment WebAssembly permet à Python de s'exécuter à vitesse quasi-native dans le navigateur, et les implications pour le partage de recherches reproductibles et l'éducation à la data science."
-        },
-        "speakers": [
-          {
-            "name": "Sylvain Corlay",
-            "title": "CEO, QuantStack"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Accelerated scikit-learn Three Ways",
-          "zh": "三种方式加速 scikit-learn"
-        },
-        "speakers": [
-          {
-            "name": "Tim Head",
-            "title": "Software Engineer, NVIDIA"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "From Model to Metal: An Open Source Stack for Accelerating Artificial Intelligence",
-          "zh": "从模型到芯片：加速人工智能的开源技术栈"
-        },
-        "content": {
-          "en": "Deploying AI at the edge and across diverse hardware requires more than a good model — it requires a coherent open-source stack that connects frameworks, compilers, runtimes, and silicon. Arm's ecosystem spans billions of devices, and making AI fast on all of them demands a principled approach to the software layers between model and metal.\n\nMegan Knight presents the open-source tools and standards that Arm supports and contributes to — from MLIR and TVM to ExecuTorch and KleidiAI — and how they compose into a stack that accelerates AI inference from smartphones to servers. The talk covers the challenges of hardware diversity, the role of open standards in enabling portability, and practical patterns for deploying optimised AI on Arm-based platforms.",
-          "zh": "在边缘和多样化硬件上部署 AI 不仅需要一个好模型，还需要连接框架、编译器、运行时和芯片的连贯开源技术栈。Arm 生态系统涵盖数十亿设备，在所有设备上实现 AI 加速需要对模型到硬件之间软件层的系统化方法。\n\n演讲者介绍 Arm 支持和贡献的开源工具和标准——从 MLIR 和 TVM 到 ExecuTorch 和 KleidiAI——以及它们如何组合成从智能手机到服务器的 AI 推理加速栈。",
-          "fr": "Déployer l'IA sur des appareils en périphérie et sur du matériel diversifié nécessite une pile open source cohérente reliant frameworks, compilateurs, runtimes et silicium. L'écosystème Arm couvre des milliards d'appareils.\n\nMegan Knight présente les outils et standards open source qu'Arm soutient et auxquels il contribue — de MLIR et TVM à ExecuTorch et KleidiAI — et comment ils se composent en une pile accélérant l'inférence IA des smartphones aux serveurs, avec les défis de la diversité matérielle et le rôle des standards ouverts pour la portabilité."
-        },
-        "speakers": [
-          {
-            "name": "Megan Knight",
-            "title": "Director of Software Communities, Arm"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Evaluating Frontier Agents on Economically Valuable Tasks",
-          "zh": "在经济价值任务上评估前沿 Agent"
-        },
-        "content": {
-          "en": "Most AI benchmarks measure what models can do in a controlled setting. But the question that matters for business is different: can an AI agent actually do real economic work — tasks that people get paid for, that require judgment, context, and tool use across hours-long sessions?\n\nBjörn Plüster presents ellamind's approach to evaluating frontier AI agents on economically valuable tasks: the methodology for selecting and standardising tasks, the metrics that capture real-world performance beyond accuracy, and what the evaluation results reveal about the current state of agentic AI. The session discusses which classes of tasks frontier agents handle well today, where they fail, and what the gap tells us about the next steps for agent development.",
-          "zh": "大多数 AI 基准测试在受控环境中衡量模型能做什么。但对商业真正重要的问题不同：AI Agent 能实际完成真实经济工作吗——那些需要判断力、上下文和跨越数小时会话的工具使用的任务？\n\n演讲者介绍 ellamind 在经济价值任务上评估前沿 AI Agent 的方法：任务选择和标准化的方法论、捕捉超越准确率的真实世界性能的指标，以及评估结果揭示的 Agentic AI 现状。",
-          "fr": "La plupart des benchmarks d'IA mesurent ce que les modèles peuvent faire dans un cadre contrôlé. Mais la question qui importe pour les entreprises est différente : un agent IA peut-il vraiment effectuer un travail économique réel ?\n\nBjörn Plüster présente l'approche d'ellamind pour évaluer les agents IA frontière sur des tâches économiquement précieuses : la méthodologie de sélection des tâches, les métriques qui capturent la performance réelle, et ce que les résultats révèlent sur l'état actuel de l'IA agentique."
-        },
-        "speakers": [
-          {
-            "name": "Björn Plüster",
-            "title": "Co-Founder & CTO, ellamind GmbH"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Leading-Edge Tabular AI: Open Table Foundation Models with TabICL",
-          "zh": "前沿表格 AI：TabICL 开放表格基础模型"
-        },
-        "content": {
-          "en": "Tabular data — spreadsheets, databases, structured records — remains the dominant form of enterprise data, yet it has been largely left behind in the foundation model revolution. TabICL is an open-source approach to building foundation models for tabular data using in-context learning, enabling strong performance on new tables without task-specific fine-tuning.\n\nGaël Varoquaux presents the TabICL methodology, how in-context learning translates to the tabular domain, and how TabICL compares to classical methods like gradient boosting on real-world benchmarks. The session covers the open-source implementation, the datasets used for pre-training, and the implications for practitioners who need to build predictive models quickly on new structured datasets without extensive ML expertise.",
-          "zh": "表格数据——电子表格、数据库、结构化记录——仍然是企业数据的主要形式，但在基础模型革命中基本上被忽视了。TabICL 是一种使用上下文学习构建表格数据基础模型的开源方法，无需针对特定任务微调即可在新表格上实现强大性能。\n\n演讲者介绍 TabICL 方法论、上下文学习如何转化到表格领域，以及 TabICL 与梯度提升等经典方法在真实基准测试上的比较，并分享开源实现和预训练数据集。",
-          "fr": "Les données tabulaires — tableurs, bases de données, enregistrements structurés — restent la forme dominante des données d'entreprise, pourtant largement oubliées dans la révolution des modèles fondamentaux. TabICL est une approche open source pour construire des modèles fondamentaux pour données tabulaires utilisant l'apprentissage en contexte.\n\nGaël Varoquaux présente la méthodologie TabICL, comment l'apprentissage en contexte se transpose au domaine tabulaire, et les comparaisons avec des méthodes classiques comme le gradient boosting sur des benchmarks du monde réel."
+          "en": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
+          "zh": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
+          "fr": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model"
         },
         "speakers": [
           {
             "name": "Gaël Varoquaux",
-            "title": "Chief Science Officer, Probabl"
+            "title": "Chief Science Officer, Probabl / INRIA"
           }
         ],
         "date": {
@@ -2820,150 +2671,22 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Python on GPUs: Speeding Up Machine Learning",
-          "zh": "GPU 上的 Python：加速机器学习"
-        },
-        "content": {
-          "en": "Python has become the de facto language of machine learning, but its interpreted nature creates performance bottlenecks — especially when working with large datasets and compute-intensive operations. CUDA Python brings the full power of NVIDIA's GPU ecosystem directly to Python developers, enabling near-C performance without leaving the Python ecosystem.\n\nAndy Terrel presents the landscape of GPU-accelerated Python tools: from CUDA Python's low-level access to NVIDIA hardware, to higher-level libraries like cuDF, cuML, and cuGraph that mirror familiar pandas and scikit-learn interfaces. The session covers practical patterns for speeding up ML pipelines, when GPU acceleration makes the biggest difference, and how to profile and optimise Python ML code for GPU execution.",
-          "zh": "Python 已成为机器学习的事实标准语言，但其解释性本质带来了性能瓶颈——尤其是在处理大型数据集和计算密集型操作时。CUDA Python 将 NVIDIA GPU 生态系统的全部力量直接带给 Python 开发者，在不离开 Python 生态的情况下实现接近 C 的性能。\n\n演讲者介绍 GPU 加速 Python 工具的全景：从 CUDA Python 的底层硬件访问，到镜像熟悉的 pandas 和 scikit-learn 接口的高级库（如 cuDF、cuML、cuGraph）。",
-          "fr": "Python est devenu le langage de facto du machine learning, mais sa nature interprétée crée des goulots d'étranglement de performance. CUDA Python apporte toute la puissance de l'écosystème GPU NVIDIA directement aux développeurs Python.\n\nAndy Terrel présente le paysage des outils Python accélérés par GPU : de l'accès bas niveau de CUDA Python au matériel NVIDIA aux bibliothèques de plus haut niveau comme cuDF, cuML et cuGraph, avec des patterns pratiques pour accélérer les pipelines ML."
-        },
-        "speakers": [
-          {
-            "name": "Andy Terrel",
-            "title": "CUDA Python Product Lead, NVIDIA"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments",
-          "zh": "公共合成数据：使用合成环境构建开放的最先进 LLM"
-        },
-        "content": {
-          "en": "Synthetic data has emerged as one of the most powerful techniques for training state-of-the-art language models — but most synthetic data pipelines are proprietary, closed, and inaccessible to the open-source community. Pleias is building synthetic data infrastructure for the commons: open datasets, open pipelines, and open models trained entirely on synthetic and permissively licensed data.\n\nAnastasia Stasenko presents the methodology behind Pleias's synthetic data approach, the challenges of building high-quality synthetic environments at scale, and the surprising results achievable when training open LLMs entirely on synthetic data. The talk covers data quality, diversity, and verification techniques, and the broader implications of synthetic data for democratising access to state-of-the-art language model training.",
-          "zh": "合成数据已成为训练最先进语言模型的最强大技术之一——但大多数合成数据流水线是专有的、封闭的，对开源社区不可访问。Pleias 正在为公共利益构建合成数据基础设施：开放数据集、开放流水线和完全在合成及宽松许可数据上训练的开放模型。\n\n演讲者介绍 Pleias 合成数据方法的方法论、大规模构建高质量合成环境的挑战，以及完全在合成数据上训练开放 LLM 所获得的令人惊讶的结果。",
-          "fr": "Les données synthétiques sont devenues l'une des techniques les plus puissantes pour entraîner des modèles de langage de pointe — mais la plupart des pipelines de données synthétiques sont propriétaires et inaccessibles à la communauté open source. Pleias construit une infrastructure de données synthétiques pour les biens communs.\n\nAnastasia Stasenko présente la méthodologie de l'approche de données synthétiques de Pleias, les défis de construire des environnements synthétiques de haute qualité à grande échelle, et les résultats surprenants obtenus en entraînant des LLM ouverts entièrement sur des données synthétiques."
-        },
-        "speakers": [
-          {
-            "name": "Anastasia Stasenko",
-            "title": "CEO, Pleias"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
+        "timeSlot": "10:20 - 10:40",
         "type": "talk"
       },
       {
         "title": {
           "en": "The Adoption of the Python Array API in scikit-learn",
-          "zh": "Python Array API 在 scikit-learn 中的应用"
-        },
-        "content": {
-          "en": "For decades, NumPy has been the universal array standard for Python scientific computing. But the proliferation of GPU-accelerated array libraries — PyTorch, CuPy, JAX — has created fragmentation: algorithms written for NumPy don't run on GPU, and GPU code can't easily run on CPU. The Python Array API Standard is a community effort to define a common interface across all these libraries, enabling write-once-run-anywhere scientific code.\n\nOlivier Grisel and Stefanie Senger present the ongoing work to adopt the Array API in scikit-learn, the technical challenges of making classical ML algorithms backend-agnostic, and the practical performance gains achieved when scikit-learn estimators run natively on GPU arrays. The session covers what's already working, what remains challenging, and how the community can contribute to completing the adoption.",
-          "zh": "数十年来，NumPy 一直是 Python 科学计算的通用数组标准。但 GPU 加速数组库的激增——PyTorch、CuPy、JAX——造成了碎片化。Python Array API 标准是跨所有这些库定义通用接口的社区努力，实现一次编写处处运行的科学代码。\n\n两位演讲者介绍在 scikit-learn 中采用 Array API 的持续工作、使经典 ML 算法与后端无关的技术挑战，以及 scikit-learn 估计器在 GPU 数组上原生运行时实现的实际性能提升。",
-          "fr": "Depuis des décennies, NumPy est la norme universelle des tableaux pour le calcul scientifique Python. La prolifération des bibliothèques de tableaux accélérées par GPU a créé une fragmentation. La norme Python Array API est un effort communautaire pour définir une interface commune à toutes ces bibliothèques.\n\nOlivier Grisel et Stefanie Senger présentent le travail en cours pour adopter l'Array API dans scikit-learn, les défis techniques pour rendre les algorithmes ML classiques indépendants du backend, et les gains de performance obtenus quand scikit-learn s'exécute nativement sur des tableaux GPU."
+          "zh": "The Adoption of the Python Array API in scikit-learn",
+          "fr": "The Adoption of the Python Array API in scikit-learn"
         },
         "speakers": [
-          {
-            "name": "Olivier Grisel",
-            "title": "Software Engineer, Probabl & scikit-learn"
-          },
           {
             "name": "Stefanie Senger",
-            "title": "Open Source Developer, Probabl"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Skore: Track, Explore, and Share Your Data Science Workflows",
-          "zh": "Skore：追踪、探索和分享你的数据科学工作流"
-        },
-        "content": {
-          "en": "Data science workflows are notoriously hard to track, document, and share. Experiments pile up, results get lost in notebooks, and teammates can't reproduce what you did last Tuesday. Skore is an open-source Python library from Probabl designed to address this: it lets you track experiments, explore results interactively, and share workflows in a way that's lightweight enough to fit into existing projects without major refactoring.\n\nFabien Pesquerel presents Skore's core features, how it integrates with scikit-learn and common ML workflows, and the design philosophy of keeping things simple and Pythonic. The session includes a live demo showing how Skore can improve a typical data science team's workflow from exploration to production handoff.",
-          "zh": "数据科学工作流出了名地难以追踪、记录和共享。实验不断积累，结果散落在笔记本中，团队成员无法复现上周四的工作。Skore 是 Probabl 的开源 Python 库，旨在解决这个问题：它允许追踪实验、交互式探索结果，并以轻量级方式共享工作流，无需大规模重构现有项目。\n\n演讲者介绍 Skore 的核心功能、与 scikit-learn 和常见 ML 工作流的集成，以及保持简洁和 Pythonic 的设计理念，包括现场演示。",
-          "fr": "Les workflows de data science sont notoirement difficiles à suivre, documenter et partager. Skore est une bibliothèque Python open source de Probabl conçue pour y remédier : elle permet de suivre les expériences, d'explorer les résultats de manière interactive et de partager les workflows de manière légère, sans refactorisation majeure des projets existants.\n\nFabien Pesquerel présente les fonctionnalités principales de Skore, son intégration avec scikit-learn et les workflows ML courants, avec une démo en direct montrant comment Skore améliore le workflow d'une équipe de data science typique."
-        },
-        "speakers": [
-          {
-            "name": "Fabien Pesquerel",
-            "title": "Developer Relations Engineer, Probabl"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models",
-          "zh": "LightOnOCR：突破开放 OCR 模型的性能-效率帕累托前沿"
-        },
-        "content": {
-          "en": "Optical Character Recognition is a mature field, but open-source OCR models have long lagged behind commercial systems in accuracy, multilingual coverage, and robustness to document quality variations. LightOnOCR is LightOn's open-source initiative to push the performance-efficiency frontier of OCR, developing models that match or exceed proprietary systems while remaining small enough to run efficiently on CPUs and edge devices.\n\nSaid Taghadouini and Aubertin Baptiste present the training methodology, architecture choices, and dataset curation strategies that enable LightOnOCR's strong results across diverse document types and languages. The talk covers the trade-offs between model size and accuracy, how synthetic data augmentation helps with long-tail document formats, and benchmarks comparing LightOnOCR against leading commercial and open-source alternatives.",
-          "zh": "光学字符识别是一个成熟的领域，但开源 OCR 模型在准确性、多语言覆盖和文档质量变化的鲁棒性方面长期落后于商业系统。LightOnOCR 是 LightOn 的开源计划，旨在推进 OCR 的性能-效率前沿，开发在匹配或超越专有系统的同时足够小以在 CPU 和边缘设备上高效运行的模型。\n\n两位演讲者介绍训练方法论、架构选择和数据集管理策略，以及 LightOnOCR 在不同文档类型和语言上的基准测试比较。",
-          "fr": "La reconnaissance optique de caractères est un domaine mature, mais les modèles OCR open source ont longtemps été en retard par rapport aux systèmes commerciaux. LightOnOCR est l'initiative open source de LightOn pour pousser la frontière performance-efficacité de l'OCR.\n\nSaid Taghadouini et Aubertin Baptiste présentent la méthodologie d'entraînement, les choix d'architecture et les stratégies de curation de données qui permettent les forts résultats de LightOnOCR à travers divers types de documents et langues, avec des benchmarks comparatifs."
-        },
-        "speakers": [
-          {
-            "name": "Said Taghadouini",
-            "title": "ML Research Engineer, LightOn"
+            "title": "ML Engineer, Probabl"
           },
           {
-            "name": "Aubertin Baptiste",
-            "title": "AI/ML Engineer, LightOn"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 17:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Skolar and the Value of Creating Curated ML Skills Education",
-          "zh": "Skolar 与精心策划的 ML 技能教育的价值"
-        },
-        "content": {
-          "en": "The machine learning field moves fast, and the educational resources available online are overwhelming in quantity but uneven in quality. Skolar is Probabl's approach to curated ML education: carefully structured learning paths that connect theory to practice, using real open-source tools and datasets to build genuine ML engineering skills.\n\nArturo Amor presents the philosophy behind Skolar, the challenges of creating ML education that stays current with a rapidly evolving field, and what distinguishes curated structured learning from self-directed exploration through documentation and tutorials. The session covers the curriculum design process, how Skolar integrates with the broader Probabl and scikit-learn ecosystem, and the evidence for what makes ML education actually stick.",
-          "zh": "机器学习领域发展迅速，网上的教育资源数量泛滥但质量参差不齐。Skolar 是 Probabl 精心策划 ML 教育的方法：仔细构建的学习路径，将理论与实践联系起来，使用真实的开源工具和数据集来培养真正的 ML 工程技能。\n\n演讲者介绍 Skolar 的理念、创建跟上快速发展领域的 ML 教育的挑战，以及精心策划的结构化学习与通过文档和教程自主探索的区别。",
-          "fr": "Le domaine du machine learning évolue rapidement, et les ressources éducatives disponibles en ligne sont écrasantes en quantité mais inégales en qualité. Skolar est l'approche de Probabl pour une éducation ML curatée : des parcours d'apprentissage soigneusement structurés qui connectent théorie et pratique.\n\nArturo Amor présente la philosophie de Skolar, les défis de créer une éducation ML qui reste à jour avec un domaine en rapide évolution, et ce qui distingue l'apprentissage structuré curé de l'exploration auto-dirigée."
-        },
-        "speakers": [
-          {
-            "name": "Arturo Amor",
+            "name": "Olivier Grisel",
             "title": "ML Engineer, Probabl"
           }
         ],
@@ -2972,23 +2695,59 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:20 - 17:30",
+        "timeSlot": "10:40 - 11:00",
         "type": "talk"
       },
       {
         "title": {
-          "en": "SciPy's Support for GPUs/PyTorch/CuPy/Jax",
-          "zh": "SciPy 对 GPU/PyTorch/CuPy/Jax 的支持"
+          "en": "Python on GPUs: Speeding Up Machine Learning",
+          "zh": "Python on GPUs: Speeding Up Machine Learning",
+          "fr": "Python on GPUs: Speeding Up Machine Learning"
         },
-        "content": {
-          "en": "SciPy is one of the foundational libraries of the scientific Python ecosystem, providing algorithms for optimization, linear algebra, integration, signal processing, and more. But as GPU computing has moved from optional to essential for serious scientific computing, SciPy has faced a choice: remain NumPy-only, or embrace the heterogeneous array landscape.\n\nEvgeni Burovski presents the ongoing work to add backend support in SciPy for GPU array libraries including PyTorch, CuPy, and JAX via the Python Array API standard. The talk covers the technical challenges of adapting decades of numerical code to be backend-agnostic, the testing infrastructure needed to ensure correctness across backends, and what the roadmap looks like for full GPU support in SciPy.",
-          "zh": "SciPy 是科学 Python 生态系统的基础库之一，提供优化、线性代数、积分、信号处理等算法。但随着 GPU 计算从可选变为必要，SciPy 面临选择：保持仅 NumPy，还是拥抱异构数组生态。\n\n演讲者介绍通过 Python Array API 标准在 SciPy 中添加 PyTorch、CuPy 和 JAX GPU 数组库后端支持的持续工作，涵盖将数十年数值代码适配为与后端无关的技术挑战，以及 SciPy 完整 GPU 支持的路线图。",
-          "fr": "SciPy est l'une des bibliothèques fondamentales de l'écosystème Python scientifique. Alors que le calcul GPU est devenu essentiel pour le calcul scientifique sérieux, SciPy a dû choisir entre rester NumPy-only ou embrasser le paysage hétérogène des tableaux.\n\nEvgeni Burovski présente le travail en cours pour ajouter le support de backends GPU dans SciPy — PyTorch, CuPy, JAX — via la norme Python Array API, les défis techniques de l'adaptation du code numérique existant, et la feuille de route pour le support GPU complet."
+        "speakers": [
+          {
+            "name": "Andy Terrel",
+            "title": "NVIDIA"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:00 - 11:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Accelerating scikit-learn with GPUs",
+          "zh": "Accelerating scikit-learn with GPUs",
+          "fr": "Accelerating scikit-learn with GPUs"
+        },
+        "speakers": [
+          {
+            "name": "Tim Head",
+            "title": "NVIDIA"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:20 - 11:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "SciPy's Support for GPUs, PyTorch, and CuPy",
+          "zh": "SciPy's Support for GPUs, PyTorch, and CuPy",
+          "fr": "SciPy's Support for GPUs, PyTorch, and CuPy"
         },
         "speakers": [
           {
             "name": "Evgeni Burovski",
-            "title": "Senior Software Engineer, Quansight"
+            "title": "Quansight"
           }
         ],
         "date": {
@@ -2996,23 +2755,34 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:20 - 17:30",
+        "timeSlot": "11:40 - 12:00",
         "type": "talk"
       },
       {
         "title": {
-          "en": "The Long Game: Building Europe's Sovereign AI Layer",
-          "zh": "长期布局：构建欧洲主权 AI 层"
+          "en": "TBD",
+          "zh": "TBD",
+          "fr": "TBD"
         },
-        "content": {
-          "en": "Europe faces a strategic challenge: the foundational AI infrastructure — the models, the data, the compute — is concentrated in a small number of American and Chinese organisations. For European enterprises and public institutions that need AI systems they can trust, audit, and control, this dependency creates real risks around data privacy, security, and long-term strategic autonomy.\n\nNicolas Flores-Herr presents the work at Fraunhofer IAIS on building Europe's sovereign AI layer: open foundation models trained on European data, with European values, within European regulatory frameworks. The talk covers the technical work on large-scale multilingual model training, the governance structures needed for trusted AI, and why the long game of building sovereign AI infrastructure matters for Europe's competitiveness and democratic future.",
-          "zh": "欧洲面临战略挑战：基础 AI 基础设施——模型、数据、算力——集中在少数美国和中国组织手中。对于需要可信任、可审计、可控制 AI 系统的欧洲企业和公共机构，这种依赖在数据隐私、安全和长期战略自主方面带来了真实风险。\n\n演讲者介绍 Fraunhofer IAIS 在构建欧洲主权 AI 层方面的工作：在欧洲监管框架内、基于欧洲数据、以欧洲价值观训练的开放基础模型，以及为何这对欧洲竞争力和民主未来至关重要。",
-          "fr": "L'Europe fait face à un défi stratégique : l'infrastructure IA fondamentale est concentrée dans un petit nombre d'organisations américaines et chinoises. Pour les entreprises et institutions publiques européennes qui ont besoin de systèmes IA qu'elles peuvent faire confiance, auditer et contrôler, cette dépendance crée des risques réels.\n\nNicolas Flores-Herr présente le travail de Fraunhofer IAIS sur la construction de la couche IA souveraine de l'Europe : des modèles fondamentaux ouverts entraînés sur des données européennes, avec des valeurs européennes, dans des cadres réglementaires européens, et pourquoi ce jeu long est essentiel pour l'avenir de l'Europe."
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 12:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Kedro: The Toolbox for Production-Ready Data Pipelines",
+          "zh": "Kedro: The Toolbox for Production-Ready Data Pipelines",
+          "fr": "Kedro: The Toolbox for Production-Ready Data Pipelines"
         },
         "speakers": [
           {
-            "name": "Nicolas Flores-Herr",
-            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
+            "name": "Sajid Alam",
+            "title": "QuantumBlack, AI by McKinsey"
           }
         ],
         "date": {
@@ -3020,7 +2790,213 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:20 - 17:30",
+        "timeSlot": "12:20 - 12:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Skore: Track, Explore, and Share Your Data Science Workflows",
+          "zh": "Skore: Track, Explore, and Share Your Data Science Workflows",
+          "fr": "Skore: Track, Explore, and Share Your Data Science Workflows"
+        },
+        "speakers": [
+          {
+            "name": "Marie Sacksick",
+            "title": "Probabl"
+          },
+          {
+            "name": "Fabien Pesquerel",
+            "title": "Probabl"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:40 - 13:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "Lunch",
+          "fr": "Lunch"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "13:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "The Long Game: Building Europe's Sovereign AI Layer",
+          "zh": "The Long Game: Building Europe's Sovereign AI Layer",
+          "fr": "The Long Game: Building Europe's Sovereign AI Layer"
+        },
+        "speakers": [
+          {
+            "name": "Nicolas Flores-Herr",
+            "title": "Fraunhofer IAIS"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:00 - 14:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments",
+          "zh": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments",
+          "fr": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments"
+        },
+        "speakers": [
+          {
+            "name": "Anastasia Stasenko",
+            "title": "Pleias"
+          },
+          {
+            "name": "Pierre-Carl Langlais",
+            "title": "Pleias"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:20 - 14:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models",
+          "zh": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models",
+          "fr": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models"
+        },
+        "speakers": [
+          {
+            "name": "Said Taghadouini",
+            "title": "LightOn"
+          },
+          {
+            "name": "Aubertin Baptiste",
+            "title": "LightOn"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:40 - 15:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Evaluating Frontier Agents on Economically Valuable Tasks",
+          "zh": "Evaluating Frontier Agents on Economically Valuable Tasks",
+          "fr": "Evaluating Frontier Agents on Economically Valuable Tasks"
+        },
+        "speakers": [
+          {
+            "name": "Björn Plüster",
+            "title": "ellamind"
+          },
+          {
+            "name": "Benedikt Droste",
+            "title": "ellamind"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:00 - 15:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "From Model to Metal: An Open Source Stack for Accelerating Artificial Intelligence",
+          "zh": "From Model to Metal: An Open Source Stack for Accelerating Artificial Intelligence",
+          "fr": "From Model to Metal: An Open Source Stack for Accelerating Artificial Intelligence"
+        },
+        "speakers": [
+          {
+            "name": "Megan Knight",
+            "title": "Arm"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:20 - 15:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "notebook.link: Run Notebooks Instantly in Your Browser",
+          "zh": "notebook.link: Run Notebooks Instantly in Your Browser",
+          "fr": "notebook.link: Run Notebooks Instantly in Your Browser"
+        },
+        "speakers": [
+          {
+            "name": "Sylvain Corlay",
+            "title": "QuantStack"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:40 - 16:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Skolar and the Value of Curated ML Skills Education",
+          "zh": "Skolar and the Value of Curated ML Skills Education",
+          "fr": "Skolar and the Value of Curated ML Skills Education"
+        },
+        "speakers": [
+          {
+            "name": "David Arturo Amor Quiroz",
+            "title": "Probabl"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "16:00 - 16:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "TBD",
+          "zh": "TBD",
+          "fr": "TBD"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "16:20 - 16:40",
         "type": "talk"
       }
     ]

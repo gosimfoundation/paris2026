@@ -354,8 +354,9 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                     const hasSpeakers = kn.speakers && kn.speakers.length > 0
                     const titleText = loc(kn.title)
                     const isTitleTbd = !titleText || titleText === "TBD" || titleText === "待定" || titleText === "À confirmer"
+                    const slug = createSlug(en(kn.title))
                     return (
-                      <div class="session-card keynote-card">
+                      <a class="session-card keynote-card" href={`/schedule/${slug}/`}>
                         <div class="session-left">
                           {kn.timeSlot && <span class="session-time">{kn.timeSlot}</span>}
                           <span class="type-badge" style="background:#0f172a; color:#ffffff">{t.keynotesLabel}</span>
@@ -375,7 +376,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                             <span class="keynote-tbd-text">{t.keynotesTbd}</span>
                           )}
                         </div>
-                      </div>
+                      </a>
                     )
                   }) : (
                     <div class="session-card keynote-card">
