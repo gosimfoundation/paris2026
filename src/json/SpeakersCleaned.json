@@ -436,6 +436,24 @@
       "draft": false
     },
     {
+      "name": "Quentin Delfosse",
+      "role": "Agentic AI Researcher",
+      "org": "Google Intrinsic",
+      "roleOrg": "Agentic AI Researcher, Google Intrinsic",
+      "image": "/images/speakers/quentin-delfosse.png",
+      "bio": "",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "julien-enoch",
       "name": "Julien Enoch",
       "bio": "Julien is an Eclipse Zenoh committer and a Senior Solutions Architect at ZettaScale Technology. He has been deeply involved in the development of Zenoh and its integration with the ROS 2 ecosystem, from the early zenoh-bridge-dds plugin to rmw_zenoh and now ros-z. Julien is a regular speaker in the open-source and robotics community — he has presented at EclipseCon (2022), ROSCon (2022 to 2025), ROSCon FR (2024, 2025), ROSCon UK (2025) and FOSDEM (2025, 2026).",

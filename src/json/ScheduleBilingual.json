@@ -2141,11 +2141,16 @@
       },
       {
         "title": {
-          "en": "TBD",
+          "en": "AI Agents Learn Invisible Shortcuts",
           "zh": "AI智能体学会了隐形捷径",
-          "fr": "À confirmer"
+          "fr": "Les agents IA apprennent des raccourcis invisibles"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Quentin Delfosse",
+            "title": "Agentic AI Researcher, Google Intrinsic"
+          }
+        ],
         "date": {
           "en": "May 6",
           "zh": "5月6日",
@@ -2227,7 +2232,7 @@
         "speakers": [
           {
             "name": "Tom Mulder",
-            "title": "Embodied AI Engineer, Pollen Robotics"
+            "title": "Lifelong builder, Algoryn"
           }
         ],
         "date": {
