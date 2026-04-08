@@ -1371,7 +1371,7 @@
       "role": "Principal Software Engineer",
       "org": "Red Hat",
       "roleOrg": "Principal Software Engineer, Red Hat",
-      "image": "/images/speakers/daniele-trifirò.png",
+      "image": "/images/speakers/daniele-trifiro.png",
       "bio": "Daniele is a Principal Software Engineer at Red Hat, working on AI Inference. Daniele focuses on vLLM and Red Hat AI Inference Server, Red Hat's trusted and verified build of vLLM.",
       "tags": [
         "ws-vllm-paris2026"
