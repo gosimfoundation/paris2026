@@ -355,19 +355,19 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                     const titleText = loc(kn.title)
                     const isTitleTbd = !titleText || titleText === "TBD" || titleText === "待定" || titleText === "À confirmer"
                     return (
-                      <div class="keynote-tbd">
+                      <div class="session-card keynote-card">
                         <div class="session-left">
                           {kn.timeSlot && <span class="session-time">{kn.timeSlot}</span>}
-                          <span class="keynote-tbd-badge">{t.keynotesLabel}</span>
+                          <span class="type-badge" style="background:#0f172a; color:#ffffff">{t.keynotesLabel}</span>
                         </div>
                         <div class="session-right">
+                          {!isTitleTbd && <h3 class="session-title">{titleText}</h3>}
                           {hasSpeakers ? (
-                            <div class="keynote-speaker-list">
+                            <div class="speaker-list">
                               {kn.speakers.map((sp: any) => (
-                                <div class="keynote-speaker-entry">
-                                  <span class="keynote-speaker-name">{sp.name}</span>
-                                  {sp.title && <span class="keynote-speaker-title">{sp.title}</span>}
-                                  {!isTitleTbd && <span class="keynote-talk-title">{titleText}</span>}
+                                <div class="speaker-row">
+                                  <span class="speaker-name">{sp.name}</span>
+                                  {sp.title && <span class="speaker-role">{sp.title}</span>}
                                 </div>
                               ))}
                             </div>
@@ -378,9 +378,9 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                       </div>
                     )
                   }) : (
-                    <div class="keynote-tbd">
+                    <div class="session-card keynote-card">
                       <div class="session-left">
-                        <span class="keynote-tbd-badge">{t.keynotesLabel}</span>
+                        <span class="type-badge" style="background:#0f172a; color:#ffffff">{t.keynotesLabel}</span>
                       </div>
                       <div class="session-right">
                         <span class="keynote-tbd-text">{t.keynotesTbd}</span>
@@ -849,64 +849,10 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     margin-bottom: 1rem;
   }
 
-  .keynote-tbd {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem 1.25rem;
-    background: var(--color-light);
-    border-radius: var(--border-radius);
-    align-items: start;
-    margin-bottom: 0.5rem;
-  }
-
-  .keynote-tbd-badge {
-    font-size: 0.65rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.55);
-    padding: 0.2rem 0.55rem;
-    border-radius: 4px;
-    flex-shrink: 0;
-    white-space: nowrap;
-  }
-
   .keynote-tbd-text {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.45);
     font-style: italic;
-  }
-
-  .keynote-speaker-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-  }
-
-  .keynote-speaker-entry {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.4rem;
-  }
-
-  .keynote-speaker-name {
-    font-size: 1rem;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.85);
-  }
-
-  .keynote-speaker-title {
-    font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  .keynote-talk-title {
-    font-size: 0.8rem;
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.45);
-    width: 100%;
   }
 
   /* ── Break divider ── */
