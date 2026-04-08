@@ -47,7 +47,7 @@
       "role": "Oniro Program Manager",
       "org": "Eclipse Foundation",
       "roleOrg": "Oniro Program Manager, Eclipse Foundation",
-      "image": "/images/speakers/ignacio-ahedo.png",
+      "image": "/images/speakers/better_portrait/ignacio-ahedo.png",
       "bio": "",
       "tags": [],
       "socialLinks": {
@@ -293,7 +293,7 @@
       "role": "Ph.D. Student",
       "org": "Institute of Automation, Chinese Academy of Sciences & BAAI",
       "roleOrg": "Ph.D. Student, Institute of Automation, Chinese Academy of Sciences & BAAI",
-      "image": "/images/speakers/jiabei-chen.png",
+      "image": "/images/speakers/better_portrait/jiabei-chen.png",
       "bio": "Jiabei Chen is a 2nd-year Ph.D. student at the Institute of Automation, Chinese Academy of Sciences (CASIA), advised by Prof. Kang Liu. He has published several papers in ACL, EMNLP, and NAACL. He is currently a core contributor to the OpenSeek project of BAAI, an open-source initiative focused on efficient large language model pretraining.",
       "tags": [
         "open-source-model"
@@ -460,7 +460,7 @@
       "role": "Agentic AI Researcher",
       "org": "Google Intrinsic",
       "roleOrg": "Agentic AI Researcher, Google Intrinsic",
-      "image": "/images/speakers/quentin-delfosse.png",
+      "image": "/images/speakers/better_portrait/quentin-delfosse.png",
       "bio": "",
       "tags": [],
       "socialLinks": {
@@ -518,7 +518,7 @@
     {
       "name": "Thomas Froment",
       "title": "Program Manager, Development Tools, Eclipse Foundation",
-      "image": "/images/speakers/thomas-froment.png",
+      "image": "/images/speakers/better_portrait/thomas-froment.png",
       "bio": "",
       "role": "Program Manager, Development Tools",
       "org": "Eclipse Foundation",
@@ -539,7 +539,7 @@
       "role": "Senior Principal Product Manager - Generative AI",
       "org": "Red Hat",
       "roleOrg": "Senior Principal Product Manager - Generative AI, Red Hat",
-      "image": "/images/speakers/erwan-gallen.png",
+      "image": "/images/speakers/better_portrait/erwan-gallen.png",
       "bio": "Erwan Gallen is Senior Principal Product Manager, Generative AI, at Red Hat, where he follows Red Hat AI Inference product and manages hardware-accelerator enablement across OpenShift, RHEL AI, and OpenShift AI. His remit covers strategy, roadmap, and lifecycle management for AI accelerators, and emerging silicon, ensuring customers can run state-of-the-art generative workloads seamlessly in hybrid clouds.",
       "tags": [
         "ws-vllm-paris2026"
@@ -893,7 +893,7 @@
       "role": "Assoc Prof Computer Science",
       "org": "Portland State University",
       "roleOrg": "Assoc Prof Computer Science, Portland State University",
-      "image": "/images/speakers/bart-massey.png",
+      "image": "/images/speakers/better_portrait/bart-massey.png",
       "bio": "Bart Massey is a 26-year CS Professor with a PhD in AI and an MSc in PL implementation; he has been an open source developer for many decades. Bart is a member of the Rust Embedded Working Group, and is involved in a number of low-level Rust and Rust Education projects. ",
       "tags": [
         "ai-generative-app"
@@ -1184,7 +1184,7 @@
       "role": "Member of Technical Staff",
       "org": "RadixArk",
       "roleOrg": "Member of Technical Staff, RadixArk",
-      "image": "/images/speakers/ethan-su.png",
+      "image": "/images/speakers/better_portrait/ethan-yusheng-su.png",
       "bio": "Member of Technical Staff at RadixArk",
       "tags": [
         "ws-sglang-paris2026"
@@ -1223,7 +1223,7 @@
     {
       "name": "Yu Tao",
       "title": "Chief Scientist, Huawei Central Software Institute Singapore",
-      "image": "/images/speakers/yu-tao.png",
+      "image": "/images/speakers/better_portrait/yu-tao.png",
       "bio": "",
       "role": "Chief Scientist",
       "org": "Huawei Central Software Institute Singapore",
@@ -1371,7 +1371,7 @@
       "role": "Principal Software Engineer",
       "org": "Red Hat",
       "roleOrg": "Principal Software Engineer, Red Hat",
-      "image": "/images/speakers/daniele-trifiro.png",
+      "image": "/images/speakers/better_portrait/daniele-trifir.png",
       "bio": "Daniele is a Principal Software Engineer at Red Hat, working on AI Inference. Daniele focuses on vLLM and Red Hat AI Inference Server, Red Hat's trusted and verified build of vLLM.",
       "tags": [
         "ws-vllm-paris2026"
@@ -1663,7 +1663,7 @@
       "role": "Chief Architect",
       "org": "Red Hat",
       "roleOrg": "Chief Architect, Red Hat",
-      "image": "/images/speakers/jiaju-zhang.png",
+      "image": "/images/speakers/better_portrait/jiaju-zhang.png",
       "bio": "Jiaju Zhang is a passionate open-source advocate with over 20 years of experience in R&D, architectural design, and engineering management. His expertise spans Linux, distributed systems, cloud-native technologies, and AI infrastructure. Throughout his career, Jiaju has held senior leadership roles, including Chief Architect, Technical Director and Head of R&D in China, at major multinational and ICT enterprises. As an independent contributor, he has successfully launched and promoted globally recognized open-source projects.\r\n\r\nCurrently, Jiaju serves as Chief Architect in Field CTO Organization, Red Hat, focuses on advancing open source AI communities like vLLM and llm-d and fostering enterprise solutions through co-engineering with ecosystem partners. His work is instrumental in driving AI technology strategy and accelerating the industrial deployment of Red Hat solutions across various vertical sectors.",
       "tags": [
         "ws-vllm-paris2026"
