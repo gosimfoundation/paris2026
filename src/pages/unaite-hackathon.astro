@@ -117,7 +117,11 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
           <div class="setup-card">
             <h3>LeRobot + 3 Cameras</h3>
             <p>A setup powered by <strong>LeRobot</strong> with a 3-camera configuration for multi-view teleoperation and learning.</p>
-            <a href="https://x.com/LeRobotHF/status/2041542790610297259" target="_blank" rel="noopener noreferrer" class="setup-link">See it in action &rarr;</a>
+            <div class="tweet-embed">
+              <blockquote class="twitter-tweet" data-dnt="true">
+                <a href="https://x.com/LeRobotHF/status/2041542790610297259"></a>
+              </blockquote>
+            </div>
           </div>
         </div>
       </div>
@@ -152,6 +156,8 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
 
 
 </Layout>
+
+<script is:inline async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <style>
   /* Hero Section */
@@ -422,6 +428,17 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
 
   .setup-link:hover {
     color: #0b63d1;
+  }
+
+  .tweet-embed {
+    margin-top: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .tweet-embed .twitter-tweet {
+    margin: 0 !important;
+    max-width: 100% !important;
   }
 
   @media (max-width: 768px) {
