@@ -5,40 +5,52 @@
       "id": "all"
     },
     {
+      "name": "Keynote",
+      "id": "keynote"
+    },
+    {
       "name": "Agentic AI Summit",
       "id": "agentic-ai-summit"
+    },
+    {
+      "name": "Open Source Models",
+      "id": "open-source-model"
+    },
+    {
+      "name": "Agentic OS & App",
+      "id": "ai-generative-app"
     },
     {
       "name": "Agentic AI on Edge",
       "id": "agentic-ai-on-edge"
     },
     {
-      "name": "Agentic App",
-      "id": "ai-generative-app"
-    },
-    {
-      "name": "OH Tech Forum",
-      "id": "ws-oh-tech-forum"
-    },
-    {
-      "name": "Open Source Model",
-      "id": "open-source-model"
-    },
-    {
       "name": "Open Source Robotics",
       "id": "open-source-robotics"
     },
     {
-      "name": "Own Your Data Workshop",
-      "id": "ws-own-your-data-paris2026"
+      "name": "vLLM Workshop",
+      "id": "ws-vllm-paris2026"
+    },
+    {
+      "name": "OpenHarmony Tech Forum",
+      "id": "ws-oh-tech-forum"
+    },
+    {
+      "name": "Open Compute Workshop",
+      "id": "ws-open-compute"
     },
     {
       "name": "SGLang Workshop",
       "id": "ws-sglang-paris2026"
     },
     {
-      "name": "Special Keynote",
-      "id": "special-keynote"
+      "name": "Own Your Data Workshop",
+      "id": "ws-own-your-data-paris2026"
+    },
+    {
+      "name": "Agentic App Workshop",
+      "id": "ws-agentic-app"
     }
   ],
   "speakers": [
@@ -813,7 +825,7 @@
       "roleOrg": "Vice President & Chief Engineer, BAAI",
       "image": "/images/speakers/better_portrait/yonghua-lin.png",
       "tags": [
-        "special-keynote"
+        "keynote"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -917,7 +929,8 @@
       "roleOrg": "Senior Principal Engineer, Amazon",
       "image": "/images/speakers/better_portrait/niko-matsakis.png",
       "tags": [
-        "agentic-ai-summit"
+        "agentic-ai-summit",
+        "keynote"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1269,8 +1282,8 @@
       "roleOrg": "Principal Engineer, NVIDIA",
       "image": "/images/speakers/better_portrait/markus-tavenrath.png",
       "tags": [
-        "agentic-ai-summit",
-        "agentic-ai-on-edge"
+        "agentic-ai-on-edge",
+        "agentic-ai-summit"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1416,6 +1429,7 @@
       "roleOrg": "Chief Science Officer, Probabl",
       "image": "/images/speakers/better_portrait/gal-varoquaux.png",
       "tags": [
+        "keynote",
         "ws-own-your-data-paris2026"
       ],
       "socialLinks": {
