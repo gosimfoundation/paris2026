@@ -238,21 +238,6 @@
       },
       {
         "title": {
-          "en": "GOSIM Keynote",
-          "zh": "GOSIM 主旨演讲",
-          "fr": "Keynote GOSIM"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "09:30 - 10:10",
-        "type": "keynote"
-      },
-      {
-        "title": {
           "en": "Morning Coffee",
           "zh": "上午茶歇",
           "fr": "Café du matin"
@@ -370,21 +355,6 @@
         },
         "timeSlot": "08:30 - 09:30",
         "type": "break"
-      },
-      {
-        "title": {
-          "en": "GOSIM Keynote",
-          "zh": "GOSIM 主旨演讲",
-          "fr": "Keynote GOSIM"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "09:30 - 10:00",
-        "type": "keynote"
       },
       {
         "title": {
