@@ -1454,32 +1454,97 @@
     {
       "name": "Yu Tao",
       "title": "Chief Scientist, Huawei Central Software Institute Singapore",
-      "image": "yu-tao.png",
-      "bio": ""
+      "image": "/images/speakers/yu-tao.png",
+      "bio": "",
+      "role": "Chief Scientist",
+      "org": "Huawei Central Software Institute Singapore",
+      "roleOrg": "Chief Scientist, Huawei Central Software Institute Singapore",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     },
     {
       "name": "Holt Skinner",
       "title": "Software Engineer, Google Cloud",
-      "image": "holt-skinner.png",
-      "bio": ""
+      "image": "/images/speakers/holt-skinner.png",
+      "bio": "",
+      "role": "Software Engineer",
+      "org": "Google Cloud",
+      "roleOrg": "Software Engineer, Google Cloud",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     },
     {
       "name": "Alexy Khrabrov",
       "title": "Founder, CR4AI; Northeastern University",
-      "image": "alexy-khrabrov.png",
-      "bio": ""
+      "image": "/images/speakers/alexy-khrabrov.png",
+      "bio": "",
+      "role": "Founder",
+      "org": "CR4AI, Northeastern University",
+      "roleOrg": "Founder, CR4AI, Northeastern University",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     },
     {
       "name": "Thomas Froment",
       "title": "Program Manager, Development Tools, Eclipse Foundation",
-      "image": "thomas-froment.png",
-      "bio": ""
+      "image": "/images/speakers/thomas-froment.png",
+      "bio": "",
+      "role": "Program Manager, Development Tools",
+      "org": "Eclipse Foundation",
+      "roleOrg": "Program Manager, Development Tools, Eclipse Foundation",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     },
     {
       "name": "Michael Yuan",
       "title": "Maintainer / CEO, WasmEdge / Second State",
-      "image": "michael-yuan.png",
-      "bio": ""
+      "image": "/images/speakers/michael-yuan.png",
+      "bio": "",
+      "role": "Maintainer / CEO",
+      "org": "WasmEdge / Second State",
+      "roleOrg": "Maintainer / CEO, WasmEdge / Second State",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     }
   ],
   "columns": 6
