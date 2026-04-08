@@ -43,6 +43,24 @@
   ],
   "speakers": [
     {
+      "name": "Ignacio Ahedo",
+      "role": "Oniro Program Manager",
+      "org": "Eclipse Foundation",
+      "roleOrg": "Oniro Program Manager, Eclipse Foundation",
+      "image": "/images/speakers/ignacio-ahedo.png",
+      "bio": "",
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "sajid-alam",
       "name": "Sajid Alam",
       "bio": "Senior Software Engineer at QuantumBlack, AI by McKinsey, where I maintain and develop Kedro, an open-source Python framework for building maintainable, modular data pipelines used by thousands of data teams worldwide. I work across the full stack: Python backend, React frontend, cloud infrastructure, and AI integrations designing systems that make complex data workflows simpler and more reliable. \r\nI'm passionate about developer experience, architectural design, and bridging the gap between data science experimentation and production-ready software.",
@@ -137,6 +155,24 @@
       "tags": [
         "open-source-robotics"
       ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "name": "Michael Berns",
+      "role": "Head of AI",
+      "org": "Eclipse Foundation",
+      "roleOrg": "Head of AI, Eclipse Foundation",
+      "image": "/images/speakers/michael-berns.png",
+      "bio": "",
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",

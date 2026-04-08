@@ -646,18 +646,14 @@
       },
       {
         "title": {
-          "en": "TileLang: Bridge Programmability and Performance in Modern Neural Kernels",
-          "zh": "TileLang：架起现代神经网络核心可编程性与性能之间的桥梁"
-        },
-        "content": {
-          "en": "We present TileLang, a Pythonic DSL designed to streamline high-performance kernel development (e.g., FlashAttention, GEMM). TileLang introduces a multi-level programming model that provides explicit tile-level primitives for memory placement and parallel scheduling, allowing developers to seamlessly navigate between high-level productivity and low-level hardware-specific optimizations.\n\nBy decoupling tile logic from execution details, TileLang ensures cross-platform portability across NVIDIA and AMD GPUs while significantly reducing code complexity. We demonstrate that TileLang achieves state-of-the-art performance while reducing code complexity by an order of magnitude, offering a unified solution for cross-platform kernel optimization.",
-          "zh": "我们介绍 TileLang——一种专为高性能核函数开发（如 FlashAttention、GEMM）而设计的 Pythonic DSL。TileLang 引入多级编程模型，提供显式的 Tile 级内存放置与并行调度原语，实现跨 NVIDIA 和 AMD GPU 的跨平台可移植性，同时将代码复杂度降低一个数量级。",
-          "fr": "Nous présentons TileLang, un DSL Pythonique conçu pour simplifier le développement de noyaux haute performance (FlashAttention, GEMM). TileLang réduit la complexité du code d'un ordre de grandeur tout en atteignant des performances de pointe sur NVIDIA et AMD GPU."
+          "en": "Eclipse PanEval: Architecting Neutral AI Evaluation for the Era of the EU AI Act",
+          "zh": "Eclipse PanEval：为欧盟人工智能法时代构建中立的 AI 评估体系",
+          "fr": "Eclipse PanEval : Concevoir une évaluation neutre de l'IA à l'ère de l'AI Act"
         },
         "speakers": [
           {
-            "name": "Yu Cheng",
-            "title": "Ph.D. Student, Peking University"
+            "name": "Michael Berns",
+            "title": "Head of AI, Eclipse Foundation"
           }
         ],
         "date": {
@@ -1505,18 +1501,14 @@
       },
       {
         "title": {
-          "en": "Bridging the Chasm: Practical AI Experiments in the Servo Engine",
-          "zh": "跨越鸿沟：Servo 引擎中的 AI 实验探索"
-        },
-        "content": {
-          "en": "Can AI-assisted coding significantly accelerate the implementation of complex web standards? This talk explores two experiments on a fork of the Servo web engine aimed at closing the feature gap with dominant engines.\n\nExperiment 1 — Architect as Director (WebNN): A developer with deep architectural knowledge uses AI as a high-speed implementation partner to bridge high-level structural intent and low-level boilerplate for a new API. Experiment 2 — Novice using Test-Driven AI (CSS Grid): What happens when the human knows nothing about the domain? This experiment implements CSS Grid by delegating logic to AI, using WPT tests as absolute ground truth, analyzing whether a rigorous test suite is sufficient to steer an AI through a black-box implementation.",
-          "zh": "AI 辅助编程能否显著加速复杂 Web 标准的实现？本演讲通过两个 Servo 引擎分支实验进行探索。实验一：建筑师式引导（WebNN）——具备深厚架构知识的开发者将 AI 用作高速实现伙伴。实验二：测试驱动 AI（CSS Grid）——对领域一无所知的用户通过 WPT 测试作为绝对基准，委托 AI 实现逻辑，分析严格测试套件是否足以引导 AI 完成黑盒实现。",
-          "fr": "Deux expériences sur un fork du moteur web Servo : Architect as Director (WebNN) — un développeur avec une connaissance architecturale profonde utilise l'IA comme partenaire d'implémentation ; Novice avec Test-Driven AI (CSS Grid) — utiliser les tests WPT comme vérité absolue pour guider l'IA."
+          "en": "Accelerating the Distributed Ecosystem: AI-Powered Scaling for Oniro",
+          "zh": "加速分布式生态系统：Oniro 的 AI 驱动扩展",
+          "fr": "Accélérer l'écosystème distribué : mise à l'échelle IA pour Oniro"
         },
         "speakers": [
           {
-            "name": "Gregory Terzian",
-            "title": "Founder, FOSS(Shanghai) Technology"
+            "name": "Ignacio Ahedo",
+            "title": "Oniro Program Manager, Eclipse Foundation"
           }
         ],
         "date": {
@@ -1624,6 +1616,26 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:00 - 11:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Bridging the Chasm: Practical AI Experiments in the Servo Engine",
+          "zh": "跨越鸿沟：Servo 引擎中的 AI 实践探索",
+          "fr": "Franchir le fossé : expériences pratiques d'IA dans le moteur Servo"
+        },
+        "speakers": [
+          {
+            "name": "Gregory Terzian",
+            "title": "Founder, FOSS(Shanghai) Technology"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:20 - 11:40",
         "type": "talk"
       },
       {
@@ -2129,20 +2141,11 @@
       },
       {
         "title": {
-          "en": "Reachy Mini: How to Have Fun with Expressive Robotics",
-          "zh": "Reachy Mini——如何玩转富有表现力的机器人"
+          "en": "TBD",
+          "zh": "AI智能体学会了隐形捷径",
+          "fr": "À confirmer"
         },
-        "content": {
-          "en": "Reachy Mini is a compact, expressive open-source robot designed to make robotics more approachable, playful, and human-centred. Unlike industrial or research platforms focused purely on task performance, Reachy Mini prioritises expressiveness — the ability to communicate intent, emotion, and personality through movement.\n\nTom Mulder shares his experience building with Reachy Mini, exploring what happens when you design robots not just to be useful but to be delightful. The talk covers the hardware platform, its software SDK, real projects built on top of it, and a broader philosophy of why fun and expressiveness matter in the future of human-robot interaction.",
-          "zh": "Reachy Mini 是一款紧凑、富有表现力的开源机器人，旨在让机器人更易接近、更有趣、更以人为中心。与专注于任务表现的工业或研究平台不同，Reachy Mini 优先注重表达能力——通过动作传达意图、情感和个性。\n\n演讲者分享使用 Reachy Mini 的构建经验，探索当机器人设计不仅实用而且令人愉悦时会发生什么，以及为何表达力在人机交互未来中至关重要。",
-          "fr": "Reachy Mini est un robot open source compact et expressif conçu pour rendre la robotique plus accessible, ludique et centrée sur l'humain. Contrairement aux plateformes industrielles ou de recherche axées sur la performance des tâches, Reachy Mini privilégie l'expressivité — la capacité à communiquer l'intention, l'émotion et la personnalité à travers le mouvement.\n\nTom Mulder partage son expérience de construction avec Reachy Mini et explore pourquoi la joie et l'expressivité comptent dans l'avenir de l'interaction humain-robot."
-        },
-        "speakers": [
-          {
-            "name": "Tom Mulder",
-            "title": "Lifelong Builder, Algoryn"
-          }
-        ],
+        "speakers": [],
         "date": {
           "en": "May 6",
           "zh": "5月6日",
@@ -2217,18 +2220,14 @@
       },
       {
         "title": {
-          "en": "Project Nexus: Cross-Platform GPU Rust Multiphysics Simulator for Robotics and Training Data Generation",
-          "zh": "Project Nexus：面向机器人与训练数据生成的跨平台 GPU Rust 多物理场仿真平台"
-        },
-        "content": {
-          "en": "Project Nexus is a cross-platform, GPU-accelerated multiphysics simulator written in Rust, designed specifically for robotics applications and large-scale training data generation. Built on the Rapier physics engine, Nexus brings together rigid body dynamics, soft body simulation, and fluid mechanics into a single unified framework that runs efficiently on both CPU and GPU across Linux, macOS, and Windows.\n\nSébastien Crozet presents the architecture of Nexus, how it achieves cross-platform GPU acceleration without vendor lock-in, and why Rust is an ideal language for high-performance simulation infrastructure. The talk covers real use cases in robot training data generation, the open-source ecosystem around Dimforge's physics stack, and the roadmap for making Nexus the go-to simulator for embodied AI research.",
-          "zh": "Project Nexus 是用 Rust 编写的跨平台 GPU 加速多物理场仿真器，专为机器人应用和大规模训练数据生成而设计。基于 Rapier 物理引擎，Nexus 将刚体动力学、软体仿真和流体力学整合到统一框架中，在 Linux、macOS 和 Windows 的 CPU 和 GPU 上高效运行。\n\n演讲者介绍 Nexus 的架构、实现跨平台 GPU 加速的方式、Rust 在高性能仿真基础设施中的优势，以及在机器人训练数据生成中的实际应用。",
-          "fr": "Project Nexus est un simulateur multiphysique cross-platform accéléré par GPU, écrit en Rust, conçu spécifiquement pour les applications robotiques et la génération de données d'entraînement à grande échelle. Basé sur le moteur physique Rapier, Nexus combine dynamique des corps rigides, simulation des corps mous et mécanique des fluides dans un framework unifié.\n\nSébastien Crozet présente l'architecture de Nexus, l'accélération GPU cross-platform sans vendor lock-in, et pourquoi Rust est idéal pour l'infrastructure de simulation haute performance en robotique."
+          "en": "Reachy Mini: How to Have Fun with Expressive Robotics",
+          "zh": "Reachy Mini——如何玩转富有表现力的机器人",
+          "fr": "Reachy Mini : s'amuser avec la robotique expressive"
         },
         "speakers": [
           {
-            "name": "Sébastien Crozet",
-            "title": "Founder, Dimforge"
+            "name": "Tom Mulder",
+            "title": "Embodied AI Engineer, Pollen Robotics"
           }
         ],
         "date": {
