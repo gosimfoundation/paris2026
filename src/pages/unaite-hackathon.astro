@@ -48,6 +48,11 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
                 <span class="person-name">Haixuan Xavier Tao</span>
                 <span class="person-role">Founder @ 1ms.ai</span>
               </a>
+              <a href="https://42-ai.github.io" target="_blank" rel="noopener noreferrer" class="person-card">
+                <img src="/images/speakers/42-ai-logo.png" alt="42 AI" class="person-photo" />
+                <span class="person-name">42 AI</span>
+                <span class="person-role">AI Student Association @ 42 Paris</span>
+              </a>
             </div>
           </div>
         </div>
@@ -96,6 +101,25 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
           <li><strong>Simulation</strong> environment available before the event</li>
         </ul>
         <a href="https://openarm.dev" target="_blank" rel="noopener noreferrer" class="cta-button">Learn More about OpenArm</a>
+      </div>
+    </section>
+
+    <!-- Setups Section -->
+    <section class="setups-section">
+      <div class="container">
+        <h2>Two Setups Available</h2>
+        <div class="setups-grid">
+          <div class="setup-card">
+            <h3>dora-rs + RealSense Depth Camera</h3>
+            <p>A setup powered by <strong>dora-rs</strong> with an Intel RealSense depth camera for 3D perception and manipulation tasks.</p>
+            <a href="https://x.com/HaixuanT/status/2038914443505983665" target="_blank" rel="noopener noreferrer" class="setup-link">See it in action &rarr;</a>
+          </div>
+          <div class="setup-card">
+            <h3>LeRobot + 3 Cameras</h3>
+            <p>A setup powered by <strong>LeRobot</strong> with a 3-camera configuration for multi-view teleoperation and learning.</p>
+            <a href="https://x.com/LeRobotHF/status/2041542790610297259" target="_blank" rel="noopener noreferrer" class="setup-link">See it in action &rarr;</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -356,6 +380,54 @@ import OpenArmViewer from "components/OpenArmViewer.astro";
     color: #334155;
     margin-bottom: 2rem;
     line-height: 1.7;
+  }
+
+  /* Setups Section */
+  .setups-section {
+    padding: 60px 0;
+    background: #fff;
+  }
+
+  .setups-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .setup-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2rem;
+  }
+
+  .setup-card h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .setup-card p {
+    color: #475569;
+    line-height: 1.7;
+    margin: 0 0 1.25rem 0;
+  }
+
+  .setup-link {
+    color: #0e7aff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .setup-link:hover {
+    color: #0b63d1;
+  }
+
+  @media (max-width: 768px) {
+    .setups-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   /* Partnership Section */
