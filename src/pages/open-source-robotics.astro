@@ -78,7 +78,9 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
             <div class="speaker-info">
               <span class="speaker-name">Virgile Batto</span>
               <span class="speaker-role">Embodied Robotics Engineer, Hugging Face</span>
+              <span class="speaker-bio">PhD from LAAS-GEPETTO (CNRS) focused on bipedal walking robot design. Now at Hugging Face working on legged robots and the LeRobot ecosystem.</span>
               <span class="speaker-talk">HuggingFace Legged Robot!</span>
+              <span class="speaker-abstract">A fully open-source 3D-printed humanoid robot built on the LeRobot ecosystem — covering design, training, and community-driven development.</span>
               <span class="speaker-tag">bipedal</span>
             </div>
           </a>
@@ -176,13 +178,6 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
               <span class="speaker-tag">mobile manipulation</span>
             </div>
           </a>
-          <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="speaker-card speaker-card-cta">
-            <div class="speaker-photo speaker-photo-cta">?</div>
-            <div class="speaker-info">
-              <span class="speaker-name">You?</span>
-              <span class="speaker-talk speaker-talk-cta">Submit a Proposal</span>
-            </div>
-          </a>
         </div>
       </div>
     </section>
@@ -191,66 +186,67 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
     <section class="cfp-section">
       <div class="container">
         <h2>Call for Proposals</h2>
-        <p class="cfp-intro">The workshop spans 2 days with approximately 20 talks (10 to 20 minute talks + 5-10 minute Q&A) and dedicated demo sessions. We invite submissions including but not limited to the following topics:</p>
-        <div class="cfp-categories">
-          <div class="cfp-category">
-            <h3>Open Source Robotics Hardware</h3>
-            <ul class="cfp-topics">
-              <li>Open source actuators, sensors, and end-effectors</li>
-              <li>Open source robotic arms, hands, and grippers</li>
-              <li>Open source legged and wheeled platforms</li>
-              <li>Open source humanoid robot designs</li>
-              <li>Modular and reconfigurable hardware architectures</li>
-            </ul>
+        <p class="cfp-closed-notice">The call for proposals is now closed. Thank you to everyone who submitted!</p>
+        <details class="cfp-details">
+          <summary>View original call for proposals</summary>
+          <p class="cfp-intro">The workshop spans 2 days with approximately 20 talks (10 to 20 minute talks + 5-10 minute Q&A) and dedicated demo sessions. We invite submissions including but not limited to the following topics:</p>
+          <div class="cfp-categories">
+            <div class="cfp-category">
+              <h3>Open Source Robotics Hardware</h3>
+              <ul class="cfp-topics">
+                <li>Open source actuators, sensors, and end-effectors</li>
+                <li>Open source robotic arms, hands, and grippers</li>
+                <li>Open source legged and wheeled platforms</li>
+                <li>Open source humanoid robot designs</li>
+                <li>Modular and reconfigurable hardware architectures</li>
+              </ul>
+            </div>
+            <div class="cfp-category">
+              <h3>Open Source Learning &amp; Control</h3>
+              <ul class="cfp-topics">
+                <li>Open source imitation learning and learning from demonstrations</li>
+                <li>Open source reinforcement learning for manipulation and locomotion</li>
+                <li>Open source navigation and SLAM</li>
+                <li>Open source real-world models and world models for robotics</li>
+                <li>Open source motion planning and control frameworks</li>
+                <li>Generalization to unseen objects, environments, and tasks</li>
+              </ul>
+            </div>
+            <div class="cfp-category">
+              <h3>Open Source Infrastructure</h3>
+              <ul class="cfp-topics">
+                <li>Open source simulation environments and physics engines</li>
+                <li>Open source visualization and debugging tools</li>
+                <li>Open source robotics middleware and communication frameworks</li>
+                <li>Open source deployment and orchestration tools</li>
+              </ul>
+            </div>
+            <div class="cfp-category">
+              <h3>Open Source Data &amp; Benchmarks</h3>
+              <ul class="cfp-topics">
+                <li>Open source data collection pipelines and teleoperation systems</li>
+                <li>Open source robotics datasets and data formats</li>
+                <li>Open source benchmarks for manipulation, navigation, and locomotion</li>
+                <li>Internet-scale data for training robotics foundation models</li>
+              </ul>
+            </div>
+            <div class="cfp-category">
+              <h3>Challenges &amp; Limitations</h3>
+              <ul class="cfp-topics">
+                <li>Reproducibility and standardization in open source robotics</li>
+                <li>Sim-to-real transfer gaps and failure modes</li>
+                <li>Safety, robustness, and reliability of open source systems</li>
+                <li>Bootstrapping learning from scarce or noisy data</li>
+              </ul>
+            </div>
           </div>
-          <div class="cfp-category">
-            <h3>Open Source Learning &amp; Control</h3>
-            <ul class="cfp-topics">
-              <li>Open source imitation learning and learning from demonstrations</li>
-              <li>Open source reinforcement learning for manipulation and locomotion</li>
-              <li>Open source navigation and SLAM</li>
-              <li>Open source real-world models and world models for robotics</li>
-              <li>Open source motion planning and control frameworks</li>
-              <li>Generalization to unseen objects, environments, and tasks</li>
-            </ul>
-          </div>
-          <div class="cfp-category">
-            <h3>Open Source Infrastructure</h3>
-            <ul class="cfp-topics">
-              <li>Open source simulation environments and physics engines</li>
-              <li>Open source visualization and debugging tools</li>
-              <li>Open source robotics middleware and communication frameworks</li>
-              <li>Open source deployment and orchestration tools</li>
-            </ul>
-          </div>
-          <div class="cfp-category">
-            <h3>Open Source Data &amp; Benchmarks</h3>
-            <ul class="cfp-topics">
-              <li>Open source data collection pipelines and teleoperation systems</li>
-              <li>Open source robotics datasets and data formats</li>
-              <li>Open source benchmarks for manipulation, navigation, and locomotion</li>
-              <li>Internet-scale data for training robotics foundation models</li>
-            </ul>
-          </div>
-          <div class="cfp-category">
-            <h3>Challenges &amp; Limitations</h3>
-            <ul class="cfp-topics">
-              <li>Reproducibility and standardization in open source robotics</li>
-              <li>Sim-to-real transfer gaps and failure modes</li>
-              <li>Safety, robustness, and reliability of open source systems</li>
-              <li>Bootstrapping learning from scarce or noisy data</li>
-            </ul>
-          </div>
-        </div>
-        <h3 class="cfp-dates-title">Important Dates</h3>
-        <ul class="cfp-dates">
-          <li><strong>Submission Deadline:</strong> March 2026</li>
-          <li><strong>Acceptance Notification:</strong> April 2026</li>
-          <li><strong>Workshop:</strong> May 5-6, 2026</li>
-        </ul>
-        <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="cta-button">
-          Submit a Proposal
-        </a>
+          <h3 class="cfp-dates-title">Important Dates</h3>
+          <ul class="cfp-dates">
+            <li><strong>Submission Deadline:</strong> March 2026</li>
+            <li><strong>Acceptance Notification:</strong> April 2026</li>
+            <li><strong>Workshop:</strong> May 5-6, 2026</li>
+          </ul>
+        </details>
       </div>
     </section>
 
@@ -264,9 +260,6 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
         <h2>Venue</h2>
         <h3>STATION F — Central Room, Paris</h3>
         <p>Hosted at STATION F, the world's largest startup campus, in the Central Room — an intimate 70-seat space perfect for talks, demos, and hands-on discussions.</p>
-        <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer" class="cta-button">
-          Submit a Proposal
-        </a>
       </div>
     </section>
 
@@ -548,6 +541,57 @@ import XLeRobotViewer from "components/XLeRobotViewer.astro";
 
   .cfp-section h2 {
     color: #0f172a;
+  }
+
+  .cfp-closed-notice {
+    font-size: 1.15rem;
+    color: #334155;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+
+  .cfp-details {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0;
+  }
+
+  .cfp-details summary {
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.95rem;
+    list-style: none;
+  }
+
+  .cfp-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .cfp-details summary::before {
+    content: "\25B6";
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+  }
+
+  .cfp-details[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .cfp-details[open] summary {
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 1rem;
+  }
+
+  .cfp-details .cfp-intro,
+  .cfp-details .cfp-categories,
+  .cfp-details .cfp-dates-title,
+  .cfp-details .cfp-dates {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .cfp-intro {
