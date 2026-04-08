@@ -151,6 +151,11 @@
     },
     {
       "category": "speakers-affiliated",
+      "image": "copilotkit.png",
+      "url": "https://copilotkit.ai"
+    },
+    {
+      "category": "speakers-affiliated",
       "image": "dimforge.png",
       "url": "https://www.dimforge.com"
     },
@@ -199,6 +204,12 @@
     },
     {
       "category": "speakers-affiliated",
+      "image": "intel.png",
+      "logoClass": "xl",
+      "url": "https://www.intel.com"
+    },
+    {
+      "category": "speakers-affiliated",
       "image": "kaiyuanshe.png",
       "url": "https://kaiyuanshe.cn"
     },
@@ -219,6 +230,12 @@
     },
     {
       "category": "speakers-affiliated",
+      "image": "nvidia.png",
+      "logoClass": "xl",
+      "url": "https://www.nvidia.com"
+    },
+    {
+      "category": "speakers-affiliated",
       "image": "pleias.png",
       "url": "https://pleias.fr"
     },
@@ -236,6 +253,11 @@
       "category": "speakers-affiliated",
       "image": "quansight.png",
       "url": "https://quansight.com"
+    },
+    {
+      "category": "speakers-affiliated",
+      "image": "quantstack.png",
+      "url": "https://quantstack.net"
     },
     {
       "category": "speakers-affiliated",
@@ -275,11 +297,6 @@
     },
     {
       "category": "speakers-affiliated",
-      "image": "copilotkit.png",
-      "url": "https://copilotkit.ai"
-    },
-    {
-      "category": "speakers-affiliated",
       "image": "zenoh.png",
       "url": "https://zenoh.io"
     },
@@ -287,23 +304,6 @@
       "category": "speakers-affiliated",
       "image": "zhipuai.png",
       "url": "https://www.zhipuai.cn"
-    },
-    {
-      "category": "speakers-affiliated",
-      "image": "nvidia.png",
-      "logoClass": "xl",
-      "url": "https://www.nvidia.com"
-    },
-    {
-      "category": "speakers-affiliated",
-      "image": "quantstack.png",
-      "url": "https://quantstack.net"
-    },
-    {
-      "category": "speakers-affiliated",
-      "image": "intel.png",
-      "logoClass": "xl",
-      "url": "https://www.intel.com"
     }
   ]
 }
