@@ -24,8 +24,6 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 
 const isRemoteImage = (image?: string): boolean =>
     Boolean(image && /^https?:\/\//.test(image));
-const isSvg = (image?: string): boolean =>
-    Boolean(image && image.endsWith(".svg"));
 ---
 
 <section
@@ -65,10 +63,10 @@ const isSvg = (image?: string): boolean =>
                                                     <div class="overlay card-fill" />
                                                     <div class={`card-logo boxed-logo${partner.logoClass ? ` ${partner.logoClass}` : ''}`}>
                                                         {partner?.image &&
-                                                            (isRemoteImage(partner.image) || isSvg(partner.image) ? (
+                                                            (isRemoteImage(partner.image) ? (
                                                                 <img
                                                                     class="sponsor-logo-image"
-                                                                    src={isRemoteImage(partner.image) ? partner.image : `/images/sponsors/${partner.image}`}
+                                                                    src={partner.image}
                                                                     alt="Sponsor Logo"
                                                                     loading="lazy"
                                                                     decoding="async"
