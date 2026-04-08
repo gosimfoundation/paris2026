@@ -495,18 +495,14 @@
       },
       {
         "title": {
-          "en": "From ChatGPT to OpenClaw: How Agentic AI is Redefining AI Compute and the Open Evaluation",
-          "zh": "从 ChatGPT 到 OpenClaw：Agentic AI 如何重新定义 AI 计算与开放评测"
-        },
-        "content": {
-          "en": "The evolution from ChatGPT's conversational AI to OpenClaw's autonomous agent ecosystem marks a paradigm shift in AI compute. This transformation is fundamentally bidirectional: while advanced compute infrastructure enables increasingly sophisticated agentic capabilities, the agentic paradigm itself is reshaping compute delivery through modular, skill-based architectures.\n\nOpenClaw exemplifies this new wave, where agentic AI system capabilities are determined by the interplay of large models, skills, and agent systems. This tripartite architecture demands new evaluation methodologies that assess not just model performance, but the orchestration of skills and autonomous decision-making—addressed by open evaluation initiatives like FlagEval and the Eclipse partnership PanEval.\n\nFlagOS sits at the center of this transformation, building universal and inclusive AI compute capabilities that support heterogeneous hardware backends.",
-          "zh": "从 ChatGPT 的对话式 AI 到 OpenClaw 的自主 Agent 生态系统，这一演变标志着 AI 计算范式的深刻转变。OpenClaw 代表了新一波浪潮——Agentic AI 系统的能力由大模型、技能与 Agent 系统的协同作用决定。FlagOS 处于这一转型的核心，构建支持异构硬件后端的通用、包容性 AI 算力能力。",
-          "fr": "L'évolution de l'IA conversationnelle de ChatGPT vers l'écosystème d'agents autonomes d'OpenClaw marque un changement de paradigme dans le calcul IA. FlagOS est au cœur de cette transformation, construisant des capacités de calcul IA universelles et inclusives."
+          "en": "TBD",
+          "zh": "待定",
+          "fr": "À confirmer"
         },
         "speakers": [
           {
-            "name": "Yonghua Lin",
-            "title": "VP & Chief Engineer, BAAI"
+            "name": "Gaël Varoquaux",
+            "title": "Chief Science Officer, Probabl / INRIA"
           }
         ],
         "date": {
@@ -514,7 +510,27 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "09:30 - 10:00",
+        "timeSlot": "09:30 - 09:45",
+        "type": "keynote"
+      },
+      {
+        "title": {
+          "en": "TBD",
+          "zh": "待定",
+          "fr": "À confirmer"
+        },
+        "speakers": [
+          {
+            "name": "Bill Ren",
+            "title": "Chief Open Source Liaison Officer; Board Member, CNCF"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:45 - 10:00",
         "type": "keynote"
       },
       {
@@ -732,12 +748,8 @@
       {
         "title": {
           "en": "Symposium: Embrace the Ecosystem",
-          "zh": "研讨会：拥抱生态系统"
-        },
-        "content": {
-          "en": "The Rust world moves quickly, and that's only become more true with agents writing more and more code. Frontier models know Rust basics well, but they struggle when presented with new patterns that weren't present in their training data — new language features, new libraries, idioms that diverge from the familiar.\n\nThis talk introduces Symposium, an open-source system that changes that. Symposium lets crate authors ship skills, tools, and guidance alongside their code — so adding a dependency doesn't just give your agent new APIs to call, it gives your agent the knowledge to use them well. Learn how it works and what it means to bring Rust's decentralized, composable ecosystem model to AI tooling.",
-          "zh": "Rust 生态发展迅速，随着 Agent 编写越来越多的代码，这一趋势愈发明显。前沿模型熟悉 Rust 基础，但面对训练数据中未出现过的新模式时会遇到困难。Symposium 是一个开源系统，让 crate 作者能够随代码一起发布技能、工具和指引，使 Agent 不仅能调用新 API，还能真正掌握使用方法。",
-          "fr": "Symposium est un système open source qui permet aux auteurs de crates Rust de distribuer compétences, outils et conseils avec leur code — afin que l'ajout d'une dépendance donne à votre agent non seulement de nouvelles API, mais aussi la connaissance pour les utiliser efficacement."
+          "zh": "Symposium：拥抱生态系统",
+          "fr": "Symposium : Embrasser l'écosystème"
         },
         "speakers": [
           {
@@ -750,7 +762,27 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "09:30 - 10:00",
+        "timeSlot": "09:30 - 09:45",
+        "type": "keynote"
+      },
+      {
+        "title": {
+          "en": "From ChatGPT to OpenClaw: How Agentic AI is Redefining AI Compute and the Open Evaluation",
+          "zh": "从 ChatGPT 到 OpenClaw：Agentic AI 如何重新定义 AI 计算与开放评估",
+          "fr": "De ChatGPT à OpenClaw : comment l'IA agentique redéfinit le calcul IA et l'évaluation ouverte"
+        },
+        "speakers": [
+          {
+            "name": "Yonghua Lin",
+            "title": "VP & Chief Engineer, BAAI"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "09:45 - 10:00",
         "type": "keynote"
       },
       {
@@ -1276,6 +1308,26 @@
           "fr": "5 mai"
         },
         "timeSlot": "16:10 - 16:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "OpenSeek-10B: Scaling Open-Source LLMs with Less Compute",
+          "zh": "OpenSeek-10B：用更少算力扩展开源大语言模型",
+          "fr": "OpenSeek-10B : mettre à l'échelle les LLM open source avec moins de calcul"
+        },
+        "speakers": [
+          {
+            "name": "Jiabei Chen",
+            "title": "Ph.D. Student, Institute of Automation, Chinese Academy of Sciences & BAAI"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:40 - 17:10",
         "type": "talk"
       }
     ],

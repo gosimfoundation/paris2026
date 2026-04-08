@@ -1098,6 +1098,27 @@
       "draft": false
     },
     {
+      "id": "bill-ren",
+      "name": "Bill Ren",
+      "bio": "Chief Open Source Liaison Officer at Huawei and Board Member of CNCF.",
+      "role": "Chief Open Source Liaison Officer",
+      "org": "Huawei",
+      "roleOrg": "Chief Open Source Liaison Officer, Huawei",
+      "image": "/images/speakers/bill-ren.png",
+      "tags": [
+        "keynote"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
       "id": "stefanie-senger",
       "name": "Stefanie Senger",
       "bio": "Stefanie is an open-source developer and maintainer of scikit-learn, contributing also to related libraries. She trained and taught at LeWagon (2022–2023), interned with scikit-learn (2023), and worked at muffintech (2023) before joining probabl’s open-source team in 2024. She holds a PhD in History from the University of Potsdam (2021) and was active on Wikipedia as a writer and mentor (2011–2014).",
