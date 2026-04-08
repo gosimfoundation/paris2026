@@ -105,6 +105,11 @@
         "en": "GOSIM Spotlight 2026: Frontier Creators",
         "zh": "GOSIM Spotlight 2026: Frontier Creators",
         "fr": "GOSIM Spotlight 2026: Frontier Creators"
+      },
+      "room": {
+        "en": "Open Platform",
+        "zh": "Open Platform",
+        "fr": "Open Platform"
       }
     },
     {
@@ -113,6 +118,11 @@
         "en": "Robotics Hackathon",
         "zh": "Robotics Hackathon",
         "fr": "Robotics Hackathon"
+      },
+      "room": {
+        "en": "Open Platform",
+        "zh": "Open Platform",
+        "fr": "Open Platform"
       }
     },
     {
@@ -121,6 +131,11 @@
         "en": "GOSIM Agentic Hackathon",
         "zh": "GOSIM Agentic Hackathon",
         "fr": "GOSIM Agentic Hackathon"
+      },
+      "room": {
+        "en": "Open Platform",
+        "zh": "Open Platform",
+        "fr": "Open Platform"
       }
     },
     {
@@ -480,9 +495,9 @@
     "agentic-ai-summit": [
       {
         "title": {
-          "en": "Registration & Breakfast",
-          "zh": "注册 & 早餐",
-          "fr": "Inscription & Petit-déjeuner"
+          "en": "Registration",
+          "zh": "注册",
+          "fr": "Inscription"
         },
         "speakers": [],
         "date": {
@@ -1041,9 +1056,9 @@
     "open-source-model": [
       {
         "title": {
-          "en": "Registration & Breakfast",
-          "zh": "注册 & 早餐",
-          "fr": "Inscription & Petit-déjeuner"
+          "en": "Registration",
+          "zh": "注册",
+          "fr": "Inscription"
         },
         "speakers": [],
         "date": {
@@ -1334,9 +1349,9 @@
     "ai-generative-app": [
       {
         "title": {
-          "en": "Registration & Breakfast",
-          "zh": "注册 & 早餐",
-          "fr": "Inscription & Petit-déjeuner"
+          "en": "Registration",
+          "zh": "注册",
+          "fr": "Inscription"
         },
         "speakers": [],
         "date": {
@@ -1777,9 +1792,9 @@
     "agentic-ai-on-edge": [
       {
         "title": {
-          "en": "Registration & Breakfast",
-          "zh": "注册 & 早餐",
-          "fr": "Inscription & Petit-déjeuner"
+          "en": "Registration",
+          "zh": "注册",
+          "fr": "Inscription"
         },
         "speakers": [],
         "date": {

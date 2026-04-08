@@ -287,6 +287,17 @@
       "category": "speakers-affiliated",
       "image": "zhipuai.png",
       "url": "https://www.zhipuai.cn"
+    },
+    {
+      "category": "speakers-affiliated",
+      "image": "nvidia.png",
+      "logoClass": "xl",
+      "url": "https://www.nvidia.com"
+    },
+    {
+      "category": "speakers-affiliated",
+      "image": "quantstack.svg",
+      "url": "https://quantstack.net"
     }
   ]
 }

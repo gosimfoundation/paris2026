@@ -329,11 +329,11 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                   <span class="panel-count">{t.sessionCount(sessions.length)}</span>
                 </div>
 
-                {/* Pre-keynote breaks (e.g. Registration & Breakfast) */}
+                {/* Pre-keynote breaks (e.g. Registration) */}
                 {earlyBreaks.length > 0 && (
                   <div class="session-list">
                     {earlyBreaks.map((session) => {
-                      const isReg = (session.title as any)?.en === "Registration & Breakfast"
+                      const isReg = (session.title as any)?.en === "Registration"
                       return (
                         <div class={isReg ? "break-divider registration-divider" : "break-divider"}>
                           <span class="break-line" />
@@ -348,19 +348,36 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                   </div>
                 )}
 
-                {/* Keynote placeholder */}
+                {/* Keynote block */}
                 <div class="keynote-block">
-                  {keynotes.length > 0 ? keynotes.map((kn) => (
-                    <div class="keynote-tbd">
-                      <div class="session-left">
-                        {kn.timeSlot && <span class="session-time">{kn.timeSlot}</span>}
-                        <span class="keynote-tbd-badge">{t.keynotesLabel}</span>
+                  {keynotes.length > 0 ? keynotes.map((kn) => {
+                    const hasSpeakers = kn.speakers && kn.speakers.length > 0
+                    const titleText = loc(kn.title)
+                    const isTitleTbd = !titleText || titleText === "TBD" || titleText === "待定" || titleText === "À confirmer"
+                    return (
+                      <div class="keynote-tbd">
+                        <div class="session-left">
+                          {kn.timeSlot && <span class="session-time">{kn.timeSlot}</span>}
+                          <span class="keynote-tbd-badge">{t.keynotesLabel}</span>
+                        </div>
+                        <div class="session-right">
+                          {hasSpeakers ? (
+                            <div class="keynote-speaker-list">
+                              {kn.speakers.map((sp: any) => (
+                                <div class="keynote-speaker-entry">
+                                  <span class="keynote-speaker-name">{sp.name}</span>
+                                  {sp.title && <span class="keynote-speaker-title">{sp.title}</span>}
+                                  {!isTitleTbd && <span class="keynote-talk-title">{titleText}</span>}
+                                </div>
+                              ))}
+                            </div>
+                          ) : (
+                            <span class="keynote-tbd-text">{t.keynotesTbd}</span>
+                          )}
+                        </div>
                       </div>
-                      <div class="session-right">
-                        <span class="keynote-tbd-text">{t.keynotesTbd}</span>
-                      </div>
-                    </div>
-                  )) : (
+                    )
+                  }) : (
                     <div class="keynote-tbd">
                       <div class="session-left">
                         <span class="keynote-tbd-badge">{t.keynotesLabel}</span>
@@ -399,7 +416,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                       const hasContent = !isBreak && session.speakers && session.speakers.length > 0
                       if (isBreak) {
                         const isLunch = (session.title as any)?.en === "Lunch" || session.title === "Lunch"
-                        const isRegistration = (session.title as any)?.en === "Registration & Breakfast"
+                        const isRegistration = (session.title as any)?.en === "Registration"
                         return (
                           <div class={isLunch ? "break-divider lunch-divider" : isRegistration ? "break-divider registration-divider" : "break-divider"}>
                             <span class="break-line" />
@@ -859,6 +876,37 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.45);
     font-style: italic;
+  }
+
+  .keynote-speaker-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .keynote-speaker-entry {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4rem;
+  }
+
+  .keynote-speaker-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .keynote-speaker-title {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .keynote-talk-title {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.45);
+    width: 100%;
   }
 
   /* ── Break divider ── */
