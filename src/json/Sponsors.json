@@ -298,6 +298,12 @@
       "category": "speakers-affiliated",
       "image": "quantstack.svg",
       "url": "https://quantstack.net"
+    },
+    {
+      "category": "speakers-affiliated",
+      "image": "intel.png",
+      "logoClass": "xl",
+      "url": "https://www.intel.com"
     }
   ]
 }
