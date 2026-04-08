@@ -626,18 +626,14 @@
       },
       {
         "title": {
-          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
-          "zh": "Agent、代码与平行世界——仓颉编程语言团队 300 天的 Agentic 进化之路"
-        },
-        "content": {
-          "en": "This talk describes the complete process of Cangjie's 300-day AI R&D transformation. Starting with an accidental AI coding attempt in May 2025, the team began piloting and nurturing AI pilot teams, gradually implemented the Agent Centric Engineering (ACE) model, and selected 30% of teams to pilot end-to-end AI.\n\nResults: the pilot Sprint productivity of the compiler team improved by 240%–2600%, the third-party library team by 132%–816%, and the standard library team by 125%. The core concept: actively embrace AI, break the shackles of thinking, and realize the reconstruction of individual and team values.",
-          "zh": "本演讲介绍仓颉团队 300 天 AI 研发转型的完整历程。从 2025 年 5 月一次偶然的 AI 编程尝试出发，团队逐步推行 Agent Centric Engineering（ACE）模型，选取 30% 团队试点端到端 AI。编译器团队 Sprint 生产力提升 240%–2600%，第三方库团队提升 132%–816%，标准库团队提升 125%。",
-          "fr": "Cet exposé décrit le processus complet de la transformation R&D IA de Cangjie sur 300 jours, en implémentant progressivement le modèle Agent Centric Engineering (ACE). La productivité Sprint de l'équipe compilateur a augmenté de 240% à 2600%."
+          "en": "openJiuwen: Building the Intelligent Runtime and Development Platform for the Agentic AI Era",
+          "zh": "openJiuwen：构建 Agentic AI 时代的智能运行时与开发平台",
+          "fr": "openJiuwen : Construire le runtime intelligent et la plateforme de développement pour l'ère Agentic AI"
         },
         "speakers": [
           {
-            "name": "Dong Xin",
-            "title": "Program Director, Central Software Institute, Huawei"
+            "name": "Yu Tao",
+            "title": "Chief Scientist, Huawei Central Software Institute Singapore"
           }
         ],
         "date": {
@@ -1455,6 +1451,21 @@
       },
       {
         "title": {
+          "en": "TBD",
+          "zh": "待定",
+          "fr": "À confirmer"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:00 - 15:20",
+        "type": "talk"
+      },
+      {
+        "title": {
           "en": "Tea Break",
           "zh": "茶歇",
           "fr": "Pause café"
@@ -1557,6 +1568,66 @@
       },
       {
         "title": {
+          "en": "Intelligent Agent Architectures: Past, Present, and Future",
+          "zh": "智能代理架构：过去、现在与未来",
+          "fr": "Architectures d'Agents Intelligents : Passé, Présent et Futur"
+        },
+        "speakers": [
+          {
+            "name": "Alexy Khrabrov",
+            "title": "Founder, CR4AI; Northeastern University"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 10:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Who Controls Your Agents? Building Vendor-Neutral Infrastructure for Agentic Developer Tools",
+          "zh": "谁在控制你的智能体？构建面向 Agentic 开发工具的厂商中立基础设施",
+          "fr": "Qui contrôle vos agents ? Construire une infrastructure neutre pour les outils de développement agentiques"
+        },
+        "speakers": [
+          {
+            "name": "Thomas Froment",
+            "title": "Program Manager, Development Tools, Eclipse Foundation"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:40 - 11:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
+          "zh": "智能体、代码与平行世界——仓颉编程语言团队的300天 Agentic 进化之旅",
+          "fr": "Agents, Code & Mondes Parallèles — L'évolution agentique de 300 jours de l'équipe Cangjie"
+        },
+        "speakers": [
+          {
+            "name": "Dong Xin",
+            "title": "Project Group Director, Huawei Central Software Institute"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:00 - 11:20",
+        "type": "talk"
+      },
+      {
+        "title": {
           "en": "Octos Workshop",
           "zh": "Octos 工作坊"
         },
@@ -1617,6 +1688,26 @@
         },
         "timeSlot": "15:20 - 15:40",
         "type": "break"
+      },
+      {
+        "title": {
+          "en": "A2A",
+          "zh": "A2A",
+          "fr": "A2A"
+        },
+        "speakers": [
+          {
+            "name": "Holt Skinner",
+            "title": "Software Engineer, Google Cloud"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "17:00 - 17:20",
+        "type": "talk"
       }
     ],
     "agentic-ai-on-edge": [
@@ -1720,6 +1811,26 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:10 - 11:35",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Rewriting Agent Infrastructure in Rust",
+          "zh": "用 Rust 重写智能体基础设施",
+          "fr": "Réécrire l'infrastructure des agents en Rust"
+        },
+        "speakers": [
+          {
+            "name": "Michael Yuan",
+            "title": "Maintainer / CEO, WasmEdge / Second State"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "11:35 - 12:00",
         "type": "talk"
       },
       {
