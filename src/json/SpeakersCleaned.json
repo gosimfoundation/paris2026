@@ -717,6 +717,7 @@
       "name": "Alexy Khrabrov",
       "title": "Founder, CR4AI; Northeastern University",
       "image": "/images/speakers/better_portrait/alexy-khrabrov.png",
+      "draft": true,
       "bio": "",
       "role": "Founder",
       "org": "CR4AI, Northeastern University",
