@@ -94,8 +94,8 @@
       "draft": false
     },
     {
-      "id": "arturo-amor",
-      "name": "Arturo Amor",
+      "id": "david-arturo-amor-quiroz",
+      "name": "David Arturo Amor Quiroz",
       "bio": "I did my PhD in theoretical quantum physics at the National Autonomous University of Mexico (UNAM), followed by a postdoctoral position in the same field at École Polytechnique in France. Since 2021, I have been a core contributor to scikit-learn, serving as a member of the documentation team to ensure clear, accessible and up-to-date documentation for easier usability.  \r\n\r\nCurrently, I’m a co-founder at :probabl., a company founded by the scikit-learn creators and maintainers. In this role, I’m part of the training and certification team, where I work developing educational materials and certification programs that bridge the gap between theory and practice, helping professionals achieve internationally recognized standards in machine learning and the related good practices.",
       "role": "ML Engineer",
       "org": "Probabl",
@@ -943,8 +943,8 @@
       "draft": false
     },
     {
-      "id": "minakokojima",
-      "name": "Minakokojima",
+      "id": "minako-kojima",
+      "name": "Minako Kojima",
       "bio": "I'm the Head of Developer Relations at Kimi, where I've also held positions in post-training and infrastructure. Prior to joining Kimi, I worked as an algorithm engineer at Google. I won several gold medals at ACM ICPC regional contests during college.",
       "role": "Head of Developer Relations",
       "org": "Moonshot AI (Kimi)",
@@ -1579,6 +1579,27 @@
       "image": "/images/speakers/better_portrait/yonghui-wu.png",
       "tags": [
         "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "weiyu-xie",
+      "name": "Weiyu Xie",
+      "bio": "Ph.D. Candidate at Tsinghua University.",
+      "role": "Ph.D. Candidate",
+      "org": "Tsinghua University",
+      "roleOrg": "Ph.D. Candidate, Tsinghua University",
+      "image": "/images/speakers/better_portrait/weiyu-xie.png",
+      "tags": [
+        "agentic-ai-on-edge"
       ],
       "socialLinks": {
         "mastodon": "",
