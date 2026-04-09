@@ -717,7 +717,7 @@
       "name": "Alexy Khrabrov",
       "title": "Founder, CR4AI; Northeastern University",
       "image": "/images/speakers/better_portrait/alexy-khrabrov.png",
-      "draft": true,
+      "draft": false,
       "bio": "",
       "role": "Founder",
       "org": "CR4AI, Northeastern University",
@@ -730,8 +730,7 @@
         "linkedin": "",
         "website": ""
       },
-      "status": "Accept",
-      "draft": false
+      "status": "Accept"
     },
     {
       "id": "megan-knight",
@@ -1772,6 +1771,111 @@
         "github": "",
         "linkedin": "",
         "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "tianyi-han",
+      "name": "Tianyi HAN",
+      "role": "Architect Solution, AI Systems & Agent Governance",
+      "org": "Capgemini",
+      "roleOrg": "Architect Solution, AI Systems & Agent Governance, Capgemini",
+      "image": "/images/speakers/better_portrait/tianyi-han.png",
+      "bio": "Tianyi Han is an Architect Solution focused on AI systems, agent governance, and decision-support tooling. His work explores how to make AI-driven systems more controllable, auditable, and reproducible through runtime policy enforcement, traceability, and replay.",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/hant916/AILUROS.io",
+        "linkedin": "https://www.linkedin.com/in/tianyi-han-58278844/",
+        "website": "https://www.aixagent.io"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "susanna-wong",
+      "name": "Susanna Wong",
+      "role": "Staff AI Engineer",
+      "org": "Typeform",
+      "roleOrg": "Staff AI Engineer, Typeform",
+      "image": "/images/speakers/better_portrait/susanna-wong.png",
+      "bio": "Susanna is a Staff Software Engineer passionate about all web technologies and engineering excellence in the adoption of AI. She has been a software developer with experience spanning across multiple industries, from small agile teams in big corporates to startups.",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/studioswong",
+        "linkedin": "https://www.linkedin.com/in/susanna-wong-london/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jad-fayad",
+      "name": "Jad Fayad",
+      "role": "Manager of Systems & AI Engineering",
+      "org": "Moon Surgical",
+      "roleOrg": "Manager of Systems & AI Engineering, Moon Surgical",
+      "image": "/images/speakers/better_portrait/jad-fayad.png",
+      "bio": "Jad Fayad is a Founding Engineer at Moon Surgical where he leads the AI engineering work. His work focuses on applying foundation models and agentic AI to surgical robotics. He has contributed to the development of Open-H Embodiment, the first open dataset for healthcare robotics.",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/Jadfyd",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/fayadjad/",
+        "website": "https://www.moonsurgical.com/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "tiberiu-socaci",
+      "name": "Tiberiu Socaci",
+      "role": "CEO & Co-Founder",
+      "org": "Makeitfuture",
+      "roleOrg": "CEO & Co-Founder, Makeitfuture",
+      "image": "/images/speakers/better_portrait/tiberiu-socaci.png",
+      "bio": "Tiberiu Socaci is the CEO & Co-Founder of Makeitfuture — a leading AI and automation agency across the UK, France, Germany, and Romania. He is passionate about digital transformation and helping businesses streamline complex workflows using AI, Make.com, Airtable, n8n, and no-code solutions.",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/tiberiusocaci/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zonghuan-wu",
+      "name": "Zonghuan Wu",
+      "role": "Lead, MoFA.AI",
+      "org": "Relevant Study LLC",
+      "roleOrg": "Lead, MoFA.AI, Relevant Study LLC",
+      "image": "/images/speakers/better_portrait/zonghuan-wu.png",
+      "bio": "Zonghuan Wu, Ph.D. is a core contributor to Octos, an open-source Rust-native Agentic OS, and lead of MoFA, an open-source agent framework for Composition AI. Previously a tech lead and architect at Huawei's US Research Lab, he spent over a decade building AI, knowledge graph, and search systems at scale.",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/XiaoKuge",
+        "linkedin": "https://www.linkedin.com/in/zonghuan/",
+        "website": "https://relevantstudy.com"
       },
       "status": "Accept",
       "draft": false

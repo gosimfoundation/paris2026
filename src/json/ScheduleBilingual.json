@@ -1604,8 +1604,9 @@
       },
       {
         "title": {
-          "en": "Building with StrongDM Attractor",
-          "zh": "使用 StrongDM Attractor 进行构建"
+          "en": "Building with Attractor",
+          "zh": "使用 Attractor 构建",
+          "fr": "Construire avec Attractor"
         },
         "content": {
           "en": "This talk covers experience working with StrongDM's Attractor: a multi-agent orchestrator capable of delivering production-ready features by walking a graph of nodes. Attractor has been used internally to deliver drivers for cloud databases, one-shot simple compiler development (which took a lot of prompting previously), and for complicated numerical analysis algorithm tasks. The specification is open source.",
@@ -1652,11 +1653,16 @@
       },
       {
         "title": {
-          "en": "TBD",
-          "zh": "待定",
-          "fr": "À confirmer"
+          "en": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It",
+          "zh": "自进化应用：构建越用越智能的软件",
+          "fr": "Applications auto-évolutives"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Tiberiu Socaci",
+            "title": "CEO & Co-Founder, Makeitfuture"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
@@ -1682,11 +1688,16 @@
       },
       {
         "title": {
-          "en": "Octos",
-          "zh": "Octos",
-          "fr": "Octos"
+          "en": "From LLM Apps to Agent Systems: Building an AI Operating System with Octos",
+          "zh": "从 LLM 应用到 Agent 系统：用 Octos 构建 AI 操作系统",
+          "fr": "Des apps LLM aux systèmes agents : Construire un OS IA avec Octos"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Zonghuan Wu",
+            "title": "Lead, MoFA.AI, Relevant Study LLC"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
@@ -1780,14 +1791,14 @@
       },
       {
         "title": {
-          "en": "Intelligent Agent Architectures: Past, Present, and Future",
-          "zh": "智能代理架构：过去、现在与未来",
-          "fr": "Architectures d'Agents Intelligents : Passé, Présent et Futur"
+          "en": "From LLM Calls to Governed Agent Systems: Building a Runtime for Auditability, Replay, and Control",
+          "zh": "从 LLM 调用到受治理的 Agent 系统：构建可审计、可回放、可控的运行时",
+          "fr": "Des appels LLM aux systèmes agents gouvernés"
         },
         "speakers": [
           {
-            "name": "Alexy Khrabrov",
-            "title": "Founder, CR4AI; Northeastern University"
+            "name": "Tianyi HAN",
+            "title": "Architect Solution, AI Systems & Agent Governance, Capgemini"
           }
         ],
         "date": {
@@ -1939,6 +1950,26 @@
           "fr": "5 mai"
         },
         "timeSlot": "17:00 - 17:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "The Web Was Built for Humans - Agents Broke It. Now We Need Agentic Apps.",
+          "zh": "Web 是为人类而建的——Agent 打破了它。现在我们需要 Agentic 应用。",
+          "fr": "Le Web était fait pour les humains - les agents l'ont cassé. Nous avons besoin d'apps agentiques."
+        },
+        "speakers": [
+          {
+            "name": "Susanna Wong",
+            "title": "Staff AI Engineer, Typeform"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:40 - 12:00",
         "type": "talk"
       }
     ],
@@ -2534,52 +2565,92 @@
         },
         "timeSlot": "17:20 - 17:40",
         "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics",
+          "zh": "Project Nexus：用于机器人的跨平台 GPU Rust 多物理场仿真器",
+          "fr": "Project Nexus : Simulateur multiphysique Rust basé GPU multiplateforme pour la robotique"
+        },
+        "speakers": [
+          {
+            "name": "Sébastien Crozet",
+            "title": "Founder, Dimforge"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "17:40 - 18:00",
+        "type": "talk"
       }
     ],
     "ws-vllm-paris2026": [
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "茶歇",
-          "fr": "Café du matin"
+          "en": "vLLM Workshop: Overview & Opening",
+          "zh": "vLLM 工作坊：概述与开幕",
+          "fr": "Atelier vLLM : Vue d'ensemble"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Jiaju Zhang",
+            "title": "Chief Architect, Red Hat"
+          },
+          {
+            "name": "Erwan Gallen",
+            "title": "Senior Principal Product Manager, Red Hat"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break"
-      },
-      {
-        "title": {
-          "en": "vLLM Workshop",
-          "zh": "vLLM 工作坊"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "10:20 - 12:00",
+        "timeSlot": "10:20 - 11:00",
         "type": "workshop"
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Accelerators for Agentic AI with vLLM",
+          "zh": "利用 vLLM 加速 Agentic AI",
+          "fr": "Accélérateurs pour l'IA agentique avec vLLM"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Erwan Gallen",
+            "title": "Senior Principal Product Manager, Red Hat"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
+        "timeSlot": "11:00 - 11:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Building, Testing and Contributing to vLLM: A Developer's Guide",
+          "zh": "构建、测试和贡献 vLLM：开发者指南",
+          "fr": "Construire, tester et contribuer à vLLM : Guide du développeur"
+        },
+        "speakers": [
+          {
+            "name": "Daniele Trifirò",
+            "title": "Principal Software Engineer, Red Hat"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "11:40 - 12:00",
+        "type": "talk"
       }
     ],
     "ws-oh-tech-forum": [
@@ -2804,9 +2875,49 @@
         },
         "timeSlot": "15:20 - 15:40",
         "type": "break"
+      },
+      {
+        "title": {
+          "en": "RL Training Lab: Building a High-Performance RL Pipeline with SGLang",
+          "zh": "RL 训练实验室：用 SGLang 构建高性能强化学习流水线",
+          "fr": "RL Training Lab : Construire un pipeline RL haute performance avec SGLang"
+        },
+        "speakers": [
+          {
+            "name": "Ethan (Yusheng) Su",
+            "title": "Member of Technical Staff, RadixArk"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:30 - 16:00",
+        "type": "talk"
       }
     ],
     "ws-own-your-data-paris2026": [
+      {
+        "title": {
+          "en": "Workshop Welcome & Introduction",
+          "zh": "工作坊欢迎致辞与介绍",
+          "fr": "Accueil et introduction de l'atelier"
+        },
+        "speakers": [
+          {
+            "name": "Cailean Osborne",
+            "title": "Head of Ecosystem Development, Probabl"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "talk"
+      },
       {
         "title": {
           "en": "Morning Coffee",
@@ -2824,9 +2935,9 @@
       },
       {
         "title": {
-          "en": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
-          "zh": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
-          "fr": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model"
+          "en": "Leading-edge Tabular AI: open table foundation models with TabICLv2",
+          "zh": "前沿表格 AI：TabICLv2 开放表格基础模型",
+          "fr": "IA tabulaire de pointe : modèles de fondation pour tableaux avec TabICLv2"
         },
         "speakers": [
           {
@@ -2888,9 +2999,9 @@
       },
       {
         "title": {
-          "en": "Accelerating scikit-learn with GPUs",
-          "zh": "Accelerating scikit-learn with GPUs",
-          "fr": "Accelerating scikit-learn with GPUs"
+          "en": "Accelerated scikit-learn Three Ways",
+          "zh": "三种方式加速 scikit-learn",
+          "fr": "scikit-learn accéléré de trois façons"
         },
         "speakers": [
           {
@@ -2928,29 +3039,18 @@
       },
       {
         "title": {
-          "en": "TBD",
-          "zh": "TBD",
-          "fr": "TBD"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:00 - 12:20",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Kedro: The Toolbox for Production-Ready Data Pipelines",
-          "zh": "Kedro: The Toolbox for Production-Ready Data Pipelines",
-          "fr": "Kedro: The Toolbox for Production-Ready Data Pipelines"
+          "en": "Embedding Software Engineering Best Practices into AI Projects with Kedro",
+          "zh": "用 Kedro 将软件工程最佳实践融入 AI 项目",
+          "fr": "Intégrer les meilleures pratiques de génie logiciel dans les projets IA avec Kedro"
         },
         "speakers": [
           {
+            "name": "Merel Theisen",
+            "title": "Principal Software Engineer, QuantumBlack"
+          },
+          {
             "name": "Sajid Alam",
-            "title": "QuantumBlack, AI by McKinsey"
+            "title": "Senior Software Engineer, McKinsey & Company"
           }
         ],
         "date": {
@@ -2958,7 +3058,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "12:20 - 12:40",
+        "timeSlot": "12:00 - 12:40",
         "type": "talk"
       },
       {
