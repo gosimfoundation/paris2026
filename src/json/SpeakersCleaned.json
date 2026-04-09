@@ -182,7 +182,7 @@
       "role": "Head of AI",
       "org": "Eclipse Foundation",
       "roleOrg": "Head of AI, Eclipse Foundation",
-      "image": "/images/speakers/michael-berns.png",
+      "image": "/images/speakers/better_portrait/michael-berns.png",
       "bio": "",
       "tags": [],
       "socialLinks": {
@@ -716,7 +716,7 @@
     {
       "name": "Alexy Khrabrov",
       "title": "Founder, CR4AI; Northeastern University",
-      "image": "/images/speakers/alexy-khrabrov.png",
+      "image": "/images/speakers/better_portrait/alexy-khrabrov.png",
       "bio": "",
       "role": "Founder",
       "org": "CR4AI, Northeastern University",
@@ -1117,7 +1117,7 @@
       "role": "Chief Open Source Liaison Officer",
       "org": "Huawei",
       "roleOrg": "Chief Open Source Liaison Officer, Huawei",
-      "image": "/images/speakers/bill-ren.png",
+      "image": "/images/speakers/better_portrait/bill-ren.png",
       "tags": [
         "keynote"
       ],
@@ -1176,7 +1176,7 @@
     {
       "name": "Holt Skinner",
       "title": "Software Engineer, Google Cloud",
-      "image": "/images/speakers/holt-skinner.png",
+      "image": "/images/speakers/better_portrait/holt-skinner.png",
       "bio": "",
       "role": "Software Engineer",
       "org": "Google Cloud",
