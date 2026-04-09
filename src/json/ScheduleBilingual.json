@@ -107,9 +107,9 @@
         "fr": "GOSIM Spotlight 2026: Frontier Creators"
       },
       "room": {
-        "en": "Open Platform",
-        "zh": "Open Platform",
-        "fr": "Open Platform"
+        "en": "Open Stage",
+        "zh": "Open Stage",
+        "fr": "Open Stage"
       }
     },
     {
@@ -218,8 +218,160 @@
     }
   ],
   "sessions": {
-    "hackathon-spotlight": [],
-    "hackathon-robotics": [],
+    "hackathon-spotlight": [
+      {
+        "title": {
+          "en": "GOSIM Spotlight 2026: Frontier Creators",
+          "zh": "GOSIM Spotlight 2026: Frontier Creators",
+          "fr": "GOSIM Spotlight 2026: Frontier Creators"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "GOSIM Spotlight 2026: Frontier Creators",
+          "zh": "GOSIM Spotlight 2026: Frontier Creators",
+          "fr": "GOSIM Spotlight 2026: Frontier Creators"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "hackathon"
+      }
+    ],
+    "hackathon-robotics": [
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "Morning Coffee",
+          "fr": "Morning Coffee"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Robotics Hackathon",
+          "zh": "Robotics Hackathon",
+          "fr": "Robotics Hackathon"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:20 - 12:00",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "Lunch",
+          "fr": "Lunch"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Robotics Hackathon",
+          "zh": "Robotics Hackathon",
+          "fr": "Robotics Hackathon"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 17:30",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "Morning Coffee",
+          "fr": "Morning Coffee"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Robotics Hackathon",
+          "zh": "Robotics Hackathon",
+          "fr": "Robotics Hackathon"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 12:00",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "Lunch",
+          "fr": "Lunch"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Robotics Hackathon",
+          "zh": "Robotics Hackathon",
+          "fr": "Robotics Hackathon"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:00 - 17:30",
+        "type": "hackathon"
+      }
+    ],
     "hackathon-agentic": [
       {
         "title": {
@@ -1032,9 +1184,9 @@
         },
         "speakers": [],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "08:30 - 09:30",
         "type": "break"
@@ -1047,9 +1199,9 @@
         },
         "speakers": [],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "10:00 - 10:20",
         "type": "break"
@@ -1071,9 +1223,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "10:20 - 10:50",
         "type": "talk"
@@ -1095,9 +1247,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "10:50 - 11:20",
         "type": "talk"
@@ -1114,9 +1266,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "11:20 - 12:00",
         "type": "talk"
@@ -1129,9 +1281,9 @@
         },
         "speakers": [],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break"
@@ -1153,9 +1305,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "14:00 - 14:20",
         "type": "talk"
@@ -1177,9 +1329,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "14:20 - 14:40",
         "type": "talk"
@@ -1201,9 +1353,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "14:40 - 15:00",
         "type": "talk"
@@ -1225,9 +1377,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "15:00 - 15:20",
         "type": "talk"
@@ -1240,9 +1392,9 @@
         },
         "speakers": [],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "15:20 - 15:40",
         "type": "break"
@@ -1264,9 +1416,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "15:40 - 16:10",
         "type": "talk"
@@ -1288,9 +1440,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "16:10 - 16:40",
         "type": "talk"
@@ -1308,9 +1460,9 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
         "timeSlot": "16:40 - 17:10",
         "type": "talk"
@@ -2546,9 +2698,9 @@
     "ws-sglang-paris2026": [
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "茶歇",
-          "fr": "Café du matin"
+          "en": "Lunch",
+          "zh": "午餐",
+          "fr": "Déjeuner"
         },
         "speakers": [],
         "date": {
@@ -2556,7 +2708,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:00 - 10:20",
+        "timeSlot": "12:00 - 14:00",
         "type": "break"
       },
       {
@@ -2580,38 +2732,8 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:20 - 12:00",
+        "timeSlot": "14:00 - 15:30",
         "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
-      },
-      {
-        "title": {
-          "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "15:20 - 15:40",
-        "type": "break"
       },
       {
         "title": {
@@ -2636,6 +2758,21 @@
         },
         "timeSlot": "14:00 - 17:30",
         "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:20 - 15:40",
+        "type": "break"
       }
     ],
     "ws-own-your-data-paris2026": [
@@ -2647,9 +2784,9 @@
         },
         "speakers": [],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "10:00 - 10:20",
         "type": "break"
@@ -2667,9 +2804,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "10:20 - 10:40",
         "type": "talk"
@@ -2691,9 +2828,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "10:40 - 11:00",
         "type": "talk"
@@ -2711,9 +2848,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "11:00 - 11:20",
         "type": "talk"
@@ -2731,9 +2868,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "11:20 - 11:40",
         "type": "talk"
@@ -2751,9 +2888,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "11:40 - 12:00",
         "type": "talk"
@@ -2766,9 +2903,9 @@
         },
         "speakers": [],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "12:00 - 12:20",
         "type": "talk"
@@ -2786,9 +2923,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "12:20 - 12:40",
         "type": "talk"
@@ -2810,9 +2947,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "12:40 - 13:00",
         "type": "talk"
@@ -2825,9 +2962,9 @@
         },
         "speakers": [],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "13:00 - 14:00",
         "type": "break"
@@ -2845,9 +2982,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "14:00 - 14:20",
         "type": "talk"
@@ -2869,9 +3006,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "14:20 - 14:40",
         "type": "talk"
@@ -2893,9 +3030,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "14:40 - 15:00",
         "type": "talk"
@@ -2917,9 +3054,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "15:00 - 15:20",
         "type": "talk"
@@ -2937,9 +3074,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "15:20 - 15:40",
         "type": "talk"
@@ -2957,9 +3094,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "15:40 - 16:00",
         "type": "talk"
@@ -2977,9 +3114,9 @@
           }
         ],
         "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
         },
         "timeSlot": "16:00 - 16:20",
         "type": "talk"
@@ -2992,12 +3129,74 @@
         },
         "speakers": [],
         "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:20 - 16:40",
+        "type": "talk"
+      }
+    ],
+    "ws-agentic-app": [
+      {
+        "title": {
+          "en": "Morning Coffee",
+          "zh": "Morning Coffee",
+          "fr": "Morning Coffee"
+        },
+        "speakers": [],
+        "date": {
           "en": "May 6",
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "16:20 - 16:40",
-        "type": "talk"
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Build Your Own Agentic App Workshop",
+          "zh": "Build Your Own Agentic App Workshop",
+          "fr": "Build Your Own Agentic App Workshop"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:20 - 12:00",
+        "type": "workshop"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "Lunch",
+          "fr": "Lunch"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Build Your Own Agentic App Workshop",
+          "zh": "Build Your Own Agentic App Workshop",
+          "fr": "Build Your Own Agentic App Workshop"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:00 - 17:30",
+        "type": "workshop"
       }
     ]
   }
