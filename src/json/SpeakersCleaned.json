@@ -45,11 +45,11 @@
       "id": "ws-sglang-paris2026"
     },
     {
-      "name": "Own Your Data Workshop",
+      "name": "Own Your Data Science and AI Workshop",
       "id": "ws-own-your-data-paris2026"
     },
     {
-      "name": "Agentic App Workshop",
+      "name": "Build Your Own Agentic App Workshop",
       "id": "ws-agentic-app"
     }
   ],
@@ -929,7 +929,6 @@
       "roleOrg": "Senior Principal Engineer, Amazon",
       "image": "/images/speakers/better_portrait/niko-matsakis.png",
       "tags": [
-        "agentic-ai-summit",
         "keynote"
       ],
       "socialLinks": {
