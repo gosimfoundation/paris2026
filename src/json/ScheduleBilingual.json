@@ -1065,6 +1065,26 @@
       },
       {
         "title": {
+          "en": "openEuler AI Exploration: AI Technical Innovation and Practice",
+          "zh": "openEuler AI 探索：AI 技术创新与实践",
+          "fr": "openEuler AI Exploration: AI Technical Innovation and Practice"
+        },
+        "speakers": [
+          {
+            "name": "Zhenyu Zheng",
+            "title": "openEuler"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:40 - 15:00",
+        "type": "talk"
+      },
+      {
+        "title": {
           "en": "Tea Break",
           "zh": "茶歇",
           "fr": "Pause café"
@@ -1075,7 +1095,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "15:20 - 15:40",
+        "timeSlot": "15:00 - 15:30",
         "type": "break"
       },
       {
@@ -1659,6 +1679,21 @@
         },
         "timeSlot": "15:20 - 15:40",
         "type": "break"
+      },
+      {
+        "title": {
+          "en": "Octos",
+          "zh": "Octos",
+          "fr": "Octos"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:40 - 16:00",
+        "type": "talk"
       },
       {
         "title": {
