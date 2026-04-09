@@ -15,6 +15,7 @@ type Event = {
   content: string
   date: string
   timeSlot: string
+  type?: string
   speakers?: { name: string; image?: string; roleOrg: string }[]
   room?: string
 }
@@ -50,6 +51,7 @@ export async function getStaticPaths() {
         date:
           typeof event.date === "string" ? event.date : event.date?.en || "",
         timeSlot: event.timeSlot,
+        type: event.type,
         speakers:
           event.speakers?.map((s: any) => ({
             name: typeof s.name === "string" ? s.name : s.name?.en || "",
@@ -105,8 +107,13 @@ const currentIndex = allEvents.findIndex((e) => e.slug === currentSlug)
 const prevEvent = currentIndex > 0 ? allEvents[currentIndex - 1] : allEvents[allEvents.length - 1]
 const nextEvent = currentIndex < allEvents.length - 1 ? allEvents[currentIndex + 1] : allEvents[0]
 
-// Find the first matching category for the event
-const eventCategory = category || "Uncategorized"
+// Find the human-readable category label
+const eventCategory = (() => {
+  if (eventDetails.type === "keynote") return "Keynote"
+  const cat = schedule.categories.find((c) => c.id === category)
+  if (cat?.name) return typeof cat.name === "string" ? cat.name : (cat.name as any)?.en || category
+  return category || "Uncategorized"
+})()
 ---
 
 <Layout
