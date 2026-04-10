@@ -1224,30 +1224,6 @@
       },
       {
         "title": {
-          "en": "The Smol Training Playbook: Lessons from Training State-of-the-Art LLMs",
-          "zh": "小型训练手册：训练最先进 LLM 的经验教训"
-        },
-        "content": {
-          "en": "A deep dive into the real-world challenges of training LLMs at scale, covering infrastructure, 5D parallelism, performance tuning, and hard-earned lessons from training SmolLM3 on hundreds of GPUs.\n\nThis talk builds on the Ultra-Scale Playbook presented at GOSIM 2025 and goes further with insights from the SmolLM3 training campaign. Topics include: 5D parallelism (data, tensor, pipeline, context, and expert), real vs theoretical bandwidth validation across the hardware stack, communication patterns and NCCL tuning, checkpointing strategies, and MoE training challenges. The session distills practical recommendations tying them to benchmarks and case studies, aimed at engineers ready to scale beyond single-GPU setups.",
-          "zh": "深度剖析大规模 LLM 训练的真实挑战，涵盖基础设施、5D 并行、性能调优，以及在数百张 GPU 上训练 SmolLM3 的实战经验。议题包括：5D 并行（数据、张量、流水线、上下文、专家并行）、硬件栈带宽验证、NCCL 调优、检查点策略及 MoE 训练挑战。",
-          "fr": "Une plongée dans les défis réels de l'entraînement de LLMs à grande échelle, couvrant le parallélisme 5D, l'optimisation des performances NCCL, et les leçons tirées de l'entraînement de SmolLM3 sur des centaines de GPU."
-        },
-        "speakers": [
-          {
-            "name": "Nouamane Tazi",
-            "title": "ML Research Engineer, Hugging Face"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 10:50",
-        "type": "talk"
-      },
-      {
-        "title": {
           "en": "Linear Attention: Past, Present and Future",
           "zh": "线性注意力机制：过去、现在与未来"
         },
@@ -1267,7 +1243,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:50 - 11:20",
+        "timeSlot": "10:20 - 10:50",
         "type": "talk"
       },
       {
@@ -1279,6 +1255,30 @@
           {
             "name": "Yuxuan Zhang",
             "title": "Technical Evangelist, ZhipuAI"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:50 - 11:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
+          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
+        },
+        "content": {
+          "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
+          "zh": "聊天机器人时代正让位于更强大的事物：自主 Agent 生态系统，AI 系统在其中主动规划、协调和执行复杂工作流，无需大量人工干预。Minimax 一直站在这一转变的前沿，开发支持大规模 Agent 原生应用的模型和基础设施。\n\n本演讲探讨如何从简单问答交互迈向多步骤 Agentic 流程——所需的模型能力、工具和编排层，以及在生产环境中部署自主 Agent 的现实挑战。",
+          "fr": "L'ère du chatbot cède la place à quelque chose de plus puissant : les écosystèmes d'agents autonomes où les systèmes IA planifient, coordonnent et exécutent des workflows complexes avec un minimum d'intervention humaine. Minimax est à l'avant-garde de cette transition.\n\nCette présentation examine ce qu'il faut pour aller au-delà des interactions simples vers des pipelines agentiques multi-étapes — les capacités de modèles requises, les couches d'outillage et d'orchestration nécessaires, et les défis réels du déploiement d'agents autonomes en production."
+        },
+        "speakers": [
+          {
+            "name": "Daniel",
+            "title": "AI Model Business Developer, Minimax"
           }
         ],
         "date": {
@@ -1306,30 +1306,6 @@
       },
       {
         "title": {
-          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
-          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
-        },
-        "content": {
-          "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
-          "zh": "聊天机器人时代正让位于更强大的事物：自主 Agent 生态系统，AI 系统在其中主动规划、协调和执行复杂工作流，无需大量人工干预。Minimax 一直站在这一转变的前沿，开发支持大规模 Agent 原生应用的模型和基础设施。\n\n本演讲探讨如何从简单问答交互迈向多步骤 Agentic 流程——所需的模型能力、工具和编排层，以及在生产环境中部署自主 Agent 的现实挑战。",
-          "fr": "L'ère du chatbot cède la place à quelque chose de plus puissant : les écosystèmes d'agents autonomes où les systèmes IA planifient, coordonnent et exécutent des workflows complexes avec un minimum d'intervention humaine. Minimax est à l'avant-garde de cette transition.\n\nCette présentation examine ce qu'il faut pour aller au-delà des interactions simples vers des pipelines agentiques multi-étapes — les capacités de modèles requises, les couches d'outillage et d'orchestration nécessaires, et les défis réels du déploiement d'agents autonomes en production."
-        },
-        "speakers": [
-          {
-            "name": "Daniel",
-            "title": "AI Model Business Developer, Minimax"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "14:00 - 14:20",
-        "type": "talk"
-      },
-      {
-        "title": {
           "en": "World Model for Universal Generation and Control",
           "zh": "用于通用生成与控制的世界模型"
         },
@@ -1349,23 +1325,19 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "14:20 - 14:40",
+        "timeSlot": "14:00 - 14:30",
         "type": "talk"
       },
       {
         "title": {
-          "en": "Building Scalable LLM Inference Infrastructure",
-          "zh": "构建可扩展的 LLM 推理基础设施"
-        },
-        "content": {
-          "en": "LLM serving infrastructure has become a key pillar for modern society, but building scalable LLM infrastructure remains challenging at scale due to system issues like load imbalancing, stragglers, and lack of elasticity. This talk presents recent work on scalable and efficient LLM infrastructure, including a simple but efficient multiplication-based LLM global router and ultra-fast autoscaling mechanisms. Some of these works have been or are being deployed at the world's largest LLM service providers.",
-          "zh": "LLM 推理基础设施已成为现代社会的关键支柱，但受负载不均衡、慢节点及弹性不足等系统性问题影响，大规模可扩展基础设施的构建仍面临挑战。本演讲介绍近期在可扩展高效 LLM 基础设施方面的工作，包括简洁高效的乘法基 LLM 全局路由器与超快速自动扩缩容机制，部分成果已在全球最大 LLM 服务商落地部署。",
-          "fr": "Cette présentation expose des travaux récents sur une infrastructure LLM scalable et efficace, incluant un routeur global basé sur la multiplication et des mécanismes d'autoscaling ultra-rapides, déployés chez les plus grands fournisseurs de services LLM au monde."
+          "en": "OpenSeek-10B: Scaling Open-Source LLMs with Less Compute",
+          "zh": "OpenSeek-10B：用更少算力扩展开源大语言模型",
+          "fr": "OpenSeek-10B : mettre à l'échelle les LLM open source avec moins de calcul"
         },
         "speakers": [
           {
-            "name": "Xingda Wei",
-            "title": "Associate Professor, Shanghai Jiao Tong University"
+            "name": "Jiabei Chen",
+            "title": "Ph.D. Student, Institute of Automation, Chinese Academy of Sciences & BAAI"
           }
         ],
         "date": {
@@ -1373,23 +1345,23 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "14:40 - 15:00",
+        "timeSlot": "14:30 - 15:00",
         "type": "talk"
       },
       {
         "title": {
-          "en": "When Does Sparsity Mitigate the Curse of Depth in LLMs",
-          "zh": "稀疏性何时能缓解 LLM 的深度诅咒"
+          "en": "Building World's First Multi-Modal Model SpeedRun in Open Source",
+          "zh": "开源构建全球首个多模态模型 SpeedRun"
         },
         "content": {
-          "en": "Recent work has demonstrated the curse of depth in large language models, where later layers contribute less to learning and representation than earlier layers. This paper demonstrates that sparsity, beyond enabling efficiency, acts as a regulator of variance propagation and thereby improves depth utilization.\n\nThe investigation covers two sources of sparsity: implicit sparsity (weight sparsity from weight decay, attention sparsity from long-context inputs) and explicit sparsity (key/value-sharing in Grouped-Query Attention, expert-activation sparsity in Mixture-of-Experts). A consistent relationship emerges: sparsity improves layer utilization by reducing output variance and promoting functional differentiation, yielding a notable 4.6% accuracy improvement on downstream tasks.",
-          "zh": "近期研究发现 LLM 的「深度诅咒」——越深的层对学习与表示的贡献越小。本研究证明，稀疏性不仅能提升效率，还能作为方差传播的调节器从而改善深度利用率。研究涵盖隐式稀疏性（权重衰减引起的权重稀疏、长上下文引起的注意力稀疏）与显式稀疏性（GQA 的 KV 共享、MoE 的专家激活稀疏），在下游任务上实现 4.6% 的准确率提升。",
-          "fr": "Cet article démontre que la sparsité agit comme un régulateur de la propagation de la variance dans les LLM, améliorant l'utilisation des couches profondes. Elle couvre la sparsité implicite et explicite, obtenant une amélioration de 4,6% de précision sur les tâches en aval."
+          "en": "Standing on the shoulders of giants like modded-nanogpt speedrun and marin speedrun, the Open Model Initiative under LFAI&Data Foundation kickstarted a new speedrun effort focusing on multi-modal models in early 2026. This is the first effort to accelerate model architecture and training/inference innovation for multi-modal tasks worldwide.\n\nThis talk shares the motivation for this effort, how it came about, and the latest submissions received since launch—demonstrating how open collaboration can accelerate the development of next-generation multimodal AI.",
+          "zh": "站在 modded-nanogpt speedrun 和 marin speedrun 等先驱的肩膀上，LFAI&Data 基金会旗下的 Open Model Initiative 于 2026 年初启动了面向多模态模型的全新 speedrun 挑战。这是全球首个加速多模态任务模型架构与训练/推理创新的举措。本演讲分享这一行动的动机、起源及自发布以来收到的最新提交成果。",
+          "fr": "L'Open Model Initiative sous LFAI&Data Foundation a lancé en 2026 un speedrun pour les modèles multimodaux — la première initiative mondiale pour accélérer l'innovation en architecture et entraînement de modèles multimodaux. Cet exposé partage la motivation, l'origine et les dernières soumissions."
         },
         "speakers": [
           {
-            "name": "Shiwei Liu",
-            "title": "Group Leader, Max Planck Institute for Intelligent Systems; PI, ELLIS Institute Tübingen"
+            "name": "Zhipeng Huang",
+            "title": "Board Chairperson, LFAI & Data Foundation"
           }
         ],
         "date": {
@@ -1397,7 +1369,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "15:00 - 15:20",
+        "timeSlot": "15:00 - 15:30",
         "type": "talk"
       },
       {
@@ -1441,18 +1413,18 @@
       },
       {
         "title": {
-          "en": "Building World's First Multi-Modal Model SpeedRun in Open Source",
-          "zh": "开源构建全球首个多模态模型 SpeedRun"
+          "en": "When Does Sparsity Mitigate the Curse of Depth in LLMs",
+          "zh": "稀疏性何时能缓解 LLM 的深度诅咒"
         },
         "content": {
-          "en": "Standing on the shoulders of giants like modded-nanogpt speedrun and marin speedrun, the Open Model Initiative under LFAI&Data Foundation kickstarted a new speedrun effort focusing on multi-modal models in early 2026. This is the first effort to accelerate model architecture and training/inference innovation for multi-modal tasks worldwide.\n\nThis talk shares the motivation for this effort, how it came about, and the latest submissions received since launch—demonstrating how open collaboration can accelerate the development of next-generation multimodal AI.",
-          "zh": "站在 modded-nanogpt speedrun 和 marin speedrun 等先驱的肩膀上，LFAI&Data 基金会旗下的 Open Model Initiative 于 2026 年初启动了面向多模态模型的全新 speedrun 挑战。这是全球首个加速多模态任务模型架构与训练/推理创新的举措。本演讲分享这一行动的动机、起源及自发布以来收到的最新提交成果。",
-          "fr": "L'Open Model Initiative sous LFAI&Data Foundation a lancé en 2026 un speedrun pour les modèles multimodaux — la première initiative mondiale pour accélérer l'innovation en architecture et entraînement de modèles multimodaux. Cet exposé partage la motivation, l'origine et les dernières soumissions."
+          "en": "Recent work has demonstrated the curse of depth in large language models, where later layers contribute less to learning and representation than earlier layers. This paper demonstrates that sparsity, beyond enabling efficiency, acts as a regulator of variance propagation and thereby improves depth utilization.\n\nThe investigation covers two sources of sparsity: implicit sparsity (weight sparsity from weight decay, attention sparsity from long-context inputs) and explicit sparsity (key/value-sharing in Grouped-Query Attention, expert-activation sparsity in Mixture-of-Experts). A consistent relationship emerges: sparsity improves layer utilization by reducing output variance and promoting functional differentiation, yielding a notable 4.6% accuracy improvement on downstream tasks.",
+          "zh": "近期研究发现 LLM 的「深度诅咒」——越深的层对学习与表示的贡献越小。本研究证明，稀疏性不仅能提升效率，还能作为方差传播的调节器从而改善深度利用率。研究涵盖隐式稀疏性（权重衰减引起的权重稀疏、长上下文引起的注意力稀疏）与显式稀疏性（GQA 的 KV 共享、MoE 的专家激活稀疏），在下游任务上实现 4.6% 的准确率提升。",
+          "fr": "Cet article démontre que la sparsité agit comme un régulateur de la propagation de la variance dans les LLM, améliorant l'utilisation des couches profondes. Elle couvre la sparsité implicite et explicite, obtenant une amélioration de 4,6% de précision sur les tâches en aval."
         },
         "speakers": [
           {
-            "name": "Zhipeng Huang",
-            "title": "Board Chairperson, LFAI & Data Foundation"
+            "name": "Shiwei Liu",
+            "title": "Group Leader, Max Planck Institute for Intelligent Systems; PI, ELLIS Institute Tübingen"
           }
         ],
         "date": {
@@ -1465,14 +1437,18 @@
       },
       {
         "title": {
-          "en": "OpenSeek-10B: Scaling Open-Source LLMs with Less Compute",
-          "zh": "OpenSeek-10B：用更少算力扩展开源大语言模型",
-          "fr": "OpenSeek-10B : mettre à l'échelle les LLM open source avec moins de calcul"
+          "en": "Building Scalable LLM Inference Infrastructure",
+          "zh": "构建可扩展的 LLM 推理基础设施"
+        },
+        "content": {
+          "en": "LLM serving infrastructure has become a key pillar for modern society, but building scalable LLM infrastructure remains challenging at scale due to system issues like load imbalancing, stragglers, and lack of elasticity. This talk presents recent work on scalable and efficient LLM infrastructure, including a simple but efficient multiplication-based LLM global router and ultra-fast autoscaling mechanisms. Some of these works have been or are being deployed at the world's largest LLM service providers.",
+          "zh": "LLM 推理基础设施已成为现代社会的关键支柱，但受负载不均衡、慢节点及弹性不足等系统性问题影响，大规模可扩展基础设施的构建仍面临挑战。本演讲介绍近期在可扩展高效 LLM 基础设施方面的工作，包括简洁高效的乘法基 LLM 全局路由器与超快速自动扩缩容机制，部分成果已在全球最大 LLM 服务商落地部署。",
+          "fr": "Cette présentation expose des travaux récents sur une infrastructure LLM scalable et efficace, incluant un routeur global basé sur la multiplication et des mécanismes d'autoscaling ultra-rapides, déployés chez les plus grands fournisseurs de services LLM au monde."
         },
         "speakers": [
           {
-            "name": "Jiabei Chen",
-            "title": "Ph.D. Student, Institute of Automation, Chinese Academy of Sciences & BAAI"
+            "name": "Xingda Wei",
+            "title": "Associate Professor, Shanghai Jiao Tong University"
           }
         ],
         "date": {
@@ -1541,19 +1517,19 @@
       },
       {
         "title": {
-          "en": "TBD",
-          "zh": "TBD",
-          "fr": "TBD"
+          "en": "Building with StrongDM Attractor",
+          "zh": "使用 StrongDM Attractor 构建",
+          "fr": "Construire avec StrongDM Attractor"
         },
         "content": {
-          "en": "",
-          "zh": "",
-          "fr": ""
+          "en": "This talk covers experience working with StrongDM's Attractor: a multi-agent orchestrator capable of delivering production-ready features by walking a graph of nodes. Attractor has been used internally to deliver drivers for cloud databases, one-shot simple compiler development (which took a lot of prompting previously), and for complicated numerical analysis algorithm tasks. The specification is open source.",
+          "zh": "本演讲分享使用 StrongDM Attractor 的实践经验——这是一个通过遍历节点图来交付生产就绪功能的多 Agent 编排器。Attractor 已用于交付云数据库驱动、一次性简单编译器开发以及复杂数值分析算法任务，规范已开源。",
+          "fr": "Cette présentation couvre l'expérience avec Attractor de StrongDM : un orchestrateur multi-agents capable de livrer des fonctionnalités prêtes pour la production en parcourant un graphe de nœuds. Utilisé pour des pilotes de bases de données cloud, du développement de compilateurs et des tâches d'analyse numérique. La spécification est open source."
         },
         "speakers": [
           {
-            "name": "TBD",
-            "title": ""
+            "name": "Marcin Zubrzycki",
+            "title": "Software Engineer, StrongDM"
           }
         ],
         "date": {
@@ -1605,31 +1581,6 @@
       },
       {
         "title": {
-          "en": "Building with Attractor",
-          "zh": "使用 Attractor 构建",
-          "fr": "Construire avec Attractor"
-        },
-        "content": {
-          "en": "This talk covers experience working with StrongDM's Attractor: a multi-agent orchestrator capable of delivering production-ready features by walking a graph of nodes. Attractor has been used internally to deliver drivers for cloud databases, one-shot simple compiler development (which took a lot of prompting previously), and for complicated numerical analysis algorithm tasks. The specification is open source.",
-          "zh": "本演讲分享使用 StrongDM Attractor 的实践经验——这是一个通过遍历节点图来交付生产就绪功能的多 Agent 编排器。Attractor 已用于交付云数据库驱动、一次性简单编译器开发以及复杂数值分析算法任务，规范已开源。",
-          "fr": "Cette présentation couvre l'expérience avec Attractor de StrongDM : un orchestrateur multi-agents capable de livrer des fonctionnalités prêtes pour la production en parcourant un graphe de nœuds. Utilisé pour des pilotes de bases de données cloud, du développement de compilateurs et des tâches d'analyse numérique. La spécification est open source."
-        },
-        "speakers": [
-          {
-            "name": "Marcin Zubrzycki",
-            "title": "Software Engineer, StrongDM"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "14:00 - 14:30",
-        "type": "talk"
-      },
-      {
-        "title": {
           "en": "How to Build Multi-Agent Systems with ADK and Agent Skills",
           "zh": "如何使用 ADK 和 Agent Skills 构建多智能体系统"
         },
@@ -1649,21 +1600,40 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
+        "timeSlot": "14:00 - 14:30",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Vibe Native for More: Why AI Agents Deserve a Better App Framework",
+          "zh": "Vibe Native for More：AI Agent 为什么需要更好的应用框架"
+        },
+        "content": {
+          "en": "AI is transforming how apps are built, but not what they're built on. Without a cross-platform framework, agents must generate, verify, and maintain separate code for every platform, or degrade to web pages that don't feel native.\n\nThis talk introduces Lynx, the open-source cross-platform framework powering TikTok and CapCut at billion-user scale, and presents three principles for AI-native app infrastructure: AI-Ergonomic (harness-able by agents), AI-Efficient (token-economical via cross-platform code reuse), and AI-Expressive (intent-driven UI with A2UI protocols, JSON-to-UI rendering, and streaming-friendly architectures for real-time progressive generation).",
+          "zh": "AI 正在改变应用的构建方式，却未改变其构建基础。本演讲介绍 Lynx——为 TikTok 和 CapCut 提供十亿级用户规模支撑的开源跨平台框架，并提出 AI 原生应用基础设施的三大原则：AI 人机工程学（可被 Agent 驾驭）、AI 高效性（跨平台复用降低 Token 成本）、AI 表达力（A2UI 协议、JSON-to-UI 渲染与流式架构）。",
+          "fr": "Lynx est le framework cross-platform open source qui propulse TikTok et CapCut à l'échelle du milliard d'utilisateurs. Cet exposé présente trois principes pour l'infrastructure d'apps IA-native : AI-Ergonomique, AI-Efficace (économie de tokens via la réutilisation cross-platform), et AI-Expressif (protocoles A2UI, rendu JSON-to-UI)."
+        },
+        "speakers": [
+          {
+            "name": "Xuan Huang",
+            "title": "Software Architect, Lynx, ByteDance"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
         "timeSlot": "14:30 - 15:00",
         "type": "talk"
       },
       {
         "title": {
-          "en": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It",
-          "zh": "自进化应用：构建越用越智能的软件",
-          "fr": "Applications auto-évolutives"
+          "en": "TBD",
+          "zh": "TBD",
+          "fr": "TBD"
         },
-        "speakers": [
-          {
-            "name": "Tiberiu Socaci",
-            "title": "CEO & Co-Founder, Makeitfuture"
-          }
-        ],
+        "speakers": [],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
@@ -1704,31 +1674,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "15:40 - 16:00",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Vibe Native for More: Why AI Agents Deserve a Better App Framework",
-          "zh": "Vibe Native for More：AI Agent 为什么需要更好的应用框架"
-        },
-        "content": {
-          "en": "AI is transforming how apps are built, but not what they're built on. Without a cross-platform framework, agents must generate, verify, and maintain separate code for every platform, or degrade to web pages that don't feel native.\n\nThis talk introduces Lynx, the open-source cross-platform framework powering TikTok and CapCut at billion-user scale, and presents three principles for AI-native app infrastructure: AI-Ergonomic (harness-able by agents), AI-Efficient (token-economical via cross-platform code reuse), and AI-Expressive (intent-driven UI with A2UI protocols, JSON-to-UI rendering, and streaming-friendly architectures for real-time progressive generation).",
-          "zh": "AI 正在改变应用的构建方式，却未改变其构建基础。本演讲介绍 Lynx——为 TikTok 和 CapCut 提供十亿级用户规模支撑的开源跨平台框架，并提出 AI 原生应用基础设施的三大原则：AI 人机工程学（可被 Agent 驾驭）、AI 高效性（跨平台复用降低 Token 成本）、AI 表达力（A2UI 协议、JSON-to-UI 渲染与流式架构）。",
-          "fr": "Lynx est le framework cross-platform open source qui propulse TikTok et CapCut à l'échelle du milliard d'utilisateurs. Cet exposé présente trois principes pour l'infrastructure d'apps IA-native : AI-Ergonomique, AI-Efficace (économie de tokens via la réutilisation cross-platform), et AI-Expressif (protocoles A2UI, rendu JSON-to-UI)."
-        },
-        "speakers": [
-          {
-            "name": "Xuan Huang",
-            "title": "Software Architect, Lynx, ByteDance"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "16:00 - 16:20",
+        "timeSlot": "15:40 - 16:10",
         "type": "talk"
       },
       {
@@ -1748,7 +1694,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "16:20 - 16:40",
+        "timeSlot": "16:10 - 16:40",
         "type": "talk"
       },
       {
@@ -1772,7 +1718,27 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "16:40 - 17:00",
+        "timeSlot": "16:40 - 17:10",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "From LLM Calls to Governed Agent Systems: Building a Runtime for Auditability, Replay, and Control",
+          "zh": "从 LLM 调用到受治理的 Agent 系统：构建可审计、可回放、可控的运行时",
+          "fr": "Des appels LLM aux systèmes agents gouvernés"
+        },
+        "speakers": [
+          {
+            "name": "Tianyi HAN",
+            "title": "Architect Solution, AI Systems & Agent Governance, Capgemini"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "17:10 - 17:30",
         "type": "talk"
       },
       {
@@ -1792,14 +1758,14 @@
       },
       {
         "title": {
-          "en": "From LLM Calls to Governed Agent Systems: Building a Runtime for Auditability, Replay, and Control",
-          "zh": "从 LLM 调用到受治理的 Agent 系统：构建可审计、可回放、可控的运行时",
-          "fr": "Des appels LLM aux systèmes agents gouvernés"
+          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
+          "zh": "智能体、代码与平行世界——仓颉编程语言团队的300天 Agentic 进化之旅",
+          "fr": "Agents, Code & Mondes Parallèles — L'évolution agentique de 300 jours de l'équipe Cangjie"
         },
         "speakers": [
           {
-            "name": "Tianyi HAN",
-            "title": "Architect Solution, AI Systems & Agent Governance, Capgemini"
+            "name": "Dong Xin",
+            "title": "Project Group Director, Huawei Central Software Institute"
           }
         ],
         "date": {
@@ -1832,14 +1798,14 @@
       },
       {
         "title": {
-          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
-          "zh": "智能体、代码与平行世界——仓颉编程语言团队的300天 Agentic 进化之旅",
-          "fr": "Agents, Code & Mondes Parallèles — L'évolution agentique de 300 jours de l'équipe Cangjie"
+          "en": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It",
+          "zh": "自进化应用：构建越用越智能的软件",
+          "fr": "Applications auto-évolutives"
         },
         "speakers": [
           {
-            "name": "Dong Xin",
-            "title": "Project Group Director, Huawei Central Software Institute"
+            "name": "Tiberiu Socaci",
+            "title": "CEO & Co-Founder, Makeitfuture"
           }
         ],
         "date": {
@@ -1868,6 +1834,26 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:20 - 11:40",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "The Web Was Built for Humans - Agents Broke It. Now We Need Agentic Apps.",
+          "zh": "Web 是为人类而建的——Agent 打破了它。现在我们需要 Agentic 应用。",
+          "fr": "Le Web était fait pour les humains - les agents l'ont cassé. Nous avons besoin d'apps agentiques."
+        },
+        "speakers": [
+          {
+            "name": "Susanna Wong",
+            "title": "Staff AI Engineer, Typeform"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "11:40 - 12:00",
         "type": "talk"
       },
       {
@@ -1932,46 +1918,6 @@
         },
         "timeSlot": "15:20 - 15:40",
         "type": "break"
-      },
-      {
-        "title": {
-          "en": "A2A",
-          "zh": "A2A",
-          "fr": "A2A"
-        },
-        "speakers": [
-          {
-            "name": "Holt Skinner",
-            "title": "Software Engineer, Google Cloud"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "17:00 - 17:20",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "The Web Was Built for Humans - Agents Broke It. Now We Need Agentic Apps.",
-          "zh": "Web 是为人类而建的——Agent 打破了它。现在我们需要 Agentic 应用。",
-          "fr": "Le Web était fait pour les humains - les agents l'ont cassé. Nous avons besoin d'apps agentiques."
-        },
-        "speakers": [
-          {
-            "name": "Susanna Wong",
-            "title": "Staff AI Engineer, Typeform"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "11:40 - 12:00",
-        "type": "talk"
       }
     ],
     "agentic-ai-on-edge": [
@@ -2340,7 +2286,7 @@
         "speakers": [
           {
             "name": "Jeremy Laville",
-            "title": "Embodied Robotics Engineer, Hugging Face"
+            "title": "R&D Engineer, Pollen Robotics"
           }
         ],
         "date": {
@@ -2447,7 +2393,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "15:20 - 15:40",
+        "timeSlot": "15:15 - 15:40",
         "type": "break"
       },
       {
@@ -2531,6 +2477,10 @@
         },
         "speakers": [
           {
+            "name": "Xavier Tao",
+            "title": "Founder, 1ms.ai"
+          },
+          {
             "name": "Vector Wang",
             "title": "Ph.D. Student, Rice University"
           }
@@ -2565,26 +2515,6 @@
           "fr": "6 mai"
         },
         "timeSlot": "17:20 - 17:40",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics",
-          "zh": "Project Nexus：用于机器人的跨平台 GPU Rust 多物理场仿真器",
-          "fr": "Project Nexus : Simulateur multiphysique Rust basé GPU multiplateforme pour la robotique"
-        },
-        "speakers": [
-          {
-            "name": "Sébastien Crozet",
-            "title": "Founder, Dimforge"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "17:40 - 18:00",
         "type": "talk"
       }
     ],
