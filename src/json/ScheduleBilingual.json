@@ -1541,18 +1541,19 @@
       },
       {
         "title": {
-          "en": "Frontier of Agentic AI",
-          "zh": "Agentic AI 的前沿探索"
+          "en": "TBD",
+          "zh": "TBD",
+          "fr": "TBD"
         },
         "content": {
-          "en": "This talk traces the evolution of agentic AI from multi-agent research to real-world personal AI systems. Starting with AutoGen (AG2) and its multi-agent coordination framework, through autonomous coding with Claude Code, to scalable parallel execution with MassGen, and culminating in Sutando—a personal AI agent with real-time voice, vision, phone calls, and autonomous self-building capabilities.\n\nThe talk includes a live demo showing three systems (Sutando, MassGen, and coding agents) coordinating on a single task without human direction. It concludes with three open problems grounded in real deployment experience: ambient intelligence (knowing when to act vs. stay silent), earned trust (gradual capability escalation), and human-agent partnership (genuine collaboration, not just delegation).",
-          "zh": "本演讲追溯 Agentic AI 从多智能体研究到真实个人 AI 系统的演进历程：从 AutoGen（AG2）多智能体协调框架，到 Claude Code 自主编程，再到 MassGen 可扩展并行执行，最终到 Sutando——一个具备实时语音、视觉、电话拨打与自主自建能力的个人 AI Agent。演讲含现场演示，并以三个来自实际部署的开放难题作为结语：环境感知、渐进信任、人机协作。",
-          "fr": "Cette conférence retrace l'évolution de l'IA agentique, d'AutoGen (AG2) à Sutando — un agent IA personnel avec voix en temps réel, vision et appels téléphoniques. Elle inclut une démo en direct de trois systèmes coordonnant une tâche sans direction humaine."
+          "en": "",
+          "zh": "",
+          "fr": ""
         },
         "speakers": [
           {
-            "name": "Chi Wang",
-            "title": "Senior Staff Research Scientist, Google DeepMind"
+            "name": "TBD",
+            "title": ""
           }
         ],
         "date": {

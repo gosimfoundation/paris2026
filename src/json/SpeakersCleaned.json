@@ -714,21 +714,24 @@
       "draft": false
     },
     {
+      "id": "alexy-khrabrov",
       "name": "Alexy Khrabrov",
       "title": "Founder, CR4AI; Northeastern University",
       "image": "/images/speakers/better_portrait/alexy-khrabrov.png",
       "draft": false,
-      "bio": "",
+      "bio": "Alexy Khrabrov is the founder of CR4AI and affiliated with Northeastern University. He is the co-founder of the AI Alliance and founding chair of NumFOCUS open source for science. Alexy was founding chair of Linux Foundation AI & Data (LFAI) Generative AI Commons. He is the founder and organizer of Bay Area AI and AI Agent SF meetups, and the Scale/Data/AI By the Bay independent open-source AI conferences since 2013.",
       "role": "Founder",
       "org": "CR4AI, Northeastern University",
       "roleOrg": "Founder, CR4AI, Northeastern University",
-      "tags": [],
+      "tags": [
+        "agentic-ai-summit"
+      ],
       "socialLinks": {
         "mastodon": "",
-        "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
+        "twitter": "https://x.com/chiefscientist",
+        "github": "https://github.com/alexy",
+        "linkedin": "https://www.linkedin.com/in/chiefscientist/",
+        "website": "https://chiefscientist.org"
       },
       "status": "Accept"
     },
@@ -1460,7 +1463,7 @@
         "website": "https://sutando.ai"
       },
       "status": "Accept",
-      "draft": false
+      "draft": true
     },
     {
       "id": "vector-wang",

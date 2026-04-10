@@ -108,6 +108,11 @@
       "url": "https://42-ai.github.io"
     },
     {
+      "category": "supporting-organizations",
+      "image": "ai-by-the-bay.png",
+      "url": "https://bythebay.io"
+    },
+    {
       "category": "organizer",
       "image": "gosim.png",
       "url": "https://gosim.org"
@@ -182,7 +187,7 @@
     {
       "category": "speakers-affiliated",
       "image": "google.png",
-      "logoClass": "xl",
+      "logoClass": "xll",
       "url": "https://www.google.com"
     },
     {
