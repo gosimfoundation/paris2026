@@ -1858,20 +1858,6 @@
       },
       {
         "title": {
-          "en": "Octos Workshop",
-          "zh": "Octos 工作坊"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 12:00",
-        "type": "workshop"
-      },
-      {
-        "title": {
           "en": "Lunch",
           "zh": "午餐",
           "fr": "Déjeuner"
@@ -1884,25 +1870,6 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break"
-      },
-      {
-        "title": {
-          "en": "Makepad Splash",
-          "zh": "Makepad Splash 工作坊"
-        },
-        "speakers": [
-          {
-            "name": "Rik Arends",
-            "title": "Co-Founder, Makepad"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "14:00 - 15:20",
-        "type": "workshop"
       },
       {
         "title": {
