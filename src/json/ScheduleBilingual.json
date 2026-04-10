@@ -2713,37 +2713,9 @@
       },
       {
         "title": {
-          "en": "SGLang Diffusion: A High-Performance Inference Framework for Image and Video Generation",
-          "zh": "SGLang Diffusion：面向图像和视频生成的高性能推理框架"
-        },
-        "content": {
-          "en": "SGLang has established itself as a leading serving framework for large language models, and SGLang Diffusion extends that performance to the world of image and video generation. This session presents the architecture and key innovations behind SGLang Diffusion, which brings the same throughput optimisations, batching strategies, and memory management techniques that made SGLang fast for LLMs to diffusion-based generative models.\n\nYuhao Yang covers the unique challenges of serving diffusion models at scale — multi-step inference, variable resolution, and the memory footprint of large UNet and transformer-based denoisers — and shows how SGLang Diffusion addresses them. Attendees will see benchmarks comparing SGLang Diffusion against existing solutions and learn how to integrate it into their own image and video generation pipelines.",
-          "zh": "SGLang 已成为大语言模型的领先服务框架，而 SGLang Diffusion 将这一性能扩展到图像和视频生成领域。本次会议介绍 SGLang Diffusion 的架构和关键创新，将 LLM 高吞吐量优化、批处理策略和内存管理技术应用于扩散式生成模型。\n\n演讲者介绍大规模服务扩散模型的独特挑战——多步推理、可变分辨率和大型 UNet 及基于 Transformer 的去噪器内存占用——并展示 SGLang Diffusion 如何应对这些挑战。",
-          "fr": "SGLang s'est imposé comme un framework de service de premier plan pour les grands modèles de langage, et SGLang Diffusion étend cette performance aux domaines de la génération d'images et de vidéos. Cette session présente l'architecture et les innovations clés de SGLang Diffusion.\n\nYuhao Yang couvre les défis uniques du service des modèles de diffusion à grande échelle — inférence multi-étapes, résolution variable — et montre comment SGLang Diffusion les résout, avec des benchmarks comparatifs et des guides d'intégration."
-        },
-        "speakers": [
-          {
-            "name": "Yuhao Yang",
-            "title": "Developer, SGLang"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "14:00 - 15:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "SGLang: High-Performance Serving Framework for LLMs and Multimodal Models",
-          "zh": "SGLang：面向 LLM 和多模态模型的高性能服务框架"
-        },
-        "content": {
-          "en": "SGLang is an open-source high-performance serving framework designed for large language models and multimodal models. At its core, SGLang introduces RadixAttention — a novel KV cache management technique that enables efficient prefix sharing across requests — alongside a highly optimised CUDA kernel library and a flexible batching engine that maximises GPU utilisation.\n\nXinyuan Tong presents the technical foundations of SGLang, the key algorithmic and systems innovations that give it its performance edge, and how the maintainer community has scaled the project to support dozens of model architectures including the latest multimodal and reasoning models. The session includes a deep dive into the serving stack, a live demo, and practical guidance on deploying SGLang for production workloads.",
-          "zh": "SGLang 是专为大语言模型和多模态模型设计的开源高性能服务框架。其核心创新 RadixAttention 是一种新颖的 KV 缓存管理技术，支持跨请求的高效前缀共享，配合高度优化的 CUDA 内核库和灵活的批处理引擎，最大化 GPU 利用率。\n\n演讲者介绍 SGLang 的技术基础、性能优势的关键算法和系统创新，以及维护者社区如何将项目扩展以支持包括最新多模态和推理模型在内的数十种模型架构。",
-          "fr": "SGLang est un framework de service open source haute performance conçu pour les grands modèles de langage et les modèles multimodaux. Au cœur de SGLang, RadixAttention est une technique novatrice de gestion du cache KV permettant un partage efficace des préfixes entre les requêtes.\n\nXinyuan Tong présente les fondements techniques de SGLang, les innovations algorithmiques et systèmes clés, et comment la communauté de mainteneurs a mis à l'échelle le projet pour supporter des dizaines d'architectures de modèles, avec une démo en direct et des conseils de déploiement en production."
+          "en": "Opening Remarks",
+          "zh": "开幕致辞",
+          "fr": "Remarques d'ouverture"
         },
         "speakers": [
           {
@@ -2756,7 +2728,55 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "14:00 - 17:30",
+        "timeSlot": "14:00 - 14:05",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "SGLang: High-Performance Serving Framework for LLMs and Multimodal Models",
+          "zh": "SGLang：面向 LLM 和多模态模型的高性能服务框架"
+        },
+        "content": {
+          "en": "SGLang is an open-source high-performance serving framework designed for large language models and multimodal models. At its core, SGLang introduces RadixAttention — a novel KV cache management technique that enables efficient prefix sharing across requests — alongside a highly optimised CUDA kernel library and a flexible batching engine that maximises GPU utilisation.\n\nXinyuan Tong presents the technical foundations of SGLang, the key algorithmic and systems innovations that give it its performance edge, and how the maintainer community has scaled the project to support dozens of model architectures including the latest multimodal and reasoning models. The session includes a deep dive into the serving stack, a live demo, and practical guidance on deploying SGLang for production workloads.",
+          "zh": "SGLang 是专为大语言模型和多模态模型设计的开源高性能服务框架。其核心创新 RadixAttention 是一种新颖的 KV 缓存管理技术，支持跨请求的高效前缀共享，配合高度优化的 CUDA 内核库和灵活的批处理引擎，最大化 GPU 利用率。",
+          "fr": "SGLang est un framework de service open source haute performance conçu pour les grands modèles de langage et les modèles multimodaux. Au cœur de SGLang, RadixAttention est une technique novatrice de gestion du cache KV permettant un partage efficace des préfixes entre les requêtes."
+        },
+        "speakers": [
+          {
+            "name": "Xinyuan Tong",
+            "title": "Opensource Maintainer, SGLang"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:05 - 14:55",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "SGLang Diffusion: A High-Performance Inference Framework for Image and Video Generation",
+          "zh": "SGLang Diffusion：面向图像和视频生成的高性能推理框架"
+        },
+        "content": {
+          "en": "SGLang has established itself as a leading serving framework for large language models, and SGLang Diffusion extends that performance to the world of image and video generation. This session presents the architecture and key innovations behind SGLang Diffusion, which brings the same throughput optimisations, batching strategies, and memory management techniques that made SGLang fast for LLMs to diffusion-based generative models.\n\nYuhao Yang covers the unique challenges of serving diffusion models at scale — multi-step inference, variable resolution, and the memory footprint of large UNet and transformer-based denoisers — and shows how SGLang Diffusion addresses them. Attendees will see benchmarks comparing SGLang Diffusion against existing solutions and learn how to integrate it into their own image and video generation pipelines.",
+          "zh": "SGLang 已成为大语言模型的领先服务框架，而 SGLang Diffusion 将这一性能扩展到图像和视频生成领域。本次会议介绍 SGLang Diffusion 的架构和关键创新，将 LLM 高吞吐量优化、批处理策略和内存管理技术应用于扩散式生成模型。",
+          "fr": "SGLang s'est imposé comme un framework de service de premier plan pour les grands modèles de langage, et SGLang Diffusion étend cette performance aux domaines de la génération d'images et de vidéos."
+        },
+        "speakers": [
+          {
+            "name": "Yuhao Yang",
+            "title": "Developer, SGLang"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:55 - 15:45",
         "type": "talk"
       },
       {
@@ -2771,7 +2791,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "15:20 - 15:40",
+        "timeSlot": "15:45 - 16:00",
         "type": "break"
       },
       {
@@ -2787,12 +2807,27 @@
           }
         ],
         "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
         },
-        "timeSlot": "15:30 - 16:00",
+        "timeSlot": "16:00 - 17:10",
         "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Networking",
+          "zh": "交流活动",
+          "fr": "Réseautage"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "17:10 - 17:30",
+        "type": "break"
       }
     ],
     "ws-own-your-data-paris2026": [
