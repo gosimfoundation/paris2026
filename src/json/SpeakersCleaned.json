@@ -70,7 +70,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "ignacio-ahedo"
     },
     {
       "id": "sajid-alam",
@@ -193,7 +194,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "michael-berns"
     },
     {
       "id": "guillaume-blaquiere",
@@ -318,7 +320,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "jiabei-chen"
     },
     {
       "id": "yu-cheng",
@@ -483,7 +486,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "quentin-delfosse"
     },
     {
       "id": "julien-enoch",
@@ -544,7 +548,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "thomas-froment"
     },
     {
       "name": "Erwan Gallen",
@@ -564,7 +569,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "erwan-gallen"
     },
     {
       "id": "olivier-grisel",
@@ -921,7 +927,8 @@
         "website": "https://www.cs.pdx.edu/~bart"
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "bart-massey"
     },
     {
       "id": "niko-matsakis",
@@ -1192,7 +1199,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "holt-skinner"
     },
     {
       "id": "anastasiastasenko1",
@@ -1233,7 +1241,8 @@
         "website": "https://yushengsu-thu.github.io/"
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "ethan-yusheng-su"
     },
     {
       "id": "said-taghadouini",
@@ -1273,7 +1282,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "yu-tao"
     },
     {
       "id": "markus-tavenrath",
@@ -1420,7 +1430,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "daniele-trifir"
     },
     {
       "id": "gal-varoquaux",
@@ -1672,7 +1683,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "michael-yuan"
     },
     {
       "id": "zhaoyun",
@@ -1734,7 +1746,8 @@
         "website": ""
       },
       "status": "Accept",
-      "draft": false
+      "draft": false,
+      "id": "jiaju-zhang"
     },
     {
       "id": "lin-zhong",
