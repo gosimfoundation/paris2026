@@ -6,9 +6,12 @@ import type { ImageMetadata } from "astro";
 import speakersData from "json/SpeakersCleaned.json";
 
 // Filter speakers to only include those where draft is false and id is not "tbd"
-const filteredSpeakers = speakersData.speakers.filter(
-  (speaker) => speaker.draft !== true && speaker.id !== "tbd"
-);
+const filteredSpeakers = speakersData.speakers
+  .filter((speaker) => speaker.draft !== true && speaker.id !== "tbd")
+  .sort((a, b) => {
+    const lastName = (name) => name.trim().split(/\s+/).slice(-1)[0].toLowerCase();
+    return lastName(a.name).localeCompare(lastName(b.name));
+  });
 
 // Group categories by their group property (similar to schedule)
 const groupedCategories = {
