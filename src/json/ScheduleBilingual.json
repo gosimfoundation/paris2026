@@ -736,7 +736,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:00 - 12:00",
-        "type": "panel"
+        "type": "panel",
+        "content": {
+          "en": "I don't know I was invited.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -795,7 +800,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "14:20 - 14:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Over the past year, AI agents have evolved from conversational novelties to complex systems attempting real-world task execution. Yet, many still struggle with state management, brittle workflows, and context amnesia when requirements abruptly shift. In this talk, we will explore the paradigm shift from \"chat-centric\" to \"execution-centric\" agentic systems through the lens of the openJiuwen Agent Platform. Gemini 说\r\nHere is the revised talk abstract, expanded to include the broader openJiuwen platform and its engineering capabilities alongside JiuwenClaw:\r\n\r\nTitle: Beyond Chat: Engineering Production-Ready, Self-Evolving AI Agents with the openJiuwen Ecosystem\r\n\r\nAbstract:\r\nOver the past year, AI agents have evolved from conversational novelties to complex systems attempting real-world task execution. Yet, many still struggle with state management, brittle workflows, and context amnesia when requirements abruptly shift. In this talk, we will explore the paradigm shift from \"chat-centric\" to \"execution-centric\" agentic systems through the lens of the openJiuwen Agent Platform and its newly released, self-evolving agent, JiuwenClaw. We will dive into the core architectural innovations required to transition from isolated scripts to robust, production-ready orchestration.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -815,7 +825,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "14:40 - 15:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "As Large Language Models (LLMs) transition into critical infrastructure, the requirement for transparent, reproducible evaluation becomes a regulatory necessity. This session introduces Eclipse PanEval, a community-led project recently onboarded to the Eclipse Foundation. Based on a foundational technical contribution from the FlagEval project at BAAI, Eclipse PanEval provides a vendor-neutral framework designed to help the ecosystem meet the transparency and documentation mandates of landmark regulations like the EU AI Act. We will discuss the project’s independent governance model and how its de-coupled architecture enables global technical synchronization while remaining adaptable to regional standards.\r\nDetailed Description:\r\nIn the current AI landscape, evaluation is often fragmented. This session explores the technical architecture and open governance of Eclipse PanEval, an initiative dedicated to standardizing AI transparency through neutral stewardship.\r\nAttendees will learn about:\r\n1. The Onboarding of PanEval: How a sophisticated codebase was transitioned into a foundation-hosted project to ensure long-term, community-led development.\r\n2. Neutrality by Design: Why vendor-neutral stewardship is essential for benchmarking platforms to be trusted by both developers and regulators.\r\n3. The Infrastructure of Trust: A technical look at the project's \"evaluation-as-a-service\" architecture, which supports high-concurrency, multi-dimensional scoring (safety, bias, and robustness) beyond simple accuracy.\r\n4. De-risking through De-coupling: How the project maintains technical independence, allowing the European-hosted codebase to evolve according to specific regional requirements while facilitating the bi-directional exchange of features and improvements.\r\nKey Takeaways:\r\n• Understand the role of neutral evaluation frameworks in demonstrating transparency for General-Purpose AI (GPAI).\r\n• Discover how to participate in a meritocratic, open-source project focused on AI reliability.\r\n• Learn how cross-institutional collaboration can build a decentralized standard for AI benchmarking.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -896,7 +911,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "09:30 - 09:45",
-        "type": "keynote"
+        "type": "keynote",
+        "content": {
+          "en": "The Rust world moves quickly, and that's only become more true with agents writing more and more code. Frontier models know Rust basics well, but they struggle when presented with new patterns that weren't present in their training data — new language features, new libraries, idioms that diverge from the familiar. The crate authors and language designers who know best how to help have no way to reach in and guide the agent.\r\n\r\nThis talk introduces Symposium, an open-source system that changes that. Symposium lets crate authors ship skills, tools, and guidance alongside their code — so adding a dependency doesn't just give your agent new APIs to call, it gives your agent the knowledge to use them well. I'll show you how it works and discuss what it means to bring Rust's decentralized, composable ecosystem model to AI tooling.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -916,7 +936,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "09:45 - 10:00",
-        "type": "keynote"
+        "type": "keynote",
+        "content": {
+          "en": "The evolution from ChatGPT's conversational AI to OpenClaw's autonomous agent ecosystem marks a paradigm shift in AI compute. This transformation is fundamentally bidirectional: while advanced compute infrastructure enables increasingly sophisticated agentic capabilities, the agentic paradigm itself is reshaping compute delivery through modular, skill-based architectures.\r\n\r\nOpenClaw exemplifies this new wave, where agentic AI system capabilities are determined by the interplay of large models, skills, and agent systems. This tripartite architecture demands new evaluation methodologies that assess not just model performance, but the orchestration of skills and autonomous decision-making—addressed by open evaluation initiatives like FlagEval and the Eclipse partnership PanEval.\r\n\r\nFlagOS sits at the center of this transformation, building universal and inclusive AI compute capabilities that support heterogeneous hardware backends. By enabling efficient execution of the massive token volumes demanded by agentic workflows, FlagOS provides the computational substrate for this new era—where compute is not merely consumed by intelligence, but actively shaped by it.\r\n\r\nIn this talk, we will share insights on how to architect AI infrastructure for the agentic era, including the latest evaluation methodologies for agentic AI systems that go beyond traditional benchmarks to assess skill orchestration and autonomous decision-making. We will demonstrate how FlagOS Open Compute enables bidirectional empowerment: powering OpenClaw's universally accessible capabilities through cross-chip unified deployment, while OpenClaw agents feed back into FlagOS via automated operator generation and model migration. We will also discuss the path toward open, transparent evaluation standards that ensure trustworthy autonomous systems.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1263,7 +1288,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:50 - 11:20",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "The models are evolving rapidly, so this section cannot be finalized at the moment. This table is intended to reserve a placeholder, and the details can be further discussed via email.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1346,7 +1376,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "14:30 - 15:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Pretraining large language models from scratch is expensive — but does it have to be? In this talk, we present OpenSeek-10B, a fully open-source 10B-parameter language model that outperforms Qwen3-14B-Base and other open-source models of comparable size, while reducing pretraining FLOPs by roughly 20x.\r\nWe share two key techniques that compound to dramatically improve pretraining efficiency: small-model initialization, which grows a well-trained 4B model to 10B scale through hybrid width-depth expansion, inheriting its learned capabilities instead of starting from scratch; and the Muon optimizer, which further accelerates training convergence over the widely-used AdamW. Combined with a carefully designed multi-stage data strategy built entirely on open-source datasets, OpenSeek-10B outperforms Qwen3-14B-Base and other open-source models of comparable size on mainstream benchmarks.\r\nWe will walk through the full recipe — model scaling, optimizer selection, data curation, and the lessons we learned along the way — providing a practical, reproducible blueprint for the community to pretrain competitive models at lower cost. We will also share how FlagOS, BAAI's open-source unified software stack validated across chips from 6 vendors, enables this recipe to run efficiently beyond a single hardware ecosystem.\n\nThis talk presents the full technical story behind OpenSeek-10B. We start by explaining why small-model initialization is a compelling alternative to training from scratch: by expanding a well-trained Qwen3-4B-Base to 10.6B parameters through a hybrid width-depth scaling approach, the larger model inherits foundational capabilities and avoids the expensive early phase of pretraining where the model learns basic representations. We will detail our specific expansion recipe — doubling the FFN intermediate size for width, and partial layer stacking for depth — and discuss the design trade-offs involved.\r\nWe then show how the Muon optimizer further amplifies this efficiency advantage. Our experiments directly compare Muon against AdamW under the same settings, demonstrating meaningful improvements in both convergence speed and downstream benchmark scores. The combination of small-model initialization and Muon yields compounding gains that neither technique achieves alone.\r\nOn the data side, we walk through our two-stage pretraining pipeline built entirely from open-source datasets, including our data mixture ratios across web, math, code, STEM, and multilingual domains, and how we tuned them between stages. We also share findings from scaling validation experiments (0.6B → 2.38B).\r\nOn the infrastructure side, we show how FlagOS — BAAI's open-source unified software stack — supported the pretraining of OpenSeek-10B. FlagOS has completed end-to-end training validation across 6 chip vendors on both homogeneous and heterogeneous thousand-GPU clusters, with benchmark deviations within 2% of the NVIDIA baseline — the industry's first unified-stack \"full-element\" validation. We will discuss how this enables the community to reproduce our recipe on a broader range of hardware.\r\nThe audience will leave with a concrete, reproducible recipe — covering model architecture expansion, optimizer selection, and data curation — for training competitive mid-size LLMs at a fraction of the typical compute cost.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1675,7 +1710,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "15:40 - 16:10",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "What if you could design agents like Socrates' daimonion — not one,  but many? A beacon that watches your project evolve and generates a slide deck before Monday's meeting. Another that curates your morning news into a personalized radio station, read aloud in your preferred voice. A third orchestrating a research pipeline overnight with eight workers fanning out in parallel. Each arm thinking independently, all sharing one brain.\r\n\r\nOctos — the Open Cognitive Tasks Orchestration System — makes this architecture real. A single 31MB Rust binary that serves 200+ users  on a Mac Mini. No Python, no Docker, no runtime dependencies. 15 LLM providers with 3-layer failover so your daimons never go silent. 12 messaging channels so they meet people where they already are. Three memory layers so they remember what matters. And smart tool  management that keeps agents sharp — 30+ capabilities available, but only 15 active at any moment, like an octopus choosing which arms to extend.\r\n\r\nIn this talk, we'll explore the design principles behind building  agent applications that transcend chat — from multi-channel presence  to proactive orchestration, from provider resilience to the hard problem of giving an agent many arms without losing its mind.\r\n\r\nYou'll leave with a new mental model: agents not as tools you use, but as daimons you design.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1695,7 +1735,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "16:10 - 16:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Scaling a modern OS ecosystem requires massive developer velocity. This session explores how the Eclipse Oniro project leverages AI as a \"force multiplier\" to rapidly build out its landscape, which helps streamline the porting of popular, complex apps and integrate modern frameworks into the OpenHarmony environment.\r\n\r\nWe will share practical insights into how AI-assisted engineering allows us to bridge different frameworks and create new applications from scratch in a fraction of the usual time.\r\n\r\nFinally, we will discuss how this accelerated growth is balanced with the project's commitment to security and professional standards. This includes ensuring CRA compliance and closely tracking emerging initiatives like Unified Attestation, which offer a significant leap forward in creating a verifiable, secure foundation for a new generation of operating systems.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1739,7 +1784,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "17:10 - 17:30",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "As AI systems evolve from isolated LLM calls into autonomous agents, a new class of engineering problems emerges: lack of control, limited observability, and no reliable way to audit or reproduce decisions.\r\n\r\nMost current approaches rely on prompts, logs, or ad hoc guardrails, which are insufficient once agents begin to operate across multiple tools, states, and long-running workflows.\r\n\r\nIn this talk, we introduce a governance-oriented runtime for AI agents. The system provides policy enforcement, trace-based auditability, deterministic replay, and evaluation hooks for non-regression. By treating agent execution as a structured, observable, and controllable process, we enable developers to move from “best-effort prompting” to “engineered agent systems.”\r\n\r\nWe will walk through the architecture, core components, and practical design patterns, and show how governance can be integrated into real-world AI workflows without sacrificing flexibility.\r\n\r\nAttendees will learn how to design AI systems that are not only powerful, but also auditable, reproducible, and production-ready.\n\nThis talk is structured in four parts:\r\n\r\n1. Problem framing: why current LLM-based systems fail in production settings (lack of control, explainability, and reproducibility)\r\n2. System design: introducing a governance runtime layer for AI agents\r\n   - policy enforcement\r\n   - trace as an audit layer\r\n   - replay and deterministic execution\r\n   - evaluation and non-regression hooks\r\n3. Architecture walkthrough: how the runtime integrates with existing agent/tooling ecosystems\r\n4. Case examples: applying governance to real agent workflows and user-facing decision systems\r\n\r\nThe session focuses on practical engineering patterns rather than high-level concepts, and is intended for developers building or operating AI-driven systems.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1774,7 +1824,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:20 - 10:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "This topic describes the complete process of Cangjie's 300-day AI R&D transformation. This transformation started with an accidental AI coding attempt in May 2025. The team started from piloting and nurturing AI pilot teams, gradually implemented the Agent Centric Engineering (ACE) model, and selected 30% of the teams to pilot E2E AI. Finally, the pilot Sprint productivity of the compiler team is improved by 240% to 2600%,  the third-party library team is improved by 132% to 816%, and  standard library team is improved by 125%. \r\nPass on the core concept of \"actively embracing AI, breaking the shackles of thinking, and realizing the reconstruction of individual and team values\".",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1794,7 +1849,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:40 - 11:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Agentic AI is rapidly transforming developer tooling, shifting from passive assistants to autonomous agents capable of acting across the software lifecycle. Yet many of these systems, while marketed as open, still depend on single-vendor governance, proprietary extension ecosystems, and opaque AI integrations.\r\nThis creates a structural risk: as agents become more capable, organisations may lose control not only over their tools, but over the behaviour, data flows, and decision-making processes embedded in their development environments.\r\nThis session presents a practical alternative built within the Eclipse Foundation, a non profit organisation headquartered in Brussels and a long-standing European leader in open source ecosystems. Its governance model enables vendor-neutral collaboration and long-term sustainability, which becomes critical in an agent-driven world.\r\nWe introduce two complementary building blocks for agentic developer tooling:\r\n- Theia AI, an open source framework to build and operate agentic capabilities within developer tools, enabling multi-LLM orchestration, Model Context Protocol (MCP) integrations, and full control over model selection, execution patterns, and data boundaries.\r\n- Open VSX, an open source extension registry compatible with the VS Code ecosystem, enabling transparent distribution of agent integrations, curated marketplaces, and independence from vendor-controlled platforms\r\nOpen VSX has become critical infrastructure for the fast-growing ecosystem of VS Code forks and AI-first environments, reaching over 300 million extension downloads per month and supporting major tools such as Cursor, Windsurf, Google Antigravity and other agent-enabled development environments.\r\nTogether, Theia AI and Open VSX provide a reusable, vendor-neutral foundation for building and governing agentic developer systems. The session includes a live demonstration of an agent-enabled developer environment, showing how organisations can retain control over agents, extensions, and data flows in practice.\n\nFormat:\r\nThis is a flexible session, adaptable from 15 to 40 minutes depending on conference needs: structured talk with a live demonstration included in longer formats, illustrating:\r\n- Integration of agent capabilities into a developer tool\r\n- Multi-LLM setup, including local models\r\n- Use of MCP for controlled context and tool access\r\n- Control over agent behaviour and data flows\r\n- Air gapped or constrained deployment scenario\r\n\r\nTarget Audience: \r\n1) Software engineers and tech leads interested in AI-assisted development and local LLM setups  2) Developer tool builders (DevEx, developer productivity, platform teams) building IDEs and domain specific tools  3) Architects evaluating controlled AI integration, including air gapped deployments  4) Open source contributors interested in Open VSX, extensible AI tooling ecosystems\r\n\r\nKey learnings:\r\n- Understand Eclipse Theia as an open source platform to build developer tools, not only IDEs\r\n- Learn how Theia AI structures AI capabilities: chat, completions, MCP and agent workflows as reusable building blocks\r\n- See a real, fully air gapped setup using local LLMs, and what it changes for privacy and compliance\r\n- Discover how Open VSX enables an open extension ecosystem for internal and commercial distributions\r\n- Take away practical ideas to adapt this approach for your own developer tool, workflow, or product\r\n\r\nTarget Audience:\r\n- CIO, CTO, and heads of engineering responsible for developer tooling strategy and long-term technology choices\r\n- Engineering directors and platform leaders, DevEx, developer productivity, internal tooling, evaluating AI-enabled tooling adoption\r\n- Enterprise architects and security or compliance leaders concerned with governance, data control, and software supply chain risk\r\n- Product leaders at tool vendors and integrators building VS Code-compatible or AI-first developer environments\r\n- Public sector and regulated industry decision makers looking for vendor-neutral, sustainable open source infrastructure\r\n\r\nResources:\r\nhttps://theia-ide.org/theia-ai/\r\nhttps://open-vsx.org/",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1814,7 +1874,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:00 - 11:20",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Most apps are built once and stay the same. Self-evolving apps are different, they improve every time you use them, not because someone updates the code, but because the app learns from your corrections.\r\n\r\nThis intelligence exists completely outside the app as a separate, updatable layer. Before each use, it reads your previous corrections and uses them as examples to make better decisions. No machine learning required, neither retraining or data science team. In this session, I will walk you through what self-evolving apps are, how to design them, how to build one, which licensing models work best and the lessons I have learned from building several of these apps, as well as a live demonstration.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1834,7 +1899,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:20 - 11:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Can AI-assisted coding significantly accelerate the implementation of complex web standards? This talk explores a series of experiments on a fork of the Servo web engine, aimed at closing the feature gap with dominant engines.\n\nExperiment 1: Architect as Director (WebNN)\r\nHow does a developer with deep architectural knowledge of a system—but little domain knowledge of the specific feature—use AI? In this case, we treat the AI as a high-speed \"typist\" and implementation partner. We explore using AI to bridge the gap between high-level structural intent and the low-level boilerplate required for a new API, while the human maintains the \"integrity\" of the system’s core.\r\n\r\nExperiment 2: Novice using Test-Driven AI (CSS Grid)\r\nWhat happens when the human knows nothing about the domain? This experiment focuses on implementing the complex CSS Grid specification by delegating the logic to AI, using the WPT (Web Platform Tests) and the standard as an absolute \"ground truth.\" We analyze whether a rigorous test suite is sufficient to steer an AI through a black-box implementation, and where this \"test-driven\" autonomy eventually hits a wall.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1854,7 +1924,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:40 - 12:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "The web was built for humans - clicks, forms, and visual flows.\r\nBut today, a new class of users has emerged: AI agents.\r\n\r\nThese agents don’t browse your application- they operate it. And the web, as it exists today, was never designed for this.\r\n\r\nThe result is a growing layer of fragile workarounds: DOM scraping, screenshot-based reasoning, and prompt-engineered workflows that attempt to “guess” what an application can do. These approaches treat interfaces as something to reverse-engineer, rather than something to integrate with.\r\n\r\nIn this talk, we introduce a new paradigm: agentic applications.\r\n\r\nAgentic apps are not defined by their UI, but by the capabilities they expose. Instead of forcing agents to navigate interfaces, we give them structured access to the underlying actions, state, and logic of an application.\r\n\r\nWe’ll explore how this shift is already happening through emerging standards like the Model Context Protocol (MCP), which defines how AI systems interact with tools and services. While MCP addresses backend integration, it leaves a critical gap at the frontend-where most application logic still lives.\r\n\r\nTo bridge this, we’ll present WebMCP, an approach to turning web applications into programmable systems. Using real examples from React apps, we’ll show how existing UI logic can be exposed as structured, composable capabilities-allowing agents to interact with your app directly, without brittle selectors or reverse engineering.\r\n\r\nWe’ll cover practical patterns for designing agent-friendly systems:\r\n\r\n-modeling capabilities instead of screens\r\n-exposing safe, composable actions\r\n-separating execution logic from presentation\r\n-enabling agents to operate your app reliably\r\n\r\nThis is not just about AI tooling. It’s a shift in how we design software:\r\n\r\nFrom user interfaces → to execution surfaces\r\nFrom applications → to capability systems\r\nFrom human-first → to multi-agent environments\r\n\r\nIf HTTP made the web readable, agentic apps may make it operable.\n\nThis talk explores the emerging shift from user-driven applications to agent-operated systems, and what it means for how we design software.\r\n\r\nWe begin by examining a fundamental mismatch: modern web applications are built around human interaction models—navigation, clicks, and visual feedback—while AI agents operate through structured reasoning and action execution. This mismatch leads to brittle integrations, where agents rely on scraping, heuristics, or prompt-based inference to interact with systems never designed for them.\r\n\r\nFrom this problem, we introduce the concept of agentic applications.\r\n\r\nAn agentic app is not defined by its interface, but by the capabilities it exposes. These capabilities represent the true functionality of the system—creating, updating, querying, or triggering workflows—and can be composed, orchestrated, and executed by agents.\r\n\r\nWe then connect this model to the broader ecosystem through the Model Context Protocol (MCP), which provides a standard interface for AI systems to interact with tools and services. MCP enables composability across systems, but primarily focuses on backend integrations.\r\n\r\nThis leaves an important gap: the frontend.\r\n\r\nModern frontend applications contain rich business logic, state transitions, and workflows that are invisible to agents. We explore how this layer can be made accessible through a new approach: WebMCP, which treats the browser as an execution environment and exposes frontend logic as structured, agent-consumable capabilities.\r\n\r\nUsing real world examples within React-based apps, we demonstrate how:\r\n\r\n-UI components can be mapped to capabilities\r\n-application state can be safely exposed and manipulated\r\n-actions can be modeled as tools with clear contracts\r\n-existing apps can be incrementally adapted without full rewrites\r\n\r\nWe also discuss architectural implications:\r\n\r\nseparating capability layers from presentation layers\r\ndesigning for safety, permissions, and observability\r\nenabling composability across multiple agent-driven systems\r\n\r\nFinally, we explore open questions for the ecosystem:\r\n\r\nWhat standards should define agent-facing interfaces?\r\nHow do we version and secure capabilities?\r\nWhat replaces traditional API paradigms in agent-first systems?\r\n\r\nThis talk is aimed at developers and system designers interested in building the next generation of applications—where agents are not an afterthought, but a first-class part of the system.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2008,7 +2083,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:35 - 12:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "AI agents are only as good as the tools they call. We make the case for Rust as the default language for agent tooling: single-binary, zero dependencies, memory safe, and runs anywhere. Lessons learned from porting real AI capabilities into standalone Rust CLI tools.\n\nAs AI agents become more capable, the infrastructure underneath them quietly becomes the bottleneck. Agents need to call lots of tools, and those tools need to be fast to start, easy to distribute, safe to run, and portable across every environment an agent might find itself in. Python scripts with heavy dependencies don't cut it. Shell scripts don't scale. There's a better fit.\r\n\r\nThis talk makes the case for Rust as the default language for building AI agent tooling. Not because of hype, but because the properties Rust delivers by default map almost perfectly to what a good CLI tool for an agent needs to be: single-binary output, zero runtime dependencies, predictable performance, and memory safety.\r\n\r\nWe share what we learned from porting a range of AI capabilities into standalone Rust CLI tools: what the process looks like, which parts of the Rust ecosystem are production-ready and which aren't, and how to think about the boundary between Python (where your models live) and Rust (where your tooling should live).",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2322,7 +2402,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "14:25 - 14:50",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Classic RL agents often achieve \"superhuman\" performance not through true comprehension, but by exploiting hidden shortcuts in their environments. Much like \"Clever Hans\", the horse that appeared to do arithmetic but was actually just reading human cues, our models project an illusion of competence. Because these shortcuts are concealed within opaque neural networks, agents can silently fail or completely collapse when faced with trivial tasks modifications. This talk explores the pervasive danger of shortcut learning and proposes a path forward: prioritizing interpretability. By using LLMs and neuro-symbolic approaches to distill black-box policies into transparent, human-readable programs, we can unmask these hidden flaws, audit agent behavior, and build genuinely robust AI systems.\n\nWhile modern agents excel at standard benchmark optimization, evaluating them solely within their native training environments is inherently insufficient. As my research in Reinforcement Learning has shown, agents that appear to have mastered complex tasks will often completely collapse when an environment is slightly modified or even intentionally simplified. This fragility is a direct result of the Clever Hans effect: the models have not learned generalized problem-solving, but rather fragile, spurious correlations that happen to maximize reward in a highly specific context, and we, human, wrongly think that these agents select the right actions for the right reasons.\r\n\r\nTo overcome this vulnerability, we must transition from relying on black-box optimization to demanding transparent reasoning. This talk will detail how we can bridge the gap between human inductive biases and AI policy learning using neuro-symbolic methods. Specifically, I will outline methodologies for utilizing LLMs reasoning ability to extract the learned logic of an agent and translate those opaque policies into explicit, symbolic plans or programmatic code.\r\n\r\nAuditable AI Through Programmatic Distillation\r\nWhen an agent's decision-making process is represented as a formal program rather than a matrix of weights, the paradigm shifts entirely. Human overseers can directly read, verify, and debug the underlying logic. I will demonstrate how this programmatic distillation allows us to spot and correct \"Clever Hans\" shortcuts before deployment, ensuring that the AI aligns with human expectations, avoids silent failures, and operates safely in dynamic, real-world scenarios.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2406,7 +2491,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "16:05 - 16:30",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "What happens when a robot stops being just hardware and starts feeling… alive?\r\n\r\nIn this talk, I’ll share my hands-on journey with Reachy Mini. \r\nFrom first experiments to pushing its limits with custom hardware, AI integrations, and unconventional use cases. \r\nAlong the way, I explored what makes robots expressive, engaging, and genuinely fun to interact with.\r\n\r\nFrom building light-up eyes and integrating mmWave sensors for presence and vital signs, to connecting AI systems like virtual try-on models, this session dives into how small, playful experiments can unlock surprisingly powerful capabilities.\r\n\r\nThis is not a polished product story. It’s a builder’s perspective, raw, practical, and focused on what actually works.\r\n\r\nIf you're curious about robotics, AI, or just want to see how far you can stretch a small expressive robot, this talk is for you.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2528,7 +2618,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:00 - 11:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Agentic AI is reshaping inference architecture. Reasoning models, long-context workflows, and multi-step agent systems put new pressure on serving stacks, which makes accelerator strategy more important than before. The challenge is no longer only to serve a model fast. It is to match the right serving architecture and the right accelerator profile to the right workload.\r\n\r\nThat is why broad accelerator support matters in vLLM. vLLM is built for high-throughput, memory-efficient inference and serving, with an architecture designed to deploy open models across different hardware environments rather than a single path. AI accelerators span familiar categories such as GPUs, NPUs, and ASIC-based designs, with CPU support still relevant for specific deployment profiles such as smaller models, edge environments, and cost-sensitive workloads. \r\n\r\nThe session explores what that shift means in practice for teams building inference platforms. It looks at why agentic workloads make accelerator strategy more important, why broad hardware enablement matters in the vLLM ecosystem, and how platform teams can think about infrastructure choices through the lens of workload shape, prompt and context behavior, concurrency, decode latency, memory pressure, scaling patterns, and operational fit. vLLM is a strong foundation for that discussion because the project emphasizes broad hardware support, top performance, production readiness, and extensible architecture, and its serving stack includes capabilities such as high-throughput serving, distributed inference, and online and offline inference modes.  ￼\r\n\r\nA practical framework ties accelerator decisions back to workload requirements and deployment goals, giving attendees a clearer way to think about modern inference architecture while showing how vLLM keeps the serving layer open and adaptable as workloads evolve.\n\nThis talk is aimed at a technical audience building or operating inference platforms and looking for a practical framework to align accelerator strategy with workload and deployment requirements.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2548,7 +2643,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:40 - 12:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Building, Testing and Contributing to vLLM: A Developer's Guide\r\n\r\nLarge Language Models (LLMs) have revolutionized the AI landscape, and vLLM has emerged as a leading inference engine that dramatically accelerates LLM serving through innovations like PagedAttention. But how do you actually build, test, and contribute to this rapidly evolving project?\r\n\r\nIn this talk, we'll take you through vLLM's architecture and explore the practical aspects of working with this complex Python/C++ codebase. We'll start with an overview of vLLM's core optimizations including PagedAttention, then dive into the build process for different targets as well as third party hardware plugins, such as Google TPU, AWS Neuron, Intel Gaudi and more.\r\n\r\nYou'll learn about testing strategies such as performance benchmarking with GuideLLM and model evaluation using lm-evaluation-harness. We'll also cover contribution best practices to the vLLM community and how Red Hat AI Inference Server (RHAIIS) provides a trustworthy and validated platform to run LLM workflows across diverse hardware environments.",
+          "zh": "",
+          "fr": ""
+        }
       }
     ],
     "ws-oh-tech-forum": [
@@ -2812,7 +2912,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "16:00 - 17:10",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Reinforcement learning post-training has become a critical stage in building capable foundation models — yet most open-source practitioners still struggle to set up a stable, high-throughput RL pipeline. This hands-on lab brings SGLang's battle-tested RL infrastructure directly to the GOSIM Paris community. Attendees will walk through building an end-to-end RL training loop using SGLang as the rollout backend, learn how to integrate it with the Miles framework, and tackle real challenges like training-inference mismatch and rollout efficiency at scale. SGLang today powers RL post-training for frontier models across the industry, running on over 400,000 GPUs worldwide. This session distills that production experience into practical, reproducible techniques — giving open-source developers and researchers a concrete path to running robust RL training on their own infrastructure.\n\nThe lab will cover: SGLang as a rollout backend for RL training, SGLang x Miles framework integration, practical techniques for handling training-inference distribution shift, and rollout efficiency optimization. Designed for ML engineers and researchers with LLM deployment experience who want to move into RL post-training workflows. Speaker: Ethan Su, SGLang core developer and RL infrastructure lead at LMSYS Org.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2888,7 +2993,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:40 - 11:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "I'm presenting together with Olivier Grisel (olivier.grisel@ensta.org), who has just submitted the abstract.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2908,7 +3018,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:00 - 11:20",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "CUDA Python is a ground up exposure of the CUDA ecosystem in a Pythonic way. By doing this, OSS codes are able to use CUDA directly with supported APIs and languages that are tested the day new hardware is released. OSS codes such as CuPy and PyTorch have adopted this new exposure. Additionally, we released CUDA Tile that makes coding kernels much more akin to working with numpy arrays. We will go through the new exposure and dive into examples of owning your machine learning pipeline with CUDA Python.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2972,7 +3087,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "12:00 - 12:20",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Capabilities of modern hardware are oftentimes underexploited in popular software libraries. Scikit-learn has grown into an industry standard with user-friendly APIs and well-known idioms that users love, but data analytics pipelines oftentimes require a stepup in efficiency and performance.\r\n \r\nExtension for scikit-learn addresses these gaps by proposing optimized alternatives to selected algorithms without any significant code changes on the user side.\r\n \r\nThis talk will demonstrate how to make machine learning workflows run efficiently by leveraging the UXL Extension for scikit-learn, and will dive into the details of how this works behind the scenes and avenues for future integrations.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3016,7 +3136,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "12:40 - 13:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Skore is the Data Science platform by the scikit-learn founders.\r\nSkore is a data science platform that addresses the challenges of data science in the enterprise world.\r\nSkore helps enterprises adopt AI coding tools reliably, industrialize and scale their data science practice, and bridge the gap between data science and business stakeholders.\r\nOur foundations are the same scientific principles that made scikit-learn the undisputed standard for machine learning, extended now to the team, the organization, and the enterprise.\r\nTracking, exploring, and sharing data science workflows with skore is as simple and reliable as using scikit-learn!",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3051,7 +3176,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "14:00 - 14:20",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "OpenGPT-X, TrustLLM, OpenEuroLLM — three projects, three hard lessons in what it actually takes to build foundation models in Europe at scale.\r\nThe technical challenges are real, but rarely the ones you’d expect. The governance ones even less so.\r\nThis keynote unpacks the journey honestly: where European open-source AI stands today, why the foundational intelligence layer matters more than most policy debates acknowledge, and what building it has taught us about the gap between ambition and craft.\r\nThe window is open. The Frontier AI Momentum is still there. The question is whether we’re serious about climbing through it.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3095,7 +3225,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "14:40 - 15:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Training state-of-the-art language models typically demands vast proprietary datasets and closed pipelines. At Pleias, we take a different path — building open, high-performing LLMs using synthetic data environments designed for the commons. This talk presents our approach to constructing synthetic data pipelines that generate diverse, high-quality training corpora without relying on proprietary sources. We cover the technical architecture behind our synthetic environments, the training strategies that enable competitive performance on standard benchmarks, and why we believe open synthetic data is a critical piece of the puzzle for democratizing access to frontier AI capabilities. We share lessons learned, benchmark results, and a roadmap for community-driven improvements.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3119,7 +3254,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "15:00 - 15:20",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "We will present how we trained a 1B vlm trained for OCR that reached SOTA on ocr benches.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3143,7 +3283,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "15:20 - 15:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "It is evident that AI Agents are becoming more and more capable - but what does it take to make them perform well on the real, day-to-day tasks that are prevalent in people's work? In this presentation I'll discuss how to model complex environment to evaluate - and improve - agent reliability and performance. I'll focus on the viability of production deployments in real-world tasks, on the technical side of building and running evals in these cases using Harbor (https://github.com/laude-institute/harbor), and how we are using these techniques at ellamind to build agents that are reliable and provably safe.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3183,7 +3328,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "16:00 - 16:20",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "As the Founder and CEO of QuantStack - the leading contributor to the Jupyter Project - I present the latest advancements in the Jupyter ecosystem. Key innovations include Jupyter-AI and collaborative editing workflows, but the most transformative is JupyterLite, the most scalable Jupyter distribution, bringing interactive computing to millions of users worldwide.\r\n\r\nWe introduce the notebook link platform, a powerful solution for sharing Jupyter-based documents at scale, from notebooks and storymaps to CAD models and blog posts. The platform features multi-language support (Python, R, C++, GNU Octave, OCaml, Haskell, SQLite, and more) and an AI assistant workflow with advanced tool-calling capabilities.\r\n\r\nA major breakthrough is in-browser tool calling in JupyterLite AI, which brings the full power of Jupyter-AI to lightweight, browser-based workflows. This approach ensures both scalability and enhanced security, as all computations and AI interactions are contained within the browser sandbox.\r\n\r\nFor education, the platform enables automatic notebook grading and LMS integration, making it ideal for interactive teaching and assessment.\n\nNote:\r\n - I have been invited to submit this talk by Cailean Osborne as part of the \"Own Your Data Science and AI\" workshop.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
