@@ -1680,7 +1680,7 @@
       "name": "Michael Yuan",
       "title": "Maintainer / CEO, WasmEdge / Second State",
       "image": "/images/speakers/better_portrait/michael-yuan.png",
-      "bio": "",
+      "bio": "Dr. Michael Yuan is a maintainer of WasmEdge Runtime (a project under CNCF) and a co-founder of Second State. He is the author of 5 books on software engineering published by Addison-Wesley, Prentice-Hall, and O'Reilly. Michael is a long-time open-source developer and contributor. He had previously spoken at many industry conferences including Open Source Summit, RustLab Conference, GOSIM, and KubeCon.",
       "role": "Maintainer / CEO",
       "org": "WasmEdge / Second State",
       "roleOrg": "Maintainer / CEO, WasmEdge / Second State",
@@ -1688,7 +1688,7 @@
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
-        "github": "",
+        "github": "https://github.com/juntao",
         "linkedin": "",
         "website": ""
       },
