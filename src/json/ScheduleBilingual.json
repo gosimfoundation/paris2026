@@ -2901,26 +2901,6 @@
     "ws-own-your-data-paris2026": [
       {
         "title": {
-          "en": "Workshop Welcome & Introduction",
-          "zh": "工作坊欢迎致辞与介绍",
-          "fr": "Accueil et introduction de l'atelier"
-        },
-        "speakers": [
-          {
-            "name": "Cailean Osborne",
-            "title": "Head of Ecosystem Development, Probabl"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "talk"
-      },
-      {
-        "title": {
           "en": "Morning Coffee",
           "zh": "Morning Coffee",
           "fr": "Morning Coffee"
@@ -2936,9 +2916,9 @@
       },
       {
         "title": {
-          "en": "Leading-edge Tabular AI: open table foundation models with TabICLv2",
-          "zh": "前沿表格 AI：TabICLv2 开放表格基础模型",
-          "fr": "IA tabulaire de pointe : modèles de fondation pour tableaux avec TabICLv2"
+          "en": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
+          "zh": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
+          "fr": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model"
         },
         "speakers": [
           {
@@ -3000,9 +2980,9 @@
       },
       {
         "title": {
-          "en": "Accelerated scikit-learn Three Ways",
-          "zh": "三种方式加速 scikit-learn",
-          "fr": "scikit-learn accéléré de trois façons"
+          "en": "Accelerating scikit-learn with GPUs",
+          "zh": "Accelerating scikit-learn with GPUs",
+          "fr": "Accelerating scikit-learn with GPUs"
         },
         "speakers": [
           {
@@ -3040,18 +3020,18 @@
       },
       {
         "title": {
-          "en": "Embedding Software Engineering Best Practices into AI Projects with Kedro",
-          "zh": "用 Kedro 将软件工程最佳实践融入 AI 项目",
-          "fr": "Intégrer les meilleures pratiques de génie logiciel dans les projets IA avec Kedro"
+          "en": "Extension for scikit-learn: Accelerate Workflows with Two Lines of Code",
+          "zh": "Extension for scikit-learn: Accelerate Workflows with Two Lines of Code",
+          "fr": "Extension for scikit-learn: Accelerate Workflows with Two Lines of Code"
         },
         "speakers": [
           {
-            "name": "Merel Theisen",
-            "title": "Principal Software Engineer, QuantumBlack"
+            "name": "David Cortes",
+            "title": "Intel"
           },
           {
-            "name": "Sajid Alam",
-            "title": "Senior Software Engineer, McKinsey & Company"
+            "name": "Adel Chaibi",
+            "title": "Intel"
           }
         ],
         "date": {
@@ -3059,7 +3039,27 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "12:00 - 12:40",
+        "timeSlot": "12:00 - 12:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Kedro: The Toolbox for Production-Ready Data Pipelines",
+          "zh": "Kedro: The Toolbox for Production-Ready Data Pipelines",
+          "fr": "Kedro: The Toolbox for Production-Ready Data Pipelines"
+        },
+        "speakers": [
+          {
+            "name": "Sajid Alam",
+            "title": "QuantumBlack"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:20 - 12:40",
         "type": "talk"
       },
       {
@@ -3110,7 +3110,7 @@
         "speakers": [
           {
             "name": "Nicolas Flores-Herr",
-            "title": "Fraunhofer IAIS"
+            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
           }
         ],
         "date": {
@@ -3119,6 +3119,26 @@
           "fr": "5 mai"
         },
         "timeSlot": "14:00 - 14:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "The Smol Training Handbook: Lessons from Training State-of-the-Art LLMs",
+          "zh": "The Smol Training Handbook: Lessons from Training State-of-the-Art LLMs",
+          "fr": "The Smol Training Handbook: Lessons from Training State-of-the-Art LLMs"
+        },
+        "speakers": [
+          {
+            "name": "Nouamane Tazi",
+            "title": "ML Research Engineer, Hugging Face"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:20 - 14:40",
         "type": "talk"
       },
       {
@@ -3142,7 +3162,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "14:20 - 14:40",
+        "timeSlot": "14:40 - 15:00",
         "type": "talk"
       },
       {
@@ -3166,7 +3186,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "14:40 - 15:00",
+        "timeSlot": "15:00 - 15:20",
         "type": "talk"
       },
       {
@@ -3190,19 +3210,19 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "15:00 - 15:20",
+        "timeSlot": "15:20 - 15:40",
         "type": "talk"
       },
       {
         "title": {
-          "en": "From Model to Metal: An Open Source Stack for Accelerating Artificial Intelligence",
-          "zh": "From Model to Metal: An Open Source Stack for Accelerating Artificial Intelligence",
-          "fr": "From Model to Metal: An Open Source Stack for Accelerating Artificial Intelligence"
+          "en": "From Agent Traces to Analytics",
+          "zh": "From Agent Traces to Analytics",
+          "fr": "From Agent Traces to Analytics"
         },
         "speakers": [
           {
-            "name": "Megan Knight",
-            "title": "Arm"
+            "name": "Violetta Mishechkina",
+            "title": "dltHub"
           }
         ],
         "date": {
@@ -3210,7 +3230,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "15:20 - 15:40",
+        "timeSlot": "15:40 - 16:00",
         "type": "talk"
       },
       {
@@ -3230,14 +3250,14 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "15:40 - 16:00",
+        "timeSlot": "16:00 - 16:20",
         "type": "talk"
       },
       {
         "title": {
-          "en": "Skolar and the Value of Curated ML Skills Education",
-          "zh": "Skolar and the Value of Curated ML Skills Education",
-          "fr": "Skolar and the Value of Curated ML Skills Education"
+          "en": "Skolar and the Value of Curated ML and AI Skills Education",
+          "zh": "Skolar and the Value of Curated ML and AI Skills Education",
+          "fr": "Skolar and the Value of Curated ML and AI Skills Education"
         },
         "speakers": [
           {
@@ -3245,21 +3265,6 @@
             "title": "Probabl"
           }
         ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "16:00 - 16:20",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "TBD",
-          "zh": "TBD",
-          "fr": "TBD"
-        },
-        "speakers": [],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
