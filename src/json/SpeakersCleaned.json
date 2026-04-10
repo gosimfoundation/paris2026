@@ -60,14 +60,16 @@
       "org": "Eclipse Foundation",
       "roleOrg": "Oniro Program Manager, Eclipse Foundation",
       "image": "/images/speakers/better_portrait/ignacio-ahedo.png",
-      "bio": "",
-      "tags": [],
+      "bio": "As a Program Manager at the Eclipse Foundation, Ignacio orchestrates the Oniro Working Group alongside the IoT and Sparkplug programs. A Telecommunications Engineer and PMP with a product-led mindset, he specialises in the strategic stewardship of open source ecosystems, focusing on how vendor-neutral collaboration can solve complex fragmentation challenges in the hardware and software landscape.\r\n\r\nDrawing on his background in IoT and connectivity strategy from his time at Vodafone Business, Ignacio helps organisations navigate the value proposition of open collaboration. He is dedicated to building the operational frameworks and messaging that allow diverse stakeholders to contribute to a unified, distributed future for the IoT and mobile industries.",
+      "tags": [
+        "ai-generative-app"
+      ],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
-        "website": ""
+        "linkedin": "https://www.linkedin.com/in/ignacioahedo/",
+        "website": "https://blogs.eclipse.org/blog/1098"
       },
       "status": "Accept",
       "draft": false,
@@ -184,13 +186,15 @@
       "org": "Eclipse Foundation",
       "roleOrg": "Head of AI, Eclipse Foundation",
       "image": "/images/speakers/better_portrait/michael-berns.png",
-      "bio": "",
-      "tags": [],
+      "bio": "With over 23 years of international experience, I operate at the intersection of Open Source AI, digital transformation, and global ecosystem development. My mission is to leverage Generative AI and emerging technologies to drive vendor-neutral innovation and ensure digital sovereignty on a global scale.\r\n\r\nStrategic Leadership & Impact As Head of AI for the Eclipse Foundation, I champion the advancement of Open Source AI and strategic ecosystem development. By fostering community-led collaboration and transparent technology standards, I help organizations navigate the path to digital autonomy.\r\n\r\nPreviously, at PwC Deutschland, I led initiatives that positioned the firm as a global thought leader in AI. My work focused on transformative solutions recognized by Gartner and Forrester, supported by over 100 professional publications.\r\n\r\nA Global Track Record Prior to my move to Germany in 2018, I spent 16 years in London’s high-growth tech scene with firms such as Digital Reasoning.",
+      "tags": [
+        "agentic-ai-summit"
+      ],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/in/aithoughtleader",
         "website": ""
       },
       "status": "Accept",
@@ -379,7 +383,7 @@
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
-        "github": "",
+        "github": "Global AI Assembly",
         "linkedin": "https://www.linkedin.com/in/feliana-citradewi-39657a83",
         "website": "https://globalaiassembly.lovable.app/"
       },
@@ -444,7 +448,7 @@
         "twitter": "",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/charbel-d-9569ba199",
-        "website": ""
+        "website": "https://www.cd-ia.blog/"
       },
       "status": "Accept",
       "draft": false
@@ -476,13 +480,15 @@
       "org": "Google Intrinsic",
       "roleOrg": "Agentic AI Researcher, Google Intrinsic",
       "image": "/images/speakers/better_portrait/quentin-delfosse.png",
-      "bio": "",
-      "tags": [],
+      "bio": "I am a researcher at Google, in the Intrinsic team that does AI robotics.",
+      "tags": [
+        "open-source-robotics"
+      ],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/in/quentin-delfosse-70b377150/?locale=en-US",
         "website": ""
       },
       "status": "Accept",
@@ -535,17 +541,19 @@
       "name": "Thomas Froment",
       "title": "Program Manager, Development Tools, Eclipse Foundation",
       "image": "/images/speakers/better_portrait/thomas-froment.png",
-      "bio": "",
+      "bio": "Thomas Froment is the Program Manager for Development Tools at the Eclipse Foundation, where he oversees all tooling projects, including Eclipse Theia and Theia AI, as part of the Cloud DevTools Working Group. He also leads the Open VSX and Eclipse IDE working groups.",
       "role": "Program Manager, Development Tools",
       "org": "Eclipse Foundation",
       "roleOrg": "Program Manager, Development Tools, Eclipse Foundation",
-      "tags": [],
+      "tags": [
+        "ai-generative-app"
+      ],
       "socialLinks": {
-        "mastodon": "",
-        "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
+        "mastodon": "https://mastodon.social/@tfroment",
+        "twitter": "https://x.com/tfroment",
+        "github": "https://github.com/tfroment",
+        "linkedin": "https://www.linkedin.com/in/tfroment/",
+        "website": "https://blogs.eclipse.org/blog/888"
       },
       "status": "Accept",
       "draft": false,
@@ -1112,9 +1120,9 @@
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
+        "github": "https://github.com/bjoernpl",
+        "linkedin": "https://www.linkedin.com/in/bj%C3%B6rn/",
+        "website": "elluminate.de"
       },
       "status": "Accept",
       "draft": false
@@ -1269,11 +1277,13 @@
       "name": "Yu Tao",
       "title": "Chief Scientist, Huawei Central Software Institute Singapore",
       "image": "/images/speakers/better_portrait/yu-tao.png",
-      "bio": "",
+      "bio": "2017-2019: Senior Algorithm Engineer at Alibaba. Focused on multilingual text understanding and semantic matching.\r\n2019-2025: Data Science Manager at Agoda.com. Led the development of agentic systems, including RAG frameworks, context engineering, prompt optimization platforms, and multi-agent systems. Also directed content intelligence solutions for image and text understanding, encompassing hotel image tagging, quality assessment, ranking, customer review analysis, and property characterization.\r\n2025-Present: Chief Scientist at Huawei Central Software Institute Singapore. Driving the development of Huawei’s agentic platform, openJiuwen. Leading the core technology R&D for the openJiuwen Agent Harness SDK and the self-evolving agent algorithm. Responsible for executing Huawei’s super agent initiatives, making significant contributions to technical planning, system design, and productization.",
       "role": "Chief Scientist",
       "org": "Huawei Central Software Institute Singapore",
       "roleOrg": "Chief Scientist, Huawei Central Software Institute Singapore",
-      "tags": [],
+      "tags": [
+        "agentic-ai-summit"
+      ],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
