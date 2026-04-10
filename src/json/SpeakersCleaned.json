@@ -1882,6 +1882,206 @@
       },
       "status": "Accept",
       "draft": false
+    },
+    {
+      "id": "alexio-cassani",
+      "name": "Alexio Cassani",
+      "bio": "",
+      "role": "Co-Founder & CEO",
+      "org": "FairMind",
+      "roleOrg": "Co-Founder & CEO, FairMind",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "zhenyu-zheng",
+      "name": "Zhenyu Zheng",
+      "bio": "",
+      "role": "",
+      "org": "openEuler",
+      "roleOrg": "openEuler",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "dr-chao-mbogho",
+      "name": "Dr. Chao Mbogho",
+      "bio": "",
+      "role": "Senior Fellow, Responsible Computing",
+      "org": "Mozilla Foundation",
+      "roleOrg": "Senior Fellow, Responsible Computing, Mozilla Foundation",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "xavier-tao",
+      "name": "Xavier Tao",
+      "bio": "",
+      "role": "Founder",
+      "org": "1ms.ai",
+      "roleOrg": "Founder, 1ms.ai",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "open-source-robotics"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "david-cortes",
+      "name": "David Cortes",
+      "bio": "David Cortes is a software engineer at Intel, working in development of machine learning libraries for tabular data such as oneDAL and hardware-optimized scikit-learn extension. His areas of interest include numerical methods, applied statistics, and interop with the wider open-source ecosystem.",
+      "role": "Machine Learning Engineer",
+      "org": "Intel",
+      "roleOrg": "Machine Learning Engineer, Intel",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "adel-chaibi",
+      "name": "Adel Chaibi",
+      "bio": "",
+      "role": "",
+      "org": "Intel",
+      "roleOrg": "Intel",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "marie-sacksick",
+      "name": "Marie Sacksick",
+      "bio": "",
+      "role": "",
+      "org": "Probabl",
+      "roleOrg": "Probabl",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "pierre-carl-langlais",
+      "name": "Pierre-Carl Langlais",
+      "bio": "",
+      "role": "",
+      "org": "Pleias",
+      "roleOrg": "Pleias",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "benedikt-droste",
+      "name": "Benedikt Droste",
+      "bio": "",
+      "role": "",
+      "org": "ellamind",
+      "roleOrg": "ellamind",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "violetta-mishechkina",
+      "name": "Violetta Mishechkina",
+      "bio": "Violetta Mishechkina leads Solutions Engineering at dltHub, helping teams build AI-ready data pipelines using the open-source library dlt. With a background in ML and MLOps, she focuses on turning messy, real-world data into reliable inputs for production systems. Over the past few year, Violetta has led several workshops on AI and data engineering, sharing practical insights with data teams across industries.",
+      "role": "Head of Solutions Engineering",
+      "org": "dltHub",
+      "roleOrg": "Head of Solutions Engineering, dltHub",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": "https://dlthub.com/"
+      },
+      "status": "Accept",
+      "draft": false
     }
   ],
   "columns": 6
