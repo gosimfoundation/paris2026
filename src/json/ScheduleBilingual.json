@@ -1130,10 +1130,6 @@
         },
         "speakers": [
           {
-            "name": "Dr. Chao Mbogho",
-            "title": "Senior Fellow, Responsible Computing, Mozilla Foundation (Moderator)"
-          },
-          {
             "name": "Yonghui Wu",
             "title": "Associate Professor, Fudan University"
           }

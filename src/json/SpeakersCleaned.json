@@ -1947,26 +1947,6 @@
       "draft": false
     },
     {
-      "id": "dr-chao-mbogho",
-      "name": "Dr. Chao Mbogho",
-      "bio": "",
-      "role": "Senior Fellow, Responsible Computing",
-      "org": "Mozilla Foundation",
-      "roleOrg": "Senior Fellow, Responsible Computing, Mozilla Foundation",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": [
-        "agentic-ai-summit"
-      ],
-      "socialLinks": {
-        "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
       "id": "xavier-tao",
       "name": "Xavier Tao",
       "bio": "",
