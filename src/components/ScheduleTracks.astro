@@ -115,11 +115,27 @@ const getKeynotes = (day: string) => {
   }).sort((a, b) => (a.timeSlot || "").localeCompare(b.timeSlot || ""))
 }
 
-// Get non-keynote sessions for a specific day + category, sorted by time
+// Collect all ceremonies across every category for a given day (same pattern as getKeynotes)
+const getCeremonies = (day: string) => {
+  const result: any[] = []
+  for (const cat of allCategories) {
+    const all = (scheduleData.sessions as Record<string, any[]>)[cat.id] || []
+    all.filter((s) => en(s.date) === day && s.type === "ceremony").forEach((s) => result.push(s))
+  }
+  const seen = new Set<string>()
+  return result.filter((s) => {
+    const key = `${s.timeSlot}||${en(s.title)}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  }).sort((a, b) => (a.timeSlot || "").localeCompare(b.timeSlot || ""))
+}
+
+// Get non-keynote, non-ceremony sessions for a specific day + category, sorted by time
 const getSessions = (catId: string, day: string) => {
   const all = (scheduleData.sessions as Record<string, any[]>)[catId] || []
   return all
-    .filter((s) => en(s.date) === day && s.type !== "keynote")
+    .filter((s) => en(s.date) === day && s.type !== "keynote" && s.type !== "ceremony")
     .sort((a, b) => (a.timeSlot || "").localeCompare(b.timeSlot || ""))
 }
 
@@ -144,6 +160,7 @@ const trackColor = (id: string) => TRACK_COLORS[id] || WORKSHOP_COLOR
 
 const TYPE_BG_FG: Record<string, { bg: string; fg: string }> = {
   keynote:   { bg: "#0f172a", fg: "#ffffff" },
+  ceremony:  { bg: "#7c3aed", fg: "#ffffff" },
   talk:      { bg: "#e2e8f0", fg: "#475569" },
   panel:     { bg: "#e2e8f0", fg: "#475569" },
   break:     { bg: "#e2e8f0", fg: "#94a3b8" },
@@ -308,6 +325,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
         {days.map((day) => {
           const dayEn = en(day.date)
           const keynotes = getKeynotes(dayEn)
+          const ceremonies = getCeremonies(dayEn)
           return allCategories.map((cat) => {
             const sessions = getSessions(cat.id, dayEn)
             const firstKeynoteTime = keynotes[0]?.timeSlot || "99:99"
@@ -359,7 +377,13 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                       <a class="session-card keynote-card" href={`/schedule/${slug}/`}>
                         <div class="session-left">
                           {kn.timeSlot && <span class="session-time">{kn.timeSlot}</span>}
-                          <span class="type-badge" style="background:#0f172a; color:#ffffff">{t.keynotesLabel}</span>
+                          <span class="type-badge" style="background:#92600a; color:#ffffff">{t.keynotesLabel}</span>
+                          {(kn as any).room && (
+                            <span class="special-location-badge keynote-location">
+                              <svg width="10" height="12" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 18.6668C8.12016 18.6653 8.23643 18.624 8.33067 18.5494C8.65067 18.2934 16 12.3307 16 8.00005C16 5.8783 15.1571 3.84346 13.6569 2.34316C12.1566 0.84286 10.1217 0 8 0C5.87827 0 3.84344 0.84286 2.34315 2.34316C0.842855 3.84346 0 5.8783 0 8.00005C0 12.3307 7.34933 18.2934 7.66933 18.5494C7.76357 18.624 7.87984 18.6653 8 18.6668ZM8 4.80003C8.52742 4.80003 9.04299 4.95643 9.48152 5.24945C9.92005 5.54246 10.2618 5.95894 10.4637 6.44622C10.6655 6.93349 10.7183 7.46967 10.6154 7.98696C10.5125 8.50424 10.2586 8.9794 9.88562 9.35234C9.51268 9.72528 9.03752 9.97926 8.52024 10.0822C8.00296 10.185 7.46678 10.1322 6.97951 9.9304C6.49224 9.72857 6.07576 9.38677 5.78275 8.94824C5.48973 8.50971 5.33333 7.99413 5.33333 7.46671C5.33333 6.75946 5.61429 6.08118 6.11438 5.58108C6.61448 5.08098 7.29276 4.80003 8 4.80003Z" fill="currentColor"/></svg>
+                              {en((kn as any).room)}
+                            </span>
+                          )}
                         </div>
                         <div class="session-right">
                           {!isTitleTbd && <h3 class="session-title">{titleText}</h3>}
@@ -443,6 +467,42 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                             {hasContent && (
                               <div class="speaker-list">
                                 {session.speakers.map((sp: any) => (
+                                  <div class="speaker-row">
+                                    <span class="speaker-name">{sp.name}</span>
+                                    {sp.title && <span class="speaker-role">{sp.title}</span>}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </a>
+                      )
+                    })}
+                  </div>
+                )}
+
+                {/* Ceremony block — shown on all tracks, same pattern as keynote block */}
+                {ceremonies.length > 0 && (
+                  <div class="ceremony-block">
+                    {ceremonies.map((cer: any) => {
+                      const slug = createSlug(en(cer.title))
+                      return (
+                        <a class="session-card keynote-card ceremony-card" href={`/schedule/${slug}/`}>
+                          <div class="session-left">
+                            {cer.timeSlot && <span class="session-time">{cer.timeSlot}</span>}
+                            <span class="type-badge" style="background:#92600a; color:#ffffff">★ Ceremony ★</span>
+                            {cer.room && (
+                              <span class="special-location-badge keynote-location">
+                                <svg width="10" height="12" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 18.6668C8.12016 18.6653 8.23643 18.624 8.33067 18.5494C8.65067 18.2934 16 12.3307 16 8.00005C16 5.8783 15.1571 3.84346 13.6569 2.34316C12.1566 0.84286 10.1217 0 8 0C5.87827 0 3.84344 0.84286 2.34315 2.34316C0.842855 3.84346 0 5.8783 0 8.00005C0 12.3307 7.34933 18.2934 7.66933 18.5494C7.76357 18.624 7.87984 18.6653 8 18.6668ZM8 4.80003C8.52742 4.80003 9.04299 4.95643 9.48152 5.24945C9.92005 5.54246 10.2618 5.95894 10.4637 6.44622C10.6655 6.93349 10.7183 7.46967 10.6154 7.98696C10.5125 8.50424 10.2586 8.9794 9.88562 9.35234C9.51268 9.72528 9.03752 9.97926 8.52024 10.0822C8.00296 10.185 7.46678 10.1322 6.97951 9.9304C6.49224 9.72857 6.07576 9.38677 5.78275 8.94824C5.48973 8.50971 5.33333 7.99413 5.33333 7.46671C5.33333 6.75946 5.61429 6.08118 6.11438 5.58108C6.61448 5.08098 7.29276 4.80003 8 4.80003Z" fill="currentColor"/></svg>
+                                {en(cer.room)}
+                              </span>
+                            )}
+                          </div>
+                          <div class="session-right">
+                            <h3 class="session-title">{en(cer.title)}</h3>
+                            {cer.speakers && cer.speakers.length > 0 && (
+                              <div class="speaker-list">
+                                {cer.speakers.map((sp: any) => (
                                   <div class="speaker-row">
                                     <span class="speaker-name">{sp.name}</span>
                                     {sp.title && <span class="speaker-role">{sp.title}</span>}
@@ -854,14 +914,49 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
   }
 
   @keyframes keynote-shimmer {
-    0%   { box-shadow: 0 0 0 0 rgba(15, 23, 42, 0.12), 0 1px 4px rgba(0,0,0,0.06); }
-    50%  { box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.18), 0 2px 8px rgba(0,0,0,0.10); }
-    100% { box-shadow: 0 0 0 0 rgba(15, 23, 42, 0.12), 0 1px 4px rgba(0,0,0,0.06); }
+    0%   { box-shadow: 0 0 0 0 rgba(233, 168, 0, 0.15), 0 1px 4px rgba(0,0,0,0.06); }
+    50%  { box-shadow: 0 0 0 3px rgba(233, 168, 0, 0.25), 0 2px 8px rgba(0,0,0,0.08); }
+    100% { box-shadow: 0 0 0 0 rgba(233, 168, 0, 0.15), 0 1px 4px rgba(0,0,0,0.06); }
   }
 
   .keynote-card {
-    border: 1.5px solid rgba(15, 23, 42, 0.18);
+    border: 1.5px solid rgba(233, 168, 0, 0.4);
+    background: linear-gradient(135deg, #fffbea 0%, #ffffff 100%);
     animation: keynote-shimmer 3s ease-in-out infinite;
+  }
+
+  .keynote-card .session-title {
+    color: #92600a;
+  }
+
+  .ceremony-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+
+  /* Ceremony cards share the same gold style as keynote cards */
+  .ceremony-card .session-title {
+    color: #92600a;
+  }
+
+  /* Location badge on keynote/ceremony cards */
+  .special-location-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 0.2rem 0.55rem;
+    margin-top: 0.4rem;
+    width: fit-content;
+  }
+
+  .keynote-location {
+    color: #92600a;
+    background: rgba(233, 168, 0, 0.18);
   }
 
   .keynote-card:hover {
