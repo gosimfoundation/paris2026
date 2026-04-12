@@ -182,12 +182,17 @@ const getSessionCategoryClass = (session: BilingualSession): string => {
   const titleZh = safeGetBilingualText(session.title, 'zh', '', handleError)
   
   // Only apply styling to actual special events, be very specific
-  
-  // Keynote sessions (must start with "Keynote" or be explicitly marked)
-  if (titleEn.startsWith('keynote') || titleZh.startsWith('主旨')) {
+
+  // Ceremony sessions (awards, closing)
+  if ((session as any).type === 'ceremony') {
+    return 'ceremony-session'
+  }
+
+  // Keynote sessions — check type field first, then title prefix
+  if ((session as any).type === 'keynote' || titleEn.startsWith('keynote') || titleZh.startsWith('主旨')) {
     return 'keynote-session'
   }
-  
+
   // Plenary sessions - only for GOSIM Plenary category sessions
   if (session.category === getBilingualText({en: "GOSIM Plenary Sessions", zh: "GOSIM 全体大会"}, currentLang)) {
     return 'plenary-session'
@@ -542,9 +547,17 @@ const getLocalizedText = (key: string): string => {
                           <p class="timedate">{sessionDate}</p>
                           <p>{session.timeSlot}</p>
                         </div>
-                        <h2 class="h5">
-                          <BilingualText text={sessionTitle} element="span" lang="en" />
-                        </h2>
+                        <div class="title-location-wrap">
+                          <h2 class="h5">
+                            <BilingualText text={sessionTitle} element="span" lang="en" />
+                          </h2>
+                          {((session as any).type === 'keynote' || (session as any).type === 'ceremony') && (session as any).room && (
+                            <div class="special-location-badge">
+                              <svg width="12" height="14" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 18.6668C8.12016 18.6653 8.23643 18.624 8.33067 18.5494C8.65067 18.2934 16 12.3307 16 8.00005C16 5.8783 15.1571 3.84346 13.6569 2.34316C12.1566 0.84286 10.1217 0 8 0C5.87827 0 3.84344 0.84286 2.34315 2.34316C0.842855 3.84346 0 5.8783 0 8.00005C0 12.3307 7.34933 18.2934 7.66933 18.5494C7.76357 18.624 7.87984 18.6653 8 18.6668ZM8 4.80003C8.52742 4.80003 9.04299 4.95643 9.48152 5.24945C9.92005 5.54246 10.2618 5.95894 10.4637 6.44622C10.6655 6.93349 10.7183 7.46967 10.6154 7.98696C10.5125 8.50424 10.2586 8.9794 9.88562 9.35234C9.51268 9.72528 9.03752 9.97926 8.52024 10.0822C8.00296 10.185 7.46678 10.1322 6.97951 9.9304C6.49224 9.72857 6.07576 9.38677 5.78275 8.94824C5.48973 8.50971 5.33333 7.99413 5.33333 7.46671C5.33333 6.75946 5.61429 6.08118 6.11438 5.58108C6.61448 5.08098 7.29276 4.80003 8 4.80003Z" fill="currentColor"/></svg>
+                              <span>{getBilingualText((session as any).room, currentLang)}</span>
+                            </div>
+                          )}
+                        </div>
                       </div>
                       <div class="tracks">
                         <div class="single-filter">
@@ -702,9 +715,17 @@ const getLocalizedText = (key: string): string => {
                               <p class="timedate">{sessionDate}</p>
                               <p>{session.timeSlot}</p>
                             </div>
-                            <h2 class="h5">
-                              <BilingualText text={sessionTitle} element="span" lang="en" />
-                            </h2>
+                            <div class="title-location-wrap">
+                              <h2 class="h5">
+                                <BilingualText text={sessionTitle} element="span" lang="en" />
+                              </h2>
+                              {((session as any).type === 'keynote' || (session as any).type === 'ceremony') && (session as any).room && (
+                                <div class="special-location-badge">
+                                  <svg width="12" height="14" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 18.6668C8.12016 18.6653 8.23643 18.624 8.33067 18.5494C8.65067 18.2934 16 12.3307 16 8.00005C16 5.8783 15.1571 3.84346 13.6569 2.34316C12.1566 0.84286 10.1217 0 8 0C5.87827 0 3.84344 0.84286 2.34315 2.34316C0.842855 3.84346 0 5.8783 0 8.00005C0 12.3307 7.34933 18.2934 7.66933 18.5494C7.76357 18.624 7.87984 18.6653 8 18.6668ZM8 4.80003C8.52742 4.80003 9.04299 4.95643 9.48152 5.24945C9.92005 5.54246 10.2618 5.95894 10.4637 6.44622C10.6655 6.93349 10.7183 7.46967 10.6154 7.98696C10.5125 8.50424 10.2586 8.9794 9.88562 9.35234C9.51268 9.72528 9.03752 9.97926 8.52024 10.0822C8.00296 10.185 7.46678 10.1322 6.97951 9.9304C6.49224 9.72857 6.07576 9.38677 5.78275 8.94824C5.48973 8.50971 5.33333 7.99413 5.33333 7.46671C5.33333 6.75946 5.61429 6.08118 6.11438 5.58108C6.61448 5.08098 7.29276 4.80003 8 4.80003Z" fill="currentColor"/></svg>
+                                  <span>{getBilingualText((session as any).room, currentLang)}</span>
+                                </div>
+                              )}
+                            </div>
                           </div>
                           <div class="tracks">
                             <div class="single-filter">
@@ -926,8 +947,44 @@ const getLocalizedText = (key: string): string => {
   }
   
   .single-agenda-card.keynote-session {
-    border-left: 4px solid #198754;
-    background: linear-gradient(135deg, #f0fff4 0%, #ffffff 100%);
+    border-left: 4px solid #e9a800;
+    background: linear-gradient(135deg, #fffbea 0%, #ffffff 100%);
+    box-shadow: 0 2px 8px rgba(233,168,0,0.10);
+  }
+
+  .single-agenda-card.ceremony-session {
+    border-left: 4px solid #7c3aed;
+    background: linear-gradient(135deg, #f5f0ff 0%, #ffffff 100%);
+    box-shadow: 0 2px 8px rgba(124,58,237,0.10);
+  }
+
+  .title-location-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .special-location-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #555;
+    background: rgba(0,0,0,0.06);
+    border-radius: 20px;
+    padding: 0.2rem 0.65rem;
+    width: fit-content;
+  }
+
+  .keynote-session .special-location-badge {
+    color: #92600a;
+    background: rgba(233,168,0,0.15);
+  }
+
+  .ceremony-session .special-location-badge {
+    color: #5b21b6;
+    background: rgba(124,58,237,0.12);
   }
   
   @media screen and (max-width: 500px) {

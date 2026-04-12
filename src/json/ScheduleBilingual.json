@@ -648,7 +648,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "09:30 - 09:45",
-        "type": "keynote"
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
       },
       {
         "title": {
@@ -668,7 +673,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "09:45 - 10:00",
-        "type": "keynote"
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
       },
       {
         "title": {
@@ -916,6 +926,11 @@
           "en": "The Rust world moves quickly, and that's only become more true with agents writing more and more code. Frontier models know Rust basics well, but they struggle when presented with new patterns that weren't present in their training data — new language features, new libraries, idioms that diverge from the familiar. The crate authors and language designers who know best how to help have no way to reach in and guide the agent.\r\n\r\nThis talk introduces Symposium, an open-source system that changes that. Symposium lets crate authors ship skills, tools, and guidance alongside their code — so adding a dependency doesn't just give your agent new APIs to call, it gives your agent the knowledge to use them well. I'll show you how it works and discuss what it means to bring Rust's decentralized, composable ecosystem model to AI tooling.",
           "zh": "",
           "fr": ""
+        },
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
         }
       },
       {
@@ -941,6 +956,11 @@
           "en": "The evolution from ChatGPT's conversational AI to OpenClaw's autonomous agent ecosystem marks a paradigm shift in AI compute. This transformation is fundamentally bidirectional: while advanced compute infrastructure enables increasingly sophisticated agentic capabilities, the agentic paradigm itself is reshaping compute delivery through modular, skill-based architectures.\r\n\r\nOpenClaw exemplifies this new wave, where agentic AI system capabilities are determined by the interplay of large models, skills, and agent systems. This tripartite architecture demands new evaluation methodologies that assess not just model performance, but the orchestration of skills and autonomous decision-making—addressed by open evaluation initiatives like FlagEval and the Eclipse partnership PanEval.\r\n\r\nFlagOS sits at the center of this transformation, building universal and inclusive AI compute capabilities that support heterogeneous hardware backends. By enabling efficient execution of the massive token volumes demanded by agentic workflows, FlagOS provides the computational substrate for this new era—where compute is not merely consumed by intelligence, but actively shaped by it.\r\n\r\nIn this talk, we will share insights on how to architect AI infrastructure for the agentic era, including the latest evaluation methodologies for agentic AI systems that go beyond traditional benchmarks to assess skill orchestration and autonomous decision-making. We will demonstrate how FlagOS Open Compute enables bidirectional empowerment: powering OpenClaw's universally accessible capabilities through cross-chip unified deployment, while OpenClaw agents feed back into FlagOS via automated operator generation and model migration. We will also discuss the path toward open, transparent evaluation standards that ensure trustworthy autonomous systems.",
           "zh": "",
           "fr": ""
+        },
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
         }
       },
       {
@@ -1181,7 +1201,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "17:30 - 17:40",
-        "type": "ceremony"
+        "type": "ceremony",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
       },
       {
         "title": {
@@ -1195,7 +1220,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "17:40 - 17:55",
-        "type": "ceremony"
+        "type": "ceremony",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
       },
       {
         "title": {
@@ -1209,7 +1239,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "17:55 - 18:00",
-        "type": "ceremony"
+        "type": "ceremony",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
       }
     ],
     "open-source-model": [
