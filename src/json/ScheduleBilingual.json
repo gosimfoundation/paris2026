@@ -221,9 +221,9 @@
     "hackathon-spotlight": [
       {
         "title": {
-          "en": "GOSIM Spotlight 2026: Frontier Creators",
-          "zh": "GOSIM Spotlight 2026: Frontier Creators",
-          "fr": "GOSIM Spotlight 2026: Frontier Creators"
+          "en": "GOSIM Spotlight 2026: Opening Ceremony",
+          "zh": "GOSIM Spotlight 2026：开幕式",
+          "fr": "GOSIM Spotlight 2026 : Cérémonie d'ouverture"
         },
         "speakers": [],
         "date": {
@@ -231,14 +231,59 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "12:00 - 14:00",
-        "type": "hackathon"
+        "timeSlot": "12:15 - 12:25",
+        "type": "hackathon",
+        "room": {
+          "en": "Open Platform",
+          "zh": "开放平台",
+          "fr": "Plateforme Ouverte"
+        }
       },
       {
         "title": {
-          "en": "GOSIM Spotlight 2026: Frontier Creators",
-          "zh": "GOSIM Spotlight 2026: Frontier Creators",
-          "fr": "GOSIM Spotlight 2026: Frontier Creators"
+          "en": "Project Pitches",
+          "zh": "项目路演",
+          "fr": "Présentations de projets"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:25 - 12:50",
+        "type": "hackathon",
+        "room": {
+          "en": "Open Platform",
+          "zh": "开放平台",
+          "fr": "Plateforme Ouverte"
+        }
+      },
+      {
+        "title": {
+          "en": "KernelGen: Exploration and Practice of Automatic Kernel Generation",
+          "zh": "KernelGen：自动内核生成的探索与实践",
+          "fr": "KernelGen : Exploration et pratique de la génération automatique de noyaux"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:50 - 13:00",
+        "type": "talk",
+        "room": {
+          "en": "Open Platform",
+          "zh": "开放平台",
+          "fr": "Plateforme Ouverte"
+        }
+      },
+      {
+        "title": {
+          "en": "Project Pitches",
+          "zh": "项目路演",
+          "fr": "Présentations de projets"
         },
         "speakers": [],
         "date": {
@@ -246,8 +291,38 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "12:00 - 14:00",
-        "type": "hackathon"
+        "timeSlot": "12:25 - 12:50",
+        "type": "hackathon",
+        "room": {
+          "en": "Open Platform",
+          "zh": "开放平台",
+          "fr": "Plateforme Ouverte"
+        }
+      },
+      {
+        "title": {
+          "en": "GOSIM Spotlight 2026: Frontier Creators Awards Ceremony",
+          "zh": "GOSIM Spotlight 2026：前沿创造者颁奖典礼",
+          "fr": "GOSIM Spotlight 2026 : Cérémonie de remise des prix Frontier Creators"
+        },
+        "content": {
+          "en": "Final awards announcement and closing remarks.",
+          "zh": "最终获奖公布与闭幕致辞。",
+          "fr": "Annonce des prix finaux et remarques de clôture."
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "17:30 - 17:40",
+        "type": "ceremony",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
       }
     ],
     "hackathon-robotics": [
@@ -683,31 +758,6 @@
       },
       {
         "title": {
-          "en": "Main Keynotes",
-          "zh": "主旨演讲",
-          "fr": "Conférences plénières"
-        },
-        "content": {
-          "en": "General Assembly.",
-          "zh": "全体大会。",
-          "fr": "Assemblée générale."
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "09:30 - 10:00",
-        "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
-      },
-      {
-        "title": {
           "en": "Final Sprint & Prep",
           "zh": "最终冲刺与准备",
           "fr": "Sprint final & Préparation"
@@ -849,12 +899,12 @@
         "title": {
           "en": "Keynote: Bill Ren",
           "zh": "主旨演讲：Bill Ren",
-          "fr": "Conférence plénière : Bill Ren"
+          "fr": "Keynote : Bill Ren"
         },
         "speakers": [
           {
             "name": "Bill Ren",
-            "title": "Chief Open Source Liaison Officer; Board Member, CNCF"
+            "title": "Chief Open Source Officer, Huawei"
           }
         ],
         "date": {
@@ -887,9 +937,9 @@
       },
       {
         "title": {
-          "en": "TBD",
-          "zh": "待定",
-          "fr": "À confirmer"
+          "en": "TBD - Agentic AI Summit",
+          "zh": "TBD - Agentic AI Summit",
+          "fr": "TBD - Agentic AI Summit"
         },
         "speakers": [],
         "date": {
@@ -929,7 +979,26 @@
           "en": "Panel: The Agentic AI Moment — From Models to Intelligent Systems",
           "zh": "圆桌论坛：Agentic AI 时刻——从模型到智能系统"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Jenia Jitsev",
+            "title": "Co-Founder, LAION; Researcher, Jülich Supercomputing Center (Moderator)"
+          },
+          {
+            "id": "yuxuan-zhang",
+            "name": "Yuxuan Zhang",
+            "image": "/images/speakers/better_portrait/yuxuan-zhang.png",
+            "title": "Tech Evangelist, ZhipuAI"
+          },
+          {
+            "name": "Daniel",
+            "title": "AI Model Business Developer, MiniMax"
+          },
+          {
+            "name": "Marianna Nezhurina",
+            "title": "Researcher, LAION"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
@@ -938,9 +1007,9 @@
         "timeSlot": "11:00 - 12:00",
         "type": "panel",
         "content": {
-          "en": "I don't know I was invited.",
-          "zh": "",
-          "fr": ""
+          "en": "What fundamentally distinguishes an agentic system from today's AI assistants or copilots? Are we witnessing a shift from AI models to AI systems — and what does that mean for the future architecture of AI? What are the key components of the agent stack (models, memory, tools, orchestration)? What technical or conceptual breakthrough is still needed before agentic AI becomes mainstream?",
+          "zh": "智能体系统与当今AI助手或副驾驶的根本区别是什么？我们是否正在经历从AI模型到AI系统的转变？智能体栈的关键组成部分是什么？AI智能体成为主流还需要什么技术突破？",
+          "fr": "Qu'est-ce qui distingue fondamentalement un système agentique des assistants IA d'aujourd'hui ? Assistons-nous à un glissement des modèles IA vers les systèmes IA ? Quels sont les composants clés de la pile agentique ? Quelle percée technique ou conceptuelle reste nécessaire ?"
         }
       },
       {
@@ -1044,7 +1113,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "15:20 - 15:40",
+        "timeSlot": "15:00 - 15:30",
         "type": "break"
       },
       {
@@ -1059,7 +1128,11 @@
           },
           {
             "name": "Guillaume Blaquiere",
-            "title": "Group Data Architect, Carrefour"
+            "title": "Group Data Architect, Carrefour",
+            "id": "guillaume-blaquiere",
+            "image": "/images/speakers/better_portrait/guillaume-blaquiere.png",
+            "role": "Group Data Architect",
+            "org": "Carrefour"
           },
           {
             "name": "Alexio Cassani",
@@ -1074,20 +1147,37 @@
         "timeSlot": "15:30 - 16:30",
         "type": "panel",
         "content": {
-          "en": "AI agents hit Carrefour in 2025, transforming workflows and velocity. Discover our journey: the iterations, impacted teams, pain points, and quick wins. Learn how it started and our future plans to fuel your own agentic conquest!",
-          "zh": "",
-          "fr": ""
+          "en": "Will AI agents replace traditional SaaS interfaces, or simply operate on top of them? How will organizations change when employees begin working alongside AI agents? What is the biggest barrier to enterprise adoption today — trust, reliability, or governance? In the future, will companies buy software, or will they deploy agent-based systems?",
+          "zh": "AI智能体会取代传统SaaS界面，还是仅在其上运行？当员工与AI智能体并肩工作时，组织将如何变化？企业今天采用的最大障碍是什么——信任、可靠性还是治理？未来，公司会购买软件，还是部署基于智能体的系统？",
+          "fr": "Les agents IA remplaceront-ils les interfaces SaaS traditionnelles ? Comment les organisations évolueront-elles ? Quel est le principal obstacle à l'adoption en entreprise ? À l'avenir, les entreprises achèteront-elles des logiciels ou déploieront-elles des systèmes basés sur des agents ?"
         }
       },
       {
         "title": {
-          "en": "Panel: Europe in the Age of Agentic AI — Open Innovation and Global Collaboration",
-          "zh": "圆桌论坛：Agentic AI 时代的欧洲——开放创新与全球合作"
+          "en": "Panel: AI Education — Learning in the Age of Agents",
+          "zh": "圆桌讨论：AI教育——智能体时代的学习",
+          "fr": "Panel : L'éducation à l'ère des agents IA"
         },
         "speakers": [
           {
-            "name": "Björn Plüster",
-            "title": "Co-Founder & CTO, ellamind"
+            "name": "Francois Bouchet",
+            "title": "Associate Professor of AI in Education, Sorbonne University (Moderator)"
+          },
+          {
+            "id": "yonghui-wu",
+            "name": "Yonghui Wu",
+            "image": "/images/speakers/better_portrait/yonghui-wu.png",
+            "title": "Associate Professor, Fudan University"
+          },
+          {
+            "name": "Yun Lin",
+            "title": "Researcher, Shanghai Jiaotong University"
+          },
+          {
+            "id": "ziyan-wang",
+            "name": "Ziyan Wang",
+            "image": "/images/speakers/better_portrait/wang-ziyan.png",
+            "title": "Directrice d'éducation, NGO UNESCO Avicenne"
           }
         ],
         "date": {
@@ -1098,9 +1188,9 @@
         "timeSlot": "16:30 - 17:30",
         "type": "panel",
         "content": {
-          "en": "It is evident that AI Agents are becoming more and more capable - but what does it take to make them perform well on the real, day-to-day tasks that are prevalent in people's work? In this presentation I'll discuss how to model complex environment to evaluate - and improve - agent reliability and performance. I'll focus on the viability of production deployments in real-world tasks, on the technical side of building and running evals in these cases using Harbor (https://github.com/laude-institute/harbor), and how we are using these techniques at ellamind to build agents that are reliable and provably safe.",
-          "zh": "",
-          "fr": ""
+          "en": "How will AI agents change how people learn and acquire skills? What skills will matter most in an AI-augmented workforce? Will AI reduce educational inequality, or create new divides? What role should universities play in a world where AI can already teach and assist learning?",
+          "zh": "AI智能体将如何改变人们的学习方式？在AI增强型劳动力中，哪些技能最重要？AI会减少教育不平等，还是制造新的鸿沟？在AI已能教学辅助的世界里，大学应扮演什么角色？",
+          "fr": "Comment les agents IA vont-ils changer l'apprentissage ? Quelles compétences seront les plus importantes ? L'IA va-t-elle réduire les inégalités éducatives ? Quel rôle pour les universités ?"
         }
       },
       {
@@ -1234,7 +1324,28 @@
         "speakers": [
           {
             "name": "Minako Kojima",
-            "title": "Head of Developer Relations, Moonshot AI (Moderator)"
+            "title": "Head of Developer Relations, Moonshot AI (Moderator)",
+            "id": "minakokojima",
+            "image": "/images/speakers/better_portrait/minakokojima.png",
+            "role": "Head of Developer Relations",
+            "org": "Moonshot AI"
+          },
+          {
+            "id": "junyi",
+            "name": "Junyi Zhong",
+            "image": "/images/speakers/better_portrait/junyi.png",
+            "role": "CEO",
+            "org": "INNAIO France"
+          },
+          {
+            "id": "remi-louf",
+            "name": "Rémi Louf",
+            "image": "/images/speakers/better_portrait/remi-louf.png",
+            "title": "CEO, .txt (creator of Outlines)"
+          },
+          {
+            "name": "Marc Sanselme",
+            "title": "Founder, Draft'n Run"
           }
         ],
         "date": {
@@ -1243,7 +1354,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:00 - 12:00",
-        "type": "panel"
+        "type": "panel",
+        "content": {
+          "en": "Are we entering the era of the AI-native solo founder? How much can a single developer build with AI today? Does open-source AI democratize innovation, or does scale still favour large companies? What kinds of startups will emerge from the open AI ecosystem?",
+          "zh": "我们是否正在进入AI原生独立创始人的时代？今天一个开发者用AI能构建多少？开源AI是否使创新民主化，还是规模仍然偏向大公司？开放AI生态系统将涌现哪类初创公司？",
+          "fr": "Entrons-nous dans l'ère du fondateur solo natif de l'IA ? Combien un seul développeur peut-il construire avec l'IA aujourd'hui ? L'IA open source démocratise-t-elle l'innovation ? Quels types de startups émergeront ?"
+        }
       },
       {
         "title": {
@@ -1350,13 +1466,38 @@
       },
       {
         "title": {
-          "en": "Panel: AI Education — Learning in the Age of Agents",
-          "zh": "圆桌论坛：AI 教育——在 Agent 时代学习"
+          "en": "Panel: Trusting AI Agents",
+          "zh": "圆桌讨论：信任AI智能体",
+          "fr": "Panel : Faire confiance aux agents IA"
         },
         "speakers": [
           {
-            "name": "Yonghui Wu",
-            "title": "Associate Professor, Fudan University"
+            "name": "Wenjing Chu",
+            "title": "Senior Director of Technology Strategy, Futurewei Technologies (Moderator)"
+          },
+          {
+            "name": "Markus Tavenrath",
+            "title": "Principal Engineer Developer Technology, NVIDIA",
+            "id": "markus-tavenrath",
+            "image": "/images/speakers/better_portrait/markus-tavenrath.png",
+            "role": "Principal Engineer Developer Technology",
+            "org": "NVIDIA"
+          },
+          {
+            "name": "Nicolas Flores-Herr",
+            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
+          },
+          {
+            "id": "wendy-seltzer",
+            "name": "Wendy Seltzer",
+            "image": "/images/speakers/better_portrait/wendy-seltzer.png",
+            "title": "Principal, Law Office of Wendy Seltzer"
+          },
+          {
+            "id": "drummond-reed",
+            "name": "Drummond Reed",
+            "image": "/images/speakers/better_portrait/drummond-reed.png",
+            "title": "Founder, First Person Project"
           }
         ],
         "date": {
@@ -1367,28 +1508,33 @@
         "timeSlot": "15:30 - 16:30",
         "type": "panel",
         "content": {
-          "en": "Now all professions and works reliant on tool-based skills, including most programmers' work, are being displaced by AI technologies. Cultivating students' computational and mathematical thinking by solving programming contest problems can be as a breakthrough point for the reform of computer education in the AI era. It is implemented by constructions of teaching materials, curricula and a cross-institutional and cross-regional programming training system. And innovations and effects are introduced.",
-          "zh": "",
-          "fr": ""
+          "en": "How do we trust AI Agents? As we deploy more powerful AI Agents in critical infrastructure, business systems, and personal environments, we must face the challenges of trust, security, and privacy head-on. Distinguished panelists with deep expertise in compute, models, agent identity, authorization and responsibility, law and technology governance, open source, and open standards discuss all aspects of human trust in AI technologies and AI Agents.",
+          "zh": "我们如何信任AI智能体？随着我们在关键基础设施、业务系统和个人环境中部署更强大的AI智能体，我们必须正面应对信任、安全和隐私的挑战。",
+          "fr": "Comment faire confiance aux agents IA ? Alors que nous déployons des agents IA plus puissants dans les infrastructures critiques et les systèmes personnels, nous devons faire face aux défis de la confiance, de la sécurité et de la vie privée."
         }
       },
       {
         "title": {
-          "en": "Panel: Trustworthy Agentic AI — Standards, Safety and Governance",
-          "zh": "圆桌论坛：可信 Agentic AI——标准、安全与治理"
+          "en": "Panel: Europe in the Age of Agentic AI — Open Innovation and Global Collaboration",
+          "zh": "圆桌讨论：智能体AI时代的欧洲——开放创新与全球合作",
+          "fr": "Panel : L'Europe à l'ère de l'IA agentique — Innovation ouverte et collaboration mondiale"
         },
         "speakers": [
           {
-            "name": "Wenjing Chu",
-            "title": "Senior Director of Technology Strategy, Futurewei Technologies (Moderator)"
+            "name": "Mirko Boehm",
+            "title": "LF Europe (Moderator)"
           },
           {
-            "name": "Markus Tavenrath",
-            "title": "Principal Engineer Developer Technology, NVIDIA"
+            "name": "Björn Plüster",
+            "title": "Co-Founder & CTO, ellamind"
           },
           {
-            "name": "Nicolas Flores-Herr",
-            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
+            "name": "Jose Andres Munoz",
+            "title": "Associate Professor, Universidad Politécnica de Madrid"
+          },
+          {
+            "name": "Afonso Ferreira",
+            "title": "Researcher, CNRS"
           }
         ],
         "date": {
@@ -1399,9 +1545,9 @@
         "timeSlot": "16:30 - 17:30",
         "type": "panel",
         "content": {
-          "en": "How do we trust AI Agents? As we deploy more powerful AI Agents in critical infrastructure, in business or enterprise systems, and in personal environments (e.g. OpenClaw), we must face the challenges of trust, security, and privacy head-on.  In this panel discussion, we invite distinguished panelists with deep expertise in compute, models, agent identity, authorization and responsibility, law and technology governance, open source, and open standards to discuss all aspects of human trust in AI technologies and AI Agents. We will also ask our panelists what we: you, me, us -- can do to advance the technologies, social norms and governance structures so that we can enjoy the benefits of powerful AI Agents that we can trust.",
-          "zh": "",
-          "fr": ""
+          "en": "Europe missed the SaaS wave — can Agentic AI create a new opportunity? Can open-source AI become Europe's strategic advantage? How can Europe collaborate globally while maintaining technological sovereignty? What role should European institutions and ecosystems play in shaping the next generation of AI?",
+          "zh": "欧洲错过了SaaS浪潮——AI智能体能带来新机遇吗？开源AI能成为欧洲的战略优势吗？欧洲如何在保持技术主权的同时开展全球合作？欧洲机构在塑造下一代AI中应扮演什么角色？",
+          "fr": "L'Europe a raté la vague SaaS — l'IA agentique peut-elle créer une nouvelle opportunité ? L'IA open source peut-elle devenir l'avantage stratégique de l'Europe ? Comment l'Europe peut-elle collaborer mondialement tout en maintenant sa souveraineté technologique ?"
         }
       },
       {
@@ -1465,23 +1611,8 @@
     "open-source-model": [
       {
         "title": {
-          "en": "Registration",
-          "zh": "注册",
-          "fr": "Inscription"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "08:30 - 09:30",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Morning Coffee",
-          "zh": "茶歇",
+          "zh": "上午茶歇",
           "fr": "Café du matin"
         },
         "speakers": [],
@@ -1491,22 +1622,25 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:00 - 10:20",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       },
       {
         "title": {
           "en": "Linear Attention: Past, Present and Future",
-          "zh": "线性注意力机制：过去、现在与未来"
-        },
-        "content": {
-          "en": "The quadratic complexity of standard self-attention has become the fundamental bottleneck for long-context AI agents and edge-deployed models. Linear attention mechanisms—transforming the attention computation from O(n²) to O(n)—have emerged as one of the most significant algorithmic breakthroughs in efficient sequence modeling.\n\nThis talk presents a comprehensive technical journey through the evolution of linear attention: from theoretical foundations (Performer, Linear Transformer, RNN reformulations) through current state-of-the-art architectures (Mamba, RetNet, GLA) to critical research frontiers shaping 2026—hybrid attention strategies for agentic workflows, hardware-software co-design for edge deployment, and the convergence of linear attention with state-space models. Drawing from production experience at Kimi training large-scale foundation models.",
-          "zh": "标准自注意力的二次方复杂度已成为长上下文 AI Agent 与边缘部署模型的根本瓶颈。线性注意力机制将计算从 O(n²) 降至 O(n)，是高效序列建模领域最重要的算法突破之一。本演讲从理论基础出发，经由 Mamba、RetNet、GLA 等主流架构，一路延伸至 2026 年最前沿研究方向，并结合 Kimi 大规模基础模型训练的生产实践。",
-          "fr": "La complexité quadratique de l'auto-attention standard est devenue le goulot d'étranglement fondamental. Les mécanismes d'attention linéaire (O(n) au lieu de O(n²)) ont émergé comme l'une des avancées algorithmiques les plus significatives en modélisation de séquences efficace."
+          "zh": "Linear Attention: Past, Present and Future",
+          "fr": "Linear Attention: Past, Present and Future"
         },
         "speakers": [
           {
             "name": "Minako Kojima",
-            "title": "Head of Developer Relations, Moonshot AI"
+            "title": "Head of Developer Relations, Moonshot AI",
+            "id": "minakokojima",
+            "image": "/images/speakers/better_portrait/minakokojima.png"
           }
         ],
         "date": {
@@ -1515,17 +1649,25 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:20 - 10:50",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       },
       {
         "title": {
           "en": "The Open-Source Journey of the GLM Models",
-          "zh": "GLM 模型的开源历程"
+          "zh": "The Open-Source Journey of the GLM Models",
+          "fr": "The Open-Source Journey of the GLM Models"
         },
         "speakers": [
           {
             "name": "Yuxuan Zhang",
-            "title": "Technical Evangelist, ZhipuAI"
+            "title": "Technical Evangelist, ZhipuAI",
+            "id": "yuxuan-zhang",
+            "image": "/images/speakers/better_portrait/yuxuan-zhang.png"
           }
         ],
         "date": {
@@ -1535,26 +1677,22 @@
         },
         "timeSlot": "10:50 - 11:20",
         "type": "talk",
-        "content": {
-          "en": "The models are evolving rapidly, so this section cannot be finalized at the moment. This table is intended to reserve a placeholder, and the details can be further discussed via email.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
         }
       },
       {
         "title": {
-          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
-          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
-        },
-        "content": {
-          "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
-          "zh": "聊天机器人时代正让位于更强大的事物：自主 Agent 生态系统，AI 系统在其中主动规划、协调和执行复杂工作流，无需大量人工干预。Minimax 一直站在这一转变的前沿，开发支持大规模 Agent 原生应用的模型和基础设施。\n\n本演讲探讨如何从简单问答交互迈向多步骤 Agentic 流程——所需的模型能力、工具和编排层，以及在生产环境中部署自主 Agent 的现实挑战。",
-          "fr": "L'ère du chatbot cède la place à quelque chose de plus puissant : les écosystèmes d'agents autonomes où les systèmes IA planifient, coordonnent et exécutent des workflows complexes avec un minimum d'intervention humaine. Minimax est à l'avant-garde de cette transition.\n\nCette présentation examine ce qu'il faut pour aller au-delà des interactions simples vers des pipelines agentiques multi-étapes — les capacités de modèles requises, les couches d'outillage et d'orchestration nécessaires, et les défis réels du déploiement d'agents autonomes en production."
+          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with MiniMax",
+          "zh": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with MiniMax",
+          "fr": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with MiniMax"
         },
         "speakers": [
           {
             "name": "Daniel",
-            "title": "AI Model Business Developer, Minimax"
+            "title": "AI Evangelist, MiniMax"
           }
         ],
         "date": {
@@ -1563,7 +1701,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:20 - 12:00",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       },
       {
         "title": {
@@ -1578,17 +1721,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "12:00 - 14:00",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       },
       {
         "title": {
           "en": "World Model for Universal Generation and Control",
-          "zh": "用于通用生成与控制的世界模型"
-        },
-        "content": {
-          "en": "An effective world model needs to sense and learn real-world knowledge, predict and generate real-world scenes, reason and control according to physical laws, and act robustly with human-in-the-loop. This talk presents two innovations toward the first open-source, physically grounded world model from academia.\n\nFirst, a flow matching and DPO reinforcement learning framework improves continuity and physical awareness in world model representation and generation, achieving best-of-results in physical awareness and state-of-the-art in open-source video generation. Second, a comprehensive physical awareness benchmarking and arena system extracts 50–60 metrics demonstrating physical law awareness across video quality, common sense, Newtonian mechanics, optics, energy, chemical, and material properties. The talk concludes with the concept of \"world model for all\"—a single world model for robotic control, navigation, task management, and 3D reconstruction.",
-          "zh": "本演讲介绍迈向学界首个开源、物理基础世界模型的两项创新：一是通过流匹配与 DPO 强化学习框架提升世界模型表示与生成中的连续性和物理意识；二是构建涵盖 50–60 项指标的物理意识基准体系。最终提出「人人皆可用的世界模型」概念——单一世界模型支撑机器人控制、导航、任务管理与 3D 重建。",
-          "fr": "Cet exposé présente deux innovations vers le premier modèle du monde physiquement ancré en open source : un cadre de flow matching et d'apprentissage par renforcement DPO, et un système de benchmarking de la conscience physique avec 50–60 métriques."
+          "zh": "World Model for Universal Generation and Control",
+          "fr": "World Model for Universal Generation and Control"
         },
         "speakers": [
           {
@@ -1602,13 +1746,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "14:00 - 14:30",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       },
       {
         "title": {
           "en": "OpenSeek-10B: Scaling Open-Source LLMs with Less Compute",
-          "zh": "OpenSeek-10B：用更少算力扩展开源大语言模型",
-          "fr": "OpenSeek-10B : mettre à l'échelle les LLM open source avec moins de calcul"
+          "zh": "OpenSeek-10B: Scaling Open-Source LLMs with Less Compute",
+          "fr": "OpenSeek-10B: Scaling Open-Source LLMs with Less Compute"
         },
         "speakers": [
           {
@@ -1623,26 +1772,22 @@
         },
         "timeSlot": "14:30 - 15:00",
         "type": "talk",
-        "content": {
-          "en": "Pretraining large language models from scratch is expensive — but does it have to be? In this talk, we present OpenSeek-10B, a fully open-source 10B-parameter language model that outperforms Qwen3-14B-Base and other open-source models of comparable size, while reducing pretraining FLOPs by roughly 20x.\r\nWe share two key techniques that compound to dramatically improve pretraining efficiency: small-model initialization, which grows a well-trained 4B model to 10B scale through hybrid width-depth expansion, inheriting its learned capabilities instead of starting from scratch; and the Muon optimizer, which further accelerates training convergence over the widely-used AdamW. Combined with a carefully designed multi-stage data strategy built entirely on open-source datasets, OpenSeek-10B outperforms Qwen3-14B-Base and other open-source models of comparable size on mainstream benchmarks.\r\nWe will walk through the full recipe — model scaling, optimizer selection, data curation, and the lessons we learned along the way — providing a practical, reproducible blueprint for the community to pretrain competitive models at lower cost. We will also share how FlagOS, BAAI's open-source unified software stack validated across chips from 6 vendors, enables this recipe to run efficiently beyond a single hardware ecosystem.\n\nThis talk presents the full technical story behind OpenSeek-10B. We start by explaining why small-model initialization is a compelling alternative to training from scratch: by expanding a well-trained Qwen3-4B-Base to 10.6B parameters through a hybrid width-depth scaling approach, the larger model inherits foundational capabilities and avoids the expensive early phase of pretraining where the model learns basic representations. We will detail our specific expansion recipe — doubling the FFN intermediate size for width, and partial layer stacking for depth — and discuss the design trade-offs involved.\r\nWe then show how the Muon optimizer further amplifies this efficiency advantage. Our experiments directly compare Muon against AdamW under the same settings, demonstrating meaningful improvements in both convergence speed and downstream benchmark scores. The combination of small-model initialization and Muon yields compounding gains that neither technique achieves alone.\r\nOn the data side, we walk through our two-stage pretraining pipeline built entirely from open-source datasets, including our data mixture ratios across web, math, code, STEM, and multilingual domains, and how we tuned them between stages. We also share findings from scaling validation experiments (0.6B → 2.38B).\r\nOn the infrastructure side, we show how FlagOS — BAAI's open-source unified software stack — supported the pretraining of OpenSeek-10B. FlagOS has completed end-to-end training validation across 6 chip vendors on both homogeneous and heterogeneous thousand-GPU clusters, with benchmark deviations within 2% of the NVIDIA baseline — the industry's first unified-stack \"full-element\" validation. We will discuss how this enables the community to reproduce our recipe on a broader range of hardware.\r\nThe audience will leave with a concrete, reproducible recipe — covering model architecture expansion, optimizer selection, and data curation — for training competitive mid-size LLMs at a fraction of the typical compute cost.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
         }
       },
       {
         "title": {
           "en": "Building World's First Multi-Modal Model SpeedRun in Open Source",
-          "zh": "开源构建全球首个多模态模型 SpeedRun"
-        },
-        "content": {
-          "en": "Standing on the shoulders of giants like modded-nanogpt speedrun and marin speedrun, the Open Model Initiative under LFAI&Data Foundation kickstarted a new speedrun effort focusing on multi-modal models in early 2026. This is the first effort to accelerate model architecture and training/inference innovation for multi-modal tasks worldwide.\n\nThis talk shares the motivation for this effort, how it came about, and the latest submissions received since launch—demonstrating how open collaboration can accelerate the development of next-generation multimodal AI.",
-          "zh": "站在 modded-nanogpt speedrun 和 marin speedrun 等先驱的肩膀上，LFAI&Data 基金会旗下的 Open Model Initiative 于 2026 年初启动了面向多模态模型的全新 speedrun 挑战。这是全球首个加速多模态任务模型架构与训练/推理创新的举措。本演讲分享这一行动的动机、起源及自发布以来收到的最新提交成果。",
-          "fr": "L'Open Model Initiative sous LFAI&Data Foundation a lancé en 2026 un speedrun pour les modèles multimodaux — la première initiative mondiale pour accélérer l'innovation en architecture et entraînement de modèles multimodaux. Cet exposé partage la motivation, l'origine et les dernières soumissions."
+          "zh": "Building World's First Multi-Modal Model SpeedRun in Open Source",
+          "fr": "Building World's First Multi-Modal Model SpeedRun in Open Source"
         },
         "speakers": [
           {
             "name": "Zhipeng Huang",
-            "title": "Board Chairperson, LFAI & Data Foundation"
+            "title": "Board Chairperson, LF AI & Data Foundation; Huawei"
           }
         ],
         "date": {
@@ -1651,13 +1796,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "15:00 - 15:30",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       },
       {
         "title": {
           "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
+          "zh": "下午茶歇",
+          "fr": "Pause thé"
         },
         "speakers": [],
         "date": {
@@ -1666,17 +1816,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "15:20 - 15:40",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       },
       {
         "title": {
           "en": "Exploring HiFloat8: A Tapered Format Complementing the FP8 Ecosystem for Robust Model Training",
-          "zh": "探索 HiFloat8：为 FP8 生态补充的渐变格式，实现稳健模型训练"
-        },
-        "content": {
-          "en": "Standard FP8 formats suffer from frequent gradient overflows and heavy reliance on complex dynamic scaling (Delayed Scaling), which often lead to training instability in billion-parameter models. This session introduces HiFloat8 (HiF8)—a tapered precision format whose natural alignment with neural network weight/gradient distributions allows it to capture high-magnitude outliers without aggressive scaling.\n\nWe demonstrate HiF8 implementation within PyTorch using torch.npu, show training stability analysis with BF16-level convergence achieved with reduced reliance on delay scaling, and present 1.5–1.7× GEMM performance gains versus FP16 in specific scenarios. We also discuss ongoing collaboration on dedicated hardware support for HiF8.",
-          "zh": "标准 FP8 格式存在梯度溢出频繁、高度依赖复杂动态缩放（延迟缩放）等问题，导致十亿参数模型训练不稳定。本演讲介绍 HiFloat8（HiF8）——一种渐变精度格式，其与神经网络权重/梯度分布的天然契合使其无需激进缩放即可捕获高幅度离群值，在特定场景下实现相对 FP16 约 1.5–1.7× 的 GEMM 性能提升。",
-          "fr": "HiFloat8 (HiF8) est un format de précision effilé qui s'aligne naturellement avec les distributions de poids/gradients des réseaux de neurones. Il atteint une convergence de niveau BF16 avec une dépendance réduite au scaling retardé, et offre des gains de performance GEMM de 1,5 à 1,7× versus FP16."
+          "zh": "Exploring HiFloat8: A Tapered Format Complementing the FP8 Ecosystem for Robust Model Training",
+          "fr": "Exploring HiFloat8: A Tapered Format Complementing the FP8 Ecosystem for Robust Model Training"
         },
         "speakers": [
           {
@@ -1690,22 +1841,25 @@
           "fr": "6 mai"
         },
         "timeSlot": "15:40 - 16:10",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       },
       {
         "title": {
           "en": "When Does Sparsity Mitigate the Curse of Depth in LLMs",
-          "zh": "稀疏性何时能缓解 LLM 的深度诅咒"
-        },
-        "content": {
-          "en": "Recent work has demonstrated the curse of depth in large language models, where later layers contribute less to learning and representation than earlier layers. This paper demonstrates that sparsity, beyond enabling efficiency, acts as a regulator of variance propagation and thereby improves depth utilization.\n\nThe investigation covers two sources of sparsity: implicit sparsity (weight sparsity from weight decay, attention sparsity from long-context inputs) and explicit sparsity (key/value-sharing in Grouped-Query Attention, expert-activation sparsity in Mixture-of-Experts). A consistent relationship emerges: sparsity improves layer utilization by reducing output variance and promoting functional differentiation, yielding a notable 4.6% accuracy improvement on downstream tasks.",
-          "zh": "近期研究发现 LLM 的「深度诅咒」——越深的层对学习与表示的贡献越小。本研究证明，稀疏性不仅能提升效率，还能作为方差传播的调节器从而改善深度利用率。研究涵盖隐式稀疏性（权重衰减引起的权重稀疏、长上下文引起的注意力稀疏）与显式稀疏性（GQA 的 KV 共享、MoE 的专家激活稀疏），在下游任务上实现 4.6% 的准确率提升。",
-          "fr": "Cet article démontre que la sparsité agit comme un régulateur de la propagation de la variance dans les LLM, améliorant l'utilisation des couches profondes. Elle couvre la sparsité implicite et explicite, obtenant une amélioration de 4,6% de précision sur les tâches en aval."
+          "zh": "When Does Sparsity Mitigate the Curse of Depth in LLMs",
+          "fr": "When Does Sparsity Mitigate the Curse of Depth in LLMs"
         },
         "speakers": [
           {
             "name": "Shiwei Liu",
-            "title": "Group Leader, Max Planck Institute for Intelligent Systems; PI, ELLIS Institute Tübingen"
+            "title": "Group Leader, Max Planck Institute for Intelligent Systems; PI, ELLIS Institute Tübingen",
+            "id": "shiwei-liu",
+            "image": "/images/speakers/better_portrait/shiwei-liu.png"
           }
         ],
         "date": {
@@ -1714,17 +1868,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "16:10 - 16:40",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       },
       {
         "title": {
           "en": "Building Scalable LLM Inference Infrastructure",
-          "zh": "构建可扩展的 LLM 推理基础设施"
-        },
-        "content": {
-          "en": "LLM serving infrastructure has become a key pillar for modern society, but building scalable LLM infrastructure remains challenging at scale due to system issues like load imbalancing, stragglers, and lack of elasticity. This talk presents recent work on scalable and efficient LLM infrastructure, including a simple but efficient multiplication-based LLM global router and ultra-fast autoscaling mechanisms. Some of these works have been or are being deployed at the world's largest LLM service providers.",
-          "zh": "LLM 推理基础设施已成为现代社会的关键支柱，但受负载不均衡、慢节点及弹性不足等系统性问题影响，大规模可扩展基础设施的构建仍面临挑战。本演讲介绍近期在可扩展高效 LLM 基础设施方面的工作，包括简洁高效的乘法基 LLM 全局路由器与超快速自动扩缩容机制，部分成果已在全球最大 LLM 服务商落地部署。",
-          "fr": "Cette présentation expose des travaux récents sur une infrastructure LLM scalable et efficace, incluant un routeur global basé sur la multiplication et des mécanismes d'autoscaling ultra-rapides, déployés chez les plus grands fournisseurs de services LLM au monde."
+          "zh": "Building Scalable LLM Inference Infrastructure",
+          "fr": "Building Scalable LLM Inference Infrastructure"
         },
         "speakers": [
           {
@@ -1738,29 +1893,19 @@
           "fr": "6 mai"
         },
         "timeSlot": "16:40 - 17:10",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Open Stage",
+          "zh": "开放舞台",
+          "fr": "Scène Ouverte"
+        }
       }
     ],
     "ai-generative-app": [
       {
         "title": {
-          "en": "Registration",
-          "zh": "注册",
-          "fr": "Inscription"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "08:30 - 09:30",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Morning Coffee",
-          "zh": "茶歇",
+          "zh": "上午茶歇",
           "fr": "Café du matin"
         },
         "speakers": [],
@@ -1770,22 +1915,25 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:00 - 10:20",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "Writing Rust AI Applications with Makepad",
-          "zh": "使用 Makepad 编写 Rust AI 应用"
-        },
-        "content": {
-          "en": "This talk shows how to rapidly create high-performance Rust applications with Makepad, using AI coding assistants like Claude. Rust is the ideal language for AI generation because of its strong compiler guarantees and superb performance—we no longer need to write it by hand.\n\nMakepad Studio has automation integration for AI so it can generate, see, click buttons, and iterate completely automated on visual applications. Makepad compiles to web, desktop (Windows, Linux, macOS), mobile (Android, iOS), and XR (Quest). The talk demos how far we can push AI application generation including AI-generated CAD, 3D, map rendering, vector engines, and mixed reality 3D world scanning.",
-          "zh": "本演讲展示如何借助 Claude 等 AI 编程助手，用 Makepad 快速创建高性能 Rust 应用。Rust 因强大的编译器保证和卓越性能而成为 AI 代码生成的理想语言。Makepad Studio 集成 AI 自动化，可自动生成、查看、点击并迭代可视化应用，支持 Web、桌面、移动及 XR（Quest）等多平台编译。",
-          "fr": "Cette présentation montre comment créer rapidement des applications Rust haute performance avec Makepad, en utilisant des assistants de codage IA comme Claude. Makepad compile vers le web, desktop, mobile et XR, permettant une génération d'applications IA automatisée de bout en bout."
+          "zh": "Writing Rust AI Applications with Makepad",
+          "fr": "Writing Rust AI Applications with Makepad"
         },
         "speakers": [
           {
             "name": "Rik Arends",
-            "title": "Co-Founder, Makepad"
+            "title": "Co-Founder, Makepad",
+            "id": "rik-arends",
+            "image": "/images/speakers/better_portrait/rik-arends.png"
           }
         ],
         "date": {
@@ -1794,23 +1942,25 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:20 - 10:50",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "Building with StrongDM Attractor",
-          "zh": "使用 StrongDM Attractor 构建",
-          "fr": "Construire avec StrongDM Attractor"
-        },
-        "content": {
-          "en": "This talk covers experience working with StrongDM's Attractor: a multi-agent orchestrator capable of delivering production-ready features by walking a graph of nodes. Attractor has been used internally to deliver drivers for cloud databases, one-shot simple compiler development (which took a lot of prompting previously), and for complicated numerical analysis algorithm tasks. The specification is open source.",
-          "zh": "本演讲分享使用 StrongDM Attractor 的实践经验——这是一个通过遍历节点图来交付生产就绪功能的多 Agent 编排器。Attractor 已用于交付云数据库驱动、一次性简单编译器开发以及复杂数值分析算法任务，规范已开源。",
-          "fr": "Cette présentation couvre l'expérience avec Attractor de StrongDM : un orchestrateur multi-agents capable de livrer des fonctionnalités prêtes pour la production en parcourant un graphe de nœuds. Utilisé pour des pilotes de bases de données cloud, du développement de compilateurs et des tâches d'analyse numérique. La spécification est open source."
+          "zh": "Building with StrongDM Attractor",
+          "fr": "Building with StrongDM Attractor"
         },
         "speakers": [
           {
             "name": "Marcin Zubrzycki",
-            "title": "Software Engineer, StrongDM"
+            "title": "Software Engineer, StrongDM",
+            "id": "marcin-zubrzycki",
+            "image": "/images/speakers/better_portrait/marcin-zubrzycki.png"
           }
         ],
         "date": {
@@ -1819,22 +1969,25 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:50 - 11:20",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "Building Agentic Apps with CopilotKit and AG-UI",
-          "zh": "使用 CopilotKit 和 AG-UI 构建 Agentic 应用"
-        },
-        "content": {
-          "en": "AI agents are reshaping how users interact with software. This talk explores Agentic UX through AG-UI, an open protocol that standardizes agent-to-user interactions, enabling intuitive, real-time, and collaborative AI experiences.\n\nAttendees will learn how Agentic UX differs from conventional design paradigms, the AG-UI event model (from streaming messages to tool calls and shared state), how human-in-the-loop is essential for AI-native applications, patterns for building intuitive AI-native interfaces, and how vendor-neutral messaging enables interoperability across frameworks like LangGraph, CrewAI, and Mastra.",
-          "zh": "AI Agent 正在重塑用户与软件的交互方式。本演讲通过 AG-UI——一个标准化 Agent 与用户交互的开放协议——探讨 Agentic UX。议题涵盖：Agentic UX 与传统设计范式的差异、AG-UI 事件模型（从流式消息到工具调用与状态共享）、人在回路对 AI 原生应用的重要性，以及跨 LangGraph、CrewAI、Mastra 等框架的互操作性。",
-          "fr": "AG-UI est un protocole ouvert qui standardise les interactions agent-utilisateur. Cet exposé présente comment l'Agentic UX diffère des paradigmes classiques, le modèle d'événements AG-UI, et comment la messagerie vendor-neutral permet l'interopérabilité entre LangGraph, CrewAI et Mastra."
+          "zh": "Building Agentic Apps with CopilotKit and AG-UI",
+          "fr": "Building Agentic Apps with CopilotKit and AG-UI"
         },
         "speakers": [
           {
             "name": "Ran Shemtov",
-            "title": "Founding Engineer, CopilotKit"
+            "title": "Founding Engineer, CopilotKit",
+            "id": "ran-shemtov",
+            "image": "/images/speakers/better_portrait/ran-shemtov.png"
           }
         ],
         "date": {
@@ -1843,7 +1996,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:20 - 12:00",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
@@ -1858,22 +2016,24 @@
           "fr": "5 mai"
         },
         "timeSlot": "12:00 - 14:00",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "How to Build Multi-Agent Systems with ADK and Agent Skills",
-          "zh": "如何使用 ADK 和 Agent Skills 构建多智能体系统"
-        },
-        "content": {
-          "en": "Multi-agent systems are one of the most promising patterns in AI application development, but how do you actually build one that is modular, maintainable, and useful in real developer workflows?\n\nThis talk explores how to design and build a practical multi-agent system using the Google Agent Development Kit (ADK), Antigravity, and Agent Skills. By the end of the session, you will understand how to design a multi-agent architecture, decide when to use sub-agents versus agent-like tools, and create reusable skills that make agents more effective in real-world development environments.",
-          "zh": "多智能体系统是 AI 应用开发中最具前景的模式之一。本演讲探讨如何使用 Google Agent Development Kit（ADK）、Antigravity 和 Agent Skills 设计并构建实用的多智能体系统，帮助你掌握多智能体架构设计、子 Agent 与 Agent 工具的选择时机，以及创建可复用技能以提升 Agent 在真实开发环境中的效果。",
-          "fr": "Cet exposé explore comment concevoir et construire un système multi-agents pratique avec Google ADK, Antigravity et Agent Skills — comment architecturer un système multi-agents, choisir entre sous-agents et outils, et créer des compétences réutilisables."
+          "zh": "How to Build Multi-Agent Systems with ADK and Agent Skills",
+          "fr": "How to Build Multi-Agent Systems with ADK and Agent Skills"
         },
         "speakers": [
           {
             "name": "Qingyue (Annie) Wang",
-            "title": "Developer Relations Engineer, Google Cloud"
+            "title": "Developer Relations Engineer, Google Cloud",
+            "id": "qingyueannie-wang"
           }
         ],
         "date": {
@@ -1882,22 +2042,25 @@
           "fr": "5 mai"
         },
         "timeSlot": "14:00 - 14:30",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "Vibe Native for More: Why AI Agents Deserve a Better App Framework",
-          "zh": "Vibe Native for More：AI Agent 为什么需要更好的应用框架"
-        },
-        "content": {
-          "en": "AI is transforming how apps are built, but not what they're built on. Without a cross-platform framework, agents must generate, verify, and maintain separate code for every platform, or degrade to web pages that don't feel native.\n\nThis talk introduces Lynx, the open-source cross-platform framework powering TikTok and CapCut at billion-user scale, and presents three principles for AI-native app infrastructure: AI-Ergonomic (harness-able by agents), AI-Efficient (token-economical via cross-platform code reuse), and AI-Expressive (intent-driven UI with A2UI protocols, JSON-to-UI rendering, and streaming-friendly architectures for real-time progressive generation).",
-          "zh": "AI 正在改变应用的构建方式，却未改变其构建基础。本演讲介绍 Lynx——为 TikTok 和 CapCut 提供十亿级用户规模支撑的开源跨平台框架，并提出 AI 原生应用基础设施的三大原则：AI 人机工程学（可被 Agent 驾驭）、AI 高效性（跨平台复用降低 Token 成本）、AI 表达力（A2UI 协议、JSON-to-UI 渲染与流式架构）。",
-          "fr": "Lynx est le framework cross-platform open source qui propulse TikTok et CapCut à l'échelle du milliard d'utilisateurs. Cet exposé présente trois principes pour l'infrastructure d'apps IA-native : AI-Ergonomique, AI-Efficace (économie de tokens via la réutilisation cross-platform), et AI-Expressif (protocoles A2UI, rendu JSON-to-UI)."
+          "zh": "Vibe Native for More: Why AI Agents Deserve a Better App Framework",
+          "fr": "Vibe Native for More: Why AI Agents Deserve a Better App Framework"
         },
         "speakers": [
           {
             "name": "Xuan Huang",
-            "title": "Software Architect, Lynx, ByteDance"
+            "title": "Software Architect of Lynx, ByteDance",
+            "id": "xuan-huang",
+            "image": "/images/speakers/better_portrait/xuan-huang.png"
           }
         ],
         "date": {
@@ -1906,13 +2069,18 @@
           "fr": "5 mai"
         },
         "timeSlot": "14:30 - 15:00",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
-          "en": "TBD",
-          "zh": "TBD",
-          "fr": "TBD"
+          "en": "TBD - Agentic OS & App",
+          "zh": "TBD - Agentic OS & App",
+          "fr": "TBD - Agentic OS & App"
         },
         "speakers": [],
         "date": {
@@ -1921,13 +2089,18 @@
           "fr": "5 mai"
         },
         "timeSlot": "15:00 - 15:20",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
+          "zh": "下午茶歇",
+          "fr": "Pause thé"
         },
         "speakers": [],
         "date": {
@@ -1936,13 +2109,18 @@
           "fr": "5 mai"
         },
         "timeSlot": "15:20 - 15:40",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "From LLM Apps to Agent Systems: Building an AI Operating System with Octos",
-          "zh": "从 LLM 应用到 Agent 系统：用 Octos 构建 AI 操作系统",
-          "fr": "Des apps LLM aux systèmes agents : Construire un OS IA avec Octos"
+          "zh": "From LLM Apps to Agent Systems: Building an AI Operating System with Octos",
+          "fr": "From LLM Apps to Agent Systems: Building an AI Operating System with Octos"
         },
         "speakers": [
           {
@@ -1957,17 +2135,17 @@
         },
         "timeSlot": "15:40 - 16:10",
         "type": "talk",
-        "content": {
-          "en": "What if you could design agents like Socrates' daimonion — not one,  but many? A beacon that watches your project evolve and generates a slide deck before Monday's meeting. Another that curates your morning news into a personalized radio station, read aloud in your preferred voice. A third orchestrating a research pipeline overnight with eight workers fanning out in parallel. Each arm thinking independently, all sharing one brain.\r\n\r\nOctos — the Open Cognitive Tasks Orchestration System — makes this architecture real. A single 31MB Rust binary that serves 200+ users  on a Mac Mini. No Python, no Docker, no runtime dependencies. 15 LLM providers with 3-layer failover so your daimons never go silent. 12 messaging channels so they meet people where they already are. Three memory layers so they remember what matters. And smart tool  management that keeps agents sharp — 30+ capabilities available, but only 15 active at any moment, like an octopus choosing which arms to extend.\r\n\r\nIn this talk, we'll explore the design principles behind building  agent applications that transcend chat — from multi-channel presence  to proactive orchestration, from provider resilience to the hard problem of giving an agent many arms without losing its mind.\r\n\r\nYou'll leave with a new mental model: agents not as tools you use, but as daimons you design.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
         }
       },
       {
         "title": {
           "en": "Accelerating the Distributed Ecosystem: AI-Powered Scaling for Oniro",
-          "zh": "加速分布式生态系统：Oniro 的 AI 驱动扩展",
-          "fr": "Accélérer l'écosystème distribué : mise à l'échelle IA pour Oniro"
+          "zh": "Accelerating the Distributed Ecosystem: AI-Powered Scaling for Oniro",
+          "fr": "Accelerating the Distributed Ecosystem: AI-Powered Scaling for Oniro"
         },
         "speakers": [
           {
@@ -1982,21 +2160,17 @@
         },
         "timeSlot": "16:10 - 16:40",
         "type": "talk",
-        "content": {
-          "en": "Scaling a modern OS ecosystem requires massive developer velocity. This session explores how the Eclipse Oniro project leverages AI as a \"force multiplier\" to rapidly build out its landscape, which helps streamline the porting of popular, complex apps and integrate modern frameworks into the OpenHarmony environment.\r\n\r\nWe will share practical insights into how AI-assisted engineering allows us to bridge different frameworks and create new applications from scratch in a fraction of the usual time.\r\n\r\nFinally, we will discuss how this accelerated growth is balanced with the project's commitment to security and professional standards. This includes ensuring CRA compliance and closely tracking emerging initiatives like Unified Attestation, which offer a significant leap forward in creating a verifiable, secure foundation for a new generation of operating systems.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
         }
       },
       {
         "title": {
           "en": "AI Companion is the New Interface: Building a Learning Agent Device with China's Hardware Ecosystem",
-          "zh": "AI 伴侣是新界面：利用中国硬件生态构建学习 Agent 设备"
-        },
-        "content": {
-          "en": "AI is rapidly evolving from chatbots to copilots, and now toward agent-based systems. But most AI experiences still live inside apps—fragmented, reactive, and short-lived. What if AI becomes a long-term companion instead?\n\nThis talk shares the journey from leading Microsoft Copilot and Agent product initiatives to building Ingora, an AI-native learning companion for children. It introduces a new paradigm: AI companions that combine agent intelligence, multimodal interaction (voice and vision), and hardware to support continuous, personalized learning. The talk also explores why traditional AI tutor models fall short, and shares practical insights on building AI-native hardware products with China's supply chain.",
-          "zh": "AI 正在从聊天机器人迅速演进为副驾驶，进而走向基于 Agent 的系统。本演讲分享从主导微软 Copilot 和 Agent 产品到创建 Ingora（面向儿童的 AI 原生学习伴侣）的历程，介绍一种结合 Agent 智能、多模态交互与硬件以支持持续个性化学习的全新范式，并探讨中国供应链如何赋能 AI 原生硬件产品的快速迭代。",
-          "fr": "L'IA évolue rapidement des chatbots vers les copilotes, puis vers les systèmes basés sur des agents. Cet exposé partage le parcours de la création d'Ingora, un compagnon d'apprentissage IA-natif pour enfants, et explore comment l'écosystème matériel chinois accélère l'innovation produit IA."
+          "zh": "AI Companion is the New Interface: Building a Learning Agent Device with China's Hardware Ecosystem",
+          "fr": "AI Companion is the New Interface: Building a Learning Agent Device with China's Hardware Ecosystem"
         },
         "speakers": [
           {
@@ -2010,17 +2184,22 @@
           "fr": "5 mai"
         },
         "timeSlot": "16:40 - 17:10",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "From LLM Calls to Governed Agent Systems: Building a Runtime for Auditability, Replay, and Control",
-          "zh": "从 LLM 调用到受治理的 Agent 系统：构建可审计、可回放、可控的运行时",
-          "fr": "Des appels LLM aux systèmes agents gouvernés"
+          "zh": "From LLM Calls to Governed Agent Systems: Building a Runtime for Auditability, Replay, and Control",
+          "fr": "From LLM Calls to Governed Agent Systems: Building a Runtime for Auditability, Replay, and Control"
         },
         "speakers": [
           {
-            "name": "Tianyi HAN",
+            "name": "Tianyi Han",
             "title": "Architect Solution, AI Systems & Agent Governance, Capgemini"
           }
         ],
@@ -2031,16 +2210,16 @@
         },
         "timeSlot": "17:10 - 17:30",
         "type": "talk",
-        "content": {
-          "en": "As AI systems evolve from isolated LLM calls into autonomous agents, a new class of engineering problems emerges: lack of control, limited observability, and no reliable way to audit or reproduce decisions.\r\n\r\nMost current approaches rely on prompts, logs, or ad hoc guardrails, which are insufficient once agents begin to operate across multiple tools, states, and long-running workflows.\r\n\r\nIn this talk, we introduce a governance-oriented runtime for AI agents. The system provides policy enforcement, trace-based auditability, deterministic replay, and evaluation hooks for non-regression. By treating agent execution as a structured, observable, and controllable process, we enable developers to move from “best-effort prompting” to “engineered agent systems.”\r\n\r\nWe will walk through the architecture, core components, and practical design patterns, and show how governance can be integrated into real-world AI workflows without sacrificing flexibility.\r\n\r\nAttendees will learn how to design AI systems that are not only powerful, but also auditable, reproducible, and production-ready.\n\nThis talk is structured in four parts:\r\n\r\n1. Problem framing: why current LLM-based systems fail in production settings (lack of control, explainability, and reproducibility)\r\n2. System design: introducing a governance runtime layer for AI agents\r\n   - policy enforcement\r\n   - trace as an audit layer\r\n   - replay and deterministic execution\r\n   - evaluation and non-regression hooks\r\n3. Architecture walkthrough: how the runtime integrates with existing agent/tooling ecosystems\r\n4. Case examples: applying governance to real agent workflows and user-facing decision systems\r\n\r\nThe session focuses on practical engineering patterns rather than high-level concepts, and is intended for developers building or operating AI-driven systems.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
         }
       },
       {
         "title": {
           "en": "Morning Coffee",
-          "zh": "茶歇",
+          "zh": "上午茶歇",
           "fr": "Café du matin"
         },
         "speakers": [],
@@ -2050,18 +2229,25 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:00 - 10:20",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
-          "zh": "智能体、代码与平行世界——仓颉编程语言团队的300天 Agentic 进化之旅",
-          "fr": "Agents, Code & Mondes Parallèles — L'évolution agentique de 300 jours de l'équipe Cangjie"
+          "zh": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
+          "fr": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team"
         },
         "speakers": [
           {
             "name": "Dong Xin",
-            "title": "Project Group Director, Huawei Central Software Institute"
+            "title": "Program Director, Central Software Institute, Huawei",
+            "id": "dong-xin",
+            "image": "/images/speakers/better_portrait/dong-xin.png"
           }
         ],
         "date": {
@@ -2071,17 +2257,17 @@
         },
         "timeSlot": "10:20 - 10:40",
         "type": "talk",
-        "content": {
-          "en": "This topic describes the complete process of Cangjie's 300-day AI R&D transformation. This transformation started with an accidental AI coding attempt in May 2025. The team started from piloting and nurturing AI pilot teams, gradually implemented the Agent Centric Engineering (ACE) model, and selected 30% of the teams to pilot E2E AI. Finally, the pilot Sprint productivity of the compiler team is improved by 240% to 2600%,  the third-party library team is improved by 132% to 816%, and  standard library team is improved by 125%. \r\nPass on the core concept of \"actively embracing AI, breaking the shackles of thinking, and realizing the reconstruction of individual and team values\".",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
         }
       },
       {
         "title": {
           "en": "Who Controls Your Agents? Building Vendor-Neutral Infrastructure for Agentic Developer Tools",
-          "zh": "谁在控制你的智能体？构建面向 Agentic 开发工具的厂商中立基础设施",
-          "fr": "Qui contrôle vos agents ? Construire une infrastructure neutre pour les outils de développement agentiques"
+          "zh": "Who Controls Your Agents? Building Vendor-Neutral Infrastructure for Agentic Developer Tools",
+          "fr": "Who Controls Your Agents? Building Vendor-Neutral Infrastructure for Agentic Developer Tools"
         },
         "speakers": [
           {
@@ -2096,17 +2282,17 @@
         },
         "timeSlot": "10:40 - 11:00",
         "type": "talk",
-        "content": {
-          "en": "Agentic AI is rapidly transforming developer tooling, shifting from passive assistants to autonomous agents capable of acting across the software lifecycle. Yet many of these systems, while marketed as open, still depend on single-vendor governance, proprietary extension ecosystems, and opaque AI integrations.\r\nThis creates a structural risk: as agents become more capable, organisations may lose control not only over their tools, but over the behaviour, data flows, and decision-making processes embedded in their development environments.\r\nThis session presents a practical alternative built within the Eclipse Foundation, a non profit organisation headquartered in Brussels and a long-standing European leader in open source ecosystems. Its governance model enables vendor-neutral collaboration and long-term sustainability, which becomes critical in an agent-driven world.\r\nWe introduce two complementary building blocks for agentic developer tooling:\r\n- Theia AI, an open source framework to build and operate agentic capabilities within developer tools, enabling multi-LLM orchestration, Model Context Protocol (MCP) integrations, and full control over model selection, execution patterns, and data boundaries.\r\n- Open VSX, an open source extension registry compatible with the VS Code ecosystem, enabling transparent distribution of agent integrations, curated marketplaces, and independence from vendor-controlled platforms\r\nOpen VSX has become critical infrastructure for the fast-growing ecosystem of VS Code forks and AI-first environments, reaching over 300 million extension downloads per month and supporting major tools such as Cursor, Windsurf, Google Antigravity and other agent-enabled development environments.\r\nTogether, Theia AI and Open VSX provide a reusable, vendor-neutral foundation for building and governing agentic developer systems. The session includes a live demonstration of an agent-enabled developer environment, showing how organisations can retain control over agents, extensions, and data flows in practice.\n\nFormat:\r\nThis is a flexible session, adaptable from 15 to 40 minutes depending on conference needs: structured talk with a live demonstration included in longer formats, illustrating:\r\n- Integration of agent capabilities into a developer tool\r\n- Multi-LLM setup, including local models\r\n- Use of MCP for controlled context and tool access\r\n- Control over agent behaviour and data flows\r\n- Air gapped or constrained deployment scenario\r\n\r\nTarget Audience: \r\n1) Software engineers and tech leads interested in AI-assisted development and local LLM setups  2) Developer tool builders (DevEx, developer productivity, platform teams) building IDEs and domain specific tools  3) Architects evaluating controlled AI integration, including air gapped deployments  4) Open source contributors interested in Open VSX, extensible AI tooling ecosystems\r\n\r\nKey learnings:\r\n- Understand Eclipse Theia as an open source platform to build developer tools, not only IDEs\r\n- Learn how Theia AI structures AI capabilities: chat, completions, MCP and agent workflows as reusable building blocks\r\n- See a real, fully air gapped setup using local LLMs, and what it changes for privacy and compliance\r\n- Discover how Open VSX enables an open extension ecosystem for internal and commercial distributions\r\n- Take away practical ideas to adapt this approach for your own developer tool, workflow, or product\r\n\r\nTarget Audience:\r\n- CIO, CTO, and heads of engineering responsible for developer tooling strategy and long-term technology choices\r\n- Engineering directors and platform leaders, DevEx, developer productivity, internal tooling, evaluating AI-enabled tooling adoption\r\n- Enterprise architects and security or compliance leaders concerned with governance, data control, and software supply chain risk\r\n- Product leaders at tool vendors and integrators building VS Code-compatible or AI-first developer environments\r\n- Public sector and regulated industry decision makers looking for vendor-neutral, sustainable open source infrastructure\r\n\r\nResources:\r\nhttps://theia-ide.org/theia-ai/\r\nhttps://open-vsx.org/",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
         }
       },
       {
         "title": {
           "en": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It",
-          "zh": "自进化应用：构建越用越智能的软件",
-          "fr": "Applications auto-évolutives"
+          "zh": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It",
+          "fr": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It"
         },
         "speakers": [
           {
@@ -2121,22 +2307,22 @@
         },
         "timeSlot": "11:00 - 11:20",
         "type": "talk",
-        "content": {
-          "en": "Most apps are built once and stay the same. Self-evolving apps are different, they improve every time you use them, not because someone updates the code, but because the app learns from your corrections.\r\n\r\nThis intelligence exists completely outside the app as a separate, updatable layer. Before each use, it reads your previous corrections and uses them as examples to make better decisions. No machine learning required, neither retraining or data science team. In this session, I will walk you through what self-evolving apps are, how to design them, how to build one, which licensing models work best and the lessons I have learned from building several of these apps, as well as a live demonstration.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
         }
       },
       {
         "title": {
           "en": "Bridging the Chasm: Practical AI Experiments in the Servo Engine",
-          "zh": "跨越鸿沟：Servo 引擎中的 AI 实践探索",
-          "fr": "Franchir le fossé : expériences pratiques d'IA dans le moteur Servo"
+          "zh": "Bridging the Chasm: Practical AI Experiments in the Servo Engine",
+          "fr": "Bridging the Chasm: Practical AI Experiments in the Servo Engine"
         },
         "speakers": [
           {
             "name": "Gregory Terzian",
-            "title": "Founder, FOSS(Shanghai) Technology"
+            "title": "Founder, FOSS (Shanghai) Technology"
           }
         ],
         "date": {
@@ -2146,17 +2332,17 @@
         },
         "timeSlot": "11:20 - 11:40",
         "type": "talk",
-        "content": {
-          "en": "Can AI-assisted coding significantly accelerate the implementation of complex web standards? This talk explores a series of experiments on a fork of the Servo web engine, aimed at closing the feature gap with dominant engines.\n\nExperiment 1: Architect as Director (WebNN)\r\nHow does a developer with deep architectural knowledge of a system—but little domain knowledge of the specific feature—use AI? In this case, we treat the AI as a high-speed \"typist\" and implementation partner. We explore using AI to bridge the gap between high-level structural intent and the low-level boilerplate required for a new API, while the human maintains the \"integrity\" of the system’s core.\r\n\r\nExperiment 2: Novice using Test-Driven AI (CSS Grid)\r\nWhat happens when the human knows nothing about the domain? This experiment focuses on implementing the complex CSS Grid specification by delegating the logic to AI, using the WPT (Web Platform Tests) and the standard as an absolute \"ground truth.\" We analyze whether a rigorous test suite is sufficient to steer an AI through a black-box implementation, and where this \"test-driven\" autonomy eventually hits a wall.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
         }
       },
       {
         "title": {
-          "en": "The Web Was Built for Humans - Agents Broke It. Now We Need Agentic Apps.",
-          "zh": "Web 是为人类而建的——Agent 打破了它。现在我们需要 Agentic 应用。",
-          "fr": "Le Web était fait pour les humains - les agents l'ont cassé. Nous avons besoin d'apps agentiques."
+          "en": "The Web Was Built for Humans — Agents Broke It. Now We Need Agentic Apps",
+          "zh": "The Web Was Built for Humans — Agents Broke It. Now We Need Agentic Apps",
+          "fr": "The Web Was Built for Humans — Agents Broke It. Now We Need Agentic Apps"
         },
         "speakers": [
           {
@@ -2171,10 +2357,10 @@
         },
         "timeSlot": "11:40 - 12:00",
         "type": "talk",
-        "content": {
-          "en": "The web was built for humans - clicks, forms, and visual flows.\r\nBut today, a new class of users has emerged: AI agents.\r\n\r\nThese agents don’t browse your application- they operate it. And the web, as it exists today, was never designed for this.\r\n\r\nThe result is a growing layer of fragile workarounds: DOM scraping, screenshot-based reasoning, and prompt-engineered workflows that attempt to “guess” what an application can do. These approaches treat interfaces as something to reverse-engineer, rather than something to integrate with.\r\n\r\nIn this talk, we introduce a new paradigm: agentic applications.\r\n\r\nAgentic apps are not defined by their UI, but by the capabilities they expose. Instead of forcing agents to navigate interfaces, we give them structured access to the underlying actions, state, and logic of an application.\r\n\r\nWe’ll explore how this shift is already happening through emerging standards like the Model Context Protocol (MCP), which defines how AI systems interact with tools and services. While MCP addresses backend integration, it leaves a critical gap at the frontend-where most application logic still lives.\r\n\r\nTo bridge this, we’ll present WebMCP, an approach to turning web applications into programmable systems. Using real examples from React apps, we’ll show how existing UI logic can be exposed as structured, composable capabilities-allowing agents to interact with your app directly, without brittle selectors or reverse engineering.\r\n\r\nWe’ll cover practical patterns for designing agent-friendly systems:\r\n\r\n-modeling capabilities instead of screens\r\n-exposing safe, composable actions\r\n-separating execution logic from presentation\r\n-enabling agents to operate your app reliably\r\n\r\nThis is not just about AI tooling. It’s a shift in how we design software:\r\n\r\nFrom user interfaces → to execution surfaces\r\nFrom applications → to capability systems\r\nFrom human-first → to multi-agent environments\r\n\r\nIf HTTP made the web readable, agentic apps may make it operable.\n\nThis talk explores the emerging shift from user-driven applications to agent-operated systems, and what it means for how we design software.\r\n\r\nWe begin by examining a fundamental mismatch: modern web applications are built around human interaction models—navigation, clicks, and visual feedback—while AI agents operate through structured reasoning and action execution. This mismatch leads to brittle integrations, where agents rely on scraping, heuristics, or prompt-based inference to interact with systems never designed for them.\r\n\r\nFrom this problem, we introduce the concept of agentic applications.\r\n\r\nAn agentic app is not defined by its interface, but by the capabilities it exposes. These capabilities represent the true functionality of the system—creating, updating, querying, or triggering workflows—and can be composed, orchestrated, and executed by agents.\r\n\r\nWe then connect this model to the broader ecosystem through the Model Context Protocol (MCP), which provides a standard interface for AI systems to interact with tools and services. MCP enables composability across systems, but primarily focuses on backend integrations.\r\n\r\nThis leaves an important gap: the frontend.\r\n\r\nModern frontend applications contain rich business logic, state transitions, and workflows that are invisible to agents. We explore how this layer can be made accessible through a new approach: WebMCP, which treats the browser as an execution environment and exposes frontend logic as structured, agent-consumable capabilities.\r\n\r\nUsing real world examples within React-based apps, we demonstrate how:\r\n\r\n-UI components can be mapped to capabilities\r\n-application state can be safely exposed and manipulated\r\n-actions can be modeled as tools with clear contracts\r\n-existing apps can be incrementally adapted without full rewrites\r\n\r\nWe also discuss architectural implications:\r\n\r\nseparating capability layers from presentation layers\r\ndesigning for safety, permissions, and observability\r\nenabling composability across multiple agent-driven systems\r\n\r\nFinally, we explore open questions for the ecosystem:\r\n\r\nWhat standards should define agent-facing interfaces?\r\nHow do we version and secure capabilities?\r\nWhat replaces traditional API paradigms in agent-first systems?\r\n\r\nThis talk is aimed at developers and system designers interested in building the next generation of applications—where agents are not an afterthought, but a first-class part of the system.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
         }
       },
       {
@@ -2190,44 +2376,19 @@
           "fr": "6 mai"
         },
         "timeSlot": "12:00 - 14:00",
-        "type": "break"
-      },
-      {
-        "title": {
-          "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "15:20 - 15:40",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       }
     ],
     "agentic-ai-on-edge": [
       {
         "title": {
-          "en": "Registration",
-          "zh": "注册",
-          "fr": "Inscription"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "08:30 - 09:30",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Morning Coffee",
-          "zh": "茶歇",
+          "zh": "上午茶歇",
           "fr": "Café du matin"
         },
         "speakers": [],
@@ -2237,22 +2398,25 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:00 - 10:20",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
           "en": "One Year of llama.cpp: Milestones and Future Plans",
-          "zh": "llama.cpp 一年历程：里程碑与未来规划"
-        },
-        "content": {
-          "en": "llama.cpp has revolutionized efficient LLM inference on consumer hardware, enabling accessible AI for developers worldwide. This talk reflects on the journey from mid-2025 to mid-2026, highlighting key achievements including: the new Web UI, support for popular models like GPT-OSS, Qwen3.5, and GLM-5, key performance improvements, and integrations with downstream applications like LM Studio and LlamaBarn.\n\nLooking ahead, the talk discusses upcoming features and collaborative roadmaps to push open-source AI inference further.",
-          "zh": "llama.cpp 彻底改变了消费级硬件上的高效 LLM 推理，让全球开发者都能触及 AI。本演讲回顾 2025 年中至 2026 年中的历程，重点介绍全新 Web UI、对 GPT-OSS、Qwen3.5、GLM-5 等热门模型的支持、关键性能提升，以及与 LM Studio、LlamaBarn 等下游应用的集成，并展望未来功能规划与协作路线图。",
-          "fr": "llama.cpp a révolutionné l'inférence LLM efficace sur matériel grand public. Cette présentation retrace le parcours de mi-2025 à mi-2026 : nouvelle Web UI, support des modèles GPT-OSS, Qwen3.5, GLM-5, améliorations de performance et intégrations avec LM Studio et LlamaBarn."
+          "zh": "One Year of llama.cpp: Milestones and Future Plans",
+          "fr": "One Year of llama.cpp: Milestones and Future Plans"
         },
         "speakers": [
           {
             "name": "Xuan-Son Nguyen",
-            "title": "Software Engineer, Hugging Face"
+            "title": "Software Engineer, Hugging Face",
+            "id": "xuan-son-nguyen",
+            "image": "/images/speakers/better_portrait/xuan-son-nguyen.png"
           }
         ],
         "date": {
@@ -2261,22 +2425,25 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:20 - 10:45",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
           "en": "Bridging AI Ecosystems: RustNN as a Universal WebNN Implementation",
-          "zh": "桥接 AI 生态：RustNN 作为通用 WebNN 实现"
-        },
-        "content": {
-          "en": "WebNN offers a massive opportunity to unify the AI landscape through a single, high-performance standard that runs everywhere. Originally started as a specialized backend for a single browser engine, RustNN is growing into a robust, native Rust implementation of the WebNN specification.\n\nThis session demonstrates how RustNN creates a unified pipeline: meeting developers at the source via ONNX and Torch converters; targeting CoreML, TensorRT, and WebAssembly for native-speed execution; integrating into a Servo fork to provide a first-class, memory-safe WebNN backend; and Python/Node.js bindings enabling teams to use the same Rust-powered engine across their entire stack.",
-          "zh": "WebNN 通过一套可在任何地方运行的高性能标准，为统一 AI 格局提供了巨大机遇。RustNN 从单一浏览器引擎的专用后端，逐步成长为 WebNN 规范的原生 Rust 实现，通过 ONNX/Torch 转换器对接开发者，面向 CoreML、TensorRT 和 WebAssembly 实现原生速度执行，并集成进 Servo 分支以提供一流的内存安全 WebNN 后端。",
-          "fr": "WebNN offre une opportunité majeure d'unifier le paysage IA. RustNN est une implémentation native Rust de la spécification WebNN ciblant CoreML, TensorRT et WebAssembly, avec des bindings Python et Node.js permettant d'utiliser le même moteur Rust dans toute la stack."
+          "zh": "Bridging AI Ecosystems: RustNN as a Universal WebNN Implementation",
+          "fr": "Bridging AI Ecosystems: RustNN as a Universal WebNN Implementation"
         },
         "speakers": [
           {
             "name": "Markus Tavenrath",
-            "title": "Principal Engineer Developer Technology, NVIDIA"
+            "title": "Principal Engineer Developer Technology, NVIDIA",
+            "id": "markus-tavenrath",
+            "image": "/images/speakers/better_portrait/markus-tavenrath.png"
           }
         ],
         "date": {
@@ -2285,22 +2452,25 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:45 - 11:10",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
           "en": "Khal and Inferi: Towards Single-Language Cross-Platform GPU Inference with Rust and rust-gpu",
-          "zh": "Khal 与 Inferi：用 Rust 和 rust-gpu 实现单语言跨平台 GPU 推理"
-        },
-        "content": {
-          "en": "After multiple technological explorations for cross-platform GPU programming (WGSL, Slang), this talk presents an experiment where both CPU code and GPU kernels are written in the same language: Rust. By leveraging cargo and the Rust compiler (through rust-gpu), common tensor and LLM inference operators run on all major platforms, including the web.\n\nKhal provides an abstraction layer between spirv shaders and Rust code, enabling strong typing across the GPU/CPU boundary. Vortx and Inferi are the resulting tensor library and LLM inference engine written entirely in Rust. The talk also hints at Nexus (physics-based dataset generation for robotics training) as an example of how Rust GPU code enables easy reuse across domains beyond pure inference.",
-          "zh": "在探索了 WGSL、Slang 等跨平台 GPU 编程技术后，本演讲介绍一项将 CPU 代码与 GPU 核函数统一用 Rust 编写的实验。Khal 提供 spirv 着色器与 Rust 代码之间的抽象层，实现跨 GPU/CPU 边界的强类型保证；Vortx 和 Inferi 则是由此产生的纯 Rust 张量库与 LLM 推理引擎，可在所有主流平台（含 Web）运行。",
-          "fr": "Cette présentation explore une codebase où le code CPU et les noyaux GPU sont écrits dans le même langage : Rust. Khal fournit une couche d'abstraction entre les shaders spirv et le code Rust, avec un typage fort à travers la frontière GPU/CPU. Vortx et Inferi sont la bibliothèque tenseur et le moteur d'inférence LLM résultants."
+          "zh": "Khal and Inferi: Towards Single-Language Cross-Platform GPU Inference with Rust and rust-gpu",
+          "fr": "Khal and Inferi: Towards Single-Language Cross-Platform GPU Inference with Rust and rust-gpu"
         },
         "speakers": [
           {
             "name": "Sébastien Crozet",
-            "title": "Founder, Dimforge"
+            "title": "Founder & CEO, Dimforge",
+            "id": "crozet-sbastien",
+            "image": "/images/speakers/better_portrait/crozet-sbastien.png"
           }
         ],
         "date": {
@@ -2309,18 +2479,25 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:10 - 11:35",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
           "en": "Rewriting Agent Infrastructure in Rust",
-          "zh": "用 Rust 重写智能体基础设施",
-          "fr": "Réécrire l'infrastructure des agents en Rust"
+          "zh": "Rewriting Agent Infrastructure in Rust",
+          "fr": "Rewriting Agent Infrastructure in Rust"
         },
         "speakers": [
           {
             "name": "Michael Yuan",
-            "title": "Maintainer / CEO, WasmEdge / Second State"
+            "title": "Maintainer, WasmEdge; CEO, Second State",
+            "id": "michael-yuan",
+            "image": "/images/speakers/better_portrait/michael-yuan.png"
           }
         ],
         "date": {
@@ -2330,31 +2507,16 @@
         },
         "timeSlot": "11:35 - 12:00",
         "type": "talk",
-        "content": {
-          "en": "AI agents are only as good as the tools they call. We make the case for Rust as the default language for agent tooling: single-binary, zero dependencies, memory safe, and runs anywhere. Lessons learned from porting real AI capabilities into standalone Rust CLI tools.\n\nAs AI agents become more capable, the infrastructure underneath them quietly becomes the bottleneck. Agents need to call lots of tools, and those tools need to be fast to start, easy to distribute, safe to run, and portable across every environment an agent might find itself in. Python scripts with heavy dependencies don't cut it. Shell scripts don't scale. There's a better fit.\r\n\r\nThis talk makes the case for Rust as the default language for building AI agent tooling. Not because of hype, but because the properties Rust delivers by default map almost perfectly to what a good CLI tool for an agent needs to be: single-binary output, zero runtime dependencies, predictable performance, and memory safety.\r\n\r\nWe share what we learned from porting a range of AI capabilities into standalone Rust CLI tools: what the process looks like, which parts of the Rust ecosystem are production-ready and which aren't, and how to think about the boundary between Python (where your models live) and Rust (where your tooling should live).",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
         }
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Morning Coffee",
-          "zh": "茶歇",
+          "zh": "上午茶歇",
           "fr": "Café du matin"
         },
         "speakers": [],
@@ -2364,22 +2526,25 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:00 - 10:20",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
           "en": "KTransformers: Full-Precision Inference for 600B+ MoE Models on Consumer Hardware",
-          "zh": "KTransformers：在消费级硬件上实现 600B+ MoE 模型的全精度推理"
-        },
-        "content": {
-          "en": "KTransformers is an open-source CPU-GPU heterogeneous inference framework that runs frontier MoE models like DeepSeek-V3 and Qwen3.5-397B at FP8 precision on consumer GPUs. By offloading expert computations to CPU with CUDA Graph-capturable coordination, it achieves 35+ tokens/sec decode speed—making 600B+ models accessible without datacenter infrastructure.",
-          "zh": "KTransformers 是一个开源 CPU-GPU 异构推理框架，能够在消费级 GPU 上以 FP8 精度运行 DeepSeek-V3、Qwen3.5-397B 等前沿 MoE 模型。通过将专家计算卸载至 CPU 并结合 CUDA Graph 可捕获协调，实现 35+ tokens/sec 的解码速度，让 600B+ 模型无需数据中心基础设施即可运行。",
-          "fr": "KTransformers est un framework d'inférence hétérogène CPU-GPU open source qui exécute des modèles MoE frontière comme DeepSeek-V3 et Qwen3.5-397B en précision FP8 sur des GPU grand public, atteignant 35+ tokens/sec sans infrastructure de datacenter."
+          "zh": "KTransformers: Full-Precision Inference for 600B+ MoE Models on Consumer Hardware",
+          "fr": "KTransformers: Full-Precision Inference for 600B+ MoE Models on Consumer Hardware"
         },
         "speakers": [
           {
-            "name": "Weiyu Xie",
-            "title": "Ph.D. Candidate, Tsinghua University"
+            "name": "Ervin Xie",
+            "title": "Ph.D. Candidate, Tsinghua University",
+            "id": "ervinxie",
+            "image": "/images/speakers/better_portrait/ervinxie.png"
           }
         ],
         "date": {
@@ -2388,22 +2553,25 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:20 - 10:45",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
           "en": "Power Every Smart Device with Intelligence",
-          "zh": "赋能每一台智能设备"
-        },
-        "content": {
-          "en": "This presentation focuses on the technical details of ModelBest's on-device large models—MiniCPM and MiniCPM-o—as well as their real-world applications across smart cockpits, smartphones, smart home devices, and robotics.\n\nThe MiniCPM family has earned widespread acclaim in the global AI community for its high efficiency, low cost, and ability to \"punch above its weight.\" To date, these projects have amassed over 30,000 GitHub stars and exceeded 24 million downloads worldwide, establishing themselves as benchmark works in the field of on-device AI.",
-          "zh": "本报告重点介绍 ModelBest 端侧大模型 MiniCPM 与 MiniCPM-o 的技术细节，以及其在智能座舱、智能手机、智慧家居和机器人领域的真实落地应用。MiniCPM 系列以高效率、低成本、「小身材大能量」在全球 AI 社区广受认可，迄今已在 GitHub 积累超过 3 万星标、全球下载量突破 2400 万次。",
-          "fr": "Cette présentation se concentre sur les détails techniques des modèles embarqués de ModelBest — MiniCPM et MiniCPM-o — et leurs applications dans les cockpits intelligents, smartphones, maisons connectées et robotique. Plus de 30 000 étoiles GitHub et 24 millions de téléchargements mondiaux."
+          "zh": "Power Every Smart Device with Intelligence",
+          "fr": "Power Every Smart Device with Intelligence"
         },
         "speakers": [
           {
             "name": "Chao Jia",
-            "title": "VP, ModelBest"
+            "title": "VP, ModelBest",
+            "id": "chao-jia",
+            "image": "/images/speakers/better_portrait/chao-jia.png"
           }
         ],
         "date": {
@@ -2412,17 +2580,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:45 - 11:10",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
           "en": "OminiX: Fully Automated Native C++ Deployment for Diverse Large-Scale Learning Models",
-          "zh": "OminiX：面向多种大规模学习模型的全自动原生 C++ 部署"
-        },
-        "content": {
-          "en": "Running deep learning inference in native C++ enables efficient edge deployment, eliminates Python/PyTorch dependencies, and allows fast, accurate quantization. However, converting a PyTorch model to native C++ requires weeks of labor-intensive development.\n\nOminiX is an automated pipeline where an AI agent with structured procedural skills converts arbitrary PyTorch models into optimized C++ inference code targeting the GGML runtime. OminiX generalizes beyond LLMs to support image/video generation, speech recognition, TTS, world models, and VLA models. Case study: OpenVLA (7B-parameter VLA model) achieves near-lossless task success rate, up to 63% memory reduction, and up to 1.52× speedup.",
-          "zh": "原生 C++ 深度学习推理能实现高效边缘部署，消除 Python/PyTorch 依赖，并支持快速精确量化。然而将 PyTorch 模型转化为原生 C++ 需要数周繁重开发工作。OminiX 是一个自动化流水线：AI Agent 凭借结构化程序技能，将任意 PyTorch 模型转换为面向 GGML 运行时的优化 C++ 推理代码，涵盖 LLM、图像/视频生成、语音识别、TTS、世界模型和 VLA 等多类模型。",
-          "fr": "OminiX est un pipeline automatisé où un agent IA convertit des modèles PyTorch arbitraires en code C++ optimisé ciblant le runtime GGML. Cas d'usage : OpenVLA (7B paramètres VLA) avec jusqu'à 63% de réduction mémoire et 1,52× d'accélération."
+          "zh": "OminiX: Fully Automated Native C++ Deployment for Diverse Large-Scale Learning Models",
+          "fr": "OminiX: Fully Automated Native C++ Deployment for Diverse Large-Scale Learning Models"
         },
         "speakers": [
           {
@@ -2436,22 +2605,23 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:10 - 11:35",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
           "en": "Vulkan for Edge AI: Expanding the Hardware Frontier with llama.cpp",
-          "zh": "Vulkan 赋能边缘 AI：用 llama.cpp 拓展硬件前沿"
-        },
-        "content": {
-          "en": "Agentic AI on the edge requires accessible, low-latency inference, yet hardware fragmentation limits deployment. While CUDA dominates acceleration, its vendor lock-in constrains local intelligence. This talk examines Vulkan as a vendor-neutral alternative, showcasing how it expanded compatibility and reduced deployment complexity in llama.cpp across Intel, AMD, and NVIDIA GPUs.\n\nThe talk outlines real engineering roadblocks—driver inconsistencies and compute limitations—and looks ahead to VK_NV_cooperative_matrix2 as a blueprint for offloading hardware-specific optimizations to the driver, enabling peak performance via vendor optimizations while maintaining broad support through generic shader fallbacks.",
-          "zh": "边缘 Agentic AI 需要可及、低延迟的推理，而硬件碎片化限制了部署。本演讲探讨 Vulkan 作为厂商中立替代方案，展示其如何在 llama.cpp 中扩展 Intel、AMD 和 NVIDIA GPU 的兼容性并降低部署复杂度，并展望 VK_NV_cooperative_matrix2 作为将硬件特定优化卸载至驱动层的蓝图。",
-          "fr": "Cette présentation examine Vulkan comme alternative vendor-neutre à CUDA, montrant comment il a étendu la compatibilité dans llama.cpp sur GPU Intel, AMD et NVIDIA. Elle explore VK_NV_cooperative_matrix2 comme modèle pour déléguer les optimisations matérielles au pilote."
+          "zh": "Vulkan for Edge AI: Expanding the Hardware Frontier with llama.cpp",
+          "fr": "Vulkan for Edge AI: Expanding the Hardware Frontier with llama.cpp"
         },
         "speakers": [
           {
             "name": "Ruben Ortlam",
-            "title": "Author and Maintainer of the llama.cpp Vulkan Backend, Red Hat"
+            "title": "Senior Machine Learning Engineer, Red Hat"
           }
         ],
         "date": {
@@ -2460,29 +2630,19 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:35 - 12:00",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       }
     ],
     "open-source-robotics": [
       {
         "title": {
           "en": "Morning Coffee",
-          "zh": "茶歇",
+          "zh": "上午茶歇",
           "fr": "Café du matin"
         },
         "speakers": [],
@@ -2492,22 +2652,23 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:00 - 10:20",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "RoboChallenge Annual Report on Large-Scale Real Robot Benchmark",
-          "zh": "RoboChallenge 大规模真实机器人基准测试年度报告"
-        },
-        "content": {
-          "en": "RoboChallenge is a large-scale real robot benchmark initiative designed to evaluate and advance the capabilities of robotic systems across diverse real-world tasks. This annual report presents the latest findings, metrics, and insights from running benchmarks on physical robots at scale.\n\nThe talk covers what makes real-robot benchmarking uniquely challenging compared to simulation, how RoboChallenge structures its evaluation framework across manipulation, navigation, and interaction tasks, and what the 2025 results reveal about the state of open-source robotics. Attendees will learn how to participate in future challenges and how community-driven benchmarking is accelerating progress in embodied AI.",
-          "zh": "RoboChallenge 是一项大规模真实机器人基准测试计划，旨在评估和推进机器人系统在多样化真实场景中的能力。本次年度报告呈现最新发现、评估指标及规模化测试的洞察。\n\n演讲涵盖真实机器人基准测试的独特挑战、RoboChallenge 的评估框架设计、以及 2025 年结果所揭示的开源机器人现状，并介绍如何参与未来挑战。",
-          "fr": "RoboChallenge est une initiative de benchmark à grande échelle sur des robots réels, conçue pour évaluer et faire progresser les capacités robotiques dans des tâches du monde réel. Ce rapport annuel présente les dernières découvertes, métriques et enseignements issus des évaluations à grande échelle.\n\nLa présentation couvre les défis spécifiques au benchmark sur robots réels, le cadre d'évaluation de RoboChallenge, et ce que les résultats 2025 révèlent sur l'état de la robotique open source."
+          "zh": "RoboChallenge Annual Report on Large-Scale Real Robot Benchmark",
+          "fr": "RoboChallenge Annual Report on Large-Scale Real Robot Benchmark"
         },
         "speakers": [
           {
             "name": "Emily Chen",
-            "title": "Co-Founder, Kaiyuanshe"
+            "title": "Co-founder, Kaiyuanshe"
           }
         ],
         "date": {
@@ -2516,17 +2677,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:20 - 10:45",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "LeRobot Humanoide: An Open Source 3D Printed Robot",
-          "zh": "LeRobot Humanoide：一款开源 3D 打印机器人"
-        },
-        "content": {
-          "en": "LeRobot Humanoide is a fully open-source humanoid robot designed to be 3D printed and assembled by anyone with access to consumer-grade hardware. This talk introduces the robot's mechanical design, electronics stack, and software integration with the Hugging Face LeRobot ecosystem.\n\nVirgile Batto walks through the design philosophy—making humanoid robotics accessible and reproducible—and shares practical lessons from building, iterating, and open-sourcing a physical robot platform. The session covers how the robot connects to standard training pipelines, what challenges arise when bridging hardware and learning, and how the community can contribute to and extend the project.",
-          "zh": "LeRobot Humanoide 是一款完全开源的仿人机器人，设计为可使用消费级硬件进行 3D 打印和组装。本演讲介绍机器人的机械设计、电子系统及与 Hugging Face LeRobot 生态的软件集成。\n\n演讲者将分享让仿人机器人平民化的设计理念、开源物理机器人平台的实践经验，以及社区如何参与贡献和扩展该项目。",
-          "fr": "LeRobot Humanoide est un robot humanoïde entièrement open source conçu pour être imprimé en 3D et assemblé avec du matériel grand public. Cette présentation couvre la conception mécanique, la pile électronique et l'intégration logicielle avec l'écosystème LeRobot de Hugging Face.\n\nVirgile Batto partage la philosophie de conception axée sur l'accessibilité, les leçons pratiques du développement open source d'une plateforme robotique physique, et comment la communauté peut contribuer au projet."
+          "zh": "LeRobot Humanoide: An Open Source 3D Printed Robot",
+          "fr": "LeRobot Humanoide: An Open Source 3D Printed Robot"
         },
         "speakers": [
           {
@@ -2540,22 +2702,25 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:45 - 11:10",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "Skill Foundry: An AI That Embodies a Robot, Watches Itself, and Learns",
-          "zh": "Skill Foundry：一个能「化身机器人」、自我观察并学习的 AI"
-        },
-        "content": {
-          "en": "Skill Foundry is a novel approach to robot skill acquisition where an AI agent literally embodies a robot, watches its own behavior through cameras, and iteratively learns from what it observes. Rather than relying solely on human demonstrations or simulated environments, the system uses a closed-loop self-improvement cycle grounded in real physical interaction.\n\nCharbel Dandjinou presents the architecture behind Skill Foundry, how it combines vision-language models with motor control, and the surprising capabilities that emerge when a robot can critique and refine its own actions. The talk addresses the challenges of real-world self-supervised learning and outlines the path toward robots that continuously improve without constant human supervision.",
-          "zh": "Skill Foundry 是一种新颖的机器人技能习得方法：AI 智能体化身为机器人，通过摄像头观察自身行为，并从中迭代学习。该系统利用基于真实物理交互的闭环自我改进机制，而非仅依赖人类演示或仿真环境。\n\n演讲者介绍 Skill Foundry 的架构、视觉语言模型与运动控制的结合方式，以及机器人能够批判和改进自身动作所带来的能力涌现。",
-          "fr": "Skill Foundry est une approche originale d'acquisition de compétences robotiques où un agent IA s'incarne dans un robot, observe son propre comportement via des caméras et apprend de manière itérative. Le système utilise un cycle d'auto-amélioration en boucle fermée ancré dans l'interaction physique réelle.\n\nCharbel Dandjinou présente l'architecture de Skill Foundry, la combinaison de modèles vision-langage et de contrôle moteur, et la voie vers des robots qui s'améliorent en continu sans supervision humaine constante."
+          "zh": "Skill Foundry: An AI That Embodies a Robot, Watches Itself, and Learns",
+          "fr": "Skill Foundry: An AI That Embodies a Robot, Watches Itself, and Learns"
         },
         "speakers": [
           {
             "name": "Charbel Dandjinou",
-            "title": "CTO, Founder & AI Research Engineer, Reflexion Robotics"
+            "title": "CTO / Founder / AI Research Engineer, Reflexion Robotics",
+            "id": "charbel-dandjinou",
+            "image": "/images/speakers/better_portrait/charbel-dandjinou.png"
           }
         ],
         "date": {
@@ -2564,17 +2729,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:50 - 11:25",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "Amazing Hand: An Open Source Robotic Hand Tech Report",
-          "zh": "Amazing Hand（一款开源机器人灵巧手）技术报告"
-        },
-        "content": {
-          "en": "Amazing Hand is an open-source dexterous robotic hand developed at Hugging Face as part of the broader LeRobot initiative. This tech report covers the full development journey: from mechanical design and actuator selection to embedded firmware and integration with learning-based control policies.\n\nJeremy Laville shares the engineering decisions that shaped the hand's design, the trade-offs between cost, dexterity, and reliability, and how the hardware interfaces with state-of-the-art manipulation algorithms. The talk includes live demos and a frank discussion of what works, what doesn't, and what the open-source community needs to push dexterous manipulation forward.",
-          "zh": "Amazing Hand 是 Hugging Face 作为 LeRobot 计划的一部分开发的开源灵巧机器人手。本技术报告涵盖完整的开发历程：从机械设计和执行器选择到嵌入式固件及与基于学习的控制策略的集成。\n\n演讲者分享形塑设计的工程决策、成本与灵活性和可靠性之间的权衡，以及硬件如何与先进操控算法对接，并坦诚讨论开源灵巧操控的挑战与机遇。",
-          "fr": "Amazing Hand est une main robotique dextre open source développée chez Hugging Face dans le cadre de l'initiative LeRobot. Ce rapport technique couvre le parcours complet de développement : conception mécanique, sélection des actionneurs, firmware embarqué et intégration avec des politiques de contrôle basées sur l'apprentissage.\n\nJeremy Laville partage les décisions d'ingénierie, les compromis entre coût, dextérité et fiabilité, et comment la communauté open source peut faire avancer la manipulation dextre."
+          "zh": "Amazing Hand: An Open Source Robotic Hand Tech Report",
+          "fr": "Amazing Hand: An Open Source Robotic Hand Tech Report"
         },
         "speakers": [
           {
@@ -2588,7 +2754,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "11:25 - 12:00",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
@@ -2603,18 +2774,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "12:00 - 14:00",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
-          "en": "Robotics with Zenoh",
-          "zh": "基于 Zenoh 的机器人开发",
-          "fr": "La robotique avec Zenoh"
-        },
-        "content": {
-          "en": "Zenoh is a next-generation communication protocol designed for robotics and distributed systems, addressing fundamental limitations of ROS 2's DDS middleware. This talk traces the journey from ROS 2 to ros-z, the Zenoh-native robotics framework, showing how Zenoh enables lower latency, better scalability, and seamless operation across local networks, the cloud, and constrained edge devices.\n\nJulien Enoch covers the architecture of Zenoh, real-world deployments in robotics applications, and the practical migration path for teams currently on ROS 2. Attendees will learn how Zenoh's pub/sub, query, and storage capabilities map to robotics use cases, and why the community is increasingly adopting it as a foundation for next-generation robot middleware.",
-          "zh": "Zenoh 是为机器人和分布式系统设计的下一代通信协议，解决了 ROS 2 DDS 中间件的根本局限性。本演讲追溯从 ROS 2 到 ros-z（Zenoh 原生机器人框架）的演进历程，展示 Zenoh 如何实现更低延迟、更好可扩展性，并在本地网络、云端和边缘设备间无缝运行。\n\n演讲者介绍 Zenoh 架构、机器人应用中的实际部署，以及从 ROS 2 迁移的实践路径。",
-          "fr": "Zenoh est un protocole de communication nouvelle génération pour la robotique et les systèmes distribués, résolvant les limitations fondamentales du middleware DDS de ROS 2. Cette présentation retrace le parcours de ROS 2 vers ros-z, le framework robotique natif Zenoh.\n\nJulien Enoch couvre l'architecture de Zenoh, les déploiements réels en robotique et le chemin de migration pratique pour les équipes utilisant ROS 2, expliquant pourquoi la communauté adopte Zenoh comme fondation pour le middleware robotique de prochaine génération."
+          "en": "Robotics with Zenoh: From ROS 2 to ros-z and Beyond",
+          "zh": "Robotics with Zenoh: From ROS 2 to ros-z and Beyond",
+          "fr": "Robotics with Zenoh: From ROS 2 to ros-z and Beyond"
         },
         "speakers": [
           {
@@ -2628,13 +2799,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "14:00 - 14:25",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "AI Agents Learn Invisible Shortcuts",
-          "zh": "AI智能体学会了隐形捷径",
-          "fr": "Les agents IA apprennent des raccourcis invisibles"
+          "zh": "AI Agents Learn Invisible Shortcuts",
+          "fr": "AI Agents Learn Invisible Shortcuts"
         },
         "speakers": [
           {
@@ -2649,26 +2825,24 @@
         },
         "timeSlot": "14:25 - 14:50",
         "type": "talk",
-        "content": {
-          "en": "Classic RL agents often achieve \"superhuman\" performance not through true comprehension, but by exploiting hidden shortcuts in their environments. Much like \"Clever Hans\", the horse that appeared to do arithmetic but was actually just reading human cues, our models project an illusion of competence. Because these shortcuts are concealed within opaque neural networks, agents can silently fail or completely collapse when faced with trivial tasks modifications. This talk explores the pervasive danger of shortcut learning and proposes a path forward: prioritizing interpretability. By using LLMs and neuro-symbolic approaches to distill black-box policies into transparent, human-readable programs, we can unmask these hidden flaws, audit agent behavior, and build genuinely robust AI systems.\n\nWhile modern agents excel at standard benchmark optimization, evaluating them solely within their native training environments is inherently insufficient. As my research in Reinforcement Learning has shown, agents that appear to have mastered complex tasks will often completely collapse when an environment is slightly modified or even intentionally simplified. This fragility is a direct result of the Clever Hans effect: the models have not learned generalized problem-solving, but rather fragile, spurious correlations that happen to maximize reward in a highly specific context, and we, human, wrongly think that these agents select the right actions for the right reasons.\r\n\r\nTo overcome this vulnerability, we must transition from relying on black-box optimization to demanding transparent reasoning. This talk will detail how we can bridge the gap between human inductive biases and AI policy learning using neuro-symbolic methods. Specifically, I will outline methodologies for utilizing LLMs reasoning ability to extract the learned logic of an agent and translate those opaque policies into explicit, symbolic plans or programmatic code.\r\n\r\nAuditable AI Through Programmatic Distillation\r\nWhen an agent's decision-making process is represented as a formal program rather than a matrix of weights, the paradigm shifts entirely. Human overseers can directly read, verify, and debug the underlying logic. I will demonstrate how this programmatic distillation allows us to spot and correct \"Clever Hans\" shortcuts before deployment, ensuring that the AI aligns with human expectations, avoids silent failures, and operates safely in dynamic, real-world scenarios.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
         }
       },
       {
         "title": {
           "en": "Building Visual Navigation Foundation Models with Scalable Simulation Data",
-          "zh": "利用可扩展仿真数据构建视觉导航基础模型"
-        },
-        "content": {
-          "en": "Visual navigation — the ability of a robot to move through an environment using only camera input — is a fundamental challenge in embodied AI. This talk presents a research program for building foundation models for visual navigation by leveraging scalable simulation data generated at scale.\n\nWenzhe Cai discusses how modern simulation environments can generate diverse, photorealistic training data that transfers to real robots, the model architectures that generalise across environments and tasks, and the evaluation benchmarks used to measure progress. The session highlights open-source contributions from Shanghai AI Laboratory and provides practical guidance for researchers looking to advance robot navigation through simulation-to-real transfer.",
-          "zh": "视觉导航——机器人仅凭摄像头输入在环境中移动的能力——是具身 AI 的核心挑战。本演讲介绍通过可扩展仿真数据构建视觉导航基础模型的研究方案。\n\n演讲者讨论现代仿真环境如何生成可迁移至真实机器人的多样化、逼真训练数据，以及跨环境和任务泛化的模型架构，并分享上海人工智能实验室的开源贡献。",
-          "fr": "La navigation visuelle — la capacité d'un robot à se déplacer dans un environnement en utilisant uniquement des caméras — est un défi fondamental de l'IA incarnée. Cette présentation expose un programme de recherche pour construire des modèles fondamentaux de navigation visuelle en exploitant des données de simulation scalables.\n\nWenzhe Cai discute de la génération de données d'entraînement photo-réalistes transférables aux robots réels, des architectures de modèles qui généralisent à travers les environnements, et des contributions open source du Shanghai AI Laboratory."
+          "zh": "Building Visual Navigation Foundation Models with Scalable Simulation Data",
+          "fr": "Building Visual Navigation Foundation Models with Scalable Simulation Data"
         },
         "speakers": [
           {
             "name": "Wenzhe Cai",
-            "title": "Researcher, Shanghai AI Laboratory"
+            "title": "Researcher, Shanghai AI Laboratory",
+            "id": "wzcai99",
+            "image": "/images/speakers/better_portrait/wzcai99.png"
           }
         ],
         "date": {
@@ -2677,13 +2851,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "14:50 - 15:15",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
+          "zh": "下午茶歇",
+          "fr": "Pause thé"
         },
         "speakers": [],
         "date": {
@@ -2692,18 +2871,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "15:15 - 15:40",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "Can Robots Learn Surgery? Open Data, Foundation Models, and the Road to Surgical Autonomy",
-          "zh": "机器人能学会外科手术吗？开放数据、基础模型与迈向手术自主性的道路",
-          "fr": "Les robots peuvent-ils apprendre la chirurgie ? Données ouvertes, modèles fondamentaux et chemin vers l'autonomie chirurgicale"
-        },
-        "content": {
-          "en": "Surgical robotics stands at a unique intersection of precision engineering, AI, and medical practice. This talk explores whether the same open-data and foundation-model approaches transforming general robotics can be applied to the highly specialised domain of surgery — where errors have irreversible consequences and training data is scarce.\n\nJad Fayad draws on his experience at Moon Surgical to examine the challenges of building AI systems for surgical assistance: collecting and curating surgical video datasets, adapting foundation models for tool tracking and scene understanding, and navigating the regulatory constraints of medical AI. The talk outlines the open-source tools and datasets emerging in surgical robotics, and presents a roadmap for how the community can accelerate progress toward safe, data-driven surgical autonomy.",
-          "zh": "外科机器人处于精密工程、AI 与医疗实践的独特交汇点。本演讲探讨是否可将正在改变通用机器人技术的开放数据与基础模型方法，应用于手术这一高度专业化领域——在这里，错误不可逆，训练数据极为稀缺。\n\n演讲者基于在 Moon Surgical 的经验，探讨构建手术辅助 AI 系统的挑战：收集和整理手术视频数据集、适配基础模型用于器械跟踪和场景理解，以及应对医疗 AI 的监管约束。",
-          "fr": "La robotique chirurgicale se situe à l'intersection unique de l'ingénierie de précision, de l'IA et de la pratique médicale. Cette présentation explore si les approches de données ouvertes et de modèles fondamentaux transformant la robotique générale peuvent s'appliquer au domaine chirurgical.\n\nJad Fayad s'appuie sur son expérience chez Moon Surgical pour examiner les défis de la construction de systèmes d'IA pour l'assistance chirurgicale : collecte de datasets vidéo, adaptation des modèles fondamentaux, et navigation dans les contraintes réglementaires de l'IA médicale."
+          "zh": "Can Robots Learn Surgery? Open Data, Foundation Models, and the Road to Surgical Autonomy",
+          "fr": "Can Robots Learn Surgery? Open Data, Foundation Models, and the Road to Surgical Autonomy"
         },
         "speakers": [
           {
@@ -2717,18 +2896,23 @@
           "fr": "6 mai"
         },
         "timeSlot": "15:40 - 16:05",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "Reachy Mini: How to Have Fun with Expressive Robotics",
-          "zh": "Reachy Mini——如何玩转富有表现力的机器人",
-          "fr": "Reachy Mini : s'amuser avec la robotique expressive"
+          "zh": "Reachy Mini: How to Have Fun with Expressive Robotics",
+          "fr": "Reachy Mini: How to Have Fun with Expressive Robotics"
         },
         "speakers": [
           {
             "name": "Tom Mulder",
-            "title": "Lifelong builder, Algoryn"
+            "title": "Lifelong Builder, Algoryn"
           }
         ],
         "date": {
@@ -2738,21 +2922,17 @@
         },
         "timeSlot": "16:05 - 16:30",
         "type": "talk",
-        "content": {
-          "en": "What happens when a robot stops being just hardware and starts feeling… alive?\r\n\r\nIn this talk, I’ll share my hands-on journey with Reachy Mini. \r\nFrom first experiments to pushing its limits with custom hardware, AI integrations, and unconventional use cases. \r\nAlong the way, I explored what makes robots expressive, engaging, and genuinely fun to interact with.\r\n\r\nFrom building light-up eyes and integrating mmWave sensors for presence and vital signs, to connecting AI systems like virtual try-on models, this session dives into how small, playful experiments can unlock surprisingly powerful capabilities.\r\n\r\nThis is not a polished product story. It’s a builder’s perspective, raw, practical, and focused on what actually works.\r\n\r\nIf you're curious about robotics, AI, or just want to see how far you can stretch a small expressive robot, this talk is for you.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
         }
       },
       {
         "title": {
           "en": "LeRobotDataset: Scaling Across Modalities",
-          "zh": "LeRobotDataset：跨模态扩展"
-        },
-        "content": {
-          "en": "LeRobotDataset is Hugging Face's open standard for robot learning datasets, designed to make it easy to collect, share, and reuse diverse robotics data across different hardware platforms and modalities. This talk covers the evolution of the dataset format and how it has been extended to support video, depth, tactile sensing, audio, and proprioception — enabling truly multimodal robot learning.\n\nCaroline Pascal shares lessons from scaling the dataset across dozens of robot embodiments and hundreds of contributors, the tooling built around it for visualisation, filtering, and streaming, and how standardised open datasets are becoming a key lever for accelerating progress in robot manipulation and navigation.",
-          "zh": "LeRobotDataset 是 Hugging Face 的开放机器人学习数据集标准，旨在简化跨不同硬件平台和模态的机器人数据收集、共享和复用。本演讲涵盖数据集格式的演进，以及对视频、深度、触觉、音频和本体感觉的支持扩展。\n\n演讲者分享跨数十种机器人形态和数百位贡献者扩展数据集的经验，以及标准化开放数据集如何加速机器人操控和导航的进展。",
-          "fr": "LeRobotDataset est la norme open source de Hugging Face pour les datasets d'apprentissage robotique, conçue pour faciliter la collecte, le partage et la réutilisation de données robotiques à travers différentes plateformes et modalités. Cette présentation couvre l'évolution du format de données pour supporter la vidéo, la profondeur, le toucher, l'audio et la proprioception.\n\nCaroline Pascal partage les leçons tirées du passage à l'échelle à travers des dizaines d'embodiments robotiques et des centaines de contributeurs, et comment les datasets ouverts standardisés accélèrent les progrès en robotique."
+          "zh": "LeRobotDataset: Scaling Across Modalities",
+          "fr": "LeRobotDataset: Scaling Across Modalities"
         },
         "speakers": [
           {
@@ -2766,17 +2946,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "16:30 - 16:55",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "XLeRobot: Building an Open-Source Dual-Arm Mobile Robot for Everyone",
-          "zh": "XLeRobot：打造人人可用的开源双臂移动机器人"
-        },
-        "content": {
-          "en": "XLeRobot is an open-source dual-arm mobile robot platform built on top of the LeRobot ecosystem and designed to be affordable, reproducible, and capable of real-world household tasks. The platform combines a mobile base with two dexterous arms, targeting the gap between expensive commercial humanoids and fixed-arm research platforms.\n\nVector Wang presents the design philosophy behind XLeRobot, the engineering choices that keep the cost low without sacrificing capability, and the learning pipelines used to teach the robot household tasks through imitation and reinforcement learning. The talk also covers the open-source community around XLeRobot and the roadmap toward a truly general-purpose home robot.",
-          "zh": "XLeRobot 是基于 LeRobot 生态系统构建的开源双臂移动机器人平台，设计为经济实惠、可复制，并能胜任真实家庭场景任务。该平台将移动底座与两只灵巧手臂结合，填补了昂贵商业人形机器人与固定臂研究平台之间的空白。\n\n演讲者介绍 XLeRobot 的设计理念、在保持低成本同时不牺牲能力的工程选择，以及通过模仿和强化学习训练机器人完成家庭任务的学习流程。",
-          "fr": "XLeRobot est une plateforme robotique mobile à deux bras open source construite sur l'écosystème LeRobot, conçue pour être abordable, reproductible et capable de tâches domestiques réelles. La plateforme combine une base mobile avec deux bras dexters, comblant le fossé entre les humanoïdes commerciaux coûteux et les plateformes de recherche à bras fixe.\n\nVector Wang présente la philosophie de conception de XLeRobot, les choix d'ingénierie permettant de maintenir un faible coût, et les pipelines d'apprentissage par imitation et renforcement pour les tâches domestiques."
+          "zh": "XLeRobot: Building an Open-Source Dual-Arm Mobile Robot for Everyone",
+          "fr": "XLeRobot: Building an Open-Source Dual-Arm Mobile Robot for Everyone"
         },
         "speakers": [
           {
@@ -2785,7 +2966,9 @@
           },
           {
             "name": "Vector Wang",
-            "title": "Ph.D. Student, Rice University"
+            "title": "Ph.D. Student, Rice University",
+            "id": "vector-wang",
+            "image": "/images/speakers/better_portrait/vector-wang.png"
           }
         ],
         "date": {
@@ -2794,22 +2977,25 @@
           "fr": "6 mai"
         },
         "timeSlot": "16:55 - 17:20",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
           "en": "From Zero to Robot: How to Start an Open Source Robotics Project and Why It Matters",
-          "zh": "从零到机器人：如何启动一个开源机器人项目及其重要意义"
-        },
-        "content": {
-          "en": "Starting an open-source robotics project is both deeply rewarding and surprisingly difficult. From choosing the right hardware platform and software stack to building a community and navigating licensing — the path from idea to thriving project is full of non-obvious decisions.\n\nLuke Lu shares the lessons learned from founding Robolytics and launching open-source robotics initiatives, covering the practical steps to go from zero to a working robot project, what open source means for hardware (not just software), how to attract contributors, and why open-source robotics matters for democratising access to embodied AI. Whether you're a researcher, hobbyist, or startup founder, this talk offers a practical playbook for building in the open.",
-          "zh": "启动一个开源机器人项目既深具价值，又充满挑战。从选择合适的硬件平台和软件栈，到建立社区和处理许可证问题——从想法到蓬勃发展的项目，充满了不那么显而易见的决策。\n\n演讲者分享创立 Robolytics 和开源机器人项目的经验教训，涵盖从零启动机器人项目的实践步骤、开源对于硬件的特殊意义、如何吸引贡献者，以及开源机器人为何对普及具身 AI 至关重要。",
-          "fr": "Lancer un projet robotique open source est à la fois profondément gratifiant et étonnamment difficile. Du choix de la plateforme matérielle et logicielle à la construction d'une communauté, le chemin de l'idée à un projet florissant est plein de décisions non évidentes.\n\nLuke Lu partage les leçons apprises en fondant Robolytics, couvrant les étapes pratiques pour passer de zéro à un projet robotique fonctionnel, ce que signifie l'open source pour le matériel, et pourquoi la robotique open source est cruciale pour démocratiser l'accès à l'IA incarnée."
+          "zh": "From Zero to Robot: How to Start an Open Source Robotics Project and Why It Matters",
+          "fr": "From Zero to Robot: How to Start an Open Source Robotics Project and Why It Matters"
         },
         "speakers": [
           {
             "name": "Luke Lu",
-            "title": "Founder & CEO, Robolytics"
+            "title": "Founder / CEO, Robolytics",
+            "id": "luke-lu",
+            "image": "/images/speakers/better_portrait/luke-lu.png"
           }
         ],
         "date": {
@@ -2818,24 +3004,25 @@
           "fr": "6 mai"
         },
         "timeSlot": "17:20 - 17:40",
-        "type": "talk"
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       }
     ],
     "ws-vllm-paris2026": [
       {
         "title": {
-          "en": "vLLM Workshop: Overview & Opening",
-          "zh": "vLLM 工作坊：概述与开幕",
-          "fr": "Atelier vLLM : Vue d'ensemble"
+          "en": "Opening Remarks",
+          "zh": "开幕致辞",
+          "fr": "Remarques d'ouverture"
         },
         "speakers": [
           {
-            "name": "Jiaju Zhang",
-            "title": "Chief Architect, Red Hat"
-          },
-          {
             "name": "Erwan Gallen",
-            "title": "Senior Principal Product Manager, Red Hat"
+            "title": "vLLM Contributor, Senior Principal Product Manager - Generative AI, Red Hat"
           }
         ],
         "date": {
@@ -2843,44 +3030,24 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "10:20 - 11:00",
-        "type": "workshop"
-      },
-      {
-        "title": {
-          "en": "Accelerators for Agentic AI with vLLM",
-          "zh": "利用 vLLM 加速 Agentic AI",
-          "fr": "Accélérateurs pour l'IA agentique avec vLLM"
-        },
-        "speakers": [
-          {
-            "name": "Erwan Gallen",
-            "title": "Senior Principal Product Manager, Red Hat"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "11:00 - 11:40",
+        "timeSlot": "10:20 - 10:25",
         "type": "talk",
-        "content": {
-          "en": "Agentic AI is reshaping inference architecture. Reasoning models, long-context workflows, and multi-step agent systems put new pressure on serving stacks, which makes accelerator strategy more important than before. The challenge is no longer only to serve a model fast. It is to match the right serving architecture and the right accelerator profile to the right workload.\r\n\r\nThat is why broad accelerator support matters in vLLM. vLLM is built for high-throughput, memory-efficient inference and serving, with an architecture designed to deploy open models across different hardware environments rather than a single path. AI accelerators span familiar categories such as GPUs, NPUs, and ASIC-based designs, with CPU support still relevant for specific deployment profiles such as smaller models, edge environments, and cost-sensitive workloads. \r\n\r\nThe session explores what that shift means in practice for teams building inference platforms. It looks at why agentic workloads make accelerator strategy more important, why broad hardware enablement matters in the vLLM ecosystem, and how platform teams can think about infrastructure choices through the lens of workload shape, prompt and context behavior, concurrency, decode latency, memory pressure, scaling patterns, and operational fit. vLLM is a strong foundation for that discussion because the project emphasizes broad hardware support, top performance, production readiness, and extensible architecture, and its serving stack includes capabilities such as high-throughput serving, distributed inference, and online and offline inference modes.  ￼\r\n\r\nA practical framework ties accelerator decisions back to workload requirements and deployment goals, giving attendees a clearer way to think about modern inference architecture while showing how vLLM keeps the serving layer open and adaptable as workloads evolve.\n\nThis talk is aimed at a technical audience building or operating inference platforms and looking for a practical framework to align accelerator strategy with workload and deployment requirements.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
         }
       },
       {
         "title": {
           "en": "Building, Testing and Contributing to vLLM: A Developer's Guide",
-          "zh": "构建、测试和贡献 vLLM：开发者指南",
+          "zh": "构建、测试与贡献vLLM：开发者指南",
           "fr": "Construire, tester et contribuer à vLLM : Guide du développeur"
         },
         "speakers": [
           {
             "name": "Daniele Trifirò",
-            "title": "Principal Software Engineer, Red Hat"
+            "title": "vLLM Contributor, Principal Software Engineer, Red Hat"
           }
         ],
         "date": {
@@ -2888,12 +3055,57 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "11:40 - 12:00",
+        "timeSlot": "10:25 - 11:05",
         "type": "talk",
-        "content": {
-          "en": "Building, Testing and Contributing to vLLM: A Developer's Guide\r\n\r\nLarge Language Models (LLMs) have revolutionized the AI landscape, and vLLM has emerged as a leading inference engine that dramatically accelerates LLM serving through innovations like PagedAttention. But how do you actually build, test, and contribute to this rapidly evolving project?\r\n\r\nIn this talk, we'll take you through vLLM's architecture and explore the practical aspects of working with this complex Python/C++ codebase. We'll start with an overview of vLLM's core optimizations including PagedAttention, then dive into the build process for different targets as well as third party hardware plugins, such as Google TPU, AWS Neuron, Intel Gaudi and more.\r\n\r\nYou'll learn about testing strategies such as performance benchmarking with GuideLLM and model evaluation using lm-evaluation-harness. We'll also cover contribution best practices to the vLLM community and how Red Hat AI Inference Server (RHAIIS) provides a trustworthy and validated platform to run LLM workflows across diverse hardware environments.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "Accelerators for Agentic AI with vLLM",
+          "zh": "使用vLLM加速智能体AI",
+          "fr": "Accélérateurs pour l'IA agentique avec vLLM"
+        },
+        "speakers": [
+          {
+            "name": "Erwan Gallen",
+            "title": "vLLM Contributor, Senior Principal Product Manager - Generative AI, Red Hat"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "11:05 - 11:45",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "Networking",
+          "zh": "社交交流",
+          "fr": "Réseautage"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "11:45 - 12:00",
+        "type": "break",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
         }
       }
     ],
@@ -2911,12 +3123,142 @@
           "fr": "5 mai"
         },
         "timeSlot": "12:00 - 14:00",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
-          "en": "Tea Break",
-          "zh": "茶歇",
+          "en": "Opening Speech",
+          "zh": "开幕致辞",
+          "fr": "Discours d'ouverture"
+        },
+        "speakers": [
+          {
+            "name": "Liang Zhang",
+            "title": "Director, Huawei Fourier Research Institute"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 14:05",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "Opportunities and Challenges of Intelligent Terminal Operating Systems",
+          "zh": "智能终端操作系统的机遇与挑战",
+          "fr": "Opportunités et défis des systèmes d'exploitation terminaux intelligents"
+        },
+        "speakers": [
+          {
+            "name": "Ning Jia",
+            "title": "Member, Technical Steering Committee (TSC), OpenAtom OpenHarmony"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:05 - 14:25",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "Open, Connected and Compliant: How Oniro Builds Seamless Global Smart Ecosystems",
+          "zh": "开放、互联、合规：Oniro如何构建无缝全球智能生态系统",
+          "fr": "Ouvert, connecté et conforme : comment Oniro construit des écosystèmes intelligents mondiaux"
+        },
+        "speakers": [
+          {
+            "name": "Ignacio Ahedo",
+            "title": "Oniro Program Manager, Eclipse Foundation"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:25 - 14:45",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "OpenDesk: OpenHarmony-Native Agentic CLI",
+          "zh": "OpenDesk：OpenHarmony原生智能体CLI",
+          "fr": "OpenDesk : CLI agentique natif OpenHarmony"
+        },
+        "speakers": [
+          {
+            "name": "Debayan Roy",
+            "title": "Senior Research Engineer, Huawei Munich Research Center"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:45 - 15:05",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "Efficient & Scalable Systems for AI and AGI",
+          "zh": "面向AI与AGI的高效可扩展系统",
+          "fr": "Systèmes efficaces et évolutifs pour l'IA et l'AGI"
+        },
+        "speakers": [
+          {
+            "name": "Xingda Wei",
+            "title": "Associate Professor, Shanghai Jiao Tong University"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:05 - 15:25",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "Coffee Break",
+          "zh": "咖啡休息",
           "fr": "Pause café"
         },
         "speakers": [],
@@ -2925,23 +3267,26 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "15:20 - 15:40",
-        "type": "break"
+        "timeSlot": "15:25 - 15:40",
+        "type": "break",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       },
       {
         "title": {
-          "en": "Démocratisation of AI All Around the World to Shape the Future AGI",
-          "zh": "AI 的全球普及：塑造未来 AGI"
-        },
-        "content": {
-          "en": "Artificial General Intelligence will not be shaped by a handful of labs in a handful of countries — it will be shaped by the collective intelligence, values, and contributions of people from every corner of the world. But today, access to AI development, education, and governance is deeply unequal.\n\nFeliana Citradewi presents the work of Global AI Assembly in building inclusive, globally distributed AI communities and the practical steps needed to democratise AI development beyond the current concentration in the US, Europe, and China. The talk covers grassroots AI education, open-source as an equaliser, governance frameworks that include underrepresented voices, and what it would actually take to ensure that the future of AGI reflects all of humanity.",
-          "zh": "通用人工智能不会由少数几个国家的少数实验室塑造——它将由世界各地人们的集体智慧、价值观和贡献来塑造。然而今天，参与 AI 开发、教育和治理的机会极度不平等。\n\n演讲者介绍 Global AI Assembly 在构建包容性、全球分布式 AI 社区方面的工作，以及将 AI 开发民主化所需的实践步骤，探讨开源作为均衡器的作用，以及确保 AGI 未来反映全人类需要采取的措施。",
-          "fr": "L'intelligence artificielle générale ne sera pas façonnée par une poignée de laboratoires dans une poignée de pays — elle sera façonnée par l'intelligence collective, les valeurs et les contributions de personnes du monde entier. Pourtant, l'accès au développement, à l'éducation et à la gouvernance de l'IA reste profondément inégal.\n\nFeliana Citradewi présente le travail de Global AI Assembly pour construire des communautés IA inclusives et mondialement distribuées, et les étapes pratiques pour démocratiser le développement de l'IA au-delà de sa concentration actuelle."
+          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
+          "zh": "智能体、代码与平行世界——仓颉编程语言团队300天的智能体进化",
+          "fr": "Agents, code et mondes parallèles — 300 jours d'évolution agentique de l'équipe Cangjie"
         },
         "speakers": [
           {
-            "name": "Feliana Citradewi",
-            "title": "CEO, Global AI Assembly"
+            "name": "Dong Xin",
+            "title": "Program Director, Central Software Institute, Huawei",
+            "id": "dong-xin",
+            "image": "/images/speakers/better_portrait/dong-xin.png"
           }
         ],
         "date": {
@@ -2949,8 +3294,90 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "14:00 - 17:30",
-        "type": "talk"
+        "timeSlot": "15:40 - 16:00",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "Lowering Every Barrier: How Oniro Brings Devices, Apps, and Developers to OpenHarmony",
+          "zh": "降低每一道障碍：Oniro如何将设备、应用和开发者引入OpenHarmony",
+          "fr": "Abaisser toutes les barrières : comment Oniro amène appareils, apps et développeurs à OpenHarmony"
+        },
+        "speakers": [
+          {
+            "name": "Francesco Pham",
+            "title": "Senior Technical Expert, Huawei Milan Research Institute; Project Lead & Committer Representative, Eclipse Oniro"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:00 - 16:20",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "TBD - Sébastien Crozet",
+          "zh": "TBD - Sébastien Crozet",
+          "fr": "TBD - Sébastien Crozet"
+        },
+        "speakers": [
+          {
+            "name": "Sébastien Crozet",
+            "title": "Founder & CEO, Dimforge",
+            "id": "crozet-sbastien",
+            "image": "/images/speakers/better_portrait/crozet-sbastien.png"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:20 - 16:40",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
+      },
+      {
+        "title": {
+          "en": "From Factory to Everywhere: YanLink's Full-Stack IIoT Solutions, Powered by Oniro, SparkLink, and AI",
+          "zh": "从工厂到无处不在：YanLink基于Oniro、SparkLink和AI的全栈工业物联网解决方案",
+          "fr": "De l'usine à partout : solutions IIoT full-stack de YanLink, propulsées par Oniro, SparkLink et l'IA"
+        },
+        "speakers": [
+          {
+            "name": "Yang Liu",
+            "title": "Founder, YanLink"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:40 - 17:00",
+        "type": "talk",
+        "room": {
+          "en": "Founders Cafe",
+          "zh": "创始人咖啡厅",
+          "fr": "Founders Cafe"
+        }
       }
     ],
     "ws-open-compute": [
@@ -2967,12 +3394,195 @@
           "fr": "5 mai"
         },
         "timeSlot": "12:00 - 14:00",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
-          "en": "FlagOS + OpenClaw Platform Overview",
-          "zh": "FlagOS + OpenClaw 平台宣讲"
+          "en": "Open Compute for Agentic AI (FlagOS)",
+          "zh": "面向智能体AI的开放计算（FlagOS）",
+          "fr": "Calcul ouvert pour l'IA agentique (FlagOS)"
+        },
+        "speakers": [
+          {
+            "name": "Yonghua Lin",
+            "title": "Vice President and Chief Engineer, BAAI"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 14:15",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
+      },
+      {
+        "title": {
+          "en": "PanEval Open-Source Introduction",
+          "zh": "PanEval开源介绍",
+          "fr": "Introduction open-source de PanEval"
+        },
+        "speakers": [
+          {
+            "name": "Qigang Zhu",
+            "title": "Head of Open Source Engineering, BAAI"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:15 - 14:45",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
+      },
+      {
+        "title": {
+          "en": "AI Compliance and Governance",
+          "zh": "AI合规与治理",
+          "fr": "Conformité et gouvernance de l'IA"
+        },
+        "speakers": [
+          {
+            "name": "Michael Plagge",
+            "title": "Vice President, Eclipse Foundation"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:45 - 15:15",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
+      },
+      {
+        "title": {
+          "en": "TBD - Gábor Soós",
+          "zh": "TBD - Gábor Soós",
+          "fr": "TBD - Gábor Soós"
+        },
+        "speakers": [
+          {
+            "name": "Gábor Soós",
+            "title": "Hungarian National Commission for UNESCO"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:15 - 15:35",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
+      },
+      {
+        "title": {
+          "en": "KernelGen 2.0: Auto Operator Generation & Benchmark Co-development",
+          "zh": "KernelGen 2.0：自动算子生成与基准协同开发",
+          "fr": "KernelGen 2.0 : Génération automatique d'opérateurs et co-développement de benchmarks"
+        },
+        "speakers": [
+          {
+            "name": "Tao Jian",
+            "title": "Algorithm Engineer, AI Systems Research Group, BAAI"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:35 - 15:55",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
+      },
+      {
+        "title": {
+          "en": "Introduction of LFAI&Data Foundation and Omni-AI Community",
+          "zh": "LF AI & Data基金会与Omni-AI社区介绍",
+          "fr": "Introduction de la Fondation LFAI&Data et de la communauté Omni-AI"
+        },
+        "speakers": [
+          {
+            "name": "Zhipeng Huang",
+            "title": "Chair, LF AI & Data Foundation; Huawei"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:55 - 16:15",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
+      },
+      {
+        "title": {
+          "en": "SGLang Project and Roadmap",
+          "zh": "SGLang项目与路线图",
+          "fr": "Projet SGLang et feuille de route"
+        },
+        "speakers": [
+          {
+            "name": "Xinyuan Tong",
+            "title": "SGLang Developer",
+            "id": "xinyuan-tong",
+            "image": "/images/speakers/better_portrait/xinyuan-tong.png"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:15 - 16:35",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
+      },
+      {
+        "title": {
+          "en": "Open Discussion & Ecosystem Roundtable (Call for Participation)",
+          "zh": "开放讨论与生态系统圆桌会议（欢迎参与）",
+          "fr": "Discussion ouverte & table ronde sur l'écosystème (appel à participation)"
         },
         "speakers": [],
         "date": {
@@ -2980,83 +3590,41 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "14:10 - 14:30",
-        "type": "talk"
+        "timeSlot": "16:35 - 17:00",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
-          "en": "Technology Details of PanEVEL",
-          "zh": "PanEVEL 技术详解"
+          "en": "FlagOS Virtual Coding Competition & Live Demo",
+          "zh": "FlagOS虚拟编程竞赛与现场演示",
+          "fr": "Compétition de codage virtuelle FlagOS & démo en direct"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Yonghua Lin",
+            "title": "Vice President and Chief Engineer, BAAI"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "15:10 - 15:30",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "PanEVEL Official Launch",
-          "zh": "PanEVEL 正式发布"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "15:30 - 15:40",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "15:20 - 15:40",
-        "type": "break"
-      },
-      {
-        "title": {
-          "en": "KernelGen",
-          "zh": "KernelGen"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "16:00 - 16:20",
-        "type": "talk"
+        "timeSlot": "17:00 - 17:30",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       }
     ],
     "ws-sglang-paris2026": [
-      {
-        "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
-      },
       {
         "title": {
           "en": "Opening Remarks",
@@ -3066,7 +3634,9 @@
         "speakers": [
           {
             "name": "Xinyuan Tong",
-            "title": "Opensource Maintainer, SGLang"
+            "title": "SGLang Maintainer",
+            "id": "xinyuan-tong",
+            "image": "/images/speakers/better_portrait/xinyuan-tong.png"
           }
         ],
         "date": {
@@ -3076,26 +3646,24 @@
         },
         "timeSlot": "14:00 - 14:05",
         "type": "talk",
-        "content": {
-          "en": "SGLang is an open-source high-performance serving framework for LLMs and Multimodal Models, with over 24,000 GitHub stars. In this talk, we would present the key design principles behind SGLang's performance.\r\n\r\nWe will discuss recent advances including native multimodal models support, speculative decoding support (Eagle3/MTP), and FP8/NVFP4 quantization on Hopper and Blackwell GPUs. We also share lessons from maintaining a fast-moving open-source project with thousands of contributors worldwide.\r\n\r\nAttendees will gain a practical understanding of how SGLang achieves state-of-the-art throughput and latency, and how to deploy it for production LLM serving.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
         }
       },
       {
         "title": {
-          "en": "SGLang: High-Performance Serving Framework for LLMs and Multimodal Models",
-          "zh": "SGLang：面向 LLM 和多模态模型的高性能服务框架"
-        },
-        "content": {
-          "en": "SGLang is an open-source high-performance serving framework designed for large language models and multimodal models. At its core, SGLang introduces RadixAttention — a novel KV cache management technique that enables efficient prefix sharing across requests — alongside a highly optimised CUDA kernel library and a flexible batching engine that maximises GPU utilisation.\n\nXinyuan Tong presents the technical foundations of SGLang, the key algorithmic and systems innovations that give it its performance edge, and how the maintainer community has scaled the project to support dozens of model architectures including the latest multimodal and reasoning models. The session includes a deep dive into the serving stack, a live demo, and practical guidance on deploying SGLang for production workloads.",
-          "zh": "SGLang 是专为大语言模型和多模态模型设计的开源高性能服务框架。其核心创新 RadixAttention 是一种新颖的 KV 缓存管理技术，支持跨请求的高效前缀共享，配合高度优化的 CUDA 内核库和灵活的批处理引擎，最大化 GPU 利用率。",
-          "fr": "SGLang est un framework de service open source haute performance conçu pour les grands modèles de langage et les modèles multimodaux. Au cœur de SGLang, RadixAttention est une technique novatrice de gestion du cache KV permettant un partage efficace des préfixes entre les requêtes."
+          "en": "[Hands-on Lab] SGLang: High-Performance LLM Serving Framework — Run an Open Model Live",
+          "zh": "【实操实验】SGLang：高性能LLM服务框架——现场运行开放模型",
+          "fr": "[Atelier pratique] SGLang : Cadre de service LLM haute performance — Lancer un modèle ouvert en direct"
         },
         "speakers": [
           {
             "name": "Xinyuan Tong",
-            "title": "Opensource Maintainer, SGLang"
+            "title": "SGLang Maintainer",
+            "id": "xinyuan-tong",
+            "image": "/images/speakers/better_portrait/xinyuan-tong.png"
           }
         ],
         "date": {
@@ -3103,23 +3671,53 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "14:05 - 14:55",
-        "type": "talk"
+        "timeSlot": "14:05 - 14:50",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
-          "en": "SGLang Diffusion: A High-Performance Inference Framework for Image and Video Generation",
-          "zh": "SGLang Diffusion：面向图像和视频生成的高性能推理框架"
+          "en": "Production Image/Video Serving with SGLang Diffusion",
+          "zh": "使用SGLang Diffusion进行生产级图像/视频服务",
+          "fr": "Service d'images/vidéos en production avec SGLang Diffusion"
         },
-        "content": {
-          "en": "SGLang has established itself as a leading serving framework for large language models, and SGLang Diffusion extends that performance to the world of image and video generation. This session presents the architecture and key innovations behind SGLang Diffusion, which brings the same throughput optimisations, batching strategies, and memory management techniques that made SGLang fast for LLMs to diffusion-based generative models.\n\nYuhao Yang covers the unique challenges of serving diffusion models at scale — multi-step inference, variable resolution, and the memory footprint of large UNet and transformer-based denoisers — and shows how SGLang Diffusion addresses them. Attendees will see benchmarks comparing SGLang Diffusion against existing solutions and learn how to integrate it into their own image and video generation pipelines.",
-          "zh": "SGLang 已成为大语言模型的领先服务框架，而 SGLang Diffusion 将这一性能扩展到图像和视频生成领域。本次会议介绍 SGLang Diffusion 的架构和关键创新，将 LLM 高吞吐量优化、批处理策略和内存管理技术应用于扩散式生成模型。",
-          "fr": "SGLang s'est imposé comme un framework de service de premier plan pour les grands modèles de langage, et SGLang Diffusion étend cette performance aux domaines de la génération d'images et de vidéos."
+        "speakers": [
+          {
+            "name": "Eva Ma",
+            "title": "Algorithmic Tamer, Atlas Cloud AI LLC",
+            "id": "eva-ma",
+            "image": "/images/speakers/better_portrait/eva-ma.png"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:50 - 15:10",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
+      },
+      {
+        "title": {
+          "en": "[Hands-on Lab] SGLang Diffusion: High-Performance Image and Video Generation — Run an Open Diffusion Model Live",
+          "zh": "【实操实验】SGLang Diffusion：高性能图像与视频生成——现场运行开放扩散模型",
+          "fr": "[Atelier pratique] SGLang Diffusion : Génération d'images et vidéos haute performance — Lancer un modèle de diffusion ouvert"
         },
         "speakers": [
           {
             "name": "Yuhao Yang",
-            "title": "Developer, SGLang"
+            "title": "SGLang Developer",
+            "id": "yuhao-yang",
+            "image": "/images/speakers/better_portrait/yuhao-yang.png"
           }
         ],
         "date": {
@@ -3127,14 +3725,19 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "14:55 - 15:45",
-        "type": "talk"
+        "timeSlot": "15:10 - 15:50",
+        "type": "talk",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
-          "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
+          "en": "Break",
+          "zh": "休息",
+          "fr": "Pause"
         },
         "speakers": [],
         "date": {
@@ -3142,14 +3745,19 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "15:45 - 16:00",
-        "type": "break"
+        "timeSlot": "15:50 - 16:00",
+        "type": "break",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       },
       {
         "title": {
-          "en": "RL Training Lab: Building a High-Performance RL Pipeline with SGLang",
-          "zh": "RL 训练实验室：用 SGLang 构建高性能强化学习流水线",
-          "fr": "RL Training Lab : Construire un pipeline RL haute performance avec SGLang"
+          "en": "[Hands-on Lab] RL Training Lab: Launch a Real Training Job with the Miles RL Framework",
+          "zh": "【实操实验】RL训练实验室：使用Miles RL框架启动真实训练任务",
+          "fr": "[Atelier pratique] RL Training Lab : Lancer un vrai travail d'entraînement avec le framework Miles RL"
         },
         "speakers": [
           {
@@ -3164,17 +3772,17 @@
         },
         "timeSlot": "16:00 - 17:10",
         "type": "talk",
-        "content": {
-          "en": "Reinforcement learning post-training has become a critical stage in building capable foundation models — yet most open-source practitioners still struggle to set up a stable, high-throughput RL pipeline. This hands-on lab brings SGLang's battle-tested RL infrastructure directly to the GOSIM Paris community. Attendees will walk through building an end-to-end RL training loop using SGLang as the rollout backend, learn how to integrate it with the Miles framework, and tackle real challenges like training-inference mismatch and rollout efficiency at scale. SGLang today powers RL post-training for frontier models across the industry, running on over 400,000 GPUs worldwide. This session distills that production experience into practical, reproducible techniques — giving open-source developers and researchers a concrete path to running robust RL training on their own infrastructure.\n\nThe lab will cover: SGLang as a rollout backend for RL training, SGLang x Miles framework integration, practical techniques for handling training-inference distribution shift, and rollout efficiency optimization. Designed for ML engineers and researchers with LLM deployment experience who want to move into RL post-training workflows. Speaker: Ethan Su, SGLang core developer and RL infrastructure lead at LMSYS Org.",
-          "zh": "",
-          "fr": ""
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
         }
       },
       {
         "title": {
-          "en": "Networking",
-          "zh": "交流活动",
-          "fr": "Réseautage"
+          "en": "Networking / Surprise Speaker(s)",
+          "zh": "社交交流 / 神秘嘉宾",
+          "fr": "Réseautage / Intervenant(s) surprise"
         },
         "speakers": [],
         "date": {
@@ -3183,7 +3791,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "17:10 - 17:30",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Central Room",
+          "zh": "中央室",
+          "fr": "Salle Centrale"
+        }
       }
     ],
     "ws-own-your-data-paris2026": [
@@ -3286,7 +3899,11 @@
         "speakers": [
           {
             "name": "Nouamane Tazi",
-            "title": "ML Research Engineer, Hugging Face"
+            "title": "ML Research Engineer, Hugging Face",
+            "id": "nouamane-tazi",
+            "image": "/images/speakers/better_portrait/nouamane-tazi.png",
+            "role": "ML Research Engineer",
+            "org": "Hugging Face"
           }
         ],
         "date": {
@@ -3670,7 +4287,11 @@
         "speakers": [
           {
             "name": "Arturo Amor",
-            "title": "ML Engineer, probabl"
+            "title": "ML Engineer, probabl",
+            "id": "arturo-amor",
+            "image": "/images/speakers/better_portrait/arturo-amor.png",
+            "role": "ML Engineer",
+            "org": "probabl"
           }
         ],
         "date": {
@@ -3685,24 +4306,9 @@
     "ws-agentic-app": [
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "Morning Coffee",
-          "fr": "Morning Coffee"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break"
-      },
-      {
-        "title": {
-          "en": "Build Your Own Agentic App Workshop",
-          "zh": "Build Your Own Agentic App Workshop",
-          "fr": "Build Your Own Agentic App Workshop"
+          "en": "Octos Workshop",
+          "zh": "Octos Workshop",
+          "fr": "Octos Workshop"
         },
         "speakers": [],
         "date": {
@@ -3711,13 +4317,18 @@
           "fr": "6 mai"
         },
         "timeSlot": "10:20 - 12:00",
-        "type": "workshop"
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
           "en": "Lunch",
-          "zh": "Lunch",
-          "fr": "Lunch"
+          "zh": "午餐",
+          "fr": "Déjeuner"
         },
         "speakers": [],
         "date": {
@@ -3726,13 +4337,45 @@
           "fr": "6 mai"
         },
         "timeSlot": "12:00 - 14:00",
-        "type": "break"
+        "type": "break",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       },
       {
         "title": {
-          "en": "Build Your Own Agentic App Workshop",
-          "zh": "Build Your Own Agentic App Workshop",
-          "fr": "Build Your Own Agentic App Workshop"
+          "en": "Makepad Splash",
+          "zh": "Makepad Splash",
+          "fr": "Makepad Splash"
+        },
+        "speakers": [
+          {
+            "name": "Rik Arends",
+            "title": "Co-Founder, Makepad",
+            "id": "rik-arends",
+            "image": "/images/speakers/better_portrait/rik-arends.png"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "14:00 - 15:20",
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
+      },
+      {
+        "title": {
+          "en": "Tea Break",
+          "zh": "下午茶歇",
+          "fr": "Pause thé"
         },
         "speakers": [],
         "date": {
@@ -3740,8 +4383,38 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "14:00 - 17:30",
-        "type": "workshop"
+        "timeSlot": "15:20 - 15:40",
+        "type": "break",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
+      },
+      {
+        "title": {
+          "en": "Build Embedded Rust (with AI!)",
+          "zh": "Build Embedded Rust (with AI!)",
+          "fr": "Build Embedded Rust (with AI!)"
+        },
+        "speakers": [
+          {
+            "name": "Bart Massey",
+            "title": "Associate Professor of Computer Science, Portland State University"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "15:40 - 17:00",
+        "type": "talk",
+        "room": {
+          "en": "Junior Stage",
+          "zh": "初级舞台",
+          "fr": "Scène Junior"
+        }
       }
     ]
   }
