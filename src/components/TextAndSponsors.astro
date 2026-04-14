@@ -11,6 +11,7 @@ interface LogoItem {
   imageAlt: string;
   logoClass?: string;
   url?: string;
+  tag?: string;
 }
 
 interface LogoGroup {
@@ -105,9 +106,10 @@ const { id, title, text, text2, logos, logoGroups, ctaButton } = Astro.props;
                 <div class={`logo-tiles${group.cols ? " logo-tiles-grid" : " logo-tiles-row"}`}>
                   {group.logos.map((loop) => (
                     <div
-                      class="single-logo-tile"
+                      class={`single-logo-tile${loop.tag ? " has-tag" : ""}`}
                       style={group.cols ? `width: calc((100% - 0.75em * ${group.cols - 1}) / ${group.cols})` : undefined}
                     >
+                      {loop.tag && <span class="logo-tile-tag">{loop.tag}</span>}
                       <div class={`boxed-logo xll${loop.logoClass ? ` ${loop.logoClass}` : ""}`}>
                         {loop?.image && (
                           loop.url ? (
@@ -234,5 +236,24 @@ const { id, title, text, text2, logos, logoGroups, ctaButton } = Astro.props;
 
   .logo-tiles-grid .single-logo-tile {
     flex: none !important;
+  }
+
+  .single-logo-tile.has-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .logo-tile-tag {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #92600a;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 </style>

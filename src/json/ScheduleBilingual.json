@@ -375,9 +375,14 @@
     "hackathon-agentic": [
       {
         "title": {
-          "en": "Check-in",
-          "zh": "签到",
-          "fr": "Enregistrement"
+          "en": "Registration & Networking",
+          "zh": "注册与交流",
+          "fr": "Inscription & Réseautage"
+        },
+        "content": {
+          "en": "Participant entry, swag collection, and setup.",
+          "zh": "参与者入场、领取周边及设备配置。",
+          "fr": "Arrivée des participants, récupération des cadeaux et installation."
         },
         "speakers": [],
         "date": {
@@ -385,34 +390,64 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "08:30 - 09:00",
+        "timeSlot": "08:30 - 09:15",
         "type": "break"
       },
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "上午茶歇",
-          "fr": "Café du matin"
+          "en": "Keynote: Gaël Varoquaux",
+          "zh": "主旨演讲：Gaël Varoquaux",
+          "fr": "Conférence plénière : Gaël Varoquaux"
         },
-        "speakers": [],
-        "type": "break",
+        "speakers": [
+          {
+            "name": "Gaël Varoquaux",
+            "title": "Chief Science Officer, Probabl / INRIA"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "10:00 - 10:20"
+        "timeSlot": "09:30 - 09:45",
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
       },
       {
         "title": {
-          "en": "Hackathon Opening",
-          "zh": "黑客马拉松开幕",
-          "fr": "Ouverture du Hackathon"
+          "en": "Keynote: Bill Ren",
+          "zh": "主旨演讲：Bill Ren",
+          "fr": "Conférence plénière : Bill Ren"
         },
-        "content": {
-          "en": "Introduction, themes, judging criteria",
-          "zh": "介绍、主题及评分标准",
-          "fr": "Introduction, thèmes, critères d'évaluation"
+        "speakers": [
+          {
+            "name": "Bill Ren",
+            "title": "Chief Open Source Liaison Officer; Board Member, CNCF"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:45 - 10:00",
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
+      },
+      {
+        "title": {
+          "en": "Coffee Break",
+          "zh": "茶歇",
+          "fr": "Pause café"
         },
         "speakers": [],
         "date": {
@@ -420,19 +455,102 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "10:30 - 11:00",
+        "timeSlot": "10:00 - 10:20",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "Opening Ceremony",
+          "zh": "开幕式",
+          "fr": "Cérémonie d'ouverture"
+        },
+        "content": {
+          "en": "Welcome speech, rules, judging criteria, and awards.",
+          "zh": "欢迎致辞、规则说明、评审标准及奖项介绍。",
+          "fr": "Discours de bienvenue, règles, critères d'évaluation et récompenses."
+        },
+        "speakers": [
+          {
+            "name": "Zonghuan Wu",
+            "title": "GOSIM"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:20 - 10:25",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Sponsor Technical Briefing",
+          "zh": "赞助商技术简报",
+          "fr": "Briefing technique des sponsors"
+        },
+        "content": {
+          "en": "Moonshot (Kimi), MiniMax, and Zhipu AI (5 mins each) on APIs and technical resources.",
+          "zh": "Moonshot（Kimi）、MiniMax 和智谱 AI（各5分钟）介绍 API 及技术资源。",
+          "fr": "Moonshot (Kimi), MiniMax et Zhipu AI (5 min chacun) sur les API et ressources techniques."
+        },
+        "speakers": [
+          {
+            "name": "Kimi (Moonshot)",
+            "title": "Sponsor"
+          },
+          {
+            "name": "MiniMax",
+            "title": "Sponsor"
+          },
+          {
+            "name": "Zhipu AI",
+            "title": "Sponsor"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:25 - 10:40",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Challenge & Judging Reveal",
+          "zh": "挑战赛题与评审标准揭晓",
+          "fr": "Révélation des défis & critères d'évaluation"
+        },
+        "content": {
+          "en": "Detailed track descriptions and team formation guidance.",
+          "zh": "赛道详细说明及组队指引。",
+          "fr": "Descriptions détaillées des pistes et guide de constitution des équipes."
+        },
+        "speakers": [
+          {
+            "name": "Zonghuan Wu",
+            "title": "GOSIM"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:40 - 10:50",
         "type": "hackathon"
       },
       {
         "title": {
           "en": "Setup Session",
           "zh": "环境搭建",
-          "fr": "Session de Configuration"
+          "fr": "Session de configuration"
         },
         "content": {
-          "en": "Dev environment, API access, toolchain setup, challenge topics revealed",
-          "zh": "开发环境、API 访问、工具链配置，挑战主题揭晓",
-          "fr": "Environnement de développement, accès API, configuration des outils, révélation des sujets"
+          "en": "Environment config, API access, and toolchain setup with mentor support.",
+          "zh": "在导师支持下完成环境配置、API 访问及工具链搭建。",
+          "fr": "Configuration de l'environnement, accès API et outillage avec le soutien des mentors."
         },
         "speakers": [],
         "date": {
@@ -440,14 +558,19 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "11:00 - 12:00",
+        "timeSlot": "10:50 - 12:00",
         "type": "hackathon"
       },
       {
         "title": {
-          "en": "Lunch + Team Formation",
-          "zh": "午餐 + 组队",
-          "fr": "Déjeuner + Constitution des équipes"
+          "en": "Lunch & Icebreaking",
+          "zh": "午餐与破冰活动",
+          "fr": "Déjeuner & Brise-glace"
+        },
+        "content": {
+          "en": "Team-based seating for collaboration.",
+          "zh": "按团队就座，促进协作交流。",
+          "fr": "Places par équipe pour favoriser la collaboration."
         },
         "speakers": [],
         "date": {
@@ -460,9 +583,14 @@
       },
       {
         "title": {
-          "en": "Hacking",
-          "zh": "编程竞赛",
-          "fr": "Hackathon"
+          "en": "Hacking: Phase I",
+          "zh": "编程竞赛：第一阶段",
+          "fr": "Hackathon : Phase I"
+        },
+        "content": {
+          "en": "4 hours of continuous development.",
+          "zh": "4小时持续开发。",
+          "fr": "4 heures de développement continu."
         },
         "speakers": [],
         "date": {
@@ -470,19 +598,19 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "13:00 - 18:00",
+        "timeSlot": "13:00 - 17:00",
         "type": "hackathon"
       },
       {
         "title": {
-          "en": "Checkpoint",
-          "zh": "进度检查",
-          "fr": "Point d'étape"
+          "en": "Checkpoint & Sync",
+          "zh": "进度检查与同步",
+          "fr": "Point d'étape & Synchronisation"
         },
         "content": {
-          "en": "1-min team updates",
-          "zh": "各团队1分钟进度汇报",
-          "fr": "Mise à jour de 1 min par équipe"
+          "en": "1-minute progress reports per team; mentor Q&A and direction alignment.",
+          "zh": "各团队1分钟进度汇报；导师答疑与方向校准。",
+          "fr": "Rapports de progression d'1 minute par équipe ; Q&A avec les mentors et alignement de direction."
         },
         "speakers": [],
         "date": {
@@ -490,7 +618,27 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "17:50 - 18:00",
+        "timeSlot": "17:00 - 17:30",
+        "type": "hackathon"
+      },
+      {
+        "title": {
+          "en": "Flexible Dev / Networking",
+          "zh": "自由开发 / 交流",
+          "fr": "Développement libre / Réseautage"
+        },
+        "content": {
+          "en": "Continue hacking or wrap up for the day.",
+          "zh": "继续开发或收尾结束当日工作。",
+          "fr": "Continuer le hackathon ou conclure la journée."
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "17:30 - 18:00",
         "type": "hackathon"
       },
       {
@@ -499,35 +647,75 @@
           "zh": "签到",
           "fr": "Enregistrement"
         },
+        "content": {
+          "en": "Morning arrival and workstation prep.",
+          "zh": "早晨到达并准备工作站。",
+          "fr": "Arrivée matinale et préparation des postes de travail."
+        },
         "speakers": [],
         "date": {
           "en": "May 6",
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "08:30 - 09:30",
+        "timeSlot": "08:30 - 08:45",
         "type": "break"
       },
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "上午茶歇",
-          "fr": "Café du matin"
+          "en": "Morning Kick-off",
+          "zh": "早间启动",
+          "fr": "Lancement matinal"
+        },
+        "content": {
+          "en": "Review of Day 1 and briefing on Demo Day requirements.",
+          "zh": "回顾第一天进展，介绍演示日要求。",
+          "fr": "Bilan du Jour 1 et briefing sur les exigences du Demo Day."
         },
         "speakers": [],
-        "type": "break",
         "date": {
           "en": "May 6",
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:00 - 10:20"
+        "timeSlot": "08:45 - 09:00",
+        "type": "hackathon"
       },
       {
         "title": {
-          "en": "Hacking — Final Push + Demo Prep",
-          "zh": "编程竞赛 — 冲刺与演示准备",
-          "fr": "Hackathon — Sprint final + Préparation démo"
+          "en": "Main Keynotes",
+          "zh": "主旨演讲",
+          "fr": "Conférences plénières"
+        },
+        "content": {
+          "en": "General Assembly.",
+          "zh": "全体大会。",
+          "fr": "Assemblée générale."
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "09:30 - 10:00",
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
+      },
+      {
+        "title": {
+          "en": "Final Sprint & Prep",
+          "zh": "最终冲刺与准备",
+          "fr": "Sprint final & Préparation"
+        },
+        "content": {
+          "en": "Final coding and preparation of roadshow materials (PPT/Demo).",
+          "zh": "最终编码及路演材料（PPT/演示）准备。",
+          "fr": "Développement final et préparation des supports de présentation (PPT/Démo)."
         },
         "speakers": [],
         "date": {
@@ -540,14 +728,14 @@
       },
       {
         "title": {
-          "en": "Demo & Presentations",
-          "zh": "演示与展示",
-          "fr": "Démos & Présentations"
+          "en": "Demo & Roadshow",
+          "zh": "演示与路演",
+          "fr": "Démo & Roadshow"
         },
         "content": {
-          "en": "Each team presents their project, followed by Q&A",
-          "zh": "各团队展示项目并进行问答",
-          "fr": "Chaque équipe présente son projet, suivi d'une session Q&A"
+          "en": "Flash Demo Presentation + Live Q&A — Lunch provided.",
+          "zh": "快闪演示 + 现场问答 — 提供午餐。",
+          "fr": "Présentation Flash Demo + Q&A en direct — Déjeuner fourni."
         },
         "speakers": [],
         "date": {
@@ -560,9 +748,14 @@
       },
       {
         "title": {
-          "en": "Judging",
-          "zh": "评审",
-          "fr": "Délibération"
+          "en": "Judging & Deliberation",
+          "zh": "评审与评议",
+          "fr": "Jugement & Délibération"
+        },
+        "content": {
+          "en": "Judges review scores; participants can attend concurrent sessions or rest.",
+          "zh": "评委审核评分；参与者可参加同期活动或休息。",
+          "fr": "Les juges examinent les scores ; les participants peuvent assister à des sessions parallèles ou se reposer."
         },
         "speakers": [],
         "date": {
@@ -575,42 +768,39 @@
       },
       {
         "title": {
-          "en": "Awards Ceremony",
-          "zh": "颁奖典礼",
-          "fr": "Cérémonie de remise des prix"
+          "en": "Dinner & Social",
+          "zh": "晚宴与社交",
+          "fr": "Dîner & Sociale"
         },
         "content": {
-          "en": "At GOSIM closing session",
-          "zh": "GOSIM 闭幕式环节",
-          "fr": "Lors de la session de clôture GOSIM"
+          "en": "Celebration banquet and free networking.",
+          "zh": "庆典晚宴与自由交流。",
+          "fr": "Banquet de célébration et réseautage libre."
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Zonghuan Wu",
+            "title": "GOSIM"
+          },
+          {
+            "name": "Kimi (Moonshot)",
+            "title": "Sponsor"
+          },
+          {
+            "name": "MiniMax",
+            "title": "Sponsor"
+          },
+          {
+            "name": "Zhipu AI",
+            "title": "Sponsor"
+          }
+        ],
         "date": {
           "en": "May 6",
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "14:30 - 15:00",
-        "type": "hackathon"
-      },
-      {
-        "title": {
-          "en": "Dinner & Networking",
-          "zh": "晚宴与交流",
-          "fr": "Dîner & Networking"
-        },
-        "content": {
-          "en": "Winners, sponsors & judges",
-          "zh": "获奖者、赞助商及评委",
-          "fr": "Lauréats, sponsors & jurés"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "18:30 - 20:00",
+        "timeSlot": "18:00 - 21:00",
         "type": "break"
       }
     ],
@@ -2969,6 +3159,56 @@
     "ws-own-your-data-paris2026": [
       {
         "title": {
+          "en": "Keynote: Gaël Varoquaux",
+          "zh": "主旨演讲：Gaël Varoquaux",
+          "fr": "Conférence plénière : Gaël Varoquaux"
+        },
+        "speakers": [
+          {
+            "name": "Gaël Varoquaux",
+            "title": "Chief Science Officer, Probabl / INRIA"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:30 - 09:45",
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
+      },
+      {
+        "title": {
+          "en": "Keynote: Bill Ren",
+          "zh": "主旨演讲：Bill Ren",
+          "fr": "Conférence plénière : Bill Ren"
+        },
+        "speakers": [
+          {
+            "name": "Bill Ren",
+            "title": "Chief Open Source Liaison Officer; Board Member, CNCF"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "09:45 - 10:00",
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
+      },
+      {
+        "title": {
           "en": "Morning Coffee",
           "zh": "Morning Coffee",
           "fr": "Morning Coffee"
@@ -2984,14 +3224,14 @@
       },
       {
         "title": {
-          "en": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
-          "zh": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
-          "fr": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model"
+          "en": "The Long Game: Building Europe’s Sovereign AI Layer",
+          "zh": "The Long Game: Building Europe’s Sovereign AI Layer",
+          "fr": "The Long Game: Building Europe’s Sovereign AI Layer"
         },
         "speakers": [
           {
-            "name": "Gaël Varoquaux",
-            "title": "Chief Science Officer, Probabl / INRIA"
+            "name": "Nicolas Flores-Herr",
+            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
           }
         ],
         "date": {
@@ -3000,22 +3240,23 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:20 - 10:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "OpenGPT-X, TrustLLM, OpenEuroLLM — three projects, three hard lessons in what it actually takes to build foundation models in Europe at scale.\r\nThe technical challenges are real, but rarely the ones you’d expect. The governance ones even less so.\r\nThis keynote unpacks the journey honestly: where European open-source AI stands today, why the foundational intelligence layer matters more than most policy debates acknowledge, and what building it has taught us about the gap between ambition and craft.\r\nThe window is open. The Frontier AI Momentum is still there. The question is whether we’re serious about climbing through it.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
-          "en": "The Adoption of the Python Array API in scikit-learn",
-          "zh": "The Adoption of the Python Array API in scikit-learn",
-          "fr": "The Adoption of the Python Array API in scikit-learn"
+          "en": "The Smol Training Handbook: Lessons from Training State-of-the-Art LLMs",
+          "zh": "The Smol Training Handbook: Lessons from Training State-of-the-Art LLMs",
+          "fr": "The Smol Training Handbook: Lessons from Training State-of-the-Art LLMs"
         },
         "speakers": [
           {
-            "name": "Stefanie Senger",
-            "title": "ML Engineer, Probabl"
-          },
-          {
-            "name": "Olivier Grisel",
-            "title": "ML Engineer, Probabl"
+            "name": "Nouamane Tazi",
+            "title": "ML Research Engineer, Hugging Face"
           }
         ],
         "date": {
@@ -3024,23 +3265,22 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:40 - 11:00",
-        "type": "talk",
-        "content": {
-          "en": "I'm presenting together with Olivier Grisel (olivier.grisel@ensta.org), who has just submitted the abstract.",
-          "zh": "",
-          "fr": ""
-        }
+        "type": "talk"
       },
       {
         "title": {
-          "en": "Python on GPUs: Speeding Up Machine Learning",
-          "zh": "Python on GPUs: Speeding Up Machine Learning",
-          "fr": "Python on GPUs: Speeding Up Machine Learning"
+          "en": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments",
+          "zh": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments",
+          "fr": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments"
         },
         "speakers": [
           {
-            "name": "Andy Terrel",
-            "title": "NVIDIA"
+            "name": "Anastasia Stasenko",
+            "title": "Pleias"
+          },
+          {
+            "name": "Pierre-Carl Langlais",
+            "title": "Pleias"
           }
         ],
         "date": {
@@ -3051,21 +3291,25 @@
         "timeSlot": "11:00 - 11:20",
         "type": "talk",
         "content": {
-          "en": "CUDA Python is a ground up exposure of the CUDA ecosystem in a Pythonic way. By doing this, OSS codes are able to use CUDA directly with supported APIs and languages that are tested the day new hardware is released. OSS codes such as CuPy and PyTorch have adopted this new exposure. Additionally, we released CUDA Tile that makes coding kernels much more akin to working with numpy arrays. We will go through the new exposure and dive into examples of owning your machine learning pipeline with CUDA Python.",
+          "en": "Training state-of-the-art language models typically demands vast proprietary datasets and closed pipelines. At Pleias, we take a different path — building open, high-performing LLMs using synthetic data environments designed for the commons. This talk presents our approach to constructing synthetic data pipelines that generate diverse, high-quality training corpora without relying on proprietary sources. We cover the technical architecture behind our synthetic environments, the training strategies that enable competitive performance on standard benchmarks, and why we believe open synthetic data is a critical piece of the puzzle for democratizing access to frontier AI capabilities. We share lessons learned, benchmark results, and a roadmap for community-driven improvements.",
           "zh": "",
           "fr": ""
         }
       },
       {
         "title": {
-          "en": "Accelerating scikit-learn with GPUs",
-          "zh": "Accelerating scikit-learn with GPUs",
-          "fr": "Accelerating scikit-learn with GPUs"
+          "en": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models",
+          "zh": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models",
+          "fr": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models"
         },
         "speakers": [
           {
-            "name": "Tim Head",
-            "title": "NVIDIA"
+            "name": "Said Taghadouini",
+            "title": "LightOn"
+          },
+          {
+            "name": "Baptiste Aubertin",
+            "title": "LightOn"
           }
         ],
         "date": {
@@ -3074,18 +3318,27 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:20 - 11:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "We will present how we trained a 1B vlm trained for OCR that reached SOTA on ocr benches.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
-          "en": "SciPy's Support for GPUs, PyTorch, and CuPy",
-          "zh": "SciPy's Support for GPUs, PyTorch, and CuPy",
-          "fr": "SciPy's Support for GPUs, PyTorch, and CuPy"
+          "en": "Evaluating Frontier Agents on Economically Valuable Tasks",
+          "zh": "Evaluating Frontier Agents on Economically Valuable Tasks",
+          "fr": "Evaluating Frontier Agents on Economically Valuable Tasks"
         },
         "speakers": [
           {
-            "name": "Evgeni Burovski",
-            "title": "Quansight"
+            "name": "Björn Plüster",
+            "title": "ellamind"
+          },
+          {
+            "name": "Benedikt Droste",
+            "title": "ellamind"
           }
         ],
         "date": {
@@ -3094,7 +3347,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "11:40 - 12:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "It is evident that AI Agents are becoming more and more capable - but what does it take to make them perform well on the real, day-to-day tasks that are prevalent in people’s work? In this presentation I’ll discuss how to model complex environment to evaluate - and improve - agent reliability and performance. I’ll focus on the viability of production deployments in real-world tasks, on the technical side of building and running evals in these cases using Harbor (https://github.com/laude-institute/harbor), and how we are using these techniques at ellamind to build agents that are reliable and provably safe.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3127,6 +3385,26 @@
       },
       {
         "title": {
+          "en": "From Agent Traces to Analytics",
+          "zh": "From Agent Traces to Analytics",
+          "fr": "From Agent Traces to Analytics"
+        },
+        "speakers": [
+          {
+            "name": "Violetta Mishechkina",
+            "title": "dltHub"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:20 - 12:40",
+        "type": "talk"
+      },
+      {
+        "title": {
           "en": "Kedro: The Toolbox for Production-Ready Data Pipelines",
           "zh": "Kedro: The Toolbox for Production-Ready Data Pipelines",
           "fr": "Kedro: The Toolbox for Production-Ready Data Pipelines"
@@ -3142,7 +3420,136 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "12:20 - 12:40",
+        "timeSlot": "12:40 - 13:00",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "Lunch",
+          "zh": "Lunch",
+          "fr": "Lunch"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "13:00 - 14:00",
+        "type": "break"
+      },
+      {
+        "title": {
+          "en": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
+          "zh": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model",
+          "fr": "TabICLv2: A Better, Faster, Scalable, and Open Tabular Foundation Model"
+        },
+        "speakers": [
+          {
+            "name": "Gaël Varoquaux",
+            "title": "Chief Science Officer, Probabl / INRIA"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 14:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "The Adoption of the Python Array API in scikit-learn",
+          "zh": "The Adoption of the Python Array API in scikit-learn",
+          "fr": "The Adoption of the Python Array API in scikit-learn"
+        },
+        "speakers": [
+          {
+            "name": "Stefanie Senger",
+            "title": "ML Engineer, Probabl"
+          },
+          {
+            "name": "Olivier Grisel",
+            "title": "ML Engineer, Probabl"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:20 - 14:40",
+        "type": "talk",
+        "content": {
+          "en": "I’m presenting together with Olivier Grisel (olivier.grisel@ensta.org), who has just submitted the abstract.",
+          "zh": "",
+          "fr": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Python on GPUs: Speeding Up Machine Learning",
+          "zh": "Python on GPUs: Speeding Up Machine Learning",
+          "fr": "Python on GPUs: Speeding Up Machine Learning"
+        },
+        "speakers": [
+          {
+            "name": "Andy Terrel",
+            "title": "NVIDIA"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:40 - 15:00",
+        "type": "talk",
+        "content": {
+          "en": "CUDA Python is a ground up exposure of the CUDA ecosystem in a Pythonic way. By doing this, OSS codes are able to use CUDA directly with supported APIs and languages that are tested the day new hardware is released. OSS codes such as CuPy and PyTorch have adopted this new exposure. Additionally, we released CUDA Tile that makes coding kernels much more akin to working with numpy arrays. We will go through the new exposure and dive into examples of owning your machine learning pipeline with CUDA Python.",
+          "zh": "",
+          "fr": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Accelerating scikit-learn with GPUs",
+          "zh": "Accelerating scikit-learn with GPUs",
+          "fr": "Accelerating scikit-learn with GPUs"
+        },
+        "speakers": [
+          {
+            "name": "Tim Head",
+            "title": "NVIDIA"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:00 - 15:20",
+        "type": "talk"
+      },
+      {
+        "title": {
+          "en": "SciPy’s Support for GPUs, PyTorch, and CuPy",
+          "zh": "SciPy’s Support for GPUs, PyTorch, and CuPy",
+          "fr": "SciPy’s Support for GPUs, PyTorch, and CuPy"
+        },
+        "speakers": [
+          {
+            "name": "Evgeni Burovski",
+            "title": "Quansight"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "15:20 - 15:40",
         "type": "talk"
       },
       {
@@ -3166,180 +3573,13 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "12:40 - 13:00",
+        "timeSlot": "15:40 - 16:00",
         "type": "talk",
         "content": {
           "en": "Skore is the Data Science platform by the scikit-learn founders.\r\nSkore is a data science platform that addresses the challenges of data science in the enterprise world.\r\nSkore helps enterprises adopt AI coding tools reliably, industrialize and scale their data science practice, and bridge the gap between data science and business stakeholders.\r\nOur foundations are the same scientific principles that made scikit-learn the undisputed standard for machine learning, extended now to the team, the organization, and the enterprise.\r\nTracking, exploring, and sharing data science workflows with skore is as simple and reliable as using scikit-learn!",
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Lunch",
-          "zh": "Lunch",
-          "fr": "Lunch"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "13:00 - 14:00",
-        "type": "break"
-      },
-      {
-        "title": {
-          "en": "The Long Game: Building Europe's Sovereign AI Layer",
-          "zh": "The Long Game: Building Europe's Sovereign AI Layer",
-          "fr": "The Long Game: Building Europe's Sovereign AI Layer"
-        },
-        "speakers": [
-          {
-            "name": "Nicolas Flores-Herr",
-            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "14:00 - 14:20",
-        "type": "talk",
-        "content": {
-          "en": "OpenGPT-X, TrustLLM, OpenEuroLLM — three projects, three hard lessons in what it actually takes to build foundation models in Europe at scale.\r\nThe technical challenges are real, but rarely the ones you’d expect. The governance ones even less so.\r\nThis keynote unpacks the journey honestly: where European open-source AI stands today, why the foundational intelligence layer matters more than most policy debates acknowledge, and what building it has taught us about the gap between ambition and craft.\r\nThe window is open. The Frontier AI Momentum is still there. The question is whether we’re serious about climbing through it.",
-          "zh": "",
-          "fr": ""
-        }
-      },
-      {
-        "title": {
-          "en": "The Smol Training Handbook: Lessons from Training State-of-the-Art LLMs",
-          "zh": "The Smol Training Handbook: Lessons from Training State-of-the-Art LLMs",
-          "fr": "The Smol Training Handbook: Lessons from Training State-of-the-Art LLMs"
-        },
-        "speakers": [
-          {
-            "name": "Nouamane Tazi",
-            "title": "ML Research Engineer, Hugging Face"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "14:20 - 14:40",
-        "type": "talk"
-      },
-      {
-        "title": {
-          "en": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments",
-          "zh": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments",
-          "fr": "Synthetic Data for the Commons: Building Open SOTA LLMs with Synthetic Environments"
-        },
-        "speakers": [
-          {
-            "name": "Anastasia Stasenko",
-            "title": "Pleias"
-          },
-          {
-            "name": "Pierre-Carl Langlais",
-            "title": "Pleias"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "14:40 - 15:00",
-        "type": "talk",
-        "content": {
-          "en": "Training state-of-the-art language models typically demands vast proprietary datasets and closed pipelines. At Pleias, we take a different path — building open, high-performing LLMs using synthetic data environments designed for the commons. This talk presents our approach to constructing synthetic data pipelines that generate diverse, high-quality training corpora without relying on proprietary sources. We cover the technical architecture behind our synthetic environments, the training strategies that enable competitive performance on standard benchmarks, and why we believe open synthetic data is a critical piece of the puzzle for democratizing access to frontier AI capabilities. We share lessons learned, benchmark results, and a roadmap for community-driven improvements.",
-          "zh": "",
-          "fr": ""
-        }
-      },
-      {
-        "title": {
-          "en": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models",
-          "zh": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models",
-          "fr": "LightOnOCR: Pushing the Performance-Efficiency Pareto Frontier of Open OCR Models"
-        },
-        "speakers": [
-          {
-            "name": "Said Taghadouini",
-            "title": "LightOn"
-          },
-          {
-            "name": "Baptiste Aubertin",
-            "title": "LightOn"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "15:00 - 15:20",
-        "type": "talk",
-        "content": {
-          "en": "We will present how we trained a 1B vlm trained for OCR that reached SOTA on ocr benches.",
-          "zh": "",
-          "fr": ""
-        }
-      },
-      {
-        "title": {
-          "en": "Evaluating Frontier Agents on Economically Valuable Tasks",
-          "zh": "Evaluating Frontier Agents on Economically Valuable Tasks",
-          "fr": "Evaluating Frontier Agents on Economically Valuable Tasks"
-        },
-        "speakers": [
-          {
-            "name": "Björn Plüster",
-            "title": "ellamind"
-          },
-          {
-            "name": "Benedikt Droste",
-            "title": "ellamind"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "15:20 - 15:40",
-        "type": "talk",
-        "content": {
-          "en": "It is evident that AI Agents are becoming more and more capable - but what does it take to make them perform well on the real, day-to-day tasks that are prevalent in people's work? In this presentation I'll discuss how to model complex environment to evaluate - and improve - agent reliability and performance. I'll focus on the viability of production deployments in real-world tasks, on the technical side of building and running evals in these cases using Harbor (https://github.com/laude-institute/harbor), and how we are using these techniques at ellamind to build agents that are reliable and provably safe.",
-          "zh": "",
-          "fr": ""
-        }
-      },
-      {
-        "title": {
-          "en": "From Agent Traces to Analytics",
-          "zh": "From Agent Traces to Analytics",
-          "fr": "From Agent Traces to Analytics"
-        },
-        "speakers": [
-          {
-            "name": "Violetta Mishechkina",
-            "title": "dltHub"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "15:40 - 16:00",
-        "type": "talk"
       },
       {
         "title": {

@@ -25,6 +25,14 @@
       }
     },
     {
+      "id": "premier-sponsor",
+      "name": {
+        "en": "Premier Sponsor",
+        "zh": "首席赞助商",
+        "fr": "Sponsor Principal"
+      }
+    },
+    {
       "id": "host",
       "name": {
         "en": "Sponsors",
@@ -51,7 +59,7 @@
   ],
   "partners": [
     {
-      "category": "host",
+      "category": "premier-sponsor",
       "image": "huawei-vertical.png",
       "logoClass": "xl",
       "url": "https://www.huawei.com"

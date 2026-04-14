@@ -331,6 +331,9 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
             const firstKeynoteTime = keynotes[0]?.timeSlot || "99:99"
             const earlyBreaks = sessions.filter(s => (s.timeSlot || "99:99") < firstKeynoteTime)
             const laterSessions = sessions.filter(s => (s.timeSlot || "99:99") >= firstKeynoteTime)
+            const firstCeremonyStart = ceremonies.length > 0 ? (ceremonies[0]?.timeSlot || "99:99").split(" - ")[0] : "99:99"
+            const preCeremonySessions = laterSessions.filter(s => ((s.timeSlot || "99:99").split(" - ")[0]) < firstCeremonyStart)
+            const postCeremonySessions = laterSessions.filter(s => ((s.timeSlot || "99:99").split(" - ")[0]) >= firstCeremonyStart)
             const color = trackColor(cat.id)
             return (
               <div
@@ -435,7 +438,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                   )
                 })() : (
                   <div class="session-list">
-                    {laterSessions.map((session) => {
+                    {preCeremonySessions.map((session) => {
                       const meta = typeMeta(session.type)
                       const isBreak = session.type === "break"
                       const hasContent = !isBreak && session.speakers && session.speakers.length > 0
@@ -503,6 +506,55 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                             {cer.speakers && cer.speakers.length > 0 && (
                               <div class="speaker-list">
                                 {cer.speakers.map((sp: any) => (
+                                  <div class="speaker-row">
+                                    <span class="speaker-name">{sp.name}</span>
+                                    {sp.title && <span class="speaker-role">{sp.title}</span>}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </a>
+                      )
+                    })}
+                  </div>
+                )}
+
+                {/* Post-ceremony sessions (e.g. Dinner after closing ceremony) */}
+                {postCeremonySessions.length > 0 && (
+                  <div class="session-list">
+                    {postCeremonySessions.map((session) => {
+                      const meta = typeMeta(session.type)
+                      const isBreak = session.type === "break"
+                      const hasContent = !isBreak && session.speakers && session.speakers.length > 0
+                      if (isBreak) {
+                        const isLunch = (session.title as any)?.en === "Lunch" || session.title === "Lunch"
+                        const isRegistration = (session.title as any)?.en === "Registration"
+                        return (
+                          <div class={isLunch ? "break-divider lunch-divider" : isRegistration ? "break-divider registration-divider" : "break-divider"}>
+                            <span class="break-line" />
+                            <span class="break-label">
+                              {session.timeSlot && <span class="break-time">{session.timeSlot}</span>}
+                              {loc(session.title)}
+                            </span>
+                            <span class="break-line" />
+                          </div>
+                        )
+                      }
+                      const slug = createSlug(en(session.title))
+                      return (
+                        <a class="session-card" href={`/schedule/${slug}/`}>
+                          <div class="session-left">
+                            <span class="session-time">{session.timeSlot}</span>
+                            <span class="type-badge" style={`background:${meta.bg}; color:${meta.fg}`}>
+                              {meta.label}
+                            </span>
+                          </div>
+                          <div class="session-right">
+                            <h3 class="session-title">{en(session.title)}</h3>
+                            {hasContent && (
+                              <div class="speaker-list">
+                                {session.speakers.map((sp: any) => (
                                   <div class="speaker-row">
                                     <span class="speaker-name">{sp.name}</span>
                                     {sp.title && <span class="speaker-role">{sp.title}</span>}
