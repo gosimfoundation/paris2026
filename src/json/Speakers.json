@@ -579,6 +579,146 @@
       },
       "status": "Accept",
       "draft": false
+    },
+    {
+      "id": "arturo-amor",
+      "name": "Arturo Amor",
+      "bio": "I did my PhD in theoretical quantum physics at the National Autonomous University of Mexico (UNAM), followed by a postdoctoral position in the same field at École Polytechnique in France. Since 2021, I have been a core contributor to scikit-learn, serving as a member of the documentation team to ensure clear, accessible and up-to-date documentation for easier usability.\n\nCurrently, I'm a co-founder at :probabl., a company founded by the scikit-learn creators and maintainers. In this role, I'm part of the training and certification team, where I work developing educational materials and certification programs that bridge the gap between theory and practice, helping professionals achieve internationally recognized standards in machine learning and the related good practices.",
+      "role": "ML Engineer",
+      "org": "probabl",
+      "roleOrg": "ML Engineer, probabl",
+      "image": "/images/speakers/arturo-amor.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "draft": false
+    },
+    {
+      "id": "eva-ma",
+      "name": "Eva Ma",
+      "bio": "Taming the wild frontiers of generative AI. I design the structures that keep modern algorithms bounded, efficient, and aligned with human intent. Architecting the future of Atlas Cloud AI.",
+      "role": "Algorithmic Tamer",
+      "org": "Atlas Cloud AI LLC",
+      "roleOrg": "Algorithmic Tamer, Atlas Cloud AI LLC",
+      "image": "/images/speakers/eva-ma.png",
+      "tags": [
+        "ws-sglang-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/Eva20150932-atlascloud",
+        "linkedin": "",
+        "website": ""
+      },
+      "draft": false
+    },
+    {
+      "id": "junyi",
+      "name": "Junyi Zhong",
+      "bio": "Dr. Junyi Zhong is a tech entrepreneur and AI researcher specializing in Trustworthy AI and blockchain systems. He is the CEO of INNAIO France, he focuses on AI-driven voice interfaces to advance information accessibility and global communication. He is also an active angel investor, supporting early-stage projects across AI and Web3.",
+      "role": "CEO",
+      "org": "INNAIO France",
+      "roleOrg": "CEO, INNAIO France",
+      "image": "/images/speakers/junyi.png",
+      "tags": [
+        "panel-open-source-ai-and-the-new-generation-of-builders"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/0xjyzh",
+        "github": "https://github.com/Jooeys",
+        "linkedin": "https://www.linkedin.com/in/junyi-zhong/?skipRedirect=true",
+        "website": ""
+      },
+      "draft": false
+    },
+    {
+      "id": "wei-wang",
+      "name": "Wei Wang（王伟）",
+      "bio": "王伟，奇点智能研究院开源技术委员会主任，工业和信息化部电子标准院开源治理标准总体组组长，联合国咨商开源创新专委会秘书长，华东师范大学教授，CCF杰出会员。牵头制定中国首套开源治理系列标准，研究聚焦开源治理与开源评价。在 ICSE、WWW、ACL 等顶会期刊发表论文百余篇，入选国家级创新人才项目、获国家级教学成果二等奖、上海开源创新卓越成果奖特等奖。",
+      "role": "奇点智能研究院开源技术委员会主任",
+      "org": "华东师范大学",
+      "roleOrg": "奇点智能研究院开源技术委员会主任, 华东师范大学",
+      "image": "/images/speakers/wei-wang王伟.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "draft": false
+    },
+    {
+      "id": "wendy-seltzer",
+      "name": "Wendy Seltzer",
+      "bio": "Wendy Seltzer is a lawyer and technologist, currently consulting via the Law Office of Wendy Seltzer. She is a founder of the First Person Cooperative, addressing governance of decentralized trust networks for personhood recognition and agency.\n\nAs Principal Identity Architect at Tucows, she helped to found the Ayra Association. She previously served as Strategy Lead and Counsel to the World Wide Web Consortium (W3C) at MIT, improving the Web's security, availability, and interoperability through standards. As a Fellow with Harvard's Berkman Klein Center for Internet & Society, Wendy founded the Lumen Project (formerly Chilling Effects Clearinghouse), the web's pioneering transparency report to measure the impact of legal takedown demands online. She seeks to improve technology policy in support of user-driven innovation and secure communication. She co-authored the second edition of Blown to Bits: Your Life, Liberty, and Happiness After the Digital Explosion.",
+      "role": "Principal",
+      "org": "Law Office of Wendy Seltzer",
+      "roleOrg": "Principal, Law Office of Wendy Seltzer",
+      "image": "/images/speakers/wendy-seltzer.png",
+      "tags": [
+        "panel-trustworthy-agentic-ai-standards-safety-and-governance"
+      ],
+      "socialLinks": {
+        "mastodon": "@wseltzer@infosec.exchange",
+        "twitter": "",
+        "github": "wseltzer",
+        "linkedin": "",
+        "website": "https://wendy.seltzer.org/"
+      },
+      "draft": false
+    },
+    {
+      "id": "xuan-huang",
+      "name": "Xuan Huang (黄玄)",
+      "bio": "Xuan Huang (@huxpro) is the Architect of Lynx at ByteDance, an open-source, cross-platform framework powering TikTok and CapCut. He is exploring what app frameworks should look like in the age of AI, and he was previously on the React Core Team at Meta.",
+      "role": "Software Architect @ Lynx",
+      "org": "ByteDance",
+      "roleOrg": "Software Architect @ Lynx, ByteDance",
+      "image": "/images/speakers/xuan-huang-黄玄.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "huxpro",
+        "github": "huxpro",
+        "linkedin": "huxpro",
+        "website": "hux.pro"
+      },
+      "draft": false
+    },
+    {
+      "id": "ziyan-wang",
+      "name": "Ziyan Wang",
+      "bio": "A faculty member at a public university and the principal of a private business school, primarily engaged in education.",
+      "role": "Directrice d'éducation",
+      "org": "NGO UNESCO Avicenne",
+      "roleOrg": "Directrice d'éducation, NGO UNESCO Avicenne",
+      "image": "/images/speakers/wang-ziyan.png",
+      "tags": [
+        "panel-ai-education-learning-in-the-age-of-agents"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "draft": false
     }
   ]
 }

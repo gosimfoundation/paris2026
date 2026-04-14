@@ -1072,7 +1072,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "15:30 - 16:30",
-        "type": "panel"
+        "type": "panel",
+        "content": {
+          "en": "AI agents hit Carrefour in 2025, transforming workflows and velocity. Discover our journey: the iterations, impacted teams, pain points, and quick wins. Learn how it started and our future plans to fuel your own agentic conquest!",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1091,7 +1096,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "16:30 - 17:30",
-        "type": "panel"
+        "type": "panel",
+        "content": {
+          "en": "It is evident that AI Agents are becoming more and more capable - but what does it take to make them perform well on the real, day-to-day tasks that are prevalent in people's work? In this presentation I'll discuss how to model complex environment to evaluate - and improve - agent reliability and performance. I'll focus on the viability of production deployments in real-world tasks, on the technical side of building and running evals in these cases using Harbor (https://github.com/laude-institute/harbor), and how we are using these techniques at ellamind to build agents that are reliable and provably safe.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1316,7 +1326,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "14:40 - 15:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "As AI workloads grow across cloud and edge environments, operating systems are evolving to better support AI-native computing. This session introduces openEuler’s AI exploration and the SuperPoD OS initiative, highlighting how the OS stack is being optimized for heterogeneous compute, high-density AI clusters, and large-scale AI workloads. Attendees will gain a brief overview of how open-source operating systems can serve as a foundation for scalable and efficient AI infrastructure.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1350,7 +1365,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "15:30 - 16:30",
-        "type": "panel"
+        "type": "panel",
+        "content": {
+          "en": "Now all professions and works reliant on tool-based skills, including most programmers' work, are being displaced by AI technologies. Cultivating students' computational and mathematical thinking by solving programming contest problems can be as a breakthrough point for the reform of computer education in the AI era. It is implemented by constructions of teaching materials, curricula and a cross-institutional and cross-regional programming training system. And innovations and effects are introduced.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1377,7 +1397,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "16:30 - 17:30",
-        "type": "panel"
+        "type": "panel",
+        "content": {
+          "en": "How do we trust AI Agents? As we deploy more powerful AI Agents in critical infrastructure, in business or enterprise systems, and in personal environments (e.g. OpenClaw), we must face the challenges of trust, security, and privacy head-on.  In this panel discussion, we invite distinguished panelists with deep expertise in compute, models, agent identity, authorization and responsibility, law and technology governance, open source, and open standards to discuss all aspects of human trust in AI technologies and AI Agents. We will also ask our panelists what we: you, me, us -- can do to advance the technologies, social norms and governance structures so that we can enjoy the benefits of powerful AI Agents that we can trust.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3050,7 +3075,12 @@
           "fr": "6 mai"
         },
         "timeSlot": "14:00 - 14:05",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "SGLang is an open-source high-performance serving framework for LLMs and Multimodal Models, with over 24,000 GitHub stars. In this talk, we would present the key design principles behind SGLang's performance.\r\n\r\nWe will discuss recent advances including native multimodal models support, speculative decoding support (Eagle3/MTP), and FP8/NVFP4 quantization on Hopper and Blackwell GPUs. We also share lessons from maintaining a fast-moving open-source project with thousands of contributors worldwide.\r\n\r\nAttendees will gain a practical understanding of how SGLang achieves state-of-the-art throughput and latency, and how to deploy it for production LLM serving.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3265,7 +3295,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "10:40 - 11:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "A deep dive into the real-world challenges of training LLMs at scale, covering infrastructure, 5D parallelism, performance tuning, and hard-earned lessons from training SmolLM3 on hundreds of GPUs.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3401,7 +3436,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "12:20 - 12:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Agents continuously produce large volumes of artifacts: code, text, telemetry, etc. Most teams are stuck with static and stale datasets. In 2026, with agents able to create data pipelines as code, fresh and reliable datasets are accessible to any Python coder. We'll share how we built our internal agent evaluation platform with open source Python tools and AI (dlt, LanceDB, Pydantic, Ibis, HuggingFace, and more.)",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3421,7 +3461,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "12:40 - 13:00",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "In this talk, we will explore how software engineering best practices such as modularity, separation of concerns, testability, and reproducibility can elevate the quality and deployability of AI projects. Focussing on the Kedro framework, we’ll uncover how these principles seamlessly integrate into data workflows, making complex projects more manageable and scalable. This session is designed for data practitioners interested in adopting robust software engineering methodologies in their work. Attendees will gain practical insights into improving project design, ensuring code quality, and facilitating smoother transitions to production environments. No extensive software engineering background is required, making this an accessible and informative session for all data professionals looking to enhance their knowledge of software principles through Kedro.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3456,7 +3501,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "14:00 - 14:20",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "I will introduce our latest progress on building better predictors on tables and relational data. These progresses are driven both by powerful transformer-based foundation models and by enabling better data preparation. Table foundation models are pretrained to embark implicit priors useful for tables. TabICL is an open and top-performing table foundation model. Data preparation can be very time consuming and tedious, though it is very important when the data is more than a simple numerical table. The skrub package makes this preparation much easier.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3550,7 +3600,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "15:20 - 15:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "In this talk, I discuss the state of support of GPU computing with \"alternative\" software array libraries in SciPy via Array API. In addition to user-visible support, I will describe some internal infrastructure of SciPy which might be useful for other libraries, and discuss ongoing work and challenges ahead.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3614,8 +3669,8 @@
         },
         "speakers": [
           {
-            "name": "David Arturo Amor Quiroz",
-            "title": "Probabl"
+            "name": "Arturo Amor",
+            "title": "ML Engineer, probabl"
           }
         ],
         "date": {
