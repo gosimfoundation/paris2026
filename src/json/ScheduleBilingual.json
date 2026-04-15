@@ -241,9 +241,9 @@
       },
       {
         "title": {
-          "en": "Project Pitches",
-          "zh": "项目路演",
-          "fr": "Présentations de projets"
+          "en": "Project Pitches — Day 1",
+          "zh": "Project Pitches — Day 1",
+          "fr": "Project Pitches — Day 1"
         },
         "speakers": [],
         "date": {
@@ -281,9 +281,9 @@
       },
       {
         "title": {
-          "en": "Project Pitches",
-          "zh": "项目路演",
-          "fr": "Présentations de projets"
+          "en": "Project Pitches — Day 2",
+          "zh": "Project Pitches — Day 2",
+          "fr": "Project Pitches — Day 2"
         },
         "speakers": [],
         "date": {
@@ -328,9 +328,9 @@
     "hackathon-robotics": [
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "Morning Coffee",
-          "fr": "Morning Coffee"
+          "en": "Morning Coffee — Robotics Hackathon — Day 1 Morning",
+          "zh": "Morning Coffee — Robotics Hackathon — Day 1 Morning",
+          "fr": "Morning Coffee — Robotics Hackathon — Day 1 Morning"
         },
         "speakers": [],
         "date": {
@@ -343,9 +343,9 @@
       },
       {
         "title": {
-          "en": "Robotics Hackathon",
-          "zh": "Robotics Hackathon",
-          "fr": "Robotics Hackathon"
+          "en": "Robotics Hackathon — Day 1 — Day 1 Morning",
+          "zh": "Robotics Hackathon — Day 1 — Day 1 Morning",
+          "fr": "Robotics Hackathon — Day 1 — Day 1 Morning"
         },
         "speakers": [],
         "date": {
@@ -358,9 +358,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "Lunch",
-          "fr": "Lunch"
+          "en": "Lunch — Robotics Hackathon — Day 1 Morning",
+          "zh": "Lunch — Robotics Hackathon — Day 1 Morning",
+          "fr": "Lunch — Robotics Hackathon — Day 1 Morning"
         },
         "speakers": [],
         "date": {
@@ -373,9 +373,9 @@
       },
       {
         "title": {
-          "en": "Robotics Hackathon",
-          "zh": "Robotics Hackathon",
-          "fr": "Robotics Hackathon"
+          "en": "Robotics Hackathon — Day 1 — Day 1 Afternoon",
+          "zh": "Robotics Hackathon — Day 1 — Day 1 Afternoon",
+          "fr": "Robotics Hackathon — Day 1 — Day 1 Afternoon"
         },
         "speakers": [],
         "date": {
@@ -388,9 +388,9 @@
       },
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "Morning Coffee",
-          "fr": "Morning Coffee"
+          "en": "Morning Coffee — Robotics Hackathon — Day 2 Morning",
+          "zh": "Morning Coffee — Robotics Hackathon — Day 2 Morning",
+          "fr": "Morning Coffee — Robotics Hackathon — Day 2 Morning"
         },
         "speakers": [],
         "date": {
@@ -403,9 +403,9 @@
       },
       {
         "title": {
-          "en": "Robotics Hackathon",
-          "zh": "Robotics Hackathon",
-          "fr": "Robotics Hackathon"
+          "en": "Robotics Hackathon — Day 2 — Day 2 Morning",
+          "zh": "Robotics Hackathon — Day 2 — Day 2 Morning",
+          "fr": "Robotics Hackathon — Day 2 — Day 2 Morning"
         },
         "speakers": [],
         "date": {
@@ -418,9 +418,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "Lunch",
-          "fr": "Lunch"
+          "en": "Lunch — Robotics Hackathon — Day 2 Morning",
+          "zh": "Lunch — Robotics Hackathon — Day 2 Morning",
+          "fr": "Lunch — Robotics Hackathon — Day 2 Morning"
         },
         "speakers": [],
         "date": {
@@ -433,9 +433,9 @@
       },
       {
         "title": {
-          "en": "Robotics Hackathon",
-          "zh": "Robotics Hackathon",
-          "fr": "Robotics Hackathon"
+          "en": "Robotics Hackathon — Day 2 — Day 2 Afternoon",
+          "zh": "Robotics Hackathon — Day 2 — Day 2 Afternoon",
+          "fr": "Robotics Hackathon — Day 2 — Day 2 Afternoon"
         },
         "speakers": [],
         "date": {
@@ -520,9 +520,9 @@
       },
       {
         "title": {
-          "en": "Coffee Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
+          "en": "Coffee Break — GOSIM Agentic Hackathon",
+          "zh": "Coffee Break — GOSIM Agentic Hackathon",
+          "fr": "Coffee Break — GOSIM Agentic Hackathon"
         },
         "speakers": [],
         "date": {
@@ -922,9 +922,9 @@
       },
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "茶歇",
-          "fr": "Café du matin"
+          "en": "Morning Coffee — Agentic AI Summit — Day 1 Morning",
+          "zh": "Morning Coffee — Agentic AI Summit — Day 1 Morning",
+          "fr": "Morning Coffee — Agentic AI Summit — Day 1 Morning"
         },
         "speakers": [],
         "date": {
@@ -1014,9 +1014,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Lunch — Agentic AI Summit — Day 1 Morning",
+          "zh": "Lunch — Agentic AI Summit — Day 1 Morning",
+          "fr": "Lunch — Agentic AI Summit — Day 1 Morning"
         },
         "speakers": [],
         "date": {
@@ -1103,9 +1103,9 @@
       },
       {
         "title": {
-          "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
+          "en": "Tea Break — Agentic AI Summit — Day 1 Afternoon",
+          "zh": "Tea Break — Agentic AI Summit — Day 1 Afternoon",
+          "fr": "Tea Break — Agentic AI Summit — Day 1 Afternoon"
         },
         "speakers": [],
         "date": {
@@ -1255,9 +1255,9 @@
       },
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "茶歇",
-          "fr": "Café du matin"
+          "en": "Morning Coffee — Agentic AI Summit — Day 2 Morning",
+          "zh": "Morning Coffee — Agentic AI Summit — Day 2 Morning",
+          "fr": "Morning Coffee — Agentic AI Summit — Day 2 Morning"
         },
         "speakers": [],
         "date": {
@@ -1363,9 +1363,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Lunch — Agentic AI Summit — Day 2 Morning",
+          "zh": "Lunch — Agentic AI Summit — Day 2 Morning",
+          "fr": "Lunch — Agentic AI Summit — Day 2 Morning"
         },
         "speakers": [],
         "date": {
@@ -1451,9 +1451,9 @@
       },
       {
         "title": {
-          "en": "Tea Break",
-          "zh": "茶歇",
-          "fr": "Pause café"
+          "en": "Tea Break — Agentic AI Summit — Day 2 Afternoon",
+          "zh": "Tea Break — Agentic AI Summit — Day 2 Afternoon",
+          "fr": "Tea Break — Agentic AI Summit — Day 2 Afternoon"
         },
         "speakers": [],
         "date": {
@@ -1611,9 +1611,9 @@
     "open-source-model": [
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "上午茶歇",
-          "fr": "Café du matin"
+          "en": "Morning Coffee — Open Source Models",
+          "zh": "Morning Coffee — Open Source Models",
+          "fr": "Morning Coffee — Open Source Models"
         },
         "speakers": [],
         "date": {
@@ -1710,9 +1710,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Lunch — Open Source Models",
+          "zh": "Lunch — Open Source Models",
+          "fr": "Lunch — Open Source Models"
         },
         "speakers": [],
         "date": {
@@ -1805,9 +1805,9 @@
       },
       {
         "title": {
-          "en": "Tea Break",
-          "zh": "下午茶歇",
-          "fr": "Pause thé"
+          "en": "Tea Break — Open Source Models",
+          "zh": "Tea Break — Open Source Models",
+          "fr": "Tea Break — Open Source Models"
         },
         "speakers": [],
         "date": {
@@ -1904,9 +1904,9 @@
     "ai-generative-app": [
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "上午茶歇",
-          "fr": "Café du matin"
+          "en": "Morning Coffee — Agentic OS & App — Day 1 Morning",
+          "zh": "Morning Coffee — Agentic OS & App — Day 1 Morning",
+          "fr": "Morning Coffee — Agentic OS & App — Day 1 Morning"
         },
         "speakers": [],
         "date": {
@@ -2005,9 +2005,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Lunch — Agentic OS & App — Day 1 Morning",
+          "zh": "Lunch — Agentic OS & App — Day 1 Morning",
+          "fr": "Lunch — Agentic OS & App — Day 1 Morning"
         },
         "speakers": [],
         "date": {
@@ -2098,9 +2098,9 @@
       },
       {
         "title": {
-          "en": "Tea Break",
-          "zh": "下午茶歇",
-          "fr": "Pause thé"
+          "en": "Tea Break — Agentic OS & App",
+          "zh": "Tea Break — Agentic OS & App",
+          "fr": "Tea Break — Agentic OS & App"
         },
         "speakers": [],
         "date": {
@@ -2218,9 +2218,9 @@
       },
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "上午茶歇",
-          "fr": "Café du matin"
+          "en": "Morning Coffee — Agentic OS & App — Day 2 Morning",
+          "zh": "Morning Coffee — Agentic OS & App — Day 2 Morning",
+          "fr": "Morning Coffee — Agentic OS & App — Day 2 Morning"
         },
         "speakers": [],
         "date": {
@@ -2238,9 +2238,9 @@
       },
       {
         "title": {
-          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
-          "zh": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
-          "fr": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team"
+          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — Agentic OS & App",
+          "zh": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — Agentic OS & App",
+          "fr": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — Agentic OS & App"
         },
         "speakers": [
           {
@@ -2365,9 +2365,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Lunch — Agentic OS & App — Day 2 Morning",
+          "zh": "Lunch — Agentic OS & App — Day 2 Morning",
+          "fr": "Lunch — Agentic OS & App — Day 2 Morning"
         },
         "speakers": [],
         "date": {
@@ -2387,9 +2387,9 @@
     "agentic-ai-on-edge": [
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "上午茶歇",
-          "fr": "Café du matin"
+          "en": "Morning Coffee — Agentic AI on Edge — Day 1 Morning",
+          "zh": "Morning Coffee — Agentic AI on Edge — Day 1 Morning",
+          "fr": "Morning Coffee — Agentic AI on Edge — Day 1 Morning"
         },
         "speakers": [],
         "date": {
@@ -2515,9 +2515,9 @@
       },
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "上午茶歇",
-          "fr": "Café du matin"
+          "en": "Morning Coffee — Agentic AI on Edge — Day 2 Morning",
+          "zh": "Morning Coffee — Agentic AI on Edge — Day 2 Morning",
+          "fr": "Morning Coffee — Agentic AI on Edge — Day 2 Morning"
         },
         "speakers": [],
         "date": {
@@ -2641,9 +2641,9 @@
     "open-source-robotics": [
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "上午茶歇",
-          "fr": "Café du matin"
+          "en": "Morning Coffee — Open Source Robotics",
+          "zh": "Morning Coffee — Open Source Robotics",
+          "fr": "Morning Coffee — Open Source Robotics"
         },
         "speakers": [],
         "date": {
@@ -2763,9 +2763,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Lunch — Open Source Robotics",
+          "zh": "Lunch — Open Source Robotics",
+          "fr": "Lunch — Open Source Robotics"
         },
         "speakers": [],
         "date": {
@@ -2860,9 +2860,9 @@
       },
       {
         "title": {
-          "en": "Tea Break",
-          "zh": "下午茶歇",
-          "fr": "Pause thé"
+          "en": "Tea Break — Open Source Robotics",
+          "zh": "Tea Break — Open Source Robotics",
+          "fr": "Tea Break — Open Source Robotics"
         },
         "speakers": [],
         "date": {
@@ -3015,9 +3015,9 @@
     "ws-vllm-paris2026": [
       {
         "title": {
-          "en": "Opening Remarks",
-          "zh": "开幕致辞",
-          "fr": "Remarques d'ouverture"
+          "en": "Opening Remarks — vLLM Workshop",
+          "zh": "Opening Remarks — vLLM Workshop",
+          "fr": "Opening Remarks — vLLM Workshop"
         },
         "speakers": [
           {
@@ -3112,9 +3112,9 @@
     "ws-oh-tech-forum": [
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Lunch — OpenHarmony Tech Forum",
+          "zh": "Lunch — OpenHarmony Tech Forum",
+          "fr": "Lunch — OpenHarmony Tech Forum"
         },
         "speakers": [],
         "date": {
@@ -3257,9 +3257,9 @@
       },
       {
         "title": {
-          "en": "Coffee Break",
-          "zh": "咖啡休息",
-          "fr": "Pause café"
+          "en": "Coffee Break — OpenHarmony Tech Forum",
+          "zh": "Coffee Break — OpenHarmony Tech Forum",
+          "fr": "Coffee Break — OpenHarmony Tech Forum"
         },
         "speakers": [],
         "date": {
@@ -3277,9 +3277,9 @@
       },
       {
         "title": {
-          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
-          "zh": "智能体、代码与平行世界——仓颉编程语言团队300天的智能体进化",
-          "fr": "Agents, code et mondes parallèles — 300 jours d'évolution agentique de l'équipe Cangjie"
+          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum",
+          "zh": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum",
+          "fr": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum"
         },
         "speakers": [
           {
@@ -3383,9 +3383,9 @@
     "ws-open-compute": [
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Lunch — Open Compute for Agentic AI (FlagOS)",
+          "zh": "Lunch — Open Compute for Agentic AI (FlagOS)",
+          "fr": "Lunch — Open Compute for Agentic AI (FlagOS)"
         },
         "speakers": [],
         "date": {
@@ -3627,9 +3627,9 @@
     "ws-sglang-paris2026": [
       {
         "title": {
-          "en": "Opening Remarks",
-          "zh": "开幕致辞",
-          "fr": "Remarques d'ouverture"
+          "en": "Opening Remarks — SGLang Workshop",
+          "zh": "Opening Remarks — SGLang Workshop",
+          "fr": "Opening Remarks — SGLang Workshop"
         },
         "speakers": [
           {
@@ -3852,9 +3852,9 @@
       },
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "Morning Coffee",
-          "fr": "Morning Coffee"
+          "en": "Morning Coffee — Own Your Data Science and AI Workshop",
+          "zh": "Morning Coffee — Own Your Data Science and AI Workshop",
+          "fr": "Morning Coffee — Own Your Data Science and AI Workshop"
         },
         "speakers": [],
         "date": {
@@ -4087,9 +4087,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "Lunch",
-          "fr": "Lunch"
+          "en": "Lunch — Own Your Data Science and AI Workshop",
+          "zh": "Lunch — Own Your Data Science and AI Workshop",
+          "fr": "Lunch — Own Your Data Science and AI Workshop"
         },
         "speakers": [],
         "date": {
@@ -4326,9 +4326,9 @@
       },
       {
         "title": {
-          "en": "Lunch",
-          "zh": "午餐",
-          "fr": "Déjeuner"
+          "en": "Lunch — Build Your Own Agentic App Workshop",
+          "zh": "Lunch — Build Your Own Agentic App Workshop",
+          "fr": "Lunch — Build Your Own Agentic App Workshop"
         },
         "speakers": [],
         "date": {
@@ -4373,9 +4373,9 @@
       },
       {
         "title": {
-          "en": "Tea Break",
-          "zh": "下午茶歇",
-          "fr": "Pause thé"
+          "en": "Tea Break — Build Your Own Agentic App Workshop",
+          "zh": "Tea Break — Build Your Own Agentic App Workshop",
+          "fr": "Tea Break — Build Your Own Agentic App Workshop"
         },
         "speakers": [],
         "date": {
