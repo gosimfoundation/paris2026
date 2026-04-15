@@ -4197,7 +4197,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "15:00 - 15:20",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "Classical ML algorithms -- random forests, logistic regression, PCA, clustering -- remain the backbone of production machine learning. Yet they are often CPU-only. That’s changing. This talk presents two open-source approaches to GPU-accelerating the ML you already use: RAPIDS cuML, which rewrites classical algorithms in CUDA and can transparently accelerate scikit-learn-based libraries like BERTopic with a single import; and scikit-learn’s array API support, which lets the same scikit-learn code run on GPU inputs with no rewrites. Through live demos I’ll show what becomes practical when classical ML goes to the GPU, and offer honest guidance on when to reach for each tool. I maintain both scikit-learn and cuML; this talk reflects what I’ve learned working on both sides.",
+          "zh": "经典机器学习算法——随机森林、逻辑回归、PCA、聚类——仍然是生产级机器学习的核心支柱。然而，它们通常只能在CPU上运行。这种情况正在改变。本演讲介绍两种开源方法，用于GPU加速您已经在使用的机器学习算法：RAPIDS cuML，它用CUDA重写了经典算法，并可通过单次导入透明地加速基于scikit-learn的库（如BERTopic）；以及scikit-learn的数组API支持，让相同的scikit-learn代码无需改写即可在GPU输入上运行。通过现场演示，我将展示经典机器学习迁移到GPU后能带来哪些新的可能性，并就何时选择哪种工具提供客观的建议。我同时维护scikit-learn和cuML，本演讲正是我在两个项目上工作所积累的经验总结。",
+          "fr": "Les algorithmes de ML classiques -- forêts aléatoires, régression logistique, ACP, clustering -- restent l’épine dorsale du machine learning en production. Pourtant, ils sont souvent limités au CPU. Cela est en train de changer. Cette conférence présente deux approches open source pour accélérer sur GPU le ML que vous utilisez déjà : RAPIDS cuML, qui réécrit les algorithmes classiques en CUDA et peut accélérer de manière transparente les bibliothèques basées sur scikit-learn comme BERTopic avec un seul import ; et le support de l’array API de scikit-learn, qui permet au même code scikit-learn de s’exécuter sur des entrées GPU sans réécriture. À travers des démonstrations en direct, je montrerai ce qui devient pratique lorsque le ML classique passe sur GPU, et offrirai des conseils honnêtes sur quand utiliser chaque outil. Je maintiens à la fois scikit-learn et cuML ; cette conférence reflète ce que j’ai appris en travaillant des deux côtés."
+        }
       },
       {
         "title": {
