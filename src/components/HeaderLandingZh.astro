@@ -32,10 +32,6 @@ const links = [
     link: "/zh/sponsors/",
   },
   {
-    text: "提案征集",
-    link: `${anchorBase}#proposals`,
-  },
-  {
     text: "同期活动",
     subLinks: [
       {
@@ -80,13 +76,14 @@ const links = [
     )
   }
 
-  <!-- <div class="floating-ticket-button">
+  <div class="floating-ticket-button">
     <Button
-      text="活动已结束，感谢参与"
-      link=""
-      class="btn primary btn-floating btn-hover"
+      text="立即购票"
+      link="https://gosimparis2026.eventbrite.com/"
+      openInNewTab={true}
+      class="btn outline btn-floating btn-hover"
     />
-  </div> -->
+  </div>
 
   <div class="mobile-nav">
     <div class="overlay overlay-dark" data-navigation-toggle="close"></div>
@@ -320,9 +317,17 @@ const links = [
 
 <style>
   .floating-ticket-button {
+    position: absolute;
+    top: calc(40px + var(--row-gap) * 0.35);
+    right: var(--container-padding);
+    z-index: 201;
+    pointer-events: none;
+  }
+
+  .floating-ticket-button :global(.btn-floating) {
     position: relative;
-    top: -15px;
-    z-index: 10;
+    top: auto;
+    right: auto;
   }
 
   /* Ensure notification bar is clickable */

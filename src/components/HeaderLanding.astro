@@ -24,10 +24,6 @@ const rawLinks = [
     link: "/sponsors/",
   },
   {
-    text: "Proposals",
-    anchor: "#proposals",
-  },
-  {
     text: "Co-located Events",
     subLinks: [
       {
@@ -83,13 +79,14 @@ const links = rawLinks.map(l => l.anchor ? { ...l, link: `${anchorBase}${l.ancho
     )
   }
 
-  <!-- <div class="floating-ticket-button">
+  <div class="floating-ticket-button">
     <Button
-      text="Coming Soon"
-      link=""
-      class="btn primary btn-floating btn-hover"
+      text="Get Tickets"
+      link="https://gosimparis2026.eventbrite.com/"
+      openInNewTab={true}
+      class="btn outline btn-floating btn-hover"
     />
-  </div> -->
+  </div>
 
   <div class="mobile-nav">
     <div class="overlay overlay-dark" data-navigation-toggle="close"></div>
@@ -313,9 +310,17 @@ const links = rawLinks.map(l => l.anchor ? { ...l, link: `${anchorBase}${l.ancho
 
 <style>
   .floating-ticket-button {
+    position: absolute;
+    top: calc(40px + var(--row-gap) * 0.35);
+    right: var(--container-padding);
+    z-index: 201;
+    pointer-events: none;
+  }
+
+  .floating-ticket-button :global(.btn-floating) {
     position: relative;
-    top: -15px;
-    z-index: 10;
+    top: auto;
+    right: auto;
   }
 
   /* Ensure notification bar is clickable */

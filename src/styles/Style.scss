@@ -599,6 +599,18 @@ footer {
    pointer-events: all;
 }
 
+.floating-ticket-button .btn-content.duplicate .btn-fill {
+   background-color: #6c63ff !important;
+}
+
+.floating-ticket-button .btn-content.duplicate span {
+   color: #fff !important;
+}
+
+.floating-ticket-button .border-box {
+   border-color: #6c63ff;
+}
+
 /* Filter */
 
 .btn-filter {
