@@ -477,7 +477,8 @@
         "speakers": [
           {
             "name": "Gaël Varoquaux",
-            "title": "Chief Science Officer, Probabl / INRIA"
+            "title": "Chief Science Officer, Probabl / INRIA",
+            "id": "gal-varoquaux"
           }
         ],
         "date": {
@@ -502,7 +503,8 @@
         "speakers": [
           {
             "name": "Bill Ren",
-            "title": "Chief Open Source Liaison Officer; Board Member, CNCF"
+            "title": "Chief Open Source Liaison Officer; Board Member, CNCF",
+            "id": "bill-ren"
           }
         ],
         "date": {
@@ -547,7 +549,8 @@
         "speakers": [
           {
             "name": "Zonghuan Wu",
-            "title": "GOSIM"
+            "title": "GOSIM",
+            "id": "zonghuan-wu"
           }
         ],
         "date": {
@@ -605,7 +608,8 @@
         "speakers": [
           {
             "name": "Zonghuan Wu",
-            "title": "GOSIM"
+            "title": "GOSIM",
+            "id": "zonghuan-wu"
           }
         ],
         "date": {
@@ -830,7 +834,8 @@
         "speakers": [
           {
             "name": "Zonghuan Wu",
-            "title": "GOSIM"
+            "title": "GOSIM",
+            "id": "zonghuan-wu"
           },
           {
             "name": "Kimi (Moonshot)",
@@ -879,7 +884,8 @@
         "speakers": [
           {
             "name": "Gaël Varoquaux",
-            "title": "Chief Science Officer, Probabl / INRIA"
+            "title": "Chief Science Officer, Probabl / INRIA",
+            "id": "gal-varoquaux"
           }
         ],
         "date": {
@@ -904,7 +910,8 @@
         "speakers": [
           {
             "name": "Bill Ren",
-            "title": "Chief Open Source Officer, Huawei"
+            "title": "Chief Open Source Officer, Huawei",
+            "id": "bill-ren"
           }
         ],
         "date": {
@@ -963,7 +970,8 @@
         "speakers": [
           {
             "name": "Bryce Adelstein Lelbach",
-            "title": "Principal Engineer, NVIDIA"
+            "title": "Principal Engineer, NVIDIA",
+            "id": "bryce-adelstein-lelbach"
           }
         ],
         "date": {
@@ -982,7 +990,8 @@
         "speakers": [
           {
             "name": "Jenia Jitsev",
-            "title": "Co-Founder, LAION; Researcher, Jülich Supercomputing Center (Moderator)"
+            "title": "Co-Founder, LAION; Researcher, Jülich Supercomputing Center (Moderator)",
+            "id": "jenia-jitsev"
           },
           {
             "id": "yuxuan-zhang",
@@ -992,11 +1001,13 @@
           },
           {
             "name": "Daniel",
-            "title": "AI Model Business Developer, MiniMax"
+            "title": "AI Model Business Developer, MiniMax",
+            "id": "daniel"
           },
           {
             "name": "Marianna Nezhurina",
-            "title": "Researcher, LAION"
+            "title": "Researcher, LAION",
+            "id": "marianna-nezhurina"
           }
         ],
         "date": {
@@ -1040,7 +1051,8 @@
         "speakers": [
           {
             "name": "Jianzhong Li",
-            "title": "President, Singularity Intelligence Research Institute; SVP, CSDN"
+            "title": "President, Singularity Intelligence Research Institute; SVP, CSDN",
+            "id": "jianzhong-li"
           }
         ],
         "date": {
@@ -1060,7 +1072,8 @@
         "speakers": [
           {
             "name": "Yu Tao",
-            "title": "Chief Scientist, Huawei Central Software Institute Singapore"
+            "title": "Chief Scientist, Huawei Central Software Institute Singapore",
+            "id": "yu-tao"
           }
         ],
         "date": {
@@ -1085,7 +1098,8 @@
         "speakers": [
           {
             "name": "Michael Berns",
-            "title": "Head of AI, Eclipse Foundation"
+            "title": "Head of AI, Eclipse Foundation",
+            "id": "michael-berns"
           }
         ],
         "date": {
@@ -1124,7 +1138,8 @@
         "speakers": [
           {
             "name": "Christian Maitre",
-            "title": "CEO, Caspera Lab (Moderator)"
+            "title": "CEO, Caspera Lab (Moderator)",
+            "id": "maitre-christian"
           },
           {
             "name": "Guillaume Blaquiere",
@@ -1136,7 +1151,8 @@
           },
           {
             "name": "Alexio Cassani",
-            "title": "Co-Founder & CEO, FairMind"
+            "title": "Co-Founder & CEO, FairMind",
+            "id": "alexio-cassani"
           }
         ],
         "date": {
@@ -1160,7 +1176,8 @@
         },
         "speakers": [
           {
-            "name": "Francois Bouchet",
+            "id": "francois-bouchet",
+            "name": "François Bouchet",
             "title": "Associate Professor of AI in Education, Sorbonne University (Moderator)"
           },
           {
@@ -1171,7 +1188,8 @@
           },
           {
             "name": "Yun Lin",
-            "title": "Researcher, Shanghai Jiaotong University"
+            "title": "Researcher, Shanghai Jiaotong University",
+            "id": "yun-lin"
           },
           {
             "id": "ziyan-wang",
@@ -1202,7 +1220,8 @@
         "speakers": [
           {
             "name": "Niko Matsakis",
-            "title": "Senior Principal Engineer, Amazon"
+            "title": "Senior Principal Engineer, Amazon",
+            "id": "niko-matsakis"
           }
         ],
         "date": {
@@ -1232,7 +1251,8 @@
         "speakers": [
           {
             "name": "Yonghua Lin",
-            "title": "VP & Chief Engineer, BAAI"
+            "title": "VP & Chief Engineer, BAAI",
+            "id": "yonghua-lin"
           }
         ],
         "date": {
@@ -1281,7 +1301,8 @@
         "speakers": [
           {
             "name": "Priyanka Jain",
-            "title": "CEO & Co-Founder, NuBrain"
+            "title": "CEO & Co-Founder, NuBrain",
+            "id": "priyanka-jain"
           }
         ],
         "date": {
@@ -1305,7 +1326,8 @@
         "speakers": [
           {
             "name": "Daniel",
-            "title": "AI Model Business Developer, Minimax"
+            "title": "AI Model Business Developer, Minimax",
+            "id": "daniel"
           }
         ],
         "date": {
@@ -1345,7 +1367,8 @@
           },
           {
             "name": "Marc Sanselme",
-            "title": "Founder, Draft'n Run"
+            "title": "Founder, Draft'n Run",
+            "id": "marc-sanselme"
           }
         ],
         "date": {
@@ -1389,7 +1412,8 @@
         "speakers": [
           {
             "name": "Lin Zhong",
-            "title": "Professor of Computer Science, Yale University"
+            "title": "Professor of Computer Science, Yale University",
+            "id": "lin-zhong"
           }
         ],
         "date": {
@@ -1413,7 +1437,8 @@
         "speakers": [
           {
             "name": "Hang Chen",
-            "title": "Engineer, China Electronics Standardization Institute"
+            "title": "Engineer, China Electronics Standardization Institute",
+            "id": "hang-chen"
           }
         ],
         "date": {
@@ -1433,7 +1458,8 @@
         "speakers": [
           {
             "name": "Zhenyu Zheng",
-            "title": "openEuler"
+            "title": "openEuler",
+            "id": "zhenyu-zheng"
           }
         ],
         "date": {
@@ -1473,7 +1499,8 @@
         "speakers": [
           {
             "name": "Wenjing Chu",
-            "title": "Senior Director of Technology Strategy, Futurewei Technologies (Moderator)"
+            "title": "Senior Director of Technology Strategy, Futurewei Technologies (Moderator)",
+            "id": "wenjing-chu"
           },
           {
             "name": "Markus Tavenrath",
@@ -1485,7 +1512,8 @@
           },
           {
             "name": "Nicolas Flores-Herr",
-            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
+            "title": "Team Lead Foundation Models, Fraunhofer IAIS",
+            "id": "nicolas-flores-herr"
           },
           {
             "id": "wendy-seltzer",
@@ -1522,19 +1550,23 @@
         "speakers": [
           {
             "name": "Mirko Boehm",
-            "title": "LF Europe (Moderator)"
+            "title": "LF Europe (Moderator)",
+            "id": "mirko-boehm"
           },
           {
             "name": "Björn Plüster",
-            "title": "Co-Founder & CTO, ellamind"
+            "title": "Co-Founder & CTO, ellamind",
+            "id": "bjrn-plster"
           },
           {
             "name": "Jose Andres Munoz",
-            "title": "Associate Professor, Universidad Politécnica de Madrid"
+            "title": "Associate Professor, Universidad Politécnica de Madrid",
+            "id": "jose-andres-munoz"
           },
           {
             "name": "Afonso Ferreira",
-            "title": "Researcher, CNRS"
+            "title": "Researcher, CNRS",
+            "id": "afonso-ferreira"
           }
         ],
         "date": {
@@ -1692,7 +1724,8 @@
         "speakers": [
           {
             "name": "Daniel",
-            "title": "AI Evangelist, MiniMax"
+            "title": "AI Evangelist, MiniMax",
+            "id": "daniel"
           }
         ],
         "date": {
@@ -1737,7 +1770,8 @@
         "speakers": [
           {
             "name": "Yanzhi Wang",
-            "title": "Professor, Northeastern University"
+            "title": "Professor, Northeastern University",
+            "id": "yanzhi-wang"
           }
         ],
         "date": {
@@ -1762,7 +1796,8 @@
         "speakers": [
           {
             "name": "Jiabei Chen",
-            "title": "Ph.D. Student, Institute of Automation, Chinese Academy of Sciences & BAAI"
+            "title": "Ph.D. Student, Institute of Automation, Chinese Academy of Sciences & BAAI",
+            "id": "jiabei-chen"
           }
         ],
         "date": {
@@ -1787,7 +1822,8 @@
         "speakers": [
           {
             "name": "Zhipeng Huang",
-            "title": "Board Chairperson, LF AI & Data Foundation; Huawei"
+            "title": "Board Chairperson, LF AI & Data Foundation; Huawei",
+            "id": "zhipeng-huang"
           }
         ],
         "date": {
@@ -1832,7 +1868,8 @@
         "speakers": [
           {
             "name": "Zhao Yun",
-            "title": "Senior Engineer, Huawei"
+            "title": "Senior Engineer, Huawei",
+            "id": "zhaoyun"
           }
         ],
         "date": {
@@ -1884,7 +1921,8 @@
         "speakers": [
           {
             "name": "Xingda Wei",
-            "title": "Associate Professor, Shanghai Jiao Tong University"
+            "title": "Associate Professor, Shanghai Jiao Tong University",
+            "id": "xingda-wei"
           }
         ],
         "date": {
@@ -2125,7 +2163,8 @@
         "speakers": [
           {
             "name": "Zonghuan Wu",
-            "title": "Lead, MoFA.AI, Relevant Study LLC"
+            "title": "Lead, MoFA.AI, Relevant Study LLC",
+            "id": "zonghuan-wu"
           }
         ],
         "date": {
@@ -2150,7 +2189,8 @@
         "speakers": [
           {
             "name": "Ignacio Ahedo",
-            "title": "Oniro Program Manager, Eclipse Foundation"
+            "title": "Oniro Program Manager, Eclipse Foundation",
+            "id": "ignacio-ahedo"
           }
         ],
         "date": {
@@ -2175,7 +2215,8 @@
         "speakers": [
           {
             "name": "Jacky Hsu",
-            "title": "Founder & CEO, Ingora"
+            "title": "Founder & CEO, Ingora",
+            "id": "jacky-hsu"
           }
         ],
         "date": {
@@ -2272,7 +2313,8 @@
         "speakers": [
           {
             "name": "Thomas Froment",
-            "title": "Program Manager, Development Tools, Eclipse Foundation"
+            "title": "Program Manager, Development Tools, Eclipse Foundation",
+            "id": "thomas-froment"
           }
         ],
         "date": {
@@ -2297,7 +2339,8 @@
         "speakers": [
           {
             "name": "Tiberiu Socaci",
-            "title": "CEO & Co-Founder, Makeitfuture"
+            "title": "CEO & Co-Founder, Makeitfuture",
+            "id": "tiberiu-socaci"
           }
         ],
         "date": {
@@ -2322,7 +2365,8 @@
         "speakers": [
           {
             "name": "Gregory Terzian",
-            "title": "Founder, FOSS (Shanghai) Technology"
+            "title": "Founder, FOSS (Shanghai) Technology",
+            "id": "gregory-terzian"
           }
         ],
         "date": {
@@ -2347,7 +2391,8 @@
         "speakers": [
           {
             "name": "Susanna Wong",
-            "title": "Staff AI Engineer, Typeform"
+            "title": "Staff AI Engineer, Typeform",
+            "id": "susanna-wong"
           }
         ],
         "date": {
@@ -2596,7 +2641,8 @@
         "speakers": [
           {
             "name": "Yanzhi Wang",
-            "title": "Professor, Northeastern University"
+            "title": "Professor, Northeastern University",
+            "id": "yanzhi-wang"
           }
         ],
         "date": {
@@ -2621,7 +2667,8 @@
         "speakers": [
           {
             "name": "Ruben Ortlam",
-            "title": "Senior Machine Learning Engineer, Red Hat"
+            "title": "Senior Machine Learning Engineer, Red Hat",
+            "id": "ruben-ortlam"
           }
         ],
         "date": {
@@ -2668,7 +2715,8 @@
         "speakers": [
           {
             "name": "Emily Chen",
-            "title": "Co-founder, Kaiyuanshe"
+            "title": "Co-founder, Kaiyuanshe",
+            "id": "emily-chen"
           }
         ],
         "date": {
@@ -2693,7 +2741,8 @@
         "speakers": [
           {
             "name": "Virgile Batto",
-            "title": "Embodied Robotics Engineer, Hugging Face"
+            "title": "Embodied Robotics Engineer, Hugging Face",
+            "id": "virgile-batto"
           }
         ],
         "date": {
@@ -2745,7 +2794,8 @@
         "speakers": [
           {
             "name": "Jeremy Laville",
-            "title": "R&D Engineer, Pollen Robotics"
+            "title": "R&D Engineer, Pollen Robotics",
+            "id": "jeremy-laville"
           }
         ],
         "date": {
@@ -2790,7 +2840,8 @@
         "speakers": [
           {
             "name": "Julien Enoch",
-            "title": "Senior Solutions Architect, ZettaScale Technology"
+            "title": "Senior Solutions Architect, ZettaScale Technology",
+            "id": "julien-enoch"
           }
         ],
         "date": {
@@ -2815,7 +2866,8 @@
         "speakers": [
           {
             "name": "Quentin Delfosse",
-            "title": "Agentic AI Researcher, Google Intrinsic"
+            "title": "Agentic AI Researcher, Google Intrinsic",
+            "id": "quentin-delfosse"
           }
         ],
         "date": {
@@ -2887,7 +2939,8 @@
         "speakers": [
           {
             "name": "Jad Fayad",
-            "title": "Manager of Systems & AI Engineering, Moon Surgical"
+            "title": "Manager of Systems & AI Engineering, Moon Surgical",
+            "id": "jad-fayad"
           }
         ],
         "date": {
@@ -2912,7 +2965,8 @@
         "speakers": [
           {
             "name": "Tom Mulder",
-            "title": "Lifelong Builder, Algoryn"
+            "title": "Lifelong Builder, Algoryn",
+            "id": "tom-mulder"
           }
         ],
         "date": {
@@ -2937,7 +2991,8 @@
         "speakers": [
           {
             "name": "Caroline Pascal",
-            "title": "Robotics Engineer, Hugging Face"
+            "title": "Robotics Engineer, Hugging Face",
+            "id": "caroline-pascal"
           }
         ],
         "date": {
@@ -2962,7 +3017,8 @@
         "speakers": [
           {
             "name": "Xavier Tao",
-            "title": "Founder, 1ms.ai"
+            "title": "Founder, 1ms.ai",
+            "id": "xavier-tao"
           },
           {
             "name": "Vector Wang",
@@ -3022,7 +3078,8 @@
         "speakers": [
           {
             "name": "Erwan Gallen",
-            "title": "vLLM Contributor, Senior Principal Product Manager - Generative AI, Red Hat"
+            "title": "vLLM Contributor, Senior Principal Product Manager - Generative AI, Red Hat",
+            "id": "erwan-gallen"
           }
         ],
         "date": {
@@ -3047,7 +3104,8 @@
         "speakers": [
           {
             "name": "Daniele Trifirò",
-            "title": "vLLM Contributor, Principal Software Engineer, Red Hat"
+            "title": "vLLM Contributor, Principal Software Engineer, Red Hat",
+            "id": "daniele-trifir"
           }
         ],
         "date": {
@@ -3072,7 +3130,8 @@
         "speakers": [
           {
             "name": "Erwan Gallen",
-            "title": "vLLM Contributor, Senior Principal Product Manager - Generative AI, Red Hat"
+            "title": "vLLM Contributor, Senior Principal Product Manager - Generative AI, Red Hat",
+            "id": "erwan-gallen"
           }
         ],
         "date": {
@@ -3139,7 +3198,8 @@
         "speakers": [
           {
             "name": "Liang Zhang",
-            "title": "Director, Huawei Fourier Research Institute"
+            "title": "Director, Huawei Fourier Research Institute",
+            "id": "liang-zhang"
           }
         ],
         "date": {
@@ -3164,7 +3224,8 @@
         "speakers": [
           {
             "name": "Ning Jia",
-            "title": "Member, Technical Steering Committee (TSC), OpenAtom OpenHarmony"
+            "title": "Member, Technical Steering Committee (TSC), OpenAtom OpenHarmony",
+            "id": "ning-jia"
           }
         ],
         "date": {
@@ -3189,7 +3250,8 @@
         "speakers": [
           {
             "name": "Ignacio Ahedo",
-            "title": "Oniro Program Manager, Eclipse Foundation"
+            "title": "Oniro Program Manager, Eclipse Foundation",
+            "id": "ignacio-ahedo"
           }
         ],
         "date": {
@@ -3214,7 +3276,8 @@
         "speakers": [
           {
             "name": "Debayan Roy",
-            "title": "Senior Research Engineer, Huawei Munich Research Center"
+            "title": "Senior Research Engineer, Huawei Munich Research Center",
+            "id": "debayan-roy"
           }
         ],
         "date": {
@@ -3239,7 +3302,8 @@
         "speakers": [
           {
             "name": "Xingda Wei",
-            "title": "Associate Professor, Shanghai Jiao Tong University"
+            "title": "Associate Professor, Shanghai Jiao Tong University",
+            "id": "xingda-wei"
           }
         ],
         "date": {
@@ -3311,7 +3375,8 @@
         "speakers": [
           {
             "name": "Francesco Pham",
-            "title": "Senior Technical Expert, Huawei Milan Research Institute; Project Lead & Committer Representative, Eclipse Oniro"
+            "title": "Senior Technical Expert, Huawei Milan Research Institute; Project Lead & Committer Representative, Eclipse Oniro",
+            "id": "francesco-pham"
           }
         ],
         "date": {
@@ -3363,7 +3428,8 @@
         "speakers": [
           {
             "name": "Yang Liu",
-            "title": "Founder, YanLink"
+            "title": "Founder, YanLink",
+            "id": "yang-liu"
           }
         ],
         "date": {
@@ -3410,7 +3476,8 @@
         "speakers": [
           {
             "name": "Yonghua Lin",
-            "title": "Vice President and Chief Engineer, BAAI"
+            "title": "Vice President and Chief Engineer, BAAI",
+            "id": "yonghua-lin"
           }
         ],
         "date": {
@@ -3435,7 +3502,8 @@
         "speakers": [
           {
             "name": "Qigang Zhu",
-            "title": "Head of Open Source Engineering, BAAI"
+            "title": "Head of Open Source Engineering, BAAI",
+            "id": "qigang-zhu"
           }
         ],
         "date": {
@@ -3460,7 +3528,8 @@
         "speakers": [
           {
             "name": "Michael Plagge",
-            "title": "Vice President, Eclipse Foundation"
+            "title": "Vice President, Eclipse Foundation",
+            "id": "michael-plagge"
           }
         ],
         "date": {
@@ -3485,7 +3554,8 @@
         "speakers": [
           {
             "name": "Gábor Soós",
-            "title": "Hungarian National Commission for UNESCO"
+            "title": "Hungarian National Commission for UNESCO",
+            "id": "gabor-soos"
           }
         ],
         "date": {
@@ -3510,7 +3580,8 @@
         "speakers": [
           {
             "name": "Tao Jian",
-            "title": "Algorithm Engineer, AI Systems Research Group, BAAI"
+            "title": "Algorithm Engineer, AI Systems Research Group, BAAI",
+            "id": "tao-jian"
           }
         ],
         "date": {
@@ -3535,7 +3606,8 @@
         "speakers": [
           {
             "name": "Zhipeng Huang",
-            "title": "Chair, LF AI & Data Foundation; Huawei"
+            "title": "Chair, LF AI & Data Foundation; Huawei",
+            "id": "zhipeng-huang"
           }
         ],
         "date": {
@@ -3607,7 +3679,8 @@
         "speakers": [
           {
             "name": "Yonghua Lin",
-            "title": "Vice President and Chief Engineer, BAAI"
+            "title": "Vice President and Chief Engineer, BAAI",
+            "id": "yonghua-lin"
           }
         ],
         "date": {
@@ -3762,7 +3835,8 @@
         "speakers": [
           {
             "name": "Ethan (Yusheng) Su",
-            "title": "Member of Technical Staff, RadixArk"
+            "title": "Member of Technical Staff, RadixArk",
+            "id": "ethan-yusheng-su"
           }
         ],
         "date": {
@@ -3809,7 +3883,8 @@
         "speakers": [
           {
             "name": "Gaël Varoquaux",
-            "title": "Chief Science Officer, Probabl / INRIA"
+            "title": "Chief Science Officer, Probabl / INRIA",
+            "id": "gal-varoquaux"
           }
         ],
         "date": {
@@ -3834,7 +3909,8 @@
         "speakers": [
           {
             "name": "Bill Ren",
-            "title": "Chief Open Source Liaison Officer; Board Member, CNCF"
+            "title": "Chief Open Source Liaison Officer; Board Member, CNCF",
+            "id": "bill-ren"
           }
         ],
         "date": {
@@ -3874,7 +3950,8 @@
         "speakers": [
           {
             "name": "Nicolas Flores-Herr",
-            "title": "Team Lead Foundation Models, Fraunhofer IAIS"
+            "title": "Team Lead Foundation Models, Fraunhofer IAIS",
+            "id": "nicolas-flores-herr"
           }
         ],
         "date": {
@@ -3928,11 +4005,13 @@
         "speakers": [
           {
             "name": "Anastasia Stasenko",
-            "title": "Pleias"
+            "title": "Pleias",
+            "id": "anastasiastasenko1"
           },
           {
             "name": "Pierre-Carl Langlais",
-            "title": "Pleias"
+            "title": "Pleias",
+            "id": "pierre-carl-langlais"
           }
         ],
         "date": {
@@ -3957,11 +4036,13 @@
         "speakers": [
           {
             "name": "Said Taghadouini",
-            "title": "LightOn"
+            "title": "LightOn",
+            "id": "said-taghadouini"
           },
           {
             "name": "Baptiste Aubertin",
-            "title": "LightOn"
+            "title": "LightOn",
+            "id": "aubertin-baptiste"
           }
         ],
         "date": {
@@ -3986,11 +4067,13 @@
         "speakers": [
           {
             "name": "Björn Plüster",
-            "title": "ellamind"
+            "title": "ellamind",
+            "id": "bjrn-plster"
           },
           {
             "name": "Benedikt Droste",
-            "title": "ellamind"
+            "title": "ellamind",
+            "id": "benedikt-droste"
           }
         ],
         "date": {
@@ -4015,11 +4098,13 @@
         "speakers": [
           {
             "name": "David Cortes",
-            "title": "Intel"
+            "title": "Intel",
+            "id": "david-cortes"
           },
           {
             "name": "Adel Chaibi",
-            "title": "Intel"
+            "title": "Intel",
+            "id": "adel-chaibi"
           }
         ],
         "date": {
@@ -4044,7 +4129,8 @@
         "speakers": [
           {
             "name": "Violetta Mishechkina",
-            "title": "dltHub"
+            "title": "dltHub",
+            "id": "violetta-mishechkina"
           }
         ],
         "date": {
@@ -4069,7 +4155,8 @@
         "speakers": [
           {
             "name": "Sajid Alam",
-            "title": "QuantumBlack"
+            "title": "QuantumBlack",
+            "id": "sajid-alam"
           }
         ],
         "date": {
@@ -4109,7 +4196,8 @@
         "speakers": [
           {
             "name": "Gaël Varoquaux",
-            "title": "Chief Science Officer, Probabl / INRIA"
+            "title": "Chief Science Officer, Probabl / INRIA",
+            "id": "gal-varoquaux"
           }
         ],
         "date": {
@@ -4134,11 +4222,13 @@
         "speakers": [
           {
             "name": "Stefanie Senger",
-            "title": "ML Engineer, Probabl"
+            "title": "ML Engineer, Probabl",
+            "id": "stefanie-senger"
           },
           {
             "name": "Olivier Grisel",
-            "title": "ML Engineer, Probabl"
+            "title": "ML Engineer, Probabl",
+            "id": "olivier-grisel"
           }
         ],
         "date": {
@@ -4163,7 +4253,8 @@
         "speakers": [
           {
             "name": "Andy Terrel",
-            "title": "NVIDIA"
+            "title": "NVIDIA",
+            "id": "andy-terrel"
           }
         ],
         "date": {
@@ -4188,7 +4279,8 @@
         "speakers": [
           {
             "name": "Tim Head",
-            "title": "NVIDIA"
+            "title": "NVIDIA",
+            "id": "tim-head"
           }
         ],
         "date": {
@@ -4213,7 +4305,8 @@
         "speakers": [
           {
             "name": "Evgeni Burovski",
-            "title": "Quansight"
+            "title": "Quansight",
+            "id": "evgeni-burovski"
           }
         ],
         "date": {
@@ -4238,11 +4331,13 @@
         "speakers": [
           {
             "name": "Marie Sacksick",
-            "title": "Probabl"
+            "title": "Probabl",
+            "id": "marie-sacksick"
           },
           {
             "name": "Fabien Pesquerel",
-            "title": "Probabl"
+            "title": "Probabl",
+            "id": "fabien"
           }
         ],
         "date": {
@@ -4267,7 +4362,8 @@
         "speakers": [
           {
             "name": "Sylvain Corlay",
-            "title": "QuantStack"
+            "title": "QuantStack",
+            "id": "sylvain-corlay"
           }
         ],
         "date": {
@@ -4405,7 +4501,8 @@
         "speakers": [
           {
             "name": "Bart Massey",
-            "title": "Associate Professor of Computer Science, Portland State University"
+            "title": "Associate Professor of Computer Science, Portland State University",
+            "id": "bart-massey"
           }
         ],
         "date": {
