@@ -109,6 +109,36 @@ const speakerSessions = [
     })),
 ];
 
+// Detect placeholder speakers (no bio or using generic placeholder image)
+const isPlaceholder = !speaker.bio || speaker.image === "/images/speakers/better_portrait/0-placeholder-person.png";
+
+const mailtoSubject = encodeURIComponent(`[GOSIM Paris 2026] Speaker Profile Submission – ${speaker.name}`);
+const mailtoBody = encodeURIComponent(
+`Dear GOSIM Team,
+
+I would like to submit my speaker profile information for GOSIM Paris 2026.
+
+Name: ${speaker.name}
+Title / Role: [your title and role]
+Organization: [your organization]
+
+Bio (100–300 words):
+[Please write your bio here]
+
+Profile Photo:
+[Please attach a high-resolution headshot – JPG or PNG, minimum 400×400 px]
+
+Social Links (optional):
+Website:
+LinkedIn:
+Twitter / X:
+GitHub:
+
+Thank you,
+${speaker.name}`
+);
+const mailtoHref = `mailto:hzeng@gosim.org?subject=${mailtoSubject}&body=${mailtoBody}`;
+
 // Social links mapping for icons
 const socialIconMap: Record<string, string> = {
   website: "/icons/icon-website.svg",
@@ -280,6 +310,26 @@ const socialIconMap: Record<string, string> = {
       </section>
     )
   }
+
+  {isPlaceholder && (
+    <section class="section speaker-placeholder-notice" data-theme-section="light" data-bg-section="lightgray">
+      <div class="container">
+        <div class="placeholder-card">
+          <div class="placeholder-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <div class="placeholder-text">
+            <h3>Are you {speaker.name}?</h3>
+            <p>Your speaker profile is not yet complete. Please send us your bio, photo, and social links so we can feature you properly on the GOSIM Paris 2026 website.</p>
+            <a href={mailtoHref} class="placeholder-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Submit My Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
 
 </Layout>
 
@@ -464,6 +514,73 @@ const socialIconMap: Record<string, string> = {
   @media screen and (max-width: 640px) {
     .speaker-nav-name {
       max-width: 120px;
+    }
+  }
+
+  /* Placeholder notice */
+  .speaker-placeholder-notice {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .placeholder-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    background: #fff;
+    border: 1.5px dashed #c7d2fe;
+    border-radius: 14px;
+    padding: 1.75rem 2rem;
+    max-width: 680px;
+  }
+
+  .placeholder-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #eef2ff;
+    color: #6366f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .placeholder-text h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 0.4rem;
+  }
+
+  .placeholder-text p {
+    font-size: 0.88rem;
+    color: rgba(0,0,0,0.6);
+    margin: 0 0 1rem;
+    line-height: 1.6;
+  }
+
+  .placeholder-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #6366f1;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.55rem 1.25rem;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+  }
+
+  .placeholder-btn:hover {
+    background: #4f46e5;
+  }
+
+  @media screen and (max-width: 640px) {
+    .placeholder-card {
+      flex-direction: column;
+      padding: 1.25rem;
     }
   }
 </style>
