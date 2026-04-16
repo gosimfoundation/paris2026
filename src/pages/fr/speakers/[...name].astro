@@ -101,6 +101,36 @@ const speakerSessions = [
     })),
 ];
 
+// Detect placeholder speakers (no bio or using generic placeholder image)
+const isPlaceholder = !speaker.bio || speaker.image === "/images/speakers/better_portrait/0-placeholder-person.png";
+
+const mailtoSubject = encodeURIComponent(`[GOSIM Paris 2026] Speaker Profile Submission – ${speaker.name}`);
+const mailtoBody = encodeURIComponent(
+`Dear GOSIM Team,
+
+I would like to submit my speaker profile information for GOSIM Paris 2026.
+
+Name: ${speaker.name}
+Title / Role: [your title and role]
+Organization: [your organization]
+
+Bio (100–300 words):
+[Please write your bio here]
+
+Profile Photo:
+[Please attach a high-resolution headshot – JPG or PNG, minimum 400×400 px]
+
+Social Links (optional):
+Website:
+LinkedIn:
+Twitter / X:
+GitHub:
+
+Thank you,
+${speaker.name}`
+);
+const mailtoHref = `mailto:hzeng@gosim.org?subject=${mailtoSubject}&body=${mailtoBody}`;
+
 // Social links mapping for icons
 const socialIconMap: Record<string, string> = {
   website: "/icons/icon-website.svg",
@@ -172,7 +202,13 @@ const socialIconMap: Record<string, string> = {
             }
             <div class="speaker-row-meta">
               <h1 class="h2">{speaker.name}</h1>
-              <p>{speaker.roleOrg}</p>
+              {(() => {
+                const lastComma = speaker.roleOrg.lastIndexOf(',');
+                if (lastComma === -1) return <p>{speaker.roleOrg}</p>;
+                const role = speaker.roleOrg.slice(0, lastComma).trim();
+                const company = speaker.roleOrg.slice(lastComma + 1).trim();
+                return <p>{role}<br/><strong>{company}</strong></p>;
+              })()}
             </div>
           </div>
 
@@ -210,9 +246,11 @@ const socialIconMap: Record<string, string> = {
             </div>
           </div>
 
-          <div class="box-row box-row-text styled-content">
-            <p set:html={speaker.bio.replace(/\n/g, "<br>")} />
-          </div>
+          {speaker.bio && (
+            <div class="box-row box-row-text styled-content">
+              <p set:html={speaker.bio.replace(/\n/g, "<br>")} />
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -266,6 +304,17 @@ const socialIconMap: Record<string, string> = {
       </section>
     )
   }
+
+  {isPlaceholder && (
+    <section data-theme-section="light" data-bg-section="light">
+      <div class="placeholder-notice-wrap">
+        <p class="placeholder-notice">
+          Une erreur sur votre profil intervenant ? <a href={mailtoHref}>Envoyez-nous un e-mail</a> pour toute modification de dernière minute.
+        </p>
+      </div>
+    </section>
+  )}
+
 </Layout>
 
 <style>
@@ -450,6 +499,21 @@ const socialIconMap: Record<string, string> = {
     .speaker-nav-name {
       max-width: 120px;
     }
+  }
+
+  .placeholder-notice-wrap {
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+  }
+
+  .placeholder-notice {
+    font-size: 0.78rem;
+    color: rgba(0, 0, 0, 0.35);
+  }
+
+  .placeholder-notice a {
+    color: rgba(0, 0, 0, 0.45);
+    text-decoration: underline;
   }
 
   .timeslot {
