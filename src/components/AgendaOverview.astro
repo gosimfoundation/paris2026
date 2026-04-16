@@ -48,7 +48,7 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
       {
         type: "keynote",
         time: "9:30 – 10:00",
-        label: { en: "Keynote", zh: "主题演讲", fr: "Conférence Plénière" },
+        label: { en: "Keynote", zh: "Keynote", fr: "Keynote" },
       },
       {
         type: "break",
@@ -163,7 +163,7 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
       {
         type: "keynote",
         time: "9:30 – 10:00",
-        label: { en: "Keynote", zh: "主题演讲", fr: "Conférence Plénière" },
+        label: { en: "Keynote", zh: "Keynote", fr: "Keynote" },
       },
       {
         type: "break",
@@ -307,7 +307,7 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
               return (
                 <div class="block block-keynote">
                   <span class="block-time">{block.time}</span>
-                  <span class="block-label">Keynote{lang !== "en" ? ` · ${t(block.label)}` : ""}</span>
+                  <span class="block-label">Keynote</span>
                 </div>
               );
             }

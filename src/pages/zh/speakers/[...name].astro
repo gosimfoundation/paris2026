@@ -96,7 +96,12 @@ const speakerSessions = [
               ? session.date
               : session.date?.zh || session.date?.en || "",
           timeSlot: session.timeSlot,
-          category,
+          category: (() => {
+            if ((session as any).type === 'keynote') return 'Keynote'
+            const cat = (schedule as any).categories?.find((c: any) => c.id === category)
+            if (cat?.name) return typeof cat.name === 'string' ? cat.name : cat.name?.en || category
+            return category
+          })(),
         }));
 
       return [...acc, ...matchingSessions];
@@ -118,7 +123,9 @@ const speakerSessions = [
       timeSlot: session.timeSlot,
       category: "Forum",
     })),
-];
+].filter((session, index, arr) =>
+  arr.findIndex((s) => s.title === session.title && s.timeSlot === session.timeSlot) === index
+);
 
 // Detect placeholder speakers (no bio or using generic placeholder image)
 const isPlaceholder = !speaker.bio || speaker.image === "/images/speakers/better_portrait/0-placeholder-person.png";
@@ -332,7 +339,7 @@ const socialIconMap: Record<string, string> = {
     <section data-theme-section="light" data-bg-section="light">
       <div class="placeholder-notice-wrap">
         <p class="placeholder-notice">
-          未提交 CFP 但仍想<a href={mailtoHref}>补充演讲者信息</a>？
+          演讲者资料尚不完整？请<a href="https://cfp.gosim.org" target="_blank">通过 CFP 提交信息</a>，以在此页面展示您的完整资料。
         </p>
       </div>
     </section>

@@ -107,7 +107,12 @@ const speakerSessions = [
               ? session.date
               : session.date?.zh || session.date?.en || "",
           timeSlot: session.timeSlot,
-          category,
+          category: (() => {
+            if ((session as any).type === 'keynote') return 'Keynote'
+            const cat = (schedule as any).categories?.find((c: any) => c.id === category)
+            if (cat?.name) return typeof cat.name === 'string' ? cat.name : cat.name?.en || category
+            return category
+          })(),
         }));
 
       return [...acc, ...matchingSessions];
@@ -129,7 +134,9 @@ const speakerSessions = [
       timeSlot: session.timeSlot,
       category: "Forum",
     })),
-];
+].filter((session, index, arr) =>
+  arr.findIndex((s) => s.title === session.title && s.timeSlot === session.timeSlot) === index
+);
 
 // Social links mapping for icons
 const socialIconMap: Record<string, string> = {

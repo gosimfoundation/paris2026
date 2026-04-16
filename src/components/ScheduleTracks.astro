@@ -47,14 +47,14 @@ const i18n = {
     typeLabels: { keynote: "Keynote", talk: "Talk", panel: "Panel", break: "Break", workshop: "Workshop", hackathon: "Hackathon" },
   },
   zh: {
-    conferenceTracks: "主题演讲",
-    hackathons: "Spotlight 与黑客马拉松",
-    workshops: "工作坊",
+    conferenceTracks: "Conference Tracks",
+    hackathons: "Spotlight & Hackathons",
+    workshops: "Workshops",
     overview: "概览",
-    allTracks: "所有议题",
+    allTracks: "All Tracks",
     venue: "场地",
     venueMaps: "Our Spaces",
-    keynotesLabel: "★ 主旨演讲 ★",
+    keynotesLabel: "★ Keynotes ★",
     tbd: "TBD",
     keynotesTbd: "主旨演讲嘉宾将很快公布。",
     noSessionsOnDay: (day: string) => `${day} 暂无该议题的会议安排。`,
@@ -63,19 +63,19 @@ const i18n = {
     viewDaySessions: (day: string) => `→ 查看 ${day} 的会议`,
     disclaimer: "日程安排可能有所变动。",
     dayOnly: (day: string) => `仅 ${day}`,
-    tracks: "议题",
+    tracks: "Tracks",
     sessionCount: (n: number) => `${n} 场演讲`,
-    typeLabels: { keynote: "主旨演讲", talk: "演讲", panel: "圆桌", break: "休息", workshop: "Workshop", hackathon: "黑客马拉松" },
+    typeLabels: { keynote: "Keynote", talk: "演讲", panel: "圆桌", break: "休息", workshop: "Workshop", hackathon: "Hackathon" },
   },
   fr: {
     conferenceTracks: "Conference Tracks",
     hackathons: "Spotlight & Hackathons",
-    workshops: "Ateliers",
+    workshops: "Workshops",
     overview: "Vue d'ensemble",
-    allTracks: "Tous les thèmes",
+    allTracks: "All Tracks",
     venue: "Lieu",
     venueMaps: "Our Spaces",
-    keynotesLabel: "★ Conférences plénières ★",
+    keynotesLabel: "★ Keynotes ★",
     tbd: "TBD",
     keynotesTbd: "Les conférenciers seront annoncés prochainement.",
     noSessionsOnDay: (day: string) => `Aucune session le ${day} pour ce thème.`,
@@ -84,7 +84,7 @@ const i18n = {
     viewDaySessions: (day: string) => `→ Voir les sessions du ${day}`,
     disclaimer: "Le programme est susceptible de changer.",
     dayOnly: (day: string) => `${day} uniquement`,
-    tracks: "Thèmes",
+    tracks: "Tracks",
     sessionCount: (n: number) => `${n} session${n !== 1 ? "s" : ""}`,
     typeLabels: { keynote: "Keynote", talk: "Conférence", panel: "Table ronde", break: "Pause", workshop: "Workshop", hackathon: "Hackathon" },
   },
@@ -191,7 +191,7 @@ const catDaysMap: Record<string, string[]> = {}
 for (const cat of allCategories) {
   catDaysMap[cat.id] = days
     .map((d) => en(d.date))
-    .filter((dayEn) => getSessions(cat.id, dayEn).length > 0)
+    .filter((dayEn) => getSessions(cat.id, dayEn).some(s => s.type !== "break"))
 }
 
 // Short day label for display (e.g. "May 5" → "May 5")
@@ -347,7 +347,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
                     <h2 class="panel-title">{en(cat.name)}</h2>
                     {cat.room && <span class="panel-room">{en(cat.room)}</span>}
                   </div>
-                  <span class="panel-count">{t.sessionCount(sessions.length)}</span>
+                  <span class="panel-count">{t.sessionCount(sessions.filter(s => s.type !== "break").length)}</span>
                 </div>
 
                 {/* Pre-keynote breaks (e.g. Registration) */}

@@ -11,6 +11,7 @@ type Event = {
   content: string
   date: string
   timeSlot: string
+  type?: string
   speakers?: { name: string; image?: string; roleOrg: string }[]
   room?: string
 }
@@ -40,6 +41,7 @@ export async function getStaticPaths() {
         content: typeof event.content === "string" ? event.content : event.content?.zh || event.content?.en || "",
         date: typeof event.date === "string" ? event.date : event.date?.zh || event.date?.en || "",
         timeSlot: event.timeSlot,
+        type: event.type,
         speakers: event.speakers?.map((s: any) => ({
           name: typeof s.name === "string" ? s.name : s.name?.zh || s.name?.en || "",
           image: s.image,
@@ -127,7 +129,7 @@ const categoryMap: Record<string, string> = {
   "open-for-sdg": "Open for SDG 会议",
   "forum-aivision": "AI Vision 论坛",
 }
-const eventCategory = categoryMap[category] || category || "未分类"
+const eventCategory = eventDetails.type === "keynote" ? "Keynote" : (categoryMap[category] || category || "未分类")
 ---
 
 <Layout

@@ -78,7 +78,12 @@ const speakerSessions = [
           })),
           date: typeof session.date === 'string' ? session.date : session.date?.en || '',
           timeSlot: session.timeSlot,
-          category,
+          category: (() => {
+            if ((session as any).type === 'keynote') return 'Keynote'
+            const cat = (schedule as any).categories?.find((c: any) => c.id === category)
+            if (cat?.name) return typeof cat.name === 'string' ? cat.name : cat.name?.en || category
+            return category
+          })(),
         }));
 
       return [...acc, ...matchingSessions];
@@ -99,7 +104,9 @@ const speakerSessions = [
       timeSlot: session.timeSlot,
       category: "Forum",
     })),
-];
+].filter((session, index, arr) =>
+  arr.findIndex((s) => s.title === session.title && s.timeSlot === session.timeSlot) === index
+);
 
 // Detect placeholder speakers (no bio or using generic placeholder image)
 const isPlaceholder = !speaker.bio || speaker.image === "/images/speakers/better_portrait/0-placeholder-person.png";
@@ -309,7 +316,7 @@ const socialIconMap: Record<string, string> = {
     <section data-theme-section="light" data-bg-section="light">
       <div class="placeholder-notice-wrap">
         <p class="placeholder-notice">
-          Vous n'avez pas soumis de CFP mais souhaitez tout de même <a href={mailtoHref}>ajouter vos informations d'intervenant</a> ?
+          Profil incomplet ? <a href="https://cfp.gosim.org" target="_blank">Soumettez via CFP</a> pour afficher votre profil complet sur cette page.
         </p>
       </div>
     </section>

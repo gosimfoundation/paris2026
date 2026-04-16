@@ -107,7 +107,9 @@ const speakerSessions = [
       timeSlot: session.timeSlot,
       category: "Forum",
     })),
-];
+].filter((session, index, arr) =>
+  arr.findIndex((s) => s.title === session.title && s.timeSlot === session.timeSlot) === index
+);
 
 // Detect placeholder speakers (no bio or using generic placeholder image)
 const isPlaceholder = !speaker.bio || speaker.image === "/images/speakers/better_portrait/0-placeholder-person.png";
@@ -318,7 +320,7 @@ const socialIconMap: Record<string, string> = {
     <section data-theme-section="light" data-bg-section="light">
       <div class="placeholder-notice-wrap">
         <p class="placeholder-notice">
-          Didn't submit CFP but still want to <a href={mailtoHref}>add your speaker info</a>?
+          Speaker profile incomplete? <a href="https://cfp.gosim.org" target="_blank">Submit via CFP</a> to have your full profile displayed here.
         </p>
       </div>
     </section>
