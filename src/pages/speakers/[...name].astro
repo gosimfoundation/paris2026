@@ -254,15 +254,12 @@ const socialIconMap: Record<string, string> = {
             </div>
           </div>
 
-          <div class="box-row box-row-text styled-content">
-            <p set:html={speaker.bio.replace(/\n/g, "<br>")} />
-          </div>
-
-          {isPlaceholder && (
-            <p class="placeholder-notice">
-              Are you {speaker.name}? <a href={mailtoHref}>Update your profile here</a> — if you haven't submitted via CFP yet, please do that first.
-            </p>
+          {speaker.bio && (
+            <div class="box-row box-row-text styled-content">
+              <p set:html={speaker.bio.replace(/\n/g, "<br>")} />
+            </div>
           )}
+
         </div>
       </div>
     </div>
@@ -317,6 +314,15 @@ const socialIconMap: Record<string, string> = {
     )
   }
 
+  {isPlaceholder && (
+    <section data-theme-section="light" data-bg-section="light">
+      <div class="placeholder-notice-wrap">
+        <p class="placeholder-notice">
+          Is your profile incomplete? <a href={mailtoHref}>Submit your speaker information</a> — please complete the CFP submission first if you haven't done so.
+        </p>
+      </div>
+    </section>
+  )}
 
 </Layout>
 
@@ -504,14 +510,18 @@ const socialIconMap: Record<string, string> = {
     }
   }
 
+  .placeholder-notice-wrap {
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+  }
+
   .placeholder-notice {
-    margin-top: 1.5rem;
     font-size: 0.78rem;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.35);
   }
 
   .placeholder-notice a {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.45);
     text-decoration: underline;
   }
 </style>
