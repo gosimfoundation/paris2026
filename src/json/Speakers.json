@@ -350,27 +350,6 @@
       "draft": false
     },
     {
-      "id": "qingyueannie-wang",
-      "name": "Qingyue(Annie) Wang",
-      "bio": "Annie Wang is a is a Software Engineer, Developer Advocate, and Internal Career Coach at Google where she helps developers build with AI. With 7 years of software engineering experience and 500+ career coaching hours at Google, she brings both technical depth and a talent for making complex concepts accessible. Annie specializes in Multi-Agent Systems, Google's Agent Development Kit (ADK), and Agent Evaluation, and has delivered keynotes at DevFest NYC, Boston, and Beijing. She is known for her \"learn by doing\" approach, helping engineers move from theory to building production-ready AI applications.",
-      "role": "Developer Relations Engineer",
-      "org": "Google",
-      "roleOrg": "Developer Relations Engineer, Google",
-      "image": "/images/speakers/better_portrait/qingyueannie-wang.png",
-      "tags": [
-        "ai-generative-app"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
       "id": "ran-shemtov",
       "name": "Ran Shemtov",
       "bio": "Ran is a web developer with over a decade of experience building products for the web. Since 2023, he has been deeply involved in the emerging world of AI-powered applications, helping companies design and bring AI agents into production. At CopilotKit, Ran works closely with teams building real-world AI experiences, guiding them through the challenges of turning LLM prototypes into systems that serve real users.",

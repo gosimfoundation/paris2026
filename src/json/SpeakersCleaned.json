@@ -1516,27 +1516,6 @@
       "draft": false
     },
     {
-      "id": "qingyueannie-wang",
-      "name": "Qingyue (Annie) Wang",
-      "bio": "Annie Wang is a is a Software Engineer, Developer Advocate, and Internal Career Coach at Google where she helps developers build with AI. With 7 years of software engineering experience and 500+ career coaching hours at Google, she brings both technical depth and a talent for making complex concepts accessible. Annie specializes in Multi-Agent Systems, Google's Agent Development Kit (ADK), and Agent Evaluation, and has delivered keynotes at DevFest NYC, Boston, and Beijing. She is known for her \"learn by doing\" approach, helping engineers move from theory to building production-ready AI applications.",
-      "role": "Developer Relations Engineer",
-      "org": "Google",
-      "roleOrg": "Developer Relations Engineer, Google",
-      "image": "/images/speakers/better_portrait/qingyueannie-wang.png",
-      "tags": [
-        "ai-generative-app"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
       "id": "wei-wang",
       "name": "Wei Wang",
       "bio": "Wei Wang is the Director of the Open Source Technology Committee at Singularity Intelligence Research Institute, Head of the Open Source Governance Standards Working Group at the Ministry of Industry and Information Technology's Electronics Standards Institute, Secretary-General of the UN Consultative Open Source Innovation Committee, and Professor at East China Normal University. He is a Distinguished Member of CCF. He led the development of China's first set of open source governance standards, with research focusing on open source governance and evaluation. He has published over 100 papers in top conferences and journals including ICSE, WWW, and ACL.",

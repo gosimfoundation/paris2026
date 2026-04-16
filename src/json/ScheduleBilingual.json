@@ -2063,32 +2063,6 @@
       },
       {
         "title": {
-          "en": "How to Build Multi-Agent Systems with ADK and Agent Skills",
-          "zh": "How to Build Multi-Agent Systems with ADK and Agent Skills",
-          "fr": "How to Build Multi-Agent Systems with ADK and Agent Skills"
-        },
-        "speakers": [
-          {
-            "name": "Qingyue (Annie) Wang",
-            "title": "Developer Relations Engineer, Google Cloud",
-            "id": "qingyueannie-wang"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "14:00 - 14:30",
-        "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
-      },
-      {
-        "title": {
           "en": "Vibe Native for More: Why AI Agents Deserve a Better App Framework",
           "zh": "Vibe Native for More: Why AI Agents Deserve a Better App Framework",
           "fr": "Vibe Native for More: Why AI Agents Deserve a Better App Framework"
