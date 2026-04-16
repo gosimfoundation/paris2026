@@ -37,7 +37,7 @@
       "id": "ws-oh-tech-forum"
     },
     {
-      "name": "Open Compute Workshop",
+      "name": "Open Compute for Agentic AI (FlagOS)",
       "id": "ws-open-compute"
     },
     {
@@ -62,7 +62,8 @@
       "image": "/images/speakers/better_portrait/ignacio-ahedo.png",
       "bio": "As a Program Manager at the Eclipse Foundation, Ignacio orchestrates the Oniro Working Group alongside the IoT and Sparkplug programs. A Telecommunications Engineer and PMP with a product-led mindset, he specialises in the strategic stewardship of open source ecosystems, focusing on how vendor-neutral collaboration can solve complex fragmentation challenges in the hardware and software landscape.\r\n\r\nDrawing on his background in IoT and connectivity strategy from his time at Vodafone Business, Ignacio helps organisations navigate the value proposition of open collaboration. He is dedicated to building the operational frameworks and messaging that allow diverse stakeholders to contribute to a unified, distributed future for the IoT and mobile industries.",
       "tags": [
-        "ai-generative-app"
+        "ai-generative-app",
+        "ws-oh-tech-forum"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -126,7 +127,8 @@
       "roleOrg": "Co-Founder, Makepad",
       "image": "/images/speakers/better_portrait/rik-arends.png",
       "tags": [
-        "ai-generative-app"
+        "ai-generative-app",
+        "ws-agentic-app"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -420,7 +422,8 @@
       "roleOrg": "Founder, Dimforge",
       "image": "/images/speakers/better_portrait/crozet-sbastien.png",
       "tags": [
-        "agentic-ai-on-edge"
+        "agentic-ai-on-edge",
+        "ws-oh-tech-forum"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -462,7 +465,8 @@
       "roleOrg": "AI Model Business Developer, Minimax",
       "image": "/images/speakers/better_portrait/daniel.png",
       "tags": [
-        "agentic-ai-summit"
+        "agentic-ai-summit",
+        "open-source-model"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -525,7 +529,8 @@
       "roleOrg": "Team Lead Foundation Models, Fraunhofer IAIS",
       "image": "/images/speakers/better_portrait/nicolas-flores-herr.png",
       "tags": [
-        "ws-own-your-data-paris2026"
+        "ws-own-your-data-paris2026",
+        "agentic-ai-summit"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -673,7 +678,8 @@
       "roleOrg": "Board Chairperson, LFAI&Data Foundation",
       "image": "/images/speakers/better_portrait/zhipeng-huang.png",
       "tags": [
-        "open-source-model"
+        "open-source-model",
+        "ws-open-compute"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -925,7 +931,7 @@
       "image": "/images/speakers/better_portrait/bart-massey.png",
       "bio": "Bart Massey is a 26-year CS Professor with a PhD in AI and an MSc in PL implementation; he has been an open source developer for many decades. Bart is a member of the Rust Embedded Working Group, and is involved in a number of low-level Rust and Rust Education projects. ",
       "tags": [
-        "ai-generative-app"
+        "ws-agentic-app"
       ],
       "socialLinks": {
         "mastodon": "@po8@fosstodon.org",
@@ -968,7 +974,8 @@
       "roleOrg": "Head of Developer Relations, Moonshot AI (Kimi)",
       "image": "/images/speakers/better_portrait/minakokojima.png",
       "tags": [
-        "open-source-model"
+        "open-source-model",
+        "agentic-ai-summit"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1326,7 +1333,7 @@
       "roleOrg": "ML Research Engineer, Hugging Face",
       "image": "/images/speakers/better_portrait/nouamane-tazi.png",
       "tags": [
-        "open-source-model"
+        "ws-own-your-data-paris2026"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1410,7 +1417,8 @@
       "roleOrg": "Open Source Maintainer, SGLang",
       "image": "/images/speakers/better_portrait/xinyuan-tong.png",
       "tags": [
-        "ws-sglang-paris2026"
+        "ws-sglang-paris2026",
+        "ws-open-compute"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1580,7 +1588,8 @@
       "roleOrg": "Associate Professor, Shanghai Jiao Tong University",
       "image": "/images/speakers/better_portrait/xingda-wei.png",
       "tags": [
-        "open-source-model"
+        "open-source-model",
+        "ws-oh-tech-forum"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1643,7 +1652,8 @@
       "roleOrg": "Program Director, Central Software Institute, Huawei",
       "image": "/images/speakers/better_portrait/dong-xin.png",
       "tags": [
-        "agentic-ai-summit"
+        "ai-generative-app",
+        "ws-oh-tech-forum"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1684,7 +1694,9 @@
       "role": "Maintainer / CEO",
       "org": "WasmEdge / Second State",
       "roleOrg": "Maintainer / CEO, WasmEdge / Second State",
-      "tags": [],
+      "tags": [
+        "agentic-ai-on-edge"
+      ],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -1726,7 +1738,8 @@
       "roleOrg": "Technology Evangelist, ZhipuAI",
       "image": "/images/speakers/better_portrait/yuxuan-zhang.png",
       "tags": [
-        "open-source-model"
+        "open-source-model",
+        "agentic-ai-summit"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -2124,6 +2137,111 @@
         "linkedin": "http://www.linkedin.com/in/drummondreed",
         "website": "http://equalsdrummond.name/",
         "mastodon": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "wendy-seltzer",
+      "name": "Wendy Seltzer",
+      "bio": "Wendy Seltzer is a lawyer and technologist, currently consulting via the Law Office of Wendy Seltzer. She is a founder of the First Person Cooperative, addressing governance of decentralized trust networks for personhood recognition and agency.\n\nAs Principal Identity Architect at Tucows, she helped to found the Ayra Association. She previously served as Strategy Lead and Counsel to the World Wide Web Consortium (W3C) at MIT, improving the Web's security, availability, and interoperability through standards. As a Fellow with Harvard's Berkman Klein Center for Internet & Society, Wendy founded the Lumen Project (formerly Chilling Effects Clearinghouse), the web's pioneering transparency report to measure the impact of legal takedown demands online. She seeks to improve technology policy in support of user-driven innovation and secure communication. She co-authored the second edition of Blown to Bits: Your Life, Liberty, and Happiness After the Digital Explosion.",
+      "role": "Principal",
+      "org": "Law Office of Wendy Seltzer",
+      "roleOrg": "Principal, Law Office of Wendy Seltzer",
+      "image": "/images/speakers/better_portrait/wendy-seltzer.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "@wseltzer@infosec.exchange",
+        "twitter": "",
+        "github": "wseltzer",
+        "linkedin": "",
+        "website": "https://wendy.seltzer.org/"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "ziyan-wang",
+      "name": "Ziyan Wang",
+      "bio": "A faculty member at a public university and the principal of a private business school, primarily engaged in education.",
+      "role": "Directrice d'éducation",
+      "org": "NGO UNESCO Avicenne",
+      "roleOrg": "Directrice d'éducation, NGO UNESCO Avicenne",
+      "image": "/images/speakers/better_portrait/wang-ziyan.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "junyi",
+      "name": "Junyi Zhong",
+      "bio": "Dr. Junyi Zhong is a tech entrepreneur and AI researcher specializing in Trustworthy AI and blockchain systems. He is the CEO of INNAIO France, he focuses on AI-driven voice interfaces to advance information accessibility and global communication. He is also an active angel investor, supporting early-stage projects across AI and Web3.",
+      "role": "CEO",
+      "org": "INNAIO France",
+      "roleOrg": "CEO, INNAIO France",
+      "image": "/images/speakers/better_portrait/junyi.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/0xjyzh",
+        "github": "https://github.com/Jooeys",
+        "linkedin": "https://www.linkedin.com/in/junyi-zhong/?skipRedirect=true",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "ervinxie",
+      "name": "Ervin Xie",
+      "bio": "Weiyu Xie is a fifth-year Ph.D. student in the Institute for High Performance Computing, Department of Computer Science and Technology, Tsinghua University. His research interests include computer systems, large language model (LLM) inference, graph computing, and databases.",
+      "role": "Ph.D. Candidate",
+      "org": "Tsinghua University",
+      "roleOrg": "Ph.D. Candidate, Tsinghua University",
+      "image": "/images/speakers/better_portrait/ervinxie.png",
+      "tags": [
+        "agentic-ai-on-edge"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "eva-ma",
+      "name": "Eva Ma",
+      "bio": "Taming the wild frontiers of generative AI. I design the structures that keep modern algorithms bounded, efficient, and aligned with human intent. Architecting the future of Atlas Cloud AI.",
+      "role": "Algorithmic Tamer",
+      "org": "Atlas Cloud AI LLC",
+      "roleOrg": "Algorithmic Tamer, Atlas Cloud AI LLC",
+      "image": "/images/speakers/better_portrait/eva-ma.png",
+      "tags": [
+        "ws-sglang-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
       },
       "status": "Accept",
       "draft": false

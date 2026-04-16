@@ -1187,6 +1187,12 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
   .mobile-track-scroll {
     display: none;
     margin-bottom: 1rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .mobile-track-inner {
+    width: 100%;
   }
 
   .mobile-track-label {
@@ -1204,6 +1210,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     overflow-x: auto;
     padding-bottom: 0.5rem;
     scrollbar-width: none;
+    width: 100%;
   }
 
   .mobile-track-pills::-webkit-scrollbar {
