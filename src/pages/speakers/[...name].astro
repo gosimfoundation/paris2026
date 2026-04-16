@@ -257,6 +257,12 @@ const socialIconMap: Record<string, string> = {
           <div class="box-row box-row-text styled-content">
             <p set:html={speaker.bio.replace(/\n/g, "<br>")} />
           </div>
+
+          {isPlaceholder && (
+            <p class="placeholder-notice">
+              Are you {speaker.name}? <a href={mailtoHref}>Update your profile here</a> — if you haven't submitted via CFP yet, please do that first.
+            </p>
+          )}
         </div>
       </div>
     </div>
@@ -311,25 +317,6 @@ const socialIconMap: Record<string, string> = {
     )
   }
 
-  {isPlaceholder && (
-    <section class="section speaker-placeholder-notice" data-theme-section="light" data-bg-section="lightgray">
-      <div class="container">
-        <div class="placeholder-card">
-          <div class="placeholder-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          </div>
-          <div class="placeholder-text">
-            <h3>Are you {speaker.name}?</h3>
-            <p>Your speaker profile is not yet complete. Please send us your bio, photo, and social links so we can feature you properly on the GOSIM Paris 2026 website.</p>
-            <a href={mailtoHref} class="placeholder-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              Submit My Profile
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  )}
 
 </Layout>
 
@@ -517,71 +504,15 @@ const socialIconMap: Record<string, string> = {
     }
   }
 
-  /* Placeholder notice */
-  .speaker-placeholder-notice {
-    padding-top: 2rem !important;
-    padding-bottom: 3rem !important;
+  .placeholder-notice {
+    margin-top: 1.5rem;
+    font-size: 0.78rem;
+    color: rgba(0, 0, 0, 0.4);
   }
 
-  .placeholder-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.25rem;
-    background: #fff;
-    border: 1.5px dashed #c7d2fe;
-    border-radius: 14px;
-    padding: 1.75rem 2rem;
-    max-width: 680px;
-  }
-
-  .placeholder-icon {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: #eef2ff;
-    color: #6366f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .placeholder-text h3 {
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin: 0 0 0.4rem;
-  }
-
-  .placeholder-text p {
-    font-size: 0.88rem;
-    color: rgba(0,0,0,0.6);
-    margin: 0 0 1rem;
-    line-height: 1.6;
-  }
-
-  .placeholder-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #6366f1;
-    color: #fff !important;
-    text-decoration: none !important;
-    font-size: 0.85rem;
-    font-weight: 600;
-    padding: 0.55rem 1.25rem;
-    border-radius: 8px;
-    transition: background 0.2s ease;
-  }
-
-  .placeholder-btn:hover {
-    background: #4f46e5;
-  }
-
-  @media screen and (max-width: 640px) {
-    .placeholder-card {
-      flex-direction: column;
-      padding: 1.25rem;
-    }
+  .placeholder-notice a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
   }
 </style>
 
