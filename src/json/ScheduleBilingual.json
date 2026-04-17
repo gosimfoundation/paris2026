@@ -2090,11 +2090,17 @@
       },
       {
         "title": {
-          "en": "TBD - Agentic OS & App",
-          "zh": "TBD - Agentic OS & App",
-          "fr": "TBD - Agentic OS & App"
+          "en": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It",
+          "zh": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It",
+          "fr": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Tiberiu Socaci",
+            "title": "CEO & Co-Founder, Makeitfuture",
+            "id": "tiberiu-socaci"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
@@ -2270,7 +2276,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:20 - 10:40",
+        "timeSlot": "10:20 - 10:45",
         "type": "talk",
         "room": {
           "en": "Junior Stage",
@@ -2296,33 +2302,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:40 - 11:00",
-        "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
-      },
-      {
-        "title": {
-          "en": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It",
-          "zh": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It",
-          "fr": "Self-Evolving Apps: Building Software That Gets Smarter Every Time You Use It"
-        },
-        "speakers": [
-          {
-            "name": "Tiberiu Socaci",
-            "title": "CEO & Co-Founder, Makeitfuture",
-            "id": "tiberiu-socaci"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "11:00 - 11:20",
+        "timeSlot": "10:45 - 11:10",
         "type": "talk",
         "room": {
           "en": "Junior Stage",
@@ -2348,7 +2328,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "11:20 - 11:40",
+        "timeSlot": "11:10 - 11:35",
         "type": "talk",
         "room": {
           "en": "Junior Stage",
@@ -2374,7 +2354,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "11:40 - 12:00",
+        "timeSlot": "11:35 - 12:00",
         "type": "talk",
         "room": {
           "en": "Junior Stage",
