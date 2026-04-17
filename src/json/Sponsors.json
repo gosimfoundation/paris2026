@@ -17,6 +17,14 @@
       }
     },
     {
+      "id": "co-organizer",
+      "name": {
+        "en": "Co-organizer",
+        "zh": "承办",
+        "fr": "Co-organisateur"
+      }
+    },
+    {
       "id": "premier-sponsor",
       "name": {
         "en": "Premier Sponsor",
@@ -56,14 +64,19 @@
       "url": "https://gosim.org"
     },
     {
-      "category": "host",
+      "category": "co-organizer",
       "image": "csdn.png",
       "url": "https://www.csdn.net"
     },
     {
-      "category": "host",
+      "category": "co-organizer",
       "image": "1msai.png",
       "url": "https://1ms.ai/"
+    },
+    {
+      "category": "co-organizer",
+      "image": "probabl.png",
+      "url": "https://probabl.ai"
     },
     {
       "category": "premier-sponsor",
@@ -147,13 +160,29 @@
     },
     {
       "category": "supporting-organizations",
-      "image": "xiaolian.png",
+      "image": "huggingface.png",
+      "logoClass": "l",
       "url": "https://huggingface.co"
     },
     {
       "category": "supporting-organizations",
       "image": "kaiyuanshe.png",
       "url": "https://kaiyuanshe.cn"
+    },
+    {
+      "category": "supporting-organizations",
+      "image": "unaite.png",
+      "url": "https://unaite.fr"
+    },
+    {
+      "category": "supporting-organizations",
+      "image": "42-ai.png",
+      "url": "https://42-ai.github.io"
+    },
+    {
+      "category": "supporting-organizations",
+      "image": "ai-by-the-bay.png",
+      "url": "https://bythebay.io"
     },
     {
       "category": "speakers-affiliated",
