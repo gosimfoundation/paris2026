@@ -33,7 +33,7 @@
       "id": "ws-vllm-paris2026"
     },
     {
-      "name": "OpenHarmony Tech Forum",
+      "name": "OpenHarmony Tech Forum-Paris",
       "id": "ws-oh-tech-forum"
     },
     {
@@ -1623,13 +1623,13 @@
       "draft": false
     },
     {
-      "id": "dong-xin",
-      "name": "Dong Xin",
+      "id": "sean-dong",
+      "name": "Sean Dong",
       "bio": "2008–2017: Technical Leader at Microsoft, working on the Microsoft Azure enterprise cloud and Dynamics 365 platform R&D. 2017–present: Technical Expert and Product Director at Huawei Technologies Co., Ltd., working on the R&D of core infrastructure software including toolchains, programming languages, and IDEs. During his time at Huawei, he has served successively as Chief Technical Expert and Project Manager, working on Huawei’s mobile AI R&D tools, the company-wide AI R&D platform, the Huawei Ascend AI chip toolchain, and the HarmonyOS toolchain, among other initiatives. Since 2021, he has been responsible for the R&D of Huawei’s programming language and IDE infrastructure software, serving as Program Director. He leads the core technology R&D of proprietary and independently-controlled programming languages and IDE development tools, and has made significant contributions to the technical planning, productization, and industry adoption of domestically-developed application programming languages.",
       "role": "Program Director, Central Software Institute",
       "org": "Huawei",
       "roleOrg": "Program Director, Central Software Institute, Huawei",
-      "image": "/images/speakers/better_portrait/dong-xin.png",
+      "image": "/images/speakers/better_portrait/sean-dong.png",
       "tags": [
         "ai-generative-app",
         "ws-oh-tech-forum"

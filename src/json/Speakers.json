@@ -119,13 +119,13 @@
       "draft": false
     },
     {
-      "id": "dong-xin",
-      "name": "Dong Xin",
+      "id": "sean-dong",
+      "name": "Sean Dong",
       "bio": "2008-2017微软 技术leader 从事微软Azure企业云Dynamics365平台研发工作 2017- 华为技术有限公司 技术专家/产品总监 从事研发工具链，编程语言，IDE等核心基础软件研发工作。 在华为公司工作期间，先后作为首席技术专家和项目经理从事华为移动端AI研发工具，公司级AI研发平台，华为昇腾AI芯片工具链，鸿蒙OS工具链等相关工作。 2021年起负责华为编程语言和IDE基础软件的研发业务，并担任项目群总监，从事自主可控的编程语言及IDE开发工具的核心技术研发工作，对国产应用编程语言的技术规划，产品化，产业落地进展等工作出了重要的贡献",
       "role": "华为中央软件院项目群总监",
       "org": "华为",
       "roleOrg": "华为中央软件院项目群总监, 华为",
-      "image": "/images/speakers/better_portrait/dong-xin.png",
+      "image": "/images/speakers/better_portrait/sean-dong.png",
       "tags": [
         "agentic-ai-summit"
       ],

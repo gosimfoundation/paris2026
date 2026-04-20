@@ -154,9 +154,9 @@
     {
       "id": "ws-oh-tech-forum",
       "name": {
-        "en": "OpenHarmony Tech Forum",
-        "zh": "OpenHarmony 技术论坛",
-        "fr": "Forum Technique OpenHarmony"
+        "en": "OpenHarmony Tech Forum-Paris",
+        "zh": "OpenHarmony Tech Forum-Paris",
+        "fr": "OpenHarmony Tech Forum-Paris"
       },
       "room": {
         "en": "Founders Cafe",
@@ -2265,10 +2265,10 @@
         },
         "speakers": [
           {
-            "name": "Dong Xin",
+            "name": "Sean Dong",
             "title": "Program Director, Central Software Institute, Huawei",
-            "id": "dong-xin",
-            "image": "/images/speakers/better_portrait/dong-xin.png"
+            "id": "sean-dong",
+            "image": "/images/speakers/better_portrait/sean-dong.png"
           }
         ],
         "date": {
@@ -3125,9 +3125,9 @@
     "ws-oh-tech-forum": [
       {
         "title": {
-          "en": "Lunch — OpenHarmony Tech Forum",
-          "zh": "Lunch — OpenHarmony Tech Forum",
-          "fr": "Lunch — OpenHarmony Tech Forum"
+          "en": "Lunch — OpenHarmony Tech Forum-Paris",
+          "zh": "Lunch — OpenHarmony Tech Forum-Paris",
+          "fr": "Lunch — OpenHarmony Tech Forum-Paris"
         },
         "speakers": [],
         "date": {
@@ -3275,9 +3275,9 @@
       },
       {
         "title": {
-          "en": "Coffee Break — OpenHarmony Tech Forum",
-          "zh": "Coffee Break — OpenHarmony Tech Forum",
-          "fr": "Coffee Break — OpenHarmony Tech Forum"
+          "en": "Coffee Break — OpenHarmony Tech Forum-Paris",
+          "zh": "Coffee Break — OpenHarmony Tech Forum-Paris",
+          "fr": "Coffee Break — OpenHarmony Tech Forum-Paris"
         },
         "speakers": [],
         "date": {
@@ -3295,16 +3295,16 @@
       },
       {
         "title": {
-          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum",
-          "zh": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum",
-          "fr": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum"
+          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum-Paris",
+          "zh": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum-Paris",
+          "fr": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum-Paris"
         },
         "speakers": [
           {
-            "name": "Dong Xin",
+            "name": "Sean Dong",
             "title": "Program Director, Central Software Institute, Huawei",
-            "id": "dong-xin",
-            "image": "/images/speakers/better_portrait/dong-xin.png"
+            "id": "sean-dong",
+            "image": "/images/speakers/better_portrait/sean-dong.png"
           }
         ],
         "date": {
