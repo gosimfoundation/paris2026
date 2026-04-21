@@ -33,6 +33,9 @@ const i18n = {
     allTracks: "All Tracks",
     venue: "Venue – STATION F",
     venueMaps: "Our Spaces",
+    sessionsByVenue: "Sessions by Room",
+    floorplan: "Floorplan",
+    allRooms: "All Rooms",
     keynotesLabel: "★ Keynotes ★",
     tbd: "TBD",
     keynotesTbd: "Keynote speakers will be announced soon.",
@@ -54,6 +57,9 @@ const i18n = {
     allTracks: "All Tracks",
     venue: "场地",
     venueMaps: "Our Spaces",
+    sessionsByVenue: "按房间查看",
+    floorplan: "平面图",
+    allRooms: "所有房间",
     keynotesLabel: "★ Keynotes ★",
     tbd: "TBD",
     keynotesTbd: "主旨演讲嘉宾将很快公布。",
@@ -75,6 +81,9 @@ const i18n = {
     allTracks: "All Tracks",
     venue: "Lieu",
     venueMaps: "Our Spaces",
+    sessionsByVenue: "Sessions par Room",
+    floorplan: "Plan",
+    allRooms: "Toutes les salles",
     keynotesLabel: "★ Keynotes ★",
     tbd: "TBD",
     keynotesTbd: "Les conférenciers seront annoncés prochainement.",
@@ -197,6 +206,62 @@ for (const cat of allCategories) {
 // Short day label for display (e.g. "May 5" → "May 5")
 const dayLabels: Record<string, string> = {}
 for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
+
+// Build room data for room view
+const roomSessionsMap = new Map<string, { room: any, sessions: Map<string, any[]>, primaryColor: string }>()
+
+for (const cat of allCategories) {
+  const catSessions = (scheduleData.sessions as Record<string, any[]>)[cat.id] || []
+  for (const session of catSessions) {
+    const effectiveRoom = session.room || cat.room
+    if (!effectiveRoom) continue
+    const roomKey = en(effectiveRoom)
+    if (!roomKey) continue
+
+    if (!roomSessionsMap.has(roomKey)) {
+      roomSessionsMap.set(roomKey, { room: effectiveRoom, sessions: new Map(), primaryColor: trackColor(cat.id) })
+    }
+    const roomEntry = roomSessionsMap.get(roomKey)!
+    const dayKey = en(session.date)
+    if (!dayKey) continue
+
+    if (!roomEntry.sessions.has(dayKey)) {
+      roomEntry.sessions.set(dayKey, [])
+    }
+    roomEntry.sessions.get(dayKey)!.push({
+      ...session,
+      _trackId: cat.id,
+      _trackName: en(cat.name),
+      _trackColor: trackColor(cat.id),
+    })
+  }
+}
+
+// Sort and dedupe sessions within each room+day
+for (const [, roomEntry] of roomSessionsMap) {
+  for (const [dayKey, sessions] of roomEntry.sessions) {
+    const seen = new Set<string>()
+    const deduped = sessions.filter((s: any) => {
+      if (s.type === "keynote" || s.type === "ceremony") {
+        const key = `${s.timeSlot}||${en(s.title)}`
+        if (seen.has(key)) return false
+        seen.add(key)
+      }
+      return true
+    })
+    deduped.sort((a: any, b: any) => (a.timeSlot || "").localeCompare(b.timeSlot || ""))
+    roomEntry.sessions.set(dayKey, deduped)
+  }
+}
+
+const allRooms = Array.from(roomSessionsMap.entries()).map(([key, data]) => ({
+  key,
+  room: data.room,
+  sessions: data.sessions,
+  primaryColor: data.primaryColor,
+  days: Array.from(data.sessions.keys()).sort(),
+}))
+const firstRoom = allRooms[0]?.key || ""
 ---
 
 <section class="sched-section" data-bg-section="lightgray" data-theme-section="light">
@@ -215,9 +280,13 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
           <span class="day-label">{t.overview}</span>
           <span class="day-date">{t.allTracks}</span>
         </button>
-        <button class="sched-day-btn" data-view="venue">
+        <button class="sched-day-btn" data-view="rooms">
           <span class="day-label">{t.venue}</span>
-          <span class="day-date">{t.venueMaps}</span>
+          <span class="day-date">{t.sessionsByVenue}</span>
+        </button>
+        <button class="sched-day-btn" data-view="venue">
+          <span class="day-label">STATION F</span>
+          <span class="day-date">{t.floorplan}</span>
         </button>
       </div>
     </div>
@@ -583,14 +652,148 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
     <AgendaOverview lang={lang} speakerBasePath={speakerBasePath} />
   </div>
 
-  <!-- Venue map panel (hidden by default) -->
+  <!-- Room view panel (hidden by default) -->
+  <div class="rooms-panel" style="display:none">
+    <div class="room-view-container">
+      <!-- Day sub-tabs for room view -->
+      <div class="room-day-nav">
+        {days.map((day, i) => (
+          <button class={`room-day-btn${i === 0 ? " active" : ""}`} data-room-day={en(day.date)}>
+            {en(day.date)}
+          </button>
+        ))}
+      </div>
+
+      <div class="room-view-body">
+        <!-- Room sidebar -->
+        <aside class="room-sidebar">
+          <p class="track-group-label">{t.allRooms}</p>
+          {allRooms.map((room, i) => (
+            <button
+              class={`room-btn${i === 0 ? " active" : ""}`}
+              data-room={room.key}
+              style={`--rc: ${room.primaryColor}`}
+              data-room-days={room.days.join(",")}
+            >
+              <span class="room-dot"></span>
+              <span class="room-btn-name">{loc(room.room)}</span>
+            </button>
+          ))}
+        </aside>
+
+        <!-- Mobile room selector -->
+        <div class="mobile-room-scroll">
+          <p class="mobile-track-label">{t.allRooms}</p>
+          <div class="mobile-track-pills">
+            {allRooms.map((room, i) => (
+              <button
+                class={`mobile-track-pill${i === 0 ? " active" : ""}`}
+                data-room={room.key}
+                style={`--tc: ${room.primaryColor}`}
+              >
+                {loc(room.room)}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <!-- Room session panels -->
+        <div class="room-main">
+          {days.map((day) =>
+            allRooms.map((room) => {
+              const dayEn = en(day.date)
+              const daySessions = room.sessions.get(dayEn) || []
+              const nonBreakCount = daySessions.filter((s: any) => s.type !== "break").length
+              return (
+                <div
+                  class="room-session-panel"
+                  data-room-panel-day={dayEn}
+                  data-room-panel-room={room.key}
+                  style="display:none"
+                >
+                  <div class="panel-header">
+                    <div class="panel-header-left">
+                      <h2 class="panel-title">{loc(room.room)}</h2>
+                      <span class="panel-room">{dayEn}</span>
+                    </div>
+                    <span class="panel-count">{t.sessionCount(nonBreakCount)}</span>
+                  </div>
+
+                  {daySessions.length === 0 ? (
+                    <div class="no-sessions">
+                      <p class="no-sessions-msg">{t.noSessionsOnDay(dayEn)}</p>
+                    </div>
+                  ) : (
+                    <div class="session-list">
+                      {daySessions.map((session: any) => {
+                        const meta = typeMeta(session.type)
+                        const isBreak = session.type === "break"
+                        if (isBreak) {
+                          const isLunch = en(session.title) === "Lunch"
+                          const isReg = en(session.title) === "Registration"
+                          return (
+                            <div class={isLunch ? "break-divider lunch-divider" : isReg ? "break-divider registration-divider" : "break-divider"}>
+                              <span class="break-line" />
+                              <span class="break-label">
+                                {session.timeSlot && <span class="break-time">{session.timeSlot}</span>}
+                                {loc(session.title)}
+                              </span>
+                              <span class="break-line" />
+                            </div>
+                          )
+                        }
+                        const slug = createSlug(en(session.title))
+                        const isKeynote = session.type === "keynote"
+                        const isCeremony = session.type === "ceremony"
+                        const isSpecial = isKeynote || isCeremony
+                        return (
+                          <a class={`session-card${isSpecial ? " keynote-card" : ""}`} href={`/schedule/${slug}/`}>
+                            <div class="session-left">
+                              <span class="session-time">{session.timeSlot}</span>
+                              <span class="type-badge" style={isSpecial ? "background:#92600a; color:#ffffff" : `background:${meta.bg}; color:${meta.fg}`}>
+                                {isSpecial ? (isKeynote ? t.keynotesLabel : "★ Ceremony ★") : meta.label}
+                              </span>
+                            </div>
+                            <div class="session-right">
+                              <h3 class="session-title">{en(session.title)}</h3>
+                              {session.speakers && session.speakers.length > 0 && (
+                                <div class="speaker-list">
+                                  {session.speakers.map((sp: any) => (
+                                    <div class="speaker-row">
+                                      <span class="speaker-name">{sp.name}</span>
+                                      {sp.title && <span class="speaker-role">{sp.title}</span>}
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+                              <span class="room-track-badge" style={`--tc: ${session._trackColor}`}>
+                                <span class="room-track-dot"></span>
+                                {session._trackName}
+                              </span>
+                            </div>
+                          </a>
+                        )
+                      })}
+                    </div>
+                  )}
+                </div>
+              )
+            })
+          )}
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Venue floorplan panel (hidden by default) -->
   <div class="venue-panel" style="display:none">
     <div class="venue-inner">
       <h2 class="venue-title">
-        {lang === "zh" ? "STATION F 场地地图" : lang === "fr" ? "Plans des salles – STATION F" : "STATION F – Meeting & Event Room Maps"}
+        {lang === "zh" ? "STATION F 场地平面图" : lang === "fr" ? "Plan de STATION F" : "STATION F Floorplan"}
       </h2>
       <p class="venue-subtitle">
-        {lang === "zh" ? "请参阅以下地图找到您的会议室" : lang === "fr" ? "Utilisez ces plans pour trouver votre salle de réunion" : "Use the maps below to locate your meeting and event rooms on campus"}
+        {lang === "zh" ? "请参阅以下地图找到您的会议室" : lang === "fr" ? "Utilisez ce plan pour trouver votre salle" : "Use the map below to locate your meeting and event rooms on campus"}
       </p>
       <div class="venue-maps">
         <img src="/images/venue/station-f-floorplan.png" alt="STATION F floor map" class="venue-map-img" id="venue-map-img" />
@@ -607,15 +810,26 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
 
 </section>
 
-<script define:vars={{ firstDay, firstCat }}>
+<script define:vars={{ firstDay, firstCat, firstRoom }}>
   let activeDay = firstDay
   let activeTrack = firstCat
+  let activeRoomDay = firstDay
+  let activeRoom = firstRoom
 
   const schedContainer = document.querySelector(".sched-container")
   const overviewPanel = document.querySelector(".overview-panel")
+  const roomsPanel = document.querySelector(".rooms-panel")
   const venuePanel = document.querySelector(".venue-panel")
   const overviewBtn = document.querySelector("[data-view='overview']")
+  const roomsBtn = document.querySelector("[data-view='rooms']")
   const venueBtn = document.querySelector("[data-view='venue']")
+
+  function hideAllPanels() {
+    schedContainer.style.display = "none"
+    overviewPanel.style.display = "none"
+    roomsPanel.style.display = "none"
+    venuePanel.style.display = "none"
+  }
 
   function setAllTabsInactive() {
     document.querySelectorAll("[data-day], [data-view]").forEach((btn) => btn.classList.remove("active"))
@@ -624,25 +838,52 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
   function showOverview() {
     setAllTabsInactive()
     overviewBtn.classList.add("active")
-    schedContainer.style.display = "none"
+    hideAllPanels()
     overviewPanel.style.display = "block"
-    venuePanel.style.display = "none"
+  }
+
+  function showRooms() {
+    setAllTabsInactive()
+    roomsBtn.classList.add("active")
+    hideAllPanels()
+    roomsPanel.style.display = "block"
+    showRoomPanel(activeRoomDay, activeRoom)
   }
 
   function showVenue() {
     setAllTabsInactive()
     venueBtn.classList.add("active")
-    schedContainer.style.display = "none"
-    overviewPanel.style.display = "none"
+    hideAllPanels()
     venuePanel.style.display = "block"
+  }
+
+  function showRoomPanel(day, room) {
+    activeRoomDay = day
+    activeRoom = room
+
+    document.querySelectorAll("[data-room-day]").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.roomDay === day)
+    })
+
+    document.querySelectorAll(".room-sidebar [data-room], .mobile-room-scroll [data-room]").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.room === room)
+      const roomDays = (btn.dataset.roomDays || "").split(",").filter(Boolean)
+      if (roomDays.length > 0) {
+        btn.classList.toggle("off-day", !roomDays.includes(day))
+      }
+    })
+
+    document.querySelectorAll("[data-room-panel-day]").forEach((panel) => {
+      const match = panel.dataset.roomPanelDay === day && panel.dataset.roomPanelRoom === room
+      panel.style.display = match ? "block" : "none"
+    })
   }
 
   function show(day, track) {
     activeDay = day
     activeTrack = track
 
-    overviewPanel.style.display = "none"
-    venuePanel.style.display = "none"
+    hideAllPanels()
     schedContainer.style.display = ""
 
     setAllTabsInactive()
@@ -664,6 +905,7 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
   }
 
   overviewBtn.addEventListener("click", showOverview)
+  roomsBtn.addEventListener("click", showRooms)
   venueBtn.addEventListener("click", showVenue)
 
   document.querySelectorAll("[data-day]").forEach((btn) => {
@@ -676,6 +918,15 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
 
   document.querySelectorAll("[data-switch-day]").forEach((btn) => {
     btn.addEventListener("click", () => show(btn.dataset.switchDay, activeTrack))
+  })
+
+  // Room view event listeners
+  document.querySelectorAll("[data-room-day]").forEach((btn) => {
+    btn.addEventListener("click", () => showRoomPanel(btn.dataset.roomDay, activeRoom))
+  })
+
+  document.querySelectorAll("[data-room]").forEach((btn) => {
+    btn.addEventListener("click", () => showRoomPanel(activeRoomDay, btn.dataset.room))
   })
 
   // Venue map lightbox
@@ -1366,5 +1617,147 @@ for (const d of days) { dayLabels[en(d.date)] = en(d.date) }
 
   .venue-lightbox-close:hover {
     background: rgba(255, 255, 255, 0.25);
+  }
+
+  /* ── Room view ── */
+  .room-view-container {
+    max-width: calc(var(--title-size) * 12);
+    margin: 0 auto;
+    padding: 1.5rem var(--container-padding) 2rem;
+  }
+
+  .room-day-nav {
+    display: inline-flex;
+    gap: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+
+  .room-day-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .room-day-btn:hover:not(.active) {
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  .room-day-btn.active {
+    color: var(--color-dark);
+    border-bottom-color: var(--color-dark);
+  }
+
+  .room-view-body {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .room-sidebar {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .room-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    color: var(--color-dark);
+    font-family: inherit;
+  }
+
+  .room-btn:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+
+  .room-btn.active {
+    background: rgba(0, 0, 0, 0.06);
+  }
+
+  .room-btn.active .room-dot {
+    background: var(--rc);
+    transform: scale(1.2);
+  }
+
+  .room-btn.off-day {
+    opacity: 0.45;
+  }
+
+  .room-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.18);
+    flex-shrink: 0;
+    transition: background 0.15s, transform 0.15s;
+  }
+
+  .room-btn-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .room-main {
+    min-height: 400px;
+  }
+
+  .room-track-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.55);
+    margin-top: 0.2rem;
+  }
+
+  .room-track-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--tc);
+    flex-shrink: 0;
+  }
+
+  /* Mobile room view */
+  .mobile-room-scroll {
+    display: none;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 900px) {
+    .room-view-body {
+      grid-template-columns: 1fr;
+    }
+
+    .room-sidebar {
+      display: none;
+    }
+
+    .mobile-room-scroll {
+      display: block;
+    }
   }
 </style>
