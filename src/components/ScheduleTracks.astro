@@ -281,10 +281,12 @@ const firstRoom = allRooms[0]?.key || ""
           <span class="day-label">{t.overview}</span>
           <span class="day-date">{t.allTracks}</span>
         </button>
+        <!-- Sessions by Room tab hidden for now
         <button class="sched-day-btn" data-view="rooms">
           <span class="day-label">{t.venue}</span>
           <span class="day-date">{t.sessionsByVenue}</span>
         </button>
+        -->
         <button class="sched-day-btn" data-view="venue">
           <span class="day-label">STATION F</span>
           <span class="day-date">{t.floorplan}</span>
@@ -889,7 +891,7 @@ const firstRoom = allRooms[0]?.key || ""
   }
 
   overviewBtn.addEventListener("click", showOverview)
-  roomsBtn.addEventListener("click", showRooms)
+  if (roomsBtn) roomsBtn.addEventListener("click", showRooms)
   venueBtn.addEventListener("click", showVenue)
 
   document.querySelectorAll("[data-day]").forEach((btn) => {
