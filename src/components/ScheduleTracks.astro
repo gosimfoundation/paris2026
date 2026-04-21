@@ -1,6 +1,7 @@
 ---
 import scheduleData from "json/ScheduleBilingual.json"
 import AgendaOverview from "components/AgendaOverview.astro"
+import InteractiveFloorplan from "components/InteractiveFloorplan.astro"
 
 interface Props {
   currentDay?: string
@@ -34,7 +35,7 @@ const i18n = {
     venue: "Venue – STATION F",
     venueMaps: "Our Spaces",
     sessionsByVenue: "Sessions by Room",
-    floorplan: "Floorplan",
+    floorplan: "Floor Plan",
     allRooms: "All Rooms",
     keynotesLabel: "★ Keynotes ★",
     tbd: "TBD",
@@ -788,24 +789,7 @@ const firstRoom = allRooms[0]?.key || ""
 
   <!-- Venue floorplan panel (hidden by default) -->
   <div class="venue-panel" style="display:none">
-    <div class="venue-inner">
-      <h2 class="venue-title">
-        {lang === "zh" ? "STATION F 场地平面图" : lang === "fr" ? "Plan de STATION F" : "STATION F Floorplan"}
-      </h2>
-      <p class="venue-subtitle">
-        {lang === "zh" ? "请参阅以下地图找到您的会议室" : lang === "fr" ? "Utilisez ce plan pour trouver votre salle" : "Use the map below to locate your meeting and event rooms on campus"}
-      </p>
-      <div class="venue-maps">
-        <img src="/images/venue/station-f-floorplan.png" alt="STATION F floor map" class="venue-map-img" id="venue-map-img" />
-        <p class="venue-map-hint">Click to enlarge</p>
-      </div>
-
-      <!-- Lightbox -->
-      <div class="venue-lightbox" id="venue-lightbox">
-        <button class="venue-lightbox-close" id="venue-lightbox-close" aria-label="Close">✕</button>
-        <img src="/images/venue/station-f-floorplan.png" alt="STATION F floor map" class="venue-lightbox-img" />
-      </div>
-    </div>
+    <InteractiveFloorplan lang={lang} />
   </div>
 
 </section>
@@ -929,15 +913,6 @@ const firstRoom = allRooms[0]?.key || ""
     btn.addEventListener("click", () => showRoomPanel(activeRoomDay, btn.dataset.room))
   })
 
-  // Venue map lightbox
-  const venueMapImg = document.getElementById("venue-map-img")
-  const venueLightbox = document.getElementById("venue-lightbox")
-  const venueLightboxClose = document.getElementById("venue-lightbox-close")
-
-  venueMapImg.addEventListener("click", () => venueLightbox.classList.add("open"))
-  venueLightboxClose.addEventListener("click", (e) => { e.stopPropagation(); venueLightbox.classList.remove("open") })
-  venueLightbox.addEventListener("click", () => venueLightbox.classList.remove("open"))
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") venueLightbox.classList.remove("open") })
 
   const hashTrack = window.location.hash.slice(1)
   const hashBtn = hashTrack && document.querySelector(`.sched-sidebar [data-track="${hashTrack}"]`)
@@ -1527,97 +1502,8 @@ const firstRoom = allRooms[0]?.key || ""
   .venue-panel {
     max-width: calc(var(--title-size) * 12);
     margin: 0 auto;
-    padding: 2rem var(--container-padding) 4rem;
   }
 
-  .venue-inner {
-    text-align: center;
-  }
-
-  .venue-title {
-    font-size: 1.6rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    margin: 0 0 0.5rem;
-  }
-
-  .venue-subtitle {
-    font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.55);
-    margin: 0 0 2rem;
-  }
-
-  .venue-maps {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .venue-map-img {
-    width: 100%;
-    max-width: 900px;
-    border-radius: var(--border-radius);
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
-    cursor: zoom-in;
-    transition: opacity 0.15s;
-  }
-
-  .venue-map-img:hover {
-    opacity: 0.9;
-  }
-
-  .venue-map-hint {
-    font-size: 0.75rem;
-    color: rgba(0, 0, 0, 0.4);
-    margin: 0.5rem 0 0;
-  }
-
-  .venue-lightbox {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    cursor: zoom-out;
-  }
-
-  .venue-lightbox.open {
-    display: flex;
-  }
-
-  .venue-lightbox-img {
-    max-width: 100%;
-    max-height: 90vh;
-    border-radius: var(--border-radius);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-    object-fit: contain;
-  }
-
-  .venue-lightbox-close {
-    position: absolute;
-    top: 1.25rem;
-    right: 1.5rem;
-    background: rgba(255, 255, 255, 0.15);
-    border: none;
-    color: #fff;
-    font-size: 1.2rem;
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-  }
-
-  .venue-lightbox-close:hover {
-    background: rgba(255, 255, 255, 0.25);
-  }
 
   /* ── Room view ── */
   .room-view-container {

@@ -1,0 +1,570 @@
+---
+interface Props {
+  lang?: "en" | "zh" | "fr"
+}
+const { lang = "en" } = Astro.props
+
+const TC: Record<string, string> = {
+  "keynote": "#1e293b",
+  "agentic-ai-summit": "#dc2626",
+  "open-source-model": "#0f766e",
+  "ai-generative-app": "#2563eb",
+  "agentic-ai-on-edge": "#ca8a04",
+  "open-source-robotics": "#0891b2",
+  "ws-vllm": "#4f46e5",
+  "ws-oh-tech-forum": "#be123c",
+  "ws-own-your-data": "#d97706",
+  "ws-sglang": "#7c3aed",
+  "ws-open-compute": "#059669",
+  "hackathon": "#6d28d9",
+  "agentic-app-workshop": "#9333ea",
+}
+
+interface Slot { time: string; track: string; cid: string }
+interface Room {
+  id: string; name: string; floor: number; conf: boolean; cap?: string
+  x: number; y: number; w: number; h: number
+  may5?: Slot[]; may6?: Slot[]
+}
+
+const rooms: Room[] = [
+  { id: "open-stage", name: "Open Stage", floor: 0, conf: true, cap: "100", x: 8, y: 25, w: 12, h: 30,
+    may5: [{ time: "10:20 – 12:00", track: "Own Your Data Workshop", cid: "ws-own-your-data" }, { time: "14:00 – 17:30", track: "Own Your Data Workshop", cid: "ws-own-your-data" }],
+    may6: [{ time: "10:20 – 12:00", track: "Open Source Models", cid: "open-source-model" }, { time: "14:00 – 17:30", track: "Open Source Models", cid: "open-source-model" }],
+  },
+  { id: "master-stage", name: "Master Stage", floor: 0, conf: true, cap: "350", x: 18, y: 33, w: 14, h: 18,
+    may5: [{ time: "9:30 – 10:00", track: "Keynote", cid: "keynote" }, { time: "10:20 – 12:00", track: "Agentic AI Summit", cid: "agentic-ai-summit" }, { time: "14:00 – 17:30", track: "Agentic AI Summit", cid: "agentic-ai-summit" }],
+    may6: [{ time: "9:30 – 10:00", track: "Keynote", cid: "keynote" }, { time: "10:20 – 12:00", track: "Agentic AI Summit", cid: "agentic-ai-summit" }, { time: "14:00 – 17:30", track: "Agentic AI Summit", cid: "agentic-ai-summit" }],
+  },
+  { id: "open-platform", name: "Open Platform", floor: 0, conf: true, cap: "900m\u00B2", x: 33, y: 33, w: 36, h: 18,
+    may5: [{ time: "All Day", track: "Hackathon Hub", cid: "hackathon" }],
+    may6: [{ time: "All Day", track: "Hackathon Hub", cid: "hackathon" }],
+  },
+  { id: "founders-cafe", name: "Founders Cafe", floor: 0, conf: true, cap: "75", x: 4, y: 65, w: 18, h: 23,
+    may5: [{ time: "10:20 – 12:00", track: "vLLM Workshop", cid: "ws-vllm" }, { time: "14:00 – 17:30", track: "OpenHarmony Tech Forum-Paris", cid: "ws-oh-tech-forum" }],
+    may6: [{ time: "10:20 – 12:00", track: "Open Source Robotics", cid: "open-source-robotics" }, { time: "14:00 – 17:30", track: "Open Source Robotics", cid: "open-source-robotics" }],
+  },
+  { id: "central-room", name: "Central Room", floor: 0, conf: true, cap: "100", x: 30, y: 65, w: 22, h: 23,
+    may5: [{ time: "10:20 – 12:00", track: "Agentic AI on Edge", cid: "agentic-ai-on-edge" }, { time: "14:00 – 17:30", track: "Open Compute (FlagOS)", cid: "ws-open-compute" }],
+    may6: [{ time: "10:20 – 12:00", track: "Agentic AI on Edge", cid: "agentic-ai-on-edge" }, { time: "14:00 – 17:30", track: "SGLang Workshop", cid: "ws-sglang" }],
+  },
+  { id: "junior-stage", name: "Junior Stage", floor: 1, conf: true, cap: "50", x: 30, y: 25, w: 40, h: 35,
+    may5: [{ time: "10:20 – 12:00", track: "Agentic OS & App", cid: "ai-generative-app" }, { time: "14:00 – 17:30", track: "Agentic OS & App", cid: "ai-generative-app" }],
+    may6: [{ time: "10:20 – 12:00", track: "Agentic App Workshop", cid: "agentic-app-workshop" }, { time: "14:00 – 17:30", track: "Agentic App Workshop", cid: "agentic-app-workshop" }],
+  },
+]
+
+const getColor = (r: Room, day: "may5" | "may6") => {
+  const slots = r[day]
+  if (!slots?.length) return "#d1d5db"
+  const s = slots.find(s => s.cid !== "keynote") || slots[0]
+  return TC[s.cid] || "#d1d5db"
+}
+
+const gf = rooms.filter(r => r.floor === 0)
+const ff = rooms.filter(r => r.floor === 1)
+const roomsJson = JSON.stringify(rooms.filter(r => r.conf).map(r => ({ id: r.id, name: r.name, cap: r.cap, may5: r.may5, may6: r.may6 })))
+const colorsJson = JSON.stringify(TC)
+---
+
+<div class="fp-wrapper">
+  <div class="fp-header">
+    <h2 class="fp-title">
+      {lang === "zh" ? "STATION F 互动平面图" : lang === "fr" ? "Plan Interactif – STATION F" : "STATION F Interactive Floor Plan"}
+    </h2>
+    <p class="fp-subtitle">
+      {lang === "zh" ? "悬停在房间上查看日程安排" : lang === "fr" ? "Survolez une salle pour voir le programme" : "Hover over a room to see its schedule"}
+    </p>
+    <div class="fp-controls">
+      <div class="fp-day-nav">
+        <button class="fp-day-btn active" data-fp-day="may5">May 5</button>
+        <button class="fp-day-btn" data-fp-day="may6">May 6</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-viewport">
+    <div class="fp-scene">
+      <!-- Ground Floor -->
+      <div class="fp-floor fp-ground" id="fp-ground">
+        <div class="fp-plate">
+          <span class="fp-floor-label">Ground Floor</span>
+        </div>
+        {gf.map(room => (
+          <div
+            class={`fp-room${room.conf ? " fp-conf" : ""}`}
+            data-room-id={room.id}
+            style={`left:${room.x}%; top:${room.y}%; width:${room.w}%; height:${room.h}%; --rc: ${room.conf ? getColor(room, "may5") : "#d1d5db"}`}
+          >
+            <div class="fp-room-top">
+              <span class="fp-room-name">{room.name}</span>
+            </div>
+            <div class="fp-room-front"></div>
+            <div class="fp-room-right"></div>
+          </div>
+        ))}
+      </div>
+
+      <!-- 1st Floor -->
+      <div class="fp-floor fp-first" id="fp-first">
+        <div class="fp-plate">
+          <span class="fp-floor-label">1st Floor</span>
+        </div>
+        {ff.map(room => (
+          <div
+            class={`fp-room${room.conf ? " fp-conf" : ""}`}
+            data-room-id={room.id}
+            style={`left:${room.x}%; top:${room.y}%; width:${room.w}%; height:${room.h}%; --rc: ${room.conf ? getColor(room, "may5") : "#d1d5db"}`}
+          >
+            <div class="fp-room-top">
+              <span class="fp-room-name">{room.name}</span>
+            </div>
+            <div class="fp-room-front"></div>
+            <div class="fp-room-right"></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-tooltip" id="fp-tooltip"></div>
+
+  <div class="fp-static-plan">
+    <h3 class="fp-static-title">
+      {lang === "zh" ? "STATION F 平面图" : lang === "fr" ? "Plan de STATION F" : "STATION F Floor Plan"}
+    </h3>
+    <img src="/images/venue/station-f-floorplan.png" alt="STATION F Floor Plan" class="fp-static-img" loading="lazy" id="fp-static-img" />
+  </div>
+
+  <div class="fp-lightbox" id="fp-lightbox">
+    <img src="/images/venue/station-f-floorplan.png" alt="STATION F Floor Plan" class="fp-lightbox-img" />
+  </div>
+</div>
+
+<script is:inline define:vars={{ roomsJson, colorsJson }}>
+{
+  const rooms = JSON.parse(roomsJson)
+  const colors = JSON.parse(colorsJson)
+  let activeDay = "may5"
+
+  function getMainColor(room) {
+    const slots = room[activeDay]
+    if (!slots || !slots.length) return "#d1d5db"
+    const s = slots.find(s => s.cid !== "keynote") || slots[0]
+    return colors[s.cid] || "#d1d5db"
+  }
+
+  function updateColors() {
+    document.querySelectorAll(".fp-room.fp-conf[data-room-id]").forEach(el => {
+      const room = rooms.find(r => r.id === el.dataset.roomId)
+      if (!room) return
+      el.style.setProperty("--rc", getMainColor(room))
+    })
+  }
+
+  document.querySelectorAll(".fp-day-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".fp-day-btn").forEach(b => b.classList.remove("active"))
+      btn.classList.add("active")
+      activeDay = btn.dataset.fpDay
+      updateColors()
+    })
+  })
+
+  const tooltip = document.getElementById("fp-tooltip")
+
+  document.querySelectorAll(".fp-conf[data-room-id]").forEach(el => {
+    el.addEventListener("mouseenter", () => {
+      const room = rooms.find(r => r.id === el.dataset.roomId)
+      if (!room) return
+      const slots = room[activeDay] || []
+      const dayLabel = activeDay === "may5" ? "May 5" : "May 6"
+      let html = '<div class="fpt-name">' + room.name + "</div>"
+      if (room.cap) html += '<div class="fpt-cap">' + room.cap + " capacity</div>"
+      html += '<div class="fpt-day">' + dayLabel + "</div>"
+      slots.forEach(s => {
+        const c = colors[s.cid] || "#888"
+        html += '<div class="fpt-slot"><span class="fpt-dot" style="background:' + c + '"></span><span class="fpt-time">' + s.time + '</span><span class="fpt-track">' + s.track + "</span></div>"
+      })
+      tooltip.innerHTML = html
+      tooltip.style.display = "block"
+    })
+
+    el.addEventListener("mousemove", (e) => {
+      const x = e.clientX + 16
+      const y = e.clientY + 16
+      const tw = tooltip.offsetWidth
+      const th = tooltip.offsetHeight
+      tooltip.style.left = (x + tw > window.innerWidth ? e.clientX - tw - 8 : x) + "px"
+      tooltip.style.top = (y + th > window.innerHeight ? e.clientY - th - 8 : y) + "px"
+    })
+
+    el.addEventListener("mouseleave", () => {
+      tooltip.style.display = "none"
+    })
+  })
+  // Lightbox for static floor plan
+  const staticImg = document.getElementById("fp-static-img")
+  const lightbox = document.getElementById("fp-lightbox")
+  staticImg.addEventListener("click", () => {
+    lightbox.style.display = "flex"
+  })
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none"
+  })
+}
+</script>
+
+<style>
+  .fp-wrapper {
+    max-width: calc(var(--title-size, 80px) * 12);
+    margin: 0 auto;
+    padding: 2rem var(--container-padding, 1rem) 3rem;
+  }
+
+  .fp-header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .fp-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.4rem;
+  }
+
+  .fp-subtitle {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 0 1.25rem;
+  }
+
+  .fp-day-nav {
+    display: inline-flex;
+    gap: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .fp-day-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .fp-day-btn:hover:not(.active) {
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  .fp-day-btn.active {
+    color: var(--color-dark, #0f172a);
+    border-bottom-color: var(--color-dark, #0f172a);
+  }
+
+  .fp-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+
+  /* 3D viewport */
+  .fp-viewport {
+    position: relative;
+    perspective: 1200px;
+    perspective-origin: 50% 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 480px;
+    padding: 2rem 0;
+    overflow: visible;
+  }
+
+  .fp-scene {
+    position: relative;
+    width: 520px;
+    height: 360px;
+    transform-style: preserve-3d;
+    transform: rotateX(55deg) rotateZ(-45deg);
+  }
+
+  /* Floor plates */
+  .fp-floor {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+  }
+
+  .fp-first {
+    transform: translateZ(140px);
+    transform-style: preserve-3d;
+    inset: auto;
+    width: 220px;
+    height: 170px;
+    /* Position top-left with slight overlap */
+    left: 100px;
+    top: 40px;
+  }
+
+  .fp-ground {
+    transform-style: preserve-3d;
+  }
+
+
+  .fp-plate {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #eae7e2 0%, #e2dfda 100%);
+    border: 2px solid #cbc7c1;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transform-style: preserve-3d;
+  }
+
+  .fp-first .fp-plate {
+    background: linear-gradient(135deg, #dce4f0 0%, #d4dced 100%);
+    border-color: #b8c4d9;
+  }
+
+  .fp-floor-label {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  /* Room blocks */
+  .fp-room {
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ(14px);
+  }
+
+  .fp-conf {
+    cursor: pointer;
+    transform: translateZ(18px);
+  }
+
+  .fp-room-top {
+    position: absolute;
+    inset: 0;
+    background: var(--rc);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+  }
+
+  .fp-conf:hover .fp-room-top,
+  .fp-conf:hover .fp-room-front,
+  .fp-conf:hover .fp-room-right {
+    filter: brightness(1.3) saturate(1.15);
+  }
+
+  .fp-room-name {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  /* 3D extrusion faces */
+  .fp-room-front {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 18px;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+    background: var(--rc);
+    filter: brightness(0.72);
+    border-radius: 3px 3px 0 0;
+  }
+
+  .fp-room:not(.fp-conf) .fp-room-front {
+    height: 14px;
+  }
+
+  .fp-room-right {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 18px;
+    height: 100%;
+    transform-origin: left;
+    transform: rotateY(90deg);
+    background: var(--rc);
+    filter: brightness(0.55);
+    border-radius: 0 3px 3px 0;
+  }
+
+  .fp-room:not(.fp-conf) .fp-room-right {
+    width: 14px;
+  }
+
+  /* Tooltip */
+  .fp-tooltip {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+    min-width: 200px;
+    max-width: 300px;
+    font-family: inherit;
+  }
+
+  :global(.fpt-name) {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+    color: #0f172a;
+  }
+
+  :global(.fpt-cap) {
+    font-size: 0.72rem;
+    color: rgba(0, 0, 0, 0.45);
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.fpt-day) {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.35);
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  :global(.fpt-slot) {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.25rem 0;
+  }
+
+  :global(.fpt-dot) {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  :global(.fpt-time) {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  :global(.fpt-track) {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .fp-scene {
+      width: 380px;
+      height: 260px;
+    }
+
+    .fp-viewport {
+      min-height: 380px;
+    }
+
+    .fp-room-name {
+      font-size: 0.5rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .fp-scene {
+      width: 300px;
+      height: 210px;
+      transform: rotateX(55deg) rotateZ(-45deg) scale(0.85);
+    }
+
+    .fp-viewport {
+      min-height: 320px;
+    }
+
+    .fp-room-name {
+      font-size: 0.42rem;
+    }
+  }
+
+  /* Static floor plan image */
+  .fp-static-plan {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fp-static-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .fp-static-img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    cursor: zoom-in;
+  }
+
+  .fp-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+    padding: 2rem;
+  }
+
+  .fp-lightbox-img {
+    max-width: 95vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+</style>
