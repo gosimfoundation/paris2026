@@ -4193,7 +4193,7 @@
         "timeSlot": "14:20 - 14:40",
         "type": "talk",
         "content": {
-          "en": "I’m presenting together with Olivier Grisel (olivier.grisel@ensta.org), who has just submitted the abstract.",
+          "en": "The Python array API is a standard API inspired by NumPy's own API that is progressively adopted by array-producing libraries such as NumPy, PyTorch, CuPy, JAX, DPNP on the one hand and array-consuming libraries such as SciPy and scikit-learn on the other hand. Once adopted it will allow scikit-learn to leverage the hardware acceleration support (e.g. GPU support) of the library backing the input arrays instead of always trying to convert those to NumPy and run the computation on the CPU. \n\nIn this presentation, we will give an overview of the adoption of this standard in the scikit-learn library both from a technical point of view and an open source contribution dynamics point of view and then illustrate the performance impacts on some example pipeline.",
           "zh": "",
           "fr": ""
         }
