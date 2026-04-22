@@ -470,15 +470,15 @@
       },
       {
         "title": {
-          "en": "Keynote – Gaël Varoquaux",
-          "zh": "Keynote – Gaël Varoquaux",
-          "fr": "Keynote – Gaël Varoquaux"
+          "en": "Keynote – Sir Timothy Gowers",
+          "zh": "Keynote – Sir Timothy Gowers",
+          "fr": "Keynote – Sir Timothy Gowers"
         },
         "speakers": [
           {
-            "name": "Gaël Varoquaux",
-            "title": "Chief Science Officer, Probabl / INRIA",
-            "id": "gal-varoquaux"
+            "name": "Sir Timothy Gowers",
+            "title": "FRS; Fields Medalist",
+            "id": "timothy-gowers"
           }
         ],
         "date": {
@@ -496,15 +496,15 @@
       },
       {
         "title": {
-          "en": "Keynote – Bill Ren",
-          "zh": "Keynote – Bill Ren",
-          "fr": "Keynote – Bill Ren"
+          "en": "Keynote – Gaël Varoquaux",
+          "zh": "Keynote – Gaël Varoquaux",
+          "fr": "Keynote – Gaël Varoquaux"
         },
         "speakers": [
           {
-            "name": "Bill Ren",
-            "title": "Chief Open Source Liaison Officer; Board Member, CNCF",
-            "id": "bill-ren"
+            "name": "Gaël Varoquaux",
+            "title": "Chief Science Officer, Probabl",
+            "id": "gal-varoquaux"
           }
         ],
         "date": {
@@ -522,9 +522,35 @@
       },
       {
         "title": {
+          "en": "Keynote – AI-Driven Open Source \"Lights-Out Community\"",
+          "zh": "Keynote – AI驱动的开源\u201c无人值守社区\u201d",
+          "fr": "Keynote – Communauté open source « Lights-Out » pilotée par l'IA"
+        },
+        "speakers": [
+          {
+            "name": "Bill Ren",
+            "title": "Chief Open Source Liaison Officer, Huawei; Board Member, CNCF",
+            "id": "bill-ren"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:15",
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
+      },
+      {
+        "title": {
           "en": "Coffee Break — GOSIM Agentic Hackathon",
-          "zh": "Coffee Break — GOSIM Agentic Hackathon",
-          "fr": "Coffee Break — GOSIM Agentic Hackathon"
+          "zh": "茶歇 — GOSIM Agentic Hackathon",
+          "fr": "Pause café — GOSIM Agentic Hackathon"
         },
         "speakers": [],
         "date": {
@@ -532,7 +558,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "10:00 - 10:20",
+        "timeSlot": "10:15 - 10:20",
         "type": "break"
       },
       {
@@ -877,15 +903,15 @@
       },
       {
         "title": {
-          "en": "Keynote – Gaël Varoquaux",
-          "zh": "Keynote – Gaël Varoquaux",
-          "fr": "Keynote – Gaël Varoquaux"
+          "en": "Keynote – Sir Timothy Gowers",
+          "zh": "Keynote – Sir Timothy Gowers",
+          "fr": "Keynote – Sir Timothy Gowers"
         },
         "speakers": [
           {
-            "name": "Gaël Varoquaux",
-            "title": "Chief Science Officer, Probabl / INRIA",
-            "id": "gal-varoquaux"
+            "name": "Sir Timothy Gowers",
+            "title": "FRS; Fields Medalist",
+            "id": "timothy-gowers"
           }
         ],
         "date": {
@@ -903,15 +929,15 @@
       },
       {
         "title": {
-          "en": "Keynote – Bill Ren",
-          "zh": "Keynote – Bill Ren",
-          "fr": "Keynote – Bill Ren"
+          "en": "Keynote – Gaël Varoquaux",
+          "zh": "Keynote – Gaël Varoquaux",
+          "fr": "Keynote – Gaël Varoquaux"
         },
         "speakers": [
           {
-            "name": "Bill Ren",
-            "title": "Chief Open Source Officer, Huawei",
-            "id": "bill-ren"
+            "name": "Gaël Varoquaux",
+            "title": "Chief Science Officer, Probabl",
+            "id": "gal-varoquaux"
           }
         ],
         "date": {
@@ -929,24 +955,35 @@
       },
       {
         "title": {
-          "en": "Morning Coffee — Agentic AI Summit — Day 1 Morning",
-          "zh": "Morning Coffee — Agentic AI Summit — Day 1 Morning",
-          "fr": "Morning Coffee — Agentic AI Summit — Day 1 Morning"
+          "en": "Keynote – AI-Driven Open Source \"Lights-Out Community\"",
+          "zh": "Keynote – AI驱动的开源\u201c无人值守社区\u201d",
+          "fr": "Keynote – Communauté open source « Lights-Out » pilotée par l'IA"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Bill Ren",
+            "title": "Chief Open Source Liaison Officer, Huawei; Board Member, CNCF",
+            "id": "bill-ren"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break"
+        "timeSlot": "10:00 - 10:15",
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
       },
       {
         "title": {
-          "en": "TBD - Agentic AI Summit",
-          "zh": "TBD - Agentic AI Summit",
-          "fr": "TBD - Agentic AI Summit"
+          "en": "Morning Coffee",
+          "zh": "茶歇",
+          "fr": "Pause café"
         },
         "speakers": [],
         "date": {
@@ -954,8 +991,8 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "10:20 - 10:40",
-        "type": "talk"
+        "timeSlot": "10:15 - 10:40",
+        "type": "break"
       },
       {
         "title": {
@@ -1001,13 +1038,23 @@
           },
           {
             "name": "Daniel",
-            "title": "AI Model Business Developer, MiniMax",
+            "title": "AI Evangelist, MiniMax",
             "id": "daniel"
           },
           {
             "name": "Marianna Nezhurina",
             "title": "Researcher, LAION",
             "id": "marianna-nezhurina"
+          },
+          {
+            "name": "Mo Sadek",
+            "title": "Technical Director, Alice",
+            "id": "mo-sadek"
+          },
+          {
+            "name": "Mike Besios",
+            "title": "",
+            "id": "mike-besios"
           }
         ],
         "date": {
@@ -1153,6 +1200,21 @@
             "name": "Alexio Cassani",
             "title": "Co-Founder & CEO, FairMind",
             "id": "alexio-cassani"
+          },
+          {
+            "name": "Tricia Wang",
+            "title": "CEO, Advanced AI Society",
+            "id": "tricia-wang"
+          },
+          {
+            "name": "Susheel Gooly",
+            "title": "Service Line Leader, Hybrid Cloud & Data, IBM Consulting NL",
+            "id": "susheel-gooly"
+          },
+          {
+            "name": "Hao Li",
+            "title": "Haoeasy AI SAS",
+            "id": "hao-li"
           }
         ],
         "date": {
@@ -1188,14 +1250,18 @@
           },
           {
             "name": "Yun Lin",
-            "title": "Researcher, Shanghai Jiaotong University",
+            "title": "Associate Professor, Shanghai Jiao Tong University",
             "id": "yun-lin"
           },
           {
-            "id": "ziyan-wang",
-            "name": "Ziyan Wang",
-            "image": "/images/speakers/better_portrait/wang-ziyan.png",
-            "title": "Directrice d'éducation, NGO UNESCO Avicenne"
+            "name": "Sir Timothy Gowers",
+            "title": "FRS; Fields Medalist",
+            "id": "timothy-gowers"
+          },
+          {
+            "name": "Nowa Sutaka",
+            "title": "CEO, Puddin AI",
+            "id": "nowa-sutaka"
           }
         ],
         "date": {
@@ -1213,7 +1279,7 @@
       },
       {
         "title": {
-          "en": "Keynote – Symposium: Embrace the Ecosystem",
+          "en": "Keynote – Symposium: Embracing the Ecosystem",
           "zh": "Keynote – Symposium：拥抱生态系统",
           "fr": "Keynote – Symposium : Embrasser l'écosystème"
         },
@@ -1326,7 +1392,7 @@
         "speakers": [
           {
             "name": "Daniel",
-            "title": "AI Model Business Developer, Minimax",
+            "title": "AI Evangelist, Minimax",
             "id": "daniel"
           }
         ],
@@ -1345,30 +1411,37 @@
         },
         "speakers": [
           {
-            "name": "Minako Kojima",
-            "title": "Head of Developer Relations, Moonshot AI (Moderator)",
-            "id": "minako-kojima",
-            "image": "/images/speakers/better_portrait/minakokojima.png",
-            "role": "Head of Developer Relations",
-            "org": "Moonshot AI"
-          },
-          {
-            "id": "junyi",
-            "name": "Junyi Zhong",
-            "image": "/images/speakers/better_portrait/junyi.png",
-            "role": "CEO",
-            "org": "INNAIO France"
+            "name": "Alexy Khrabrov",
+            "title": "Founder, CR4AI, Northeastern University (Moderator)",
+            "id": "alexy-khrabrov"
           },
           {
             "id": "remi-louf",
             "name": "Rémi Louf",
             "image": "/images/speakers/better_portrait/remi-louf.png",
-            "title": "CEO, .txt (creator of Outlines)"
+            "title": "CEO, Dottxt (creator of Outlines, 3M+ downloads)"
           },
           {
             "name": "Marc Sanselme",
-            "title": "Founder, Draft'n Run",
+            "title": "Founder, Draft'n Run — open-source AI workflow builder",
             "id": "marc-sanselme"
+          },
+          {
+            "id": "junyi",
+            "name": "Junyi",
+            "image": "/images/speakers/better_portrait/junyi.png",
+            "title": "CEO, INNAIO France"
+          },
+          {
+            "name": "Quentin Feuillade-Montixi",
+            "title": "Founder CEO, WeaveMind",
+            "id": "quentin-feuillade-montixi"
+          },
+          {
+            "name": "Minako Kojima",
+            "title": "Head of Developer Relations, Moonshot AI",
+            "id": "minako-kojima",
+            "image": "/images/speakers/better_portrait/minakokojima.png"
           }
         ],
         "date": {
@@ -1451,14 +1524,14 @@
       },
       {
         "title": {
-          "en": "openEuler AI Exploration: AI Technical Innovation and Practice",
-          "zh": "openEuler AI 探索：AI 技术创新与实践",
-          "fr": "openEuler AI Exploration: AI Technical Innovation and Practice"
+          "en": "openEuler AI Exploration: AI Technical Innovation & SuperPoD OS",
+          "zh": "openEuler AI 探索：AI 技术创新与 SuperPoD OS",
+          "fr": "openEuler AI Exploration: AI Technical Innovation & SuperPoD OS"
         },
         "speakers": [
           {
             "name": "Zhenyu Zheng",
-            "title": "openEuler",
+            "title": "Community Operations Manager, OpenAtom openEuler",
             "id": "zhenyu-zheng"
           }
         ],
@@ -1511,11 +1584,6 @@
             "org": "NVIDIA"
           },
           {
-            "name": "Nicolas Flores-Herr",
-            "title": "Team Lead Foundation Models, Fraunhofer IAIS",
-            "id": "nicolas-flores-herr"
-          },
-          {
             "id": "wendy-seltzer",
             "name": "Wendy Seltzer",
             "image": "/images/speakers/better_portrait/wendy-seltzer.png",
@@ -1554,19 +1622,24 @@
             "id": "mirko-boehm"
           },
           {
-            "name": "Björn Plüster",
-            "title": "Co-Founder & CTO, ellamind",
-            "id": "bjrn-plster"
+            "name": "Nicolas Miailhe",
+            "title": "Co-Founder, AI Safety Connect",
+            "id": "nicolas-miailhe"
           },
           {
-            "name": "Jose Andres Munoz",
-            "title": "Associate Professor, Universidad Politécnica de Madrid",
-            "id": "jose-andres-munoz"
+            "name": "Chao Jia",
+            "title": "",
+            "id": "chao-jia"
           },
           {
-            "name": "Afonso Ferreira",
-            "title": "Researcher, CNRS",
-            "id": "afonso-ferreira"
+            "name": "Igor Schwarzmann",
+            "title": "Principal, Known Unknowns GmbH",
+            "id": "igor-schwarzmann"
+          },
+          {
+            "name": "Slava Tykhonov",
+            "title": "Head of AI, CODATA",
+            "id": "slava-tykhonov"
           }
         ],
         "date": {
@@ -1612,7 +1685,26 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "17:40 - 17:55",
+        "timeSlot": "17:40 - 17:50",
+        "type": "ceremony",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
+      },
+      {
+        "title": {
+          "en": "FlagOS KernelGen 24H Bounty Challenge Awards",
+          "zh": "FlagOS KernelGen 24小时悬赏挑战赛颁奖"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "17:50 - 17:55",
         "type": "ceremony",
         "room": {
           "en": "Master Stage",
@@ -3830,15 +3922,15 @@
     "ws-own-your-data-paris2026": [
       {
         "title": {
-          "en": "Keynote – Gaël Varoquaux",
-          "zh": "Keynote – Gaël Varoquaux",
-          "fr": "Keynote – Gaël Varoquaux"
+          "en": "Keynote – Sir Timothy Gowers",
+          "zh": "Keynote – Sir Timothy Gowers",
+          "fr": "Keynote – Sir Timothy Gowers"
         },
         "speakers": [
           {
-            "name": "Gaël Varoquaux",
-            "title": "Chief Science Officer, Probabl / INRIA",
-            "id": "gal-varoquaux"
+            "name": "Sir Timothy Gowers",
+            "title": "FRS; Fields Medalist",
+            "id": "timothy-gowers"
           }
         ],
         "date": {
@@ -3856,15 +3948,15 @@
       },
       {
         "title": {
-          "en": "Keynote – Bill Ren",
-          "zh": "Keynote – Bill Ren",
-          "fr": "Keynote – Bill Ren"
+          "en": "Keynote – Gaël Varoquaux",
+          "zh": "Keynote – Gaël Varoquaux",
+          "fr": "Keynote – Gaël Varoquaux"
         },
         "speakers": [
           {
-            "name": "Bill Ren",
-            "title": "Chief Open Source Liaison Officer; Board Member, CNCF",
-            "id": "bill-ren"
+            "name": "Gaël Varoquaux",
+            "title": "Chief Science Officer, Probabl",
+            "id": "gal-varoquaux"
           }
         ],
         "date": {
@@ -3882,9 +3974,35 @@
       },
       {
         "title": {
+          "en": "Keynote – AI-Driven Open Source \"Lights-Out Community\"",
+          "zh": "Keynote – AI驱动的开源\u201c无人值守社区\u201d",
+          "fr": "Keynote – Communauté open source « Lights-Out » pilotée par l'IA"
+        },
+        "speakers": [
+          {
+            "name": "Bill Ren",
+            "title": "Chief Open Source Liaison Officer, Huawei; Board Member, CNCF",
+            "id": "bill-ren"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:00 - 10:15",
+        "type": "keynote",
+        "room": {
+          "en": "Master Stage",
+          "zh": "主舞台",
+          "fr": "Scène Principale"
+        }
+      },
+      {
+        "title": {
           "en": "Morning Coffee — Own Your Data Science and AI Workshop",
-          "zh": "Morning Coffee — Own Your Data Science and AI Workshop",
-          "fr": "Morning Coffee — Own Your Data Science and AI Workshop"
+          "zh": "茶歇 — Own Your Data Science and AI Workshop",
+          "fr": "Pause café — Own Your Data Science and AI Workshop"
         },
         "speakers": [],
         "date": {
@@ -3892,7 +4010,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "10:00 - 10:20",
+        "timeSlot": "10:15 - 10:20",
         "type": "break"
       },
       {

@@ -17,7 +17,7 @@
       "id": "ai-generative-app"
     },
     {
-      "name": "Open Source Model",
+      "name": "Open Source Models",
       "id": "open-source-model"
     },
     {
@@ -751,6 +751,258 @@
       "socialLinks": {
         "github": "https://github.com/juntao"
       },
+      "draft": false
+    },
+    {
+      "id": "timothy-gowers",
+      "name": "Sir Timothy Gowers",
+      "bio": "Timothy Gowers is a mathematician whose application of analytic and combinatorial methods to the study of whole numbers has yielded several important discoveries in the field. He has also made valuable contributions to combinatorics and functional analysis by finding new connections between these two areas of mathematics. Awarded the Fields Medal at the age of 34, he also received a knighthood in the 2012 Queen's Birthday Honours List.",
+      "role": "Royal Society Research Professor",
+      "org": "University of Cambridge",
+      "roleOrg": "Royal Society Research Professor, University of Cambridge",
+      "image": "/images/speakers/better_portrait/Timothy-Gowers.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "mo-sadek",
+      "name": "Mo Sadek",
+      "bio": "Mo Sadek is a Technical Director at Alice, where he spends most of his time thinking about how AI systems fail in creative and unfortunate ways. His background runs from pentesting to building security programs at platform scale, with a judgmental cat and a board game losing streak he refuses to acknowledge.",
+      "role": "Technical Director",
+      "org": "Alice",
+      "roleOrg": "Technical Director, Alice",
+      "image": "/images/speakers/better_portrait/1776826905505-mo-sadek.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "Someguynamedmo",
+        "github": "",
+        "linkedin": "LinkedIn.com/in/msadek1",
+        "website": "Blog.makesecurity.fun"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "mike-besios",
+      "name": "Mike Besios",
+      "bio": "",
+      "role": "",
+      "org": "",
+      "roleOrg": "",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "tricia-wang",
+      "name": "Tricia Wang",
+      "bio": "",
+      "role": "CEO",
+      "org": "Advanced AI Society",
+      "roleOrg": "CEO, Advanced AI Society",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "susheel-gooly",
+      "name": "Susheel Gooly",
+      "bio": "",
+      "role": "Service Line Leader, Hybrid Cloud & Data",
+      "org": "IBM Consulting NL",
+      "roleOrg": "Service Line Leader, Hybrid Cloud & Data, IBM Consulting NL",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "hao-li",
+      "name": "Hao Li",
+      "bio": "",
+      "role": "",
+      "org": "Haoeasy AI SAS",
+      "roleOrg": "Haoeasy AI SAS",
+      "image": "/images/speakers/better_portrait/1776759992947-hao-li.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "nowa-sutaka",
+      "name": "Nowa Sutaka",
+      "bio": "CEO of Puddin AI",
+      "role": "CEO",
+      "org": "Puddin AI",
+      "roleOrg": "CEO, Puddin AI",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "@puddinai",
+        "github": "",
+        "linkedin": "www.linkedin.com/in/sutaka",
+        "website": "www.puddin.ai"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "alexy-khrabrov",
+      "name": "Alexy Khrabrov",
+      "bio": "Alexy Khrabrov is the Founder of CR4AI at Northeastern University. He is an open-source science and AI community leader with deep expertise in intelligent agent architectures.",
+      "role": "Founder, CR4AI",
+      "org": "Northeastern University",
+      "roleOrg": "Founder, CR4AI, Northeastern University",
+      "image": "/images/speakers/better_portrait/alexy-khrabrov.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "@chiefscientist",
+        "github": "https://github.com/alexy",
+        "linkedin": "https://linkedin.com/in/chiefscientist",
+        "website": "https://chiefscientist.org"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "quentin-feuillade-montixi",
+      "name": "Quentin Feuillade-Montixi",
+      "bio": "Ex world class AI red teamer and AI safety researcher, now creating a new programming system for the future of intelligent software.",
+      "role": "Founder CEO",
+      "org": "WeaveMind, Inc.",
+      "roleOrg": "Founder CEO, WeaveMind",
+      "image": "/images/speakers/better_portrait/1776751329020-quentin-feuillade-montixi.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/qfeuilla",
+        "linkedin": "https://www.linkedin.com/in/quentin101010",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "nicolas-miailhe",
+      "name": "Nicolas Miailhe",
+      "bio": "Co-Founder of AI Safety Connect, focused on AI safety and governance.",
+      "role": "Co-Founder",
+      "org": "AI Safety Connect",
+      "roleOrg": "Co-Founder, AI Safety Connect",
+      "image": "/images/speakers/better_portrait/1776788160166-nicolas-miailhe.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/nmiailhe/",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "igor-schwarzmann",
+      "name": "Igor Schwarzmann",
+      "bio": "Strategic advisor at the intersection of culture and technology. 20 years of experience across Health, Automotive, Luxury, Media, and Government, working with global technology companies, European multinationals, and institutions in the US, Europe, China, and Singapore. Hosts Follow the Rabbit, a podcast on cultural phenomena. Powered by his own agentic AI infrastructure.",
+      "role": "Principal",
+      "org": "Known Unknowns GmbH",
+      "roleOrg": "Principal, Known Unknowns GmbH",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "slava-tykhonov",
+      "name": "Slava Tykhonov",
+      "bio": "Head of AI at CODATA, working on Semantic Croissant and the Cross-Domain Interoperability Framework (CDIF) for Agentic AI.",
+      "role": "Head of AI",
+      "org": "CODATA",
+      "roleOrg": "Head of AI, CODATA",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/4tykhonov",
+        "github": "https://github.com/4tikhonov",
+        "linkedin": "https://www.linkedin.com/in/vyacheslavtikhonov/",
+        "website": ""
+      },
+      "status": "Accept",
       "draft": false
     }
   ]
