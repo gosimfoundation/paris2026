@@ -12,7 +12,7 @@ type Event = {
   date: string
   timeSlot: string
   type?: string
-  speakers?: { name: string; image?: string; roleOrg: string }[]
+  speakers?: { name: string; image?: string; roleOrg: string; id?: string }[]
   room?: string
 }
 
@@ -45,6 +45,7 @@ export async function getStaticPaths() {
           name: typeof s.name === "string" ? s.name : s.name?.en || "",
           image: s.image,
           roleOrg: typeof s.roleOrg === "string" ? s.roleOrg : s.roleOrg?.fr || s.roleOrg?.en || "",
+          id: s.id,
         })) || [],
         room: typeof event.room === "string" ? event.room : event.room?.fr || event.room?.en || "",
       }
@@ -192,11 +193,11 @@ const eventCategory = eventDetails.type === "keynote" ? "Keynote" : (categoryMap
           <p class="ev-speakers-label">Intervenants</p>
           <div class="ev-speaker-list">
             {eventDetails.speakers.map((speaker) => {
-              const full = speakers.speakers.find((s) => s.name === speaker.name)
+              const full = speakers.speakers.find((s) => s.name === speaker.name) || (speaker.id ? speakers.speakers.find((s) => s.id === speaker.id) : null)
               const workshopCategories = ["ws-future-web","ws-cann","ws-flutter","ws-cangjie","ws-edge-ai","ws-chitu","ws-ai-education","ws-rn","ws-dora","ws-rust","ws-sglang","ws-sglang-paris2026","ws-vllm-paris2026","open-for-sdg","forum-aivision"]
               const isWorkshop = full ? full.tags?.some((t: string) => workshopCategories.includes(t)) : false
               const speakerPath = isWorkshop ? "/fr/workshops/" : "/fr/speakers/"
-              const speakerId = full?.id || speaker.name.toLowerCase().replace(/\s+/g, "-")
+              const speakerId = full?.id || speaker.id || speaker.name.toLowerCase().replace(/\s+/g, "-")
               const img = full?.image || speaker?.image
               return (
                 <a href={`${speakerPath}${speakerId}/`} class="ev-speaker-card">

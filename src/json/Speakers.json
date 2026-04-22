@@ -1004,6 +1004,27 @@
       },
       "status": "Accept",
       "draft": false
+    },
+    {
+      "id": "tianyi-han",
+      "name": "Tianyi Han",
+      "bio": "Tianyi Han is an Architect Solution focused on AI systems, agent governance, and decision-support tooling. His work explores how to make AI-driven systems more controllable, auditable, and reproducible through runtime policy enforcement, traceability, and replay. He is currently building systems that bridge the gap between experimental LLM applications and production-grade AI infrastructure, with a focus on governance, observability, and reliable execution.",
+      "role": "Architect Solution, AI Systems & Agent Governance",
+      "org": "Capgemini",
+      "roleOrg": "Architect Solution, AI Systems & Agent Governance, Capgemini",
+      "image": "/images/speakers/better_portrait/tianyi-han.png",
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/hant916/AILUROS.io",
+        "linkedin": "https://www.linkedin.com/in/tianyi-han-58278844/",
+        "website": "https://www.aixagent.io"
+      },
+      "status": "Accept",
+      "draft": false
     }
   ]
 }

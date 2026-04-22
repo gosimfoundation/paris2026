@@ -2313,7 +2313,9 @@
         "speakers": [
           {
             "name": "Tianyi Han",
-            "title": "Architect Solution, AI Systems & Agent Governance, Capgemini"
+            "title": "Architect Solution, AI Systems & Agent Governance, Capgemini",
+            "id": "tianyi-han",
+            "image": "/images/speakers/better_portrait/tianyi-han.png"
           }
         ],
         "date": {
