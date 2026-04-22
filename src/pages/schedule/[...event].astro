@@ -207,7 +207,7 @@ const eventCategory = (() => {
                     : <div class="ev-speaker-placeholder" />
                   }
                   <div class="ev-speaker-info">
-                    <span class="ev-speaker-name">{speaker.name}</span>
+                    <span class="ev-speaker-name">{full?.name || speaker.name}</span>
                     <span class="ev-speaker-role">{full?.roleOrg || speaker.roleOrg}</span>
                   </div>
                 </a>
