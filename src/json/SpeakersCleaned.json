@@ -164,7 +164,7 @@
     {
       "id": "virgile-batto",
       "name": "Virgile Batto",
-      "bio": "Robot Architect. I optimize,design, and control legged robot",
+      "bio": "Robot Architect specializing in the optimization, design, and control of legged robots.",
       "role": "Embodied Robotics Engineer",
       "org": "Hugging Face",
       "roleOrg": "Embodied Robotics Engineer, Hugging Face",
@@ -715,7 +715,7 @@
     {
       "id": "chao-jia",
       "name": "Chao Jia",
-      "bio": "Chao Jia, Vice President of Technology at ModelBest and Co-founder of the OpenBMB open-source community. He is primarily responsible for organizing the R&D and open-source management of the MiniCPM series of on-device models. Dubbed the \"ModelBest's Little Steel Cannon\" the MiniCPM family—which includes the MiniCPM large language model and he MiniCPM-o omni-modal model—has earned widespread acclaim in the global AI community for its high efficiency, low cost, and ability to \"punch above its weight.\" To date, these projects have amassed over 30,000 stars on GitHub and exceeded 24 million downloads worldwide, establishing themselves as benchmark works in the field of on-device AI.",
+      "bio": "Chao Jia, Vice President of Technology at ModelBest and Co-founder of the OpenBMB open-source community. He is primarily responsible for organizing the R&D and open-source management of the MiniCPM series of on-device models. Dubbed the \"ModelBest's Little Steel Cannon\" the MiniCPM family—which includes the MiniCPM large language model and the MiniCPM-o omni-modal model—has earned widespread acclaim in the global AI community for its high efficiency, low cost, and ability to \"punch above its weight.\" To date, these projects have amassed over 30,000 stars on GitHub and exceeded 24 million downloads worldwide, establishing themselves as benchmark works in the field of on-device AI.",
       "role": "VP of Technology",
       "org": "ModelBest",
       "roleOrg": "VP of Technology, ModelBest",
@@ -779,7 +779,7 @@
     {
       "id": "jeremy-laville",
       "name": "Jeremy Laville",
-      "bio": "Mechanical engineer, with strong passion for robotic. Worked for Aldebaran on Pepper robot, and more recently on Reachy 2 for Pollen Robotics. I also designed Amazing Hand open source project.",
+      "bio": "Mechanical engineer with a strong passion for robotics. Worked for Aldebaran on the Pepper robot, and more recently on Reachy 2 for Pollen Robotics. Also designed the Amazing Hand open-source project.",
       "role": "R&D Engineer",
       "org": "Pollen Robotics",
       "roleOrg": "R&D Engineer, Pollen Robotics",
