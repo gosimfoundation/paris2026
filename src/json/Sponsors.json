@@ -125,19 +125,26 @@
     },
     {
       "category": "supporting-organizations",
-      "image": "olares.png",
-      "url": "https://olares.com"
-    },
-    {
-      "category": "supporting-organizations",
       "image": "ouicrec.png",
       "url": "http://www.ouicrea.com"
     },
-    {
+        {
       "category": "supporting-organizations",
       "image": "quanfa.png",
       "url": ""
     },
+        {
+      "category": "supporting-organizations",
+      "image": "zhongfa.png",
+      "url": ""
+    },
+    {
+      "category": "supporting-organizations",
+      "image": "olares.png",
+      "url": "https://olares.com"
+    },
+
+
     {
       "category": "supporting-organizations",
       "image": "second-state.png",
@@ -153,11 +160,7 @@
       "image": "vllm.png",
       "url": "https://vllm.ai"
     },
-    {
-      "category": "supporting-organizations",
-      "image": "zhongfa.png",
-      "url": ""
-    },
+
     {
       "category": "supporting-organizations",
       "image": "huggingface.png",
@@ -183,6 +186,16 @@
       "category": "supporting-organizations",
       "image": "ai-by-the-bay.png",
       "url": "https://bythebay.io"
+    },
+        {
+      "category": "supporting-organizations",
+      "image": "InnAIO.png",
+      "url": "https://www.innaio.com"
+    },
+        {
+      "category": "supporting-organizations",
+      "image": "jumeau-ai.png",
+      "url": "https://www.jumeau.ai"
     },
     {
       "category": "speakers-affiliated",
