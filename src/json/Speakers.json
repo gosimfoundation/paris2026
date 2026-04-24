@@ -1067,6 +1067,27 @@
       },
       "status": "Accept",
       "draft": false
+    },
+    {
+      "id": "joanna-kramer",
+      "name": "Joanna Kramer",
+      "bio": "Currently based in Paris, Joanna's career has blended industry and research. After earning her MSc from University of Oxford's Internet Institute, where she studied the breakdown of digital platforms and the creation of digital 'ruins,' she co-founded WISE with Michelle Nie and Nitya Kuthiala to build community and foster connections among women working across AI safety, ethics, and governance. One year later, the network has expanded to 5 WISE chapters across Brussels, Delhi, London, Paris, and Washington, D.C. In addition, Joanna leads market research and technical marketing initiatives at an applied AI research lab.",
+      "role": "Co-Founder",
+      "org": "WISE (Women in Safety & Ethics)",
+      "roleOrg": "Co-Founder, WISE (Women in Safety & Ethics)",
+      "image": "/images/speakers/better_portrait/1776976015288-joanna-kramer.png",
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     }
   ]
 }

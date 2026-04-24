@@ -4481,6 +4481,38 @@
         },
         "timeSlot": "16:20 - 16:40",
         "type": "talk"
+      },
+      {
+        "title": {
+          "en": "What Open Source Communities Can Do to Promote Responsible AI",
+          "zh": "What Open Source Communities Can Do to Promote Responsible AI",
+          "fr": "What Open Source Communities Can Do to Promote Responsible AI"
+        },
+        "speakers": [
+          {
+            "name": "Joanna Kramer",
+            "title": "Co-Founder, WISE (Women in Safety & Ethics)",
+            "id": "joanna-kramer",
+            "image": "/images/speakers/better_portrait/1776976015288-joanna-kramer.png"
+          },
+          {
+            "name": "Marie Sacksick",
+            "title": "Probabl",
+            "id": "marie-sacksick"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "16:40 - 17:00",
+        "type": "talk",
+        "content": {
+          "en": "A fireside chat about responsible open-source AI, from fostering diversity within open-source communities to cutting-edge approaches and open-source tools that can be leveraged to facilitate AI fairness and security. The goal is for each attendee to leave thinking about one tangible action they could realistically take to make their open-source communities more inclusive and welcoming for underrepresented newcomers.",
+          "zh": "",
+          "fr": ""
+        }
       }
     ],
     "ws-agentic-app": [
