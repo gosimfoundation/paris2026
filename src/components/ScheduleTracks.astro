@@ -37,6 +37,8 @@ const i18n = {
     sessionsByVenue: "Sessions by Room",
     floorplan: "Floor Plan",
     allRooms: "All Rooms",
+    gridLabel: "Room × Time",
+    gridSub: "Grid View",
     keynotesLabel: "★ Keynotes ★",
     tbd: "TBD",
     keynotesTbd: "Keynote speakers will be announced soon.",
@@ -51,16 +53,18 @@ const i18n = {
     typeLabels: { keynote: "Keynote", talk: "Talk", panel: "Panel", break: "Break", workshop: "Workshop", hackathon: "Hackathon" },
   },
   zh: {
-    conferenceTracks: "Conference Tracks",
+    conferenceTracks: "会议议程",
     hackathons: "Spotlight & Hackathons",
-    workshops: "Workshops",
+    workshops: "工作坊",
     overview: "概览",
-    allTracks: "All Tracks",
-    venue: "场地",
+    allTracks: "所有议程",
+    venue: "场地 – STATION F",
     venueMaps: "Our Spaces",
     sessionsByVenue: "按房间查看",
     floorplan: "平面图",
     allRooms: "所有房间",
+    gridLabel: "房间 × 时间",
+    gridSub: "网格视图",
     keynotesLabel: "★ Keynotes ★",
     tbd: "TBD",
     keynotesTbd: "主旨演讲嘉宾将很快公布。",
@@ -70,21 +74,23 @@ const i18n = {
     viewDaySessions: (day: string) => `→ 查看 ${day} 的会议`,
     disclaimer: "日程安排可能有所变动。",
     dayOnly: (day: string) => `仅 ${day}`,
-    tracks: "Tracks",
+    tracks: "议程",
     sessionCount: (n: number) => `${n} 场演讲`,
-    typeLabels: { keynote: "Keynote", talk: "演讲", panel: "圆桌", break: "休息", workshop: "Workshop", hackathon: "Hackathon" },
+    typeLabels: { keynote: "Keynote", talk: "演讲", panel: "圆桌", break: "休息", workshop: "工作坊", hackathon: "Hackathon" },
   },
   fr: {
-    conferenceTracks: "Conference Tracks",
+    conferenceTracks: "Conférences",
     hackathons: "Spotlight & Hackathons",
-    workshops: "Workshops",
+    workshops: "Ateliers",
     overview: "Vue d'ensemble",
-    allTracks: "All Tracks",
-    venue: "Lieu",
-    venueMaps: "Our Spaces",
-    sessionsByVenue: "Sessions par Room",
+    allTracks: "Tous les tracks",
+    venue: "Lieu – STATION F",
+    venueMaps: "Nos espaces",
+    sessionsByVenue: "Sessions par salle",
     floorplan: "Plan",
     allRooms: "Toutes les salles",
+    gridLabel: "Salle × Horaire",
+    gridSub: "Vue grille",
     keynotesLabel: "★ Keynotes ★",
     tbd: "TBD",
     keynotesTbd: "Les conférenciers seront annoncés prochainement.",
@@ -96,7 +102,7 @@ const i18n = {
     dayOnly: (day: string) => `${day} uniquement`,
     tracks: "Tracks",
     sessionCount: (n: number) => `${n} session${n !== 1 ? "s" : ""}`,
-    typeLabels: { keynote: "Keynote", talk: "Conférence", panel: "Table ronde", break: "Pause", workshop: "Workshop", hackathon: "Hackathon" },
+    typeLabels: { keynote: "Keynote", talk: "Conférence", panel: "Table ronde", break: "Pause", workshop: "Atelier", hackathon: "Hackathon" },
   },
 }
 const t = i18n[lang] || i18n.en
@@ -263,6 +269,110 @@ const allRooms = Array.from(roomSessionsMap.entries()).map(([key, data]) => ({
   days: Array.from(data.sessions.keys()).sort(),
 }))
 const firstRoom = allRooms[0]?.key || ""
+
+// ── Grid (Room × Time) view data ──
+const GRID_ROOM_ORDER = ["Master Stage", "Open Stage", "Junior Stage", "Central Room", "Founders Cafe"]
+const gridRooms = GRID_ROOM_ORDER
+const GRID_SLOT_MINUTES = 5
+
+function timeToMinutes(t: string): number {
+  const [h, m] = t.split(":").map(Number)
+  return h * 60 + m
+}
+function minutesToTime(m: number): string {
+  const hh = String(Math.floor(m / 60)).padStart(2, "0")
+  const mm = String(m % 60).padStart(2, "0")
+  return `${hh}:${mm}`
+}
+
+// Map all categories to their default room (for grid view, we need workshops too)
+const trackRoomMap = new Map<string, string>()
+for (const cat of allCategories) {
+  const roomName = en(cat.room)
+  if (roomName) trackRoomMap.set(cat.id, roomName)
+}
+
+interface GridCell { session: any; trackId: string; trackName: string; trackColor: string; rowSpan: number; slug: string }
+interface GridDay {
+  dayEn: string
+  dayLabel: string
+  timeSlots: string[]
+  placed: Map<string, Map<string, GridCell>>
+  occupied: Map<string, Set<string>>
+}
+
+const gridDays: GridDay[] = days.map(d => {
+  const dayEn = en(d.date)
+  const dayLabel = loc(d.date)
+  let minTime = 24 * 60, maxTime = 0
+
+  type SessionInfo = { session: any; roomKey: string; startMin: number; endMin: number; trackId: string; trackName: string; trackColor: string }
+  const allGridSessions: SessionInfo[] = []
+
+  // All categories — sessions go to their category's designated room
+  for (const cat of allCategories) {
+    const catRoom = trackRoomMap.get(cat.id)
+    if (!catRoom) continue
+    const catSessions = (scheduleData.sessions as Record<string, any[]>)[cat.id] || []
+    for (const s of catSessions) {
+      if (!s.timeSlot) continue
+      if (en(s.date) !== dayEn) continue
+      // Keynotes/ceremonies use their own room field (Master Stage); regular sessions use the track's room
+      const isSpecial = s.type === "keynote" || s.type === "ceremony"
+      const roomKey = isSpecial && s.room ? en(s.room) : catRoom
+      if (!GRID_ROOM_ORDER.includes(roomKey)) continue
+      const parts = s.timeSlot.split(" - ").map((t: string) => t.trim())
+      if (parts.length !== 2) continue
+      const startMin = timeToMinutes(parts[0])
+      const endMin = timeToMinutes(parts[1])
+      if (startMin < minTime) minTime = startMin
+      if (endMin > maxTime) maxTime = endMin
+      allGridSessions.push({
+        session: { ...s, _trackId: cat.id, _trackName: en(cat.name), _trackColor: trackColor(cat.id) },
+        roomKey, startMin, endMin,
+        trackId: cat.id, trackName: en(cat.name), trackColor: trackColor(cat.id),
+      })
+    }
+  }
+
+  // Snap to 15-min grid for display boundaries
+  minTime = Math.floor(minTime / 15) * 15
+  maxTime = Math.ceil(maxTime / 15) * 15
+
+  const timeSlots: string[] = []
+  for (let t = minTime; t < maxTime; t += GRID_SLOT_MINUTES) {
+    timeSlots.push(minutesToTime(t))
+  }
+
+  const placed = new Map<string, Map<string, GridCell>>()
+  const occupied = new Map<string, Set<string>>()
+  for (const roomKey of gridRooms) {
+    placed.set(roomKey, new Map())
+    occupied.set(roomKey, new Set())
+  }
+
+  // Deduplicate keynotes/ceremonies (same title+time on Master Stage from multiple tracks)
+  const seenKeys = new Set<string>()
+  for (const { session, roomKey, startMin, endMin, trackId, trackName, trackColor: tc } of allGridSessions) {
+    const dedupKey = `${roomKey}||${session.timeSlot}||${en(session.title)}`
+    if (seenKeys.has(dedupKey)) continue
+    seenKeys.add(dedupKey)
+    const startSlot = minutesToTime(Math.floor(startMin / GRID_SLOT_MINUTES) * GRID_SLOT_MINUTES)
+    const durationSlots = Math.max(1, Math.ceil((endMin - startMin) / GRID_SLOT_MINUTES))
+    const slug = createSlug(en(session.title))
+    if (placed.get(roomKey)?.has(startSlot)) continue
+    if (occupied.get(roomKey)?.has(startSlot)) continue
+    placed.get(roomKey)!.set(startSlot, {
+      session, trackId, trackName, trackColor: tc, rowSpan: durationSlots, slug,
+    })
+    const startIdx = timeSlots.indexOf(startSlot)
+    for (let i = 1; i < durationSlots && startIdx + i < timeSlots.length; i++) {
+      occupied.get(roomKey)!.add(timeSlots[startIdx + i])
+    }
+  }
+
+  return { dayEn, dayLabel, timeSlots, placed, occupied }
+})
 ---
 
 <section class="sched-section" data-bg-section="lightgray" data-theme-section="light">
@@ -273,13 +383,17 @@ const firstRoom = allRooms[0]?.key || ""
       <div class="day-tabs-track">
         {days.map((day, i) => (
           <button class={`sched-day-btn${i === 0 ? " active" : ""}`} data-day={en(day.date)}>
-            <span class="day-label">{en(day.title)}</span>
-            <span class="day-date">{en(day.date)}</span>
+            <span class="day-label">{loc(day.title)}</span>
+            <span class="day-date">{loc(day.date)}</span>
           </button>
         ))}
         <button class="sched-day-btn" data-view="overview">
           <span class="day-label">{t.overview}</span>
           <span class="day-date">{t.allTracks}</span>
+        </button>
+        <button class="sched-day-btn" data-view="grid">
+          <span class="day-label">{t.gridLabel}</span>
+          <span class="day-date">{t.gridSub}</span>
         </button>
         <!-- Sessions by Room tab hidden for now
         <button class="sched-day-btn" data-view="rooms">
@@ -314,7 +428,7 @@ const firstRoom = allRooms[0]?.key || ""
               >
                 <span class="track-dot"></span>
                 <span class="track-info">
-                  <span class="track-name">{en(cat.name)}</span>
+                  <span class="track-name">{loc(cat.name)}</span>
                   {cat.room && <span class="track-room">{en(cat.room)}</span>}
                   {dayBadge && <span class="track-day-badge">{t.dayOnly(dayBadge)}</span>}
                 </span>
@@ -337,7 +451,7 @@ const firstRoom = allRooms[0]?.key || ""
             >
               <span class="track-dot"></span>
               <span class="track-info">
-                <span class="track-name">{en(cat.name)}</span>
+                <span class="track-name">{loc(cat.name)}</span>
                 {cat.room && <span class="track-room">{en(cat.room)}</span>}
                 {dayBadge && <span class="track-day-badge">{t.dayOnly(dayBadge)}</span>}
               </span>
@@ -361,7 +475,7 @@ const firstRoom = allRooms[0]?.key || ""
                 >
                   <span class="track-dot"></span>
                   <span class="track-info">
-                    <span class="track-name">{en(cat.name)}</span>
+                    <span class="track-name">{loc(cat.name)}</span>
                     {cat.room && <span class="track-room">{en(cat.room)}</span>}
                     {dayBadge && <span class="track-day-badge">{t.dayOnly(dayBadge)}</span>}
                   </span>
@@ -386,7 +500,7 @@ const firstRoom = allRooms[0]?.key || ""
                   data-track={cat.id}
                   style={`--tc: ${trackColor(cat.id)}`}
                 >
-                  {en(cat.name)}
+                  {loc(cat.name)}
                 </button>
               ))}
             </div>
@@ -416,7 +530,7 @@ const firstRoom = allRooms[0]?.key || ""
               >
                 <div class="panel-header" style={`border-left-color: ${color}`}>
                   <div class="panel-header-left">
-                    <h2 class="panel-title">{en(cat.name)}</h2>
+                    <h2 class="panel-title">{loc(cat.name)}</h2>
                     {cat.room && <span class="panel-room">{en(cat.room)}</span>}
                   </div>
                   <span class="panel-count">{t.sessionCount(sessions.filter(s => s.type !== "break").length)}</span>
@@ -538,7 +652,7 @@ const firstRoom = allRooms[0]?.key || ""
                             </span>
                           </div>
                           <div class="session-right">
-                            <h3 class="session-title">{en(session.title)}</h3>
+                            <h3 class="session-title">{loc(session.title)}</h3>
                             {hasContent && (
                               <div class="speaker-list">
                                 {session.speakers.map((sp: any) => (
@@ -574,7 +688,7 @@ const firstRoom = allRooms[0]?.key || ""
                             )}
                           </div>
                           <div class="session-right">
-                            <h3 class="session-title">{en(cer.title)}</h3>
+                            <h3 class="session-title">{loc(cer.title)}</h3>
                             {cer.speakers && cer.speakers.length > 0 && (
                               <div class="speaker-list">
                                 {cer.speakers.map((sp: any) => (
@@ -623,7 +737,7 @@ const firstRoom = allRooms[0]?.key || ""
                             </span>
                           </div>
                           <div class="session-right">
-                            <h3 class="session-title">{en(session.title)}</h3>
+                            <h3 class="session-title">{loc(session.title)}</h3>
                             {hasContent && (
                               <div class="speaker-list">
                                 {session.speakers.map((sp: any) => (
@@ -662,7 +776,7 @@ const firstRoom = allRooms[0]?.key || ""
       <div class="room-day-nav">
         {days.map((day, i) => (
           <button class={`room-day-btn${i === 0 ? " active" : ""}`} data-room-day={en(day.date)}>
-            {en(day.date)}
+            {loc(day.date)}
           </button>
         ))}
       </div>
@@ -758,7 +872,7 @@ const firstRoom = allRooms[0]?.key || ""
                               </span>
                             </div>
                             <div class="session-right">
-                              <h3 class="session-title">{en(session.title)}</h3>
+                              <h3 class="session-title">{loc(session.title)}</h3>
                               {session.speakers && session.speakers.length > 0 && (
                                 <div class="speaker-list">
                                   {session.speakers.map((sp: any) => (
@@ -789,6 +903,90 @@ const firstRoom = allRooms[0]?.key || ""
     </div>
   </div>
 
+  <!-- Grid (Room × Time) panel -->
+  <div class="grid-panel" style="display:none">
+    <div class="grid-day-tabs">
+      {gridDays.map((gd, di) => (
+        <button class={`grid-day-btn${di === 0 ? " active" : ""}`} data-grid-day={gd.dayEn}>{gd.dayLabel}</button>
+      ))}
+    </div>
+    {gridDays.map((gd, di) => (
+      <div class={`grid-table-wrap${di === 0 ? "" : " hidden"}`} data-grid-panel={gd.dayEn}>
+        <div class="grid-scroll">
+          <div class="tg" style={`--tg-rows: ${gd.timeSlots.length}; height: ${40 + gd.timeSlots.length * 28}px`}>
+            {/* Sticky header row */}
+            <div class="tg-hdr tg-corner">TIME</div>
+            {gridRooms.map((room, ci) => (
+              <div class="tg-hdr" style={`grid-column: ${ci + 2}`}>{room}</div>
+            ))}
+
+            {/* Time labels */}
+            {gd.timeSlots.map((slot, ri) => {
+              const m = parseInt(slot.split(":")[1])
+              const is15 = m % 15 === 0
+              return (
+                <div class={`tg-time${is15 ? "" : " tg-time-minor"}`} style={`grid-row: ${ri + 2}`}>
+                  {is15 ? slot : ""}
+                </div>
+              )
+            })}
+
+            {/* Horizontal grid lines (background layer) */}
+            {gd.timeSlots.map((slot, ri) => {
+              const m = parseInt(slot.split(":")[1])
+              const is15 = m % 15 === 0
+              return (
+                <div
+                  class={`tg-ruler${is15 ? " tg-ruler-major" : ""}`}
+                  style={`grid-row: ${ri + 2}; grid-column: 2 / -1`}
+                />
+              )
+            })}
+
+            {/* Session cards */}
+            {gridRooms.map((roomKey, ci) => {
+              const roomPlaced = gd.placed.get(roomKey)
+              if (!roomPlaced) return null
+              return Array.from(roomPlaced.entries()).map(([slotTime, cell]) => {
+                const ri = gd.timeSlots.indexOf(slotTime)
+                if (ri < 0) return null
+                const isBreak = cell.session.type === "break"
+                const isKeynote = cell.session.type === "keynote"
+                const isCeremony = cell.session.type === "ceremony"
+                const isSpecial = isKeynote || isCeremony
+                const typeLabel = isKeynote ? "★ KEYNOTE ★" : isCeremony ? "★ CEREMONY ★" : cell.trackName
+                const labelColor = isSpecial ? "#92600a" : cell.trackColor
+                const borderColor = isSpecial ? "#c9a227" : cell.trackColor
+                const schedBase = lang === "en" ? "/schedule" : `/${lang}/schedule`
+                return (
+                  <div class="tg-cell" style={`grid-row: ${ri + 2} / span ${cell.rowSpan}; grid-column: ${ci + 2}`}>
+                    {isBreak ? (
+                      <div class="grid-card grid-card-break">
+                        <div class="grid-card-title">{loc(cell.session.title)}</div>
+                      </div>
+                    ) : (
+                      <a class={`grid-card grid-card-link${isSpecial ? " grid-card-keynote" : ""}`} href={`${schedBase}/${cell.slug}/`} style={!isSpecial ? `border-left-color: ${borderColor}` : ""}>
+                        <div class="grid-card-title">{loc(cell.session.title)}</div>
+                        {cell.session.speakers?.length > 0 && (
+                          <div class="grid-card-speakers">
+                            {cell.session.speakers.map((sp: any) => typeof sp.name === 'string' ? sp.name : sp.name?.en || '').join("; ")}
+                          </div>
+                        )}
+                        <div class="grid-card-track" style={`color: ${labelColor}`}>
+                          {typeLabel}
+                        </div>
+                      </a>
+                    )}
+                  </div>
+                )
+              })
+            })}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
   <!-- Venue floorplan panel (hidden by default) -->
   <div class="venue-panel" style="display:none">
     <InteractiveFloorplan lang={lang} />
@@ -805,16 +1003,31 @@ const firstRoom = allRooms[0]?.key || ""
   const schedContainer = document.querySelector(".sched-container")
   const overviewPanel = document.querySelector(".overview-panel")
   const roomsPanel = document.querySelector(".rooms-panel")
+  const gridPanel = document.querySelector(".grid-panel")
   const venuePanel = document.querySelector(".venue-panel")
   const overviewBtn = document.querySelector("[data-view='overview']")
   const roomsBtn = document.querySelector("[data-view='rooms']")
+  const gridBtn = document.querySelector("[data-view='grid']")
   const venueBtn = document.querySelector("[data-view='venue']")
 
   function hideAllPanels() {
     schedContainer.style.display = "none"
     overviewPanel.style.display = "none"
     roomsPanel.style.display = "none"
+    if (gridPanel) gridPanel.style.display = "none"
     venuePanel.style.display = "none"
+  }
+
+  // Tell Lenis to recalculate page height after view switches
+  function refreshScroll() {
+    requestAnimationFrame(() => {
+      if (typeof scroll !== "undefined" && scroll && scroll.resize) {
+        scroll.resize()
+      }
+      if (typeof ScrollTrigger !== "undefined" && ScrollTrigger.refresh) {
+        ScrollTrigger.refresh()
+      }
+    })
   }
 
   function setAllTabsInactive() {
@@ -826,6 +1039,7 @@ const firstRoom = allRooms[0]?.key || ""
     overviewBtn.classList.add("active")
     hideAllPanels()
     overviewPanel.style.display = "block"
+    refreshScroll()
   }
 
   function showRooms() {
@@ -834,6 +1048,15 @@ const firstRoom = allRooms[0]?.key || ""
     hideAllPanels()
     roomsPanel.style.display = "block"
     showRoomPanel(activeRoomDay, activeRoom)
+    refreshScroll()
+  }
+
+  function showGrid() {
+    setAllTabsInactive()
+    gridBtn.classList.add("active")
+    hideAllPanels()
+    gridPanel.style.display = "block"
+    refreshScroll()
   }
 
   function showVenue() {
@@ -841,6 +1064,7 @@ const firstRoom = allRooms[0]?.key || ""
     venueBtn.classList.add("active")
     hideAllPanels()
     venuePanel.style.display = "block"
+    refreshScroll()
   }
 
   function showRoomPanel(day, room) {
@@ -888,11 +1112,25 @@ const firstRoom = allRooms[0]?.key || ""
       const match = panel.dataset.panelDay === day && panel.dataset.panelTrack === track
       panel.style.display = match ? "block" : "none"
     })
+    refreshScroll()
   }
 
   overviewBtn.addEventListener("click", showOverview)
   if (roomsBtn) roomsBtn.addEventListener("click", showRooms)
+  if (gridBtn) gridBtn.addEventListener("click", showGrid)
   venueBtn.addEventListener("click", showVenue)
+
+  // Grid day tab switching
+  document.querySelectorAll("[data-grid-day]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("[data-grid-day]").forEach((b) => b.classList.remove("active"))
+      btn.classList.add("active")
+      document.querySelectorAll("[data-grid-panel]").forEach((p) => {
+        p.classList.toggle("hidden", p.dataset.gridPanel !== btn.dataset.gridDay)
+      })
+      refreshScroll()
+    })
+  })
 
   document.querySelectorAll("[data-day]").forEach((btn) => {
     btn.addEventListener("click", () => show(btn.dataset.day, activeTrack))
@@ -944,6 +1182,8 @@ const firstRoom = allRooms[0]?.key || ""
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .day-tabs-track {
@@ -952,6 +1192,9 @@ const firstRoom = allRooms[0]?.key || ""
     background: rgba(0, 0, 0, 0.07);
     border-radius: 14px;
     padding: 0.35rem;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
 
@@ -1481,22 +1724,25 @@ const firstRoom = allRooms[0]?.key || ""
     }
   }
 
+  @media (max-width: 900px) {
+    /* Hide grid view tab on mobile — 5-column grid is not useful */
+    .sched-day-btn[data-view="grid"] {
+      display: none;
+    }
+  }
+
   @media (max-width: 480px) {
     .sched-day-btn {
-      padding: 0.6rem 1rem;
+      padding: 0.5rem 0.8rem;
+      min-width: unset;
     }
 
     .day-date {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
 
     .day-label {
       display: none;
-    }
-
-    .sched-day-btn {
-      min-width: unset;
-      padding: 0.6rem 1.5rem;
     }
   }
 
@@ -1647,5 +1893,182 @@ const firstRoom = allRooms[0]?.key || ""
     .mobile-room-scroll {
       display: block;
     }
+  }
+
+  /* ── Grid (Room × Time) view — CSS Grid with fixed row heights ── */
+  .grid-panel {
+    padding: 1.5rem 0;
+  }
+  .grid-day-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0 1.5rem;
+  }
+  .grid-day-btn {
+    padding: 0.4rem 1.2rem;
+    border-radius: 6px;
+    border: 1.5px solid #ccc;
+    background: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .grid-day-btn.active {
+    background: #0f172a;
+    color: #fff;
+    border-color: #0f172a;
+  }
+  .grid-scroll {
+    padding: 0 1rem 4rem;
+  }
+  .grid-table-wrap.hidden {
+    display: none;
+  }
+
+  /* CSS Grid layout: fixed row heights, no content stretching */
+  .tg {
+    display: grid;
+    grid-template-columns: 60px repeat(5, 1fr);
+    grid-template-rows: auto repeat(var(--tg-rows), 28px);
+    width: 100%;
+    min-width: 0;
+    position: relative;
+  }
+
+  /* Sticky header cells */
+  .tg-hdr {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background: #0f172a;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.6rem 0.5rem;
+    text-align: center;
+    grid-row: 1;
+  }
+  .tg-corner {
+    grid-column: 1;
+    text-align: right;
+    padding-right: 0.75rem;
+  }
+
+  /* Time labels (left column) */
+  .tg-time {
+    grid-column: 1;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(0,0,0,0.45);
+    text-align: right;
+    padding-right: 0.6rem;
+    border-right: 2px solid rgba(0,0,0,0.08);
+    font-variant-numeric: tabular-nums;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    background: #fff;
+    z-index: 1;
+  }
+  .tg-time-minor {
+    border-top-color: transparent;
+  }
+
+  /* Horizontal grid lines (background layer) */
+  .tg-ruler {
+    border-top: 1px dotted rgba(0,0,0,0.06);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .tg-ruler-major {
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+
+  /* Session card cell — fixed height from grid, content clips gracefully */
+  .tg-cell {
+    padding: 0 2px;
+    overflow: hidden;
+    z-index: 2;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  /* Card styles */
+  .grid-card {
+    border-radius: 6px;
+    padding: 0.2rem 0.4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .grid-card-link {
+    text-decoration: none;
+    color: inherit;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #94a3b8;
+    cursor: pointer;
+  }
+  .grid-card-link:hover {
+    background: #e2e8f0;
+    border-color: #cbd5e1;
+  }
+  .grid-card-keynote {
+    background: #fdf8ec;
+    border: 1.5px solid #c9a227;
+    border-left: 3px solid #c9a227;
+  }
+  .grid-card-keynote:hover {
+    background: #faf0d4;
+    border-color: #b8941f;
+  }
+  .grid-card-keynote .grid-card-title {
+    color: #92600a;
+  }
+  .grid-card-break {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-card-title {
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1.2;
+    overflow: hidden;
+  }
+  .grid-card-break .grid-card-title {
+    font-weight: 500;
+    color: #94a3b8;
+    font-size: 0.65rem;
+    -webkit-line-clamp: 1;
+  }
+  .grid-card-speakers {
+    font-size: 0.6rem;
+    color: rgba(0,0,0,0.5);
+    line-height: 1.25;
+    margin-top: 0.15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .grid-card-track {
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding-top: 0.15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 </style>

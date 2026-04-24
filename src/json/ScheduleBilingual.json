@@ -3,7 +3,8 @@
     {
       "date": {
         "en": "May 5",
-        "zh": "5月5日"
+        "zh": "5月5日",
+        "fr": "5 mai"
       },
       "title": {
         "en": "Day 1",
@@ -19,7 +20,8 @@
     {
       "date": {
         "en": "May 6",
-        "zh": "5月6日"
+        "zh": "5月6日",
+        "fr": "6 mai"
       },
       "title": {
         "en": "Day 2",
@@ -496,9 +498,9 @@
       },
       {
         "title": {
-          "en": "Keynote – Gaël Varoquaux",
-          "zh": "Keynote – Gaël Varoquaux",
-          "fr": "Keynote – Gaël Varoquaux"
+          "en": "Keynote – Data Science Is Not AI, but It Is Its Genesis, and Its New Frontier",
+          "zh": "Keynote – 数据科学不是AI，但它是AI的起源，也是AI的新前沿",
+          "fr": "Keynote – La data science n'est pas l'IA, mais elle en est la genèse et sa nouvelle frontière"
         },
         "speakers": [
           {
@@ -523,7 +525,7 @@
       {
         "title": {
           "en": "Keynote – AI-Driven Open Source \"Lights-Out Community\"",
-          "zh": "Keynote – AI驱动的开源\u201c无人值守社区\u201d",
+          "zh": "Keynote – AI驱动的开源“无人值守社区”",
           "fr": "Keynote – Communauté open source « Lights-Out » pilotée par l'IA"
         },
         "speakers": [
@@ -929,9 +931,9 @@
       },
       {
         "title": {
-          "en": "Keynote – Gaël Varoquaux",
-          "zh": "Keynote – Gaël Varoquaux",
-          "fr": "Keynote – Gaël Varoquaux"
+          "en": "Keynote – Data Science Is Not AI, but It Is Its Genesis, and Its New Frontier",
+          "zh": "Keynote – 数据科学不是AI，但它是AI的起源，也是AI的新前沿",
+          "fr": "Keynote – La data science n'est pas l'IA, mais elle en est la genèse et sa nouvelle frontière"
         },
         "speakers": [
           {
@@ -956,7 +958,7 @@
       {
         "title": {
           "en": "Keynote – AI-Driven Open Source \"Lights-Out Community\"",
-          "zh": "Keynote – AI驱动的开源\u201c无人值守社区\u201d",
+          "zh": "Keynote – AI驱动的开源“无人值守社区”",
           "fr": "Keynote – Communauté open source « Lights-Out » pilotée par l'IA"
         },
         "speakers": [
@@ -997,7 +999,8 @@
       {
         "title": {
           "en": "Tile Programming for GPUs",
-          "zh": "GPU 的 Tile 编程"
+          "zh": "GPU 的 Tile 编程",
+          "fr": "Tile Programming for GPUs"
         },
         "content": {
           "en": "Parallel programming can be intimidating, but doesn't need to be! There's a new paradigm for parallel programming that's newcomer-friendly, highly productive, and performant: tile-based programming models.\n\nIn this example-driven talk, we'll introduce you to tile-based programming in Python, C++, and Rust. We'll present cuTile, NVIDIA's new tile programming stack and Tile IR, the new compiler stack that it is built with. You'll learn all about new features of CUDA Tile that have recently been announced, including multi-GPU communication, interoperability with traditional CUDA SIMT, and support for more diverse kernels like convolutions and stencils. We'll compare and contrast tile-based models with traditional parallel programming models. You'll see examples from a variety of domains, including HPC stencils, a sparse matrix vector (SPMV) and conjugate gradient (CG) solver, and AI models from TileGym.\n\nBy the end of the session, you'll understand how tile programming enables more intuitive, portable, and efficient development of high-performance, data-parallel applications, for HPC, data science, and machine learning.",
@@ -1022,7 +1025,8 @@
       {
         "title": {
           "en": "Panel: The Agentic AI Moment — From Models to Intelligent Systems",
-          "zh": "圆桌论坛：Agentic AI 时刻——从模型到智能系统"
+          "zh": "圆桌论坛：Agentic AI 时刻——从模型到智能系统",
+          "fr": "Panel : Le moment de l'IA agentique — Des modèles aux systèmes intelligents"
         },
         "speakers": [
           {
@@ -1088,7 +1092,8 @@
       {
         "title": {
           "en": "Agent Reshapes the New Paradigm of the Software Industry",
-          "zh": "Agent 重塑软件行业新范式"
+          "zh": "Agent 重塑软件行业新范式",
+          "fr": "L'agent redéfinit le nouveau paradigme de l'industrie du logiciel"
         },
         "content": {
           "en": "Driven by AI Agent, the entire software industry is undergoing a fundamental paradigm shift. From the traditional \"tool rental\" SaaS model to the new \"result delivery\" AaaS (Agent as a Service) form; from manual operation to autonomous collaboration, Agents are redefining the production relations, business logic and ecological pattern of the software industry.\n\nThis talk focuses on the paradigm shift of the software industry driven by Agents, exploring the core changes of Agents in software development, delivery, operations, and business models, and discussing the innovation opportunities and new paradigm of the software industry.",
@@ -1112,9 +1117,9 @@
       },
       {
         "title": {
-          "en": "openJiuwen: Building the Intelligent Runtime and Development Platform for the Agentic AI Era",
-          "zh": "openJiuwen：构建 Agentic AI 时代的智能运行时与开发平台",
-          "fr": "openJiuwen : Construire le runtime intelligent et la plateforme de développement pour l'ère Agentic AI"
+          "en": "JiuwenClaw pioneers \"Coordination Engineering\", the next leap for Agent Era",
+          "zh": "JiuwenClaw 开创\"协调工程\"，Agent 时代的下一次飞跃",
+          "fr": "JiuwenClaw, pionnier de l'\"ingénierie de coordination\", le prochain bond de l'ère des agents"
         },
         "speakers": [
           {
@@ -1180,7 +1185,8 @@
       {
         "title": {
           "en": "Panel: Agentic AI in the Enterprise — Rethinking Software and Work",
-          "zh": "圆桌论坛：企业中的 Agentic AI——重新思考软件与工作"
+          "zh": "圆桌论坛：企业中的 Agentic AI——重新思考软件与工作",
+          "fr": "Panel : L'IA agentique en entreprise — Repenser le logiciel et le travail"
         },
         "speakers": [
           {
@@ -1357,7 +1363,8 @@
       {
         "title": {
           "en": "Thoughts to Text & Image: Foundation Models for Brain Computer Interfaces",
-          "zh": "从思想到文字与图像：脑机接口基础模型"
+          "zh": "从思想到文字与图像：脑机接口基础模型",
+          "fr": "De la pensée au texte et à l'image : modèles fondamentaux pour les interfaces cerveau-ordinateur"
         },
         "content": {
           "en": "Brain foundation models trained on massive brain data can convert thoughts into texts and images. This was impossible until a few years ago. This talk explores how large-scale pretrained models are enabling a new generation of non-invasive brain-computer interfaces, transforming raw neural signals into language and imagery with unprecedented accuracy.",
@@ -1382,7 +1389,8 @@
       {
         "title": {
           "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
-          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统"
+          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统",
+          "fr": "Au-delà du chatbot : construire des écosystèmes d'agents autonomes avec Minimax"
         },
         "content": {
           "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
@@ -1407,7 +1415,8 @@
       {
         "title": {
           "en": "Panel: Open-Source AI and the New Generation of Builders",
-          "zh": "圆桌论坛：开源 AI 与新一代构建者"
+          "zh": "圆桌论坛：开源 AI 与新一代构建者",
+          "fr": "Panel : L'IA open source et la nouvelle génération de créateurs"
         },
         "speakers": [
           {
@@ -1475,7 +1484,8 @@
       {
         "title": {
           "en": "Pie: A Programmable Serving System for Agentic Applications",
-          "zh": "Pie：面向 Agentic 应用的可编程服务系统"
+          "zh": "Pie：面向 Agentic 应用的可编程服务系统",
+          "fr": "Pie : Un système de service programmable pour les applications agentiques"
         },
         "content": {
           "en": "Emerging large language model (LLM) applications involve diverse reasoning strategies and agentic workflows, straining the capabilities of existing serving systems built on a monolithic token generation loop. This talk presents Pie, a programmable LLM serving system designed for flexibility and efficiency.\n\nPie decomposes the traditional generation loop into fine-grained service handlers exposed via an API and delegates control of the generation process to user-provided programs called inferlets. This enables applications to implement new KV cache strategies, bespoke generation logic, and seamlessly integrate computation and I/O—entirely within the application, without requiring modifications to the serving system.\n\nPie executes inferlets using WebAssembly, benefiting from its lightweight sandboxing. Evaluation shows Pie improves latency and throughput by 1.3×–3.4× on agentic workflows. Pie is open-source at pie-project.org.",
@@ -1500,7 +1510,8 @@
       {
         "title": {
           "en": "Open-Source, Openness and Standardization of Large Models",
-          "zh": "大模型的开源、开放与标准化"
+          "zh": "大模型的开源、开放与标准化",
+          "fr": "Open source, ouverture et standardisation des grands modèles"
         },
         "content": {
           "en": "This presentation shares China's relevant policies and standards for open-source models, introducing the country's advancements in the open-sourcing of AI models and the development of open-source licenses. It demonstrates the development status and operational mechanisms of Chinese open-source communities, including the Mulan Open Source Community, and promotes joint efforts between China and the international community in incubating open-source projects, promoting the openness of AI models, and advancing cooperation in standardization.",
@@ -1663,7 +1674,8 @@
       {
         "title": {
           "en": "GOSIM Spotlight 2026: Frontier Creators Awards Ceremony",
-          "zh": "GOSIM Spotlight 2026：前沿创造者颁奖典礼"
+          "zh": "GOSIM Spotlight 2026：前沿创造者颁奖典礼",
+          "fr": "GOSIM Spotlight 2026 : Cérémonie de remise des prix Frontier Creators"
         },
         "speakers": [],
         "date": {
@@ -1682,7 +1694,8 @@
       {
         "title": {
           "en": "Hackathon Winning Projects Showcase & Awards",
-          "zh": "黑客马拉松获奖项目展示与颁奖"
+          "zh": "黑客马拉松获奖项目展示与颁奖",
+          "fr": "Présentation des projets gagnants du Hackathon et remise des prix"
         },
         "speakers": [],
         "date": {
@@ -1701,7 +1714,8 @@
       {
         "title": {
           "en": "FlagOS KernelGen 24H Bounty Challenge Awards",
-          "zh": "FlagOS KernelGen 24小时悬赏挑战赛颁奖"
+          "zh": "FlagOS KernelGen 24小时悬赏挑战赛颁奖",
+          "fr": "FlagOS KernelGen 24H Bounty Challenge — Remise des prix"
         },
         "speakers": [],
         "date": {
@@ -1720,7 +1734,8 @@
       {
         "title": {
           "en": "Closing Remarks & Thanks",
-          "zh": "闭幕致辞与感谢"
+          "zh": "闭幕致辞与感谢",
+          "fr": "Discours de clôture et remerciements"
         },
         "speakers": [],
         "date": {
@@ -3095,9 +3110,14 @@
       },
       {
         "title": {
-          "en": "From Zero to Robot: How to Start an Open Source Robotics Project and Why It Matters",
-          "zh": "From Zero to Robot: How to Start an Open Source Robotics Project and Why It Matters",
-          "fr": "From Zero to Robot: How to Start an Open Source Robotics Project and Why It Matters"
+          "en": "The Real Challenge Isn't Starting.",
+          "zh": "真正的挑战不是开始",
+          "fr": "Le vrai défi, ce n'est pas de commencer."
+        },
+        "content": {
+          "en": "Starting is easy. Continuing is the hard part. This talk is about how building in public and open sourcing your work creates the accountability loop that keeps you going — even when motivation dies. I'll walk through my own journey from a struggling robotics team at 15 to building Inhabit, an open-source humanoid robot teleoperation platform, and how AI tools made it possible to ship something real as basically one person in college. If you've ever started a project and stopped, this talk is for you.",
+          "zh": "Starting is easy. Continuing is the hard part. This talk is about how building in public and open sourcing your work creates the accountability loop that keeps you going — even when motivation dies. I'll walk through my own journey from a struggling robotics team at 15 to building Inhabit, an open-source humanoid robot teleoperation platform, and how AI tools made it possible to ship something real as basically one person in college. If you've ever started a project and stopped, this talk is for you.",
+          "fr": "Starting is easy. Continuing is the hard part. This talk is about how building in public and open sourcing your work creates the accountability loop that keeps you going — even when motivation dies. I'll walk through my own journey from a struggling robotics team at 15 to building Inhabit, an open-source humanoid robot teleoperation platform, and how AI tools made it possible to ship something real as basically one person in college. If you've ever started a project and stopped, this talk is for you."
         },
         "speakers": [
           {
@@ -3725,9 +3745,9 @@
       },
       {
         "title": {
-          "en": "FlagOS Virtual Coding Competition & Live Demo",
-          "zh": "FlagOS虚拟编程竞赛与现场演示",
-          "fr": "Compétition de codage virtuelle FlagOS & démo en direct"
+          "en": "FlagOS Virtual Coding Competition (KernelGen 24 Hour Bounty Challenge) & Live Demo",
+          "zh": "FlagOS虚拟编程竞赛（KernelGen 24小时悬赏挑战）与现场演示",
+          "fr": "Compétition de codage virtuelle FlagOS (KernelGen 24 Hour Bounty Challenge) & démo en direct"
         },
         "speakers": [
           {
@@ -3955,9 +3975,9 @@
       },
       {
         "title": {
-          "en": "Keynote – Gaël Varoquaux",
-          "zh": "Keynote – Gaël Varoquaux",
-          "fr": "Keynote – Gaël Varoquaux"
+          "en": "Keynote – Data Science Is Not AI, but It Is Its Genesis, and Its New Frontier",
+          "zh": "Keynote – 数据科学不是AI，但它是AI的起源，也是AI的新前沿",
+          "fr": "Keynote – La data science n'est pas l'IA, mais elle en est la genèse et sa nouvelle frontière"
         },
         "speakers": [
           {
@@ -3982,7 +4002,7 @@
       {
         "title": {
           "en": "Keynote – AI-Driven Open Source \"Lights-Out Community\"",
-          "zh": "Keynote – AI驱动的开源\u201c无人值守社区\u201d",
+          "zh": "Keynote – AI驱动的开源“无人值守社区”",
           "fr": "Keynote – Communauté open source « Lights-Out » pilotée par l'IA"
         },
         "speakers": [
