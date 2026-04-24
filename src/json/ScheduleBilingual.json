@@ -3745,9 +3745,9 @@
       },
       {
         "title": {
-          "en": "FlagOS Virtual Coding Competition (KernelGen 24 Hour Bounty Challenge) & Live Demo",
-          "zh": "FlagOS虚拟编程竞赛（KernelGen 24小时悬赏挑战）与现场演示",
-          "fr": "Compétition de codage virtuelle FlagOS (KernelGen 24 Hour Bounty Challenge) & démo en direct"
+          "en": "FlagOS Virtual Coding Competition & Live Demo\n(KernelGen 24 Hour Bounty Challenge)",
+          "zh": "FlagOS虚拟编程竞赛与现场演示\n(KernelGen 24小时悬赏挑战)",
+          "fr": "Compétition de codage virtuelle FlagOS & démo en direct\n(KernelGen 24 Hour Bounty Challenge)"
         },
         "speakers": [
           {
