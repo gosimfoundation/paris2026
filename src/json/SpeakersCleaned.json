@@ -1754,7 +1754,7 @@
     {
       "id": "lin-zhong",
       "name": "Lin Zhong",
-      "bio": "Lin Zhong is Joseph C. Tsai Professor of Computer Science with Yale University. He received his B.S and M.S. from Tsinghua University and Ph.D. from Princeton University. From 2005 to 2019, he was with Rice University. At Yale, he leads the Efficient Computing Lab to make computing, communication, and interfacing more efficient and effective. He and his students received the best paper awards from ACM MobileHCI, IEEE PerCom, ACM MobiSys (3), ACM ASPLOS, IEEE QCE and NDSS. He is a recipient of the NSF CAREER Award, the Duncan Award from Rice University, the RockStar Award (2014) and Test of Time Award (2022) from ACM SIGMOBILE. He is a Fellow of IEEE and ACM. More information about his research can be found at http://www.yecl.org.",
+      "bio": "Lin Zhong is Joseph C. Tsai Professor of Computer Science with Yale University. He received his B.S and M.S. from Tsinghua University and Ph.D. from Princeton University. From 2005 to 2019, he was with Rice University. At Yale, he leads the Efficient Computing Lab to make computing, communication, and interfacing more efficient and effective. He and his students received the best paper awards from ACM MobileHCI, IEEE PerCom, ACM MobiSys (3), ACM ASPLOS, IEEE QCE and NDSS. He is a recipient of the NSF CAREER Award, the Duncan Award from Rice University, the RockStar Award (2014) and Test of Time Award (2022) from ACM SIGMOBILE. He is a Fellow of IEEE and ACM. More information about his research can be found at yecl.org.",
       "role": "Professor of Computer Science",
       "org": "Yale University",
       "roleOrg": "Professor of Computer Science, Yale University",
@@ -1775,7 +1775,7 @@
     {
       "id": "marcin-zubrzycki",
       "name": "Marcin Zubrzycki",
-      "bio": "I'm a SWE @ StrongDM (now part of Delinea), I'm currently studying Algorithmic Computer Science @ WrocTech - Love my country and my girlfriend.",
+      "bio": "Software Engineer at Delinea (formerly StrongDM), currently studying Algorithmic Computer Science at Wrocław University of Science and Technology.",
       "role": "Software Engineer",
       "org": "Delinea",
       "roleOrg": "Software Engineer, Delinea",
@@ -1921,11 +1921,11 @@
     {
       "id": "zhenyu-zheng",
       "name": "Zhenyu Zheng",
-      "bio": "",
-      "role": "",
-      "org": "openEuler",
-      "roleOrg": "openEuler",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "bio": "Community Operations Manager at OpenAtom openEuler.",
+      "role": "Community Operations Manager",
+      "org": "OpenAtom openEuler",
+      "roleOrg": "Community Operations Manager, OpenAtom openEuler",
+      "image": "/images/speakers/better_portrait/zhenyu-zheng.png",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -2186,7 +2186,7 @@
     {
       "id": "ervinxie",
       "name": "Ervin Xie",
-      "bio": "Weiyu Xie is a fifth-year Ph.D. student in the Institute for High Performance Computing, Department of Computer Science and Technology, Tsinghua University. His research interests include computer systems, large language model (LLM) inference, graph computing, and databases.",
+      "bio": "Ervin Xie is a fifth-year Ph.D. student in the Institute for High Performance Computing, Department of Computer Science and Technology, Tsinghua University. His research interests include computer systems, large language model (LLM) inference, graph computing, and databases.",
       "role": "Ph.D. Candidate",
       "org": "Tsinghua University",
       "roleOrg": "Ph.D. Candidate, Tsinghua University",
@@ -2319,11 +2319,11 @@
     {
       "id": "yun-lin",
       "name": "Yun Lin",
-      "bio": "",
-      "role": "Researcher",
+      "bio": "Associate Professor and Deputy Head of the Department of Computer Science and Technology, School of Computer Science, Shanghai Jiao Tong University.",
+      "role": "Associate Professor",
       "org": "Shanghai Jiao Tong University",
-      "roleOrg": "Researcher, Shanghai Jiao Tong University",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "roleOrg": "Associate Professor, Shanghai Jiao Tong University",
+      "image": "/images/speakers/better_portrait/1776843228238-yun-lin.png",
       "tags": ["agentic-ai-summit"],
       "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
       "status": "Accept",
@@ -2536,19 +2536,6 @@
       "status": "Accept",
       "draft": false,
       "id": "nowa-sutaka"
-    },
-    {
-      "name": "Alexy Khrabrov",
-      "role": "Founder, CR4AI",
-      "org": "Northeastern University",
-      "roleOrg": "Founder, CR4AI, Northeastern University",
-      "image": "/images/speakers/better_portrait/alexy-khrabrov.png",
-      "bio": "Alexy Khrabrov is the Founder of CR4AI at Northeastern University. He is an open-source science and AI community leader with deep expertise in intelligent agent architectures.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "@chiefscientist", "github": "https://github.com/alexy", "linkedin": "https://linkedin.com/in/chiefscientist", "website": "https://chiefscientist.org" },
-      "status": "Accept",
-      "draft": false,
-      "id": "alexy-khrabrov"
     },
     {
       "name": "Quentin Feuillade-Montixi",
