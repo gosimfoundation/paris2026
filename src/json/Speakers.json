@@ -861,10 +861,10 @@
     {
       "id": "hao-li",
       "name": "Hao Li",
-      "bio": "",
-      "role": "",
+      "bio": "Dr. Hao Li is a Franco-Chinese entrepreneur who previously held AI leadership roles at IBM, Sodexo, and Capgemini Invent, advising CAC40 companies and public institutions. He is now founder of Haoeasy AI SAS, building multi-agent systems for enterprise transformation.",
+      "role": "Founder",
       "org": "Haoeasy AI SAS",
-      "roleOrg": "Haoeasy AI SAS",
+      "roleOrg": "Founder, Haoeasy AI SAS",
       "image": "/images/speakers/better_portrait/1776759992947-hao-li.png",
       "tags": [
         "agentic-ai-summit"
@@ -1022,6 +1022,48 @@
         "github": "https://github.com/hant916/AILUROS.io",
         "linkedin": "https://www.linkedin.com/in/tianyi-han-58278844/",
         "website": "https://www.aixagent.io"
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "jenia-jitsev",
+      "name": "Jenia Jitsev",
+      "bio": "Scientific lead and chairman of LAION e.V. Works on open foundation models and datasets including openCLIP, LAION-5B, DataComp, DCLM, OpenThoughts, and MixtureVitae. Researches scaling laws for guided search of stronger scalable learning procedures.",
+      "role": "Scientific Lead & Chairman",
+      "org": "LAION e.V.; FZJ",
+      "roleOrg": "Scientific Lead & Chairman, LAION e.V.; FZJ",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "dr-hai-xu-cheng",
+      "name": "Dr Hai-Xu Cheng",
+      "bio": "Dr Hai-Xu Cheng currently works as the CTO of Rothwell International after retiring from the role of IBM Global Lead and IBM GCG CTO of standards and open source. His current major focus is providing consulting services for enterprise clients at C-level on architectures, standards, and open source. In his prior role at IBM, he led the global and China teams working to develop open-source communities and technologies spanning AI, data and analytics, cloud computing, quantum computing, and blockchain, advocating for clients to adopt open technologies to fuel innovation in both technical and business domains.",
+      "role": "CTO",
+      "org": "Rothwell International",
+      "roleOrg": "CTO, Rothwell International",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
       },
       "status": "Accept",
       "draft": false
