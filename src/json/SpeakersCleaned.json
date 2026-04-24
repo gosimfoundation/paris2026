@@ -1604,7 +1604,7 @@
     {
       "id": "weiyu-xie",
       "name": "Weiyu Xie",
-      "bio": "Ph.D. Candidate at Tsinghua University.",
+      "bio": "Weiyu Xie is a fifth-year Ph.D. student in the Institute for High Performance Computing, Department of Computer Science and Technology, Tsinghua University. His research interests include computer systems, large language model (LLM) inference, graph computing, and databases.",
       "role": "Ph.D. Candidate",
       "org": "Tsinghua University",
       "roleOrg": "Ph.D. Candidate, Tsinghua University",
@@ -2184,27 +2184,6 @@
       "draft": false
     },
     {
-      "id": "ervinxie",
-      "name": "Ervin Xie",
-      "bio": "Ervin Xie is a fifth-year Ph.D. student in the Institute for High Performance Computing, Department of Computer Science and Technology, Tsinghua University. His research interests include computer systems, large language model (LLM) inference, graph computing, and databases.",
-      "role": "Ph.D. Candidate",
-      "org": "Tsinghua University",
-      "roleOrg": "Ph.D. Candidate, Tsinghua University",
-      "image": "/images/speakers/better_portrait/ervinxie.png",
-      "tags": [
-        "agentic-ai-on-edge"
-      ],
-      "socialLinks": {
-        "mastodon": "",
-        "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
-      },
-      "status": "Accept",
-      "draft": false
-    },
-    {
       "id": "eva-ma",
       "name": "Eva Ma",
       "bio": "Taming the wild frontiers of generative AI. I design the structures that keep modern algorithms bounded, efficient, and aligned with human intent. Architecting the future of Atlas Cloud AI.",
@@ -2491,9 +2470,9 @@
       "org": "Advanced AI Society",
       "roleOrg": "CEO, Advanced AI Society",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "bio": "",
+      "bio": "Tricia Wang is a globally recognized technology and strategy expert at the intersection of AI, data, and human insight. She is the co-founder and CEO of the Advanced AI Society, an industry association for companies building AI with demonstrable, verifiable control over what their systems do.",
       "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "socialLinks": { "mastodon": "", "twitter": "https://x.com/trikitriki", "github": "", "linkedin": "https://www.linkedin.com/in/triciawang", "website": "https://www.triciawang.com/" },
       "status": "Accept",
       "draft": false,
       "id": "tricia-wang"
