@@ -43,11 +43,7 @@
         "zh": "Agentic AI 峰会",
         "fr": "Sommet Agentic AI"
       },
-      "room": {
-        "en": "Master Stage",
-        "zh": "主舞台",
-        "fr": "Scène Principale"
-      }
+      "room": "Master Stage"
     },
     {
       "id": "open-source-model",
@@ -56,11 +52,7 @@
         "zh": "开源模型",
         "fr": "Modèles Open Source"
       },
-      "room": {
-        "en": "Open Stage",
-        "zh": "开放舞台",
-        "fr": "Scène Ouverte"
-      }
+      "room": "Open Stage"
     },
     {
       "id": "ai-generative-app",
@@ -69,11 +61,7 @@
         "zh": "Agentic OS 与应用",
         "fr": "Agentic OS & App"
       },
-      "room": {
-        "en": "Junior Stage",
-        "zh": "Jr. 舞台",
-        "fr": "Scène Junior"
-      }
+      "room": "Junior Stage"
     },
     {
       "id": "agentic-ai-on-edge",
@@ -82,11 +70,7 @@
         "zh": "边缘侧 Agentic AI",
         "fr": "Agentic AI on Edge"
       },
-      "room": {
-        "en": "Central Room",
-        "zh": "中央会议室",
-        "fr": "Salle Centrale"
-      }
+      "room": "Central Room"
     },
     {
       "id": "open-source-robotics",
@@ -95,11 +79,7 @@
         "zh": "开源机器人",
         "fr": "Robotique Open Source"
       },
-      "room": {
-        "en": "Founders Cafe",
-        "zh": "创始人咖啡厅",
-        "fr": "Founders Cafe"
-      }
+      "room": "Founders Cafe"
     },
     {
       "id": "hackathon-spotlight",
@@ -108,11 +88,7 @@
         "zh": "GOSIM Spotlight 2026: Frontier Creators",
         "fr": "GOSIM Spotlight 2026: Frontier Creators"
       },
-      "room": {
-        "en": "Open Stage",
-        "zh": "Open Stage",
-        "fr": "Open Stage"
-      }
+      "room": "Open Stage"
     },
     {
       "id": "hackathon-robotics",
@@ -121,11 +97,7 @@
         "zh": "Robotics Hackathon",
         "fr": "Robotics Hackathon"
       },
-      "room": {
-        "en": "Open Platform",
-        "zh": "Open Platform",
-        "fr": "Open Platform"
-      }
+      "room": "Open Platform"
     },
     {
       "id": "hackathon-agentic",
@@ -134,11 +106,7 @@
         "zh": "GOSIM Agentic Hackathon",
         "fr": "GOSIM Agentic Hackathon"
       },
-      "room": {
-        "en": "Open Platform",
-        "zh": "Open Platform",
-        "fr": "Open Platform"
-      }
+      "room": "Open Platform"
     },
     {
       "id": "ws-vllm-paris2026",
@@ -147,11 +115,7 @@
         "zh": "vLLM 工作坊",
         "fr": "Atelier vLLM"
       },
-      "room": {
-        "en": "Founders Cafe",
-        "zh": "创始人咖啡厅",
-        "fr": "Founders Cafe"
-      }
+      "room": "Founders Cafe"
     },
     {
       "id": "ws-oh-tech-forum",
@@ -160,11 +124,7 @@
         "zh": "OpenHarmony Tech Forum-Paris",
         "fr": "OpenHarmony Tech Forum-Paris"
       },
-      "room": {
-        "en": "Founders Cafe",
-        "zh": "创始人咖啡厅",
-        "fr": "Founders Cafe"
-      }
+      "room": "Founders Cafe"
     },
     {
       "id": "ws-open-compute",
@@ -173,11 +133,7 @@
         "zh": "面向 Agentic AI 的开放计算 (FlagOS)",
         "fr": "Open Compute pour l'IA Agentique (FlagOS)"
       },
-      "room": {
-        "en": "Central Room",
-        "zh": "中央会议室",
-        "fr": "Salle Centrale"
-      }
+      "room": "Central Room"
     },
     {
       "id": "ws-sglang-paris2026",
@@ -186,11 +142,7 @@
         "zh": "SGLang 工作坊",
         "fr": "Atelier SGLang"
       },
-      "room": {
-        "en": "Central Room",
-        "zh": "中央会议室",
-        "fr": "Salle Centrale"
-      }
+      "room": "Central Room"
     },
     {
       "id": "ws-own-your-data-paris2026",
@@ -199,11 +151,7 @@
         "zh": "数据科学与 AI 工作坊",
         "fr": "Atelier Data Science & IA"
       },
-      "room": {
-        "en": "Open Stage",
-        "zh": "开放舞台",
-        "fr": "Scène Ouverte"
-      }
+      "room": "Open Stage"
     },
     {
       "id": "ws-agentic-app",
@@ -212,11 +160,7 @@
         "zh": "构建 Agentic 应用工作坊",
         "fr": "Atelier Application Agentique"
       },
-      "room": {
-        "en": "Junior Stage",
-        "zh": "Jr. 舞台",
-        "fr": "Scène Junior"
-      }
+      "room": "Junior Stage"
     }
   ],
   "sessions": {
@@ -235,11 +179,7 @@
         },
         "timeSlot": "12:15 - 12:25",
         "type": "hackathon",
-        "room": {
-          "en": "Open Platform",
-          "zh": "开放平台",
-          "fr": "Plateforme Ouverte"
-        }
+        "room": "Open Platform"
       },
       {
         "title": {
@@ -255,11 +195,7 @@
         },
         "timeSlot": "12:25 - 12:50",
         "type": "hackathon",
-        "room": {
-          "en": "Open Platform",
-          "zh": "开放平台",
-          "fr": "Plateforme Ouverte"
-        }
+        "room": "Open Platform"
       },
       {
         "title": {
@@ -275,11 +211,7 @@
         },
         "timeSlot": "12:50 - 13:00",
         "type": "talk",
-        "room": {
-          "en": "Open Platform",
-          "zh": "开放平台",
-          "fr": "Plateforme Ouverte"
-        }
+        "room": "Open Platform"
       },
       {
         "title": {
@@ -295,11 +227,7 @@
         },
         "timeSlot": "12:25 - 12:50",
         "type": "hackathon",
-        "room": {
-          "en": "Open Platform",
-          "zh": "开放平台",
-          "fr": "Plateforme Ouverte"
-        }
+        "room": "Open Platform"
       },
       {
         "title": {
@@ -320,11 +248,7 @@
         },
         "timeSlot": "17:30 - 17:40",
         "type": "ceremony",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       }
     ],
     "hackathon-robotics": [
@@ -490,11 +414,7 @@
         },
         "timeSlot": "09:30 - 09:45",
         "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -516,11 +436,7 @@
         },
         "timeSlot": "09:45 - 10:00",
         "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -542,11 +458,7 @@
         },
         "timeSlot": "10:00 - 10:15",
         "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -923,11 +835,7 @@
         },
         "timeSlot": "09:30 - 09:45",
         "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -949,11 +857,7 @@
         },
         "timeSlot": "09:45 - 10:00",
         "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -975,11 +879,7 @@
         },
         "timeSlot": "10:00 - 10:15",
         "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -1308,11 +1208,7 @@
           "zh": "",
           "fr": ""
         },
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -1339,11 +1235,7 @@
           "zh": "",
           "fr": ""
         },
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -1685,11 +1577,7 @@
         },
         "timeSlot": "17:30 - 17:40",
         "type": "ceremony",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -1705,11 +1593,7 @@
         },
         "timeSlot": "17:40 - 17:50",
         "type": "ceremony",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -1725,11 +1609,7 @@
         },
         "timeSlot": "17:50 - 17:55",
         "type": "ceremony",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -1745,11 +1625,7 @@
         },
         "timeSlot": "17:55 - 18:00",
         "type": "ceremony",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       }
     ],
     "open-source-model": [
@@ -1767,11 +1643,7 @@
         },
         "timeSlot": "10:00 - 10:20",
         "type": "break",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
-        }
+        "room": "Open Stage"
       },
       {
         "title": {
@@ -1794,10 +1666,11 @@
         },
         "timeSlot": "10:20 - 10:50",
         "type": "talk",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
+        "room": "Open Stage",
+        "content": {
+          "en": "The quadratic complexity of standard self-attention has become the fundamental bottleneck for long-context AI agents and edge-deployed models. Linear attention mechanisms—transforming the attention computation from O(n²) to O(n)—have emerged as one of the most significant algorithmic breakthroughs in efficient sequence modeling. This talk presents a comprehensive technical journey through the evolution of linear attention, from theoretical foundations (Performer, Linear Transformer, RNN reformulations) through current state-of-the-art architectures (Mamba, RetNet, GLA), and concludes with critical research frontiers: hybrid attention strategies for agentic workflows, hardware-software co-design for edge deployment, and the convergence of linear attention with state-space models. Drawing from production experience training large-scale foundation models, this session bridges algorithmic innovation with infrastructure reality.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -1821,11 +1694,7 @@
         },
         "timeSlot": "10:50 - 11:20",
         "type": "talk",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
-        }
+        "room": "Open Stage"
       },
       {
         "title": {
@@ -1847,10 +1716,11 @@
         },
         "timeSlot": "11:20 - 12:00",
         "type": "talk",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
+        "room": "Open Stage",
+        "content": {
+          "en": "As the AI landscape shifts from 'Model-Centric' experimentation to 'System-Centric' deployment, the true value of Large Language Models lies in their ability to act as autonomous agents. In this session, we explore how Minimax is bridging this gap, with industry-leading context windows for complex reasoning, cost-effective high-concurrency inference, and native multimodal capabilities. Through concrete case studies, we demonstrate how Minimax transforms static models into dynamic, task-solving systems, and how to leverage open standards and Minimax's architecture to build scalable, reliable, and sovereign AI solutions.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -1867,11 +1737,7 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
-        }
+        "room": "Open Stage"
       },
       {
         "title": {
@@ -1893,10 +1759,11 @@
         },
         "timeSlot": "14:00 - 14:30",
         "type": "talk",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
+        "room": "Open Stage",
+        "content": {
+          "en": "In AI and cognitive science, world models are key for planning, reasoning, and learning from experience. We develop a flow matching and DPO reinforcement learning framework to improve the continuity and physical awareness in world model representation and generation, achieving best-of-the-results in physical awareness and state-of-the-art in open-source video generation. We also develop a comprehensive physical awareness benchmarking and arena system, extracting 50-60 metrics demonstrating physical law awareness of video generation and trajectory — covering common sense, Newtonian mechanics, optics, energy, chemical, and materials. We also describe our effort towards the concept of \"world model for all\", which utilizes a single world model for robotic control, navigation, task management, planning, and automatic SLAM and 3D reconstruction for environment sensing.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -1919,10 +1786,11 @@
         },
         "timeSlot": "14:30 - 15:00",
         "type": "talk",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
+        "room": "Open Stage",
+        "content": {
+          "en": "Pretraining large language models from scratch is expensive — but does it have to be? In this talk, we present OpenSeek-10B, a fully open-source 10B-parameter language model that outperforms Qwen3-14B-Base and other open-source models of comparable size, while reducing pretraining FLOPs by roughly 20x. We share two key techniques: small-model initialization, which grows a well-trained 4B model to 10B scale through hybrid width-depth expansion; and the Muon optimizer, which further accelerates training convergence over AdamW. Combined with a carefully designed multi-stage data strategy built entirely on open-source datasets, we provide a practical, reproducible blueprint for the community to pretrain competitive models at lower cost. We also share how FlagOS, BAAI's open-source unified software stack validated across chips from 6 vendors, enables this recipe to run efficiently beyond a single hardware ecosystem.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -1945,10 +1813,11 @@
         },
         "timeSlot": "15:00 - 15:30",
         "type": "talk",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
+        "room": "Open Stage",
+        "content": {
+          "en": "Standing on the shoulders of giants like modded-nanogpt speedrun and marin speedrun, the Open Model Initiative under LFAI&Data Foundation kickstarted a new speedrun effort focusing on multi-modal models in early 2026. This is the first effort to accelerate model architecture and training/inference innovation for multi-modal tasks worldwide. In this talk we will share the motivation for this effort, how it came about and the latest submission we have received since launch of the effort.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -1965,11 +1834,7 @@
         },
         "timeSlot": "15:20 - 15:40",
         "type": "break",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
-        }
+        "room": "Open Stage"
       },
       {
         "title": {
@@ -1991,10 +1856,11 @@
         },
         "timeSlot": "15:40 - 16:10",
         "type": "talk",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
+        "room": "Open Stage",
+        "content": {
+          "en": "The quantization to FP8 formats has significantly accelerated LLM training. Standard FP8 formats suffer from frequent gradient overflows and heavy reliance on complex dynamic scaling (Delayed Scaling), which often lead to training instability in billion-parameter models. This session introduces HiFloat8 (HiF8) — a tapered precision format that offers an alternative approach to managing dynamic range. We demonstrate the implementation of HiF8 within the PyTorch ecosystem and analyze training stability and final loss parity, highlighting specific scenarios where HiF8 provides relatively the same accuracy and 1.5–1.7× GEMM performance compared to FP16.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2018,10 +1884,11 @@
         },
         "timeSlot": "16:10 - 16:40",
         "type": "talk",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
+        "room": "Open Stage",
+        "content": {
+          "en": "Recent work has demonstrated the curse of depth in large language models, where later layers contribute less to learning than earlier layers. In this paper, we demonstrate that sparsity, beyond enabling efficiency, acts as a regulator of variance propagation and thereby improves depth utilization. Our investigation covers implicit sparsity (weight decay, attention sparsity from long-context inputs) and explicit sparsity (Grouped-Query Attention, Mixture-of-Experts). Across settings, we observe a consistent relationship: sparsity improves layer utilization by reducing output variance and promoting functional differentiation. We distill our findings into a practical recipe for training depth-effective LLMs, yielding a notable 4.6% accuracy improvement on downstream tasks.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2044,10 +1911,11 @@
         },
         "timeSlot": "16:40 - 17:10",
         "type": "talk",
-        "room": {
-          "en": "Open Stage",
-          "zh": "开放舞台",
-          "fr": "Scène Ouverte"
+        "room": "Open Stage",
+        "content": {
+          "en": "LLM serving infrastructure has become a key pillar for modern society, but building scalable LLM infrastructure remains challenging at scale due to system issues like load imbalancing, stragglers and lack of elasticity. In this talk, we will present our recent work on scalable and efficient LLM infrastructure, including simple but efficient multiplication-based LLM global router and ultra-fast autoscaling mechanisms. Some of these works have been or are being deployed on world's largest LLM service providers.",
+          "zh": "",
+          "fr": ""
         }
       }
     ],
@@ -2066,11 +1934,7 @@
         },
         "timeSlot": "10:00 - 10:20",
         "type": "break",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -2093,10 +1957,11 @@
         },
         "timeSlot": "10:20 - 10:50",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "In this talk we will show how to rapidly create high performance Rust applications with Makepad. You can use your AI of choice — codex, claude — running inside the makepad IDE. Rust is the ideal language for AI generation because of its strong compiler guarantees and superb performance. Makepad studio has automation integration for the AI so it can generate, see, click buttons and iterate completely automated on visual applications. Makepad compiles to web, desktop, mobile, and XR. We will demo how far we can push AI application generation including AI generated CAD, 3D, map rendering, vector engines, and mixed reality 3D world scanning.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2120,10 +1985,11 @@
         },
         "timeSlot": "10:50 - 11:20",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "This talk explores building with StrongDM's Attractor: a multi-agent orchestrator capable of delivering production-ready features by walking a graph of nodes. We've used the tool internally to deliver drivers for cloud databases, and it proved its worth for simple compiler development and complicated numerical analysis algorithm tasks. The specification is open source.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2147,10 +2013,11 @@
         },
         "timeSlot": "11:20 - 12:00",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "AI agents are reshaping how users interact with software. This talk explores Agentic UX through AG-UI, an open protocol that standardizes agent-to-user interactions, enabling intuitive, real-time, and collaborative AI experiences. We'll explore lessons from building AG-UI, an open, event-based protocol that standardizes agent-to-user communication, covering the AG-UI event model, human-in-the-loop patterns, and how vendor-neutral messaging enables interoperability across frameworks like LangGraph, CrewAI, and Mastra.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2167,11 +2034,7 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -2194,10 +2057,11 @@
         },
         "timeSlot": "14:30 - 15:00",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "AI is transforming how apps are built, but not what they're built on. Without a cross-platform framework, agents must generate, verify, and maintain separate code for every platform. This talk introduces Lynx, the open-source cross-platform framework powering TikTok and CapCut at billion-user scale, and our three principles for AI-native app infrastructure: AI-Ergonomic (harness-able), AI-Efficient (token-economical), and AI-Expressive (intent-driven UI). We demonstrate how vue-lynx — a full Vue 3 renderer for Lynx — was vibe-coded in two weeks as proof of this principle.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2220,11 +2084,7 @@
         },
         "timeSlot": "15:00 - 15:20",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -2240,11 +2100,7 @@
         },
         "timeSlot": "15:20 - 15:40",
         "type": "break",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -2266,11 +2122,7 @@
         },
         "timeSlot": "15:40 - 16:10",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -2292,10 +2144,11 @@
         },
         "timeSlot": "16:10 - 16:40",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "Scaling a modern OS ecosystem requires massive developer velocity. This session explores how the Eclipse Oniro project leverages AI as a \"force multiplier\" to rapidly build out its landscape, streamlining the porting of popular apps and integrating modern frameworks into the OpenHarmony environment. We share practical insights into how AI-assisted engineering allows us to bridge different frameworks and create new applications in a fraction of the usual time, while maintaining CRA compliance and tracking emerging initiatives like Unified Attestation.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2318,10 +2171,11 @@
         },
         "timeSlot": "16:40 - 17:10",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "AI is rapidly evolving from chatbots to copilots, and now toward agent-based systems. But most AI experiences still live inside apps — fragmented, reactive, and short-lived. This talk introduces a new paradigm: AI companions that combine agent intelligence, multimodal interaction (voice and vision), and hardware to support continuous, personalized learning. Drawing from the journey from Microsoft Copilot and Agent product leadership to building Ingora, an AI-native learning companion for children, the talk explores why traditional 'AI tutor' models fall short, and how inquiry-driven interaction, emotional engagement, and long-horizon agent design can reshape learning experiences.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2345,10 +2199,11 @@
         },
         "timeSlot": "17:10 - 17:30",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "As AI systems evolve from isolated LLM calls into autonomous agents, a new class of engineering problems emerges: lack of control, limited observability, and no reliable way to audit or reproduce decisions. In this talk, we introduce a governance-oriented runtime for AI agents providing policy enforcement, trace-based auditability, deterministic replay, and evaluation hooks for non-regression. By treating agent execution as a structured, observable, and controllable process, we enable developers to move from \"best-effort prompting\" to \"engineered agent systems\" that are auditable, reproducible, and production-ready.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2365,11 +2220,7 @@
         },
         "timeSlot": "10:00 - 10:20",
         "type": "break",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -2392,10 +2243,11 @@
         },
         "timeSlot": "10:20 - 10:45",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "This topic describes the complete process of Cangjie's 300-day AI R&D transformation, starting with an accidental AI coding attempt in May 2025. The team gradually implemented the Agent Centric Engineering (ACE) model, selected 30% of the teams to pilot end-to-end AI, and achieved dramatic productivity gains: the compiler team improved by 240–2600%, the third-party library team by 132–816%, and the standard library team by 125%. This talk passes on the core concept of \"actively embracing AI, breaking the shackles of thinking, and realizing the reconstruction of individual and team values.\"",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2418,10 +2270,11 @@
         },
         "timeSlot": "10:45 - 11:10",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "Agentic AI is rapidly transforming developer tooling, shifting from passive assistants to autonomous agents acting across the software lifecycle. Yet many systems, while marketed as open, still depend on single-vendor governance and opaque AI integrations. This session presents a practical alternative built within the Eclipse Foundation, introducing Theia AI — an open source framework for agentic capabilities in developer tools with multi-LLM orchestration and full control over model selection — and Open VSX, an open source extension registry enabling transparent distribution of agent integrations. Together they provide a vendor-neutral foundation for building and governing agentic developer systems, with over 300 million extension downloads per month.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2444,10 +2297,11 @@
         },
         "timeSlot": "11:10 - 11:35",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "Can AI-assisted coding significantly accelerate the implementation of complex web standards? This talk explores a series of experiments on a fork of the Servo web engine, aimed at closing the feature gap with dominant engines. We explore two approaches: treating AI as a high-speed implementation partner for an architect with deep system knowledge but limited domain expertise (WebNN), and using test-driven AI where rigorous Web Platform Tests steer an AI through a black-box implementation (CSS Grid).",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2470,10 +2324,11 @@
         },
         "timeSlot": "11:35 - 12:00",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "The web was built for humans — clicks, forms, and visual flows. But today, a new class of users has emerged: AI agents. These agents don't browse your application — they operate it. This talk introduces the concept of agentic applications, defined not by their UI but by the capabilities they expose. We explore how this shift is happening through the Model Context Protocol (MCP), and present WebMCP — an approach to turning web applications into programmable systems. Using real examples from React apps, we show how existing UI logic can be exposed as structured, composable capabilities, allowing agents to interact with your app directly without brittle selectors or reverse engineering.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2490,11 +2345,7 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       }
     ],
     "agentic-ai-on-edge": [
@@ -2512,11 +2363,7 @@
         },
         "timeSlot": "10:00 - 10:20",
         "type": "break",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -2539,10 +2386,11 @@
         },
         "timeSlot": "10:20 - 10:45",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "Reflect on llama.cpp's journey from mid-2025 to mid-2026, highlighting key achievements: the new Web UI, support for popular models like GPT-OSS and Qwen3.5, key performance improvements, and integrations with downstream applications like LM Studio and LlamaBarn. Looking ahead, we'll discuss upcoming features and collaborative roadmaps to push open-source AI further. llama.cpp has revolutionized efficient LLM inference on consumer hardware, enabling accessible AI for developers worldwide.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2566,10 +2414,11 @@
         },
         "timeSlot": "10:45 - 11:10",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "The emergence of WebNN offers a massive opportunity to unify the AI landscape through a single, high-performance standard that runs everywhere. RustNN is growing into a robust, native Rust implementation of the WebNN specification that meets ML developers where they are today. In this session, we'll demonstrate how RustNN creates a unified pipeline for the AI ecosystem: using ONNX and Torch converters to pull models from the Python research environment; how the RustNN core targets CoreML, TensorRT, and WebAssembly; and how Python and Node.js bindings allow teams to use the same Rust-powered engine across their entire stack.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2593,10 +2442,11 @@
         },
         "timeSlot": "11:10 - 11:35",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "After multiple technological explorations for cross-platform GPU programming like WGSL and Slang, we present our latest experiment with a codebase where both CPU code and GPU kernels are written with the same language: Rust. By leveraging cargo and the rust compiler (through rust-gpu), we implemented common tensor and LLM inference operators running on all major platforms, including the web. The benefit of writing regular Rust code, strong typing across the GPU/CPU boundary, and the Cargo package manager enable smooth integration with codebases across multiple domains for AI and beyond.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2620,10 +2470,11 @@
         },
         "timeSlot": "11:35 - 12:00",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "AI agents are only as good as the tools they call. We make the case for Rust as the default language for agent tooling: single-binary, zero dependencies, memory safe, and runs anywhere. Lessons learned from porting real AI capabilities into standalone Rust CLI tools — what the process looks like, which parts of the Rust ecosystem are production-ready, and how to think about the boundary between Python (where your models live) and Rust (where your tooling should live).",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2640,11 +2491,7 @@
         },
         "timeSlot": "10:00 - 10:20",
         "type": "break",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -2667,10 +2514,11 @@
         },
         "timeSlot": "10:20 - 10:45",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "KTransformers is an open-source CPU-GPU heterogeneous inference framework that runs frontier MoE models like DeepSeek-V3 and Qwen3.5-397B at FP8 precision on consumer GPUs. By offloading expert computations to CPU with CUDA Graph-capturable coordination, it achieves 35+ tokens/sec decode speed — making 600B+ models accessible without datacenter infrastructure.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2694,10 +2542,11 @@
         },
         "timeSlot": "10:45 - 11:10",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "The presentation will primarily focus on the technical details of ModelBest's on-device large models — MiniCPM & MiniCPM-o — as well as their real-world applications across smart cockpits, smartphones, smart home devices, and robotics.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2720,10 +2569,11 @@
         },
         "timeSlot": "11:10 - 11:35",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "Running deep learning inference in native C++ enables efficient edge deployment, eliminates Python/PyTorch dependencies, and allows fast, accurate quantization. We propose OminiX cpp, an automated pipeline where an AI agent with structured procedural skills converts arbitrary PyTorch models into optimized C++ inference code targeting the GGML runtime. OminiX cpp generalizes beyond LLMs to support diverse model families including image and video generation, speech recognition, text-to-speech, world models, and Vision-Language-Action (VLA) models.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2746,10 +2596,11 @@
         },
         "timeSlot": "11:35 - 12:00",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "Agentic AI on the edge requires accessible, low-latency inference, yet hardware fragmentation limits deployment. While CUDA dominates acceleration, its vendor lock-in constrains local intelligence. This talk examines Vulkan as a vendor-neutral alternative, showcasing how it expanded compatibility and reduced deployment complexity in llama.cpp across Intel, AMD, and Nvidia GPUs. We outline engineering roadblocks and explore VK_NV_cooperative_matrix2 as a blueprint for offloading hardware-specific optimizations to the driver, enabling peak performance via vendor optimizations while supporting broad hardware through generic shader fallbacks.",
+          "zh": "",
+          "fr": ""
         }
       }
     ],
@@ -2768,11 +2619,7 @@
         },
         "timeSlot": "10:00 - 10:20",
         "type": "break",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -2794,10 +2641,11 @@
         },
         "timeSlot": "10:20 - 10:45",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "In early 2026, RoboChallenge released the world's first large-scale evaluation leaderboard for Vision-Language-Action (VLA) models based on real robot environments. The data shows exponential growth in both registered users and evaluation submissions. Currently, the top-ranked model achieves around 62% success rate on the Table30 task suite, while performance on fine-grained manipulation tasks remains below 15%. The platform has attracted developers from multiple countries, with the majority of top-performing models being open source — underscoring that open collaboration is a key driver in advancing embodied intelligence.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2820,10 +2668,11 @@
         },
         "timeSlot": "10:45 - 11:10",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "We present an open-source bipedal robotic platform designed through a unified co-design methodology, integrating mechanical design, parameter optimization, and control. The robot is almost entirely fabricated using additive manufacturing, relying on 3D-printed structural components with a minimal set of off-the-shelf elements, significantly reducing cost and manufacturing complexity. The platform has been developed end-to-end with a particular focus on ensuring consistency between simulation and physical behavior. By releasing the full mechanical design, control software, and simulation tools, this work aims to provide a reproducible and extensible baseline for bipedal robotics, lowering the barrier to hardware experimentation and accelerating progress in open embodied AI.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2847,10 +2696,11 @@
         },
         "timeSlot": "10:50 - 11:25",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "An AI embodies a simulated robot, evolves through curriculum, and collects new skills. Unlike Eureka, it sees itself — robot POV and scene cameras — then iterates on reward, strategy, and all training params. Skill Foundry is a curriculum system where an AI (Claude or any LLM) embodies a simulated robot and autonomously evolves to acquire new skills. The surprising finding: human engineer in the loop converges faster and outperforms pure AI at designing training strategies — the system works best as a human-AI collaboration.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2873,10 +2723,11 @@
         },
         "timeSlot": "11:25 - 12:00",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Amazing Hand is an open-source robotic hand with four fingers and eight degrees of freedom. Inexpensive and easy to build yourself, it's an expressive hand based on an original mechanical design. Without cables or custom actuators, it offers a clever design and simplified handling. While it can't manipulate heavy objects, it's ideal for having fun and unleashing creativity, unlike traditional robotic grippers that lack personality.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2893,11 +2744,7 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -2919,10 +2766,11 @@
         },
         "timeSlot": "14:00 - 14:25",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Eclipse Zenoh has established itself as a high-performance communication protocol for robotics: low-latency pub/sub, location-transparent routing from shared memory to WAN, built-in support for queryables, efficient bandwidth usage, and seamless peer-to-peer or routed topologies. Its adoption by ROS 2 as a Tier 1 middleware (rmw_zenoh) validated what the community had been asking for. This led to ros-z — a pure-Rust, Zenoh-native ROS 2 implementation that opens the ROS ecosystem to non-ROS environments. With support for multiple serialization formats (CDR, Protobuf, CUDA tensors) and language bindings in Rust, Python, and Go, ros-z extends its reach to communities and tech stacks traditionally outside the ROS world.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2945,10 +2793,11 @@
         },
         "timeSlot": "14:25 - 14:50",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Classic RL agents often achieve 'superhuman' performance not through true comprehension, but by exploiting hidden shortcuts in their environments. Much like 'Clever Hans', the horse that appeared to do arithmetic but was actually just reading human cues, our models project an illusion of competence. This talk explores the pervasive danger of shortcut learning and proposes a path forward: prioritizing interpretability. By using LLMs and neuro-symbolic approaches to distill black-box policies into transparent, human-readable programs, we can unmask these hidden flaws, audit agent behavior, and build genuinely robust AI systems.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2972,10 +2821,11 @@
         },
         "timeSlot": "14:50 - 15:15",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Building a general navigation system using only an external camera is a promising goal. In this talk, we introduce explorations in this direction based on scalable simulated navigation data. We elaborate on the motivation for using simulated data, present the details of constructing the data pipeline, and introduce several works on how to train a capable navigation policy with simulation data.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -2992,11 +2842,7 @@
         },
         "timeSlot": "15:15 - 15:40",
         "type": "break",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3018,10 +2864,11 @@
         },
         "timeSlot": "15:40 - 16:05",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Can robots learn surgery the way humans do — by observing, practicing, and improving? In this talk, we present Open-H Embodiment, an open collaboration across 35+ institutions to build the first shared data foundation for healthcare robotics. By standardizing on LeRobot, Open-H unifies 778 hours of multimodal data spanning surgical robotics, ultrasound, and endoscopy. This shared foundation enables training general Vision-Language-Action (VLA) foundation models like GR00T-H across diverse systems. Open standards, shared models, and community-owned infrastructure are not idealistic — they are the only viable path to scalable robotic intelligence in healthcare.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -3044,10 +2891,11 @@
         },
         "timeSlot": "16:05 - 16:30",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "What happens when a robot stops being just hardware and starts feeling… alive? This talk shares a hands-on journey with Reachy Mini: from first experiments to pushing its limits with custom hardware, AI integrations, and unconventional use cases. From building light-up eyes and integrating mmWave sensors for presence and vital signs, to connecting AI systems like virtual try-on models, this session dives into how small, playful experiments can unlock surprisingly powerful capabilities.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -3070,10 +2918,11 @@
         },
         "timeSlot": "16:30 - 16:55",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Most state-of-the-art robot learning datasets for manipulation rely on a limited set of modalities — task descriptions, joint states, and synchronized RGB images. This talk presents the challenges encountered when introducing new modalities into the LeRobot dataset, along with the design decisions made to balance diversity with efficiency. It discusses practical solutions for integrating heterogeneous data (audio, tactile feedback, depth) while maintaining scalable and usable dataset structures.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -3102,10 +2951,11 @@
         },
         "timeSlot": "16:55 - 17:20",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "XLeRobot is a fully open-source dual-arm mobile robot for household tasks, costing $660 in parts and under 4 hours to assemble. It combines SO-101 arms, a Lekiwi base, and an IKEA cart on top of the Hugging Face LeRobot ecosystem. Since launching in May 2025, it has reached 4.8k+ GitHub stars and a community of 6,000+ builders worldwide. This talk shares how XLeRobot grew from a PhD side project on robust manipulation into a widely adopted platform, covering the design philosophy, how it gained traction with zero promotion, and how the community has extended it — from university research testbeds to third-party assembly kits to academic papers. We also reflect on modern middleware like DORA and NVIDIA's open Physical AI stack (Isaac GR00T, Newton, Cosmos) now integrating directly into LeRobot.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -3134,11 +2984,7 @@
         },
         "timeSlot": "17:20 - 17:40",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       }
     ],
     "ws-vllm-paris2026": [
@@ -3162,11 +3008,7 @@
         },
         "timeSlot": "10:20 - 10:25",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3188,11 +3030,7 @@
         },
         "timeSlot": "10:25 - 11:05",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3214,10 +3052,11 @@
         },
         "timeSlot": "11:05 - 11:45",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Agentic AI is reshaping inference architecture. Reasoning models, long-context workflows, and multi-step agent systems put new pressure on serving stacks, making accelerator strategy more important than ever. vLLM is built for high-throughput, memory-efficient inference and serving, with an architecture designed to deploy open models across different hardware environments. This session explores why agentic workloads make accelerator strategy more critical, why broad hardware enablement matters in the vLLM ecosystem, and how platform teams can think about infrastructure choices through the lens of workload shape, concurrency, decode latency, memory pressure, and scaling patterns.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -3234,11 +3073,7 @@
         },
         "timeSlot": "11:45 - 12:00",
         "type": "break",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       }
     ],
     "ws-oh-tech-forum": [
@@ -3256,11 +3091,7 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3282,11 +3113,7 @@
         },
         "timeSlot": "14:00 - 14:05",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3308,11 +3135,7 @@
         },
         "timeSlot": "14:05 - 14:25",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3334,11 +3157,7 @@
         },
         "timeSlot": "14:25 - 14:45",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3360,11 +3179,7 @@
         },
         "timeSlot": "14:45 - 15:05",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3386,10 +3201,11 @@
         },
         "timeSlot": "15:05 - 15:25",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "LLM serving infrastructure has become a key pillar for modern society, but building scalable LLM infrastructure remains challenging at scale due to system issues like load imbalancing, stragglers and lack of elasticity. In this talk, we will present our recent work on scalable and efficient LLM infrastructure, including simple but efficient multiplication-based LLM global router and ultra-fast autoscaling mechanisms. Some of these works have been or are being deployed on world's largest LLM service providers.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -3406,11 +3222,7 @@
         },
         "timeSlot": "15:25 - 15:40",
         "type": "break",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3433,10 +3245,11 @@
         },
         "timeSlot": "15:40 - 16:00",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "This topic describes the complete process of Cangjie's 300-day AI R&D transformation, starting with an accidental AI coding attempt in May 2025. The team gradually implemented the Agent Centric Engineering (ACE) model, selected 30% of the teams to pilot end-to-end AI, and achieved dramatic productivity gains: the compiler team improved by 240–2600%, the third-party library team by 132–816%, and the standard library team by 125%. This talk passes on the core concept of \"actively embracing AI, breaking the shackles of thinking, and realizing the reconstruction of individual and team values.\"",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -3459,11 +3272,7 @@
         },
         "timeSlot": "16:00 - 16:20",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3486,11 +3295,7 @@
         },
         "timeSlot": "16:20 - 16:40",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3512,11 +3317,7 @@
         },
         "timeSlot": "16:40 - 17:00",
         "type": "talk",
-        "room": {
-          "en": "Founders Cafe",
-          "zh": "创始人咖啡厅",
-          "fr": "Founders Cafe"
-        }
+        "room": "Founders Cafe"
       }
     ],
     "ws-open-compute": [
@@ -3534,11 +3335,7 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3560,11 +3357,7 @@
         },
         "timeSlot": "14:00 - 14:15",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3586,11 +3379,7 @@
         },
         "timeSlot": "14:15 - 14:45",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3612,11 +3401,7 @@
         },
         "timeSlot": "14:45 - 15:15",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3638,11 +3423,7 @@
         },
         "timeSlot": "15:15 - 15:35",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3664,11 +3445,7 @@
         },
         "timeSlot": "15:35 - 15:55",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3690,11 +3467,7 @@
         },
         "timeSlot": "15:55 - 16:15",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3717,11 +3490,7 @@
         },
         "timeSlot": "16:15 - 16:35",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3737,11 +3506,7 @@
         },
         "timeSlot": "16:35 - 17:00",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3763,11 +3528,7 @@
         },
         "timeSlot": "17:00 - 17:30",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       }
     ],
     "ws-sglang-paris2026": [
@@ -3792,11 +3553,7 @@
         },
         "timeSlot": "14:00 - 14:05",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3819,11 +3576,7 @@
         },
         "timeSlot": "14:05 - 14:50",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3846,10 +3599,11 @@
         },
         "timeSlot": "14:50 - 15:10",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "Diffusion models have become the backbone of modern image and video generation, but serving them efficiently remains challenging. In this talk, we introduce SGLang-Diffusion, a high-performance inference framework designed for scalable diffusion generation. We present its system architecture and key optimizations — including advanced parallelism, distributed VAE, kernel fusion, and serving improvements — that enable efficient and production-ready deployment of diffusion models. We also demonstrate how SGLang-Diffusion accelerates popular open-source models and supports large-scale multimodal generation workloads.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -3873,11 +3627,7 @@
         },
         "timeSlot": "15:10 - 15:50",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3893,11 +3643,7 @@
         },
         "timeSlot": "15:50 - 16:00",
         "type": "break",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       },
       {
         "title": {
@@ -3919,10 +3665,11 @@
         },
         "timeSlot": "16:00 - 17:10",
         "type": "talk",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
+        "room": "Central Room",
+        "content": {
+          "en": "Reinforcement learning post-training has become a critical stage in building capable foundation models — yet most open-source practitioners still struggle to set up a stable, high-throughput RL pipeline. This hands-on lab brings SGLang's battle-tested RL infrastructure directly to participants. Attendees will walk through building an end-to-end RL training loop using SGLang as the rollout backend, learn how to integrate it with the Miles framework, and tackle real challenges like training-inference mismatch and rollout efficiency at scale. SGLang powers RL post-training for frontier models across the industry, running on over 400,000 GPUs worldwide.",
+          "zh": "",
+          "fr": ""
         }
       },
       {
@@ -3939,11 +3686,7 @@
         },
         "timeSlot": "17:10 - 17:30",
         "type": "break",
-        "room": {
-          "en": "Central Room",
-          "zh": "中央室",
-          "fr": "Salle Centrale"
-        }
+        "room": "Central Room"
       }
     ],
     "ws-own-your-data-paris2026": [
@@ -3967,11 +3710,7 @@
         },
         "timeSlot": "09:30 - 09:45",
         "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -3993,11 +3732,7 @@
         },
         "timeSlot": "09:45 - 10:00",
         "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -4019,11 +3754,7 @@
         },
         "timeSlot": "10:00 - 10:15",
         "type": "keynote",
-        "room": {
-          "en": "Master Stage",
-          "zh": "主舞台",
-          "fr": "Scène Principale"
-        }
+        "room": "Master Stage"
       },
       {
         "title": {
@@ -4500,7 +4231,12 @@
           "fr": "5 mai"
         },
         "timeSlot": "16:20 - 16:40",
-        "type": "talk"
+        "type": "talk",
+        "content": {
+          "en": "LLMs can write scikit-learn code in seconds, but can you understand what it does? This talk introduces Skolar, an open source free-of-charge learning platform built by scikit-learn's core developers, and makes the case for expert-curated training material as a counter-force to the flood of AI-generated content. Attendees will leave with hands-on exposure to high-quality, structured ML education and a few scikit-learn tricks they probably didn't know.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -4550,11 +4286,7 @@
         },
         "timeSlot": "10:20 - 12:00",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -4570,11 +4302,7 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -4597,11 +4325,7 @@
         },
         "timeSlot": "14:00 - 15:20",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -4617,11 +4341,7 @@
         },
         "timeSlot": "15:20 - 15:40",
         "type": "break",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
-        }
+        "room": "Junior Stage"
       },
       {
         "title": {
@@ -4643,10 +4363,11 @@
         },
         "timeSlot": "15:40 - 17:00",
         "type": "talk",
-        "room": {
-          "en": "Junior Stage",
-          "zh": "初级舞台",
-          "fr": "Scène Junior"
+        "room": "Junior Stage",
+        "content": {
+          "en": "There has never been a better time to do your embedded work in Rust. Foundational libraries and frameworks have reached reasonable maturity, great tools are available, the Rust language has been improved for embedded use cases, and hardware vendors are officially supporting Rust. The new advances in AI-assisted coding are the icing on the cake — AI works particularly well for embedded Rust: the high standards of Rust code quality and documentation combine with the structured Rust environment to be a safe and effective place for an LLM to work. In this workshop, we will build common new-developer code for the BBC micro:bit v2 using a combination of straight programming and AI assistance.",
+          "zh": "",
+          "fr": ""
         }
       }
     ]
