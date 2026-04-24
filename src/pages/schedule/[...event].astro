@@ -57,7 +57,8 @@ export async function getStaticPaths() {
             name: typeof s.name === "string" ? s.name : s.name?.en || "",
             image: s.image,
             roleOrg:
-              typeof s.roleOrg === "string" ? s.roleOrg : s.roleOrg?.en || "",
+              typeof s.roleOrg === "string" ? s.roleOrg : s.roleOrg?.en ||
+              (typeof s.title === "string" ? s.title : (s.title as any)?.en || ""),
             id: s.id,
           })) || [],
         room:
@@ -208,7 +209,7 @@ const eventCategory = (() => {
                   }
                   <div class="ev-speaker-info">
                     <span class="ev-speaker-name">{full?.name || speaker.name}</span>
-                    <span class="ev-speaker-role">{full?.roleOrg || speaker.roleOrg}</span>
+                    <span class="ev-speaker-role">{speaker.roleOrg || full?.roleOrg}</span>
                   </div>
                 </a>
               )
