@@ -414,7 +414,12 @@
         },
         "timeSlot": "09:30 - 09:45",
         "type": "keynote",
-        "room": "Master Stage"
+        "room": "Master Stage",
+        "content": {
+          "en": "",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -835,7 +840,12 @@
         },
         "timeSlot": "09:30 - 09:45",
         "type": "keynote",
-        "room": "Master Stage"
+        "room": "Master Stage",
+        "content": {
+          "en": "",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1487,6 +1497,11 @@
             "org": "Khronos"
           },
           {
+            "name": "Nicolas Flores-Herr",
+            "title": "Team Lead Foundation Models, Fraunhofer IAIS",
+            "id": "nicolas-flores-herr"
+          },
+          {
             "id": "wendy-seltzer",
             "name": "Wendy Seltzer",
             "image": "/images/speakers/better_portrait/wendy-seltzer.png",
@@ -2084,7 +2099,12 @@
         },
         "timeSlot": "15:00 - 15:20",
         "type": "talk",
-        "room": "Junior Stage"
+        "room": "Junior Stage",
+        "content": {
+          "en": "Most apps are built once and stay the same. Self-evolving apps are different, they improve every time you use them, not because someone updates the code, but because the app learns from your corrections.\n\nThis intelligence exists completely outside the app as a separate, updatable layer. Before each use, it reads your previous corrections and uses them as examples to make better decisions. No machine learning required, neither retraining or data science team. In this session, I will walk you through what self-evolving apps are, how to design them, how to build one, which licensing models work best and the lessons I have learned from building several of these apps, as well as a live demonstration.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2122,7 +2142,12 @@
         },
         "timeSlot": "15:40 - 16:10",
         "type": "talk",
-        "room": "Junior Stage"
+        "room": "Junior Stage",
+        "content": {
+          "en": "What if you could design agents like Socrates' daimonion — not one, but many? A beacon that watches your project evolve and generates a slide deck before Monday's meeting. Another that curates your morning news into a personalized radio station, read aloud in your preferred voice. A third orchestrating a research pipeline overnight with eight workers fanning out in parallel. Each arm thinking independently, all sharing one brain.\n\nOctos — the Open Cognitive Tasks Orchestration System — makes this architecture real. A single 31MB Rust binary that serves 200+ users on a Mac Mini. No Python, no Docker, no runtime dependencies. 15 LLM providers with 3-layer failover so your daimons never go silent. 12 messaging channels so they meet people where they already are. Three memory layers so they remember what matters. And smart tool management that keeps agents sharp — 30+ capabilities available, but only 15 active at any moment, like an octopus choosing which arms to extend.\n\nIn this talk, we'll explore the design principles behind building agent applications that transcend chat — from multi-channel presence to proactive orchestration, from provider resilience to the hard problem of giving an agent many arms without losing its mind.\n\nYou'll leave with a new mental model: agents not as tools you use, but as daimons you design.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3030,7 +3055,12 @@
         },
         "timeSlot": "10:25 - 11:05",
         "type": "talk",
-        "room": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Large Language Models (LLMs) have revolutionized the AI landscape, and vLLM has emerged as a leading inference engine that dramatically accelerates LLM serving through innovations like PagedAttention. But how do you actually build, test, and contribute to this rapidly evolving project?\n\nIn this talk, we'll take you through vLLM's architecture and explore the practical aspects of working with this complex Python/C++ codebase. We'll start with an overview of vLLM's core optimizations including PagedAttention, then dive into the build process for different targets as well as third party hardware plugins, such as Google TPU, AWS Neuron, Intel Gaudi and more.\n\nYou'll learn about testing strategies such as performance benchmarking with GuideLLM and model evaluation using lm-evaluation-harness. We'll also cover contribution best practices to the vLLM community and how Red Hat AI Inference Server (RHAIIS) provides a trustworthy and validated platform to run LLM workflows across diverse hardware environments.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3276,9 +3306,9 @@
       },
       {
         "title": {
-          "en": "TBD - Sébastien Crozet",
-          "zh": "TBD - Sébastien Crozet",
-          "fr": "TBD - Sébastien Crozet"
+          "en": "Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics and Training Datasets Generation",
+          "zh": "Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics and Training Datasets Generation",
+          "fr": "Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics and Training Datasets Generation"
         },
         "speakers": [
           {
@@ -3295,7 +3325,12 @@
         },
         "timeSlot": "16:20 - 16:40",
         "type": "talk",
-        "room": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "With the emergence of World Models for robotics and training datasets generation, high-performance multiphysics simulators are becoming central to robotics training with libraries like qNewton (Nvidia Warp, Python) and Genesis (Taichi, Python). In this presentation, we introduce Project Nexus: a work-in-progress alternative written in Rust (compiled with rust-gpu), running on all GPU platforms including the web.\n\n• Motivation for World Models, dataset generation, and the role physics simulation plays in it\n• Introduction to Nexus and its main dependencies (Khal, Vortx, glamx)\n• Benefits of rust-gpu for a 100% Rust codebase\n• Live demo",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3357,7 +3392,12 @@
         },
         "timeSlot": "14:00 - 14:15",
         "type": "talk",
-        "room": "Central Room"
+        "room": "Central Room",
+        "content": {
+          "en": "The evolution from ChatGPT's conversational AI to OpenClaw's autonomous agent ecosystem marks a paradigm shift in AI compute. This transformation is fundamentally bidirectional: while advanced compute infrastructure enables increasingly sophisticated agentic capabilities, the agentic paradigm itself is reshaping compute delivery through modular, skill-based architectures.\n\nOpenClaw exemplifies this new wave, where agentic AI system capabilities are determined by the interplay of large models, skills, and agent systems. This tripartite architecture demands new evaluation methodologies that assess not just model performance, but the orchestration of skills and autonomous decision-making—addressed by open evaluation initiatives like FlagEval and the Eclipse partnership PanEval.\n\nFlagOS sits at the center of this transformation, building universal and inclusive AI compute capabilities that support heterogeneous hardware backends. By enabling efficient execution of the massive token volumes demanded by agentic workflows, FlagOS provides the computational substrate for this new era—where compute is not merely consumed by intelligence, but actively shaped by it.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3405,14 +3445,19 @@
       },
       {
         "title": {
-          "en": "TBD - Gábor Soós",
-          "zh": "TBD - Gábor Soós",
-          "fr": "TBD - Gábor Soós"
+          "en": "Bridging AI Evaluation and Real-World Deployment: Place-Based Evaluation Testbeds for High-Trust Public Domains",
+          "zh": "Bridging AI Evaluation and Real-World Deployment: Place-Based Evaluation Testbeds for High-Trust Public Domains",
+          "fr": "Bridging AI Evaluation and Real-World Deployment: Place-Based Evaluation Testbeds for High-Trust Public Domains"
+        },
+        "content": {
+          "en": "As AI systems evolve from standalone models toward tool-using, workflow-oriented, and increasingly agentic deployments, evaluation must move beyond benchmark comparison and static task scores. This presentation proposes place-based evaluation testbeds, designed through a governance-first approach, to bridge AI evaluation and real-world deployment in high-trust public domains such as culture, education, and water-linked socio-ecological contexts.\n\nThe core argument is that benchmark performance alone does not show whether a system is ready for institution-grade deployment. In real-world settings, system quality depends not only on answer accuracy, but also on traceability, robustness, auditability, documentation readiness, and safe behavior under contextual constraints. To address this gap, the talk introduces a testbed architecture based on a governed knowledge layer rather than unconstrained generation.\n\nThe proposed pipeline is: field encounter → co-curation → governed knowledge layer → AI companion → supervised feedback loop. This creates a controlled retrieval environment in which outputs can be assessed against curated sources, provenance logic, access conditions, and correction pathways. It therefore supports evaluation not only of response quality, but also of deployment-relevant properties under realistic public-facing conditions.\n\nAs an initial reference environment, the presentation uses Tihany (Hungary), a heritage- and water-linked landscape context, to illustrate how governed knowledge layers can support more controllable and accountable public-interest AI deployment. The water dimension also connects the testbed to Source2Sea: Bartók 3.0 Connectivity (2026–2031), a UN Ocean Decade Action exploring linked cultural and water systems.\n\nThe broader claim is that place-based evaluation testbeds can complement open evaluation initiatives by providing real-world environments in which model capability, system orchestration, and societal deployment readiness can be assessed together.",
+          "zh": "",
+          "fr": ""
         },
         "speakers": [
           {
             "name": "Gábor Soós",
-            "title": "Hungarian National Commission for UNESCO",
+            "title": "Advisory Committee Member, ICCSD UNESCO",
             "id": "gabor-soos"
           }
         ],
@@ -3490,7 +3535,12 @@
         },
         "timeSlot": "16:15 - 16:35",
         "type": "talk",
-        "room": "Central Room"
+        "room": "Central Room",
+        "content": {
+          "en": "SGLang is an open-source high-performance serving framework for LLMs and Multimodal Models, with over 24,000 GitHub stars. In this talk, we present the key design principles behind SGLang's performance.\n\nWe will discuss recent advances including native multimodal models support, speculative decoding support (Eagle3/MTP), and FP8/NVFP4 quantization on Hopper and Blackwell GPUs. We also share lessons from maintaining a fast-moving open-source project with thousands of contributors worldwide.\n\nAttendees will gain a practical understanding of how SGLang achieves state-of-the-art throughput and latency, and how to deploy it for production LLM serving.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3576,7 +3626,12 @@
         },
         "timeSlot": "14:05 - 14:50",
         "type": "talk",
-        "room": "Central Room"
+        "room": "Central Room",
+        "content": {
+          "en": "SGLang is an open-source high-performance serving framework for LLMs and Multimodal Models, with over 24,000 GitHub stars. In this hands-on lab, participants will run an open model live using SGLang, experiencing its key design principles firsthand.\n\nWe will cover recent advances including native multimodal models support, speculative decoding support (Eagle3/MTP), and FP8/NVFP4 quantization on Hopper and Blackwell GPUs. Attendees will gain practical experience deploying SGLang for production LLM serving.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3627,7 +3682,12 @@
         },
         "timeSlot": "15:10 - 15:50",
         "type": "talk",
-        "room": "Central Room"
+        "room": "Central Room",
+        "content": {
+          "en": "Diffusion models have become the backbone of modern image and video generation, but serving them efficiently remains challenging. In this hands-on lab, we introduce SGLang-Diffusion, a high-performance inference framework designed for scalable diffusion generation. Participants will run an open diffusion model live and explore its system architecture and key optimizations—including advanced parallelism, distributed VAE, kernel fusion, and serving improvements—that enable efficient and production-ready deployment of diffusion models.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3710,7 +3770,12 @@
         },
         "timeSlot": "09:30 - 09:45",
         "type": "keynote",
-        "room": "Master Stage"
+        "room": "Master Stage",
+        "content": {
+          "en": "",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
