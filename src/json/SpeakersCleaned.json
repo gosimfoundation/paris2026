@@ -2027,7 +2027,7 @@
     {
       "id": "mirko-boehm",
       "name": "Mirko Boehm",
-      "bio": "",
+      "bio": "Mirko Boehm contributes to free and open source software as a community builder, licensing expert and researcher. His work spans major projects including the KDE Desktop, the Open Invention Network and the Open Source Initiative. He holds a PhD in innovation economics and serves as visiting lecturer and researcher on open source software at the Technical University of Berlin. His professional background encompasses entrepreneurship, executive management, software development and service\r\nas a German Air Force officer. Since joining the Linux Foundation in June 2023 as senior director for community development at Linux Foundation Europe, he drives engagement and collaboration among European open source stakeholders. He is fluent in English and German and resides in the Berlin area.",
       "role": "",
       "org": "LF Europe",
       "roleOrg": "LF Europe",
@@ -2039,8 +2039,8 @@
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
-        "website": ""
+        "linkedin": "https://www.linkedin.com/in/mirkoboehm/",
+        "website": "https://www.creative-destruction.org/"
       },
       "status": "Accept",
       "draft": false
@@ -2216,7 +2216,7 @@
     {
       "id": "qigang-zhu",
       "name": "Qigang Zhu",
-      "bio": "",
+      "bio": "Zhu Qigang, Open Source Expert at Beijing Artificial Intelligence Institute and Secretary General of FlagOS Open Source Community, Deputy Director of the Global Open Source Collaboration Research Center at the University of International Business and Economics, Executive Member of the Open Source Development Committee of the China Computer Federation, former Secretary General of the Shanghai Open Source Information Technology Association, former core member of the OpenHarmony Team , former head of the Business Development Department, Education and Training Department, and Industry Research Department at the Open Atom Open Source Foundation. One of the early promoters of open source hardware and open source education in China.",
       "role": "Head of Open Source Engineering",
       "org": "BAAI",
       "roleOrg": "Head of Open Source Engineering, BAAI",
@@ -2226,10 +2226,10 @@
       ],
       "socialLinks": {
         "mastodon": "",
-        "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
+        "twitter": "https://x.com/FlagOS_Official",
+        "github": "https://github.com/flagos-ai",
+        "linkedin": "https://www.linkedin.com/company/flagos-community",
+        "website": "https://flagos.io"
       },
       "status": "Accept",
       "draft": false
@@ -2237,7 +2237,7 @@
     {
       "id": "jian-tao",
       "name": "Jian Tao",
-      "bio": "",
+      "bio": "Researcher at the System Intelligence Group, Beijing Academy of Artificial Intelligence (BAAI), contributing to KernelGen. Focused on automated Triton operator synthesis and engineering applications, building an open-source high-performance operator ecosystem, and exploring full-process techniques from automatic generation to performance optimization and formal verification.",
       "role": "Algorithm Engineer",
       "org": "BAAI",
       "roleOrg": "Algorithm Engineer, BAAI",
@@ -2554,7 +2554,7 @@
     {
       "id": "bart-kubiak",
       "name": "Bart Kubiak",
-      "bio": "",
+      "bio": "Bartosz Kubiak is an AI governance strategist and ERA:AI Fellow whose work sits at the intersection of frontier AI policy and physical compute infrastructure. He holds an MPP from the Oxford University’s Blavatnik School of Government and has spent a decade advising governments and Fortune 100 technology firms on EU regulatory strategy.\r\n\r\nMost recently, he structured a €25 billion AI Gigafactories public-private partnership framework for the European Commission — one of the EU’s flagship initiatives to build sovereign compute capacity at scale. His research focuses on legal personhood frameworks for autonomous AI agents, exploring how governance structures can keep pace with agentic systems.\r\n\r\nPreviously, as Head of the Warsaw Office at the Aspen Institute, he convened C-suite leaders from Intel, Amazon, and Microsoft on transatlantic digital infrastructure policy. He teaches AI governance at BlueDot Impact. ISF Fellow. Graduate of Law with American Law LLB from the University of East An",
       "role": "Co-Founder",
       "org": "New Intelligence Centre for Empathy and Reason",
       "roleOrg": "Co-Founder, New Intelligence Centre for Empathy and Reason",
@@ -2566,7 +2566,7 @@
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/in/bartkubiak/",
         "website": ""
       },
       "status": "Accept",
@@ -2575,7 +2575,7 @@
     {
       "id": "fraser-edwards",
       "name": "Fraser Edwards",
-      "bio": "",
+      "bio": "Fraser Edwards (CEO) co-founded cheqd, led WEF's Known Traveller Digital Identity pilot, and holds patents in cross-ledger cryptography.",
       "role": "CEO & Co-Founder",
       "org": "Cheqd.io",
       "roleOrg": "CEO & Co-Founder, Cheqd.io",
@@ -2585,9 +2585,9 @@
       ],
       "socialLinks": {
         "mastodon": "",
-        "twitter": "",
+        "twitter": "https://x.com/fraser_again",
         "github": "",
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/in/edwardsfraser/",
         "website": ""
       },
       "status": "Accept",
@@ -2596,7 +2596,7 @@
     {
       "id": "pierre-yves-gibello",
       "name": "Pierre-Yves Gibello",
-      "bio": "",
+      "bio": "Pierre-Yves, originally a software development engineer, is the CEO of OW2 since 2022: a European non-profit FOSS foundation, we host open source projects, promote them, animate a community mixing academics, companies, public bodies, foundations, associations and individuals, promote FOSS by organizing or participating to professional events,\r\nand advocate for it at political and social levels. OW2 is also involved in the NGI and Open Internet Stack EU FOSS funding programmes.",
       "role": "CEO",
       "org": "OW2",
       "roleOrg": "CEO, OW2",
@@ -2617,18 +2617,18 @@
     {
       "id": "sizhe-cheng",
       "name": "Sizhe Cheng",
-      "bio": "",
+      "bio": "Chengsizhe is a software engineer and independent game developer building multi-agent systems and strategy games, with years of experience in the game industry.",
       "role": "Lead Programmer",
       "org": "Huansheng Technology",
       "roleOrg": "Lead Programmer, Huansheng Technology",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "image": "/images/speakers/better_portrait/sizhe-cheng.png",
       "tags": [
         "ai-generative-app"
       ],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
-        "github": "",
+        "github": "https://github.com/anantheparty",
         "linkedin": "",
         "website": ""
       },

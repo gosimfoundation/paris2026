@@ -416,7 +416,7 @@
         "type": "keynote",
         "room": "Master Stage",
         "content": {
-          "en": "",
+          "en": "Large language models are getting better and better at solving mathematics problems, but when one is learning mathematics one wants more than just a solution: one wants to understand the insights that led to the solution. These can often be hard to extract from the output of an LLM even when that output includes a \"chain of thought\". I shall discuss work my research group is undertaking that is aimed at improving this situation.",
           "zh": "",
           "fr": ""
         }
@@ -441,7 +441,12 @@
         },
         "timeSlot": "09:45 - 10:00",
         "type": "keynote",
-        "room": "Master Stage"
+        "room": "Master Stage",
+        "content": {
+          "en": "I will introduce our latest progress on building better predictors on tables and relational data. These progresses are driven both by powerful transformer-based foundation models and by enabling better data preparation. Table foundation models are pretrained to embark implicit priors useful for tables. TabICL is an open and top-performing table foundation model. Data preparation can be very time consuming and tedious, though it is very important when the data is more than a simple numerical table. The skrub package makes this preparation much easier.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -842,7 +847,7 @@
         "type": "keynote",
         "room": "Master Stage",
         "content": {
-          "en": "",
+          "en": "Large language models are getting better and better at solving mathematics problems, but when one is learning mathematics one wants more than just a solution: one wants to understand the insights that led to the solution. These can often be hard to extract from the output of an LLM even when that output includes a \"chain of thought\". I shall discuss work my research group is undertaking that is aimed at improving this situation.",
           "zh": "",
           "fr": ""
         }
@@ -867,7 +872,12 @@
         },
         "timeSlot": "09:45 - 10:00",
         "type": "keynote",
-        "room": "Master Stage"
+        "room": "Master Stage",
+        "content": {
+          "en": "I will introduce our latest progress on building better predictors on tables and relational data. These progresses are driven both by powerful transformer-based foundation models and by enabling better data preparation. Table foundation models are pretrained to embark implicit priors useful for tables. TabICL is an open and top-performing table foundation model. Data preparation can be very time consuming and tedious, though it is very important when the data is more than a simple numerical table. The skrub package makes this preparation much easier.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -1726,7 +1736,12 @@
         },
         "timeSlot": "10:50 - 11:20",
         "type": "talk",
-        "room": "Open Stage"
+        "room": "Open Stage",
+        "content": {
+          "en": "The models are evolving rapidly, so this section cannot be finalized at the moment. This table is intended to reserve a placeholder, and the details can be further discussed via email.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2078,7 +2093,8 @@
           {
             "name": "Sizhe Cheng",
             "title": "Lead Programmer, Huansheng Technology",
-            "id": "sizhe-cheng"
+            "id": "sizhe-cheng",
+            "image": "/images/speakers/better_portrait/sizhe-cheng.png"
           }
         ],
         "date": {
@@ -2088,7 +2104,12 @@
         },
         "timeSlot": "14:00 - 14:30",
         "type": "talk",
-        "room": "Junior Stage"
+        "room": "Junior Stage",
+        "content": {
+          "en": "As AI agents become more capable, the next challenge is not only how to run a single agent, but how humans and multiple agents can communicate in a shared, persistent environment.\r\n\r\nAgentChat is an open-source communication platform for humans and agents. It provides a messaging kernel that supports direct messages, group chats, persistent identities, and message delivery across local runtimes, devices, and servers. Agents running on the same machine can coordinate with each other, agents on different devices can stay connected, and my agent can directly collaborate with your agent without requiring humans to manually relay context between systems.\r\n\r\nThe goal of AgentChat is not to define what every agent should do, but to provide the platform they can use to communicate, coordinate, and stay connected. Matrix can be used as one frontend because it is open and controllable, but AgentChat is not tied to Matrix itself. It has its own communication core and can serve as a general substrate for human-agent and agent-agent interaction.\r\n\r\nOn top of this platform, developers can build many higher-level workflows, such as delegation, collaborative coding, monitoring, or human-in-the-loop operations. But the foundation remains the same: a common communication layer where humans and agents are first-class participants, whether they are running locally or across distributed environments.\r\n\r\nIn this talk, I will introduce the design of AgentChat, explain why agent communication needs to go beyond single-user and single-device setups, and share lessons from building an open platform for direct, structured, and persistent collaboration among humans and agents.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3072,7 +3093,12 @@
         },
         "timeSlot": "10:20 - 10:25",
         "type": "talk",
-        "room": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Agentic AI is reshaping inference architecture. Reasoning models, long-context workflows, and multi-step agent systems put new pressure on serving stacks, which makes accelerator strategy more important than before. The challenge is no longer only to serve a model fast. It is to match the right serving architecture and the right accelerator profile to the right workload.\r\n\r\nThat is why broad accelerator support matters in vLLM. vLLM is built for high-throughput, memory-efficient inference and serving, with an architecture designed to deploy open models across different hardware environments rather than a single path. AI accelerators span familiar categories such as GPUs, NPUs, and ASIC-based designs, with CPU support still relevant for specific deployment profiles such as smaller models, edge environments, and cost-sensitive workloads. \r\n\r\nThe session explores what that shift means in practice for teams building inference platforms. It looks at why agentic workloads make accelerator strategy more important, why broad hardware enablement matters in the vLLM ecosystem, and how platform teams can think about infrastructure choices through the lens of workload shape, prompt and context behavior, concurrency, decode latency, memory pressure, scaling patterns, and operational fit. vLLM is a strong foundation for that discussion because the project emphasizes broad hardware support, top performance, production readiness, and extensible architecture, and its serving stack includes capabilities such as high-throughput serving, distributed inference, and online and offline inference modes.  ￼\r\n\r\nA practical framework ties accelerator decisions back to workload requirements and deployment goals, giving attendees a clearer way to think about modern inference architecture while showing how vLLM keeps the serving layer open and adaptable as workloads evolve.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3227,7 +3253,12 @@
         },
         "timeSlot": "14:25 - 14:45",
         "type": "talk",
-        "room": "Founders Cafe"
+        "room": "Founders Cafe",
+        "content": {
+          "en": "Scaling a modern OS ecosystem requires massive developer velocity. This session explores how the Eclipse Oniro project leverages AI as a \"force multiplier\" to rapidly build out its landscape, which helps streamline the porting of popular, complex apps and integrate modern frameworks into the OpenHarmony environment.\r\n\r\nWe will share practical insights into how AI-assisted engineering allows us to bridge different frameworks and create new applications from scratch in a fraction of the usual time.\r\n\r\nFinally, we will discuss how this accelerated growth is balanced with the project's commitment to security and professional standards. This includes ensuring CRA compliance and closely tracking emerging initiatives like Unified Attestation, which offer a significant leap forward in creating a verifiable, secure foundation for a new generation of operating systems.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3462,7 +3493,12 @@
         },
         "timeSlot": "14:15 - 14:45",
         "type": "talk",
-        "room": "Central Room"
+        "room": "Central Room",
+        "content": {
+          "en": "The fragmentation of AI accelerators has created a prohibitive engineering bottleneck. Supporting a single model across diverse hardware requires weeks of manual porting — an unmanageable N×M combinatorial explosion.\r\nWe present FlagOS, an open-source system software stack that consolidates the heterogeneous AI landscape. Core components include a unified operator library (FlagGems, 407+ ops, 25+ accelerators), a multi-target compiler (FlagTree), and a non-invasive plugin system for framework adaptation (FlagScale).\r\nThis talk centers on the symbiotic evolution of infrastructure and agents:\r\nFlagOS powers agents. Autonomous agents demand 24/7, high-concurrency inference. FlagOS provides a stable, unified compute abstraction that masks hardware-specific complexities, ensuring reliable inference services across diverse accelerators.\r\nAgents power FlagOS. Through FlagOS Skills — agent-executable workflow packages — we shift from \"infrastructure-as-code\" to \"infrastructure-as-agent.\" AI coding agents now autonomously perform our most complex infrastructure tasks: 13-step model backporting with E2E precision validation, and MCP-driven kernel generation (99% correctness on 110-operator benchmarks).\r\nThe infrastructure is no longer just agent-ready; it is agent-built and continuously agent-improved.\r\nBAAI is committed to global open collaboration. We have contributed PanEval to the Eclipse Foundation as a vendor-neutral AI evaluation platform.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3523,7 +3559,8 @@
           {
             "name": "Jian Tao",
             "title": "Algorithm Engineer, AI Systems Research Group, BAAI",
-            "id": "jian-tao"
+            "id": "jian-tao",
+            "image": "/images/speakers/better_portrait/jian-tao.png"
           }
         ],
         "date": {
@@ -3555,7 +3592,12 @@
         },
         "timeSlot": "15:55 - 16:15",
         "type": "talk",
-        "room": "Central Room"
+        "room": "Central Room",
+        "content": {
+          "en": "Standing on the shoulders of giants like modded-nanogpt speedrun and marin speedrun, the Open Model Initiative under LFAI&Data Foundation kickstarted a new speedrun effort focusing on multi-modal models in early 2026. This is the first effort to accelerate model architecture and training/inference innovation for multi-modal tasks worldwide. In this talk we will share the motivation for this effort, how it came about and the latest submission we have received since launch of the effort.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3611,7 +3653,8 @@
           {
             "name": "Jian Tao",
             "title": "Algorithm Engineer, BAAI",
-            "id": "jian-tao"
+            "id": "jian-tao",
+            "image": "/images/speakers/better_portrait/jian-tao.png"
           }
         ],
         "date": {
@@ -3647,7 +3690,12 @@
         },
         "timeSlot": "14:00 - 14:05",
         "type": "talk",
-        "room": "Central Room"
+        "room": "Central Room",
+        "content": {
+          "en": "SGLang is an open-source high-performance serving framework for LLMs and Multimodal Models, with over 24,000 GitHub stars. In this talk, we would present the key design principles behind SGLang's performance.\r\n\r\nWe will discuss recent advances including native multimodal models support, speculative decoding support (Eagle3/MTP), and FP8/NVFP4 quantization on Hopper and Blackwell GPUs. We also share lessons from maintaining a fast-moving open-source project with thousands of contributors worldwide.\r\n\r\nAttendees will gain a practical understanding of how SGLang achieves state-of-the-art throughput and latency, and how to deploy it for production LLM serving.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -3816,7 +3864,7 @@
         "type": "keynote",
         "room": "Master Stage",
         "content": {
-          "en": "",
+          "en": "Large language models are getting better and better at solving mathematics problems, but when one is learning mathematics one wants more than just a solution: one wants to understand the insights that led to the solution. These can often be hard to extract from the output of an LLM even when that output includes a \"chain of thought\". I shall discuss work my research group is undertaking that is aimed at improving this situation.",
           "zh": "",
           "fr": ""
         }
@@ -3841,7 +3889,12 @@
         },
         "timeSlot": "09:45 - 10:00",
         "type": "keynote",
-        "room": "Master Stage"
+        "room": "Master Stage",
+        "content": {
+          "en": "I will introduce our latest progress on building better predictors on tables and relational data. These progresses are driven both by powerful transformer-based foundation models and by enabling better data preparation. Table foundation models are pretrained to embark implicit priors useful for tables. TabICL is an open and top-performing table foundation model. Data preparation can be very time consuming and tedious, though it is very important when the data is more than a simple numerical table. The skrub package makes this preparation much easier.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -4434,7 +4487,12 @@
         },
         "timeSlot": "14:00 - 15:20",
         "type": "talk",
-        "room": "Junior Stage"
+        "room": "Junior Stage",
+        "content": {
+          "en": "In this talk i will show how to rapidly create high performance Rust applications with Makepad. You can use your AI of choice codex, claude running inside the makepad IDE. Rust is the ideal language for AI generation because of its strong compiler guarantees and superb performance. We no longer need to write it by hand. Makepad studio has automation integration for the AI so it can generate, see, click buttons and iterate completely automated on visual applications. Makepad compiles to web, desktop (windows, linux, macos), mobile (android, ios) and XR (Quest). In this talk i will demo how far we can push AI application generation including AI generated CAD, 3D, map rendering, vector engines, and mixed reality 3D world scanning.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
