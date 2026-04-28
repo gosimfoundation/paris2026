@@ -337,9 +337,7 @@
       "org": "Peking University",
       "roleOrg": "Ph.D. Student, Peking University",
       "image": "/images/speakers/better_portrait/yu-cheng.png",
-      "tags": [
-        "agentic-ai-summit"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -379,9 +377,7 @@
       "org": "Global AI Assembly",
       "roleOrg": "CEO, Global AI Assembly",
       "image": "/images/speakers/better_portrait/feliana-citradewi.png",
-      "tags": [
-        "ws-oh-tech-forum"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -721,7 +717,8 @@
       "roleOrg": "VP of Technology, ModelBest",
       "image": "/images/speakers/better_portrait/chao-jia.png",
       "tags": [
-        "agentic-ai-on-edge"
+        "agentic-ai-on-edge",
+        "agentic-ai-summit"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -763,9 +760,7 @@
       "org": "Arm",
       "roleOrg": "Director of Software Communities, Arm",
       "image": "/images/speakers/better_portrait/megan-knight.png",
-      "tags": [
-        "ws-own-your-data-paris2026"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -848,7 +843,8 @@
       "roleOrg": "Vice President & Chief Engineer, BAAI",
       "image": "/images/speakers/better_portrait/yonghua-lin.png",
       "tags": [
-        "keynote"
+        "agentic-ai-summit",
+        "ws-open-compute"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -953,7 +949,7 @@
       "roleOrg": "Senior Principal Engineer, Amazon",
       "image": "/images/speakers/better_portrait/niko-matsakis.png",
       "tags": [
-        "keynote"
+        "agentic-ai-summit"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1058,9 +1054,7 @@
       "org": "Probabl",
       "roleOrg": "Head of Ecosystem Development, Probabl",
       "image": "/images/speakers/better_portrait/cailean-osborne.png",
-      "tags": [
-        "ws-own-your-data-paris2026"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -1143,7 +1137,9 @@
       "roleOrg": "Chief Open Source Liaison Officer, Huawei",
       "image": "/images/speakers/better_portrait/bill-ren.png",
       "tags": [
-        "keynote"
+        "agentic-ai-summit",
+        "hackathon-agentic",
+        "ws-own-your-data-paris2026"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1395,9 +1391,7 @@
       "org": "QuantumBlack",
       "roleOrg": "Principal Software Engineer, QuantumBlack",
       "image": "/images/speakers/better_portrait/merel-theisen.png",
-      "tags": [
-        "ws-own-your-data-paris2026"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -1460,7 +1454,8 @@
       "roleOrg": "Chief Science Officer, Probabl",
       "image": "/images/speakers/better_portrait/gal-varoquaux.png",
       "tags": [
-        "keynote",
+        "agentic-ai-summit",
+        "hackathon-agentic",
         "ws-own-your-data-paris2026"
       ],
       "socialLinks": {
@@ -1481,9 +1476,7 @@
       "org": "Google DeepMind",
       "roleOrg": "Senior Staff Research Scientist, Google DeepMind",
       "image": "/images/speakers/better_portrait/chi-wang.png",
-      "tags": [
-        "ai-generative-app"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "https://x.com/Chi_Wang_",
@@ -1523,9 +1516,7 @@
       "org": "East China Normal University",
       "roleOrg": "Professor, East China Normal University",
       "image": "/images/speakers/better_portrait/wei-wang.png",
-      "tags": [
-        "agentic-ai-summit"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -1609,9 +1600,7 @@
       "org": "Tsinghua University",
       "roleOrg": "Ph.D. Candidate, Tsinghua University",
       "image": "/images/speakers/better_portrait/weiyu-xie.png",
-      "tags": [
-        "agentic-ai-on-edge"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -1737,9 +1726,7 @@
       "roleOrg": "Chief Architect, Red Hat",
       "image": "/images/speakers/better_portrait/jiaju-zhang.png",
       "bio": "Jiaju Zhang is a passionate open-source advocate with over 20 years of experience in R&D, architectural design, and engineering management. His expertise spans Linux, distributed systems, cloud-native technologies, and AI infrastructure. Throughout his career, Jiaju has held senior leadership roles, including Chief Architect, Technical Director and Head of R&D in China, at major multinational and ICT enterprises. As an independent contributor, he has successfully launched and promoted globally recognized open-source projects.\r\n\r\nCurrently, Jiaju serves as Chief Architect in Field CTO Organization, Red Hat, focuses on advancing open source AI communities like vLLM and llm-d and fostering enterprise solutions through co-engineering with ecosystem partners. His work is instrumental in driving AI technology strategy and accelerating the industrial deployment of Red Hat solutions across various vertical sectors.",
-      "tags": [
-        "ws-vllm-paris2026"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -1886,7 +1873,8 @@
       "image": "/images/speakers/better_portrait/zonghuan-wu.png",
       "bio": "Zonghuan Wu, Ph.D. is a core contributor to Octos, an open-source Rust-native Agentic OS, and lead of MoFA, an open-source agent framework for Composition AI. Previously a tech lead and architect at Huawei's US Research Lab, he spent over a decade building AI, knowledge graph, and search systems at scale.",
       "tags": [
-        "ai-generative-app"
+        "ai-generative-app",
+        "hackathon-agentic"
       ],
       "socialLinks": {
         "mastodon": "",
@@ -1926,9 +1914,7 @@
       "org": "OpenAtom openEuler",
       "roleOrg": "Community Operations Manager, OpenAtom openEuler",
       "image": "/images/speakers/better_portrait/zhenyu-zheng.png",
-      "tags": [
-        "agentic-ai-summit"
-      ],
+      "tags": [],
       "socialLinks": {
         "twitter": "",
         "github": "",
@@ -2149,9 +2135,7 @@
       "org": "NGO UNESCO Avicenne",
       "roleOrg": "Directrice d'éducation, NGO UNESCO Avicenne",
       "image": "/images/speakers/better_portrait/wang-ziyan.png",
-      "tags": [
-        "agentic-ai-summit"
-      ],
+      "tags": [],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
@@ -2212,8 +2196,14 @@
       "org": "CNRS",
       "roleOrg": "Researcher, CNRS",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2225,8 +2215,16 @@
       "org": "Sorbonne University",
       "roleOrg": "Associate Professor of AI in Education, Sorbonne University",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2238,8 +2236,16 @@
       "org": "LAION e.V.; FZJ",
       "roleOrg": "Scientific Lead & Chairman, LAION e.V.; FZJ",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2251,8 +2257,14 @@
       "org": "Universidad Politécnica de Madrid",
       "roleOrg": "Associate Professor, Universidad Politécnica de Madrid",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2264,8 +2276,16 @@
       "org": "Draft'n Run",
       "roleOrg": "Founder, Draft'n Run",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2277,8 +2297,16 @@
       "org": "LAION",
       "roleOrg": "Researcher, LAION",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2290,8 +2318,16 @@
       "org": "LF Europe",
       "roleOrg": "LF Europe",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2303,8 +2339,16 @@
       "org": "Shanghai Jiao Tong University",
       "roleOrg": "Associate Professor, Shanghai Jiao Tong University",
       "image": "/images/speakers/better_portrait/1776843228238-yun-lin.png",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2315,9 +2359,17 @@
       "role": "Senior Research Engineer",
       "org": "Huawei Munich Research Center",
       "roleOrg": "Senior Research Engineer, Huawei Munich Research Center",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["ws-oh-tech-forum"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "image": "/images/speakers/better_portrait/debayan-roy.png",
+      "tags": [
+        "ws-oh-tech-forum"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2328,9 +2380,17 @@
       "role": "Senior Technical Expert",
       "org": "Huawei Milan Research Institute",
       "roleOrg": "Senior Technical Expert, Huawei Milan Research Institute",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["ws-oh-tech-forum"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "image": "/images/speakers/better_portrait/francesco-pham.png",
+      "tags": [
+        "ws-oh-tech-forum"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2341,9 +2401,17 @@
       "role": "Director",
       "org": "Huawei Fourier Research Institute",
       "roleOrg": "Director, Huawei Fourier Research Institute",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["ws-oh-tech-forum"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "image": "/images/speakers/better_portrait/liang-zhang.png",
+      "tags": [
+        "ws-oh-tech-forum"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2354,22 +2422,36 @@
       "role": "TSC Member",
       "org": "OpenAtom OpenHarmony",
       "roleOrg": "TSC Member, OpenAtom OpenHarmony",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["ws-oh-tech-forum"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "image": "/images/speakers/better_portrait/ning-jia.png",
+      "tags": [
+        "ws-oh-tech-forum"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
     {
-      "id": "yang-liu",
-      "name": "Yang Liu",
+      "id": "yan-sun",
+      "name": "Yan Sun",
       "bio": "",
-      "role": "Founder",
-      "org": "YanLink",
-      "roleOrg": "Founder, YanLink",
+      "role": "Technical Architect",
+      "org": "Yanlink",
+      "roleOrg": "Technical Architect, Yanlink",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": ["ws-oh-tech-forum"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2381,8 +2463,16 @@
       "org": "International Centre for Creativity and Sustainable Development (ICCSD), UNESCO",
       "roleOrg": "Advisory Committee Member, ICCSD UNESCO",
       "image": "/images/speakers/better_portrait/1776325879187-gbor-sos-phd.png",
-      "tags": ["ws-open-compute"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "ws-open-compute"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2394,8 +2484,16 @@
       "org": "Eclipse Foundation",
       "roleOrg": "Vice President, Eclipse Foundation",
       "image": "/images/speakers/better_portrait/michael-plagge.png",
-      "tags": ["ws-open-compute"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "ws-open-compute"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2407,8 +2505,16 @@
       "org": "BAAI",
       "roleOrg": "Head of Open Source Engineering, BAAI",
       "image": "/images/speakers/better_portrait/qigang-zhu.png",
-      "tags": ["ws-open-compute"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "ws-open-compute"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2420,8 +2526,16 @@
       "org": "BAAI",
       "roleOrg": "Algorithm Engineer, BAAI",
       "image": "/images/speakers/better_portrait/jian-tao.png",
-      "tags": ["ws-open-compute"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "ws-open-compute"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false
     },
@@ -2432,8 +2546,18 @@
       "roleOrg": "Fields Medalist; Professor of Combinatorics, Collège de France; Research Professor, University of Cambridge",
       "image": "/images/speakers/better_portrait/Timothy-Gowers.png",
       "bio": "Sir Timothy Gowers is a Fields Medalist, Professor of Combinatorics at the Collège de France, and Research Professor at the University of Cambridge. His groundbreaking work applies analytic and combinatorial methods to number theory, and he has forged deep connections between combinatorics and functional analysis. He received the Fields Medal in 1998 and was knighted in 2012.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit",
+        "hackathon-agentic",
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "timothy-gowers"
@@ -2445,8 +2569,16 @@
       "roleOrg": "Technical Director, Alice",
       "image": "/images/speakers/better_portrait/1776826905505-mo-sadek.png",
       "bio": "Mo Sadek is a Technical Director at Alice, where he spends most of his time thinking about how AI systems fail in creative and unfortunate ways. His background runs from pentesting to building security programs at platform scale, with a judgmental cat and a board game losing streak he refuses to acknowledge.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "Someguynamedmo", "github": "", "linkedin": "LinkedIn.com/in/msadek1", "website": "Blog.makesecurity.fun" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "Someguynamedmo",
+        "github": "",
+        "linkedin": "LinkedIn.com/in/msadek1",
+        "website": "Blog.makesecurity.fun"
+      },
       "status": "Accept",
       "draft": false,
       "id": "mo-sadek"
@@ -2458,8 +2590,16 @@
       "roleOrg": "",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
       "bio": "",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "mike-besios"
@@ -2471,8 +2611,16 @@
       "roleOrg": "CEO, Advanced AI Society",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
       "bio": "Tricia Wang is a globally recognized technology and strategy expert at the intersection of AI, data, and human insight. She is the co-founder and CEO of the Advanced AI Society, an industry association for companies building AI with demonstrable, verifiable control over what their systems do.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "https://x.com/trikitriki", "github": "", "linkedin": "https://www.linkedin.com/in/triciawang", "website": "https://www.triciawang.com/" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/trikitriki",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/triciawang",
+        "website": "https://www.triciawang.com/"
+      },
       "status": "Accept",
       "draft": false,
       "id": "tricia-wang"
@@ -2484,8 +2632,16 @@
       "roleOrg": "Service Line Leader, Hybrid Cloud & Data, IBM Consulting NL",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
       "bio": "",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "susheel-gooly"
@@ -2497,8 +2653,16 @@
       "roleOrg": "Founder, Haoeasy AI SAS",
       "image": "/images/speakers/better_portrait/1776759992947-hao-li.png",
       "bio": "Dr. Hao Li is a Franco-Chinese entrepreneur who previously held AI leadership roles at IBM, Sodexo, and Capgemini Invent, advising CAC40 companies and public institutions. He is now founder of Haoeasy AI SAS, building multi-agent systems for enterprise transformation.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "hao-li"
@@ -2510,8 +2674,16 @@
       "roleOrg": "CEO, Puddin AI",
       "image": "/images/speakers/better_portrait/1776645692716-nowa-sutaka.png",
       "bio": "CEO of Puddin AI",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "@puddinai", "github": "", "linkedin": "www.linkedin.com/in/sutaka", "website": "www.puddin.ai" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "@puddinai",
+        "github": "",
+        "linkedin": "www.linkedin.com/in/sutaka",
+        "website": "www.puddin.ai"
+      },
       "status": "Accept",
       "draft": false,
       "id": "nowa-sutaka"
@@ -2523,8 +2695,16 @@
       "roleOrg": "Founder CEO, WeaveMind",
       "image": "/images/speakers/better_portrait/1776751329020-quentin-feuillade-montixi.png",
       "bio": "Ex world class AI red teamer and AI safety researcher, now creating a new programming system for the future of intelligent software.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "https://github.com/qfeuilla", "linkedin": "https://www.linkedin.com/in/quentin101010", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/qfeuilla",
+        "linkedin": "https://www.linkedin.com/in/quentin101010",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "quentin-feuillade-montixi"
@@ -2536,8 +2716,16 @@
       "roleOrg": "Co-Founder, AI Safety Connect",
       "image": "/images/speakers/better_portrait/1776788160166-nicolas-miailhe.png",
       "bio": "Co-Founder of AI Safety Connect, focused on AI safety and governance.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "https://www.linkedin.com/in/nmiailhe/", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/nmiailhe/",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "nicolas-miailhe"
@@ -2549,8 +2737,16 @@
       "roleOrg": "Principal, Known Unknowns GmbH",
       "image": "/images/speakers/better_portrait/1776842828466-igor-schwarzmann.png",
       "bio": "Strategic advisor at the intersection of culture and technology. 20 years of experience across Health, Automotive, Luxury, Media, and Government, working with global technology companies, European multinationals, and institutions in the US, Europe, China, and Singapore. Hosts Follow the Rabbit, a podcast on cultural phenomena. Powered by his own agentic AI infrastructure.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "igor-schwarzmann"
@@ -2562,8 +2758,16 @@
       "roleOrg": "Head of AI, CODATA",
       "image": "/images/speakers/better_portrait/Slava-Tykhonov.png",
       "bio": "Head of AI at CODATA, working on Semantic Croissant and the Cross-Domain Interoperability Framework (CDIF) for Agentic AI.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "https://x.com/4tykhonov", "github": "https://github.com/4tikhonov", "linkedin": "https://www.linkedin.com/in/vyacheslavtikhonov/", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "https://x.com/4tykhonov",
+        "github": "https://github.com/4tikhonov",
+        "linkedin": "https://www.linkedin.com/in/vyacheslavtikhonov/",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "slava-tykhonov"
@@ -2575,8 +2779,16 @@
       "roleOrg": "Architect Solution, AI Systems & Agent Governance, Capgemini",
       "image": "/images/speakers/better_portrait/tianyi-han.png",
       "bio": "Tianyi Han is an Architect Solution focused on AI systems, agent governance, and decision-support tooling. His work explores how to make AI-driven systems more controllable, auditable, and reproducible through runtime policy enforcement, traceability, and replay. He is currently building systems that bridge the gap between experimental LLM applications and production-grade AI infrastructure, with a focus on governance, observability, and reliable execution.",
-      "tags": ["ai-generative-app"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "https://github.com/hant916/AILUROS.io", "linkedin": "https://www.linkedin.com/in/tianyi-han-58278844/", "website": "https://www.aixagent.io" },
+      "tags": [
+        "ai-generative-app"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "https://github.com/hant916/AILUROS.io",
+        "linkedin": "https://www.linkedin.com/in/tianyi-han-58278844/",
+        "website": "https://www.aixagent.io"
+      },
       "status": "Accept",
       "draft": false,
       "id": "tianyi-han"
@@ -2588,8 +2800,16 @@
       "roleOrg": "CTO, Rothwell International",
       "image": "/images/speakers/better_portrait/1776864734582-dr-hai-xu-cheng.png",
       "bio": "Dr Hai-Xu Cheng currently works as the CTO of Rothwell International after retiring from the role of IBM Global Lead and IBM GCG CTO of standards and open source. His current major focus is providing consulting services for enterprise clients at C-level on architectures, standards, and open source. In his prior role at IBM, he led the global and China teams working to develop open-source communities and technologies spanning AI, data and analytics, cloud computing, quantum computing, and blockchain, advocating for clients to adopt open technologies to fuel innovation in both technical and business domains.",
-      "tags": ["agentic-ai-summit"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "dr-hai-xu-cheng"
@@ -2601,8 +2821,16 @@
       "roleOrg": "Co-Founder, WISE (Women in Safety & Ethics)",
       "image": "/images/speakers/better_portrait/1776976015288-joanna-kramer.png",
       "bio": "Currently based in Paris, Joanna's career has blended industry and research. After earning her MSc from University of Oxford's Internet Institute, where she studied the breakdown of digital platforms and the creation of digital 'ruins,' she co-founded WISE with Michelle Nie and Nitya Kuthiala to build community and foster connections among women working across AI safety, ethics, and governance. One year later, the network has expanded to 5 WISE chapters across Brussels, Delhi, London, Paris, and Washington, D.C. In addition, Joanna leads market research and technical marketing initiatives at an applied AI research lab.",
-      "tags": ["ws-own-your-data-paris2026"],
-      "socialLinks": { "mastodon": "", "twitter": "", "github": "", "linkedin": "", "website": "" },
+      "tags": [
+        "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
       "status": "Accept",
       "draft": false,
       "id": "joanna-kramer"

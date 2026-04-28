@@ -1290,9 +1290,9 @@
       },
       {
         "title": {
-          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
-          "zh": "超越聊天机器人：用 Minimax 构建自主 Agent 生态系统",
-          "fr": "Au-delà du chatbot : construire des écosystèmes d'agents autonomes avec Minimax"
+          "en": "MiniMax M2.7: Early Echoes of Self-Evolution With 100,000 OpenClaw Cluster",
+          "zh": "MiniMax M2.7：100,000 OpenClaw集群的自我进化初声",
+          "fr": "MiniMax M2.7 : Premiers échos d'auto-évolution avec un cluster OpenClaw de 100 000"
         },
         "content": {
           "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
@@ -1714,9 +1714,9 @@
       },
       {
         "title": {
-          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with MiniMax",
-          "zh": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with MiniMax",
-          "fr": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with MiniMax"
+          "en": "MiniMax M2.7: Early Echoes of Self-Evolution With 100,000 OpenClaw Cluster",
+          "zh": "MiniMax M2.7：100,000 OpenClaw集群的自我进化初声",
+          "fr": "MiniMax M2.7 : Premiers échos d'auto-évolution avec un cluster OpenClaw de 100 000"
         },
         "speakers": [
           {
@@ -1791,7 +1791,7 @@
         "speakers": [
           {
             "name": "Jiabei Chen",
-            "title": "Ph.D. Student, Institute of Automation, Chinese Academy of Sciences & BAAI",
+            "title": "Core Contributor, OpenSeek, BAAI; Ph.D. Student, CASIA",
             "id": "jiabei-chen"
           }
         ],
@@ -1811,9 +1811,9 @@
       },
       {
         "title": {
-          "en": "Building World's First Multi-Modal Model SpeedRun in Open Source",
-          "zh": "Building World's First Multi-Modal Model SpeedRun in Open Source",
-          "fr": "Building World's First Multi-Modal Model SpeedRun in Open Source"
+          "en": "Building the World's First Open-Source Multimodal Speedrun Model",
+          "zh": "构建全球首个开源多模态Speedrun模型",
+          "fr": "Construire le premier modèle Speedrun multimodal open source au monde"
         },
         "speakers": [
           {
@@ -1860,7 +1860,7 @@
         },
         "speakers": [
           {
-            "name": "Zhao Yun",
+            "name": "Yun Zhao",
             "title": "Senior Engineer, Huawei",
             "id": "zhaoyun"
           }
@@ -1982,9 +1982,9 @@
       },
       {
         "title": {
-          "en": "Building with StrongDM Attractor",
-          "zh": "Building with StrongDM Attractor",
-          "fr": "Building with StrongDM Attractor"
+          "en": "Software Factory: Stop Looking at the Code",
+          "zh": "软件工厂：别再看代码了",
+          "fr": "Software Factory : Arrêtez de regarder le code"
         },
         "speakers": [
           {
@@ -2050,6 +2050,28 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break",
+        "room": "Junior Stage"
+      },
+      {
+        "title": {
+          "en": "AgentChat: Cross-Server Communication for Humans and Agents",
+          "zh": "AgentChat：面向人类和智能体的跨服务器通信",
+          "fr": "AgentChat : Communication inter-serveurs pour humains et agents"
+        },
+        "speakers": [
+          {
+            "name": "Sizhe Cheng",
+            "title": "Lead Programmer, Huansheng Technology",
+            "id": "sizhe-cheng"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "14:00 - 14:30",
+        "type": "talk",
         "room": "Junior Stage"
       },
       {
@@ -2527,10 +2549,10 @@
         },
         "speakers": [
           {
-            "name": "Weiyu Xie",
+            "name": "Ervin Xie",
             "title": "Ph.D. Candidate, Tsinghua University",
-            "id": "weiyu-xie",
-            "image": "/images/speakers/better_portrait/weiyu-xie.png"
+            "id": "ervinxie",
+            "image": "/images/speakers/better_portrait/ervinxie.png"
           }
         ],
         "date": {
@@ -2720,7 +2742,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:50 - 11:25",
+        "timeSlot": "11:10 - 11:35",
         "type": "talk",
         "room": "Founders Cafe",
         "content": {
@@ -2731,9 +2753,9 @@
       },
       {
         "title": {
-          "en": "Amazing Hand: An Open Source Robotic Hand Tech Report",
-          "zh": "Amazing Hand: An Open Source Robotic Hand Tech Report",
-          "fr": "Amazing Hand: An Open Source Robotic Hand Tech Report"
+          "en": "Amazing Hand: An Open-Source Robotic Hand — Technical Report",
+          "zh": "Amazing Hand：开源机器人手——技术报告",
+          "fr": "Amazing Hand : Une main robotique open source — Rapport technique"
         },
         "speakers": [
           {
@@ -2747,7 +2769,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "11:25 - 12:00",
+        "timeSlot": "11:35 - 12:00",
         "type": "talk",
         "room": "Founders Cafe",
         "content": {
@@ -3134,7 +3156,8 @@
           {
             "name": "Liang Zhang",
             "title": "Director, Huawei Fourier Research Institute",
-            "id": "liang-zhang"
+            "id": "liang-zhang",
+            "image": "/images/speakers/better_portrait/liang-zhang.png"
           }
         ],
         "date": {
@@ -3156,7 +3179,8 @@
           {
             "name": "Ning Jia",
             "title": "Member, Technical Steering Committee (TSC), OpenAtom OpenHarmony",
-            "id": "ning-jia"
+            "id": "ning-jia",
+            "image": "/images/speakers/better_portrait/ning-jia.png"
           }
         ],
         "date": {
@@ -3170,9 +3194,9 @@
       },
       {
         "title": {
-          "en": "Open, Connected and Compliant: How Oniro Builds Seamless Global Smart Ecosystems",
-          "zh": "开放、互联、合规：Oniro如何构建无缝全球智能生态系统",
-          "fr": "Ouvert, connecté et conforme : comment Oniro construit des écosystèmes intelligents mondiaux"
+          "en": "Oniro: The Global Gateway to the OpenHarmony Ecosystem",
+          "zh": "Oniro：OpenHarmony生态系统的全球门户",
+          "fr": "Oniro : La passerelle mondiale vers l'écosystème OpenHarmony"
         },
         "speakers": [
           {
@@ -3200,7 +3224,8 @@
           {
             "name": "Debayan Roy",
             "title": "Senior Research Engineer, Huawei Munich Research Center",
-            "id": "debayan-roy"
+            "id": "debayan-roy",
+            "image": "/images/speakers/better_portrait/debayan-roy.png"
           }
         ],
         "date": {
@@ -3293,7 +3318,8 @@
           {
             "name": "Francesco Pham",
             "title": "Senior Technical Expert, Huawei Milan Research Institute; Project Lead & Committer Representative, Eclipse Oniro",
-            "id": "francesco-pham"
+            "id": "francesco-pham",
+            "image": "/images/speakers/better_portrait/francesco-pham.png"
           }
         ],
         "date": {
@@ -3307,9 +3333,9 @@
       },
       {
         "title": {
-          "en": "Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics and Training Datasets Generation",
-          "zh": "Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics and Training Datasets Generation",
-          "fr": "Project Nexus: Cross-Platform GPU-Based Rust Multiphysics Simulator for Robotics and Training Datasets Generation"
+          "en": "Rust and Khal in OpenHarmony for single-source cross-platform GPU/CPU compute",
+          "zh": "Rust与Khal在OpenHarmony中实现单源跨平台GPU/CPU计算",
+          "fr": "Rust et Khal dans OpenHarmony pour le calcul GPU/CPU multiplateforme à source unique"
         },
         "speakers": [
           {
@@ -3341,9 +3367,9 @@
         },
         "speakers": [
           {
-            "name": "Yang Liu",
-            "title": "Founder, YanLink",
-            "id": "yang-liu"
+            "name": "Yan Sun",
+            "title": "Technical Architect, Yanlink",
+            "id": "yan-sun"
           }
         ],
         "date": {
@@ -4284,7 +4310,7 @@
         },
         "speakers": [
           {
-            "name": "Arturo Amor",
+            "name": "David Arturo Amor Quiroz",
             "title": "ML Engineer, probabl",
             "id": "david-arturo-amor-quiroz",
             "image": "/images/speakers/better_portrait/arturo-amor.png",
