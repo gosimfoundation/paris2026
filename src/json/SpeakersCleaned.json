@@ -2444,7 +2444,9 @@
       "org": "Yanlink",
       "roleOrg": "Technical Architect, Yanlink",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "tags": [],
+      "tags": [
+        "ws-oh-tech-forum"
+      ],
       "socialLinks": {
         "mastodon": "",
         "twitter": "",

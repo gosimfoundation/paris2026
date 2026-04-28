@@ -1069,6 +1069,27 @@
       },
       "status": "Accept",
       "draft": false
+    },
+    {
+      "id": "yan-sun",
+      "name": "Yan Sun",
+      "bio": "",
+      "role": "Technical Architect",
+      "org": "Yanlink",
+      "roleOrg": "Technical Architect, Yanlink",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "ws-oh-tech-forum"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     }
   ]
 }
