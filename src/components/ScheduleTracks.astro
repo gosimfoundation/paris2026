@@ -381,26 +381,20 @@ const gridDays: GridDay[] = days.map(d => {
   <div class="sched-day-nav">
     <div class="day-nav-inner">
       <div class="day-tabs-track">
+        <button class="sched-day-btn" data-view="overview">
+          <span class="day-label">{t.overview}</span>
+          <span class="day-date">{t.allTracks}</span>
+        </button>
         {days.map((day, i) => (
           <button class={`sched-day-btn${i === 0 ? " active" : ""}`} data-day={en(day.date)}>
             <span class="day-label">{loc(day.title)}</span>
             <span class="day-date">{loc(day.date)}</span>
           </button>
         ))}
-        <button class="sched-day-btn" data-view="overview">
-          <span class="day-label">{t.overview}</span>
-          <span class="day-date">{t.allTracks}</span>
-        </button>
         <button class="sched-day-btn" data-view="grid">
           <span class="day-label">{t.gridLabel}</span>
           <span class="day-date">{t.gridSub}</span>
         </button>
-        <!-- Sessions by Room tab hidden for now
-        <button class="sched-day-btn" data-view="rooms">
-          <span class="day-label">{t.venue}</span>
-          <span class="day-date">{t.sessionsByVenue}</span>
-        </button>
-        -->
         <button class="sched-day-btn" data-view="venue">
           <span class="day-label">STATION F</span>
           <span class="day-date">{t.floorplan}</span>
