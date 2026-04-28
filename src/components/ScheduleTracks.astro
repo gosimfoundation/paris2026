@@ -317,9 +317,9 @@ const gridDays: GridDay[] = days.map(d => {
     for (const s of catSessions) {
       if (!s.timeSlot) continue
       if (en(s.date) !== dayEn) continue
-      // Keynotes/ceremonies use their own room field (Master Stage); regular sessions use the track's room
       const isSpecial = s.type === "keynote" || s.type === "ceremony"
-      const roomKey = isSpecial && s.room ? en(s.room) : catRoom
+      const sessionRoom = s.room ? en(s.room) : ""
+      const roomKey = sessionRoom || catRoom
       if (!GRID_ROOM_ORDER.includes(roomKey)) continue
       const parts = s.timeSlot.split(" - ").map((t: string) => t.trim())
       if (parts.length !== 2) continue
