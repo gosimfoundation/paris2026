@@ -299,6 +299,7 @@ interface GridDay {
   timeSlots: string[]
   placed: Map<string, Map<string, GridCell>>
   occupied: Map<string, Set<string>>
+  totalRows: number
 }
 
 const gridDays: GridDay[] = days.map(d => {
@@ -351,27 +352,49 @@ const gridDays: GridDay[] = days.map(d => {
     occupied.set(roomKey, new Set())
   }
 
-  // Deduplicate keynotes/ceremonies (same title+time on Master Stage from multiple tracks)
+  // Pass 1: Place all sessions using real durations
   const seenKeys = new Set<string>()
   for (const { session, roomKey, startMin, endMin, trackId, trackName, trackColor: tc } of allGridSessions) {
     const dedupKey = `${roomKey}||${session.timeSlot}||${en(session.title)}`
     if (seenKeys.has(dedupKey)) continue
     seenKeys.add(dedupKey)
     const startSlot = minutesToTime(Math.floor(startMin / GRID_SLOT_MINUTES) * GRID_SLOT_MINUTES)
-    const durationSlots = Math.max(1, Math.ceil((endMin - startMin) / GRID_SLOT_MINUTES))
+    const naturalSlots = Math.max(1, Math.ceil((endMin - startMin) / GRID_SLOT_MINUTES))
     const slug = createSlug(en(session.title))
+
     if (placed.get(roomKey)?.has(startSlot)) continue
     if (occupied.get(roomKey)?.has(startSlot)) continue
     placed.get(roomKey)!.set(startSlot, {
-      session, trackId, trackName, trackColor: tc, rowSpan: durationSlots, slug,
+      session, trackId, trackName, trackColor: tc, rowSpan: naturalSlots, slug,
     })
     const startIdx = timeSlots.indexOf(startSlot)
-    for (let i = 1; i < durationSlots && startIdx + i < timeSlots.length; i++) {
+    for (let i = 1; i < naturalSlots && startIdx + i < timeSlots.length; i++) {
       occupied.get(roomKey)!.add(timeSlots[startIdx + i])
     }
   }
 
-  return { dayEn, dayLabel, timeSlots, placed, occupied }
+  // Pass 2: Inflate short sessions for display, pushing subsequent cards down
+  const MIN_ROW_SPAN = 4
+  let maxRowEnd = timeSlots.length
+  for (const roomKey of gridRooms) {
+    const roomPlaced = placed.get(roomKey)!
+    const slots = Array.from(roomPlaced.keys()).sort()
+    let rowShift = 0
+    for (let si = 0; si < slots.length; si++) {
+      const slot = slots[si]
+      const cell = roomPlaced.get(slot)!
+      const ri = timeSlots.indexOf(slot)
+      ;(cell as any).rowOffset = ri + rowShift
+      const inflated = Math.max(MIN_ROW_SPAN, cell.rowSpan)
+      const extra = inflated - cell.rowSpan
+      cell.rowSpan = inflated
+      rowShift += extra
+    }
+    const lastEnd = slots.length > 0 ? ((roomPlaced.get(slots[slots.length - 1])! as any).rowOffset + roomPlaced.get(slots[slots.length - 1])!.rowSpan) : 0
+    if (lastEnd > maxRowEnd) maxRowEnd = lastEnd
+  }
+
+  return { dayEn, dayLabel, timeSlots, placed, occupied, totalRows: maxRowEnd }
 })
 ---
 
@@ -916,7 +939,7 @@ const gridDays: GridDay[] = days.map(d => {
     {gridDays.map((gd, di) => (
       <div class={`grid-table-wrap${di === 0 ? "" : " hidden"}`} data-grid-panel={gd.dayEn}>
         <div class="grid-scroll">
-          <div class="tg" style={`--tg-rows: ${gd.timeSlots.length}; height: ${40 + gd.timeSlots.length * 32}px`}>
+          <div class="tg" style={`--tg-rows: ${gd.totalRows}; height: ${40 + gd.totalRows * 20}px`}>
             {/* Sticky header row */}
             <div class="tg-hdr tg-corner">TIME</div>
             {gridRooms.map((room, ci) => (
@@ -951,12 +974,13 @@ const gridDays: GridDay[] = days.map(d => {
               const roomPlaced = gd.placed.get(roomKey)
               if (!roomPlaced) return null
               return Array.from(roomPlaced.entries()).map(([slotTime, cell]) => {
-                const ri = gd.timeSlots.indexOf(slotTime)
+                const ri = (cell as any).rowOffset ?? gd.timeSlots.indexOf(slotTime)
                 if (ri < 0) return null
                 const isBreak = cell.session.type === "break"
                 const isKeynote = cell.session.type === "keynote"
                 const isCeremony = cell.session.type === "ceremony"
                 const isSpecial = isKeynote || isCeremony
+                const isHack = isHackathon(cell.trackId)
                 const typeLabel = isKeynote ? "★ KEYNOTE ★" : isCeremony ? "★ CEREMONY ★" : cell.trackName
                 const labelColor = isSpecial ? "#92600a" : cell.trackColor
                 const borderColor = isSpecial ? "#c9a227" : cell.trackColor
@@ -965,10 +989,21 @@ const gridDays: GridDay[] = days.map(d => {
                   <div class="tg-cell" style={`grid-row: ${ri + 2} / span ${cell.rowSpan}; grid-column: ${ci + 2}`}>
                     {isBreak ? (
                       <div class="grid-card grid-card-break">
+                        <div class="grid-card-time">{cell.session.timeSlot}</div>
                         <div class="grid-card-title">{loc(cell.session.title)}</div>
+                      </div>
+                    ) : isHack ? (
+                      <div class="grid-card grid-card-link" style={`border-left-color: ${borderColor}; cursor: pointer`}
+                        data-grid-hackathon-track={cell.trackId}
+                        data-grid-hackathon-day={gd.dayEn}
+                      >
+                        <div class="grid-card-time">{cell.session.timeSlot}</div>
+                        <div class="grid-card-title">{loc(cell.session.title)}</div>
+                        <div class="grid-card-track" style={`color: ${labelColor}`}>{typeLabel}</div>
                       </div>
                     ) : (
                       <a class={`grid-card grid-card-link${isSpecial ? " grid-card-keynote" : ""}`} href={`${schedBase}/${cell.slug}/`} style={!isSpecial ? `border-left-color: ${borderColor}` : ""}>
+                        <div class="grid-card-time">{cell.session.timeSlot}</div>
                         <div class="grid-card-title">{loc(cell.session.title)}</div>
                         {cell.session.speakers?.length > 0 && (
                           <div class="grid-card-speakers">
@@ -1161,6 +1196,14 @@ const gridDays: GridDay[] = days.map(d => {
     card.addEventListener("click", () => {
       const track = card.dataset.overviewTrack
       const day = card.dataset.overviewDay
+      if (track) show(day || firstDay, track)
+    })
+  })
+
+  document.querySelectorAll("[data-grid-hackathon-track]").forEach((card) => {
+    card.addEventListener("click", () => {
+      const track = card.dataset.gridHackathonTrack
+      const day = card.dataset.gridHackathonDay
       if (track) show(day || firstDay, track)
     })
   })
@@ -1974,7 +2017,7 @@ const gridDays: GridDay[] = days.map(d => {
   .tg {
     display: grid;
     grid-template-columns: 60px repeat(6, 1fr);
-    grid-template-rows: auto repeat(var(--tg-rows), 32px);
+    grid-template-rows: auto repeat(var(--tg-rows), 20px);
     width: 100%;
     min-width: 0;
     position: relative;
@@ -2044,7 +2087,7 @@ const gridDays: GridDay[] = days.map(d => {
   /* Card styles */
   .grid-card {
     border-radius: 6px;
-    padding: 0.2rem 0.4rem;
+    padding: 0.25rem 0.4rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -2082,30 +2125,39 @@ const gridDays: GridDay[] = days.map(d => {
     align-items: center;
   }
   .grid-card-title {
-    font-size: 0.72rem;
+    font-size: 0.85rem;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.3;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .grid-card-break .grid-card-title {
     font-weight: 500;
     color: #94a3b8;
-    font-size: 0.68rem;
-    -webkit-line-clamp: 1;
+    font-size: 0.78rem;
+  }
+  .grid-card-time {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: rgba(15, 23, 42, 0.4);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .grid-card-break .grid-card-time {
+    color: #b0bec5;
   }
   .grid-card-speakers {
-    font-size: 0.63rem;
+    font-size: 0.75rem;
     color: rgba(0,0,0,0.5);
-    line-height: 1.25;
+    line-height: 1.3;
     margin-top: 0.15rem;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
   }
   .grid-card-track {
-    font-size: 0.58rem;
+    font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;

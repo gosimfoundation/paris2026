@@ -6,6 +6,7 @@ interface Props {
 const { lang = "en" } = Astro.props;
 
 type L = { en: string; zh: string; fr: string };
+type HackathonItem = { name: L; colorId: string };
 type Session = {
   venue: L;
   capacity: string;
@@ -13,7 +14,7 @@ type Session = {
   colorId?: string;
   confirmed?: boolean;
   type?: "hackathons";
-  items?: L[];
+  items?: HackathonItem[];
 };
 type Block =
   | { type: "break" | "keynote" | "spotlight" | "closing"; time: string; label: L; note?: L }
@@ -31,6 +32,9 @@ const trackColors: Record<string, { from: string; to: string }> = {
   "ws-own-your-data-paris2026":{ from: "#0f766e", to: "#34d399" },
   "ws-sglang-paris2026":       { from: "#7c3aed", to: "#a78bfa" },
   "ws-agentic-app":            { from: "#2563eb", to: "#60a5fa" },
+  "hackathon-spotlight":       { from: "#7c3aed", to: "#a78bfa" },
+  "hackathon-robotics":        { from: "#0891b2", to: "#22d3ee" },
+  "hackathon-agentic":         { from: "#dc2626", to: "#f97316" },
   "hackathon":                 { from: "#475569", to: "#94a3b8" },
 };
 
@@ -97,8 +101,9 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
             name: { en: "Hackathon Hub", zh: "黑客松区", fr: "Hub Hackathon" },
             type: "hackathons",
             items: [
-              { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" },
-              { en: "GOSIM Agentic Hackathon", zh: "GOSIM Agentic Hackathon", fr: "GOSIM Agentic Hackathon" },
+              { name: { en: "GOSIM Spotlight", zh: "GOSIM Spotlight", fr: "GOSIM Spotlight" }, colorId: "hackathon-spotlight" },
+              { name: { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" }, colorId: "hackathon-robotics" },
+              { name: { en: "Agentic Hackathon", zh: "Agentic Hackathon", fr: "Agentic Hackathon" }, colorId: "hackathon-agentic" },
             ],
           },
         ],
@@ -149,8 +154,9 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
             name: { en: "Hackathon Hub", zh: "黑客松区", fr: "Hub Hackathon" },
             type: "hackathons",
             items: [
-              { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" },
-              { en: "GOSIM Agentic Hackathon", zh: "GOSIM Agentic Hackathon", fr: "GOSIM Agentic Hackathon" },
+              { name: { en: "GOSIM Spotlight", zh: "GOSIM Spotlight", fr: "GOSIM Spotlight" }, colorId: "hackathon-spotlight" },
+              { name: { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" }, colorId: "hackathon-robotics" },
+              { name: { en: "Agentic Hackathon", zh: "Agentic Hackathon", fr: "Agentic Hackathon" }, colorId: "hackathon-agentic" },
             ],
           },
         ],
@@ -211,8 +217,9 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
             name: { en: "Hackathon Hub", zh: "黑客松区", fr: "Hub Hackathon" },
             type: "hackathons",
             items: [
-              { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" },
-              { en: "GOSIM Agentic Hackathon", zh: "GOSIM Agentic Hackathon", fr: "GOSIM Agentic Hackathon" },
+              { name: { en: "GOSIM Spotlight", zh: "GOSIM Spotlight", fr: "GOSIM Spotlight" }, colorId: "hackathon-spotlight" },
+              { name: { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" }, colorId: "hackathon-robotics" },
+              { name: { en: "Agentic Hackathon", zh: "Agentic Hackathon", fr: "Agentic Hackathon" }, colorId: "hackathon-agentic" },
             ],
           },
         ],
@@ -263,8 +270,9 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
             name: { en: "Hackathon Hub", zh: "黑客松区", fr: "Hub Hackathon" },
             type: "hackathons",
             items: [
-              { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" },
-              { en: "GOSIM Agentic Hackathon", zh: "GOSIM Agentic Hackathon", fr: "GOSIM Agentic Hackathon" },
+              { name: { en: "GOSIM Spotlight", zh: "GOSIM Spotlight", fr: "GOSIM Spotlight" }, colorId: "hackathon-spotlight" },
+              { name: { en: "Robotics Hackathon", zh: "机器人黑客松", fr: "Hackathon Robotique" }, colorId: "hackathon-robotics" },
+              { name: { en: "Agentic Hackathon", zh: "Agentic Hackathon", fr: "Agentic Hackathon" }, colorId: "hackathon-agentic" },
             ],
           },
         ],
@@ -306,7 +314,10 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
 
             if (block.type === "keynote") {
               return (
-                <div class="block block-keynote">
+                <div class="block block-keynote"
+                  data-overview-track="agentic-ai-summit"
+                  data-overview-day={day.date.en.includes("5") ? "May 5" : "May 6"}
+                >
                   <span class="block-time">{block.time}</span>
                   <span class="block-label">Keynote</span>
                 </div>
@@ -340,14 +351,42 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
                   <span class="block-time">{block.time}</span>
                   <div class="sessions-grid">
                     {block.sessions.map((session) => {
-                      const color = trackColors[session.colorId ?? "hackathon"] ?? trackColors["hackathon"];
                       const isHackathon = session.type === "hackathons";
+                      const overviewDay = day.date.en.includes("5") ? "May 5" : "May 6";
+
+                      if (isHackathon && session.items) {
+                        return (
+                          <div class="hackathon-stack">
+                            {session.items.map((item) => {
+                              const itemColor = trackColors[item.colorId] ?? trackColors["hackathon"];
+                              return (
+                                <div
+                                  class="session-card session-card-mini"
+                                  style={`--from: ${itemColor.from}; --to: ${itemColor.to};`}
+                                  data-overview-track={item.colorId}
+                                  data-overview-day={overviewDay}
+                                >
+                                  <div class="session-bar"></div>
+                                  <div class="session-body">
+                                    <p class="session-name">{item.name.en}</p>
+                                    {lang !== "en" && t(item.name) !== item.name.en && (
+                                      <p class="session-name-translation">{t(item.name)}</p>
+                                    )}
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        );
+                      }
+
+                      const color = trackColors[session.colorId ?? "hackathon"] ?? trackColors["hackathon"];
                       return (
                         <div
-                          class={`session-card${isHackathon ? " session-card-hackathon" : ""}`}
+                          class="session-card"
                           style={`--from: ${color.from}; --to: ${color.to};`}
                           data-overview-track={session.colorId || ""}
-                          data-overview-day={day.date.en.includes("5") ? "May 5" : "May 6"}
+                          data-overview-day={overviewDay}
                         >
                           <div class="session-bar"></div>
                           <div class="session-body">
@@ -464,6 +503,15 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
   .agenda-overview .block-break .block-label {
     background: rgba(15, 23, 42, 0.05);
     color: rgba(15, 23, 42, 0.45);
+  }
+
+  .agenda-overview .block-keynote {
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+
+  .agenda-overview .block-keynote:hover {
+    opacity: 0.85;
   }
 
   .agenda-overview .block-keynote .block-label {
@@ -599,28 +647,22 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
     margin: 0.1rem 0 0;
   }
 
-  .agenda-overview .hackathon-list {
-    list-style: none;
-    padding: 0;
-    margin: 0.2rem 0 0;
+  .agenda-overview .hackathon-stack {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.35rem;
   }
 
-  .agenda-overview .hackathon-list li {
-    font-size: 0.68rem;
-    color: rgba(15, 23, 42, 0.55);
-    padding-left: 0.75rem;
-    position: relative;
-    line-height: 1.3;
+  .agenda-overview .session-card-mini {
+    min-height: 0;
   }
 
-  .agenda-overview .hackathon-list li::before {
-    content: "·";
-    position: absolute;
-    left: 0;
-    color: rgba(15, 23, 42, 0.3);
+  .agenda-overview .session-card-mini .session-body {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .agenda-overview .session-card-mini .session-name {
+    font-size: 0.7rem;
   }
 
   .agenda-overview .confirmed-badge {
