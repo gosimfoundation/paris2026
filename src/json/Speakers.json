@@ -797,7 +797,7 @@
     },
     {
       "id": "mike-besios",
-      "name": "Mike Besios",
+      "name": "Mike Basios",
       "bio": "",
       "role": "",
       "org": "",
@@ -1078,6 +1078,27 @@
       "image": "/images/speakers/better_portrait/1776976015288-joanna-kramer.png",
       "tags": [
         "ws-own-your-data-paris2026"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "adam-barker",
+      "name": "Adam Barker",
+      "bio": "",
+      "role": "Director of Systems Infrastructure Research (SIR)",
+      "org": "Huawei",
+      "roleOrg": "Director of Systems Infrastructure Research (SIR), Huawei",
+      "image": "/images/speakers/better_portrait/adam-barker.png",
+      "tags": [
+        "agentic-ai-summit"
       ],
       "socialLinks": {
         "mastodon": "",

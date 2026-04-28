@@ -18,6 +18,7 @@ type Event = {
   type?: string
   speakers?: { name: string; image?: string; roleOrg: string; id?: string }[]
   room?: string
+  signupUrl?: string
 }
 
 // Generate static paths for events
@@ -63,6 +64,7 @@ export async function getStaticPaths() {
           })) || [],
         room:
           typeof event.room === "string" ? event.room : event.room?.en || "",
+        signupUrl: event.signupUrl || "",
       }
       events.push({
         params: {
@@ -183,6 +185,10 @@ const eventCategory = (() => {
           </span>
         </span>
       </div>
+
+      {eventDetails.signupUrl && (
+        <a href={eventDetails.signupUrl} target="_blank" rel="noopener" class="ev-signup-btn">Sign Up for This Event &rarr;</a>
+      )}
 
       {eventDetails.content && (
         <div class="ev-description styled-content">
@@ -342,6 +348,24 @@ const eventCategory = (() => {
     font-size: 1rem;
     font-weight: 600;
     color: var(--color-dark);
+  }
+
+  .ev-signup-btn {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.06);
+    padding: 0.55rem 1.3rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .ev-signup-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.75);
   }
 
   .ev-description {

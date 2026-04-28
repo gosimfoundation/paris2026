@@ -966,7 +966,7 @@
             "id": "mo-sadek"
           },
           {
-            "name": "Mike Besios",
+            "name": "Mike Basios",
             "title": "",
             "id": "mike-besios"
           }
@@ -1443,9 +1443,10 @@
         },
         "speakers": [
           {
-            "name": "Zhenyu Zheng",
-            "title": "Community Operations Manager, OpenAtom openEuler",
-            "id": "zhenyu-zheng"
+            "name": "Adam Barker",
+            "title": "Director of Systems Infrastructure Research (SIR), Huawei",
+            "id": "adam-barker",
+            "image": "/images/speakers/better_portrait/adam-barker.png"
           }
         ],
         "date": {
@@ -2455,7 +2456,7 @@
         "speakers": [
           {
             "name": "Sébastien Crozet",
-            "title": "Founder & CEO, Dimforge",
+            "title": "Founder & CEO, Dimforge (Station F resident)",
             "id": "crozet-sbastien",
             "image": "/images/speakers/better_portrait/crozet-sbastien.png"
           }
@@ -3313,7 +3314,7 @@
         "speakers": [
           {
             "name": "Sébastien Crozet",
-            "title": "Founder & CEO, Dimforge",
+            "title": "Founder & CEO, Dimforge (Station F resident)",
             "id": "crozet-sbastien",
             "image": "/images/speakers/better_portrait/crozet-sbastien.png"
           }
@@ -3323,7 +3324,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "16:20 - 16:40",
+        "timeSlot": "16:40 - 17:00",
         "type": "talk",
         "room": "Founders Cafe",
         "content": {
@@ -3350,7 +3351,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "16:40 - 17:00",
+        "timeSlot": "16:20 - 16:40",
         "type": "talk",
         "room": "Founders Cafe"
       }
@@ -3578,7 +3579,8 @@
         },
         "timeSlot": "17:00 - 17:30",
         "type": "talk",
-        "room": "Central Room"
+        "room": "Central Room",
+        "signupUrl": "https://kernelgen.flagos.io/challenge"
       }
     ],
     "ws-sglang-paris2026": [
