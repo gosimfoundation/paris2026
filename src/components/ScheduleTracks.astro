@@ -1751,9 +1751,12 @@ const gridDays: GridDay[] = days.map(d => {
   }
 
   @media (max-width: 900px) {
-    /* Hide grid view tab on mobile — 5-column grid is not useful */
-    .sched-day-btn[data-view="grid"] {
-      display: none;
+    .grid-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .tg {
+      min-width: 800px;
     }
   }
 
