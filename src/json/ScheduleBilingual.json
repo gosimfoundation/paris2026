@@ -120,9 +120,9 @@
     {
       "id": "ws-oh-tech-forum",
       "name": {
-        "en": "OpenHarmony Tech Forum-Paris",
-        "zh": "OpenHarmony Tech Forum-Paris",
-        "fr": "OpenHarmony Tech Forum-Paris"
+        "en": "OpenHarmony × AI: Powering the Next Intelligent Operating System",
+        "zh": "OpenHarmony × AI: Powering the Next Intelligent Operating System",
+        "fr": "OpenHarmony × AI: Powering the Next Intelligent Operating System"
       },
       "room": "Founders Cafe"
     },
@@ -451,7 +451,7 @@
       {
         "title": {
           "en": "Keynote – Lights-Out Community: Reflections on the Open Source Paradigm Shift in the AI Era",
-          “zh”: “Keynote – Lights-Out Community：AI时代开源范式转变的思考”,
+          "zh": "Keynote – Lights-Out Community：AI时代开源范式转变的思考",
           "fr": "Keynote – Lights-Out Community : Réflexions sur le changement de paradigme open source à l'ère de l'IA"
         },
         "speakers": [
@@ -882,7 +882,7 @@
       {
         "title": {
           "en": "Keynote – Lights-Out Community: Reflections on the Open Source Paradigm Shift in the AI Era",
-          “zh”: “Keynote – Lights-Out Community：AI时代开源范式转变的思考”,
+          "zh": "Keynote – Lights-Out Community：AI时代开源范式转变的思考",
           "fr": "Keynote – Lights-Out Community : Réflexions sur le changement de paradigme open source à l'ère de l'IA"
         },
         "speakers": [
@@ -3174,9 +3174,9 @@
     "ws-oh-tech-forum": [
       {
         "title": {
-          "en": "Lunch — OpenHarmony Tech Forum-Paris",
-          "zh": "Lunch — OpenHarmony Tech Forum-Paris",
-          "fr": "Lunch — OpenHarmony Tech Forum-Paris"
+          "en": "Lunch — OpenHarmony × AI",
+          "zh": "Lunch — OpenHarmony × AI",
+          "fr": "Lunch — OpenHarmony × AI"
         },
         "speakers": [],
         "date": {
@@ -3186,28 +3186,6 @@
         },
         "timeSlot": "12:00 - 14:00",
         "type": "break",
-        "room": "Founders Cafe"
-      },
-      {
-        "title": {
-          "en": "Opening Speech",
-          "zh": "开幕致辞",
-          "fr": "Discours d'ouverture"
-        },
-        "speakers": [
-          {
-            "name": "Liang Zhang",
-            "title": "Director, Huawei Fourier Research Institute",
-            "id": "liang-zhang"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "14:00 - 14:05",
-        "type": "talk",
         "room": "Founders Cafe"
       },
       {
@@ -3229,7 +3207,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "14:05 - 14:25",
+        "timeSlot": "14:00 - 14:20",
         "type": "talk",
         "room": "Founders Cafe"
       },
@@ -3251,7 +3229,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "14:25 - 14:45",
+        "timeSlot": "14:20 - 14:40",
         "type": "talk",
         "room": "Founders Cafe",
         "content": {
@@ -3269,7 +3247,7 @@
         "speakers": [
           {
             "name": "Debayan Roy",
-            "title": "Senior Research Engineer, Huawei Munich Research Center",
+            "title": "Principal Research Engineer, Huawei Hilbert Research Center (Dresden)",
             "id": "debayan-roy",
             "image": "/images/speakers/better_portrait/debayan-roy.png"
           }
@@ -3279,7 +3257,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "14:45 - 15:05",
+        "timeSlot": "14:40 - 15:00",
         "type": "talk",
         "room": "Founders Cafe"
       },
@@ -3301,7 +3279,7 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "15:05 - 15:25",
+        "timeSlot": "15:00 - 15:20",
         "type": "talk",
         "room": "Founders Cafe",
         "content": {
@@ -3312,9 +3290,9 @@
       },
       {
         "title": {
-          "en": "Coffee Break — OpenHarmony Tech Forum-Paris",
-          "zh": "Coffee Break — OpenHarmony Tech Forum-Paris",
-          "fr": "Coffee Break — OpenHarmony Tech Forum-Paris"
+          "en": "Coffee Break — OpenHarmony × AI",
+          "zh": "Coffee Break — OpenHarmony × AI",
+          "fr": "Coffee Break — OpenHarmony × AI"
         },
         "speakers": [],
         "date": {
@@ -3322,15 +3300,15 @@
           "zh": "5月5日",
           "fr": "5 mai"
         },
-        "timeSlot": "15:25 - 15:40",
+        "timeSlot": "15:20 - 15:40",
         "type": "break",
         "room": "Founders Cafe"
       },
       {
         "title": {
-          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum-Paris",
-          "zh": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum-Paris",
-          "fr": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — OpenHarmony Tech Forum-Paris"
+          "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
+          "zh": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team",
+          "fr": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team"
         },
         "speakers": [
           {
@@ -3363,7 +3341,7 @@
         "speakers": [
           {
             "name": "Francesco Pham",
-            "title": "Senior Technical Expert, Huawei Milan Research Institute; Project Lead & Committer Representative, Eclipse Oniro",
+            "title": "Senior Technical Expert, Huawei Kopernik Research Center; Project Lead & Committer Representative, Eclipse Oniro",
             "id": "francesco-pham",
             "image": "/images/speakers/better_portrait/francesco-pham.png"
           }
@@ -3899,7 +3877,7 @@
       {
         "title": {
           "en": "Keynote – Lights-Out Community: Reflections on the Open Source Paradigm Shift in the AI Era",
-          “zh”: “Keynote – Lights-Out Community：AI时代开源范式转变的思考”,
+          "zh": "Keynote – Lights-Out Community：AI时代开源范式转变的思考",
           "fr": "Keynote – Lights-Out Community : Réflexions sur le changement de paradigme open source à l'ère de l'IA"
         },
         "speakers": [

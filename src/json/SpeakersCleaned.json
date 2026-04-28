@@ -2070,9 +2070,9 @@
       "id": "debayan-roy",
       "name": "Debayan Roy",
       "bio": "",
-      "role": "Senior Research Engineer",
-      "org": "Huawei Munich Research Center",
-      "roleOrg": "Senior Research Engineer, Huawei Munich Research Center",
+      "role": "Principal Research Engineer",
+      "org": "Huawei Hilbert Research Center (Dresden)",
+      "roleOrg": "Principal Research Engineer, Huawei Hilbert Research Center (Dresden)",
       "image": "/images/speakers/better_portrait/debayan-roy.png",
       "tags": [
         "ws-oh-tech-forum"
@@ -2092,8 +2092,8 @@
       "name": "Francesco Pham",
       "bio": "",
       "role": "Senior Technical Expert",
-      "org": "Huawei Milan Research Institute",
-      "roleOrg": "Senior Technical Expert, Huawei Milan Research Institute",
+      "org": "Huawei Kopernik Research Center",
+      "roleOrg": "Senior Technical Expert, Huawei Kopernik Research Center; Project Lead & Committer Representative, Eclipse Oniro",
       "image": "/images/speakers/better_portrait/francesco-pham.png",
       "tags": [
         "ws-oh-tech-forum"
