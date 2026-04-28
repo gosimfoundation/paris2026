@@ -4436,22 +4436,6 @@
     "ws-agentic-app": [
       {
         "title": {
-          "en": "Octos Workshop",
-          "zh": "Octos Workshop",
-          "fr": "Octos Workshop"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:20 - 12:00",
-        "type": "talk",
-        "room": "Junior Stage"
-      },
-      {
-        "title": {
           "en": "Lunch — Build Your Own Agentic App Workshop",
           "zh": "Lunch — Build Your Own Agentic App Workshop",
           "fr": "Lunch — Build Your Own Agentic App Workshop"

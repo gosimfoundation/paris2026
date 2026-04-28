@@ -271,7 +271,7 @@ const allRooms = Array.from(roomSessionsMap.entries()).map(([key, data]) => ({
 const firstRoom = allRooms[0]?.key || ""
 
 // ── Grid (Room × Time) view data ──
-const GRID_ROOM_ORDER = ["Master Stage", "Open Stage", "Junior Stage", "Central Room", "Founders Cafe"]
+const GRID_ROOM_ORDER = ["Master Stage", "Open Stage", "Junior Stage", "Central Room", "Founders Cafe", "Open Platform"]
 const gridRooms = GRID_ROOM_ORDER
 const GRID_SLOT_MINUTES = 5
 
@@ -922,7 +922,7 @@ const gridDays: GridDay[] = days.map(d => {
     {gridDays.map((gd, di) => (
       <div class={`grid-table-wrap${di === 0 ? "" : " hidden"}`} data-grid-panel={gd.dayEn}>
         <div class="grid-scroll">
-          <div class="tg" style={`--tg-rows: ${gd.timeSlots.length}; height: ${40 + gd.timeSlots.length * 28}px`}>
+          <div class="tg" style={`--tg-rows: ${gd.timeSlots.length}; height: ${40 + gd.timeSlots.length * 32}px`}>
             {/* Sticky header row */}
             <div class="tg-hdr tg-corner">TIME</div>
             {gridRooms.map((room, ci) => (
@@ -1162,6 +1162,14 @@ const gridDays: GridDay[] = days.map(d => {
     btn.addEventListener("click", () => showRoomPanel(activeRoomDay, btn.dataset.room))
   })
 
+
+  document.querySelectorAll("[data-overview-track]").forEach((card) => {
+    card.addEventListener("click", () => {
+      const track = card.dataset.overviewTrack
+      const day = card.dataset.overviewDay
+      if (track) show(day || firstDay, track)
+    })
+  })
 
   document.querySelectorAll(".signup-link[data-href]").forEach((el) => {
     el.addEventListener("click", (e) => {
@@ -1968,8 +1976,8 @@ const gridDays: GridDay[] = days.map(d => {
   /* CSS Grid layout: fixed row heights, no content stretching */
   .tg {
     display: grid;
-    grid-template-columns: 60px repeat(5, 1fr);
-    grid-template-rows: auto repeat(var(--tg-rows), 28px);
+    grid-template-columns: 60px repeat(6, 1fr);
+    grid-template-rows: auto repeat(var(--tg-rows), 32px);
     width: 100%;
     min-width: 0;
     position: relative;
@@ -1982,11 +1990,11 @@ const gridDays: GridDay[] = days.map(d => {
     z-index: 4;
     background: #0f172a;
     color: #fff;
-    font-size: 0.72rem;
+    font-size: 0.65rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 0.6rem 0.5rem;
+    letter-spacing: 0.04em;
+    padding: 0.6rem 0.35rem;
     text-align: center;
     grid-row: 1;
   }
@@ -2077,19 +2085,19 @@ const gridDays: GridDay[] = days.map(d => {
     align-items: center;
   }
   .grid-card-title {
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.25;
     overflow: hidden;
   }
   .grid-card-break .grid-card-title {
     font-weight: 500;
     color: #94a3b8;
-    font-size: 0.65rem;
+    font-size: 0.68rem;
     -webkit-line-clamp: 1;
   }
   .grid-card-speakers {
-    font-size: 0.6rem;
+    font-size: 0.63rem;
     color: rgba(0,0,0,0.5);
     line-height: 1.25;
     margin-top: 0.15rem;
@@ -2100,7 +2108,7 @@ const gridDays: GridDay[] = days.map(d => {
     -webkit-line-clamp: 1;
   }
   .grid-card-track {
-    font-size: 0.55rem;
+    font-size: 0.58rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;

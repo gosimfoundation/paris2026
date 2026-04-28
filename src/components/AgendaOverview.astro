@@ -25,11 +25,12 @@ const trackColors: Record<string, { from: string; to: string }> = {
   "ai-generative-app":         { from: "#2563eb", to: "#60a5fa" },
   "agentic-ai-on-edge":        { from: "#ca8a04", to: "#facc15" },
   "open-source-robotics":      { from: "#0891b2", to: "#22d3ee" },
-  "special-keynote":           { from: "#7c3aed", to: "#c084fc" },
+  "ws-open-compute":           { from: "#0f766e", to: "#2dd4bf" },
   "ws-vllm-paris2026":         { from: "#4f46e5", to: "#818cf8" },
   "ws-oh-tech-forum":          { from: "#be123c", to: "#fb7185" },
   "ws-own-your-data-paris2026":{ from: "#0f766e", to: "#34d399" },
   "ws-sglang-paris2026":       { from: "#7c3aed", to: "#a78bfa" },
+  "ws-agentic-app":            { from: "#2563eb", to: "#60a5fa" },
   "hackathon":                 { from: "#475569", to: "#94a3b8" },
 };
 
@@ -133,7 +134,7 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
             venue: { en: "Central Room", zh: "中央会议室", fr: "Salle Centrale" },
             capacity: "100",
             name: { en: "Open Compute for Agentic AI (FlagOS)", zh: "Open Compute for Agentic AI (FlagOS)", fr: "Open Compute for Agentic AI (FlagOS)" },
-            colorId: "special-keynote",
+            colorId: "ws-open-compute",
           },
           {
             venue: { en: "Founders Cafe", zh: "创始人咖啡厅", fr: "Founders Cafe" },
@@ -190,7 +191,7 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
             venue: { en: "Junior Stage", zh: "Jr. 舞台", fr: "Scène Junior" },
             capacity: "50",
             name: { en: "Build Your Own Agentic App Workshop", zh: "Build Your Own Agentic App 工作坊", fr: "Atelier Agentic App" },
-            colorId: "ai-generative-app",
+            colorId: "ws-agentic-app",
           },
           {
             venue: { en: "Central Room", zh: "中央会议室", fr: "Salle Centrale" },
@@ -241,7 +242,7 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
             venue: { en: "Junior Stage", zh: "Jr. 舞台", fr: "Scène Junior" },
             capacity: "50",
             name: { en: "Build Your Own Agentic App Workshop", zh: "Build Your Own Agentic App 工作坊", fr: "Atelier Agentic App" },
-            colorId: "ai-generative-app",
+            colorId: "ws-agentic-app",
           },
           {
             venue: { en: "Central Room", zh: "中央会议室", fr: "Salle Centrale" },
@@ -345,6 +346,8 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
                         <div
                           class={`session-card${isHackathon ? " session-card-hackathon" : ""}`}
                           style={`--from: ${color.from}; --to: ${color.to};`}
+                          data-overview-track={session.colorId || ""}
+                          data-overview-day={day.date.en.includes("5") ? "May 5" : "May 6"}
                         >
                           <div class="session-bar"></div>
                           <div class="session-body">
@@ -532,6 +535,13 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
     border: 1px solid rgba(15, 23, 42, 0.07);
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: box-shadow 0.15s, border-color 0.15s;
+  }
+
+  .agenda-overview .session-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: rgba(15, 23, 42, 0.15);
   }
 
   .agenda-overview .session-bar {
