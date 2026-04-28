@@ -396,14 +396,14 @@
       },
       {
         "title": {
-          "en": "Keynote – Sir Timothy Gowers",
-          "zh": "Keynote – Sir Timothy Gowers",
-          "fr": "Keynote – Sir Timothy Gowers"
+          "en": "Keynote – Can an AI Mathematician Be More Than Just a Black Box?",
+          "zh": "Keynote – AI数学家能否不仅仅是一个黑箱？",
+          "fr": "Keynote – Un mathématicien IA peut-il être plus qu'une boîte noire ?"
         },
         "speakers": [
           {
             "name": "Sir Timothy Gowers",
-            "title": "FRS; Fields Medalist",
+            "title": "Fields Medalist; Professor of Combinatorics, Collège de France; Research Professor, University of Cambridge",
             "id": "timothy-gowers"
           }
         ],
@@ -822,14 +822,14 @@
       },
       {
         "title": {
-          "en": "Keynote – Sir Timothy Gowers",
-          "zh": "Keynote – Sir Timothy Gowers",
-          "fr": "Keynote – Sir Timothy Gowers"
+          "en": "Keynote – Can an AI Mathematician Be More Than Just a Black Box?",
+          "zh": "Keynote – AI数学家能否不仅仅是一个黑箱？",
+          "fr": "Keynote – Un mathématicien IA peut-il être plus qu'une boîte noire ?"
         },
         "speakers": [
           {
             "name": "Sir Timothy Gowers",
-            "title": "FRS; Fields Medalist",
+            "title": "Fields Medalist; Professor of Combinatorics, Collège de France; Research Professor, University of Cambridge",
             "id": "timothy-gowers"
           }
         ],
@@ -966,8 +966,8 @@
             "id": "mo-sadek"
           },
           {
-            "name": "Mike Basios",
-            "title": "",
+            "name": "Mike Besios",
+            "title": "CTO and Co-Founder, Turin Tech",
             "id": "mike-besios"
           }
         ],
@@ -1027,7 +1027,7 @@
       },
       {
         "title": {
-          "en": "JiuwenClaw pioneers \"Coordination Engineering\", the next leap for Agent Era",
+          "en": "JiuwenClaw Pioneers \"Coordination Engineering,\" the Next Leap for the Agent Era",
           "zh": "JiuwenClaw 开创\"协调工程\"，Agent 时代的下一次飞跃",
           "fr": "JiuwenClaw, pionnier de l'\"ingénierie de coordination\", le prochain bond de l'ère des agents"
         },
@@ -1113,24 +1113,24 @@
             "org": "Carrefour"
           },
           {
-            "name": "Alexio Cassani",
-            "title": "Co-Founder & CEO, FairMind",
-            "id": "alexio-cassani"
-          },
-          {
             "name": "Tricia Wang",
             "title": "CEO, Advanced AI Society",
             "id": "tricia-wang"
           },
           {
-            "name": "Susheel Gooly",
-            "title": "Service Line Leader, Hybrid Cloud & Data, IBM Consulting NL",
-            "id": "susheel-gooly"
+            "name": "Pierre-Yves Gibello",
+            "title": "CEO, OW2",
+            "id": "pierre-yves-gibello"
           },
           {
             "name": "Hao Li",
-            "title": "Haoeasy AI SAS",
+            "title": "Founder, Haoeasy AI SAS",
             "id": "hao-li"
+          },
+          {
+            "name": "Fraser Edwards",
+            "title": "CEO & Co-Founder, Cheqd.io",
+            "id": "fraser-edwards"
           }
         ],
         "date": {
@@ -1154,9 +1154,14 @@
         },
         "speakers": [
           {
-            "id": "francois-bouchet",
-            "name": "François Bouchet",
-            "title": "Associate Professor of AI in Education, Sorbonne University (Moderator)"
+            "name": "Igor Schwarzmann",
+            "title": "Principal, Known Unknowns GmbH (Moderator)",
+            "id": "igor-schwarzmann"
+          },
+          {
+            "name": "Sir Timothy Gowers",
+            "title": "Fields Medalist; Professor of Combinatorics, Collège de France; Research Professor, University of Cambridge",
+            "id": "timothy-gowers"
           },
           {
             "id": "yonghui-wu",
@@ -1170,9 +1175,9 @@
             "id": "yun-lin"
           },
           {
-            "name": "Sir Timothy Gowers",
-            "title": "FRS; Fields Medalist",
-            "id": "timothy-gowers"
+            "name": "Xiaolu Tan",
+            "title": "Professor, CUHK",
+            "id": "xiaolu-tan"
           },
           {
             "name": "Nowa Sutaka",
@@ -1249,6 +1254,22 @@
       },
       {
         "title": {
+          "en": "Keynote – TBD",
+          "zh": "Keynote – 待定",
+          "fr": "Keynote – À confirmer"
+        },
+        "speakers": [],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "10:00 - 10:15",
+        "type": "keynote",
+        "room": "Master Stage"
+      },
+      {
+        "title": {
           "en": "Morning Coffee — Agentic AI Summit — Day 2 Morning",
           "zh": "Morning Coffee — Agentic AI Summit — Day 2 Morning",
           "fr": "Morning Coffee — Agentic AI Summit — Day 2 Morning"
@@ -1259,7 +1280,7 @@
           "zh": "5月6日",
           "fr": "6 mai"
         },
-        "timeSlot": "10:00 - 10:20",
+        "timeSlot": "10:15 - 10:20",
         "type": "break"
       },
       {
@@ -1546,16 +1567,6 @@
             "id": "nicolas-miailhe"
           },
           {
-            "name": "Chao Jia",
-            "title": "",
-            "id": "chao-jia"
-          },
-          {
-            "name": "Igor Schwarzmann",
-            "title": "Principal, Known Unknowns GmbH",
-            "id": "igor-schwarzmann"
-          },
-          {
             "name": "Slava Tykhonov",
             "title": "Head of AI, CODATA",
             "id": "slava-tykhonov"
@@ -1564,6 +1575,11 @@
             "name": "Dr Hai-Xu Cheng",
             "title": "CTO, Rothwell International",
             "id": "dr-hai-xu-cheng"
+          },
+          {
+            "name": "Bart Kubiak",
+            "title": "Co-Founder, New Intelligence Centre for Empathy and Reason",
+            "id": "bart-kubiak"
           }
         ],
         "date": {
@@ -3156,8 +3172,7 @@
           {
             "name": "Liang Zhang",
             "title": "Director, Huawei Fourier Research Institute",
-            "id": "liang-zhang",
-            "image": "/images/speakers/better_portrait/liang-zhang.png"
+            "id": "liang-zhang"
           }
         ],
         "date": {
@@ -3369,7 +3384,8 @@
           {
             "name": "Yan Sun",
             "title": "Technical Architect, Yanlink",
-            "id": "yan-sun"
+            "id": "yan-sun",
+            "image": "/images/speakers/better_portrait/yan-sun.png"
           }
         ],
         "date": {
@@ -3780,14 +3796,14 @@
     "ws-own-your-data-paris2026": [
       {
         "title": {
-          "en": "Keynote – Sir Timothy Gowers",
-          "zh": "Keynote – Sir Timothy Gowers",
-          "fr": "Keynote – Sir Timothy Gowers"
+          "en": "Keynote – Can an AI Mathematician Be More Than Just a Black Box?",
+          "zh": "Keynote – AI数学家能否不仅仅是一个黑箱？",
+          "fr": "Keynote – Un mathématicien IA peut-il être plus qu'une boîte noire ?"
         },
         "speakers": [
           {
             "name": "Sir Timothy Gowers",
-            "title": "FRS; Fields Medalist",
+            "title": "Fields Medalist; Professor of Combinatorics, Collège de France; Research Professor, University of Cambridge",
             "id": "timothy-gowers"
           }
         ],
