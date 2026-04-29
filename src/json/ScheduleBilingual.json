@@ -976,8 +976,8 @@
             "id": "mo-sadek"
           },
           {
-            "name": "Mike Besios",
-            "title": "CTO and Co-Founder, Turin Tech",
+            "name": "Mike Basios",
+            "title": "CTO and Co-Founder, Turintech AI",
             "id": "mike-besios"
           }
         ],
@@ -1321,9 +1321,9 @@
       },
       {
         "title": {
-          "en": "MiniMax M2.7: Early Echoes of Self-Evolution With 100,000 OpenClaw Cluster",
-          "zh": "MiniMax M2.7：100,000 OpenClaw集群的自我进化初声",
-          "fr": "MiniMax M2.7 : Premiers échos d'auto-évolution avec un cluster OpenClaw de 100 000"
+          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
+          "zh": "超越聊天机器人：与 Minimax 一起构建自主智能体生态系统",
+          "fr": "Au-delà du chatbot : construire des écosystèmes d'agents autonomes avec Minimax"
         },
         "content": {
           "en": "The era of the chatbot is giving way to something more powerful: autonomous agent ecosystems where AI systems proactively plan, coordinate, and execute complex workflows with minimal human intervention. Minimax has been at the forefront of this transition, developing models and infrastructure that power agent-native applications at scale.\n\nThis talk examines what it takes to move beyond simple question-and-answer interactions toward multi-step agentic pipelines — the model capabilities required, the tooling and orchestration layers needed, and the real-world challenges of deploying autonomous agents in production. Attendees will learn how Minimax approaches the agent ecosystem problem and what the next wave of AI-powered applications looks like.",
@@ -1745,9 +1745,9 @@
       },
       {
         "title": {
-          "en": "MiniMax M2.7: Early Echoes of Self-Evolution With 100,000 OpenClaw Cluster",
-          "zh": "MiniMax M2.7：100,000 OpenClaw集群的自我进化初声",
-          "fr": "MiniMax M2.7 : Premiers échos d'auto-évolution avec un cluster OpenClaw de 100 000"
+          "en": "Beyond the Chatbot: Building Autonomous Agent Ecosystems with Minimax",
+          "zh": "超越聊天机器人：与 Minimax 一起构建自主智能体生态系统",
+          "fr": "Au-delà du chatbot : construire des écosystèmes d'agents autonomes avec Minimax"
         },
         "speakers": [
           {
