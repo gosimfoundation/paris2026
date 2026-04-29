@@ -119,6 +119,11 @@
       "url": "https://www.radixark.ai"
     },
     {
+      "category": "sponsor",
+      "image": "Databricks_Logo.png",
+      "url": "https://www.databricks.com"
+    },
+    {
       "category": "supporting-organizations",
       "image": "baai.png",
       "url": "https://www.baai.ac.cn"
