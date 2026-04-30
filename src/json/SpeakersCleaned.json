@@ -2006,11 +2006,11 @@
     {
       "id": "marianna-nezhurina",
       "name": "Marianna Nezhurina",
-      "bio": "",
+      "bio": "Core LAION researcher, main contributor to OpenThoughts, OpenThoughts-Agent and TerminalBench projects.",
       "role": "Researcher",
-      "org": "LAION",
-      "roleOrg": "Researcher, LAION",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "org": "Juelich Supercomputing Center, LAION",
+      "roleOrg": "Researcher, Juelich Supercomputing Center, LAION",
+      "image": "/images/speakers/better_portrait/1777554072990-marianna-nezhurina.png",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -2638,11 +2638,11 @@
     {
       "id": "xiaolu-tan",
       "name": "Xiaolu Tan",
-      "bio": "",
+      "bio": "Xiaolu Tan received his PhD from Ecole Polytechnique in Paris in 2011. He became then assistant professor at University of Paris-Dauphine, PSL university, and later moved to the Chinese University of Hong Kong where he is currently a full professor. His research focuses on stochastic optimal control, optimal transport with applications in machine learning, finance, etc.",
       "role": "Professor",
-      "org": "CUHK",
-      "roleOrg": "Professor, CUHK",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "org": "The Chinese University of Hong Kong",
+      "roleOrg": "Professor, The Chinese University of Hong Kong",
+      "image": "/images/speakers/better_portrait/1777447631590-tan-xiaolu.png",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -2666,6 +2666,27 @@
       "image": "/images/speakers/better_portrait/Alexandre-Gerbeaux.png",
       "tags": [
         "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
+    },
+    {
+      "id": "chenzhe-jing",
+      "name": "Chenzhe Jing",
+      "bio": "Director of Modelbest OSPO and OpenBMB Operation Lead. Chenzhe focuses on on-device large models including MiniCPM and MiniCPM-o, and their real-world applications across smart cockpits, smartphones, smart home devices, and robotics.",
+      "role": "Director of Modelbest OSPO, OpenBMB Operation Lead",
+      "org": "Modelbest",
+      "roleOrg": "Director of Modelbest OSPO, OpenBMB Operation Lead",
+      "image": "/images/speakers/better_portrait/1777533669725-chenzhe-jing.png",
+      "tags": [
+        "agentic-ai-on-edge"
       ],
       "socialLinks": {
         "mastodon": "",

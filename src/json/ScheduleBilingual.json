@@ -850,7 +850,7 @@
           },
           {
             "name": "Marianna Nezhurina",
-            "title": "Researcher, LAION",
+            "title": "Researcher, Juelich Supercomputing Center, LAION",
             "id": "marianna-nezhurina"
           },
           {
@@ -1039,7 +1039,7 @@
           },
           {
             "name": "Xiaolu Tan",
-            "title": "Professor, CUHK",
+            "title": "Professor, The Chinese University of Hong Kong",
             "id": "xiaolu-tan"
           },
           {
@@ -2275,7 +2275,7 @@
         "speakers": [
           {
             "name": "Chenzhe Jing",
-            "title": "Director, Modelbest OSPO; Operation Lead, OpenBMB",
+            "title": "Director of Modelbest OSPO, OpenBMB Operation Lead",
             "id": "chenzhe-jing"
           }
         ],
