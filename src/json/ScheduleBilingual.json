@@ -834,14 +834,14 @@
         "speakers": [
           {
             "name": "Jenia Jitsev",
-            "title": "Co-Founder, LAION; Researcher, Jülich Supercomputing Center (Moderator)",
+            "title": "Scientific lead, LAION; chairman, FZJ (Moderator)",
             "id": "jenia-jitsev"
           },
           {
             "id": "yuxuan-zhang",
             "name": "Yuxuan Zhang",
             "image": "/images/speakers/better_portrait/yuxuan-zhang.png",
-            "title": "Tech Evangelist, ZhipuAI"
+            "title": "Technical Evangelist, ZhipuAI"
           },
           {
             "name": "Daniel",
@@ -855,7 +855,7 @@
           },
           {
             "name": "Mo Sadek",
-            "title": "Technical Director, Alice",
+            "title": "Technical Director, Alice.io",
             "id": "mo-sadek"
           },
           {
@@ -1044,7 +1044,7 @@
           },
           {
             "name": "Nowa Sutaka",
-            "title": "CEO, Puddin AI",
+            "title": "CEO of Puddin AI, Puddin.ai",
             "id": "nowa-sutaka"
           }
         ],
@@ -1204,29 +1204,29 @@
         "speakers": [
           {
             "name": "Alexy Khrabrov",
-            "title": "Founder, CR4AI, Northeastern University (Moderator)",
+            "title": "AI Community Architect at Neo4j (Moderator)",
             "id": "alexy-khrabrov"
           },
           {
             "id": "remi-louf",
             "name": "Rémi Louf",
             "image": "/images/speakers/better_portrait/remi-louf.png",
-            "title": "CEO, Dottxt (creator of Outlines, 3M+ downloads)"
+            "title": "CEO of .txt"
           },
           {
             "name": "Marc Sanselme",
-            "title": "Founder, Draft'n Run — open-source AI workflow builder",
+            "title": "Founder, Draft'n Run",
             "id": "marc-sanselme"
           },
           {
             "id": "junyi",
             "name": "Junyi",
             "image": "/images/speakers/better_portrait/junyi.png",
-            "title": "CEO, INNAIO France"
+            "title": "CEO, NNAIO France"
           },
           {
             "name": "Quentin Feuillade-Montixi",
-            "title": "Founder CEO, WeaveMind",
+            "title": "Founder CEO, WeaveMind, Inc.",
             "id": "quentin-feuillade-montixi"
           },
           {
@@ -1388,7 +1388,7 @@
         "speakers": [
           {
             "name": "Mirko Boehm",
-            "title": "LF Europe (Moderator)",
+            "title": "Community Development, Linux Foundation Europe (Moderator)",
             "id": "mirko-boehm"
           },
           {
@@ -1402,7 +1402,7 @@
             "id": "slava-tykhonov"
           },
           {
-            "name": "Dr Hai-Xu Cheng",
+            "name": "Hai-Xu Cheng",
             "title": "CTO, Rothwell International",
             "id": "dr-hai-xu-cheng"
           },

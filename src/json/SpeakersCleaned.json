@@ -699,9 +699,9 @@
       "image": "/images/speakers/better_portrait/alexy-khrabrov.png",
       "draft": false,
       "bio": "Alexy Khrabrov is the founder of CR4AI and affiliated with Northeastern University. He is the co-founder of the AI Alliance and founding chair of NumFOCUS open source for science. Alexy was founding chair of Linux Foundation AI & Data (LFAI) Generative AI Commons. He is the founder and organizer of Bay Area AI and AI Agent SF meetups, and the Scale/Data/AI By the Bay independent open-source AI conferences since 2013.",
-      "role": "Founder",
-      "org": "CR4AI, Northeastern University",
-      "roleOrg": "Founder, CR4AI, Northeastern University",
+      "role": "AI Community Architect",
+      "org": "Neo4j",
+      "roleOrg": "AI Community Architect at Neo4j",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -1862,7 +1862,7 @@
       "bio": "Rémi is co-founder and CEO of .txt, building the infrastructure that makes agentic AI production-ready. His bet: the bottleneck isn't model intelligence; it's making AI output reliable, predictable, and composable at scale.",
       "role": "CEO",
       "org": ".txt",
-      "roleOrg": "CEO, .txt",
+      "roleOrg": "CEO of .txt",
       "image": "/images/speakers/better_portrait/remi-louf.png",
       "tags": [
         "agentic-ai-summit"
@@ -1924,8 +1924,8 @@
       "name": "Junyi Zhong",
       "bio": "Dr. Junyi Zhong is a tech entrepreneur and AI researcher specializing in Trustworthy AI and blockchain systems. He is the CEO of INNAIO France, he focuses on AI-driven voice interfaces to advance information accessibility and global communication. He is also an active angel investor, supporting early-stage projects across AI and Web3.",
       "role": "CEO",
-      "org": "INNAIO France",
-      "roleOrg": "CEO, INNAIO France",
+      "org": "NNAIO France",
+      "roleOrg": "CEO, NNAIO France",
       "image": "/images/speakers/better_portrait/junyi.png",
       "tags": [
         "agentic-ai-summit"
@@ -1965,9 +1965,9 @@
       "id": "jenia-jitsev",
       "name": "Jenia Jitsev",
       "bio": "Scientific lead and chairman of LAION e.V. Works on open foundation models and datasets including openCLIP, LAION-5B, DataComp, DCLM, OpenThoughts, and MixtureVitae. Researches scaling laws for guided search of stronger scalable learning procedures.",
-      "role": "Scientific Lead & Chairman",
-      "org": "LAION e.V.; FZJ",
-      "roleOrg": "Scientific Lead & Chairman, LAION e.V.; FZJ",
+      "role": "Scientific lead, LAION; chairman, FZJ",
+      "org": "LAION / FZJ",
+      "roleOrg": "Scientific lead, LAION; chairman, FZJ",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
       "tags": [
         "agentic-ai-summit"
@@ -2028,9 +2028,9 @@
       "id": "mirko-boehm",
       "name": "Mirko Boehm",
       "bio": "Mirko Boehm contributes to free and open source software as a community builder, licensing expert and researcher. His work spans major projects including the KDE Desktop, the Open Invention Network and the Open Source Initiative. He holds a PhD in innovation economics and serves as visiting lecturer and researcher on open source software at the Technical University of Berlin. His professional background encompasses entrepreneurship, executive management, software development and service\r\nas a German Air Force officer. Since joining the Linux Foundation in June 2023 as senior director for community development at Linux Foundation Europe, he drives engagement and collaboration among European open source stakeholders. He is fluent in English and German and resides in the Berlin area.",
-      "role": "",
-      "org": "LF Europe",
-      "roleOrg": "LF Europe",
+      "role": "Community Development",
+      "org": "Linux Foundation Europe",
+      "roleOrg": "Community Development, Linux Foundation Europe",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
       "tags": [
         "agentic-ai-summit"
@@ -2281,8 +2281,8 @@
     {
       "name": "Mo Sadek",
       "role": "Technical Director",
-      "org": "Alice",
-      "roleOrg": "Technical Director, Alice",
+      "org": "Alice.io",
+      "roleOrg": "Technical Director, Alice.io",
       "image": "/images/speakers/better_portrait/1776826905505-mo-sadek.png",
       "bio": "Mo Sadek is a Technical Director at Alice, where he spends most of his time thinking about how AI systems fail in creative and unfortunate ways. His background runs from pentesting to building security programs at platform scale, with a judgmental cat and a board game losing streak he refuses to acknowledge.",
       "tags": [
@@ -2365,8 +2365,8 @@
     {
       "name": "Nowa Sutaka",
       "role": "CEO",
-      "org": "Puddin AI",
-      "roleOrg": "CEO, Puddin AI",
+      "org": "Puddin.ai",
+      "roleOrg": "CEO of Puddin AI, Puddin.ai",
       "image": "/images/speakers/better_portrait/1776645692716-nowa-sutaka.png",
       "bio": "CEO of Puddin AI",
       "tags": [
@@ -2387,7 +2387,7 @@
       "name": "Quentin Feuillade-Montixi",
       "role": "Founder CEO",
       "org": "WeaveMind, Inc.",
-      "roleOrg": "Founder CEO, WeaveMind",
+      "roleOrg": "Founder CEO, WeaveMind, Inc.",
       "image": "/images/speakers/better_portrait/1776751329020-quentin-feuillade-montixi.png",
       "bio": "Ex world class AI red teamer and AI safety researcher, now creating a new programming system for the future of intelligent software.",
       "tags": [
@@ -2489,7 +2489,7 @@
       "id": "tianyi-han"
     },
     {
-      "name": "Dr Hai-Xu Cheng",
+      "name": "Hai-Xu Cheng",
       "role": "CTO",
       "org": "Rothwell International",
       "roleOrg": "CTO, Rothwell International",
