@@ -5,7 +5,7 @@ interface Track {
   link?: string;
 }
 
-type WorkshopTheme = "structured-runtime" | "model-serving" | "open-tooling";
+type WorkshopTheme = "structured-runtime" | "model-serving" | "open-tooling" | "agentic-build" | "open-compute" | "intelligent-os" | "lunch-learn";
 type HighlightTheme = "frontier-demo" | "robotics-hackathon" | "agentic-hackathon";
 
 interface CardItem {
@@ -332,6 +332,18 @@ const workshopThemeMeta: Record<
   "open-tooling": {
     accent: { from: "#c2410c", to: "#f59e0b" },
   },
+  "agentic-build": {
+    accent: { from: "#7c3aed", to: "#a78bfa" },
+  },
+  "open-compute": {
+    accent: { from: "#0f766e", to: "#34d399" },
+  },
+  "intelligent-os": {
+    accent: { from: "#be123c", to: "#fb7185" },
+  },
+  "lunch-learn": {
+    accent: { from: "#e65100", to: "#ff9800" },
+  },
 };
 
 const inferWorkshopTheme = (item: CardItem): WorkshopTheme => {
@@ -340,12 +352,12 @@ const inferWorkshopTheme = (item: CardItem): WorkshopTheme => {
   }
 
   const text = `${item.title} ${item.text}`.toLowerCase();
-  if (text.includes("sglang")) {
-    return "structured-runtime";
-  }
-  if (text.includes("vllm")) {
-    return "model-serving";
-  }
+  if (text.includes("sglang")) return "structured-runtime";
+  if (text.includes("vllm")) return "model-serving";
+  if (text.includes("agentic app")) return "agentic-build";
+  if (text.includes("open compute") || text.includes("flagos")) return "open-compute";
+  if (text.includes("openharmony")) return "intelligent-os";
+  if (text.includes("lunch") || text.includes("fundamental")) return "lunch-learn";
   return "open-tooling";
 };
 

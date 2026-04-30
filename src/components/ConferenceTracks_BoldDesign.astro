@@ -140,7 +140,17 @@ tracks.forEach((track, i) => {
         {workshopsTitle && <h3 class="column-title">{workshopsTitle}</h3>}
         <div class="workshops-grid">
           {workshops.map((item, i) => {
-            const cardStyle = `--stagger: ${i};`;
+            const wsColors = [
+              { bg1: "#eef2ff", bg2: "#e0e7ff", bg3: "#ede9fe", accent: "99, 102, 241" },
+              { bg1: "#ecfdf5", bg2: "#d1fae5", bg3: "#a7f3d0", accent: "16, 185, 129" },
+              { bg1: "#fff7ed", bg2: "#ffedd5", bg3: "#fed7aa", accent: "234, 88, 12" },
+              { bg1: "#fdf2f8", bg2: "#fce7f3", bg3: "#fbcfe8", accent: "219, 39, 119" },
+              { bg1: "#f0fdf4", bg2: "#dcfce7", bg3: "#bbf7d0", accent: "22, 163, 74" },
+              { bg1: "#fefce8", bg2: "#fef9c3", bg3: "#fef08a", accent: "202, 138, 4" },
+              { bg1: "#f0f9ff", bg2: "#e0f2fe", bg3: "#bae6fd", accent: "14, 165, 233" },
+            ];
+            const wc = wsColors[i % wsColors.length];
+            const cardStyle = `--stagger: ${i}; --ws-bg1: ${wc.bg1}; --ws-bg2: ${wc.bg2}; --ws-bg3: ${wc.bg3}; --ws-accent: ${wc.accent};`;
             const imgPath = item.image ? `/public/images/sponsors/${item.image}` : null;
             const imgMeta = imgPath && workshopImages[imgPath] ? workshopImages[imgPath].default : null;
             return (
@@ -745,13 +755,13 @@ tracks.forEach((track, i) => {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    background: linear-gradient(160deg, #eef2ff, #e0e7ff 50%, #ede9fe);
+    background: linear-gradient(160deg, var(--ws-bg1, #eef2ff), var(--ws-bg2, #e0e7ff) 50%, var(--ws-bg3, #ede9fe));
     background-size: 200% 200%;
     animation: workshop-bg-flow 8s ease-in-out infinite;
-    border: 1px solid rgba(99, 102, 241, 0.18);
+    border: 1px solid rgba(var(--ws-accent, 99, 102, 241), 0.18);
     border-radius: 16px;
     padding: 1rem 1.25rem;
-    box-shadow: 0 2px 12px rgba(99, 102, 241, 0.06);
+    box-shadow: 0 2px 12px rgba(var(--ws-accent, 99, 102, 241), 0.06);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
 
@@ -762,7 +772,7 @@ tracks.forEach((track, i) => {
     transform: translateX(-50%);
     width: 80%;
     height: 60%;
-    background: radial-gradient(ellipse, rgba(99, 102, 241, 0.12), transparent 70%);
+    background: radial-gradient(ellipse, rgba(var(--ws-accent, 99, 102, 241), 0.12), transparent 70%);
     pointer-events: none;
     animation: tint-pulse 5s ease-in-out infinite;
   }
@@ -774,8 +784,8 @@ tracks.forEach((track, i) => {
   }
 
   .workshop-card:hover .workshop-card-inner {
-    border-color: rgba(99, 102, 241, 0.45);
-    box-shadow: 0 16px 48px rgba(99, 102, 241, 0.22), 0 4px 16px rgba(99, 102, 241, 0.1);
+    border-color: rgba(var(--ws-accent, 99, 102, 241), 0.45);
+    box-shadow: 0 16px 48px rgba(var(--ws-accent, 99, 102, 241), 0.22), 0 4px 16px rgba(var(--ws-accent, 99, 102, 241), 0.1);
   }
 
   .workshop-logo {

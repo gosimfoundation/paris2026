@@ -2274,10 +2274,9 @@
         },
         "speakers": [
           {
-            "name": "Chao Jia",
-            "title": "VP, ModelBest",
-            "id": "chao-jia",
-            "image": "/images/speakers/better_portrait/chao-jia.png"
+            "name": "Chenzhe Jing",
+            "title": "Director, Modelbest OSPO; Operation Lead, OpenBMB",
+            "id": "chenzhe-jing"
           }
         ],
         "date": {
@@ -3948,9 +3947,9 @@
     "ws-agentic-app": [
       {
         "title": {
-          "en": "Makepad Splash",
-          "zh": "Makepad Splash",
-          "fr": "Makepad Splash"
+          "en": "A2App — Agent Generated Apps using Makepad Splash",
+          "zh": "A2App — 使用 Makepad Splash 生成智能体应用",
+          "fr": "A2App — Applications générées par agent avec Makepad Splash"
         },
         "speakers": [
           {
