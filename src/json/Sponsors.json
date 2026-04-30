@@ -124,6 +124,11 @@
       "url": "https://www.databricks.com"
     },
     {
+      "category": "sponsor",
+      "image": "fundamental.png",
+      "url": "https://www.fundamental.xyz"
+    },
+    {
       "category": "supporting-organizations",
       "image": "baai.png",
       "url": "https://www.baai.ac.cn"
