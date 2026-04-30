@@ -105,8 +105,13 @@ const speakerSessions = [
       category: "Forum",
     })),
 ].filter((session, index, arr) =>
-  arr.findIndex((s) => s.title === session.title && s.timeSlot === session.timeSlot) === index
-);
+  arr.findIndex((s) => s.title === session.title && s.timeSlot === session.timeSlot && s.date === session.date) === index
+).sort((a, b) => {
+  const dayA = parseInt(a.date.replace(/\D/g, '')) || 0;
+  const dayB = parseInt(b.date.replace(/\D/g, '')) || 0;
+  if (dayA !== dayB) return dayA - dayB;
+  return (a.timeSlot || '').localeCompare(b.timeSlot || '');
+});
 
 // Detect placeholder speakers (no bio or using generic placeholder image)
 const isPlaceholder = !speaker.bio || speaker.image === "/images/speakers/better_portrait/0-placeholder-person.png";

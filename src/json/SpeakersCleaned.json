@@ -2655,6 +2655,27 @@
       },
       "status": "Accept",
       "draft": false
+    },
+    {
+      "id": "alexandre-gerbeaux",
+      "name": "Alexandre Gerbeaux",
+      "bio": "Alexandre Gerbeaux is a global AI leader operating at the intersection of advanced machine learning, enterprise strategy, and real-world impact. As Head of Applied AI at Fundamental, he is focused on turning frontier AI research into production systems for enterprise customers.\n\nWith a career spanning leadership roles at Mistral AI and DataRobot, Alexandre has built and led high-performing AI teams across different markets, working with organizations across finance, insurance, and healthcare to unlock value from data. His experience ranges from hands-on data science to executive-level AI strategy, giving him a uniquely holistic perspective on the field.\n\nAlexandre's work is grounded in both technical depth and business relevance — covering machine learning, big data systems, and quantitative finance — while always focusing on delivering practical outcomes with measurable impact.",
+      "role": "Head of Applied AI",
+      "org": "Fundamental",
+      "roleOrg": "Head of Applied AI, Fundamental",
+      "image": "/images/speakers/better_portrait/1777494488594-alexandre-gerbeaux.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     }
   ],
   "columns": 6

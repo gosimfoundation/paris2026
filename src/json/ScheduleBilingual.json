@@ -1264,11 +1264,18 @@
       },
       {
         "title": {
-          "en": "Keynote – TBD",
-          "zh": "Keynote – 待定",
-          "fr": "Keynote – À confirmer"
+          "en": "Keynote – The Left Brain of AI: Why Structured Data Is AI's Next Frontier",
+          "zh": "Keynote – AI的左脑：为什么结构化数据是AI的下一个前沿",
+          "fr": "Keynote – Le cerveau gauche de l'IA : pourquoi les données structurées sont la prochaine frontière"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Alexandre Gerbeaux",
+            "title": "Head of Applied AI, Fundamental",
+            "image": "",
+            "id": "alexandre-gerbeaux"
+          }
+        ],
         "date": {
           "en": "May 6",
           "zh": "5月6日",
@@ -1276,7 +1283,12 @@
         },
         "timeSlot": "10:00 - 10:15",
         "type": "keynote",
-        "room": "Master Stage"
+        "room": "Master Stage",
+        "content": {
+          "en": "Over the past three years, LLMs have transformed how organizations interact with unstructured data like text, images, code, and video. But the majority of valuable enterprise data is structured in millions of rows and columns of tabular data: transaction logs, ERPs, CRMs etc. It's these datasets that underpin every critical enterprise decision.\n\nUntil now enterprises have relied on antiquated ML algorithms to leverage these tabular datasets to make predictions and inform decisions. This is a slow and inaccurate process.\n\nIn this keynote, Alexandre Gerbeaux explores how Large Tabular Models (LTMs) solve this problem, and why LTMs are emerging as the next major category in AI given their promise to unlock trillions of dollars of value that have been locked in tables. He'll explain why structured data has remained one of AI's biggest blind spots, how LTMs differ from traditional machine learning and LLM architectures, and why predictive AI is entering its own foundation model era.\n\nThrough real-world examples in finance, healthcare, insurance, and manufacturing, Alexandre will show how organizations are moving from experimentation to deployment — and why this shift creates a massive new opportunity for data scientists, machine learning engineers, and forward deployed engineers.\n\nThe future of enterprise AI isn't generative — it's predictive.",
+          "zh": "",
+          "fr": ""
+        }
       },
       {
         "title": {
@@ -2564,6 +2576,33 @@
       },
       {
         "title": {
+          "en": "Lunch & Learn: What Comes After LLMs? LTMs — The Next Frontier of Enterprise AI",
+          "zh": "午餐学习会：LLM之后是什么？LTM——企业AI的下一个前沿",
+          "fr": "Lunch & Learn : Après les LLMs ? Les LTMs — La prochaine frontière de l'IA d'entreprise"
+        },
+        "speakers": [
+          {
+            "name": "Alexandre Gerbeaux",
+            "title": "Head of Applied AI, Fundamental",
+            "id": "alexandre-gerbeaux"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 13:00",
+        "type": "talk",
+        "room": "Central Room",
+        "content": {
+          "en": "LLMs transformed how enterprises work with unstructured data like text, images and code. But what happens when AI needs to reason over the structured data that powers decisions made by the world's most complex businesses? While Large Language Models have redefined how we interact with unstructured data, the vast majority of enterprise data is structured — in millions of rows and columns of tabular data. Large Tabular Models (LTMs) are emerging as a new, specialized class of model designed to bridge this gap. Grab your lunch, and join Fundamental for a Lunch & Learn to learn more about why enterprises are shifting toward LTMs.",
+          "zh": "",
+          "fr": ""
+        }
+      },
+      {
+        "title": {
           "en": "Morning Coffee — Agentic AI on Edge — Day 2 Morning",
           "zh": "Morning Coffee — Agentic AI on Edge — Day 2 Morning",
           "fr": "Morning Coffee — Agentic AI on Edge — Day 2 Morning"
@@ -2684,6 +2723,33 @@
         "room": "Central Room",
         "content": {
           "en": "Agentic AI on the edge requires accessible, low-latency inference, yet hardware fragmentation limits deployment. While CUDA dominates acceleration, its vendor lock-in constrains local intelligence. This talk examines Vulkan as a vendor-neutral alternative, showcasing how it expanded compatibility and reduced deployment complexity in llama.cpp across Intel, AMD, and Nvidia GPUs. We outline engineering roadblocks and explore VK_NV_cooperative_matrix2 as a blueprint for offloading hardware-specific optimizations to the driver, enabling peak performance via vendor optimizations while supporting broad hardware through generic shader fallbacks.",
+          "zh": "",
+          "fr": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Lunch & Learn: What Comes After LLMs? LTMs — The Next Frontier of Enterprise AI",
+          "zh": "午餐学习会：LLM之后是什么？LTM——企业AI的下一个前沿",
+          "fr": "Lunch & Learn : Après les LLMs ? Les LTMs — La prochaine frontière de l'IA d'entreprise"
+        },
+        "speakers": [
+          {
+            "name": "Alexandre Gerbeaux",
+            "title": "Head of Applied AI, Fundamental",
+            "id": "alexandre-gerbeaux"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 13:00",
+        "type": "talk",
+        "room": "Central Room",
+        "content": {
+          "en": "LLMs transformed how enterprises work with unstructured data like text, images and code. But what happens when AI needs to reason over the structured data that powers decisions made by the world's most complex businesses? While Large Language Models have redefined how we interact with unstructured data, the vast majority of enterprise data is structured — in millions of rows and columns of tabular data. Large Tabular Models (LTMs) are emerging as a new, specialized class of model designed to bridge this gap. Grab your lunch, and join Fundamental for a Lunch & Learn to learn more about why enterprises are shifting toward LTMs.",
           "zh": "",
           "fr": ""
         }
