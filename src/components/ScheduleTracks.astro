@@ -170,6 +170,7 @@ const TRACK_COLORS: Record<string, string> = {
   "ws-sglang-paris2026":        "#7c3aed",
   "ws-own-your-data-paris2026": "#0f766e",
   "ws-agentic-app":             "#2563eb",
+  "ws-lunch-and-learn":         "#e65100",
 }
 const WORKSHOP_COLOR = "#475569"
 const trackColor = (id: string) => TRACK_COLORS[id] || WORKSHOP_COLOR
@@ -274,6 +275,10 @@ const firstRoom = allRooms[0]?.key || ""
 const GRID_ROOM_ORDER = ["Master Stage", "Open Stage", "Junior Stage", "Central Room", "Founders Cafe", "Open Platform"]
 const gridRooms = GRID_ROOM_ORDER
 const GRID_SLOT_MINUTES = 5
+const BREAK_BANDS = [
+  { start: "10:00", end: "10:20", label: "Morning Coffee" },
+  { start: "15:00", end: "15:30", label: "Tea Break" },
+]
 
 function timeToMinutes(t: string): number {
   const [h, m] = t.split(":").map(Number)
@@ -373,7 +378,7 @@ const gridDays: GridDay[] = days.map(d => {
     }
   }
 
-  // Pass 2: Inflate short sessions for display, pushing subsequent cards down
+  // Pass 2: Inflate short sessions for display (skip keynotes/ceremonies to keep timeline accurate)
   const MIN_ROW_SPAN = 4
   let maxRowEnd = timeSlots.length
   for (const roomKey of gridRooms) {
@@ -385,13 +390,18 @@ const gridDays: GridDay[] = days.map(d => {
       const cell = roomPlaced.get(slot)!
       const ri = timeSlots.indexOf(slot)
       ;(cell as any).rowOffset = ri + rowShift
-      const inflated = Math.max(MIN_ROW_SPAN, cell.rowSpan)
+      const isFixed = cell.session.type === "keynote" || cell.session.type === "ceremony"
+      const inflated = isFixed ? cell.rowSpan : Math.max(MIN_ROW_SPAN, cell.rowSpan)
       const extra = inflated - cell.rowSpan
       cell.rowSpan = inflated
       rowShift += extra
     }
-    const lastEnd = slots.length > 0 ? ((roomPlaced.get(slots[slots.length - 1])! as any).rowOffset + roomPlaced.get(slots[slots.length - 1])!.rowSpan) : 0
-    if (lastEnd > maxRowEnd) maxRowEnd = lastEnd
+    const lastSlot = slots[slots.length - 1]
+    if (lastSlot) {
+      const lastCell = roomPlaced.get(lastSlot)!
+      const lastEnd = (lastCell as any).rowOffset + lastCell.rowSpan
+      if (lastEnd > maxRowEnd) maxRowEnd = lastEnd
+    }
   }
 
   return { dayEn, dayLabel, timeSlots, placed, occupied, totalRows: maxRowEnd }
@@ -933,7 +943,10 @@ const gridDays: GridDay[] = days.map(d => {
   <div class="grid-panel" style="display:none">
     <div class="grid-day-tabs">
       {gridDays.map((gd, di) => (
-        <button class={`grid-day-btn${di === 0 ? " active" : ""}`} data-grid-day={gd.dayEn}>{gd.dayLabel}</button>
+        <button class={`grid-day-btn${di === 0 ? " active" : ""}`} data-grid-day={gd.dayEn}>
+          <span class="grid-day-label">{loc(days[di].title)}</span>
+          <span class="grid-day-date">{gd.dayLabel}</span>
+        </button>
       ))}
     </div>
     {gridDays.map((gd, di) => (
@@ -966,6 +979,19 @@ const gridDays: GridDay[] = days.map(d => {
                   class={`tg-ruler${is15 ? " tg-ruler-major" : ""}`}
                   style={`grid-row: ${ri + 2}; grid-column: 2 / -1`}
                 />
+              )
+            })}
+
+            {/* Break time bands */}
+            {BREAK_BANDS.map((band) => {
+              const startIdx = gd.timeSlots.indexOf(band.start)
+              const endIdx = gd.timeSlots.indexOf(band.end)
+              if (startIdx < 0 || endIdx < 0) return null
+              const span = endIdx - startIdx
+              return (
+                <div class="tg-break-band" style={`grid-row: ${startIdx + 2} / span ${span}; grid-column: 1 / -1`}>
+                  <span class="tg-break-label">{band.label}</span>
+                </div>
               )
             })}
 
@@ -1010,9 +1036,11 @@ const gridDays: GridDay[] = days.map(d => {
                             {cell.session.speakers.map((sp: any) => typeof sp.name === 'string' ? sp.name : sp.name?.en || '').join("; ")}
                           </div>
                         )}
-                        <div class="grid-card-track" style={`color: ${labelColor}`}>
-                          {typeLabel}
-                        </div>
+                        {!isSpecial && (
+                          <div class="grid-card-track" style={`color: ${labelColor}`}>
+                            {typeLabel}
+                          </div>
+                        )}
                       </a>
                     )}
                   </div>
@@ -1987,24 +2015,43 @@ const gridDays: GridDay[] = days.map(d => {
   }
   .grid-day-tabs {
     display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
     padding: 0 1.5rem;
   }
   .grid-day-btn {
-    padding: 0.4rem 1.2rem;
-    border-radius: 6px;
-    border: 1.5px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    border: 2px solid #d1d5db;
     background: #fff;
-    font-size: 0.85rem;
-    font-weight: 600;
     cursor: pointer;
     font-family: inherit;
+    transition: all 0.15s;
+  }
+  .grid-day-btn:hover {
+    border-color: #9ca3af;
+    background: #f9fafb;
   }
   .grid-day-btn.active {
     background: #0f172a;
     color: #fff;
     border-color: #0f172a;
+  }
+  .grid-day-label {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .grid-day-date {
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.6;
+  }
+  .grid-day-btn.active .grid-day-date {
+    opacity: 0.7;
   }
   .grid-scroll {
     padding: 0 1rem 4rem;
@@ -2071,14 +2118,28 @@ const gridDays: GridDay[] = days.map(d => {
     pointer-events: none;
     z-index: 0;
   }
+  .tg-break-band {
+    background: rgba(249, 168, 37, 0.08);
+    z-index: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tg-break-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: rgba(180, 120, 20, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
   .tg-ruler-major {
     border-top: 1px solid rgba(0,0,0,0.1);
   }
 
-  /* Session card cell — fixed height from grid, content clips gracefully */
   .tg-cell {
     padding: 0 2px;
-    overflow: hidden;
+    overflow: visible;
     z-index: 2;
     min-width: 0;
     min-height: 0;
@@ -2088,7 +2149,7 @@ const gridDays: GridDay[] = days.map(d => {
   .grid-card {
     border-radius: 6px;
     padding: 0.25rem 0.4rem;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -2127,7 +2188,7 @@ const gridDays: GridDay[] = days.map(d => {
   .grid-card-title {
     font-size: 0.85rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.25;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -2150,8 +2211,7 @@ const gridDays: GridDay[] = days.map(d => {
   .grid-card-speakers {
     font-size: 0.75rem;
     color: rgba(0,0,0,0.5);
-    line-height: 1.3;
-    margin-top: 0.15rem;
+    line-height: 1.25;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -2161,7 +2221,6 @@ const gridDays: GridDay[] = days.map(d => {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    padding-top: 0.15rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

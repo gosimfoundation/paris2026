@@ -16,9 +16,11 @@ type Session = {
   type?: "hackathons";
   items?: HackathonItem[];
 };
+type LunchItem = { label: L; colorId?: string; style: "spotlight" | "break" | "session"; href?: string };
 type Block =
   | { type: "break" | "keynote" | "spotlight" | "closing"; time: string; label: L; note?: L }
-  | { type: "sessions"; time: string; sessions: Session[] };
+  | { type: "sessions"; time: string; sessions: Session[] }
+  | { type: "lunch-combo"; time: string; items: LunchItem[] };
 
 const trackColors: Record<string, { from: string; to: string }> = {
   "agentic-ai-summit":         { from: "#dc2626", to: "#f97316" },
@@ -32,6 +34,7 @@ const trackColors: Record<string, { from: string; to: string }> = {
   "ws-own-your-data-paris2026":{ from: "#0f766e", to: "#34d399" },
   "ws-sglang-paris2026":       { from: "#7c3aed", to: "#a78bfa" },
   "ws-agentic-app":            { from: "#2563eb", to: "#60a5fa" },
+  "ws-lunch-and-learn":        { from: "#e65100", to: "#ff9800" },
   "hackathon-spotlight":       { from: "#7c3aed", to: "#a78bfa" },
   "hackathon-robotics":        { from: "#0891b2", to: "#22d3ee" },
   "hackathon-agentic":         { from: "#dc2626", to: "#f97316" },
@@ -52,12 +55,12 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
       },
       {
         type: "keynote",
-        time: "9:30 – 10:00",
+        time: "9:30 – 10:15",
         label: { en: "Keynote", zh: "Keynote", fr: "Keynote" },
       },
       {
         type: "break",
-        time: "10:00 – 10:20",
+        time: "10:15 – 10:20",
         label: { en: "Morning Coffee", zh: "上午茶歇", fr: "Pause Café" },
       },
       {
@@ -109,9 +112,13 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
         ],
       },
       {
-        type: "spotlight",
+        type: "lunch-combo",
         time: "12:00 – 14:00",
-        label: { en: "Spotlight Demo & Lunch", zh: "Spotlight Demo + 午餐", fr: "Spotlight Demo & Déjeuner" },
+        items: [
+          { label: { en: "Lunch", zh: "午餐", fr: "Déjeuner" }, style: "break" },
+          { label: { en: "Spotlight Demo", zh: "Spotlight Demo", fr: "Spotlight Demo" }, style: "spotlight", href: "https://spotlight.gosim.org/paris2026/#shortlisted" },
+          { label: { en: "Lunch & Learn by Fundamental", zh: "午餐学习会 by Fundamental", fr: "Lunch & Learn par Fundamental" }, colorId: "ws-lunch-and-learn", style: "session" },
+        ],
       },
       {
         type: "sessions",
@@ -169,12 +176,12 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
     blocks: [
       {
         type: "keynote",
-        time: "9:30 – 10:00",
+        time: "9:30 – 10:15",
         label: { en: "Keynote", zh: "Keynote", fr: "Keynote" },
       },
       {
         type: "break",
-        time: "10:00 – 10:20",
+        time: "10:15 – 10:20",
         label: { en: "Morning Coffee", zh: "上午茶歇", fr: "Pause Café" },
       },
       {
@@ -225,9 +232,13 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
         ],
       },
       {
-        type: "spotlight",
+        type: "lunch-combo",
         time: "12:00 – 14:00",
-        label: { en: "Spotlight Demo & Lunch", zh: "Spotlight Demo + 午餐", fr: "Spotlight Demo & Déjeuner" },
+        items: [
+          { label: { en: "Lunch", zh: "午餐", fr: "Déjeuner" }, style: "break" },
+          { label: { en: "Spotlight Demo", zh: "Spotlight Demo", fr: "Spotlight Demo" }, style: "spotlight", href: "https://spotlight.gosim.org/paris2026/#shortlisted" },
+          { label: { en: "Lunch & Learn by Fundamental", zh: "午餐学习会 by Fundamental", fr: "Lunch & Learn par Fundamental" }, colorId: "ws-lunch-and-learn", style: "session" },
+        ],
       },
       {
         type: "sessions",
@@ -340,6 +351,32 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
                   <div class="block-closing-content">
                     <span class="block-label">{t(block.label)}</span>
                     {block.note && <span class="block-note">{t(block.note)}</span>}
+                  </div>
+                </div>
+              );
+            }
+
+            if (block.type === "lunch-combo") {
+              return (
+                <div class="block block-lunch-combo">
+                  <span class="block-time">{block.time}</span>
+                  <div class="lunch-combo-items">
+                    {block.items.map((item) => {
+                      const color = item.colorId ? trackColors[item.colorId] : null;
+                      const Tag = item.href ? "a" : "div";
+                      return (
+                        <Tag
+                          class={`lunch-combo-item lunch-combo-${item.style}`}
+                          style={color ? `--from: ${color.from}; --to: ${color.to};` : ""}
+                          data-overview-track={item.colorId || ""}
+                          data-overview-day={day.date.en.includes("5") ? "May 5" : "May 6"}
+                          {...(item.href ? { href: item.href, target: "_blank", rel: "noopener" } : {})}
+                        >
+                          {color && <div class="lunch-combo-bar" />}
+                          <span class="lunch-combo-label">{t(item.label)}</span>
+                        </Tag>
+                      );
+                    })}
                   </div>
                 </div>
               );
@@ -527,6 +564,67 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
     background: linear-gradient(135deg, #f59e0b, #f97316);
     color: #fff;
     font-weight: 700;
+  }
+
+  /* Lunch combo block */
+  .agenda-overview .block-lunch-combo {
+    align-items: center;
+  }
+
+  .agenda-overview .lunch-combo-items {
+    flex: 1;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .agenda-overview .lunch-combo-item {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    overflow: hidden;
+  }
+
+  .agenda-overview .lunch-combo-break {
+    background: rgba(15, 23, 42, 0.05);
+    color: rgba(15, 23, 42, 0.45);
+  }
+
+  .agenda-overview .lunch-combo-spotlight {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+
+  .agenda-overview .lunch-combo-spotlight:hover {
+    opacity: 0.85;
+  }
+
+  .agenda-overview .lunch-combo-session {
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.07);
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+  }
+
+  .agenda-overview .lunch-combo-session:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .agenda-overview .lunch-combo-bar {
+    height: 3px;
+    background: linear-gradient(to right, var(--from), var(--to));
+    margin: -0.5rem -0.75rem 0.4rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .agenda-overview .lunch-combo-label {
+    font-size: 0.82rem;
+    line-height: 1.3;
   }
 
   .agenda-overview .block-closing {
@@ -721,6 +819,11 @@ const days: Array<{ date: L; label: L; blocks: Block[] }> = [
 
     .agenda-overview .block-closing-content {
       width: 100%;
+    }
+
+    .agenda-overview .lunch-combo-items {
+      width: 100%;
+      flex-direction: column;
     }
   }
 

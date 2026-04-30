@@ -161,6 +161,15 @@
         "fr": "Atelier Application Agentique"
       },
       "room": "Junior Stage"
+    },
+    {
+      "id": "ws-lunch-and-learn",
+      "name": {
+        "en": "Lunch & Learn by Fundamental",
+        "zh": "午餐学习会 by Fundamental",
+        "fr": "Lunch & Learn par Fundamental"
+      },
+      "room": "Central Room"
     }
   ],
   "sessions": {
@@ -195,22 +204,6 @@
         },
         "timeSlot": "12:25 - 12:50",
         "type": "hackathon",
-        "room": "Open Platform"
-      },
-      {
-        "title": {
-          "en": "KernelGen: Exploration and Practice of Automatic Kernel Generation",
-          "zh": "KernelGen：自动内核生成的探索与实践",
-          "fr": "KernelGen : Exploration et pratique de la génération automatique de noyaux"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:50 - 13:00",
-        "type": "talk",
         "room": "Open Platform"
       },
       {
@@ -254,21 +247,6 @@
     "hackathon-robotics": [
       {
         "title": {
-          "en": "Morning Coffee — Robotics Hackathon — Day 1 Morning",
-          "zh": "Morning Coffee — Robotics Hackathon — Day 1 Morning",
-          "fr": "Morning Coffee — Robotics Hackathon — Day 1 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Robotics Hackathon — Day 1 — Day 1 Morning",
           "zh": "Robotics Hackathon — Day 1 — Day 1 Morning",
           "fr": "Robotics Hackathon — Day 1 — Day 1 Morning"
@@ -281,21 +259,6 @@
         },
         "timeSlot": "10:20 - 12:00",
         "type": "hackathon"
-      },
-      {
-        "title": {
-          "en": "Lunch — Robotics Hackathon — Day 1 Morning",
-          "zh": "Lunch — Robotics Hackathon — Day 1 Morning",
-          "fr": "Lunch — Robotics Hackathon — Day 1 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
       },
       {
         "title": {
@@ -314,21 +277,6 @@
       },
       {
         "title": {
-          "en": "Morning Coffee — Robotics Hackathon — Day 2 Morning",
-          "zh": "Morning Coffee — Robotics Hackathon — Day 2 Morning",
-          "fr": "Morning Coffee — Robotics Hackathon — Day 2 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Robotics Hackathon — Day 2 — Day 2 Morning",
           "zh": "Robotics Hackathon — Day 2 — Day 2 Morning",
           "fr": "Robotics Hackathon — Day 2 — Day 2 Morning"
@@ -341,21 +289,6 @@
         },
         "timeSlot": "10:20 - 12:00",
         "type": "hackathon"
-      },
-      {
-        "title": {
-          "en": "Lunch — Robotics Hackathon — Day 2 Morning",
-          "zh": "Lunch — Robotics Hackathon — Day 2 Morning",
-          "fr": "Lunch — Robotics Hackathon — Day 2 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
       },
       {
         "title": {
@@ -472,21 +405,6 @@
       },
       {
         "title": {
-          "en": "Coffee Break — GOSIM Agentic Hackathon",
-          "zh": "茶歇 — GOSIM Agentic Hackathon",
-          "fr": "Pause café — GOSIM Agentic Hackathon"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "10:15 - 10:20",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Opening Ceremony",
           "zh": "开幕式",
           "fr": "Cérémonie d'ouverture"
@@ -589,26 +507,6 @@
         },
         "timeSlot": "10:50 - 12:00",
         "type": "hackathon"
-      },
-      {
-        "title": {
-          "en": "Lunch & Icebreaking",
-          "zh": "午餐与破冰活动",
-          "fr": "Déjeuner & Brise-glace"
-        },
-        "content": {
-          "en": "Team-based seating for collaboration.",
-          "zh": "按团队就座，促进协作交流。",
-          "fr": "Places par équipe pour favoriser la collaboration."
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:00 - 13:00",
-        "type": "break"
       },
       {
         "title": {
@@ -903,21 +801,6 @@
       },
       {
         "title": {
-          "en": "Morning Coffee",
-          "zh": "茶歇",
-          "fr": "Pause café"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "10:15 - 10:40",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Tile Programming for GPUs",
           "zh": "GPU 的 Tile 编程",
           "fr": "Tile Programming for GPUs"
@@ -996,21 +879,6 @@
       },
       {
         "title": {
-          "en": "Lunch — Agentic AI Summit — Day 1 Morning",
-          "zh": "Lunch — Agentic AI Summit — Day 1 Morning",
-          "fr": "Lunch — Agentic AI Summit — Day 1 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Agent Reshapes the New Paradigm of the Software Industry",
           "zh": "Agent 重塑软件行业新范式",
           "fr": "L'agent redéfinit le nouveau paradigme de l'industrie du logiciel"
@@ -1086,21 +954,6 @@
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Tea Break — Agentic AI Summit — Day 1 Afternoon",
-          "zh": "Tea Break — Agentic AI Summit — Day 1 Afternoon",
-          "fr": "Tea Break — Agentic AI Summit — Day 1 Afternoon"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "15:00 - 15:30",
-        "type": "break"
       },
       {
         "title": {
@@ -1292,21 +1145,6 @@
       },
       {
         "title": {
-          "en": "Morning Coffee — Agentic AI Summit — Day 2 Morning",
-          "zh": "Morning Coffee — Agentic AI Summit — Day 2 Morning",
-          "fr": "Morning Coffee — Agentic AI Summit — Day 2 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:15 - 10:20",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Thoughts to Text & Image: Foundation Models for Brain Computer Interfaces",
           "zh": "从思想到文字与图像：脑机接口基础模型",
           "fr": "De la pensée au texte et à l'image : modèles fondamentaux pour les interfaces cerveau-ordinateur"
@@ -1413,21 +1251,6 @@
       },
       {
         "title": {
-          "en": "Lunch — Agentic AI Summit — Day 2 Morning",
-          "zh": "Lunch — Agentic AI Summit — Day 2 Morning",
-          "fr": "Lunch — Agentic AI Summit — Day 2 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "Pie: A Programmable Serving System for Agentic Applications",
           "zh": "Pie：面向 Agentic 应用的可编程服务系统",
           "fr": "Pie : Un système de service programmable pour les applications agentiques"
@@ -1504,21 +1327,6 @@
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Tea Break — Agentic AI Summit — Day 2 Afternoon",
-          "zh": "Tea Break — Agentic AI Summit — Day 2 Afternoon",
-          "fr": "Tea Break — Agentic AI Summit — Day 2 Afternoon"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "15:00 - 15:30",
-        "type": "break"
       },
       {
         "title": {
@@ -1685,22 +1493,6 @@
     "open-source-model": [
       {
         "title": {
-          "en": "Morning Coffee — Open Source Models",
-          "zh": "Morning Coffee — Open Source Models",
-          "fr": "Morning Coffee — Open Source Models"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break",
-        "room": "Open Stage"
-      },
-      {
-        "title": {
           "en": "Linear Attention: Past, Present and Future",
           "zh": "Linear Attention: Past, Present and Future",
           "fr": "Linear Attention: Past, Present and Future"
@@ -1784,22 +1576,6 @@
       },
       {
         "title": {
-          "en": "Lunch — Open Source Models",
-          "zh": "Lunch — Open Source Models",
-          "fr": "Lunch — Open Source Models"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break",
-        "room": "Open Stage"
-      },
-      {
-        "title": {
           "en": "World Model for Universal Generation and Control",
           "zh": "World Model for Universal Generation and Control",
           "fr": "World Model for Universal Generation and Control"
@@ -1878,22 +1654,6 @@
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Tea Break — Open Source Models",
-          "zh": "Tea Break — Open Source Models",
-          "fr": "Tea Break — Open Source Models"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "15:20 - 15:40",
-        "type": "break",
-        "room": "Open Stage"
       },
       {
         "title": {
@@ -1981,22 +1741,6 @@
     "ai-generative-app": [
       {
         "title": {
-          "en": "Morning Coffee — Agentic OS & App — Day 1 Morning",
-          "zh": "Morning Coffee — Agentic OS & App — Day 1 Morning",
-          "fr": "Morning Coffee — Agentic OS & App — Day 1 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break",
-        "room": "Junior Stage"
-      },
-      {
-        "title": {
           "en": "Writing Rust AI Applications with Makepad",
           "zh": "Writing Rust AI Applications with Makepad",
           "fr": "Writing Rust AI Applications with Makepad"
@@ -2081,22 +1825,6 @@
       },
       {
         "title": {
-          "en": "Lunch — Agentic OS & App — Day 1 Morning",
-          "zh": "Lunch — Agentic OS & App — Day 1 Morning",
-          "fr": "Lunch — Agentic OS & App — Day 1 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break",
-        "room": "Junior Stage"
-      },
-      {
-        "title": {
           "en": "AgentChat: Cross-Server Communication for Humans and Agents",
           "zh": "AgentChat：面向人类和智能体的跨服务器通信",
           "fr": "AgentChat : Communication inter-serveurs pour humains et agents"
@@ -2177,22 +1905,6 @@
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Tea Break — Agentic OS & App",
-          "zh": "Tea Break — Agentic OS & App",
-          "fr": "Tea Break — Agentic OS & App"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "15:20 - 15:40",
-        "type": "break",
-        "room": "Junior Stage"
       },
       {
         "title": {
@@ -2305,22 +2017,6 @@
       },
       {
         "title": {
-          "en": "Morning Coffee — Agentic OS & App — Day 2 Morning",
-          "zh": "Morning Coffee — Agentic OS & App — Day 2 Morning",
-          "fr": "Morning Coffee — Agentic OS & App — Day 2 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break",
-        "room": "Junior Stage"
-      },
-      {
-        "title": {
           "en": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — Agentic OS & App",
           "zh": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — Agentic OS & App",
           "fr": "Agents, Code & Parallel Worlds — The 300-Day Agentic Evolution of Cangjie Programming Language Team — Agentic OS & App"
@@ -2427,41 +2123,9 @@
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Lunch — Agentic OS & App — Day 2 Morning",
-          "zh": "Lunch — Agentic OS & App — Day 2 Morning",
-          "fr": "Lunch — Agentic OS & App — Day 2 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break",
-        "room": "Junior Stage"
       }
     ],
     "agentic-ai-on-edge": [
-      {
-        "title": {
-          "en": "Morning Coffee — Agentic AI on Edge — Day 1 Morning",
-          "zh": "Morning Coffee — Agentic AI on Edge — Day 1 Morning",
-          "fr": "Morning Coffee — Agentic AI on Edge — Day 1 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break",
-        "room": "Central Room"
-      },
       {
         "title": {
           "en": "One Year of llama.cpp: Milestones and Future Plans",
@@ -2576,49 +2240,6 @@
       },
       {
         "title": {
-          "en": "Lunch & Learn: What Comes After LLMs? LTMs — The Next Frontier of Enterprise AI",
-          "zh": "午餐学习会：LLM之后是什么？LTM——企业AI的下一个前沿",
-          "fr": "Lunch & Learn : Après les LLMs ? Les LTMs — La prochaine frontière de l'IA d'entreprise"
-        },
-        "speakers": [
-          {
-            "name": "Alexandre Gerbeaux",
-            "title": "Head of Applied AI, Fundamental",
-            "id": "alexandre-gerbeaux"
-          }
-        ],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:00 - 13:00",
-        "type": "talk",
-        "room": "Central Room",
-        "content": {
-          "en": "LLMs transformed how enterprises work with unstructured data like text, images and code. But what happens when AI needs to reason over the structured data that powers decisions made by the world's most complex businesses? While Large Language Models have redefined how we interact with unstructured data, the vast majority of enterprise data is structured — in millions of rows and columns of tabular data. Large Tabular Models (LTMs) are emerging as a new, specialized class of model designed to bridge this gap. Grab your lunch, and join Fundamental for a Lunch & Learn to learn more about why enterprises are shifting toward LTMs.",
-          "zh": "",
-          "fr": ""
-        }
-      },
-      {
-        "title": {
-          "en": "Morning Coffee — Agentic AI on Edge — Day 2 Morning",
-          "zh": "Morning Coffee — Agentic AI on Edge — Day 2 Morning",
-          "fr": "Morning Coffee — Agentic AI on Edge — Day 2 Morning"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break",
-        "room": "Central Room"
-      },
-      {
-        "title": {
           "en": "KTransformers: Full-Precision Inference for 600B+ MoE Models on Consumer Hardware",
           "zh": "KTransformers: Full-Precision Inference for 600B+ MoE Models on Consumer Hardware",
           "fr": "KTransformers: Full-Precision Inference for 600B+ MoE Models on Consumer Hardware"
@@ -2726,52 +2347,9 @@
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Lunch & Learn: What Comes After LLMs? LTMs — The Next Frontier of Enterprise AI",
-          "zh": "午餐学习会：LLM之后是什么？LTM——企业AI的下一个前沿",
-          "fr": "Lunch & Learn : Après les LLMs ? Les LTMs — La prochaine frontière de l'IA d'entreprise"
-        },
-        "speakers": [
-          {
-            "name": "Alexandre Gerbeaux",
-            "title": "Head of Applied AI, Fundamental",
-            "id": "alexandre-gerbeaux"
-          }
-        ],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 13:00",
-        "type": "talk",
-        "room": "Central Room",
-        "content": {
-          "en": "LLMs transformed how enterprises work with unstructured data like text, images and code. But what happens when AI needs to reason over the structured data that powers decisions made by the world's most complex businesses? While Large Language Models have redefined how we interact with unstructured data, the vast majority of enterprise data is structured — in millions of rows and columns of tabular data. Large Tabular Models (LTMs) are emerging as a new, specialized class of model designed to bridge this gap. Grab your lunch, and join Fundamental for a Lunch & Learn to learn more about why enterprises are shifting toward LTMs.",
-          "zh": "",
-          "fr": ""
-        }
       }
     ],
     "open-source-robotics": [
-      {
-        "title": {
-          "en": "Morning Coffee — Open Source Robotics",
-          "zh": "Morning Coffee — Open Source Robotics",
-          "fr": "Morning Coffee — Open Source Robotics"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "10:00 - 10:20",
-        "type": "break",
-        "room": "Founders Cafe"
-      },
       {
         "title": {
           "en": "RoboChallenge Annual Report on Large-Scale Real Robot Benchmark",
@@ -2883,22 +2461,6 @@
       },
       {
         "title": {
-          "en": "Lunch — Open Source Robotics",
-          "zh": "Lunch — Open Source Robotics",
-          "fr": "Lunch — Open Source Robotics"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break",
-        "room": "Founders Cafe"
-      },
-      {
-        "title": {
           "en": "Robotics with Zenoh: From ROS 2 to ros-z and Beyond",
           "zh": "Robotics with Zenoh: From ROS 2 to ros-z and Beyond",
           "fr": "Robotics with Zenoh: From ROS 2 to ros-z and Beyond"
@@ -2978,22 +2540,6 @@
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Tea Break — Open Source Robotics",
-          "zh": "Tea Break — Open Source Robotics",
-          "fr": "Tea Break — Open Source Robotics"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "15:15 - 15:40",
-        "type": "break",
-        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3240,22 +2786,6 @@
     "ws-oh-tech-forum": [
       {
         "title": {
-          "en": "Lunch — OpenHarmony × AI",
-          "zh": "Lunch — OpenHarmony × AI",
-          "fr": "Lunch — OpenHarmony × AI"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break",
-        "room": "Founders Cafe"
-      },
-      {
-        "title": {
           "en": "Opportunities and Challenges of Intelligent Terminal Operating Systems",
           "zh": "智能终端操作系统的机遇与挑战",
           "fr": "Opportunités et défis des systèmes d'exploitation terminaux intelligents"
@@ -3353,22 +2883,6 @@
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Coffee Break — OpenHarmony × AI",
-          "zh": "Coffee Break — OpenHarmony × AI",
-          "fr": "Coffee Break — OpenHarmony × AI"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "15:20 - 15:40",
-        "type": "break",
-        "room": "Founders Cafe"
       },
       {
         "title": {
@@ -3474,22 +2988,6 @@
       }
     ],
     "ws-open-compute": [
-      {
-        "title": {
-          "en": "Lunch — Open Compute for Agentic AI (FlagOS)",
-          "zh": "Lunch — Open Compute for Agentic AI (FlagOS)",
-          "fr": "Lunch — Open Compute for Agentic AI (FlagOS)"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break",
-        "room": "Central Room"
-      },
       {
         "title": {
           "en": "Open Compute for Agentic AI (FlagOS)",
@@ -3964,21 +3462,6 @@
       },
       {
         "title": {
-          "en": "Morning Coffee — Own Your Data Science and AI Workshop",
-          "zh": "茶歇 — Own Your Data Science and AI Workshop",
-          "fr": "Pause café — Own Your Data Science and AI Workshop"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "10:15 - 10:20",
-        "type": "break"
-      },
-      {
-        "title": {
           "en": "The Long Game: Building Europe’s Sovereign AI Layer",
           "zh": "The Long Game: Building Europe’s Sovereign AI Layer",
           "fr": "The Long Game: Building Europe’s Sovereign AI Layer"
@@ -4207,21 +3690,6 @@
           "zh": "",
           "fr": ""
         }
-      },
-      {
-        "title": {
-          "en": "Lunch — Own Your Data Science and AI Workshop",
-          "zh": "Lunch — Own Your Data Science and AI Workshop",
-          "fr": "Lunch — Own Your Data Science and AI Workshop"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 5",
-          "zh": "5月5日",
-          "fr": "5 mai"
-        },
-        "timeSlot": "13:00 - 14:00",
-        "type": "break"
       },
       {
         "title": {
@@ -4480,22 +3948,6 @@
     "ws-agentic-app": [
       {
         "title": {
-          "en": "Lunch — Build Your Own Agentic App Workshop",
-          "zh": "Lunch — Build Your Own Agentic App Workshop",
-          "fr": "Lunch — Build Your Own Agentic App Workshop"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "12:00 - 14:00",
-        "type": "break",
-        "room": "Junior Stage"
-      },
-      {
-        "title": {
           "en": "Makepad Splash",
           "zh": "Makepad Splash",
           "fr": "Makepad Splash"
@@ -4524,22 +3976,6 @@
       },
       {
         "title": {
-          "en": "Tea Break — Build Your Own Agentic App Workshop",
-          "zh": "Tea Break — Build Your Own Agentic App Workshop",
-          "fr": "Tea Break — Build Your Own Agentic App Workshop"
-        },
-        "speakers": [],
-        "date": {
-          "en": "May 6",
-          "zh": "5月6日",
-          "fr": "6 mai"
-        },
-        "timeSlot": "15:20 - 15:40",
-        "type": "break",
-        "room": "Junior Stage"
-      },
-      {
-        "title": {
           "en": "Build Embedded Rust (with AI!)",
           "zh": "Build Embedded Rust (with AI!)",
           "fr": "Build Embedded Rust (with AI!)"
@@ -4561,6 +3997,62 @@
         "room": "Junior Stage",
         "content": {
           "en": "There has never been a better time to do your embedded work in Rust. Foundational libraries and frameworks have reached reasonable maturity, great tools are available, the Rust language has been improved for embedded use cases, and hardware vendors are officially supporting Rust. The new advances in AI-assisted coding are the icing on the cake — AI works particularly well for embedded Rust: the high standards of Rust code quality and documentation combine with the structured Rust environment to be a safe and effective place for an LLM to work. In this workshop, we will build common new-developer code for the BBC micro:bit v2 using a combination of straight programming and AI assistance.",
+          "zh": "",
+          "fr": ""
+        }
+      }
+    ],
+    "ws-lunch-and-learn": [
+      {
+        "title": {
+          "en": "Lunch & Learn: What Comes After LLMs? LTMs — The Next Frontier of Enterprise AI",
+          "zh": "午餐学习会：LLM之后是什么？LTM——企业AI的下一个前沿",
+          "fr": "Lunch & Learn : Après les LLMs ? Les LTMs — La prochaine frontière de l'IA d'entreprise"
+        },
+        "speakers": [
+          {
+            "name": "Alexandre Gerbeaux",
+            "title": "Head of Applied AI, Fundamental",
+            "id": "alexandre-gerbeaux"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "12:00 - 13:00",
+        "type": "talk",
+        "room": "Central Room",
+        "content": {
+          "en": "LLMs transformed how enterprises work with unstructured data like text, images and code. But what happens when AI needs to reason over the structured data that powers decisions made by the world's most complex businesses? While Large Language Models have redefined how we interact with unstructured data, the vast majority of enterprise data is structured — in millions of rows and columns of tabular data. Large Tabular Models (LTMs) are emerging as a new, specialized class of model designed to bridge this gap. Grab your lunch, and join Fundamental for a Lunch & Learn to learn more about why enterprises are shifting toward LTMs.",
+          "zh": "",
+          "fr": ""
+        }
+      },
+      {
+        "title": {
+          "en": "Lunch & Learn: What Comes After LLMs? LTMs — The Next Frontier of Enterprise AI",
+          "zh": "午餐学习会：LLM之后是什么？LTM——企业AI的下一个前沿",
+          "fr": "Lunch & Learn : Après les LLMs ? Les LTMs — La prochaine frontière de l'IA d'entreprise"
+        },
+        "speakers": [
+          {
+            "name": "Alexandre Gerbeaux",
+            "title": "Head of Applied AI, Fundamental",
+            "id": "alexandre-gerbeaux"
+          }
+        ],
+        "date": {
+          "en": "May 6",
+          "zh": "5月6日",
+          "fr": "6 mai"
+        },
+        "timeSlot": "12:00 - 13:00",
+        "type": "talk",
+        "room": "Central Room",
+        "content": {
+          "en": "LLMs transformed how enterprises work with unstructured data like text, images and code. But what happens when AI needs to reason over the structured data that powers decisions made by the world's most complex businesses? While Large Language Models have redefined how we interact with unstructured data, the vast majority of enterprise data is structured — in millions of rows and columns of tabular data. Large Tabular Models (LTMs) are emerging as a new, specialized class of model designed to bridge this gap. Grab your lunch, and join Fundamental for a Lunch & Learn to learn more about why enterprises are shifting toward LTMs.",
           "zh": "",
           "fr": ""
         }
