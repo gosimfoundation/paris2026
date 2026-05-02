@@ -3995,7 +3995,7 @@
         "type": "talk",
         "room": "Junior Stage",
         "content": {
-          "en": "There has never been a better time to do your embedded work in Rust. Foundational libraries and frameworks have reached reasonable maturity, great tools are available, the Rust language has been improved for embedded use cases, and hardware vendors are officially supporting Rust. The new advances in AI-assisted coding are the icing on the cake — AI works particularly well for embedded Rust: the high standards of Rust code quality and documentation combine with the structured Rust environment to be a safe and effective place for an LLM to work. In this workshop, we will build common new-developer code for the BBC micro:bit v2 using a combination of straight programming and AI assistance.",
+          "en": "There has never been a better time to do your embedded work in Rust. Foundational libraries and frameworks have reached reasonable maturity, great tools are available, the Rust language has been improved for embedded use cases, and hardware vendors are officially supporting Rust. The new advances in AI-assisted coding are the icing on the cake — AI works particularly well for embedded Rust: the high standards of Rust code quality and documentation combine with the structured Rust environment to be a safe and effective place for an LLM to work. In this workshop we will use AI to explore the Second State EchoKit, an open source embedded Rust AI voice assistant device. Along the way, you will discover the structural underpinnings of the Rust Embedded ecosystem and learn how you can help to build it with us.",
           "zh": "",
           "fr": ""
         }
