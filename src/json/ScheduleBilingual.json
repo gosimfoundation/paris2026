@@ -807,8 +807,8 @@
         },
         "content": {
           "en": "Parallel programming can be intimidating, but doesn't need to be! There's a new paradigm for parallel programming that's newcomer-friendly, highly productive, and performant: tile-based programming models. \r\n\r\nIn this example-driven talk, we'll introduce you to tile-based programming in Python, C++, and Rust. We'll present [cuTile](https://github.com/NVIDIA/cutile-python), NVIDIA's new tile programming stack and [Tile IR](https://github.com/NVIDIA/cuda-tile), the new compiler stack that it is built with. You'll learn all about new features of CUDA Tile that have recently been announced, including multi-GPU communication, interoperability with traditional CUDA SIMT, and support for more diverse kernels like convolutions and stencils. We'll compare and contrast tile-based models with traditional parallel programming models. You'll see examples from a variety of domains, including HPC stencils, a sparse matrix vector (SPMV) and conjugate gradient (CG) solver, and AI models from [TileGym](https://github.com/NVIDIA/TileGym).\r\n\r\nTile programming has its roots in HPC libraries, such as [NWChem’s TCE](https://nwchemgit.github.io/TCE.html), [BLIS](https://github.com/flame/blis), and [ATLAS](https://math-atlas.sourceforge.net/). In recent years, this paradigm has grown in popularity for GPU programming in languages such as [Triton](https://openai.com/index/triton/), [JAX/Pallas](https://docs.jax.dev/en/latest/pallas/index.html), and [Warp](https://nvidia.github.io/warp/modules/tiles.html).\r\n\r\nIn this session, you'll:\r\n- Learn the best practices for writing tile parallel applications for GPUs.\r\n- Gain insight into the performance of tile code and how it actually gets executed.\r\n- Discover how to reason about and debug tile applications.\r\n- Understand the differences between tile and traditional parallel programming and when each paradigm should be used.\r\n- See how tile programming makes your software portable in light of recent hardware trends.\r\n\r\nBy the end of the session, you'll understand how tile programming enables more intuitive, portable, and efficient development of high-performance, data-parallel applications, for HPC, data science, and machine learning.",
-          "zh": "并行编程不一定令人望而生畏！Tile 编程模型是一种对新手友好、高效且性能卓越的全新并行编程范式。\n\n本演讲将通过丰富示例，带您了解 Python、C++ 和 Rust 中的 Tile 编程。我们将介绍 NVIDIA 全新的 Tile 编程栈 cuTile 及其底层编译器栈 Tile IR，并讲解 CUDA Tile 最新特性，包括多 GPU 通信、与传统 CUDA SIMT 的互操作性，以及对卷积、模板等多样化算子的支持。演讲涵盖 HPC 模板、稀疏矩阵向量乘（SPMV）、共轭梯度（CG）求解器及 TileGym AI 模型等多领域示例。",
-          "fr": "La programmation parallèle n'a pas besoin d'être intimidante ! Les modèles de programmation par tuiles constituent un nouveau paradigme convivial, productif et performant.\n\nCet exposé axé sur des exemples présente la programmation par tuiles en Python, C++ et Rust. Nous présenterons cuTile, la nouvelle pile de programmation par tuiles de NVIDIA, et Tile IR, la pile de compilateurs sur laquelle elle repose. Vous découvrirez les nouvelles fonctionnalités de CUDA Tile, incluant la communication multi-GPU, l'interopérabilité avec CUDA SIMT traditionnel, et le support de noyaux diversifiés comme les convolutions et les stencils."
+          "zh": "",
+          "fr": ""
         },
         "speakers": [
           {
@@ -885,8 +885,8 @@
         },
         "content": {
           "en": "Driven by AI Agent, the entire software industry is undergoing a fundamental paradigm shift. From the traditional \"tool rental\" SaaS model to the new \"result delivery\" AaaS (Agent as a Service) form; from manual operation to autonomous collaboration, Agents are redefining the production relations, business logic and ecological pattern of the software industry. This speech will focus on the paradigm shift of the software industry driven by Agents, explore the core changes of Agents in software development, delivery, operations, and business models, and discuss the innovation opportunities and new paradigm of the software industry.",
-          "zh": "在 AI Agent 的驱动下，整个软件行业正在经历根本性的范式转变。从传统的「工具租用」SaaS 模式到新兴的「结果交付」AaaS（Agent as a Service）形态；从人工操作到自主协作，Agent 正在重新定义软件行业的生产关系、业务逻辑与生态格局。",
-          "fr": "Porté par l'IA Agent, l'ensemble du secteur logiciel connaît un changement de paradigme fondamental. Du modèle SaaS traditionnel au nouveau modèle AaaS (Agent as a Service), les Agents redéfinissent les relations de production, la logique métier et l'écosystème du secteur."
+          "zh": "",
+          "fr": ""
         },
         "speakers": [
           {
@@ -1151,8 +1151,8 @@
         },
         "content": {
           "en": "Brain foundation models trained on massive brain data which convert thoughts into texts and images. This was impossible until a few years ago.",
-          "zh": "基于海量脑数据训练的脑基础模型，能够将人的思想转化为文字和图像。这在几年前还是不可能实现的。本演讲探讨大规模预训练模型如何推动新一代非侵入式脑机接口的发展，以前所未有的精度将原始神经信号转化为语言与图像。",
-          "fr": "Des modèles de fondation cérébraux entraînés sur des données cérébrales massives peuvent convertir les pensées en textes et images. Cet exposé explore comment les modèles pré-entraînés à grande échelle permettent une nouvelle génération d'interfaces cerveau-ordinateur non invasives."
+          "zh": "",
+          "fr": ""
         },
         "speakers": [
           {
@@ -1257,8 +1257,8 @@
         },
         "content": {
           "en": "Emerging large language model (LLM) applications involve diverse reasoning strategies and agentic workflows, straining the capabilities of existing serving systems built on a mono-\r\nlithic token generation loop. This talk presents Pie, a programmable LLM serving system designed for flexibility and efficiency. Pie decomposes the traditional generation loop into fine-grained service handlers exposed via an API and delegates control of the generation process to user-provided programs, called inferlets. This enables applications to implement new KV cache strategies, bespoke generation logic, and seamlessly integrate computation and I/O—entirely within the application, without requiring modifications to the serving system. Pie executes inferlets using WebAssembly, benefiting from its lightweight sandboxing. Our evaluation shows Pie significantly improves latency and throughput (1.3×-3.4×higher) on agentic workflows by enabling application-specific optimizations. Pie is open-source https://pie-project.org",
-          "zh": "新兴 LLM 应用涉及多样化推理策略与 Agentic 工作流，现有基于单体 Token 生成循环的服务系统难以胜任。Pie 是一个可编程 LLM 服务系统，将传统生成循环分解为细粒度服务处理器，通过用户自定义程序（inferlet）控制生成过程，在 Agentic 工作流上实现 1.3×–3.4× 的延迟与吞吐量提升。",
-          "fr": "Pie est un système de service LLM programmable qui décompose la boucle de génération traditionnelle en gestionnaires de services à grain fin, permettant aux applications d'implémenter de nouvelles stratégies de cache KV et une logique de génération sur mesure. Pie améliore la latence et le débit de 1,3× à 3,4×."
+          "zh": "",
+          "fr": ""
         },
         "speakers": [
           {
@@ -1283,8 +1283,8 @@
         },
         "content": {
           "en": "This presentation will share China’s relevant policies and standards for open-source models, introduce the country’s advancements in the open-sourcing of AI models and the development of open-source licenses, and demonstrate the development status and operational mechanisms of Chinese open-source communities, including the Mulan Open Source Community.. It will also promote joint efforts between China and the international community in incubating open-source projects, promoting the openness of AI models, and advancing cooperation in standardization.",
-          "zh": "本报告分享中国在开源模型领域的相关政策与标准，介绍 AI 模型开源的最新进展及开源许可证的发展情况，展示包括木兰开源社区在内的中国开源社区发展现状与运营机制，并推动中国与国际社会在孵化开源项目、推进 AI 模型开放及标准化合作等方面的共同努力。",
-          "fr": "Cette présentation partage les politiques et normes chinoises relatives aux modèles open source, en présentant les progrès dans l'ouverture des modèles IA et le développement des licences open source, notamment la communauté Mulan Open Source."
+          "zh": "",
+          "fr": ""
         },
         "speakers": [
           {
@@ -2662,8 +2662,8 @@
         },
         "content": {
           "en": "The biggest barrier to building something isn't technical. It's the moment right before you start. 99% of people don't start because they think they need more experience, aren't ready, don't have time, or a million other reasons.\r\nI started my robotics journey at 15, joining a team that was honestly pretty bad. At the start of freshman year a big argument broke out and most of the team quit, so I was left with a real choice: walk away or stay and figure it out. I stayed, and looking back that was probably one of the most important decisions I ever made. It taught me that taking risks and putting yourself in uncomfortable situations where you have to learn fast is genuinely one of the best things you can do, especially when you're young.\r\nThat same mindset carried into college, where I started competing in hackathons. The first two I went to I pulled all nighters with my team and we still lost. But from the third one on we kept winning. The lesson isn't that failure doesn't matter, it's that you shouldn't expect success right away and you definitely shouldn't let early losses discourage you. Just keep showing up.\r\nThe second part of the talk is about how I actually built Inhabit, an open-source humanoid robot teleoperation platform that lets you drive a Unitree G1 using a low-cost potentiometer-based arm, and how AI tools completely changed what I was able to ship as basically one person. Using Claude Code in VS Code I could work on one part of the project while it handled the programming and backend in parallel. The workflow is genuinely crazy compared to how things used to work.\r\nIf you have an idea and you've been waiting for the right moment to start, this talk is for you. The tools are better than they've ever been and the only thing left is to actually begin.",
-          "zh": "Starting is easy. Continuing is the hard part. This talk is about how building in public and open sourcing your work creates the accountability loop that keeps you going — even when motivation dies. I'll walk through my own journey from a struggling robotics team at 15 to building Inhabit, an open-source humanoid robot teleoperation platform, and how AI tools made it possible to ship something real as basically one person in college. If you've ever started a project and stopped, this talk is for you.",
-          "fr": "Starting is easy. Continuing is the hard part. This talk is about how building in public and open sourcing your work creates the accountability loop that keeps you going — even when motivation dies. I'll walk through my own journey from a struggling robotics team at 15 to building Inhabit, an open-source humanoid robot teleoperation platform, and how AI tools made it possible to ship something real as basically one person in college. If you've ever started a project and stopped, this talk is for you."
+          "zh": "",
+          "fr": ""
         },
         "speakers": [
           {
