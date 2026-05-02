@@ -2315,7 +2315,7 @@
         "type": "talk",
         "room": "Central Room",
         "content": {
-          "en": "Running deep learning inference in native C++ enables efficient edge deployment, eliminates Python/PyTorch dependencies, and allows fast, accurate quantization. We propose OminiX cpp, an automated pipeline where an AI agent with structured procedural skills converts arbitrary PyTorch models into optimized C++ inference code targeting the GGML runtime. OminiX cpp generalizes beyond LLMs to support diverse model families including image and video generation, speech recognition, text-to-speech, world models, and Vision-Language-Action (VLA) models.",
+          "en": "Running deep learning inference in native C++ enables efficient edge deployment, eliminates Python/PyTorch dependencies, and allows fast, accurate quantization. However, converting a PyTorch model to native C++ requires weeks of labor-intensive development, and only a narrow range of LLMs have been manually ported. We propose OminiX cpp, an automated pipeline where an AI agent with structured procedural skills converts arbitrary PyTorch models into optimized C++ inference code targeting the GGML runtime. OminiX cpp generalizes beyond LLMs to support diverse model families, including image and video generation, speech recognition, text-to-speech models, world models, and Vision-Language-Action (VLA) models. As a case study, we show the results on OpenVLA, a 7B-parameter VLA model, achieving a near-lossless task success rate, up to 63% memory reduction, and up to 1.52x speedup.",
           "zh": "",
           "fr": ""
         }
@@ -3571,7 +3571,7 @@
         "timeSlot": "11:20 - 11:40",
         "type": "talk",
         "content": {
-          "en": "We will present how we trained a 1B vlm trained for OCR that reached SOTA on ocr benches.",
+          "en": "LightOnOCR is a 1B-parameter VLM for OCR designed to push the performance-efficiency Pareto curve for real-world document understanding. In this talk, we present the motivation behind LightOnOCR, the key design choices behind an end-to-end multilingual OCR model, and the practical trade-offs involved in building models that are both accurate and efficient. We discuss the full training pipeline, including how data is curated, cleaned, deduplicated, and augmented, as well as the many practical tricks needed to make large-scale OCR training work in practice. We cover pretraining on large image datasets, with stronger coverage of scans, scientific PDFs, and LaTeX-heavy content, and show how a final RLVR stage helps address persistent failure modes that supervised training alone cannot fully resolve, including repetition loops, formatting errors, and layout-sensitive consistency issues. At the time of its release, LightOnOCR topped OlmOCR-Bench while outperforming models up to 9x larger. Beyond benchmark results, the talk focuses on what matters in practice: achieving high throughput and low latency on realistic hardware, such as a single H100, where larger VLM-based approaches are too slow to be usable.",
           "zh": "",
           "fr": ""
         }
