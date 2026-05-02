@@ -33,7 +33,7 @@
       "id": "ws-vllm-paris2026"
     },
     {
-      "name": "OpenHarmony Tech Forum-Paris",
+      "name": "OpenHarmony × AI Workshop",
       "id": "ws-oh-tech-forum"
     },
     {
@@ -51,6 +51,10 @@
     {
       "name": "Build Your Own Agentic App Workshop",
       "id": "ws-agentic-app"
+    },
+    {
+      "name": "Lunch & Learn by Fundamental",
+      "id": "ws-lunch-and-learn"
     }
   ],
   "speakers": [
@@ -698,7 +702,7 @@
       "title": "Founder, CR4AI; Northeastern University",
       "image": "/images/speakers/better_portrait/alexy-khrabrov.png",
       "draft": false,
-      "bio": "Alexy Khrabrov is the founder of CR4AI and affiliated with Northeastern University. He is the co-founder of the AI Alliance and founding chair of NumFOCUS open source for science. Alexy was founding chair of Linux Foundation AI & Data (LFAI) Generative AI Commons. He is the founder and organizer of Bay Area AI and AI Agent SF meetups, and the Scale/Data/AI By the Bay independent open-source AI conferences since 2013.",
+      "bio": "Alexy Khrabrov is the AI Community Architect at Neo4j, the category-defining Graph database company. Alexy is the founding Chair of Open-Source Science at NumFOCUS, and a cofounder of the AI Alliance. Alexy was the founding Chair of the Generative AI Commons at the Linux Foundation for AI and Data (LFAI) and now represents Neo4j at LFAI. Alexy is the founder and organizer of Bay Area AI and AI Agent SF meetups, as well as the Scale/Data/AI By the Bay conferences, the independent OSS AI conference running since 2013.",
       "role": "AI Community Architect",
       "org": "Neo4j",
       "roleOrg": "AI Community Architect at Neo4j",
@@ -823,7 +827,7 @@
     {
       "id": "luke-lu",
       "name": "Luke Lu",
-      "bio": "Luke is a student at the University of Texas at Austin and the founder of Correx, an open-source robotic task verification and safety compliance layer. His journey in robotics began as a competitor, rising through the ranks of competitive robotics to claim a world championship title. That experience ignited a drive to mentor aspiring engineers and contribute to the open-source robotics community. Today, Luke channels that same competitive energy into founding technology ventures at the intersection of AI and robotics, believing that the best ideas should be accessible to everyone willing to build them.",
+      "bio": "Luke is a student at the University of Texas at Austin and the founder of Inhabit, an open-source humanoid robot teleoperation platform. His journey in robotics began as a competitor, rising through the ranks of competitive robotics to claim a world championship title. That experience ignited a drive to mentor aspiring engineers and contribute to the open-source robotics community. Today, Luke channels that same competitive energy into founding technology ventures at the intersection of AI and robotics, believing that the best ideas should be accessible to everyone willing to build them.",
       "role": "Founder & CEO",
       "org": "Robolytics",
       "roleOrg": "Founder & CEO, Robolytics",
@@ -867,7 +871,7 @@
       "role": "Assoc Prof Computer Science",
       "org": "Portland State University",
       "roleOrg": "Assoc Prof Computer Science, Portland State University",
-      "image": "/images/speakers/better_portrait/bart-massey.png",
+      "image": "/images/speakers/better_portrait/1774592107132-bart-massey.png",
       "bio": "Bart Massey is a 26-year CS Professor with a PhD in AI and an MSc in PL implementation; he has been an open source developer for many decades. Bart is a member of the Rust Embedded Working Group, and is involved in a number of low-level Rust and Rust Education projects. ",
       "tags": [
         "ws-agentic-app"
@@ -2257,11 +2261,11 @@
     },
     {
       "name": "Sir Timothy Gowers",
-      "role": "Fields Medalist; Professor of Combinatorics, Collège de France; Research Professor, University of Cambridge",
-      "org": "Collège de France / University of Cambridge",
-      "roleOrg": "Fields Medalist; Professor of Combinatorics, Collège de France; Research Professor, University of Cambridge",
+      "role": "Professor of Combinatorics; Fields Medalist",
+      "org": "Collège de France, Cambridge University",
+      "roleOrg": "Professor of Combinatorics; Fields Medalist, Collège de France, Cambridge University",
       "image": "/images/speakers/better_portrait/Timothy-Gowers.png",
-      "bio": "Sir Timothy Gowers is a Fields Medalist, Professor of Combinatorics at the Collège de France, and Research Professor at the University of Cambridge. His groundbreaking work applies analytic and combinatorial methods to number theory, and he has forged deep connections between combinatorics and functional analysis. He received the Fields Medal in 1998 and was knighted in 2012.",
+      "bio": "Timothy Gowers is a mathematician. He was an undergraduate at Cambridge University, and also did a PhD there under the supervision of Béla Bollobás. This was followed by a research fellowship at Trinity College and a lectureship at University College London. In 1995 he returned to Cambridge where he has worked in various capacities ever since. In 2020 he became a professor at the Collège de France, retaining a part-time position at Cambridge. For his mathematical research he has received several prizes, including a Fields Medal in 1998. He is also the author of Mathematics: A Very Short Introduction and the main editor of The Princeton Companion to Mathematics. In 2012 he was knighted for services to mathematics.",
       "tags": [
         "agentic-ai-summit",
         "hackathon-agentic",
@@ -2301,11 +2305,11 @@
     },
     {
       "name": "Mike Basios",
-      "role": "",
-      "org": "",
-      "roleOrg": "",
-      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
-      "bio": "",
+      "role": "CTO",
+      "org": "Turintech AI",
+      "roleOrg": "CTO, Turintech AI",
+      "image": "/images/speakers/better_portrait/1777588463403-mike-basios.png",
+      "bio": "Mike Basios is Co-Founder and CTO of TurinTech AI, a London-based AI company pioneering automated code optimisation. He leads the development of Artemis, an agentic platform that uses evolutionary algorithms and multi-LLM orchestration to optimise software for performance, cost, and correctness — deployed by leading hardware vendors, financial institutions, and enterprises focused on improving the quality and performance of their code. A UCL PhD graduate, Mike has authored peer-reviewed papers on evolutionary software optimisation and is a recipient of the ACM GECCO Human-Competitive Results Award.",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -2313,8 +2317,8 @@
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
-        "website": ""
+        "linkedin": "https://www.linkedin.com/in/mike-basios/",
+        "website": "https://www.turintech.ai"
       },
       "status": "Accept",
       "draft": false,
@@ -2355,7 +2359,7 @@
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
+        "linkedin": "http://www.linkedin.com/in/hao-li-phd",
         "website": ""
       },
       "status": "Accept",
@@ -2364,11 +2368,11 @@
     },
     {
       "name": "Nowa Sutaka",
-      "role": "CEO",
+      "role": "CEO/Founder",
       "org": "Puddin.ai",
-      "roleOrg": "CEO of Puddin AI, Puddin.ai",
+      "roleOrg": "CEO/Founder, Puddin AI",
       "image": "/images/speakers/better_portrait/1776645692716-nowa-sutaka.png",
-      "bio": "CEO of Puddin AI",
+      "bio": "CEO/Founder of Puddin AI",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -2410,7 +2414,7 @@
       "org": "AI Safety Connect",
       "roleOrg": "Co-Founder, AI Safety Connect",
       "image": "/images/speakers/better_portrait/1776788160166-nicolas-miailhe.png",
-      "bio": "Co-Founder of AI Safety Connect, focused on AI safety and governance.",
+      "bio": "Nicolas (Nico) Miailhe is a recognized pioneer of global AI policy and governance. He co-founded AI Safety Connect (AISC), a multi-stakeholder convening platform that advances international coordination on the safety of advanced AI systems. Nico is also the co-founder and CEO of PRISM Eval, a Paris-based frontier AI safety start-up specializing in evaluations and interpretability. For the decade prior, he founded and ran The Future Society (TFS), one of the first independent AI policy think tanks that he started at the Harvard Kennedy School of Government in 2014. Nico is an appointed expert to APEC/PECC, UNESCO, OECD, GPAI, the UN, and others, and has held teaching positions at Sciences Po and IE University. Nico holds degrees from Harvard Kennedy School, Paris-Panthéon-Assas, and Sciences Po Strasbourg.",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -2438,9 +2442,9 @@
       "socialLinks": {
         "mastodon": "",
         "twitter": "",
-        "github": "",
-        "linkedin": "",
-        "website": ""
+        "github": "https://github.com/igor",
+        "linkedin": "https://www.linkedin.com/in/igorschwarzmann/",
+        "website": "http://igorschwarzmann.com"
       },
       "status": "Accept",
       "draft": false,
@@ -2494,7 +2498,7 @@
       "org": "Rothwell International",
       "roleOrg": "CTO, Rothwell International",
       "image": "/images/speakers/better_portrait/1776864734582-dr-hai-xu-cheng.png",
-      "bio": "Dr Hai-Xu Cheng currently works as the CTO of Rothwell International after retiring from the role of IBM Global Lead and IBM GCG CTO of standards and open source. His current major focus is providing consulting services for enterprise clients at C-level on architectures, standards, and open source. In his prior role at IBM, he led the global and China teams working to develop open-source communities and technologies spanning AI, data and analytics, cloud computing, quantum computing, and blockchain, advocating for clients to adopt open technologies to fuel innovation in both technical and business domains.",
+      "bio": "Hai-Xu Cheng currently works as the CTO (Chief Technology Officer) of Rothwell International after he retired from the role of IBM Global Lead and IBM GCG CTO of standards and open source. Hai-Xu's current major focus is providing consulting services for enterprise clients at C-level on architectures, standards and open source. In his prior role at IBM, Hai-Xu led the IBM global & China teams working to develop open source communities and technologies that span AI, data & analytics, cloud computing, quantum computing, & blockchain etc & advocated the clients adopting the open technologies to fuel innovation in both technical and business domains. Hai-Xu has personally involved in the development of many China standards at CCSA (ICT), TC260 (Cybersecurity), TC28 (SC38 (Cloud), SC42(AI)), and international standards at ISO/IEC JTC1 SC42 (AI), SC38 (Cloud), & ISO TC307 (Blockchain). Hai-Xu has also actively engaged in developer advocacy, open source projects promotion & ecosystem dev.",
       "tags": [
         "agentic-ai-summit"
       ],
@@ -2515,7 +2519,7 @@
       "org": "WISE (Women in Safety & Ethics)",
       "roleOrg": "Co-Founder, WISE (Women in Safety & Ethics)",
       "image": "/images/speakers/better_portrait/1776976015288-joanna-kramer.png",
-      "bio": "Currently based in Paris, Joanna's career has blended industry and research. After earning her MSc from University of Oxford's Internet Institute, where she studied the breakdown of digital platforms and the creation of digital 'ruins,' she co-founded WISE with Michelle Nie and Nitya Kuthiala to build community and foster connections among women working across AI safety, ethics, and governance. One year later, the network has expanded to 5 WISE chapters across Brussels, Delhi, London, Paris, and Washington, D.C. In addition, Joanna leads market research and technical marketing initiatives at an applied AI research lab.",
+      "bio": "Currently based in Paris, Joanna's career has blended industry and research. After earning her MSc from University of Oxford's Internet Institute, where she studied the breakdown of digital platforms and the creation of digital 'ruins,' she co-founded WISE with Michelle Nie and Nitya Kuthiala to build community and foster connections among women working across AI safety, ethics, and governance; one year later, the network has expanded to 5 WISE chapters across Brussels, Delhi, London, Paris, and Washington, D.C. In addition, Joanna leads market research and technical marketing initiatives at an applied AI research lab.",
       "tags": [
         "ws-own-your-data-paris2026"
       ],
@@ -2523,8 +2527,8 @@
         "mastodon": "",
         "twitter": "",
         "github": "",
-        "linkedin": "",
-        "website": ""
+        "linkedin": "https://www.linkedin.com/in/joanna-kramer/",
+        "website": "https://www.wiseai.community/"
       },
       "status": "Accept",
       "draft": false,
@@ -2665,7 +2669,8 @@
       "roleOrg": "Head of Applied AI, Fundamental",
       "image": "/images/speakers/better_portrait/Alexandre-Gerbeaux.png",
       "tags": [
-        "agentic-ai-summit"
+        "agentic-ai-summit",
+        "ws-lunch-and-learn"
       ],
       "socialLinks": {
         "mastodon": "",
