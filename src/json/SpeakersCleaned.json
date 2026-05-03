@@ -2702,6 +2702,28 @@
       },
       "status": "Accept",
       "draft": false
+    },
+    {
+      "id": "tao-jiang",
+      "name": "Tao Jiang",
+      "bio": "Tao Jiang is the Founder and Chairman of CSDN, China's largest developer community, and the initiator of the GOSIM (Global Open-Source Innovation Meetup) conference series.",
+      "role": "Founder & Chairman",
+      "org": "CSDN",
+      "roleOrg": "Founder & Chairman, CSDN",
+      "image": "/images/speakers/better_portrait/tao-jiang.jpg.png",
+      "tags": [
+        "keynote",
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     }
   ],
   "columns": 6

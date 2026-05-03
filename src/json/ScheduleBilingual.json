@@ -405,6 +405,28 @@
       },
       {
         "title": {
+          "en": "Keynote – Building an Open Agentic Ecosystem",
+          "zh": "Keynote – 构建开放的 Agentic 生态系统",
+          "fr": "Keynote – Construire un écosystème agentique ouvert"
+        },
+        "speakers": [
+          {
+            "name": "Tao Jiang",
+            "title": "Founder & Chairman of CSDN, Initiator of GOSIM",
+            "id": "tao-jiang"
+          }
+        ],
+        "date": {
+          "en": "May 5",
+          "zh": "5月5日",
+          "fr": "5 mai"
+        },
+        "timeSlot": "10:15 - 10:20",
+        "type": "keynote",
+        "room": "Master Stage"
+      },
+      {
+        "title": {
           "en": "Opening Ceremony",
           "zh": "开幕式",
           "fr": "Cérémonie d'ouverture"
