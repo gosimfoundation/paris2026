@@ -3071,9 +3071,9 @@
         },
         "speakers": [
           {
-            "name": "Michael Plagge",
-            "title": "Vice President, Eclipse Foundation",
-            "id": "michael-plagge"
+            "name": "Michael Berns",
+            "title": "Head of AI, Eclipse Foundation",
+            "id": "michael-berns"
           }
         ],
         "date": {
@@ -3192,11 +3192,27 @@
       },
       {
         "title": {
-          "en": "Open Discussion & Ecosystem Roundtable (Call for Participation)",
-          "zh": "开放讨论与生态系统圆桌会议（欢迎参与）",
-          "fr": "Discussion ouverte & table ronde sur l'écosystème (appel à participation)"
+          "en": "Open Discussion & Ecosystem Roundtable",
+          "zh": "开放讨论与生态系统圆桌会议",
+          "fr": "Discussion ouverte & table ronde sur l'écosystème"
         },
-        "speakers": [],
+        "speakers": [
+          {
+            "name": "Serge Stinckwich",
+            "title": "Head of Research, UNU Macau",
+            "id": "serge-stinckwich"
+          },
+          {
+            "name": "Gábor Soós",
+            "title": "Advisory Committee Member, ICCSD UNESCO",
+            "id": "gabor-soos"
+          },
+          {
+            "name": "Yonghua Lin",
+            "title": "VP & Chief Engineer, BAAI",
+            "id": "yonghua-lin"
+          }
+        ],
         "date": {
           "en": "May 5",
           "zh": "5月5日",
