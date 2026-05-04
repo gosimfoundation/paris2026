@@ -2724,6 +2724,27 @@
       },
       "status": "Accept",
       "draft": false
+    },
+    {
+      "id": "peter-ide-kostic",
+      "name": "Peter Ide-Kostic",
+      "bio": "",
+      "role": "EU Policy Lead",
+      "org": "OpenMined Foundation",
+      "roleOrg": "EU Policy Lead, OpenMined Foundation",
+      "image": "/images/speakers/better_portrait/0-placeholder-person.png",
+      "tags": [
+        "agentic-ai-summit"
+      ],
+      "socialLinks": {
+        "mastodon": "",
+        "twitter": "",
+        "github": "",
+        "linkedin": "",
+        "website": ""
+      },
+      "status": "Accept",
+      "draft": false
     }
   ],
   "columns": 6
