@@ -1167,20 +1167,15 @@
       },
       {
         "title": {
-          "en": "Thoughts to Text & Image: Foundation Models for Brain Computer Interfaces",
-          "zh": "从思想到文字与图像：脑机接口基础模型",
-          "fr": "De la pensée au texte et à l'image : modèles fondamentaux pour les interfaces cerveau-ordinateur"
-        },
-        "content": {
-          "en": "Brain foundation models trained on massive brain data which convert thoughts into texts and images. This was impossible until a few years ago.",
-          "zh": "基于海量脑数据训练的脑基础模型，能够将思维转化为文本和图像。这在几年前还是不可能的。",
-          "fr": "Des modèles fondamentaux du cerveau entraînés sur des données cérébrales massives, capables de convertir les pensées en textes et en images. C’était impossible il y a encore quelques années."
+          "en": "Open Frontier Foundation Models: openpipelines for frontier level ML & AI",
+          "zh": "开放前沿基础模型：面向前沿级别 ML 与 AI 的开放流水线",
+          "fr": "Modèles fondamentaux ouverts de pointe : pipelines ouverts pour le ML et l’IA de niveau frontier"
         },
         "speakers": [
           {
-            "name": "Priyanka Jain",
-            "title": "CEO & Co-Founder, NuBrain",
-            "id": "priyanka-jain"
+            "name": "Jenia Jitsev",
+            "title": "Scientific lead, LAION; chairman, FZJ",
+            "id": "jenia-jitsev"
           }
         ],
         "date": {
