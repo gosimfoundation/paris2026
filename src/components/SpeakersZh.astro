@@ -227,7 +227,12 @@ const groupedCategories = {
               <div class="card-row card-row-info">
                 <h2 class="h5">{speaker.name}</h2>
                 {(() => {
-                  const lastComma = speaker.roleOrg.lastIndexOf(',');
+                  let lastComma = -1, depth = 0;
+                  for (let i = 0; i < speaker.roleOrg.length; i++) {
+                    if (speaker.roleOrg[i] === '(') depth++;
+                    else if (speaker.roleOrg[i] === ')') depth--;
+                    else if (speaker.roleOrg[i] === ',' && depth === 0) lastComma = i;
+                  }
                   if (lastComma === -1) return <p class="speaker-role">{speaker.roleOrg}</p>;
                   const role = speaker.roleOrg.slice(0, lastComma).trim();
                   const company = speaker.roleOrg.slice(lastComma + 1).trim();

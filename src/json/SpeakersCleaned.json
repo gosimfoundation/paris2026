@@ -1968,10 +1968,10 @@
     {
       "id": "jenia-jitsev",
       "name": "Jenia Jitsev",
-      "bio": "Scientific lead & co-founder of LAION e.V. Lab lead at Juelich Supercomputing Center (JSC/FZJ). Open foundation models & datasets (openCLIP, LAION-5B, DataComp, DCLM, OpenThoughts, MixtureVitae). Scaling laws for guided search of stronger scalable learning procedures.",
-      "role": "Scientific lead & co-founder, LAION; lab lead, Juelich Supercomputing Center (JSC/FZJ)",
-      "org": "LAION; Juelich Supercomputing Center (JSC/FZJ)",
-      "roleOrg": "Scientific lead & co-founder, LAION; lab lead, Juelich Supercomputing Center (JSC/FZJ)",
+      "bio": "Scientific lead & co-founder of LAION e.V. Lab lead at Juelich Supercomputing Center (JSC, FZJ). Open foundation models & datasets (openCLIP, LAION-5B, DataComp, DCLM, OpenThoughts, MixtureVitae). Scaling laws for guided search of stronger scalable learning procedures.",
+      "role": "Scientific lead & co-founder, LAION; lab lead, Juelich Supercomputing Center (JSC, FZJ)",
+      "org": "LAION; Juelich Supercomputing Center (JSC, FZJ)",
+      "roleOrg": "Scientific lead & co-founder, LAION; lab lead, Juelich Supercomputing Center (JSC, FZJ)",
       "image": "/images/speakers/better_portrait/0-placeholder-person.png",
       "tags": [
         "agentic-ai-summit"
