@@ -227,7 +227,6 @@ const groupedCategories = {
               <div class="card-row card-row-info">
                 <h2 class="h5">{speaker.name}</h2>
                 {(() => {
-                  if (speaker.roleOrg.includes(';')) return <p class="speaker-role">{speaker.roleOrg}</p>;
                   let lastComma = -1, depth = 0;
                   for (let i = 0; i < speaker.roleOrg.length; i++) {
                     if (speaker.roleOrg[i] === '(') depth++;

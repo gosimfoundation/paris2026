@@ -234,7 +234,6 @@ const socialIconMap: Record<string, string> = {
             <div class="speaker-row-meta">
               <h1 class="h2">{speaker.name}</h1>
               {(() => {
-                if (speaker.roleOrg.includes(';')) return <p>{speaker.roleOrg}</p>;
                 let lastComma = -1, depth = 0;
                 for (let i = 0; i < speaker.roleOrg.length; i++) {
                   if (speaker.roleOrg[i] === '(') depth++;
