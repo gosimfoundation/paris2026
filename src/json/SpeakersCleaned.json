@@ -699,13 +699,13 @@
     {
       "id": "alexy-khrabrov",
       "name": "Alexy Khrabrov",
-      "title": "Founder, CR4AI; Northeastern University",
+      "title": "Head of Community, LakeSail",
       "image": "/images/speakers/better_portrait/alexy-khrabrov.png",
       "draft": false,
-      "bio": "Alexy Khrabrov is the AI Community Architect at Neo4j, the category-defining Graph database company. Alexy is the founding Chair of Open-Source Science at NumFOCUS, and a cofounder of the AI Alliance. Alexy was the founding Chair of the Generative AI Commons at the Linux Foundation for AI and Data (LFAI) and now represents Neo4j at LFAI. Alexy is the founder and organizer of Bay Area AI and AI Agent SF meetups, as well as the Scale/Data/AI By the Bay conferences, the independent OSS AI conference running since 2013.",
-      "role": "AI Community Architect",
-      "org": "Neo4j",
-      "roleOrg": "AI Community Architect at Neo4j",
+      "bio": "Alexy Khrabrov is the Head of Community at LakeSail, building the Spark-compatible AI Lakehouse of today and tomorrow in Rust. Dr. Khrabrov is the founder of the Community Research Center for Reliable AI at Northeastern University, founder and organizer of AI By the Bay, Bay Area AI and AI Agent SF, the longest-running, deepest technical OSS AI communities, conferences and meetups. Previously, Alexy was the Director of Open-Source Science at IBM Research, AI Community Architect at Neo4j, Senior Software Engineer at Amazon, and a cofounder and engineer in Bay Area startups.",
+      "role": "Head of Community",
+      "org": "LakeSail",
+      "roleOrg": "Head of Community, LakeSail",
       "tags": [
         "agentic-ai-summit"
       ],
