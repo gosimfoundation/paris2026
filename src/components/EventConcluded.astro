@@ -1,0 +1,69 @@
+---
+interface Props {
+  lang?: "en" | "zh" | "fr";
+}
+
+const { lang = "en" } = Astro.props;
+
+const content = {
+  en: {
+    title: "GOSIM Paris 2026 Has Concluded",
+    text: "Thank you to all attendees, speakers, and sponsors for an incredible event!",
+    slidesLabel: "Speaker Slides",
+    photosLabel: "Photo Album",
+  },
+  zh: {
+    title: "GOSIM Paris 2026 已圆满结束",
+    text: "感谢所有参会者、演讲嘉宾和赞助商，让本次活动精彩纷呈！",
+    slidesLabel: "演讲幻灯片",
+    photosLabel: "活动相册",
+  },
+  fr: {
+    title: "GOSIM Paris 2026 est terminé",
+    text: "Merci à tous les participants, conférenciers et sponsors pour cet événement incroyable !",
+    slidesLabel: "Diapositives",
+    photosLabel: "Album photo",
+  },
+};
+
+const { title, text, slidesLabel, photosLabel } = content[lang];
+const slidesLink = "https://drive.google.com/drive/folders/1T5omH6OCFNIDaEgFtzS5Nt-e0SMU1I6g?usp=sharing";
+const photosLink = "https://drive.google.com/drive/folders/1iJQHKHc1NJu06izjBK36EDncqK_JyFIp?usp=sharing";
+---
+
+<div class="ec-bar">
+  <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 2.5rem;">
+    <div style="min-width: 0;">
+      <div style="color: #fff; font-size: 1.1rem; font-weight: 700;">{title}</div>
+      <div style="color: rgba(255,255,255,0.8); font-size: 0.85rem; margin-top: 0.15rem;">{text}</div>
+    </div>
+    <div style="display: flex; gap: 0.75rem; flex-shrink: 0;">
+      <a href={slidesLink} target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.6rem; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; padding: 0.4rem 0.8rem 0.4rem 0.4rem; text-decoration: none; color: #fff; font-size: 0.85rem; font-weight: 600;">
+        <img src="/images/homepage/station-f.jpg" alt={slidesLabel} style="width: 40px; height: 30px; max-width: 40px; object-fit: cover; border-radius: 4px; flex-shrink: 0;" />
+        {slidesLabel}
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; opacity: 0.7;"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+      <a href={photosLink} target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.6rem; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; padding: 0.4rem 0.8rem 0.4rem 0.4rem; text-decoration: none; color: #fff; font-size: 0.85rem; font-weight: 600;">
+        <img src="/images/homepage/paris_2025_crowd.png" alt={photosLabel} style="width: 40px; height: 30px; max-width: 40px; object-fit: cover; border-radius: 4px; flex-shrink: 0;" />
+        {photosLabel}
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; opacity: 0.7;"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<style is:global>
+  .ec-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 40%, #db2777 100%);
+    padding: 0.6rem 0;
+  }
+
+  .main-nav-bar {
+    padding-top: calc(var(--row-gap) + 50px) !important;
+  }
+</style>

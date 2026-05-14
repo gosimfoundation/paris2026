@@ -10,34 +10,49 @@ const { lang = "en" } = Astro.props;
 const content = {
   en: {
     badge: "EVENT CONCLUDED",
-    textBefore: "GOSIM Paris 2026 has ended. Thank you to all attendees, speakers, and sponsors!",
+    textBefore: "GOSIM Paris 2026 has ended — slides & photos now available!",
     price: "",
     xLink: "https://x.com/gosimfoundation",
     linkedinLink: "https://www.linkedin.com/company/gosim-foundation",
+    slidesLink: "https://drive.google.com/drive/folders/1T5omH6OCFNIDaEgFtzS5Nt-e0SMU1I6g?usp=sharing",
+    photosLink: "https://drive.google.com/drive/folders/1iJQHKHc1NJu06izjBK36EDncqK_JyFIp?usp=sharing",
+    slidesLabel: "Slides",
+    photosLabel: "Photos",
   },
   zh: {
     badge: "活动已结束",
-    textBefore: "GOSIM Paris 2026 已圆满结束。感谢所有参会者、演讲嘉宾和赞助商！",
+    textBefore: "GOSIM Paris 2026 已圆满结束 — 幻灯片和照片现已发布！",
     price: "",
     xLink: "https://x.com/gosimfoundation",
     linkedinLink: "https://www.linkedin.com/company/gosim-foundation",
+    slidesLink: "https://drive.google.com/drive/folders/1T5omH6OCFNIDaEgFtzS5Nt-e0SMU1I6g?usp=sharing",
+    photosLink: "https://drive.google.com/drive/folders/1iJQHKHc1NJu06izjBK36EDncqK_JyFIp?usp=sharing",
+    slidesLabel: "幻灯片",
+    photosLabel: "照片",
   },
   fr: {
     badge: "ÉVÉNEMENT TERMINÉ",
-    textBefore: "GOSIM Paris 2026 est terminé. Merci à tous les participants, conférenciers et sponsors !",
+    textBefore: "GOSIM Paris 2026 est terminé — diapositives et photos disponibles !",
     price: "",
     xLink: "https://x.com/gosimfoundation",
     linkedinLink: "https://www.linkedin.com/company/gosim-foundation",
+    slidesLink: "https://drive.google.com/drive/folders/1T5omH6OCFNIDaEgFtzS5Nt-e0SMU1I6g?usp=sharing",
+    photosLink: "https://drive.google.com/drive/folders/1iJQHKHc1NJu06izjBK36EDncqK_JyFIp?usp=sharing",
+    slidesLabel: "Diapositives",
+    photosLabel: "Photos",
   },
 };
 
-const { badge, textBefore, price, textAfter, xLink, linkedinLink } = content[lang];
+const { badge, textBefore, price, textAfter, xLink, linkedinLink, slidesLink, photosLink, slidesLabel, photosLabel } = content[lang];
 ---
 
 <div class="announcement-bar">
   <div class="announcement-bar__inner">
     <span class="announcement-bar__badge">{badge}</span>
     <span class="announcement-bar__text">{textBefore} <span class="announcement-bar__price">{price}</span>{textAfter ? ` ${textAfter}` : ""}</span>
+    <span class="announcement-bar__divider">·</span>
+    <a href={slidesLink} target="_blank" rel="noopener noreferrer" class="announcement-bar__resource-btn">{slidesLabel}</a>
+    <a href={photosLink} target="_blank" rel="noopener noreferrer" class="announcement-bar__resource-btn">{photosLabel}</a>
     <span class="announcement-bar__divider">·</span>
     <a href={xLink} target="_blank" rel="noopener noreferrer" class="announcement-bar__social-btn" aria-label="Join lucky draw on X">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -157,6 +172,27 @@ const { badge, textBefore, price, textAfter, xLink, linkedinLink } = content[lan
     color: rgba(255,255,255,0.3);
     font-size: 1rem;
     line-height: 1;
+  }
+
+  .announcement-bar__resource-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.35);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    padding: 0.22rem 0.5rem;
+    border-radius: 4px;
+    flex-shrink: 0;
+    transition: background 0.15s, border-color 0.15s;
+  }
+
+  .announcement-bar__resource-btn:hover {
+    background: rgba(255,255,255,0.28);
+    border-color: rgba(255,255,255,0.6);
   }
 
   .announcement-bar__social-btn {
