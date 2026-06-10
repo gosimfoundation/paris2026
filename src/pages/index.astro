@@ -18,6 +18,7 @@ import Marquee from "components/Marquee.astro"
 import Cards from "components/Cards.astro"
 import CardsSponsors from "components/CardsSponsors.astro"
 import Testimonials from "components/Testimonials.astro"
+import EventGallery from "components/EventGallery.astro"
 
 // Images
 import Placeholder1 from "images/homepage/stats1.png"
@@ -31,6 +32,7 @@ import GosimDelft from "images/homepage/gosim-delft.png"
 import GosimBeijing from "images/homepage/gosim-beijing.png"
 import GosimParis from "images/homepage/gosim-paris-min.png"
 import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
+import GosimParis2026 from "images/homepage/gosim-paris-2026.jpg"
 ---
 
 <Layout
@@ -59,6 +61,22 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
       },
     ]}
   />
+
+  <EventGallery
+    title="GOSIM Paris 2026 in Photos"
+    images={[
+      { src: "/images/homepage/gallery2026/paris2026-01.jpg", alt: "GOSIM Paris 2026 event photo" },
+      { src: "/images/homepage/gallery2026/paris2026-02.jpg", alt: "GOSIM Paris 2026 event photo" },
+      { src: "/images/homepage/gallery2026/paris2026-03.jpg", alt: "GOSIM Paris 2026 event photo" },
+      { src: "/images/homepage/gallery2026/paris2026-04.jpg", alt: "GOSIM Paris 2026 event photo" },
+      { src: "/images/homepage/gallery2026/paris2026-05.jpg", alt: "GOSIM Paris 2026 event photo" },
+      { src: "/images/homepage/gallery2026/paris2026-06.jpg", alt: "GOSIM Paris 2026 event photo" },
+      { src: "/images/homepage/gallery2026/paris2026-07.jpg", alt: "GOSIM Paris 2026 event photo" },
+      { src: "/images/homepage/gallery2026/paris2026-08.jpg", alt: "GOSIM Paris 2026 event photo" },
+      { src: "/images/homepage/gallery2026/paris2026-09.jpg", alt: "GOSIM Paris 2026 event photo" },
+    ]}
+  />
+
   <TextAndSponsors
     id="speaker-organizations"
     title="Speakers Representing (Partial)"
@@ -545,6 +563,12 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
 
   <Testimonials
     embedUrns={[
+      "urn:li:ugcPost:7462262845855043584",
+      "urn:li:ugcPost:7457701372675883009",
+      "urn:li:activity:7458036987988500480",
+      "urn:li:activity:7457447441500397568",
+      "urn:li:ugcPost:7457460427950739456",
+      "urn:li:ugcPost:7457487678658240513",
       "urn:li:activity:7325758963134717952",
       "urn:li:ugcPost:7325474394246471681",
       "urn:li:ugcPost:7325823558645964802",
@@ -555,6 +579,13 @@ import GosimHangzhou from "images/homepage/gosim-hangzhou.png"
   <PreviousEvents
     title="Previous Events"
     events={[
+      {
+        title: "GOSIM Paris 2026",
+        date: "May 5–6, 2026",
+        description: "GOSIM Paris 2026 brought the agentic AI convergence to Station F, gathering speakers and open-source builders from around the world for two days of talks and workshops.",
+        image: GosimParis2026,
+        link: "https://paris2026.gosim.org/",
+      },
       {
         title: "GOSIM Hangzhou",
         date: "September 13–14, 2025",

@@ -52,18 +52,25 @@ const { embedUrns } = Astro.props;
 
   .testimonials-track-wrapper {
     flex: 1;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
     border-radius: 12px;
+  }
+
+  .testimonials-track-wrapper::-webkit-scrollbar {
+    display: none;
   }
 
   .testimonials-track {
     display: flex;
-    transition: transform 0.3s ease;
+    gap: 1rem;
   }
 
   .embed-wrapper {
-    flex: 0 0 100%;
-    min-width: 100%;
+    flex: 0 0 calc(50% - 0.5rem);
+    min-width: 0;
+    scroll-snap-align: start;
   }
 
   .embed-wrapper iframe {
@@ -141,6 +148,10 @@ const { embedUrns } = Astro.props;
       height: 20px;
     }
 
+    .embed-wrapper {
+      flex-basis: 100%;
+    }
+
     .embed-wrapper iframe {
       height: 100vh;
     }
@@ -162,27 +173,58 @@ const { embedUrns } = Astro.props;
     }
   });
 
-  // Carousel
+  // Carousel: native horizontal scroll with snap, paged by viewport width
   const section = document.querySelector('.section-testimonials');
   if (section) {
-    const track = section.querySelector('.testimonials-track') as HTMLElement;
+    const wrapper = section.querySelector('.testimonials-track-wrapper') as HTMLElement;
     const prevBtn = section.querySelector('.carousel-prev') as HTMLButtonElement;
     const nextBtn = section.querySelector('.carousel-next') as HTMLButtonElement;
-    const dots = section.querySelectorAll('.carousel-dot');
-    const total = section.querySelectorAll('.embed-wrapper').length;
-    let current = 0;
+    const dots = [...section.querySelectorAll('.carousel-dot')] as HTMLButtonElement[];
+    const cards = [...section.querySelectorAll('.embed-wrapper')] as HTMLElement[];
 
-    function goTo(index: number) {
-      current = Math.max(0, Math.min(index, total - 1));
-      track.style.transform = `translateX(-${current * 100}%)`;
-      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    const perView = () => Math.max(1, Math.round(wrapper.clientWidth / cards[0].offsetWidth));
+    const pageCount = () => Math.ceil(cards.length / perView());
+    const pageLeft = (i: number) => cards[Math.min(i * perView(), cards.length - 1)].offsetLeft - cards[0].offsetLeft;
+    const currentPage = () => Math.round(wrapper.scrollLeft / (pageLeft(1) || wrapper.clientWidth));
+
+    function update() {
+      const pages = pageCount();
+      const current = Math.min(currentPage(), pages - 1);
+      dots.forEach((d, i) => {
+        d.style.display = i < pages ? '' : 'none';
+        d.classList.toggle('active', i === current);
+      });
       prevBtn.disabled = current === 0;
-      nextBtn.disabled = current === total - 1;
+      nextBtn.disabled = current >= pages - 1;
     }
 
-    prevBtn.addEventListener('click', () => goTo(current - 1));
-    nextBtn.addEventListener('click', () => goTo(current + 1));
+    // Smooth scrollTo is unreliable here (the page's scroll libraries interfere), so animate manually
+    function animateScroll(to: number, ms = 350) {
+      const from = wrapper.scrollLeft;
+      const start = performance.now();
+      const ease = (t: number) => 1 - Math.pow(1 - t, 3);
+      function step(now: number) {
+        const t = Math.min(1, (now - start) / ms);
+        wrapper.scrollLeft = from + (to - from) * ease(t);
+        if (t < 1) requestAnimationFrame(step);
+        else update();
+      }
+      requestAnimationFrame(step);
+    }
+
+    const goTo = (i: number) => animateScroll(pageLeft(Math.max(0, Math.min(i, pageCount() - 1))));
+
+    prevBtn.addEventListener('click', () => goTo(currentPage() - 1));
+    nextBtn.addEventListener('click', () => goTo(currentPage() + 1));
     dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-    goTo(0);
+
+    let raf = 0;
+    wrapper.addEventListener('scroll', () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(update);
+    });
+    window.addEventListener('resize', update);
+    window.addEventListener('load', update);
+    update();
   }
 </script>
